@@ -1,0 +1,300 @@
+[16666.315503] resume cycles:     700900480758
+[16666.315615] qcom_glink_native_rx: wakeup glink-native-adsp
+[16666.315916] qrtr_print_wakeup_reason: src[0x5:0x1a] dst[0x1:0x48dd] [22000104 01003600] service[0x190]
+[16666.317415] PM: PM: Pending Wakeup Sources: [timerfd] [timerfd] 
+[16666.328480] gpio-mi-t1 soc:mi_t1_chip: mi_t1_resume.
+[16666.345519] [binder][0xa330f5641c][21:45:02.575356] kiwi_v2: [12506:I:HDD] wlan_hdd_bus_resume: starting bus resume
+[16666.345951] [binder][0xa330f584b5][21:45:02.575790] kiwi_v2: [12506:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16666.366302] [soft_i][0xa330fb7aa5][21:45:02.596136] kiwi_v2: [0:I:WMA] Non-WLAN triggered wakeup: UNSPECIFIED (-1)
+[16666.366930] [binder][0xa330fbaa0d][21:45:02.596768] kiwi_v2: [12506:I:HDD] wlan_hdd_bus_resume: bus resume succeeded
+[16666.366954] [TP-Driver][21:45:02.596][syna info] syna_pm_resume 2103: enter!
+[16666.367800] [kworke][0xa330fbeb64][21:45:02.597639] kiwi_v2: [15801:I:HDD] hdd_resume_wlan: WLAN being resumed by OS
+[16666.368276] [kworke][0xa330fc0f14][21:45:02.598115] kiwi_v2: [15801:E:HDD] hdd_restart_tsf_sync_post_wlan_resume: Host TSF sync is not initialized!!
+[16666.368517] [kworke][0xa330fc2117][21:45:02.598355] kiwi_v2: [15801:E:HDD] hdd_restart_tsf_sync_post_wlan_resume: Host TSF sync is not initialized!!
+[16666.451741] Resume caused by glink-native-adsp
+[16666.451774] adsp_sleepmon: PM_POST_SUSPEND
+[16666.451823] adsp_sleepmon: timer_event = 0,suspend_event = 1
+[16666.451853] PM: suspend exit
+[16666.617533] PM: suspend entry (s2idle)
+[16666.672802] printk: Suspending console(s) (use no_console_suspend to debug)
+[16666.676567] [kworke][0xa3315660eb][21:45:02.906406] kiwi_v2: [15801:I:HDD] hdd_suspend_wlan: WLAN being suspended by OS
+[16666.678103] [TP-Driver][21:45:02.907][syna info] syna_pm_suspend 2089: enter!
+[16666.678154] [binder][0xa33156d808][21:45:02.907994] kiwi_v2: [12506:I:HDD] __wlan_hdd_bus_suspend: starting bus suspend
+[16666.678179] [binder][0xa33156d9f3][21:45:02.908020] kiwi_v2: [12506:I:PMO] pmo_core_enable_wow_in_fw: system suspend wow
+[16666.754030] [binder][0xa3316d12b1][21:45:02.983870] kiwi_v2: [12506:I:HDD] __wlan_hdd_bus_suspend: bus suspend succeeded
+[16666.781918] gpio-mi-t1 soc:mi_t1_chip: mi_t1_suspend.
+[16666.799846] suspend ns:   16666799846370      suspend cycles:     700909780736
+[16666.799846] msm_show_resume_irqs: HWIRQ 261
+[16666.799874] resume cycles:     701008235977
+[16666.799953] qcom_glink_native_rx: wakeup glink-native-adsp
+[16666.800269] qrtr_print_wakeup_reason: src[0x5:0x1a] dst[0x1:0x4436] [22000204 01004600] service[0x190]
+[16666.801283] PM: PM: Pending Wakeup Sources: [timerfd] 
+[16666.815396] gpio-mi-t1 soc:mi_t1_chip: mi_t1_resume.
+[16666.833931] [binder][0xa33762c9ac][21:45:08.191643] kiwi_v2: [12506:I:HDD] wlan_hdd_bus_resume: starting bus resume
+[16666.834530] [binder][0xa33762f6c0][21:45:08.192244] kiwi_v2: [12506:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16666.854025] [soft_i][0xa33768ac69][21:45:08.211733] kiwi_v2: [0:I:WMA] Non-WLAN triggered wakeup: UNSPECIFIED (-1)
+[16666.854377] [binder][0xa33768c760][21:45:08.212092] kiwi_v2: [12506:I:HDD] wlan_hdd_bus_resume: bus resume succeeded
+[16666.854406] [TP-Driver][21:45:08.212][syna info] syna_pm_resume 2103: enter!
+[16666.855323] [kworke][0xa337690e7b][21:45:08.213040] kiwi_v2: [25231:I:HDD] hdd_resume_wlan: WLAN being resumed by OS
+[16666.855555] [kworke][0xa337691fef][21:45:08.213273] kiwi_v2: [25231:E:HDD] hdd_restart_tsf_sync_post_wlan_resume: Host TSF sync is not initialized!!
+[16666.855651] [kworke][0xa33769270d][21:45:08.213368] kiwi_v2: [25231:E:HDD] hdd_restart_tsf_sync_post_wlan_resume: Host TSF sync is not initialized!!
+[16666.950125] Resume caused by glink-native-adsp
+[16666.950165] adsp_sleepmon: PM_POST_SUSPEND
+[16666.950213] PM: suspend exit
+[16666.950756] adsp_sleepmon: timer_event = 0,suspend_event = 1
+[16667.005483] MI_TP_I][xiaomi_touch_resume_work:561]: touch id 0 enter
+[16667.005490] MI_TP_I][xiaomi_touch_resume_work:568]:  [xiaomi_touch_utc] [2026-10-02 21:45:08.363208]
+[16667.005929] [TP-Driver][21:45:08.363][syna info] syna_dev_resume 1258: Prepare to resume device
+[16667.005931] [TP-Driver][21:45:08.363][syna info] syna_dev_resume 1301: Do reset on resume
+[16667.169823] lpass-cdc soc:spf_core_platform:lpass-cdc: ASoC: PRE_PMU: Digital Mic0 event failed: -22
+[16667.188780] [TP-Driver][21:45:08.546][syna info] syna_dev_resume 1308: free input events after hw reset
+[16667.188802] [TP-Driver][21:45:08.546][syna info] syna_dev_resume 1345: Prepare to set up application firmware
+[16667.273635] [TP-Driver][21:45:08.631][syna info] syna_dev_resume 1360: Device resumed (pwr_state:1)
+[16667.274410] [TP-Driver][21:45:08.632][syna error] syna_tcm_resume_suspend 770: force_h_report_rate is 0
+[16672.050499] [kworke][0xa33d5b14a9][21:45:13.408216] kiwi_v2: [25561:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16673.938484] MI_TP_I][xiaomi_touch_suspend_work:600]: touch id 0 enter
+[16673.938501] MI_TP_I][xiaomi_touch_suspend_work:607]:  [xiaomi_touch_utc] [2026-10-02 21:45:15.296218]
+[16673.938531] [TP-Driver][21:45:15.296][syna info] syna_dev_suspend 1395: Prepare to suspend device
+[16673.941943] [TP-Driver][21:45:15.299][syna info] syna_dev_suspend 1464: Device suspended (pwr_state:2)
+[16675.243472] [kworke][0xa341028580][21:45:16.601187] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16675.243808] lpass-cdc soc:spf_core_platform:lpass-cdc: ASoC: POST_PMD: Digital Mic0 event failed: -22
+[16675.388386] PM: suspend entry (s2idle)
+[16675.415574] smcinvoke: process_accept_req: Server id :27 interrupted probaby due to suspend, pid:1148
+[16675.415626] smcinvoke: process_accept_req: Server id :27 interrupted probaby due to suspend, pid:1147
+[16675.415675] smcinvoke: process_accept_req: Server id :17 interrupted probaby due to suspend, pid:1026
+[16675.415721] smcinvoke: process_accept_req: Server id :17 interrupted probaby due to suspend, pid:1027
+[16675.415734] smcinvoke: process_accept_req: Server id :17 interrupted probaby due to suspend, pid:1025
+[16675.415862] smcinvoke: process_accept_req: Server id :17 interrupted probaby due to suspend, pid:1028
+[16675.416051] smcinvoke: process_accept_req: Server id :27 interrupted probaby due to suspend, pid:1146
+[16675.416121] smcinvoke: process_accept_req: Server id :18 interrupted probaby due to suspend, pid:1029
+[16675.416158] smcinvoke: process_accept_req: Server id :27 interrupted probaby due to suspend, pid:1145
+[16675.416180] smcinvoke: process_accept_req: Server id :18 interrupted probaby due to suspend, pid:1030
+[16675.453240] PM: PM: Pending Wakeup Sources: qcom_rx_wakelock 
+[16675.453248] Freezing of tasks aborted after 0.038 seconds
+[16675.528416] Abort: Pending Wakeup Sources: qcom_rx_wakelock 
+[16675.528457] adsp_sleepmon: PM_POST_SUSPEND
+[16675.528503] PM: suspend exit
+[16675.528527] adsp_sleepmon: timer_event = 0,suspend_event = 1
+[16675.730460] PM: suspend entry (s2idle)
+[16675.781630] printk: Suspending console(s) (use no_console_suspend to debug)
+[16675.786152] [kworke][0xa341a17d7a][21:45:17.143800] kiwi_v2: [25118:I:HDD] hdd_suspend_wlan: WLAN being suspended by OS
+[16675.787330] [TP-Driver][21:45:17.145][syna info] syna_pm_suspend 2089: enter!
+[16675.787661] [binder][0xa341a1f3ca][21:45:17.145378] kiwi_v2: [12506:I:HDD] __wlan_hdd_bus_suspend: starting bus suspend
+[16675.787692] [binder][0xa341a1f62d][21:45:17.145410] kiwi_v2: [12506:I:PMO] pmo_core_enable_wow_in_fw: system suspend wow
+[16675.865562] [binder][0xa341b8c60c][21:45:17.223275] kiwi_v2: [12506:I:HDD] __wlan_hdd_bus_suspend: bus suspend succeeded
+[16675.897251] gpio-mi-t1 soc:mi_t1_chip: mi_t1_suspend.
+[16675.907251] suspend ns:   16675907251345      suspend cycles:     701183098152
+[16675.907251] msm_show_resume_irqs: HWIRQ 598
+[16675.907277] resume cycles:     701203062931
+[16675.907410] PM: pm_system_irq_wakeup: 366 triggered xiaomi_tpsynaptics_tcm
+[16675.909497] PM: PM: Pending Wakeup Sources: [timerfd] 
+[16675.913976] [TP-Driver][21:45:18.311][syna info] syna_spi_read 652: Touch is in pm_suspend status!
+[16675.916350] gpio-mi-t1 soc:mi_t1_chip: mi_t1_resume.
+[16675.932674] [binder][0xa342fd1318][21:45:18.330222] kiwi_v2: [12506:I:HDD] wlan_hdd_bus_resume: starting bus resume
+[16675.933147] [binder][0xa342fd368e][21:45:18.330695] kiwi_v2: [12506:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16675.950723] [soft_i][0xa343025c43][21:45:18.348264] kiwi_v2: [0:I:WMA] Non-WLAN triggered wakeup: UNSPECIFIED (-1)
+[16675.950921] [binder][0xa343026bbf][21:45:18.348471] kiwi_v2: [12506:I:HDD] wlan_hdd_bus_resume: bus resume succeeded
+[16675.950936] [TP-Driver][21:45:18.348][syna info] syna_pm_resume 2103: enter!
+[16675.951679] [kworke][0xa34302a483][21:45:18.349227] kiwi_v2: [21201:I:HDD] hdd_resume_wlan: WLAN being resumed by OS
+[16675.951983] [kworke][0xa34302bb63][21:45:18.349532] kiwi_v2: [21201:E:HDD] hdd_restart_tsf_sync_post_wlan_resume: Host TSF sync is not initialized!!
+[16675.952167] [kworke][0xa34302c82b][21:45:18.349703] kiwi_v2: [21201:E:HDD] hdd_restart_tsf_sync_post_wlan_resume: Host TSF sync is not initialized!!
+[16676.059544] Resume caused by IRQ 366, xiaomi_tpsynaptics_tcm
+[16676.059585] adsp_sleepmon: PM_POST_SUSPEND
+[16676.059643] PM: suspend exit
+[16676.059660] adsp_sleepmon: timer_event = 0,suspend_event = 1
+[16676.082609] MI_TP_I][xiaomi_touch_resume_work:561]: touch id 0 enter
+[16676.082613] MI_TP_I][xiaomi_touch_resume_work:568]:  [xiaomi_touch_utc] [2026-10-02 21:45:18.480164]
+[16676.082622] [TP-Driver][21:45:18.480][syna info] syna_dev_resume 1258: Prepare to resume device
+[16676.093081] [TP-Driver][21:45:18.490][syna info] syna_dev_resume 1331: enter normal power mode
+[16676.093083] [TP-Driver][21:45:18.490][syna info] syna_dev_resume 1345: Prepare to set up application firmware
+[16676.106592] [TP-Driver][21:45:18.504][syna info] syna_dev_resume 1360: Device resumed (pwr_state:1)
+[16676.106896] [TP-Driver][21:45:18.504][syna error] syna_tcm_resume_suspend 770: force_h_report_rate is 0
+[16676.235304] lpass-cdc soc:spf_core_platform:lpass-cdc: ASoC: PRE_PMU: Digital Mic0 event failed: -22
+[16677.056017] MI_TP_I][xiaomi_touch_set_mode_value:614]: Touch_Wakeup_Enable value [1]
+[16677.097972] MI_TP_I][xiaomi_touch_set_mode_value:614]: Touch_Wakeup_Enable value [0]
+[16680.369951] [kworke][0xa348110ebd][21:45:22.767497] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16684.304437] lpass-cdc soc:spf_core_platform:lpass-cdc: ASoC: POST_PMD: Digital Mic0 event failed: -22
+[16685.992695] lpass-cdc soc:spf_core_platform:lpass-cdc: ASoC: PRE_PMU: Digital Mic0 event failed: -22
+[16686.958134] [kworke][0xa34f9b30c7][21:45:29.355684] kiwi_v2: [3415:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16689.090508] MI_TP_I][xiaomi_touch_set_mode_value:614]: Touch_Wakeup_Enable value [1]
+[16689.141020] MI_TP_I][xiaomi_touch_set_mode_value:614]: Touch_Wakeup_Enable value [0]
+[16693.661228] [kworke][0xa35746fc88][21:45:36.058774] kiwi_v2: [18677:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16695.552398] [kworke][0xa359710a46][21:45:37.949944] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16695.564240] [soft_i][0xa359748253][21:45:37.961785] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16697.189312] [kworke][0xa35b509aac][21:45:39.586856] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16697.201033] [soft_i][0xa35b5409b7][21:45:39.598577] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16700.978298] [kworke][0xa35fa6a8a5][21:45:43.375843] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16700.990289] [soft_i][0xa35faa2bcb][21:45:43.387831] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16702.208895] [kworke][0xa3610f2f36][21:45:44.606437] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16702.221108] [soft_i][0xa36112c374][21:45:44.618654] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16705.722438] [kworke][0xa365148b40][21:45:48.119984] kiwi_v2: [24884:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16707.225268] [kworke][0xa366ccd335][21:45:49.622810] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16707.236861] [soft_i][0xa366d038df][21:45:49.634406] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16708.942626] [kworke][0xa368c3f588][21:45:51.340174] kiwi_v2: [26034:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16711.011317] [kworke][0xa36b220538][21:45:53.408864] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16711.025408] [soft_i][0xa36b2625db][21:45:53.422952] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16712.250708] [kworke][0xa36c8d1f7d][21:45:54.648254] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16712.265273] [soft_i][0xa36c916054][21:45:54.662772] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16713.676996] [kworke][0xa36e2efb17][21:45:56.074542] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16713.688867] [soft_i][0xa36e32752c][21:45:56.086410] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16715.308368] [kworke][0xa3700cec0f][21:45:57.705915] kiwi_v2: [25071:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16717.261300] [kworke][0xa3724911c2][21:45:59.658844] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16717.273346] [soft_i][0xa3724c993a][21:45:59.670890] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16717.979121] [kworke][0xa3731b5a93][21:46:00.376615] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16717.990682] [soft_i][0xa3731ec18b][21:46:00.388228] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16723.004979] [kworke][0xa378dbca04][21:46:05.402527] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16725.734514] [kworke][0xa37bfb7501][21:46:08.132061] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16727.298266] [kworke][0xa37dc595f2][21:46:09.695807] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16727.310257] [soft_i][0xa37dc91963][21:46:09.707799] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16730.713299] [kworke][0xa381ae15f5][21:46:13.110847] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16732.212781] [kworke][0xa3836562c4][21:46:14.610324] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16732.224742] [soft_i][0xa38368e3f2][21:46:14.622287] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16736.002806] [kworke][0xa387bbbecd][21:46:18.400352] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16736.016575] [soft_i][0xa387bfbd88][21:46:18.413988] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16737.227591] [kworke][0xa3892291d1][21:46:19.625138] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16737.239130] [soft_i][0xa38925f31b][21:46:19.636675] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16737.942211] [kworke][0xa389f3ee28][21:46:20.339756] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16737.954084] [soft_i][0xa389f76869][21:46:20.351626] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16741.021893] [kworke][0xa38d7a2e2c][21:46:23.419436] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16741.034798] [soft_i][0xa38d7df639][21:46:23.432344] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16742.249159] [kworke][0xa38ee1bb0e][21:46:24.646702] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16742.260411] [soft_i][0xa38ee506e6][21:46:24.657953] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16745.740972] [kworke][0xa392e0b950][21:46:28.138518] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16747.265658] [kworke][0xa3949f6888][21:46:29.663201] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16747.277397] [soft_i][0xa394a2d937][21:46:29.674944] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16747.981211] [kworke][0xa395710b44][21:46:30.378758] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16747.993043] [soft_i][0xa395748292][21:46:30.390588] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16750.954657] [kworke][0xa398d82b5c][21:46:33.352199] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16750.966264] [soft_i][0xa398db920a][21:46:33.363808] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16751.645631] [kworke][0xa399a29ac8][21:46:34.043178] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16753.674138] [kworke][0xa39bf4e4bb][21:46:36.071684] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16755.965251] [kworke][0xa39e941e41][21:46:38.362797] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16755.977243] [soft_i][0xa39e97a16c][21:46:38.374786] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16756.970091] [kworke][0xa39fba8130][21:46:39.367637] kiwi_v2: [24884:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16759.503274] [kworke][0xa3a2a0a5ee][21:46:41.900820] kiwi_v2: [24884:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16760.988287] [kworke][0xa3a453b5b6][21:46:43.385830] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16761.000258] [soft_i][0xa3a45737a7][21:46:43.397803] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16764.055136] [kworke][0xa3a7d63394][21:46:46.452682] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16764.067165] [soft_i][0xa3a7d9b9ac][21:46:46.464710] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16765.752435] [kworke][0xa3a9c774fc][21:46:48.149981] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16766.665665] [kworke][0xa3aad30140][21:46:49.063211] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16769.205809] [kworke][0xa3adbb3041][21:46:51.603357] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16771.027284] [kworke][0xa3afd0d293][21:46:53.424828] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16771.038922] [soft_i][0xa3afd43b6f][21:46:53.436466] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16772.255135] [kworke][0xa3b1388b3f][21:46:54.652677] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16772.269994] [soft_i][0xa3b13ce5bf][21:46:54.667538] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16776.141416] [kworke][0xa3b5ab1a89][21:46:58.538961] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16776.153178] [soft_i][0xa3b5ae8cac][21:46:58.550723] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16776.909012] [kworke][0xa3b68bfc5e][21:46:59.306559] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16777.982629] [kworke][0xa3b7c68593][21:47:00.380175] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16777.994638] [soft_i][0xa3b7ca0a38][21:47:00.392184] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16780.955664] [kworke][0xa3bb2d8736][21:47:03.353210] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16780.968114] [soft_i][0xa3bb312c63][21:47:03.365653] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16782.283900] [kworke][0xa3bcb2a8d0][21:47:04.681445] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16782.296583] [soft_i][0xa3bcb65ff5][21:47:04.694127] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16784.605646] [kworke][0xa3bf5adbf8][21:47:07.003194] kiwi_v2: [16475:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16787.301726] [kworke][0xa3c270b98c][21:47:09.699268] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16787.314717] [soft_i][0xa3c27487f8][21:47:09.712260] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16788.022545] [kworke][0xa3c343e746][21:47:10.420091] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16788.034119] [soft_i][0xa3c3474b49][21:47:10.431665] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16790.992441] [kworke][0xa3c6a9fd7f][21:47:13.389987] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16791.005255] [soft_i][0xa3c6adbe70][21:47:13.402800] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16792.301724] [kworke][0xa3c82991bc][21:47:14.699270] kiwi_v2: [26034:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16794.328568] [kworke][0xa3ca7b5f2e][21:47:16.726116] kiwi_v2: [20813:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16796.007017] [kworke][0xa3cc671a88][21:47:18.404561] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16796.018980] [soft_i][0xa3cc6a9bdb][21:47:18.416525] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16797.338915] [kworke][0xa3cded4eb7][21:47:19.736457] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16797.350738] [soft_i][0xa3cdf0c589][21:47:19.748281] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16801.029471] [kworke][0xa3d226869a][21:47:23.427015] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16801.042509] [soft_i][0xa3d22a5851][21:47:23.440052] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16802.258585] [kworke][0xa3d38e9e1c][21:47:24.656129] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16802.270498] [soft_i][0xa3d3921b8e][21:47:24.668042] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16805.768194] [kworke][0xa3d792d2fd][21:47:28.165740] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16807.986981] [kworke][0xa3da1cdc1a][21:47:30.384529] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16807.998545] [soft_i][0xa3da203f64][21:47:30.396092] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16810.959465] [kworke][0xa3dd83b3fe][21:47:33.357007] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16810.971247] [soft_i][0xa3dd8727b7][21:47:33.368790] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16813.665370] [kworke][0xa3e09c7301][21:47:36.062914] kiwi_v2: [24884:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16816.061194] [kworke][0xa3e35a5a29][21:47:38.458743] kiwi_v2: [26034:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16822.323922] [kworke][0xa3ea85226a][21:47:44.721466] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16822.339110] [soft_i][0xa3ea89956b][21:47:44.736653] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16824.482287] [kworke][0xa3ecfd77d2][21:47:46.879832] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16824.495097] [soft_i][0xa3ed0138ad][21:47:46.892643] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16826.836673] [kworke][0xa3efaf3ae9][21:47:49.234219] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16826.850411] [soft_i][0xa3efb3412c][21:47:49.247956] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16829.387559] [kworke][0xa3f29a8f5b][21:47:51.785105] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16829.399359] [soft_i][0xa3f29e044d][21:47:51.796905] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16832.366696] [kworke][0xa3f6035a72][21:47:54.764240] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16832.377890] [soft_i][0xa3f606a200][21:47:54.775434] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16833.544619] [kworke][0xa3f75c72ea][21:47:55.942166] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16835.330719] [kworke][0xa3f967b82f][21:47:57.728263] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16835.342272] [soft_i][0xa3f96b1ac6][21:47:57.739818] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16836.018600] [kworke][0xa3fa313f6e][21:47:58.416146] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16837.273688] [kworke][0xa3fba0f2e2][21:47:59.671232] kiwi_v2: [22417:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16837.285269] [soft_i][0xa3fba45762][21:47:59.682813] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16841.201913] msm-usb-ssphy-qmp 88e8000.ssphy: QMP PHY set_suspend for resume called with cable disconnected
+[16841.227934] msm-usb-ssphy-qmp 88e8000.ssphy: QMP PHY set_suspend for resume called with cable disconnected
+[16841.227947] msm-usb-ssphy-qmp 88e8000.ssphy: msm_ssphy_qmp_set_suspend: USB PHY is already resumed.
+[16842.192095] [kworke][0xa40141e396][21:48:04.589642] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16842.208608] [soft_i][0xa40146b9e7][21:48:04.606153] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16845.157485] [kworke][0xa404a6a7c8][21:48:07.555031] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16845.169022] [soft_i][0xa404aa090c][21:48:07.566568] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16846.826250] [kworke][0xa4068f8d53][21:48:09.223798] kiwi_v2: [24310:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16849.443124] binder: 4844:27021 transaction async to 0:0 failed 15212100/29189/-22, code 2 size 676-0 line 3359
+[16849.476587] binder: 4844:27021 transaction async to 0:0 failed 15212438/29189/-22, code 2 size 676-0 line 3359
+[16849.487654] binder: 4844:27021 transaction async to 0:0 failed 15212506/29189/-22, code 2 size 676-0 line 3359
+[16852.013461] [kworke][0xa40c7f3dfe][21:48:14.411007] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16852.025215] [soft_i][0xa40c82af8e][21:48:14.422762] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16853.196881] [kworke][0xa40dd9f26a][21:48:15.594426] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16855.179310] [kworke][0xa4101ebcbe][21:48:17.576857] kiwi_v2: [26034:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16857.348994] [kworke][0xa4129a62b6][21:48:19.746537] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16857.360801] [soft_i][0xa4129dd87e][21:48:19.758347] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16858.061246] [kworke][0xa4136b0db5][21:48:20.458790] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16858.071860] [soft_i][0xa4136e29b6][21:48:20.469404] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: LOCAL_DATA_UC_DROP (64), vdev: 0 (STA)
+[16859.621978] [kworke][0xa415344c90][21:48:22.019522] kiwi_v2: [18628:I:HIF] hif_rtpm_restore_autosuspend_delay: RTPM delay set: 500 ms
+[16860.525928] [kworke][0xa4163d2100][21:48:22.923474] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16860.537475] [soft_i][0xa416408306][21:48:22.935021] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16862.363053] [kworke][0xa418575931][21:48:24.760597] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16862.375371] [soft_i][0xa4185af521][21:48:24.772916] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16863.139733] [kworke][0xa4193ae49a][21:48:25.537282] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16864.410080] [kworke][0xa41aaf104e][21:48:26.807625] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16864.421776] [soft_i][0xa41ab27d8c][21:48:26.819321] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16865.433561] [kworke][0xa41bdae960][21:48:27.831106] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16865.446564] [soft_i][0xa41bdeb88e][21:48:27.844108] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16867.182908] [kworke][0xa41ddb6a9b][21:48:29.580455] kiwi_v2: [26034:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16870.454325] [kworke][0xa42199d6a4][21:48:32.851869] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16870.465869] [soft_i][0xa4219d385a][21:48:32.863413] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16871.369232] [kworke][0xa422a5e0dc][21:48:33.766779] kiwi_v2: [25071:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16872.296824] [kworke][0xa423b5a21d][21:48:34.694369] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16872.309038] [soft_i][0xa423b9362e][21:48:34.706583] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16873.664342] [kworke][0xa425464627][21:48:36.061889] kiwi_v2: [26034:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16875.387542] [kworke][0xa4273f1e43][21:48:37.785091] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16877.314653] [kworke][0xa42973b301][21:48:39.712194] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16877.326194] [soft_i][0xa4297714db][21:48:39.723739] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16881.470034] [kworke][0xa42e351908][21:48:43.867581] kiwi_v2: [26863:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16882.059324] binder: 2770:31253 transaction call to 31116:0 failed 15255788/29202/0, code 6 size 180-0 line 3985
+[16882.071873] binder: 2770:6458 transaction call to 31116:0 failed 15255796/29202/0, code 6 size 180-0 line 3985
+[16882.101623] binder: 2770:31253 transaction call to 31116:0 failed 15255812/29202/0, code 6 size 180-0 line 3985
+[16882.109902] binder: 2770:6458 transaction call to 31116:0 failed 15255822/29202/0, code 6 size 180-0 line 3985
+[16882.143120] binder: 2770:31253 transaction call to 31116:0 failed 15255837/29202/0, code 6 size 180-0 line 3985
+[16885.795870] [kworke][0xa433286e7e][21:48:48.193414] kiwi_v2: [24884:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16887.353584] [kworke][0xa434f0cb17][21:48:49.751128] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16887.365649] [soft_i][0xa434f453a5][21:48:49.763190] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16888.597813] [kworke][0xa4365d4ef2][21:48:50.995340] kiwi_v2: [24884:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16892.366458] [kworke][0xa43aad687d][21:48:54.764000] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16892.378896] [soft_i][0xa43ab10d8e][21:48:54.776441] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16894.704972] [kworke][0xa43d5a8580][21:48:57.102521] kiwi_v2: [26034:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16897.382397] [kworke][0xa4406aebe9][21:48:59.779939] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16897.395302] [soft_i][0xa4406eb3f4][21:48:59.792847] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16902.400943] [kworke][0xa4462932c8][21:49:04.798485] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16902.413161] [soft_i][0xa4462cc537][21:49:04.810677] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16904.468641] [kworke][0xa44886f880][21:49:06.866187] kiwi_v2: [22686:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16905.803351] [kworke][0xa44a0dff9f][21:49:08.200896] kiwi_v2: [24884:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16907.316734] [kworke][0xa44bc95f58][21:49:09.714278] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16907.328372] [soft_i][0xa44bccc1f0][21:49:09.725833] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16912.333891] [kworke][0xa451873df6][21:49:14.731434] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16912.345473] [soft_i][0xa4518aa2a3][21:49:14.743016] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
+[16913.766670] [kworke][0xa4532b00c5][21:49:16.164218] kiwi_v2: [26863:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16916.654360] [kworke][0xa456790184][21:49:19.051907] kiwi_v2: [24310:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16917.349570] [kworke][0xa45744ae1a][21:49:19.747115] kiwi_v2: [18628:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+[16917.361435] [soft_i][0xa4574827cb][21:49:19.758978] kiwi_v2: [0:I:WMA] WLAN triggered wakeup: BPF_ALLOW (39), vdev: 0 (STA)
