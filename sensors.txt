@@ -1,0 +1,1437 @@
+Captured at: 23:51:57.421
+Sensor Device:
+Total 103 h/w sensors, 103 running 2 disabled clients:
+0x00000001) active-count = 1; sampling_period(ms) = {1.0}, selected = 1.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x0100000b) active-count = 2; sampling_period(ms) = {20.0, 200.0(disabled)}, selected = 20.00 ms; batching_period(ms) = {2147483.8, 0.0(disabled)}, selected = 2147483.75 ms
+0x010000ac) active-count = 2; sampling_period(ms) = {1.0, 1.0}, selected = 1.00 ms; batching_period(ms) = {0.0, 0.0}, selected = 0.00 ms
+0x01000552) active-count = 1; sampling_period(ms) = {1.0}, selected = 1.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x010005b6) active-count = 1; sampling_period(ms) = {20.0}, selected = 20.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x0100083f) active-count = 1; sampling_period(ms) = {50.0}, selected = 50.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+0x01000868) active-count = 1; sampling_period(ms) = {5.0}, selected = 5.00 ms; batching_period(ms) = {0.0}, selected = 0.00 ms
+Sensor List:
+0x00000001) Dynamic Sensor Manager    | Google          | ver: 1 | type: android.sensor.dynamic_sensor_meta(32) | perm: n/a | flags: 0x00000007
+	special-trigger | minRate=1000.00Hz | maxRate=1000.00Hz | no batching | wakeUp | 
+0x0100000b) lsm6dso Accelerometer Non-wakeup | STMicro         | ver: 142926 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000980
+	continuous | minRate=1.00Hz | maxRate=415.97Hz | FIFO (max,reserved) = (10000, 3000) events | non-wakeUp | 
+	highest rate level = 3, support shared mem: gralloc, 
+0x01000015) ak0991x Magnetometer Non-wakeup | akm             | ver: 146990 | type: android.sensor.magnetic_field(2) | perm: n/a | flags: 0x00000880
+	continuous | minRate=1.00Hz | maxRate=100.00Hz | FIFO (max,reserved) = (10000, 600) events | non-wakeUp | 
+	highest rate level = 1, support shared mem: gralloc, 
+0x0100001f) orientation  Non-wakeup   | xiaomi          | ver: 1 | type: android.sensor.orientation(3) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=200.00Hz | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x01000029) lsm6dso Gyroscope Non-wakeup | STMicro         | ver: 142926 | type: android.sensor.gyroscope(4) | perm: n/a | flags: 0x000009c0
+	continuous | minRate=1.00Hz | maxRate=415.97Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | has-additional-info, 
+	highest rate level = 3, support shared mem: gralloc, 
+0x01000033) TCS3720ALSPRX Ambient Light Sensor Non-wakeup | xiaomi          | ver: 66048 | type: android.sensor.light(5) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000034) TCS3720ALSPRX Ambient Light Sensor Wakeup | xiaomi          | ver: 66048 | type: android.sensor.light(5) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100003d) bosch_bmp5 Pressure Sensor Non-wakeup | Bosch           | ver: 257 | type: android.sensor.pressure(6) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=25.00Hz | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x01000051) proximity Proximity Sensor Non-wakeup | XiaoMi(V1.6)    | ver: 1 | type: android.sensor.proximity(8) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x01000052) proximity Proximity Sensor Wakeup | XiaoMi(V1.6)    | ver: 1 | type: android.sensor.proximity(8) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | wakeUp | 
+0x0100005b) gravity  Non-wakeup       | QTI             | ver: 1 | type: android.sensor.gravity(9) | perm: n/a | flags: 0x00000000
+	continuous | minRate=5.00Hz | maxRate=200.00Hz | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x01000065) linear_acceleration       | QTI             | ver: 1 | type: android.sensor.linear_acceleration(10) | perm: n/a | flags: 0x00000000
+	continuous | minRate=5.00Hz | maxRate=200.00Hz | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x0100006f) rotation vector  Non-wakeup | xiaomi          | ver: 1 | type: android.sensor.rotation_vector(11) | perm: n/a | flags: 0x00000000
+	continuous | minRate=4.76Hz | maxRate=200.00Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100008d) ak0991x Magnetometer-Uncalibrated Non-wakeup | akm             | ver: 146990 | type: android.sensor.magnetic_field_uncalibrated(14) | perm: n/a | flags: 0x00000880
+	continuous | minRate=1.00Hz | maxRate=100.00Hz | FIFO (max,reserved) = (10000, 600) events | non-wakeUp | 
+	highest rate level = 1, support shared mem: gralloc, 
+0x01000097) Game Rotation Vector  Non-wakeup | QTI             | ver: 1 | type: android.sensor.game_rotation_vector(15) | perm: n/a | flags: 0x00000000
+	continuous | minRate=5.00Hz | maxRate=200.00Hz | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x010000a1) lsm6dso Gyroscope-Uncalibrated Non-wakeup | STMicro         | ver: 142926 | type: android.sensor.gyroscope_uncalibrated(16) | perm: n/a | flags: 0x000009c0
+	continuous | minRate=1.00Hz | maxRate=415.97Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | has-additional-info, 
+	highest rate level = 3, support shared mem: gralloc, 
+0x010000ac) sns_smd  Wakeup           | QTI             | ver: 1 | type: android.sensor.significant_motion(17) | perm: n/a | flags: 0x00000005
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | wakeUp | 
+0x010000b5) step_detector  Non-wakeup | XiaoMi(V2.14)   | ver: 1 | type: android.sensor.step_detector(18) | perm: android.permission.ACTIVITY_RECOGNITION | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x010000b6) step_detector  Wakeup     | XiaoMi(V2.14)   | ver: 1 | type: android.sensor.step_detector(18) | perm: android.permission.ACTIVITY_RECOGNITION | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | wakeUp | 
+0x010000bf) step_counter  Non-wakeup  | XiaoMi(V2.14)   | ver: 1 | type: android.sensor.step_counter(19) | perm: android.permission.ACTIVITY_RECOGNITION | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x010000c0) step_counter  Wakeup      | XiaoMi(V2.14)   | ver: 1 | type: android.sensor.step_counter(19) | perm: android.permission.ACTIVITY_RECOGNITION | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | wakeUp | 
+0x010000c9) sns_geomag_rv  Non-wakeup | QTI             | ver: 1 | type: android.sensor.geomagnetic_rotation_vector(20) | perm: n/a | flags: 0x00000000
+	continuous | minRate=5.00Hz | maxRate=100.00Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010000de) ccd_tilt  Wakeup          | QTI             | ver: 256 | type: android.sensor.tilt_detector(22) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100010f) device_orient  Non-wakeup | XiaoMi(V2.11)   | ver: 1 | type: android.sensor.device_orientation(27) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000110) device_orient  Wakeup     | XiaoMi(V2.11)   | ver: 1 | type: android.sensor.device_orientation(27) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000123) stationary_detect         | QTI             | ver: 1 | type: android.sensor.stationary_detect(29) | perm: n/a | flags: 0x00000004
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | non-wakeUp | 
+0x01000124) stationary_detect_wakeup  | QTI             | ver: 1 | type: android.sensor.stationary_detect(29) | perm: n/a | flags: 0x00000005
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | wakeUp | 
+0x0100012d) motion_detect             | QTI             | ver: 1 | type: android.sensor.motion_detect(30) | perm: n/a | flags: 0x00000004
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | non-wakeUp | 
+0x0100012e) motion_detect_wakeup      | QTI             | ver: 1 | type: android.sensor.motion_detect(30) | perm: n/a | flags: 0x00000005
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | wakeUp | 
+0x0100015f) lsm6dso Accelerometer-Uncalibrated Non-wakeup | STMicro         | ver: 142926 | type: android.sensor.accelerometer_uncalibrated(35) | perm: n/a | flags: 0x00000980
+	continuous | minRate=1.00Hz | maxRate=415.97Hz | FIFO (max,reserved) = (10000, 3000) events | non-wakeUp | 
+	highest rate level = 3, support shared mem: gralloc, 
+0x0100041b) TCS3720ALSPRX Proximity Sensor Strm Non-wakeup | ams AG          | ver: 66048 | type: xiaomi.sensor.proxmity.factory(33171005) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=20.00Hz | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x01000425) bosch_bmp5 Pressure_strm Sensor Non-wakeup | Bosch           | ver: 257 | type: xiaomi.sensor.pressure.factory(33171006) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=25.00Hz | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x0100042f) TCS3720ALSPRX Ambient Light Sensor Strm Non-wakeup | xiaomi          | ver: 66048 | type: xiaomi.sensor.ambientlight.factory(33171007) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=20.00Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100047f) semtech_sx937x_0  Non-wakeup | Semtech         | ver: 4179 | type:    xiaomi.sensor.sar(33171015) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=100.00Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010004f7) NonUi  Non-wakeup         | XiaoMi(V3.1.13) | ver: 2 | type:  xiaomi.sensor.nonui(33171027) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010004f8) NonUi  Wakeup             | XiaoMi(V3.1.13) | ver: 2 | type:  xiaomi.sensor.nonui(33171027) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000502) sar_detector  Wakeup      | xiaomi          | ver: 1 | type: xiaomi.sensor.sar_algo(33171028) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100050c) Aod  Wakeup               | XiaoMi          | ver: 1 | type:    xiaomi.sensor.aod(33171029) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000516) fod_detector  Wakeup      | XiaoMi(V1.0)    | ver: 2 | type: xiaomi.sensor.fod_detector(33171030) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100053e) Elevator  Wakeup          | XiaoMi          | ver: 1 | type: xiaomi.sensor.elevator(33171034) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000552) pickup  Wakeup            | XiaoMi(V5.4)    | ver: 1 | type: android.sensor.pick_up_gesture(25) | perm: n/a | flags: 0x00000005
+	one-shot | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100055b) screen_down  Non-wakeup   | XiaoMi(V3.6.2)  | ver: 1 | type: xiaomi.sensor.screen_down(33171037) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100055c) screen_down  Wakeup       | XiaoMi(V3.6.2)  | ver: 1 | type: xiaomi.sensor.screen_down(33171037) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000565) knuckle  Non-wakeup       | XiaoMi(V3.35)   | ver: 1 | type: xiaomi.sensor.knuckle(33171038) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000566) knuckle  Wakeup           | XiaoMi(V3.35)   | ver: 1 | type: xiaomi.sensor.knuckle(33171038) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100056f) point_light_source  Non-wakeup | XiaoMi(V1.4)    | ver: 2 | type: xiaomi.sensor.point.light.source(33171039) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000583) oem_treadmill  Non-wakeup | XiaoMi(V1.4)    | ver: 1 | type: xiaomi.sensor.treadmill(33171041) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x01000584) oem_treadmill  Wakeup     | XiaoMi(V1.4)    | ver: 1 | type: xiaomi.sensor.treadmill(33171041) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | wakeUp | 
+0x010005ab) dbtap_v2  Non-wakeup      | XiaoMi(V6.21)   | ver: 1 | type:  xiaomi.sensor.dbtap(33171045) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010005ac) dbtap_v2  Wakeup          | XiaoMi(V6.21)   | ver: 1 | type:  xiaomi.sensor.dbtap(33171045) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x010005b5) oem_shkcam  Non-wakeup    | XiaoMi(V2.6)    | ver: 1 | type: xiaomi.sensor.oem_shkcam(33171046) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010005b6) oem_shkcam  Wakeup        | XiaoMi(V2.6)    | ver: 1 | type: xiaomi.sensor.oem_shkcam(33171046) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100060f) tcs3408 back ambient  Non-wakeup | ams AG          | ver: 256 | type: xiaomi.sensor.back_lux(33171055) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000610) tcs3408 back ambient  Wakeup | ams AG          | ver: 256 | type: xiaomi.sensor.back_lux(33171055) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100061d) tcs3408 FLICKER Sensor Non-wakeup | ams AG          | ver: 256 | type: xiaomi.sensor.flicker(33171056) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100061e) tcs3408 FLICKER Sensor Wakeup | ams AG          | ver: 256 | type: xiaomi.sensor.flicker(33171056) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000627) tcs3408 back CCT stream  Non-wakeup | ams AG          | ver: 256 | type: xiaomi.sensor.back_cct_strm(33171057) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=2000.00Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000631) tcs3408 back CCT  Non-wakeup | ams AG          | ver: 256 | type: xiaomi.sensor.back_cct(33171058) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000632) tcs3408 back CCT  Wakeup  | ams AG          | ver: 256 | type: xiaomi.sensor.back_cct(33171058) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000638) sar_detector_1  Wakeup    | xiaomi          | ver: 1 | type: xiaomi.sensor.sar_algo_1(33171059) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100065f) MiPhoneCall  Non-wakeup   | XiaoMi(V2.0)    | ver: 1 | type: xiaomi.sensor.phonecall(33171063) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010006a5) har                       | XiaoMi(V3.2)    | ver: 1 | type:    xiaomi.sensor.har(33171070) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | no batching | non-wakeUp | 
+0x010006a6) har_wakeup                | XiaoMi(V3.2)    | ver: 1 | type:    xiaomi.sensor.har(33171070) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | no batching | wakeUp | 
+0x0100073b) tcs3408 back ambient stream  Non-wakeup | ams AG          | ver: 256 | type: xiaomi.sensor.back_lux_strm(33171085) | perm: n/a | flags: 0x00000000
+	continuous | minRate=5.00Hz | maxRate=2000.00Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000759) TCS3720ALSPRX Cct Sensor Non-wakeup | xiaomi          | ver: 66048 | type: xiaomi.sensor.front_cct(33171088) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100075a) TCS3720ALSPRX Cct Sensor Wakeup | xiaomi          | ver: 66048 | type: xiaomi.sensor.front_cct(33171088) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000763) TCS3720ALSPRX Cct Sensor Strm Non-wakeup | xiaomi          | ver: 66048 | type: xiaomi.sensor.front_cct_strm(33171089) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=20.00Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100076d) activity_recognition  Non-wakeup | QTI             | ver: 1 | type: xiaomi.sensor.activity_recognition(33171090) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | non-wakeUp | 
+0x0100076e) activity_recognition  Wakeup | QTI             | ver: 1 | type: xiaomi.sensor.activity_recognition(33171090) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 300) events | wakeUp | 
+0x01000777) DrivingDetection  Non-wakeup | XiaoMi(V2.0.0)  | ver: 1 | type:    xiaomi.sensor.dsd(33171091) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000778) DrivingDetection  Wakeup  | XiaoMi(V2.0.0)  | ver: 1 | type:    xiaomi.sensor.dsd(33171091) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100078b) oem_eud  Non-wakeup       | XiaoMi(V1.4)    | ver: 1 | type: xiaomi.sensor.oem_eud(33171093) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100078c) oem_eud  Wakeup           | XiaoMi(V1.4)    | ver: 1 | type: xiaomi.sensor.oem_eud(33171093) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000796) oem_small_movement  Wakeup | XiaoMi(V1.1)    | ver: 1 | type: xiaomi.sensor.oem_small_movement(33171094) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x0100079f) pocket_mode  Non-wakeup   | XiaoMi(V3.1.13) | ver: 2 | type: xiaomi.sensor.oem_pocket(33171095) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010007b3) traffic_detect  Non-wakeup | XiaoMi(V2.0)    | ver: 1 | type: xiaomi.sensor.traffic_detect(33171097) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010007b4) traffic_detect  Wakeup    | XiaoMi(V2.0)    | ver: 1 | type: xiaomi.sensor.traffic_detect(33171097) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x010007c7) HIKING  Non-wakeup        | XiaoMi(V1.1)    | ver: 2 | type: xiaomi.sensor.hiking(33171099) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010007c8) HIKING  Wakeup            | XiaoMi(V1.1)    | ver: 2 | type: xiaomi.sensor.hiking(33171099) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x010007d1) eqm                       | xiaomi          | ver: 2 | type:    xiaomi.sensor.eqm(33171100) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | no batching | non-wakeUp | 
+0x010007d2) eqm_wakeup                | xiaomi          | ver: 2 | type:    xiaomi.sensor.eqm(33171100) | perm: n/a | flags: 0x00000003
+	on-change | maxDelay=0us | minDelay=0us | no batching | wakeUp | 
+0x01000817) wwan  Non-wakeup          | qualcomm        | ver: 1 | type:       qti.sensor.hst(33171107) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000818) wwan  Wakeup              | qualcomm        | ver: 1 | type:       qti.sensor.hst(33171107) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000821) dual_cct  Non-wakeup      | XiaoMi          | ver: 1 | type: xiaomi.sensor.dual_cct(33171108) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100083f) TCS3720 ALSPRX Ambient Light Sensor Raw Data Non-wakeup | xiaomi          | ver: 66048 | type: xiaomi.sensor.ambientlight.raw(33171111) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000867) Collision Detection Collision Detector Sensor Non-wakeup | XiaoMi(V3.6)    | ver: 1 | type: xiaomi.sensor.oem_collision_detection(33171115) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000868) Collision Detection Collision Detector Sensor Wakeup | XiaoMi(V3.6)    | ver: 1 | type: xiaomi.sensor.oem_collision_detection(33171115) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000871) subway_detect  Non-wakeup | XiaoMi(V1.0.0)  | ver: 1 | type: xiaomi.sensor.subway_detect(33171116) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100087b) Airport-Mode Airport Mode Sensor Non-wakeup | XiaoMi(V2.0)    | ver: 1 | type: xiaomi.sensor.airport_mode(33171117) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100087c) Airport-Mode Airport Mode Sensor Wakeup | XiaoMi(V2.0)    | ver: 1 | type: xiaomi.sensor.airport_mode(33171117) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000885) qsh_ble_sensor  Non-wakeup | Xiaomi          | ver: 65536 | type: xiaomi.sensor.qsh_ble_sensor(33171118) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x0100088f) DropCam DropCam Non-wakeup | XiaoMi(V0.1)    | ver: 1 | type: xiaomi.sensor.dropcam(33171119) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x01000890) DropCam DropCam Wakeup    | XiaoMi(V0.1)    | ver: 1 | type: xiaomi.sensor.dropcam(33171119) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x01000899) GripPostureDetection  Non-wakeup | XiaoMi(V2.26)   | ver: 1 | type:    xiaomi.sensor.gpd(33171120) | perm: n/a | flags: 0x00000002
+	on-change | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010008a4) oem_offbody_detect  Wakeup | XiaoMi(V1.0.0)  | ver: 1 | type: xiaomi.sensor.oem_offbody_detect(33171121) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x010008ad) basement_detect  Non-wakeup | XiaoMi(V2.0)    | ver: 1 | type: xiaomi.sensor.basement_detect(33171122) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010008ae) basement_detect  Wakeup   | XiaoMi(V2.0)    | ver: 1 | type: xiaomi.sensor.basement_detect(33171122) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x010008cb) holder  Non-wakeup        | XiaoMi(V1.0.0)  | ver: 1 | type: xiaomi.sensor.oem_holder(33171125) | perm: n/a | flags: 0x00000006
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x010008cc) holder  Wakeup            | XiaoMi(V1.0.0)  | ver: 1 | type: xiaomi.sensor.oem_holder(33171125) | perm: n/a | flags: 0x00000007
+	special-trigger | maxDelay=0us | minDelay=0us | FIFO (max,reserved) = (10000, 0) events | wakeUp | 
+0x010008e9) healthy_use_of_mobile  Non-wakeup | XiaoMi(V1.1)    | ver: 1 | type: xiaomi.sensor.healthy_use_of_mobile(33171128) | perm: n/a | flags: 0x00000000
+	continuous | minRate=0.07Hz | maxRate=0.33Hz | FIFO (max,reserved) = (10000, 0) events | non-wakeUp | 
+0x02000001) Touch Sensor              | Xiaomi Large Area Detect | ver: 1 | type: xiaomi.sensor.large_area_detect(33171031) | perm: n/a | flags: 0x00000002
+	on-change | minRate=1.00Hz | maxRate=50000.00Hz | no batching | non-wakeUp | 
+0x03000001) L8 TOF Sensor             | STMicro         | ver: 1 | type:    xiaomi.sensor.tof(33171040) | perm: n/a | flags: 0x00000000
+	continuous | minRate=1.00Hz | maxRate=33.33Hz | no batching | non-wakeUp | 
+0x04000001) UDFPS Sensor              | Paranoid Android | ver: 1 | type: co.aospa.sensor.udfps(65538) | perm: n/a | flags: 0x00000005
+	one-shot | maxDelay=0us | minDelay=-1us | no batching | wakeUp | 
+0x5f636779) Corrected Gyroscope Sensor | AOSP            | ver: 1 | type: android.sensor.gyroscope(4) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+0x5f676172) Game Rotation Vector Sensor | AOSP            | ver: 3 | type: android.sensor.game_rotation_vector(15) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+0x5f676273) Gyroscope Bias (debug)    | AOSP            | ver: 1 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+0x5f67656f) GeoMag Rotation Vector Sensor | AOSP            | ver: 3 | type: android.sensor.geomagnetic_rotation_vector(20) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+0x5f677276) Gravity Sensor            | AOSP            | ver: 3 | type: android.sensor.gravity(9) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+0x5f6c696e) Linear Acceleration Sensor | AOSP            | ver: 3 | type: android.sensor.linear_acceleration(10) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+0x5f726f76) Rotation Vector Sensor    | AOSP            | ver: 3 | type: android.sensor.rotation_vector(11) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+0x5f797072) Orientation Sensor        | AOSP            | ver: 1 | type: android.sensor.orientation(3) | perm: n/a | flags: 0x00000000
+	continuous | maxDelay=0us | maxRate=415.97Hz | no batching | non-wakeUp | 
+Fusion States:
+9-axis fusion disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+game fusion(no mag) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+geomag fusion (no gyro) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+Recent Sensor events:
+GripPostureDetection  Non-wakeup: last 10 events
+	 1 (ts=36894.218155887, wall=23:51:37.155) 0.00, -0.02, 0.00, -5.06, 35328.01, 6023.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 2 (ts=36894.623943804, wall=23:51:37.560) 0.00, -0.02, 0.00, -1.97, 27769.02, 6402.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 3 (ts=36895.028685783, wall=23:51:37.965) 0.00, -0.02, 0.00, -1.10, 21536.01, 9541.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 4 (ts=36895.433080002, wall=23:51:38.370) 1.00, 0.82, 0.00, -1.82, 140755.02, 8275.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 5 (ts=36895.838453700, wall=23:51:38.776) 1.00, 0.91, 0.00, -1.91, 172542.02, 6952.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 6 (ts=36896.243546148, wall=23:51:39.180) 1.00, 0.00, 0.00, -5.92, 136400.02, 5952.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 7 (ts=36896.648203648, wall=23:51:39.585) 1.00, 0.04, 0.00, -5.74, 97429.02, 5260.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 8 (ts=36896.872989169, wall=23:51:39.820) -1.00, 1.00, 0.00, -300.00, -0.00, 13.01, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 9 (ts=36897.997505731, wall=23:51:40.934) 0.00, -0.02, 0.00, -5.19, 64230.01, 5058.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	10 (ts=36898.402935731, wall=23:51:41.340) 0.00, -0.02, 0.00, -5.22, 60967.02, 5007.05, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+ak0991x Magnetometer-Uncalibrated Non-wakeup: last 10 events
+	 1 (ts=4287.252838996, wall=14:48:10.221) 67.22, -16.80, 203.34, 82.14, -43.62, 209.82, 
+	 2 (ts=4287.272838996, wall=14:48:10.221) 67.48, -16.82, 203.29, 82.14, -43.62, 209.82, 
+	 3 (ts=4287.292838996, wall=14:48:10.299) 67.59, -16.73, 203.25, 82.14, -43.62, 209.82, 
+	 4 (ts=4287.312838996, wall=14:48:10.299) 67.82, -16.59, 203.27, 82.14, -43.62, 209.82, 
+	 5 (ts=4287.332838996, wall=14:48:10.299) 68.12, -16.46, 203.29, 82.14, -43.62, 209.82, 
+	 6 (ts=4287.352838996, wall=14:48:10.299) 68.40, -16.33, 203.16, 82.14, -43.62, 209.82, 
+	 7 (ts=4287.372838996, wall=14:48:10.365) 68.55, -16.31, 202.99, 82.14, -43.62, 209.82, 
+	 8 (ts=4287.392838996, wall=14:48:10.365) 68.64, -16.41, 202.99, 82.14, -43.62, 209.82, 
+	 9 (ts=4287.412838996, wall=14:48:10.365) 68.74, -16.46, 203.18, 82.14, -43.62, 209.82, 
+	10 (ts=4287.432838996, wall=14:48:10.384) 68.76, -16.46, 203.27, 82.14, -43.62, 209.82, 
+TCS3720 ALSPRX Ambient Light Sensor Raw Data Non-wakeup: last 10 events
+	 1 (ts=36898.119113908, wall=23:51:41.217) 1966.88, 1240.92, 618.07, 268.58, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 2 (ts=36898.138566877, wall=23:51:41.217) 1959.18, 1238.08, 614.15, 266.69, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 3 (ts=36898.158019846, wall=23:51:41.217) 1924.62, 1219.75, 606.01, 262.66, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 4 (ts=36898.177472814, wall=23:51:41.217) 1799.17, 1137.14, 565.05, 242.74, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 5 (ts=36898.196925783, wall=23:51:41.217) 1624.54, 1029.49, 511.18, 217.98, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 6 (ts=36898.216378752, wall=23:51:41.217) 1382.13, 891.90, 436.27, 183.27, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 7 (ts=36898.235831721, wall=23:51:41.217) 1108.10, 729.01, 344.53, 141.82, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 8 (ts=36898.255284689, wall=23:51:41.217) 932.94, 627.04, 283.93, 115.18, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	 9 (ts=36898.274737658, wall=23:51:41.217) 842.04, 579.54, 250.26, 99.30, 1.42, 1.40, 1.37, 1.47, 11.00, 11.00, 11.00, 11.00, 0.00, 0.00, 0.00, 0.00, 
+	10 (ts=36899.767130032, wall=23:51:42.705) -1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+knuckle  Non-wakeup: last 10 events
+	 1 (ts=36895.552148023, wall=23:51:38.490) 0.00, 32.73, -0.77, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 2 (ts=36895.691948596, wall=23:51:38.629) 0.00, 32.90, 0.79, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 3 (ts=36895.841382346, wall=23:51:38.778) 0.00, 30.43, -0.46, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 4 (ts=36895.923607710, wall=23:51:38.861) 0.00, 30.73, 0.50, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 5 (ts=36896.174082658, wall=23:51:39.111) 0.00, 30.09, -0.41, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 6 (ts=36897.133359012, wall=23:51:40.070) 0.00, 31.16, -0.56, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 7 (ts=36898.078054481, wall=23:51:41.014) 0.00, 35.29, -1.11, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 8 (ts=36898.179286616, wall=23:51:41.116) 0.00, 30.90, 0.52, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 9 (ts=36898.251678700, wall=23:51:41.188) 0.00, 34.45, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	10 (ts=36898.357707294, wall=23:51:41.294) 0.00, 30.23, 0.43, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+ccd_tilt  Wakeup: last 10 events
+	 1 (ts=23217.338629356, wall=20:03:40.517) 1.00, 
+	 2 (ts=23408.538629282, wall=20:06:51.708) 1.00, 
+	 3 (ts=23521.238629145, wall=20:08:44.245) 1.00, 
+	 4 (ts=25261.870575000, wall=20:37:45.046) 1.00, 
+	 5 (ts=25666.270574869, wall=20:44:29.437) 1.00, 
+	 6 (ts=26123.686828173, wall=20:52:06.692) 1.00, 
+	 7 (ts=26672.884547639, wall=21:01:15.887) 1.00, 
+	 8 (ts=27500.638280706, wall=21:15:03.673) 1.00, 
+	 9 (ts=29391.334800496, wall=21:46:34.336) 1.00, 
+	10 (ts=29712.780226626, wall=21:51:55.785) 1.00, 
+linear_acceleration: last 10 events
+	 1 (ts=33213.230089057, wall=22:50:16.274) -0.00, -0.00, -0.00, 
+	 2 (ts=33213.422901245, wall=22:50:16.467) 0.01, 0.00, 0.01, 
+	 3 (ts=33213.615713432, wall=22:50:16.660) -0.01, 0.00, -0.00, 
+	 4 (ts=33213.808525620, wall=22:50:16.853) 0.01, -0.00, 0.00, 
+	 5 (ts=33214.001337807, wall=22:50:17.045) -0.00, 0.00, 0.00, 
+	 6 (ts=33214.194149995, wall=22:50:17.239) -0.00, 0.00, -0.00, 
+	 7 (ts=33214.386962182, wall=22:50:17.431) -0.01, 0.00, -0.00, 
+	 8 (ts=33214.579774370, wall=22:50:17.624) 0.01, -0.00, 0.00, 
+	 9 (ts=33214.772586609, wall=22:50:17.817) -0.00, -0.00, -0.00, 
+	10 (ts=36359.863601285, wall=23:42:42.908) 0.00, 0.00, 0.00, 
+sns_smd  Wakeup: last 50 events
+	 1 (ts=8368.659991052, wall=15:56:11.797) 1.00, 
+	 2 (ts=8803.889024542, wall=16:03:26.929) 1.00, 
+	 3 (ts=9652.159584403, wall=16:17:35.299) 1.00, 
+	 4 (ts=10360.678621778, wall=16:29:23.672) 1.00, 
+	 5 (ts=10493.101924103, wall=16:31:36.098) 1.00, 
+	 6 (ts=10550.303403350, wall=16:32:33.298) 1.00, 
+	 7 (ts=10576.522111371, wall=16:32:59.516) 1.00, 
+	 8 (ts=11237.307536760, wall=16:44:00.299) 1.00, 
+	 9 (ts=11742.948303210, wall=16:52:25.943) 1.00, 
+	10 (ts=11877.154175210, wall=16:54:40.354) 1.00, 
+	11 (ts=12034.252357614, wall=16:57:17.247) 1.00, 
+	12 (ts=12136.048682881, wall=16:58:59.043) 1.00, 
+	13 (ts=12238.789981638, wall=17:00:41.786) 1.00, 
+	14 (ts=12338.368423803, wall=17:02:21.364) 1.00, 
+	15 (ts=12438.343380735, wall=17:04:01.340) 1.00, 
+	16 (ts=12545.875781106, wall=17:05:48.868) 1.00, 
+	17 (ts=12579.484293710, wall=17:06:22.476) 1.00, 
+	18 (ts=13095.529647723, wall=17:14:58.522) 1.00, 
+	19 (ts=14276.954124974, wall=17:34:39.946) 1.00, 
+	20 (ts=21013.941463764, wall=19:26:57.094) 1.00, 
+	21 (ts=21125.482727825, wall=19:28:48.636) 1.00, 
+	22 (ts=21385.012176996, wall=19:33:08.186) 1.00, 
+	23 (ts=21466.440203642, wall=19:34:29.618) 1.00, 
+	24 (ts=21534.987940050, wall=19:35:38.129) 1.00, 
+	25 (ts=21580.898426196, wall=19:36:24.054) 1.00, 
+	26 (ts=21719.689840034, wall=19:38:42.866) 1.00, 
+	27 (ts=21776.841443394, wall=19:39:39.972) 1.00, 
+	28 (ts=22011.656030372, wall=19:43:34.835) 1.00, 
+	29 (ts=22126.440497417, wall=19:45:29.603) 1.00, 
+	30 (ts=22229.790364869, wall=19:47:12.786) 1.00, 
+	31 (ts=22335.897865310, wall=19:48:59.035) 1.00, 
+	32 (ts=22614.749403205, wall=19:53:37.882) 1.00, 
+	33 (ts=22725.020390604, wall=19:55:28.153) 1.00, 
+	34 (ts=22836.023349310, wall=19:57:19.174) 1.00, 
+	35 (ts=22947.005583744, wall=19:59:10.127) 1.00, 
+	36 (ts=23060.338960469, wall=20:01:03.463) 1.00, 
+	37 (ts=23161.370114069, wall=20:02:44.539) 1.00, 
+	38 (ts=23207.316001100, wall=20:03:30.480) 1.00, 
+	39 (ts=23362.836402914, wall=20:06:05.990) 1.00, 
+	40 (ts=25294.098444669, wall=20:38:17.269) 1.00, 
+	41 (ts=25704.952750130, wall=20:45:07.946) 1.00, 
+	42 (ts=25824.722937736, wall=20:47:07.900) 1.00, 
+	43 (ts=25924.013126020, wall=20:48:47.191) 1.00, 
+	44 (ts=26037.630014101, wall=20:50:40.778) 1.00, 
+	45 (ts=29422.617114194, wall=21:47:05.610) 1.00, 
+	46 (ts=33173.536320591, wall=22:49:36.529) 1.00, 
+	47 (ts=34166.572570670, wall=23:06:09.568) 1.00, 
+	48 (ts=36390.187678733, wall=23:43:13.321) 1.00, 
+	49 (ts=36444.810913860, wall=23:44:07.955) 1.00, 
+	50 (ts=36499.550664776, wall=23:45:02.685) 1.00, 
+proximity Proximity Sensor Wakeup: last 30 events
+	 1 (ts=31525.779486806, wall=22:22:08.739) 5.00, 0.00, 0.00, 
+	 2 (ts=31970.271598579, wall=22:29:33.235) 5.00, 0.00, 0.00, 
+	 3 (ts=31987.626715742, wall=22:29:50.585) 5.00, 0.00, 0.00, 
+	 4 (ts=32811.365559103, wall=22:43:34.320) 5.00, 0.00, 0.00, 
+	 5 (ts=32812.737935457, wall=22:43:35.689) 5.00, 0.00, 0.00, 
+	 6 (ts=32814.395966915, wall=22:43:37.359) 5.00, 0.00, 0.00, 
+	 7 (ts=32815.822648009, wall=22:43:38.780) 5.00, 0.00, 0.00, 
+	 8 (ts=32852.376863842, wall=22:44:15.328) 5.00, 0.00, 0.00, 
+	 9 (ts=32867.183761186, wall=22:44:30.135) 5.00, 0.00, 0.00, 
+	10 (ts=32944.955715038, wall=22:45:47.916) 5.00, 0.00, 0.00, 
+	11 (ts=32946.443814257, wall=22:45:49.393) 5.00, 0.00, 0.00, 
+	12 (ts=32948.603178632, wall=22:45:51.553) 5.00, 0.00, 0.00, 
+	13 (ts=32960.190520924, wall=22:46:03.141) 5.00, 0.00, 0.00, 
+	14 (ts=32981.263717590, wall=22:46:24.220) 5.00, 0.00, 0.00, 
+	15 (ts=32982.189164986, wall=22:46:25.143) 5.00, 0.00, 0.00, 
+	16 (ts=32983.615898997, wall=22:46:26.567) 5.00, 0.00, 0.00, 
+	17 (ts=33054.544474681, wall=22:47:37.505) 5.00, 0.00, 0.00, 
+	18 (ts=33152.065852935, wall=22:49:15.035) 5.00, 0.00, 0.00, 
+	19 (ts=33247.854331794, wall=22:50:50.810) 5.00, 0.00, 0.00, 
+	20 (ts=33256.781552732, wall=22:50:59.743) 5.00, 0.00, 0.00, 
+	21 (ts=33387.625270544, wall=22:53:10.596) 5.00, 0.00, 0.00, 
+	22 (ts=33407.697271221, wall=22:53:30.660) 5.00, 0.00, 0.00, 
+	23 (ts=33425.918357991, wall=22:53:48.873) 5.00, 0.00, 0.00, 
+	24 (ts=33429.504747783, wall=22:53:52.476) 5.00, 0.00, 0.00, 
+	25 (ts=33540.587290799, wall=22:55:43.541) 5.00, 0.00, 0.00, 
+	26 (ts=34051.421009937, wall=23:04:14.379) 5.00, 0.00, 0.00, 
+	27 (ts=34149.527180931, wall=23:05:52.504) 5.00, 0.00, 0.00, 
+	28 (ts=34979.256679884, wall=23:19:42.239) 5.00, 0.00, 0.00, 
+	29 (ts=36505.431431182, wall=23:45:08.405) 5.00, 0.00, 0.00, 
+	30 (ts=36515.554266339, wall=23:45:18.531) 5.00, 0.00, 0.00, 
+screen_down  Non-wakeup: last 10 events
+	 1 (ts=12488.734036181, wall=17:04:51.692) 1.00, 2.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 2 (ts=12490.161051858, wall=17:04:53.119) 1.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 3 (ts=12494.596378473, wall=17:04:57.555) 2.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 4 (ts=12495.020627483, wall=17:04:57.979) 2.00, 2.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 5 (ts=12499.147415296, wall=17:05:02.106) 1.00, 2.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 6 (ts=12499.494528473, wall=17:05:02.453) 1.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 7 (ts=12550.482295898, wall=17:05:53.440) 1.00, 2.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 8 (ts=12550.867988554, wall=17:05:53.826) 1.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 9 (ts=24412.049753570, wall=20:23:35.009) 2.00, 2.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	10 (ts=26122.970909943, wall=20:52:05.930) 1.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+lsm6dso Gyroscope Non-wakeup: last 10 events
+	 1 (ts=26226.330395025, wall=20:53:49.278) -0.26, 0.09, -0.26, 
+	 2 (ts=26226.344857421, wall=20:53:49.292) -0.27, 0.36, -0.14, 
+	 3 (ts=26226.359319817, wall=20:53:49.306) -0.30, 0.49, -0.01, 
+	 4 (ts=26226.373782213, wall=20:53:49.321) -0.22, 0.49, 0.11, 
+	 5 (ts=26226.388244609, wall=20:53:49.336) 0.16, 0.35, 0.22, 
+	 6 (ts=26226.402707004, wall=20:53:49.350) 0.50, 0.14, 0.24, 
+	 7 (ts=26226.417169400, wall=20:53:49.365) 0.72, 0.15, 0.22, 
+	 8 (ts=26226.431631796, wall=20:53:49.379) 0.79, 0.26, 0.21, 
+	 9 (ts=26226.446094192, wall=20:53:49.394) 0.57, 0.50, 0.30, 
+	10 (ts=26226.460556588, wall=20:53:49.409) 0.19, 0.66, 0.40, 
+Aod  Wakeup: last 10 events
+	 1 (ts=11801.273247193, wall=16:53:24.216) 3.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 2 (ts=18603.918011699, wall=18:46:46.857) 3.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 3 (ts=18718.529878432, wall=18:48:41.469) 3.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 4 (ts=19718.366128938, wall=19:05:21.306) 3.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 5 (ts=19884.780518652, wall=19:08:07.720) 3.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 6 (ts=20658.128405987, wall=19:21:01.069) 3.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 7 (ts=21670.217416973, wall=19:37:53.166) 3.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 8 (ts=27457.211295237, wall=21:14:20.153) 4.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	 9 (ts=30807.083742679, wall=22:10:10.022) 4.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+	10 (ts=31526.664537900, wall=22:22:09.603) 4.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+gravity  Non-wakeup: last 10 events
+	 1 (ts=32985.378925247, wall=22:46:28.333) -0.59, 5.17, 8.31, 
+	 2 (ts=32985.407845559, wall=22:46:28.362) -0.60, 5.09, 8.36, 
+	 3 (ts=32985.436765924, wall=22:46:28.392) -0.69, 5.02, 8.40, 
+	 4 (ts=32985.465686236, wall=22:46:28.420) -0.70, 4.98, 8.42, 
+	 5 (ts=32985.494606549, wall=22:46:28.449) -0.76, 5.01, 8.39, 
+	 6 (ts=32985.523526861, wall=22:46:28.479) -0.72, 5.04, 8.38, 
+	 7 (ts=32985.552447174, wall=22:46:28.507) -0.68, 5.00, 8.41, 
+	 8 (ts=32985.581367486, wall=22:46:28.536) -0.64, 4.92, 8.46, 
+	 9 (ts=32985.610287851, wall=22:46:28.565) -0.62, 4.83, 8.51, 
+	10 (ts=32985.639208163, wall=22:46:28.594) -0.63, 4.79, 8.53, 
+rotation vector  Non-wakeup: last 10 events
+	 1 (ts=26226.339485911, wall=20:53:49.276) 0.03, -0.28, -0.73, 0.62, -1.00, 
+	 2 (ts=26226.356152265, wall=20:53:49.293) 0.04, -0.27, -0.74, 0.62, -1.00, 
+	 3 (ts=26226.372822734, wall=20:53:49.309) 0.04, -0.26, -0.74, 0.62, -1.00, 
+	 4 (ts=26226.389485025, wall=20:53:49.326) 0.05, -0.25, -0.74, 0.62, -1.00, 
+	 5 (ts=26226.406149348, wall=20:53:49.343) 0.05, -0.25, -0.74, 0.63, -1.00, 
+	 6 (ts=26226.422816900, wall=20:53:49.360) 0.05, -0.25, -0.74, 0.63, -1.00, 
+	 7 (ts=26226.439482681, wall=20:53:49.376) 0.05, -0.25, -0.73, 0.63, -1.00, 
+	 8 (ts=26226.456144973, wall=20:53:49.393) 0.05, -0.26, -0.73, 0.63, -1.00, 
+	 9 (ts=26226.472815442, wall=20:53:49.410) 0.06, -0.25, -0.73, 0.64, -1.00, 
+	10 (ts=26226.489482109, wall=20:53:49.433) 0.06, -0.25, -0.72, 0.64, -1.00, 
+pickup  Wakeup: last 10 events
+	 1 (ts=33151.983707779, wall=22:49:14.947) 1.00, 
+	 2 (ts=33247.945716065, wall=22:50:50.905) 1.00, 
+	 3 (ts=33407.711530752, wall=22:53:30.670) 1.00, 
+	 4 (ts=33425.836209398, wall=22:53:48.798) 1.00, 
+	 5 (ts=33540.582268819, wall=22:55:43.541) 1.00, 
+	 6 (ts=34149.637850774, wall=23:05:52.597) 1.00, 
+	 7 (ts=34979.155251290, wall=23:19:42.117) 1.00, 
+	 8 (ts=36505.195089151, wall=23:45:08.314) 1.00, 
+	 9 (ts=36515.433554516, wall=23:45:18.459) 1.00, 
+	10 (ts=36681.540609550, wall=23:48:04.493) 1.00, 
+device_orient  Wakeup: last 10 events
+	 1 (ts=33540.795974080, wall=22:55:43.734) 0.00, 
+	 2 (ts=34052.169387697, wall=23:04:15.111) 0.00, 
+	 3 (ts=34149.716550566, wall=23:05:52.654) 0.00, 
+	 4 (ts=34980.043553999, wall=23:19:42.982) 0.00, 
+	 5 (ts=36505.582157016, wall=23:45:08.520) 3.00, 
+	 6 (ts=36506.160599203, wall=23:45:09.098) 0.00, 
+	 7 (ts=36517.420964047, wall=23:45:20.360) 0.00, 
+	 8 (ts=36647.342814938, wall=23:47:30.283) 1.00, 
+	 9 (ts=36682.590170227, wall=23:48:05.529) 0.00, 
+	10 (ts=36683.091465696, wall=23:48:06.033) 3.00, 
+oem_shkcam  Wakeup: last 1 events
+	 1 (ts=27.841115306, wall=13:37:10.778) 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 
+lsm6dso Accelerometer Non-wakeup: last 50 events
+	 1 (ts=36902.545844719, wall=23:51:45.499) -0.03, 0.61, 9.76, 
+	 2 (ts=36902.565127011, wall=23:51:45.518) -0.04, 0.60, 9.76, 
+	 3 (ts=36902.584409302, wall=23:51:45.537) -0.02, 0.60, 9.77, 
+	 4 (ts=36902.603691646, wall=23:51:45.556) -0.03, 0.59, 9.76, 
+	 5 (ts=36902.622973938, wall=23:51:45.576) -0.03, 0.60, 9.76, 
+	 6 (ts=36902.642256230, wall=23:51:45.595) -0.03, 0.62, 9.76, 
+	 7 (ts=36902.661538521, wall=23:51:45.614) -0.04, 0.60, 9.77, 
+	 8 (ts=36902.680820813, wall=23:51:45.634) -0.03, 0.61, 9.76, 
+	 9 (ts=36902.700103105, wall=23:51:45.654) -0.03, 0.62, 9.76, 
+	10 (ts=36902.719385396, wall=23:51:45.673) -0.03, 0.60, 9.76, 
+	11 (ts=36902.738667740, wall=23:51:45.691) -0.04, 0.60, 9.77, 
+	12 (ts=36902.757950032, wall=23:51:45.711) -0.03, 0.61, 9.77, 
+	13 (ts=36902.777232323, wall=23:51:45.731) -0.02, 0.61, 9.76, 
+	14 (ts=36902.796514615, wall=23:51:45.749) -0.04, 0.59, 9.76, 
+	15 (ts=36902.815796907, wall=23:51:45.769) -0.03, 0.61, 9.77, 
+	16 (ts=36902.835079198, wall=23:51:45.791) -0.03, 0.61, 9.76, 
+	17 (ts=36902.854361594, wall=23:51:45.808) -0.03, 0.60, 9.77, 
+	18 (ts=36902.873643834, wall=23:51:45.827) -0.04, 0.61, 9.77, 
+	19 (ts=36902.892926125, wall=23:51:45.846) -0.03, 0.61, 9.76, 
+	20 (ts=36902.912208417, wall=23:51:45.865) -0.04, 0.60, 9.76, 
+	21 (ts=36902.931490709, wall=23:51:45.885) -0.03, 0.60, 9.77, 
+	22 (ts=36902.950773000, wall=23:51:45.904) -0.02, 0.60, 9.76, 
+	23 (ts=36902.970055344, wall=23:51:45.923) -0.03, 0.60, 9.77, 
+	24 (ts=36902.989337636, wall=23:51:45.942) -0.03, 0.60, 9.76, 
+	25 (ts=36903.008619927, wall=23:51:45.961) -0.03, 0.60, 9.76, 
+	26 (ts=36903.027902219, wall=23:51:45.981) -0.02, 0.60, 9.77, 
+	27 (ts=36903.047184511, wall=23:51:46.000) -0.03, 0.60, 9.76, 
+	28 (ts=36903.066466802, wall=23:51:46.019) -0.02, 0.60, 9.76, 
+	29 (ts=36903.085749094, wall=23:51:46.038) -0.02, 0.60, 9.76, 
+	30 (ts=36903.105031386, wall=23:51:46.058) -0.03, 0.60, 9.76, 
+	31 (ts=36903.124313730, wall=23:51:46.077) -0.02, 0.60, 9.77, 
+	32 (ts=36903.143596021, wall=23:51:46.097) -0.03, 0.61, 9.76, 
+	33 (ts=36903.162878313, wall=23:51:46.116) -0.02, 0.60, 9.77, 
+	34 (ts=36903.182160605, wall=23:51:46.135) -0.01, 0.62, 9.75, 
+	35 (ts=36903.201442896, wall=23:51:46.154) -0.03, 0.59, 9.77, 
+	36 (ts=36903.220725188, wall=23:51:46.174) -0.05, 0.59, 9.76, 
+	37 (ts=36903.240007532, wall=23:51:46.193) -0.02, 0.60, 9.76, 
+	38 (ts=36903.259289823, wall=23:51:46.212) -0.01, 0.62, 9.76, 
+	39 (ts=36903.278572115, wall=23:51:46.231) -0.04, 0.59, 9.77, 
+	40 (ts=36903.297854407, wall=23:51:46.251) -0.02, 0.59, 9.77, 
+	41 (ts=36903.317136698, wall=23:51:46.270) -0.02, 0.62, 9.77, 
+	42 (ts=36903.336418990, wall=23:51:46.289) -0.03, 0.59, 9.77, 
+	43 (ts=36903.355701282, wall=23:51:46.309) -0.06, 0.60, 9.77, 
+	44 (ts=36903.374983573, wall=23:51:46.328) -0.02, 0.62, 9.76, 
+	45 (ts=36903.394265917, wall=23:51:46.347) -0.02, 0.61, 9.77, 
+	46 (ts=36903.413548209, wall=23:51:46.367) -0.04, 0.60, 9.77, 
+	47 (ts=36903.432830500, wall=23:51:46.386) -0.04, 0.60, 9.77, 
+	48 (ts=36903.452112792, wall=23:51:46.408) -0.02, 0.62, 9.76, 
+	49 (ts=36903.471395084, wall=23:51:46.424) -0.04, 0.59, 9.77, 
+	50 (ts=36903.490677375, wall=23:51:46.446) -0.03, 0.61, 9.75, 
+lsm6dso Gyroscope-Uncalibrated Non-wakeup: last 10 events
+	 1 (ts=4287.398415403, wall=14:48:10.365) -0.03, 0.02, 0.01, 0.00, -0.00, 0.01, 
+	 2 (ts=4287.403237330, wall=14:48:10.365) -0.03, -0.00, 0.01, 0.00, -0.00, 0.01, 
+	 3 (ts=4287.408059309, wall=14:48:10.365) -0.04, -0.03, -0.00, 0.00, -0.00, 0.01, 
+	 4 (ts=4287.412881184, wall=14:48:10.365) -0.04, -0.07, -0.01, 0.00, -0.00, 0.01, 
+	 5 (ts=4287.417703163, wall=14:48:10.365) -0.06, -0.10, -0.02, 0.00, -0.00, 0.01, 
+	 6 (ts=4287.422525142, wall=14:48:10.373) -0.08, -0.14, -0.02, 0.00, -0.00, 0.01, 
+	 7 (ts=4287.427347069, wall=14:48:10.373) -0.11, -0.18, -0.02, 0.00, -0.00, 0.01, 
+	 8 (ts=4287.432168684, wall=14:48:10.382) -0.14, -0.21, -0.03, 0.00, -0.00, 0.01, 
+	 9 (ts=4287.436990976, wall=14:48:10.384) -0.17, -0.24, -0.03, 0.00, -0.00, 0.01, 
+	10 (ts=4287.441812903, wall=14:48:10.390) -0.19, -0.27, -0.03, 0.00, -0.00, 0.01, 
+Game Rotation Vector  Non-wakeup: last 10 events
+	 1 (ts=26226.327729609, wall=20:53:49.278) 0.28, 0.01, 0.54, 0.80, 
+	 2 (ts=26226.344395546, wall=20:53:49.298) 0.27, 0.01, 0.54, 0.80, 
+	 3 (ts=26226.361061484, wall=20:53:49.311) 0.27, 0.01, 0.54, 0.80, 
+	 4 (ts=26226.377727421, wall=20:53:49.326) 0.26, 0.02, 0.54, 0.80, 
+	 5 (ts=26226.394393359, wall=20:53:49.346) 0.27, 0.02, 0.54, 0.80, 
+	 6 (ts=26226.411059296, wall=20:53:49.360) 0.27, 0.02, 0.54, 0.79, 
+	 7 (ts=26226.427725234, wall=20:53:49.379) 0.27, 0.03, 0.55, 0.79, 
+	 8 (ts=26226.444391171, wall=20:53:49.394) 0.28, 0.03, 0.55, 0.79, 
+	 9 (ts=26226.461057109, wall=20:53:49.416) 0.27, 0.04, 0.55, 0.79, 
+	10 (ts=26226.477723046, wall=20:53:49.433) 0.27, 0.04, 0.56, 0.78, 
+bosch_bmp5 Pressure Sensor Non-wakeup: last 10 events
+	 1 (ts=36875.690386669, wall=23:51:18.628) 1029.44, 0.00, 0.00, 
+	 2 (ts=36875.790388335, wall=23:51:18.728) 1029.43, 0.00, 0.00, 
+	 3 (ts=36875.890387085, wall=23:51:18.828) 1029.43, 0.00, 0.00, 
+	 4 (ts=36875.990391356, wall=23:51:18.928) 1029.43, 0.00, 0.00, 
+	 5 (ts=36876.090385002, wall=23:51:19.027) 1029.43, 0.00, 0.00, 
+	 6 (ts=36876.190379481, wall=23:51:19.127) 1029.44, 0.00, 0.00, 
+	 7 (ts=36876.290380054, wall=23:51:19.227) 1029.44, 0.00, 0.00, 
+	 8 (ts=36876.390387971, wall=23:51:19.328) 1029.43, 0.00, 0.00, 
+	 9 (ts=36876.490387085, wall=23:51:19.427) 1029.43, 0.00, 0.00, 
+	10 (ts=36876.590389377, wall=23:51:19.528) 1029.43, 0.00, 0.00, 
+TCS3720ALSPRX Ambient Light Sensor Non-wakeup: last 50 events
+	 1 (ts=36766.286065777, wall=23:49:29.223) 3.25, 0.00, 0.00, 
+	 2 (ts=36767.085281038, wall=23:49:30.022) 2.88, 0.00, 0.00, 
+	 3 (ts=36767.283319683, wall=23:49:30.220) 2.38, 0.00, 0.00, 
+	 4 (ts=36768.083961558, wall=23:49:31.021) 2.12, 0.00, 0.00, 
+	 5 (ts=36768.284673173, wall=23:49:31.221) 3.25, 0.00, 0.00, 
+	 6 (ts=36769.082977965, wall=23:49:32.020) 2.62, 0.00, 0.00, 
+	 7 (ts=36770.286193017, wall=23:49:33.223) 9.75, 0.00, 0.00, 
+	 8 (ts=36774.485603902, wall=23:49:37.422) 16.75, 0.00, 0.00, 
+	 9 (ts=36780.483926796, wall=23:49:43.421) 14.75, 0.00, 0.00, 
+	10 (ts=36781.082418983, wall=23:49:44.019) 13.25, 0.00, 0.00, 
+	11 (ts=36785.885184139, wall=23:49:48.822) 11.50, 0.00, 0.00, 
+	12 (ts=36786.683598827, wall=23:49:49.620) 10.38, 0.00, 0.00, 
+	13 (ts=36789.484151587, wall=23:49:52.421) 9.12, 0.00, 0.00, 
+	14 (ts=36790.684951014, wall=23:49:53.622) 10.25, 0.00, 0.00, 
+	15 (ts=36792.284255389, wall=23:49:55.221) 9.00, 0.00, 0.00, 
+	16 (ts=36792.686464243, wall=23:49:55.623) 16.75, 0.00, 0.00, 
+	17 (ts=36792.884448254, wall=23:49:55.821) 19.50, 0.00, 0.00, 
+	18 (ts=36797.283845806, wall=23:50:00.221) 9.12, 0.00, 0.00, 
+	19 (ts=36801.284907733, wall=23:50:04.222) 13.00, 0.00, 0.00, 
+	20 (ts=36802.283857056, wall=23:50:05.221) 0.00, 0.00, 0.00, 
+	21 (ts=36818.086241587, wall=23:50:21.025) 6.12, 0.00, 0.00, 
+	22 (ts=36831.283728150, wall=23:50:34.221) 9.75, 0.00, 0.00, 
+	23 (ts=36833.884571379, wall=23:50:36.821) 8.75, 0.00, 0.00, 
+	24 (ts=36835.883908358, wall=23:50:38.821) 9.88, 0.00, 0.00, 
+	25 (ts=36841.085942189, wall=23:50:44.023) 15.25, 0.00, 0.00, 
+	26 (ts=36849.084676929, wall=23:50:52.021) 16.75, 0.00, 0.00, 
+	27 (ts=36850.284973023, wall=23:50:53.222) 0.00, 0.00, 0.00, 
+	28 (ts=36855.884086564, wall=23:50:58.821) 5.38, 0.00, 0.00, 
+	29 (ts=36856.083489377, wall=23:50:59.020) 19.62, 0.00, 0.00, 
+	30 (ts=36863.886242189, wall=23:51:06.823) 0.00, 0.00, 0.00, 
+	31 (ts=36866.884259533, wall=23:51:09.821) 20.38, 0.00, 0.00, 
+	32 (ts=36870.484774898, wall=23:51:13.422) 15.62, 0.00, 0.00, 
+	33 (ts=36870.885625314, wall=23:51:13.823) 17.38, 0.00, 0.00, 
+	34 (ts=36878.686771721, wall=23:51:21.623) 15.38, 0.00, 0.00, 
+	35 (ts=36881.884856356, wall=23:51:24.822) 9.62, 0.00, 0.00, 
+	36 (ts=36882.883934273, wall=23:51:25.821) 18.12, 0.00, 0.00, 
+	37 (ts=36888.683453648, wall=23:51:31.620) 11.75, 0.00, 0.00, 
+	38 (ts=36889.083914689, wall=23:51:32.021) 1.00, 0.00, 0.00, 
+	39 (ts=36889.684022762, wall=23:51:32.621) 2.12, 0.00, 0.00, 
+	40 (ts=36889.884132710, wall=23:51:32.823) 19.88, 0.00, 0.00, 
+	41 (ts=36893.285445939, wall=23:51:36.222) 1.50, 0.00, 0.00, 
+	42 (ts=36893.443346564, wall=23:51:36.388) 1.50, 0.00, 0.00, 
+	43 (ts=36893.484556096, wall=23:51:36.421) 0.00, 0.00, 0.00, 
+	44 (ts=36894.282554533, wall=23:51:37.219) 7.50, 0.00, 0.00, 
+	45 (ts=36894.482410314, wall=23:51:37.420) 8.38, 0.00, 0.00, 
+	46 (ts=36895.083387398, wall=23:51:38.020) 9.38, 0.00, 0.00, 
+	47 (ts=36895.882840783, wall=23:51:38.819) 7.00, 0.00, 0.00, 
+	48 (ts=36898.012837919, wall=23:51:40.949) 7.00, 0.00, 0.00, 
+	49 (ts=36898.040974950, wall=23:51:40.986) 7.00, 0.00, 0.00, 
+	50 (ts=36898.464934794, wall=23:51:41.415) 7.00, 0.00, 0.00, 
+Active sensors:
+Dynamic Sensor Manager (handle=0x00000001, connections=1)
+lsm6dso Accelerometer Non-wakeup (handle=0x0100000b, connections=2)
+sns_smd  Wakeup (handle=0x010000ac, connections=2)
+pickup  Wakeup (handle=0x01000552, connections=1)
+oem_shkcam  Wakeup (handle=0x010005b6, connections=1)
+TCS3720 ALSPRX Ambient Light Sensor Raw Data Non-wakeup (handle=0x0100083f, connections=1)
+Collision Detection Collision Detector Sensor Wakeup (handle=0x01000868, connections=1)
+Socket Buffer size = 984 events
+WakeLock Status: not held 
+Mode : NORMAL
+Sensor Privacy: disabled
+
+--- Client Listeners (28 registered) ---
+ Client 0 [PID: 2671, UID: 10243, IsFrozen: true]
+ Client 1 [PID: 21928, UID: 10310, IsFrozen: true]
+ Client 2 [PID: 20057, UID: 10415, IsFrozen: true]
+ Client 3 [PID: 8732, UID: 10419, IsFrozen: true]
+ Client 4 [PID: 29870, UID: 10400, IsFrozen: true]
+ Client 5 [PID: 4673, UID: 10345, IsFrozen: false]
+ Client 6 [PID: 14179, UID: 10307, IsFrozen: true]
+ Client 7 [PID: 7479, UID: 10413, IsFrozen: true]
+ Client 8 [PID: 9681, UID: 10416, IsFrozen: false]
+ Client 9 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 10 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 11 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 12 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 13 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 14 [PID: 21600, UID: 10402, IsFrozen: true]
+ Client 15 [PID: 5953, UID: 10279, IsFrozen: false]
+ Client 16 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 17 [PID: 4673, UID: 10345, IsFrozen: false]
+ Client 18 [PID: 5944, UID: 10304, IsFrozen: false]
+ Client 19 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 20 [PID: 4635, UID: 1000, IsFrozen: true]
+ Client 21 [PID: 10967, UID: 10418, IsFrozen: true]
+ Client 22 [PID: 4460, UID: 10360, IsFrozen: false]
+ Client 23 [PID: 4673, UID: 10345, IsFrozen: false]
+ Client 24 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 25 [PID: 4844, UID: 10292, IsFrozen: false]
+ Client 26 [PID: 13911, UID: 10304, IsFrozen: false]
+ Client 27 [PID: 4216, UID: 10350, IsFrozen: false]
+10 open event connections
+Connection Number: 0 
+	Operating Mode: NORMAL
+	 m16.hmz | WakeLockRefCount 0 | uid 10292 | cache size 0 | max cache size 0 | has sensor access: true
+	 sns_smd  Wakeup 0x010000ac | first flush pending: false | pending flush events 0 
+		Session Start: 23:48:13 | Active Duration: 00:03:44 | Suspended Duration: 00:00:00
+Connection Number: 1 
+	Operating Mode: NORMAL
+	 com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener | WakeLockRefCount 0 | uid 10292 | cache size 0 | max cache size 0 | has sensor access: true
+	 lsm6dso Accelerometer Non-wakeup 0x0100000b | first flush pending: false | pending flush events 0 
+		Session Start: 23:44:07 | Active Duration: 00:07:49 | Suspended Duration: 00:00:00
+Connection Number: 2 
+	Operating Mode: NORMAL
+	 dmyz | WakeLockRefCount 0 | uid 10292 | cache size 0 | max cache size 0 | has sensor access: true
+	 sns_smd  Wakeup 0x010000ac | first flush pending: false | pending flush events 0 
+		Session Start: 23:49:16 | Active Duration: 00:02:41 | Suspended Duration: 00:00:00
+Connection Number: 3 
+	Operating Mode: NORMAL
+	 X.8fE | WakeLockRefCount 0 | uid 10413 | cache size 0 | max cache size 0 | has sensor access: false
+	 linear_acceleration 0x01000065 | first flush pending: false | pending flush events 0 
+		Session Start: 13:37:36 | Active Duration: 00:28:59 | Suspended Duration: 09:45:21
+Connection Number: 4 
+	Operating Mode: NORMAL
+	 com.android.systemui.doze.DozeSensors$TriggerSensor | WakeLockRefCount 0 | uid 10350 | cache size 0 | max cache size 0 | has sensor access: true
+	 pickup  Wakeup 0x01000552 | first flush pending: false | pending flush events 0 
+		Session Start: 23:51:41 | Active Duration: 00:00:16 | Suspended Duration: 00:00:00
+Connection Number: 5 
+	Operating Mode: NORMAL
+	 com.android.server.SensorNotificationService | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0 | has sensor access: true
+	 Dynamic Sensor Manager 0x00000001 | first flush pending: false | pending flush events 0 
+		Session Start: 13:37:01 | Active Duration: 10:14:56 | Suspended Duration: 00:00:00
+Connection Number: 6 
+	Operating Mode: NORMAL
+	 hidl_client_pid_1725 | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0 | has sensor access: true
+	 oem_shkcam  Wakeup 0x010005b6 | first flush pending: false | pending flush events 0 
+		Session Start: 13:36:55 | Active Duration: 10:15:01 | Suspended Duration: 00:00:00
+Connection Number: 7 
+	Operating Mode: NORMAL
+	 hidl_client_pid_3043 | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0 | has sensor access: true
+	 Collision Detection Collision Detector Sensor Wakeup 0x01000868 | first flush pending: false | pending flush events 0 
+		Session Start: 13:36:55 | Active Duration: 10:15:01 | Suspended Duration: 00:00:00
+Connection Number: 8 
+	Operating Mode: NORMAL
+	 hidl_client_pid_3043 | WakeLockRefCount 0 | uid 1000 | cache size 0 | max cache size 0 | has sensor access: true
+	 TCS3720 ALSPRX Ambient Light Sensor Raw Data Non-wakeup 0x0100083f | first flush pending: false | pending flush events 0 
+		Session Start: 13:36:55 | Active Duration: 10:15:01 | Suspended Duration: 00:00:00
+Connection Number: 9 
+	Operating Mode: NORMAL
+	 android.view.OrientationEventListener | WakeLockRefCount 0 | uid 10418 | cache size 0 | max cache size 0 | has sensor access: false
+	 lsm6dso Accelerometer Non-wakeup 0x0100000b | first flush pending: false | pending flush events 0 
+		Session Start: 14:15:26 | Active Duration: 01:07:52 | Suspended Duration: 08:28:38
+0 open direct connections
+Previous Registrations:
+23:51:46 - 0x0100000b pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.systemui.communal.posturing.data.repository.PosturingRepositoryImpl$positionState$1$listener$1)
+    Final Duration: 00:03:42 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:46 - 0x010000ac pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.systemui.util.kotlin.AsyncSensorManagerExtKt$observeTriggerSensor$1$callback$1)
+    Final Duration: 00:03:42 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:46 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.util.kotlin.AsyncSensorManagerExtKt$observeTriggerSensor$1$callback$1)
+    Final Duration: 00:03:41 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:06:21 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:06:23 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:06:23 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:06:22 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:06:23 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:06:23 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:51:41 - 0x01000033 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.systemui.lowlight.AmbientLightModeMonitorImpl$mSensorEventListener$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:41 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:06:22 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:40 + 0x01000033 pid= 4216 uid=10350 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.systemui.lowlight.AmbientLightModeMonitorImpl$mSensorEventListener$1)
+23:51:40 - 0x0100000b pid= 9681 uid=10416 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, android.view.OrientationEventListener)
+    Final Duration: 00:06:14 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:19 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:51:17 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:49:18 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:49:16 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , dmyz)
+23:49:16 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:48:13 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+23:48:04 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.util.kotlin.AsyncSensorManagerExtKt$observeTriggerSensor$1$callback$1)
+23:48:03 + 0x0100000b pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.systemui.communal.posturing.data.repository.PosturingRepositoryImpl$positionState$1$listener$1)
+23:48:03 + 0x010000ac pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.systemui.util.kotlin.AsyncSensorManagerExtKt$observeTriggerSensor$1$callback$1)
+23:48:03 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.util.kotlin.AsyncSensorManagerExtKt$observeTriggerSensor$1$callback$1)
+23:47:16 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:47:14 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:45:25 + 0x0100000b pid= 9681 uid=10416 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, android.view.OrientationEventListener)
+23:45:20 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+23:45:20 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:20 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:20 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:45:19 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:18 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:18 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:45:18 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:45:18 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:45:18 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+23:45:18 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+23:45:18 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+23:45:18 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+23:45:18 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+23:45:18 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+23:45:18 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:45:15 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:15 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:05 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:15 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:15 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:15 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:15 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:15 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:15 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:45:15 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:13 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:45:10 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+23:45:09 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:09 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:09 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:45:09 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:08 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+23:45:08 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+23:45:08 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+23:45:08 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:45:08 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:45:08 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:45:08 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:45:08 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+23:45:08 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+23:45:08 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+23:45:08 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:44:43 + 0x010000ac pid= 2330 uid= 1000 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+23:44:30 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:44:27 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:44:27 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:44:23 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:44:11 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:44:07 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:44:07 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=2147483647us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+23:43:48 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , hjoe)
+23:43:48 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+    Final Duration: 00:00:35 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:43:35 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:43:31 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:43:26 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:43:22 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:43:16 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:43:13 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:43:13 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=2147483647us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+23:42:42 - 0x01000065 pid=10967 uid=10418 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (linear_acceleration        , p.gyr)
+    Final Duration: 00:59:03 | Active Time: 6% (Suspended for 00:55:03 due to sensor access restriction)
+23:34:09 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , hjoe)
+23:34:09 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+    Final Duration: 00:14:25 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:22:44 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:22:43 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   40000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+23:22:38 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:22:37 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   40000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+23:21:22 + 0x010000ac pid= 2330 uid= 1000 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+23:20:07 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:23 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:20:07 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:24 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:20:07 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:25 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:20:07 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:24 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:20:07 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:24 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:20:07 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:24 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:20:07 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:20:06 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:24 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:54 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:50 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:19:50 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:47 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:19:47 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:44 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:19:44 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+23:19:44 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=2147483647us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+23:19:44 - 0x010000ac pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , hjoe)
+    Final Duration: 00:13:27 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:43 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:43 - 0x010000ac pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+    Final Duration: 00:12:20 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:43 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:43 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:19:43 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:42 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+23:19:42 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+23:19:42 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+23:19:42 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:19:42 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:19:42 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:19:42 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+23:19:42 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+23:19:42 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+23:19:42 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:19:42 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:18:21 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:18:20 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:16:20 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:16:18 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:15:00 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+23:15:00 - 0x010000ac pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+    Final Duration: 00:05:44 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:14:18 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:14:16 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:12:15 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:12:13 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:11:09 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , dmyz)
+23:10:13 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:10:11 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:09:15 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+23:08:48 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:08:45 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   40000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+23:08:40 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:08:38 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   40000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+23:08:11 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:08:09 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:07:23 + 0x010000ac pid= 2330 uid= 1000 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+23:06:16 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , hjoe)
+23:06:16 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:16 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:13 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:06:12 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:09 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:06:09 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=2147483647us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+23:06:08 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:15 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:08 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:13 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:08 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:15 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:08 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:15 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:08 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:15 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:08 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:15 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:06:07 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:06:07 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:15 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:54 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+23:05:53 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:53 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:53 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:05:53 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:52 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+23:05:52 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+23:05:52 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+23:05:52 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:52 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:05:52 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:05:52 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:05:52 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:05:52 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+23:05:52 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+23:05:52 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+23:05:05 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:46 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:05 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:51 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:05 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:50 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:05 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:50 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:05 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:51 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:05 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:51 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:05 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+23:05:05 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:50 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:04 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:05:04 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:04:26 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , hjoe)
+23:04:26 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:26 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:22 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:04:22 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:19 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+23:04:19 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=2147483647us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+23:04:19 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+23:04:19 - 0x010000ac pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , hjoe)
+    Final Duration: 00:14:36 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:18 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:18 - 0x010000ac pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+    Final Duration: 00:07:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:18 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:18 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:04:18 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:04:14 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+23:04:14 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+23:04:14 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+23:04:14 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+23:04:14 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:04:14 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+23:04:14 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+23:04:14 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+23:04:14 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+23:04:14 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:08:11 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:03:48 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:03:46 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+23:03:43 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+23:03:43 - 0x010000ac pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+    Final Duration: 00:00:41 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:03:01 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+23:03:01 - 0x010000ac pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+    Final Duration: 00:08:24 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:01:47 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+23:01:45 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+22:59:46 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:59:44 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+22:58:43 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:58:40 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   40000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+22:58:35 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:58:33 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   40000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+22:57:44 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:57:42 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+22:57:18 + 0x010000ac pid= 2330 uid= 1000 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+22:56:03 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:17 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:56:03 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:19 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:56:03 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:19 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:56:03 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:19 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:56:03 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:19 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:56:03 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:19 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:56:03 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:56:03 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:19 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:55:45 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+22:55:45 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:55:45 - 0x010000ac pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+    Final Duration: 00:00:37 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:55:45 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:55:45 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:55:44 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:55:43 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:55:43 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:55:43 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:55:43 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:55:43 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:55:43 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:55:43 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:55:43 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:55:43 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:55:43 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:55:43 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:55:43 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:55:41 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+22:55:07 + 0x010000ac pid= 2330 uid= 1000 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+22:54:36 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , m16.hmz)
+22:54:36 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , dmyz)
+22:53:55 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:55 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:55 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:55 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:55 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:54 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:53:54 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:54 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:54 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:53:52 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:53:52 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:53:52 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:52 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:53:52 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:52 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:53:52 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:53:52 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:53:52 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:52 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:53:52 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:50 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+22:53:50 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:50 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:50 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:53:49 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:49 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:53:49 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:53:49 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:53:49 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:49 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:53:49 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:49 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:48 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:53:48 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:53:48 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:53:48 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:53:41 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:09 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:41 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:10 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:41 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:11 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:41 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:10 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:41 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:11 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:41 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:10 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:41 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:53:41 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:10 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:41 - 0x0100000b pid= 2671 uid=10243 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, android.view.OrientationEventListener)
+    Final Duration: 00:00:08 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:35 - 0x0100000b pid= 2671 uid=10243 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.camera.SensorStateManager)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:35 + 0x0100000b pid= 2671 uid=10243 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.camera.SensorStateManager)
+22:53:34 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:33 - 0x0100000b pid= 2671 uid=10243 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.camera.SensorStateManager)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:33 + 0x0100000b pid= 2671 uid=10243 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.camera.SensorStateManager)
+22:53:32 + 0x0100000b pid= 2671 uid=10243 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, android.view.OrientationEventListener)
+22:53:32 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+22:53:32 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+22:53:32 - 0x010000ac pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+    Final Duration: 00:01:18 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:32 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:32 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:32 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:53:31 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:31 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:30 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:53:30 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:53:30 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:53:30 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:30 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:53:30 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:53:30 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:30 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:30 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:53:30 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:53:30 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:53:29 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   40000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.AnyMotionDetector$1)
+22:53:15 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:15 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:15 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:15 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:15 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:15 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:53:15 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:14 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:14 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:10 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:53:10 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:53:10 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:53:10 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:02:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:53:10 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:53:10 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:10 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:53:10 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:53:10 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:53:10 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:52:14 + 0x010000ac pid= 2330 uid= 1000 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , com.android.server.DeviceIdleController$MotionListener)
+22:51:38 - 0x0100003d pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:36 + 0x0100003d pid= 4844 uid=10292 samplingPeriod=  100000us batchingPeriod=       0us result=OK (sensor, package): (bosch_bmp5 Pressure Sensor Non-wakeup, com.google.android.gms.libs.location.validation.platform.SensorListenerAdapter)
+22:51:04 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:04 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:04 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:04 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:04 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:04 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:51:03 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:04 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:03 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:51:03 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:59 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:50:59 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:50:59 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:50:59 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:59 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:50:59 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:50:59 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:50:59 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:50:59 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:50:59 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:50:59 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:05 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:59 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:08 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:59 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:08 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:59 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:08 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:59 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:08 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:59 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:08 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:58 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:50:58 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:07 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:58 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:58 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:50:53 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+22:50:53 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:53 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:53 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:50:52 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:51 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:50:51 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:50:51 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:50:50 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:50:50 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:50:50 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:50:50 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:50:50 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:50:50 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:50:50 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:50:50 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:49:53 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:36 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:53 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:38 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:53 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:38 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:53 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:38 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:53 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:38 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:53 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:38 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:53 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:49:53 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:38 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:43 + 0x010000ac pid= 4844 uid=10292 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (sns_smd  Wakeup            , hjoe)
+22:49:43 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+    Final Duration: 00:00:06 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:43 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:39 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+22:49:39 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+    Final Duration: 00:00:03 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:36 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.SensorScanner$SensorEventListenerAdapter)
+22:49:36 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   20000us batchingPeriod=2147483647us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.location.collectionlib.BatchSignalCollector$BatchSensorEventListener)
+22:49:17 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+22:49:16 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:16 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:16 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:49:16 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:15 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:49:15 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:49:15 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:49:15 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:49:15 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:49:15 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:49:15 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:49:15 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:49:15 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:49:15 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:49:14 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:48:07 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:28 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:30 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:30 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:30 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:30 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:30 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:48:07 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:30 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:48:07 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:47:39 + 0x0100000b pid= 4844 uid=10292 samplingPeriod=   10000us batchingPeriod= 5000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+22:47:38 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:47:38 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:01 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:47:38 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:47:38 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:47:37 + 0x01000565 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+22:47:37 + 0x0100055b pid= 2330 uid= 1000 samplingPeriod= 1000000us batchingPeriod=       0us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+22:47:37 + 0x01000899 pid= 2330 uid= 1000 samplingPeriod=  400000us batchingPeriod=       0us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+22:47:37 - 0x01000552 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:47:37 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, com.android.server.biometrics.log.ALSProbe$1)
+22:47:37 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:47:37 + 0x01000033 pid= 2330 uid= 1000 samplingPeriod=  500000us batchingPeriod=       0us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+22:47:37 + 0x0100000b pid= 2330 uid= 1000 samplingPeriod=  200000us batchingPeriod= 2000000us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+22:47:37 + 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   66667us batchingPeriod=       0us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+22:47:37 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:47:37 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:46:33 - 0x0100000b pid= 4844 uid=10292 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.google.android.gms.personalsafety.ars.datacollection.SensorStreamer$SensorEventListener)
+    Final Duration: 00:00:44 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 - 0x01000565 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (knuckle  Non-wakeup        , hidl_client_pid_1753)
+    Final Duration: 00:00:45 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 - 0x0100055b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (screen_down  Non-wakeup    , hidl_client_pid_1753)
+    Final Duration: 00:00:45 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 - 0x0100000b pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (lsm6dso Accelerometer Non-wakeup, com.android.server.power.FaceDownDetector)
+    Final Duration: 00:00:45 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 - 0x01000899 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (GripPostureDetection  Non-wakeup, hidl_client_pid_1753)
+    Final Duration: 00:00:45 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 - 0x01000033 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (TCS3720ALSPRX Ambient Light Sensor Non-wakeup, hidl_client_pid_1662)
+    Final Duration: 00:00:45 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 + 0x01000552 pid= 4216 uid=10350 samplingPeriod=       0us batchingPeriod=       0us result=OK (sensor, package): (pickup  Wakeup             , com.android.systemui.doze.DozeSensors$TriggerSensor)
+22:46:33 - 0x01000110 pid= 2330 uid= 1000 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (device_orient  Wakeup      , com.android.server.wm.WindowOrientationListener$OrientationSensorJudge)
+    Final Duration: 00:00:45 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 - 0x01000052 pid= 4216 uid=10350 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:33 + 0x01000052 pid= 4216 uid=10350 samplingPeriod=   20000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, com.android.systemui.util.sensors.ThresholdSensorImpl$1)
+22:46:28 - 0x01000052 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:28 - 0x0100005b pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:28 - 0x01000065 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:26 + 0x01000052 pid=21600 uid=10402 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+22:46:26 + 0x01000065 pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+22:46:26 + 0x0100005b pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+22:46:25 - 0x01000052 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:25 - 0x0100005b pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:25 - 0x01000065 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:25 + 0x01000052 pid=21600 uid=10402 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+22:46:25 + 0x01000065 pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+22:46:25 + 0x0100005b pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+22:46:24 - 0x01000052 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:24 - 0x0100005b pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:24 - 0x01000065 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:00 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:24 + 0x01000052 pid=21600 uid=10402 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+22:46:24 + 0x01000065 pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+22:46:24 + 0x0100005b pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+22:46:21 - 0x01000052 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+    Final Duration: 00:00:18 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:21 - 0x0100005b pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:18 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:21 - 0x01000065 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:18 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:46:03 + 0x01000052 pid=21600 uid=10402 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+22:46:03 + 0x01000065 pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+22:46:03 + 0x0100005b pid=21600 uid=10402 samplingPeriod=   30000us batchingPeriod=       0us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+22:45:54 - 0x01000052 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:45:54 - 0x0100005b pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (gravity  Non-wakeup        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:45:54 - 0x01000065 pid=21600 uid=10402 samplingPeriod=   N/A  us batchingPeriod=   N/A  us result=OK (sensor, package): (linear_acceleration        , org.telegram.messenger.MediaController)
+    Final Duration: 00:00:02 | Active Time: 100% (Suspended for 00:00:00 due to sensor access restriction)
+22:45:51 + 0x01000052 pid=21600 uid=10402 samplingPeriod=  200000us batchingPeriod=       0us result=OK (sensor, package): (proximity Proximity Sensor Wakeup, org.telegram.messenger.MediaController)
