@@ -1,856 +1,578 @@
-[    0.005664] scm_call failed: func id 0x42001907, ret: -1, syscall returns: 0x0, 0x0, 0x0
-[    0.005672] scm_mem_protection_init_do_qrks: SCM call failed
-[    0.005817] scm_mem_protection_init: SCM call failed
-[    0.240714] Unable to find DT property: qcom,msm-imem-download_mode
-[    0.241354] Unable to find DT property: qcom,msm-imem-emergency_download_mode
-[    0.246713] msm-dcc 1023000.dcc_v2: DCC list passed 3
-[    0.247008] msm-dcc 1023000.dcc_v2: DCC list passed 6
-[    0.247336] msm-dcc 1023000.dcc_v2: DCC list passed 7
-[    0.255365] rpmh_regulator_probe: smpf1: could not find RPMh address for resource
-[    0.255438] rpmh_regulator_probe: smpf2: could not find RPMh address for resource
-[    0.255498] rpmh_regulator_probe: ldof1: could not find RPMh address for resource
-[    0.255561] rpmh_regulator_probe: ldof2: could not find RPMh address for resource
-[    0.255626] rpmh_regulator_probe: ldof3: could not find RPMh address for resource
-[    0.255698] rpmh_regulator_probe: ldof5: could not find RPMh address for resource
-[    0.255784] rpmh_regulator_probe: ldof6: could not find RPMh address for resource
-[    0.255857] rpmh_regulator_probe: ldof7: could not find RPMh address for resource
-[    0.261183] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.261581] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.261591] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: read 0x4 failed
-[    0.261598] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: failed to populate gpio 0, ret=-5
-[    0.340980] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.340988] video_cc-kona abf0000.qcom,videocc: Unable to register for bw voting
-[    0.343884] msm_bus_fabric_rpmh_init_driver
-[    0.343973] msm_bus: Probe started
-[    0.346386] msm_bus: DT Parsing complete
-[    0.347539] msm_bus_fab_init_noc_ops: Invalid Bus type
-[    0.347574] msm_bus_fab_init_noc_ops: Invalid Bus type
-[    0.347717] msm_bus_fab_init_noc_ops: Invalid Bus type
-[    0.363962] register_client_adhoc:find path.src 161 dest 627
-[    0.364146] register_client_adhoc:Client handle 1 apps_smmu
-[    0.364897] register_client_adhoc:find path.src 161 dest 627
-[    0.365069] register_client_adhoc:Client handle 2 apps_smmu
-[    0.365187] register_client_adhoc:find path.src 161 dest 627
-[    0.365361] register_client_adhoc:Client handle 3 apps_smmu
-[    0.365504] register_client_adhoc:find path.src 22 dest 773
-[    0.365590] register_client_adhoc:Client handle 4 mnoc_hf_0_tbu
-[    0.365727] register_client_adhoc:find path.src 22 dest 773
-[    0.365809] register_client_adhoc:Client handle 5 mnoc_hf_1_tbu
-[    0.365916] register_client_adhoc:find path.src 154 dest 10070
-[    0.365981] register_client_adhoc:Client handle 6 apps_smmu
-[    0.366084] register_client_adhoc:find path.src 154 dest 10070
-[    0.366144] register_client_adhoc:Client handle 7 apps_smmu
-[    0.366253] register_client_adhoc:find path.src 161 dest 627
-[    0.366432] register_client_adhoc:Client handle 8 apps_smmu
-[    0.366557] register_client_adhoc:find path.src 161 dest 627
-[    0.366745] register_client_adhoc:Client handle 9 apps_smmu
-[    0.366885] register_client_adhoc:find path.src 137 dest 772
-[    0.366974] register_client_adhoc:Client handle 10 mnoc_sf_0_tbu
-[    0.367103] register_client_adhoc:find path.src 137 dest 772
-[    0.367186] register_client_adhoc:Client handle 11 mnoc_sf_1_tbu
-[    0.367624] Error: Driver 'arm-smmu' is already registered, aborting...
-[    0.369174] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.369181] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800: Register read failed, addr=0x0805, rc=-5
-[    0.374394] virt zone: sensor[gpuss-1-usr] read error:-22
-[    0.374431] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    0.374446] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    0.374459] virt zone: sensor[skin-therm-usr] read error:-22
-[    0.374473] virt zone: sensor[skin-msm-therm-usr] read error:-22
-[    0.374485] virt zone: sensor[chg-therm-usr] read error:-22
-[    0.420001] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.420046] read failed rc=-5
-[    0.420048] Invalid REVID peripheral type: 00
-[    0.420416] register_client_adhoc:find path.src 90 dest 770
-[    0.420552] register_client_adhoc:find path.src 129 dest 512
-[    0.420580] register_client_adhoc:find path.src 90 dest 585
-[    0.420675] register_client_adhoc:find path.src 1 dest 676
-[    0.420756] register_client_adhoc:find path.src 143 dest 777
-[    0.420781] register_client_adhoc:Client handle 12 ipa
-[    0.441838] pcie:pcie_init.
-[    0.442434] register_client_adhoc:find path.src 45 dest 512
-[    0.442597] register_client_adhoc:Client handle 13 pcie0
-[    0.442875] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
-[    0.442877] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
-[    0.443082] register_client_adhoc:find path.src 108 dest 512
-[    0.443153] register_client_adhoc:Client handle 14 pcie2
-[    0.443302] msm_pcie_get_reg: PCIe: RC2: no tcsr resource found.
-[    0.443305] msm_pcie_get_reg: PCIe: RC2: no rumi resource found.
-[    0.443309] msm_pcie_probe: PCIe: RC2 could not get pinctrl sleep state
-[    0.443598] register_client_adhoc:find path.src 22 dest 512
-[    0.443680] register_client_adhoc:find path.src 23 dest 512
-[    0.443750] register_client_adhoc:Client handle 15 bus-proxy-client
-[    0.445108] register_client_adhoc:find path.src 1 dest 589
-[    0.445200] register_client_adhoc:Client handle 16 bps_gdsc_ahb
-[    0.445434] register_client_adhoc:find path.src 1 dest 589
-[    0.445497] register_client_adhoc:Client handle 17 ife_0_gdsc_ahb
-[    0.445596] register_client_adhoc:find path.src 1 dest 589
-[    0.445660] register_client_adhoc:Client handle 18 ife_1_gdsc_ahb
-[    0.445762] register_client_adhoc:find path.src 1 dest 589
-[    0.445825] register_client_adhoc:Client handle 19 ipe_0_gdsc_ahb
-[    0.445922] register_client_adhoc:find path.src 1 dest 589
-[    0.445984] register_client_adhoc:Client handle 20 sbi_gdsc_ahb
-[    0.446084] register_client_adhoc:find path.src 1 dest 589
-[    0.446148] register_client_adhoc:Client handle 21 titan_top_gdsc_ahb
-[    0.446250] register_client_adhoc:find path.src 1 dest 590
-[    0.446316] register_client_adhoc:Client handle 22 mdss_core_gdsc_ahb
-[    0.446505] register_client_adhoc:find path.src 1 dest 596
-[    0.446574] register_client_adhoc:Client handle 23 mvs0_gdsc_ahb
-[    0.446726] register_client_adhoc:find path.src 1 dest 596
-[    0.446794] register_client_adhoc:Client handle 24 mvs0c_gdsc_ahb
-[    0.446923] register_client_adhoc:find path.src 1 dest 596
-[    0.446992] register_client_adhoc:Client handle 25 mvs1_gdsc_ahb
-[    0.447117] register_client_adhoc:find path.src 1 dest 596
-[    0.447185] register_client_adhoc:Client handle 26 mvs1c_gdsc_ahb
-[    0.447332] register_client_adhoc:find path.src 1 dest 589
-[    0.447400] register_client_adhoc:Client handle 27 clk_camcc_debugfs
-[    0.454315] register_client_adhoc:find path.src 1 dest 590
-[    0.454389] register_client_adhoc:Client handle 28 clk_dispcc_debugfs
-[    0.457664] register_client_adhoc:find path.src 1 dest 596
-[    0.457735] register_client_adhoc:Client handle 29 clk_videocc_debugfs
-[    1.266194] register_client_adhoc:find path.src 125 dest 512
-[    1.266399] register_client_adhoc:Client handle 30 scm_pas
-[    1.266417] minidump-id not found for ipa_fws
-[    1.266517] minidump-id not found for ipa_uc
-[    1.266613] minidump-id not found for adsp
-[    1.266853] register_client_adhoc:find path.src 154 dest 10070
-[    1.266878] register_client_adhoc:Client handle 31 pil-cdsp
-[    1.266883] minidump-id not found for cdsp
-[    1.267065] register_client_adhoc:find path.src 63 dest 512
-[    1.267151] register_client_adhoc:Client handle 32 pil-venus
-[    1.267155] minidump-id not found for venus
-[    1.267220] minidump-id not found for spss
-[    1.267313] minidump-id not found for cvpss
-[    1.267361] minidump-id not found for npu
-[    1.267399] subsys-restart: __get_smem_state(): Could not get smem-states qcom,force-stop
-[    1.267502] minidump-id not found for slpi
-[    1.267638] minidump-id not found for a650_zap
-[    1.269552] msm_geni_serial 998000.qcom,qup_uart: Failed to create dbg dir
-[    1.270215] register_client_adhoc:find path.src 1 dest 618
-[    1.270306] register_client_adhoc:Client handle 33 msm-rng-noc
-[    1.283056] register_client_adhoc:find path.src 125 dest 512
-[    1.283254] register_client_adhoc:Client handle 34 qcedev-noc
-[    1.286052] register_client_adhoc:find path.src 125 dest 512
-[    1.286162] register_client_adhoc:Client handle 35 qcrypto-noc
-[    1.289339] register_client_adhoc:find path.src 123 dest 512
-[    1.289452] register_client_adhoc:find path.src 1 dest 757
-[    1.289534] register_client_adhoc:Client handle 36 ufshc_mem
-[    1.301738] cnss_utils: Unable to create debugfs -19
-[    1.301963] wcnss_pre_alloc_init: Failed to create debugfs dir
-[    1.302138] cnss: CPR PMIC address is not available for smpf2
-[    1.302245] cnss: Failed to get regulator vdd-wlan-core, no such device
-[    1.302283] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
-[    1.302303] cnss: Failed to get regulator vdd-wlan-xtal-aon, no such device
-[    1.302331] cnss: Failed to get regulator vdd-wlan-xtal, no such device
-[    1.302359] cnss: Failed to get regulator vdd-wlan, no such device
-[    1.302393] cnss: Failed to get regulator vdd-wlan-ctrl1, no such device
-[    1.302426] cnss: Failed to get regulator vdd-wlan-ctrl2, no such device
-[    1.302451] cnss: Failed to get regulator vdd-wlan-sp2t, no such device
-[    1.302509] cnss: Failed to get regulator wlan-soc-swreg, no such device
-[    1.302647] cnss: Failed to get regulator vdd-wlan-en, no such device
-[    1.303477] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    1.303495] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    1.304013] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    1.304046] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    1.304377] msm-dwc3 a600000.ssusb: unable to get ssphy device
-[    1.304914] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
-[    1.306600] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
-[    1.312790] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
-[    1.315884] ssusb redriver 2-001a: failed to get phandle for redriver
-[    1.319425] register_client_adhoc:find path.src 154 dest 512
-[    1.319517] register_client_adhoc:find path.src 154 dest 620
-[    1.319612] register_client_adhoc:Client handle 37 9900000.qcom,msm_npu
-[    1.321986] NPU_ERR: npu_debugfs_init: 303 debugfs_create_dir for npu failed, error -19
-[    1.413561] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
-[    1.423357] rtc6226: rtc6226_pinctrl_init: target does not use pinctrl
-[    1.423362] rtc6226: rtc6226_i2c_probe: rtc6226_pinctrl_init returned -19
-[    1.423947] Couldn't parse device tree rc=-517
-[    1.433485] debugfs is not enabled in the kernel
-[    1.434620] get_battery_serialnumber: Battsn unused
-[    1.436701] FG: fg_psy_get_property: unsupported property 4
-[    1.464449] msm_pcie_enumerate: PCIe: RC0: has already been enumerated.
-[    1.469946] register_client_adhoc:find path.src 1 dest 627
-[    1.470095] register_client_adhoc:Client handle 38 soc:qcom,snoc_cnoc_keepalive
-[    1.470229] register_client_adhoc:find path.src 1 dest 770
-[    1.470256] register_client_adhoc:Client handle 39 soc:qcom,cpu-cpu-llcc-bw
-[    1.470599] register_client_adhoc:find path.src 129 dest 512
-[    1.470619] register_client_adhoc:Client handle 40 soc:qcom,cpu-llcc-ddr-bw
-[    1.470964] register_client_adhoc:find path.src 154 dest 770
-[    1.471001] register_client_adhoc:Client handle 41 soc:qcom,npu-npu-llcc-bw
-[    1.471067] register_client_adhoc:find path.src 770 dest 512
-[    1.471101] register_client_adhoc:Client handle 42 soc:qcom,npu-llcc-ddr-bw
-[    1.471162] register_client_adhoc:find path.src 154 dest 512
-[    1.471221] register_client_adhoc:Client handle 43 soc:qcom,npudsp-npu-ddr-bw
-[    1.471290] register_client_adhoc:find path.src 154 dest 512
-[    1.471352] register_client_adhoc:Client handle 44 soc:qcom,npu-npu-ddr-latfloor
-[    1.471377] register_client_adhoc:find path.src 1 dest 770
-[    1.471397] register_client_adhoc:Client handle 45 soc:qcom,cpu0-cpu-llcc-lat
-[    1.471449] register_client_adhoc:find path.src 1 dest 770
-[    1.471469] register_client_adhoc:Client handle 46 soc:qcom,cpu4-cpu-llcc-lat
-[    1.471522] register_client_adhoc:find path.src 129 dest 512
-[    1.471544] register_client_adhoc:Client handle 47 soc:qcom,cpu0-llcc-ddr-lat
-[    1.471600] register_client_adhoc:find path.src 129 dest 512
-[    1.471621] register_client_adhoc:Client handle 48 soc:qcom,cpu4-llcc-ddr-lat
-[    1.471673] register_client_adhoc:find path.src 129 dest 512
-[    1.471693] register_client_adhoc:Client handle 49 soc:qcom,cpu4-cpu-ddr-latfloor
-[    1.471810] register_client_adhoc:find path.src 26 dest 512
-[    1.471856] register_client_adhoc:Client handle 51 soc:qcom,gpubw
-[    1.474398] register_client_adhoc:find path.src 1 dest 590
-[    1.474474] register_client_adhoc:Client handle 50 disp_rsc_reg
-[    1.474482] register_client_adhoc:find path.src 20003 dest 20513
-[    1.474542] register_client_adhoc:find path.src 20004 dest 20513
-[    1.474592] register_client_adhoc:Client handle 52 disp_rsc_mnoc_llcc
-[    1.474600] register_client_adhoc:find path.src 20000 dest 20512
-[    1.474624] register_client_adhoc:Client handle 53 disp_rsc_ebi
-[    1.475160] AXI: get_pdata(): Error: Client name not found
-[    1.475162] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
-[    1.475192] AXI: get_pdata(): Error: Client name not found
-[    1.475193] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
-[    1.475432] OF: graph: no port node found in /soc/qcom,dsi-display-primary
-[    1.475509] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] invalid number of elements -22
-[    1.475511] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] failed to parse fod dim lut
-[    1.478179] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 1
-[    1.481307] register_client_adhoc:find path.src 1 dest 589
-[    1.481410] register_client_adhoc:Client handle 54 cam_ahb
-[    1.481456] register_client_adhoc:find path.src 170 dest 512
-[    1.481527] register_client_adhoc:Client handle 55 cam_hf_0_mnoc
-[    1.481578] register_client_adhoc:find path.src 137 dest 512
-[    1.481646] register_client_adhoc:Client handle 56 cam_sf_0_mnoc
-[    1.481688] register_client_adhoc:find path.src 171 dest 512
-[    1.481755] register_client_adhoc:Client handle 57 cam_sf_icp_mnoc
-[    1.484387] ufshcd_slave_configure: ufsfeature set lun 0 sdev 0000000038e61539 q 000000000ebb4892
-[    1.484947] ufshcd_slave_configure: ufsfeature set lun 1 sdev 000000007d257c3a q 000000002905e08c
-[    1.485399] ufshcd_slave_configure: ufsfeature set lun 2 sdev 000000006ef2ab91 q 00000000495ab61e
-[    1.485820] ufshcd_slave_configure: ufsfeature set lun 3 sdev 0000000006274780 q 00000000cbe1bf9b
-[    1.486264] ufshcd_slave_configure: ufsfeature set lun 4 sdev 00000000aab92652 q 0000000078eb02c1
-[    1.486711] ufshcd_slave_configure: ufsfeature set lun 5 sdev 00000000b84e5edc q 00000000602f5bf5
-[    1.495960] minidump-id not found for npu
-[    1.497293] register_client_adhoc:find path.src 26 dest 512
-[    1.497373] register_client_adhoc:Client handle 58 grp3d
-[    1.497380] register_client_adhoc:find path.src 26 dest 10036
-[    1.497430] register_client_adhoc:Client handle 59 cnoc
-[    1.497433] query_client_usecase_all: query_start
-[    1.497445] query_client_usecase_all: query_start
-[    1.514926] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
-[    1.515006] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    1.515016] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    1.515418] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    1.515432] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    1.515773] msm-dwc3 a600000.ssusb: unable to get ssphy device
-[    1.515963] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
-[    1.516007] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    1.516010] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
-[    1.516012] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    1.516014] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
-[    1.516735] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
-[    1.522241] ssusb redriver 2-001a: failed to get phandle for redriver
-[    1.522696] QCOM-BATT: qcom_batt_create_debugfs: Couldn't create battery debugfs rc=-19
-[    1.523643] pm8150b_charger: smblib_usb_plugin_locked: battery supply smblib_usb_plugin_locked
-[    1.523646] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[    1.523740] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[    1.524339] batt power supply prop 4 not supported
-[    1.525820] get_battery_serialnumber: Battsn unused
-[    1.525845] pm8150b_charger: jeita_update_work: Couldn't get fcc values for soft JEITA rc=-22
-[    1.533370] batt power supply prop 4 not supported
-[    1.543060] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
-[    1.543114] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    1.543121] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    1.543491] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    1.543502] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    1.543831] msm-dwc3 a600000.ssusb: unable to get ssphy device
-[    1.544021] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
-[    1.544061] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    1.544064] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
-[    1.544066] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    1.544067] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
-[    1.545023] i2c_geni 884000.i2c: i2c error :-107
-[    1.545026] fsa4480-driver 2-0042: fsa4480_probe,device id read failed:-107
-[    1.545140] i2c_geni 884000.i2c: i2c error :-107
-[    1.545253] i2c_geni 884000.i2c: i2c error :-107
-[    1.545366] i2c_geni 884000.i2c: i2c error :-107
-[    1.545479] i2c_geni 884000.i2c: i2c error :-107
-[    1.545592] i2c_geni 884000.i2c: i2c error :-107
-[    1.545705] i2c_geni 884000.i2c: i2c error :-107
-[    1.545819] i2c_geni 884000.i2c: i2c error :-107
-[    1.545932] i2c_geni 884000.i2c: i2c error :-107
-[    1.546045] i2c_geni 884000.i2c: i2c error :-107
-[    1.546158] i2c_geni 884000.i2c: i2c error :-107
-[    1.551946] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    1.551954] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    1.552301] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    1.552310] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    1.552614] register_client_adhoc:find path.src 61 dest 512
-[    1.552754] register_client_adhoc:find path.src 61 dest 676
-[    1.552866] register_client_adhoc:find path.src 1 dest 583
-[    1.552934] register_client_adhoc:Client handle 60 usb0
-[    1.552948] msm-dwc3 a600000.ssusb: setting pm-qos-latency to zero.
-[    1.552982] msm-dwc3 a600000.ssusb: undefined state
-[    1.552993] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exiting lpm
-[    1.553108] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[    1.554499] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[    1.563147] i2c_geni 884000.i2c: i2c error :-107
-[    1.563272] i2c_geni 884000.i2c: i2c error :-107
-[    1.563463] i2c_geni 884000.i2c: i2c error :-107
-[    1.563665] register_client_adhoc:find path.src 1 dest 590
-[    1.563792] register_client_adhoc:Client handle 61 mdss_reg
-[    1.563801] register_client_adhoc:find path.src 22 dest 512
-[    1.563897] register_client_adhoc:find path.src 23 dest 512
-[    1.563979] register_client_adhoc:Client handle 62 mdss_sde
-[    1.566820] [drm:dsi_panel_get_mode] *ERROR* [msm-dsi-error]: failed to parse panel phy ldo rc=-22
-[    1.573052] cam_cc_sleep_clk_src: CXO configuration failed
-[    1.573572] msm_bus_late_init: Remove handoff bw requests
-[    1.574140] Warning: unable to open an initial console.
-[    1.584053] register_client_adhoc:find path.src 45 dest 512
-[    1.584255] register_client_adhoc:Client handle 15 msm-cnss
-[    1.595056] sec_ts_init
-[    1.595293] sec_ts 1-0048: sec_ts_parse_dt: i2c buffer limit: 256, lcd_id:000000, bringup:0, FW:(null)(-22), id:-2,-2, mis_cal:0 dex:0, gesture:0
-[    1.597464] sec_ts 1-0048: sec_ts_power: on: pm8150_l13:on, pm8150a_l1:on
-[    1.610058] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_POST_RESET_EVENT received
-[    1.610081] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
-[    1.610087] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
-[    1.610090] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
-[    1.610094] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[    1.610101] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381010
-[    1.610104] msm-dwc3 a600000.ssusb: DWC3-msm runtime idle
-[    1.610109] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[    1.610111] msm-dwc3 a600000.ssusb: DWC3-msm runtime suspend
-[    1.610640] msm-dwc3 a600000.ssusb: dwc3_msm_suspend: power collapse
-[    1.610893] msm-dwc3 a600000.ssusb: idle state
-[    1.610909] msm-dwc3 a600000.ssusb: Cable disconnected
-[    1.685785] sec_ts 1-0048: sec_ts_fn_init: Failed to create input symbolic link
-[    1.690735] sec_ts 1-0048: sec_ts_probe: done
-[    1.705913] init: [libfs_avb] Invalid hash size: 
-[    1.705920] init: [libfs_avb] Failed to verify vbmeta digest
-[    1.710615] init: Could not update logical partition
-[    1.710665] init: Could not update logical partition
-[    1.793079] libprocessgroup: Failed to read task profiles from /etc/task_profiles.json
-[    1.793086] libprocessgroup: Loading /etc/task_profiles.json for [1] failed
-[    2.330963] init: Could not start service 'charger' as part of class 'default': Cannot find '/system/bin/charger': No such file or directory
-[    2.334625] msm-dwc3 a600000.ssusb: XCVR: ID set
-[    2.334632] msm-dwc3 a600000.ssusb: XCVR: BSV set
-[    2.334634] msm-dwc3 a600000.ssusb: XCVR: SUSP clear
-[    2.334636] msm-dwc3 a600000.ssusb: eud: state:0 active:0 hs_phy_flags:0x0
-[    2.334663] msm-dwc3 a600000.ssusb: idle state
-[    2.334676] msm-dwc3 a600000.ssusb: b_sess_vld
-[    2.334688] msm-dwc3 a600000.ssusb: DWC3-msm runtime resume
-[    2.334696] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exiting lpm
-[    2.334959] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[    2.336899] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[    2.344288] cutils-trace: Error opening trace file: No such file or directory (2)
-[    2.390066] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_POST_RESET_EVENT received
-[    2.390096] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
-[    2.390098] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
-[    2.390102] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
-[    2.390107] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
-[    2.390110] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
-[    2.390114] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[    2.390122] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[    2.390144] msm-dwc3 a600000.ssusb: dwc3_otg_start_peripheral: turn on gadget dwc3-gadget
-[    2.391428] msm-dwc3 a600000.ssusb: peripheral state
-[    2.391444] msm-dwc3 a600000.ssusb: XCVR: ID set
-[    2.391447] msm-dwc3 a600000.ssusb: XCVR: BSV set
-[    2.391449] msm-dwc3 a600000.ssusb: XCVR: SUSP clear
-[    2.391452] msm-dwc3 a600000.ssusb: eud: state:0 active:0 hs_phy_flags:0x0
-[    2.391467] msm-dwc3 a600000.ssusb: peripheral state
-[    2.403706] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    2.403729] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    2.870336] init: Unable to set property 'init.svc.adbd' from uid:0 gid:0 pid:1: Read-only property was already set
-[    2.870538] libprocessgroup: Failed to open /sys/fs/cgroup/system/uid_0/pid_604/cgroup.procs: No such file or directory
-[    2.870704] init: Unable to set property 'init.svc.adbd' from uid:0 gid:0 pid:1: Read-only property was already set
-[    2.874582] init: Unable to set property 'init.svc.adbd' from uid:0 gid:0 pid:1: Read-only property was already set
-[    2.901974] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
-[    2.901986] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=38103C
-[    2.902139] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler link state = 0x0004
-[    2.902147] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
-[    2.902153] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[    2.953370] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_CLEAR_DB
-[    2.953387] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_OTG_EVENT received
-[    2.953402] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_SETUP
-[    2.953411] msm-dwc3 a600000.ssusb: Evt buf 00000000b42aeb63 dma efffc000 length 4096
-[    2.953420] msm-dwc3 a600000.ssusb: Evt buf 000000005b86aa6b dma efffd000 length 4096
-[    2.953431] msm-dwc3 a600000.ssusb: Evt buf 000000001d5055ec dma efffe000 length 4096
-[    3.072088] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[    3.680038] get_battery_serialnumber: Battsn unused
-[    3.680052] QCOM-STEPCHG: read_range_data_from_node: Count qcom,step-chg-ranges failed, rc=-22
-[    3.680055] QCOM-STEPCHG: read_range_data_from_node: Count qcom,jeita-fcc-ranges failed, rc=-22
-[    3.680057] QCOM-STEPCHG: read_range_data_from_node: Count qcom,jeita-fv-ranges failed, rc=-22
-[    4.533392] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:1
-[    4.533744] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    4.533762] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    6.666700] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[    6.666811] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    6.666824] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    8.800060] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[    8.800211] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    8.800224] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   10.933398] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   10.933508] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   10.933520] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   12.357539] android.hardware.health-service.qti: Cannot open battery/capacity, fd=-1
-[   12.357765] healthd: Failed to lookup glob /sys/devices/platform/*gcdd/system_dev_stat: -3
-[   12.360124] cutils-trace: Error opening trace file: No such file or directory (2)
-[   13.066742] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   13.066905] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   13.066921] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   15.200060] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   15.200200] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   15.200212] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   17.333394] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   17.333534] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   17.333547] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   19.466729] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   19.466872] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   19.466885] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   21.600040] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   21.600215] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   21.600221] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   23.733393] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   23.733545] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   23.733558] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   25.866725] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   25.866868] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   25.866880] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   28.000058] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   28.000205] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   28.000216] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   30.133369] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   30.133517] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   30.133529] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   32.266724] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   32.266832] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   32.266843] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   34.400059] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   34.400199] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   34.400211] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   36.533390] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   36.533539] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   36.533551] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   38.666723] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   38.666864] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   38.666876] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   40.800055] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   40.800201] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   40.800213] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   42.933368] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   42.933675] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   42.933727] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   45.066723] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   45.066871] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   45.066883] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   47.200072] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   47.200288] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   47.200301] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   49.333386] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   49.333536] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   49.333548] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   51.466721] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   51.466830] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   51.466842] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   53.600053] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   53.600196] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   53.600208] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   55.733365] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   55.733511] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   55.733523] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   57.866697] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   57.866837] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   57.866849] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   60.000054] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   60.000200] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   60.000212] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   62.133386] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   62.133533] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   62.133545] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   64.266719] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   64.266867] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   64.266879] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   66.400051] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   66.400193] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   66.400205] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   68.533363] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   68.533506] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   68.533519] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   70.666695] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   70.666834] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   70.666846] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   72.800051] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   72.800197] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   72.800208] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   74.933382] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   74.933525] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   74.933536] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   77.066717] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   77.066862] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   77.066874] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   79.200048] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   79.200199] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   79.200211] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   81.333358] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   81.333511] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   81.333523] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   83.466691] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   83.466860] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   83.466871] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   85.600046] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   85.600203] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   85.600215] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   87.733379] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   87.733538] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   87.733550] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   89.866711] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   89.866867] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   89.866879] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   92.000047] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   92.000156] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   92.000167] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   94.133354] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   94.133586] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   94.133598] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   96.266709] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   96.266865] virt zone: sensor[modem-mmw1-usr] read error:-22
-[   96.266877] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   98.400043] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[   98.400201] virt zone: sensor[modem-mmw0-usr] read error:-22
-[   98.400213] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  100.533397] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  100.533511] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  100.533523] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  102.666710] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  102.666852] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  102.666865] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  104.800043] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  104.800188] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  104.800200] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  106.933392] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  106.933546] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  106.933559] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  109.066709] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  109.066867] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  109.066879] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  111.200040] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  111.200192] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  111.200205] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  113.333375] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  113.333528] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  113.333541] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  115.466707] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  115.466863] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  115.466876] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  117.600041] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  117.600197] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  117.600209] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  119.733373] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  119.733531] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  119.733544] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  121.866683] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  121.866848] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  121.866853] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  124.000039] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  124.000210] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  124.000267] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  126.133349] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  126.133505] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  126.133516] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  128.266706] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  128.266865] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  128.266877] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  130.400038] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  130.400193] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  130.400205] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  132.533371] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  132.533480] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  132.533491] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  134.666703] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  134.666854] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  134.666866] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  136.800035] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  136.800187] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  136.800199] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  138.933349] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  138.933503] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  138.933515] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  141.066703] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  141.066935] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  141.066947] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  143.200036] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  143.200189] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  143.200202] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  145.333367] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  145.333519] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  145.333531] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  147.466701] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  147.466857] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  147.466868] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  149.600034] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  149.600190] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  149.600202] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  151.733346] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  151.733501] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  151.733513] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  153.866678] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  153.866830] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  153.866842] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  156.000033] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  156.000187] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  156.000199] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  158.133366] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  158.133522] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  158.133534] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  160.266701] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  160.266855] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  160.266868] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  162.400032] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  162.400191] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  162.400203] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  164.533343] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  164.533508] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  164.533520] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  166.666676] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  166.666831] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  166.666843] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  168.800031] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  168.800188] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  168.800200] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  170.933363] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  170.933517] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  170.933529] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  173.066700] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  173.066809] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  173.066821] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  175.200028] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  175.200184] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  175.200195] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  177.333340] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  177.333495] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  177.333506] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  179.466674] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  179.466829] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  179.466840] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  181.600013] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  181.600304] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  181.600316] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  183.733361] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  183.733520] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  183.733531] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  185.866694] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  185.866801] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  185.866813] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  188.000027] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  188.000261] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  188.000274] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  190.133338] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  190.133493] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  190.133505] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  192.266691] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  192.266849] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  192.266860] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  194.400025] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  194.400180] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  194.400192] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  196.533357] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  196.533509] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  196.533521] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  198.666692] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  198.666846] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  198.666858] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  200.800024] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  200.800178] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  200.800190] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  202.933356] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  202.933516] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  202.933527] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  205.066689] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  205.066853] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  205.066865] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  207.200024] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  207.200177] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  207.200189] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  209.333355] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  209.333513] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  209.333525] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  211.466688] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  211.466842] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  211.466853] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  213.600022] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  213.600130] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  213.600141] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  215.733355] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  215.733507] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  215.733519] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  217.866687] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  217.866839] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  217.866850] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  220.000019] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  220.000176] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  220.000187] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  222.133327] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  222.133481] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  222.133485] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  224.266686] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  224.266848] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  224.266860] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  226.400021] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  226.400178] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  226.400190] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  228.037692] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  228.056301] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[  228.077364] pm8150b_charger: smblib_usb_plugin_locked: battery supply smblib_usb_plugin_locked
-[  228.077568] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[  228.077625] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_OTG_EVENT received
-[  228.077635] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  228.083758] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  228.170627] msm-dwc3 a600000.ssusb: vbus:1 event received
-[  228.170639] msm-dwc3 a600000.ssusb: vbus:1 event received
-[  228.172408] pm8150b_charger: smblib_pd_contract_work: Failed to get pd_voltage_max_uvfrom device tree, rc = -22
-[  228.172418] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  228.178646] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  228.214705] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  228.240138] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  228.269997] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  228.276187] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  228.370019] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  228.392131] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  228.433694] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  228.469996] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  228.512531] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  228.533329] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:6
-[  228.533438] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  228.533451] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  228.576654] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  228.612713] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  228.612820] pm8150b_charger: smblib_pd_contract_work: smblib_pd_contract_work: 5000000 uV, 3000000 uA
-[  228.720756] batt power supply prop 4 not supported
-[  230.666666] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  230.666780] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  230.666795] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  232.800020] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  232.800177] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  232.800190] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  234.933352] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  234.933693] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  234.933705] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  235.959905] batt power supply prop 4 not supported
-[  237.066685] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  237.066839] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  237.066853] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  239.200016] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  239.200173] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  239.200186] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  241.333328] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  241.333486] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  241.333500] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  241.986671] pm8150b_charger: smblib_usb_plugin_locked: battery supply smblib_usb_plugin_locked
-[  241.986680] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[  241.986695] batt power supply prop 4 not supported
-[  241.996584] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[  241.997110] msm-dwc3 a600000.ssusb: vbus:0 event received
-[  241.997128] msm-dwc3 a600000.ssusb: vbus:0 event received
-[  241.997178] msm-dwc3 a600000.ssusb: dwc3_resume_work: dwc3 resume work
-[  241.997193] msm-dwc3 a600000.ssusb: XCVR: ID set
-[  241.997200] msm-dwc3 a600000.ssusb: XCVR: BSV clear
-[  241.997206] msm-dwc3 a600000.ssusb: XCVR: SUSP clear
-[  241.997213] msm-dwc3 a600000.ssusb: eud: state:0 active:0 hs_phy_flags:0x0
-[  241.997282] msm-dwc3 a600000.ssusb: peripheral state
-[  241.997291] msm-dwc3 a600000.ssusb: !id || !bsv
-[  241.997300] msm-dwc3 a600000.ssusb: dwc3_otg_start_peripheral: turn off gadget dwc3-gadget
-[  241.997447] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_CLEAR
-[  241.997460] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_CLEAR_DB
-[  241.997475] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_OTG_EVENT received
-[  241.997540] msm-dwc3 a600000.ssusb: DWC3-msm runtime suspend
-[  242.006677] msm-dwc3 a600000.ssusb: could not transition HS PHY to L2
-[  242.006952] msm-dwc3 a600000.ssusb: dwc3_msm_suspend: power collapse
-[  242.007280] msm-dwc3 a600000.ssusb: idle state
-[  242.007289] msm-dwc3 a600000.ssusb: Cable disconnected
-[  242.952834] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[  242.973680] pm8150b_charger: smblib_usb_plugin_locked: battery supply smblib_usb_plugin_locked
-[  242.973951] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[  243.067188] msm-dwc3 a600000.ssusb: vbus:1 event received
-[  243.067208] msm-dwc3 a600000.ssusb: vbus:1 event received
-[  243.067268] msm-dwc3 a600000.ssusb: dwc3_resume_work: dwc3 resume work
-[  243.067338] msm-dwc3 a600000.ssusb: XCVR: ID set
-[  243.067346] msm-dwc3 a600000.ssusb: XCVR: BSV set
-[  243.067351] msm-dwc3 a600000.ssusb: XCVR: SUSP clear
-[  243.067358] msm-dwc3 a600000.ssusb: eud: state:0 active:0 hs_phy_flags:0x0
-[  243.067372] msm-dwc3 a600000.ssusb: idle state
-[  243.067381] msm-dwc3 a600000.ssusb: b_sess_vld
-[  243.067387] msm-dwc3 a600000.ssusb: DWC3-msm runtime resume
-[  243.067395] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exiting lpm
-[  243.067422] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  243.067505] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[  243.069189] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[  243.069417] msm-usb-ssphy-qmp 88e8000.ssphy: USB DP QMP PHY: Update TYPEC CTRL(3)
-[  243.073930] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  243.109989] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  243.123359] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_POST_RESET_EVENT received
-[  243.123377] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
-[  243.123379] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
-[  243.123384] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
-[  243.123388] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[  243.123397] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381010
-[  243.123400] msm-dwc3 a600000.ssusb: dwc3_otg_start_peripheral: turn on gadget dwc3-gadget
-[  243.123408] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[  243.124643] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_SETUP
-[  243.124652] msm-dwc3 a600000.ssusb: Evt buf 00000000b42aeb63 dma efffc000 length 4096
-[  243.124661] msm-dwc3 a600000.ssusb: Evt buf 000000005b86aa6b dma efffd000 length 4096
-[  243.124671] msm-dwc3 a600000.ssusb: Evt buf 000000001d5055ec dma efffe000 length 4096
-[  243.129397] msm-dwc3 a600000.ssusb: peripheral state
-[  243.135408] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  243.166688] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  243.171463] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  243.243299] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  243.266683] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  243.366658] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[  243.466864] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  243.466877] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  243.473356] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  243.509408] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[  243.509489] pm8150b_charger: smblib_pd_contract_work: smblib_pd_contract_work: 5000000 uV, 3000000 uA
-[  243.606711] batt power supply prop 4 not supported
-[  244.211470] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_OTG_EVENT received
-[  244.211479] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  244.266246] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_CONNDONE_EVENT received
-[  244.285124] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  245.173326] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:65
-[  245.600066] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  245.600071] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  246.814309] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_OTG_EVENT received
-[  246.814458] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_CLEAR
-[  246.814470] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_CLEAR_DB
-[  246.814615] dwc3 a600000.dwc3: request 00000000432a35c0 was not queued to ep0out
-[  246.815125] init: Unable to set property 'init.svc.adbd' from uid:0 gid:0 pid:1: Read-only property was already set
-[  246.815412] libprocessgroup: Failed to open /sys/fs/cgroup/system/uid_0/pid_605/cgroup.procs: No such file or directory
-[  246.815594] init: Unable to set property 'init.svc.adbd' from uid:0 gid:0 pid:1: Read-only property was already set
-[  246.820101] init: Unable to set property 'init.svc.adbd' from uid:0 gid:0 pid:1: Read-only property was already set
-[  246.923324] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_CLEAR_DB
-[  246.923342] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_OTG_EVENT received
-[  246.923357] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_SETUP
-[  246.923366] msm-dwc3 a600000.ssusb: Evt buf 00000000b42aeb63 dma efffc000 length 4096
-[  246.923375] msm-dwc3 a600000.ssusb: Evt buf 000000005b86aa6b dma efffd000 length 4096
-[  246.923385] msm-dwc3 a600000.ssusb: Evt buf 000000001d5055ec dma efffe000 length 4096
-[  247.027361] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  247.122689] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_NOTIFY_OTG_EVENT received
-[  247.122698] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  247.177480] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_CONNDONE_EVENT received
-[  247.195625] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_SET_CURRENT_DRAW_EVENT received
-[  247.220693] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
-[  247.220703] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=3C103C
-[  247.220861] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler link state = 0x0004
-[  247.220868] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
-[  247.220874] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=3C1010
-[  247.306689] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:59
-[  247.743435] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  247.743455] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  249.440014] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:8
-[  249.881929] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  249.881945] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  250.971396] batt power supply prop 4 not supported
-[  251.573326] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[  252.000087] virt zone: sensor[modem-mmw0-usr] read error:-22
-[  252.000093] virt zone: sensor[modem-mmw1-usr] read error:-22
-[  252.709919] init: Could not open '/metadata/bootstat/persist.sys.boot.reason' to persist reboot reason: No such file or directory
-[  252.715024] sec_ts 1-0048: sec_ts_set_lowpowermode: EXIT(0)
-[  252.715031] sec_ts 1-0048: sec_ts_set_lowpowermode: setting gesture mode (1)
-[  252.897225] sec_ts 1-0048: sec_ts_power: off: pm8150_l13:off, pm8150a_l1:off
-[  252.905202] sec_ts 1-0048: sec_ts_fn_remove
-[  252.906978] [drm:msm_atomic_commit] *ERROR* priv is null or shutdwon is in-progress
-[  252.906994] last close failed: -22
-[  252.916670] reboot: Restarting system with command 'recovery'
+[    0.005577] scm_call failed: func id 0x42001907, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    0.005585] scm_mem_protection_init_do_qrks: SCM call failed
+[    0.005730] scm_mem_protection_init: SCM call failed
+[    0.324987] Unable to find DT property: qcom,msm-imem-download_mode
+[    0.325608] Unable to find DT property: qcom,msm-imem-emergency_download_mode
+[    0.330943] msm-dcc 1023000.dcc_v2: DCC list passed 3
+[    0.331248] msm-dcc 1023000.dcc_v2: DCC list passed 6
+[    0.331577] msm-dcc 1023000.dcc_v2: DCC list passed 7
+[    0.339505] rpmh_regulator_probe: smpf1: could not find RPMh address for resource
+[    0.339573] rpmh_regulator_probe: smpf2: could not find RPMh address for resource
+[    0.339632] rpmh_regulator_probe: ldof1: could not find RPMh address for resource
+[    0.339700] rpmh_regulator_probe: ldof2: could not find RPMh address for resource
+[    0.339756] rpmh_regulator_probe: ldof3: could not find RPMh address for resource
+[    0.339813] rpmh_regulator_probe: ldof5: could not find RPMh address for resource
+[    0.339889] rpmh_regulator_probe: ldof6: could not find RPMh address for resource
+[    0.339974] rpmh_regulator_probe: ldof7: could not find RPMh address for resource
+[    0.345508] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.345919] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.345929] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: read 0x4 failed
+[    0.345936] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: failed to populate gpio 0, ret=-5
+[    0.424839] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.424849] video_cc-kona abf0000.qcom,videocc: Unable to register for bw voting
+[    0.427721] msm_bus_fabric_rpmh_init_driver
+[    0.427807] msm_bus: Probe started
+[    0.430285] msm_bus: DT Parsing complete
+[    0.431460] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.431494] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.431642] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.447940] register_client_adhoc:find path.src 161 dest 627
+[    0.448127] register_client_adhoc:Client handle 1 apps_smmu
+[    0.448979] register_client_adhoc:find path.src 161 dest 627
+[    0.449171] register_client_adhoc:Client handle 2 apps_smmu
+[    0.449305] register_client_adhoc:find path.src 161 dest 627
+[    0.449483] register_client_adhoc:Client handle 3 apps_smmu
+[    0.449639] register_client_adhoc:find path.src 22 dest 773
+[    0.449725] register_client_adhoc:Client handle 4 mnoc_hf_0_tbu
+[    0.449864] register_client_adhoc:find path.src 22 dest 773
+[    0.449944] register_client_adhoc:Client handle 5 mnoc_hf_1_tbu
+[    0.450078] register_client_adhoc:find path.src 154 dest 10070
+[    0.450141] register_client_adhoc:Client handle 6 apps_smmu
+[    0.450247] register_client_adhoc:find path.src 154 dest 10070
+[    0.450304] register_client_adhoc:Client handle 7 apps_smmu
+[    0.450410] register_client_adhoc:find path.src 161 dest 627
+[    0.450589] register_client_adhoc:Client handle 8 apps_smmu
+[    0.450717] register_client_adhoc:find path.src 161 dest 627
+[    0.450892] register_client_adhoc:Client handle 9 apps_smmu
+[    0.451025] register_client_adhoc:find path.src 137 dest 772
+[    0.451111] register_client_adhoc:Client handle 10 mnoc_sf_0_tbu
+[    0.451246] register_client_adhoc:find path.src 137 dest 772
+[    0.451328] register_client_adhoc:Client handle 11 mnoc_sf_1_tbu
+[    0.451784] Error: Driver 'arm-smmu' is already registered, aborting...
+[    0.453394] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.453401] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800: Register read failed, addr=0x0805, rc=-5
+[    0.458691] virt zone: sensor[gpuss-1-usr] read error:-22
+[    0.458728] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    0.458744] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    0.458757] virt zone: sensor[skin-therm-usr] read error:-22
+[    0.458770] virt zone: sensor[skin-msm-therm-usr] read error:-22
+[    0.458782] virt zone: sensor[chg-therm-usr] read error:-22
+[    0.504795] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.504804] read failed rc=-5
+[    0.504806] Invalid REVID peripheral type: 00
+[    0.505291] register_client_adhoc:find path.src 90 dest 770
+[    0.505431] register_client_adhoc:find path.src 129 dest 512
+[    0.505459] register_client_adhoc:find path.src 90 dest 585
+[    0.505553] register_client_adhoc:find path.src 1 dest 676
+[    0.505630] register_client_adhoc:find path.src 143 dest 777
+[    0.505653] register_client_adhoc:Client handle 12 ipa
+[    0.526763] pcie:pcie_init.
+[    0.527365] register_client_adhoc:find path.src 45 dest 512
+[    0.527531] register_client_adhoc:Client handle 13 pcie0
+[    0.527821] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+[    0.527824] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+[    0.528041] register_client_adhoc:find path.src 108 dest 512
+[    0.528115] register_client_adhoc:Client handle 14 pcie2
+[    0.528274] msm_pcie_get_reg: PCIe: RC2: no tcsr resource found.
+[    0.528277] msm_pcie_get_reg: PCIe: RC2: no rumi resource found.
+[    0.528281] msm_pcie_probe: PCIe: RC2 could not get pinctrl sleep state
+[    0.528535] register_client_adhoc:find path.src 22 dest 512
+[    0.528617] register_client_adhoc:find path.src 23 dest 512
+[    0.528685] register_client_adhoc:Client handle 15 bus-proxy-client
+[    0.530132] register_client_adhoc:find path.src 1 dest 589
+[    0.530224] register_client_adhoc:Client handle 16 bps_gdsc_ahb
+[    0.530428] register_client_adhoc:find path.src 1 dest 589
+[    0.530495] register_client_adhoc:Client handle 17 ife_0_gdsc_ahb
+[    0.530596] register_client_adhoc:find path.src 1 dest 589
+[    0.530661] register_client_adhoc:Client handle 18 ife_1_gdsc_ahb
+[    0.530762] register_client_adhoc:find path.src 1 dest 589
+[    0.530826] register_client_adhoc:Client handle 19 ipe_0_gdsc_ahb
+[    0.530922] register_client_adhoc:find path.src 1 dest 589
+[    0.530986] register_client_adhoc:Client handle 20 sbi_gdsc_ahb
+[    0.531084] register_client_adhoc:find path.src 1 dest 589
+[    0.531147] register_client_adhoc:Client handle 21 titan_top_gdsc_ahb
+[    0.531249] register_client_adhoc:find path.src 1 dest 590
+[    0.531315] register_client_adhoc:Client handle 22 mdss_core_gdsc_ahb
+[    0.531507] register_client_adhoc:find path.src 1 dest 596
+[    0.531576] register_client_adhoc:Client handle 23 mvs0_gdsc_ahb
+[    0.531728] register_client_adhoc:find path.src 1 dest 596
+[    0.531797] register_client_adhoc:Client handle 24 mvs0c_gdsc_ahb
+[    0.531927] register_client_adhoc:find path.src 1 dest 596
+[    0.531995] register_client_adhoc:Client handle 25 mvs1_gdsc_ahb
+[    0.532123] register_client_adhoc:find path.src 1 dest 596
+[    0.532190] register_client_adhoc:Client handle 26 mvs1c_gdsc_ahb
+[    0.532337] register_client_adhoc:find path.src 1 dest 589
+[    0.532408] register_client_adhoc:Client handle 27 clk_camcc_debugfs
+[    0.539334] register_client_adhoc:find path.src 1 dest 590
+[    0.539403] register_client_adhoc:Client handle 28 clk_dispcc_debugfs
+[    0.542669] register_client_adhoc:find path.src 1 dest 596
+[    0.542741] register_client_adhoc:Client handle 29 clk_videocc_debugfs
+[    0.690391] register_client_adhoc:find path.src 125 dest 512
+[    0.690599] register_client_adhoc:Client handle 30 scm_pas
+[    0.690613] minidump-id not found for ipa_fws
+[    0.690719] minidump-id not found for ipa_uc
+[    0.690813] minidump-id not found for adsp
+[    0.691021] register_client_adhoc:find path.src 154 dest 10070
+[    0.691039] register_client_adhoc:Client handle 31 pil-cdsp
+[    0.691044] minidump-id not found for cdsp
+[    0.691216] register_client_adhoc:find path.src 63 dest 512
+[    0.691300] register_client_adhoc:Client handle 32 pil-venus
+[    0.691304] minidump-id not found for venus
+[    0.691365] minidump-id not found for spss
+[    0.691457] minidump-id not found for cvpss
+[    0.691505] minidump-id not found for npu
+[    0.691540] subsys-restart: __get_smem_state(): Could not get smem-states qcom,force-stop
+[    0.691641] minidump-id not found for slpi
+[    0.691770] minidump-id not found for a650_zap
+[    0.693629] msm_geni_serial 998000.qcom,qup_uart: Failed to create dbg dir
+[    0.694244] register_client_adhoc:find path.src 1 dest 618
+[    0.694325] register_client_adhoc:Client handle 33 msm-rng-noc
+[    0.706417] register_client_adhoc:find path.src 125 dest 512
+[    0.706612] register_client_adhoc:Client handle 34 qcedev-noc
+[    0.709375] register_client_adhoc:find path.src 125 dest 512
+[    0.709486] register_client_adhoc:Client handle 35 qcrypto-noc
+[    0.712735] register_client_adhoc:find path.src 123 dest 512
+[    0.712847] register_client_adhoc:find path.src 1 dest 757
+[    0.712930] register_client_adhoc:Client handle 36 ufshc_mem
+[    0.725078] cnss_utils: Unable to create debugfs -19
+[    0.725295] wcnss_pre_alloc_init: Failed to create debugfs dir
+[    0.725464] cnss: CPR PMIC address is not available for smpf2
+[    0.725583] cnss: Failed to get regulator vdd-wlan-core, no such device
+[    0.725597] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    0.725642] cnss: Failed to get regulator vdd-wlan-xtal-aon, no such device
+[    0.725675] cnss: Failed to get regulator vdd-wlan-xtal, no such device
+[    0.725709] cnss: Failed to get regulator vdd-wlan, no such device
+[    0.725743] cnss: Failed to get regulator vdd-wlan-ctrl1, no such device
+[    0.725778] cnss: Failed to get regulator vdd-wlan-ctrl2, no such device
+[    0.725810] cnss: Failed to get regulator vdd-wlan-sp2t, no such device
+[    0.725870] cnss: Failed to get regulator wlan-soc-swreg, no such device
+[    0.726002] cnss: Failed to get regulator vdd-wlan-en, no such device
+[    0.726857] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.726876] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.727420] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.727457] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.727827] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    0.728358] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
+[    0.730032] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
+[    0.736125] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+[    0.739292] ssusb redriver 2-001a: failed to get phandle for redriver
+[    0.742967] register_client_adhoc:find path.src 154 dest 512
+[    0.743074] register_client_adhoc:find path.src 154 dest 620
+[    0.743196] register_client_adhoc:Client handle 37 9900000.qcom,msm_npu
+[    0.745662] NPU_ERR: npu_debugfs_init: 303 debugfs_create_dir for npu failed, error -19
+[    0.846690] rtc6226: rtc6226_pinctrl_init: target does not use pinctrl
+[    0.846694] rtc6226: rtc6226_i2c_probe: rtc6226_pinctrl_init returned -19
+[    0.847427] Couldn't parse device tree rc=-517
+[    0.857094] debugfs is not enabled in the kernel
+[    0.858051] get_battery_serialnumber: Battsn unused
+[    0.863783] FG: fg_psy_get_property: unsupported property 4
+[    0.886239] msm_pcie_enumerate: PCIe: RC0: has already been enumerated.
+[    0.888826] register_client_adhoc:find path.src 1 dest 627
+[    0.888984] register_client_adhoc:Client handle 38 soc:qcom,snoc_cnoc_keepalive
+[    0.889106] register_client_adhoc:find path.src 1 dest 770
+[    0.889132] register_client_adhoc:Client handle 39 soc:qcom,cpu-cpu-llcc-bw
+[    0.889470] register_client_adhoc:find path.src 129 dest 512
+[    0.889492] register_client_adhoc:Client handle 40 soc:qcom,cpu-llcc-ddr-bw
+[    0.889847] register_client_adhoc:find path.src 154 dest 770
+[    0.889885] register_client_adhoc:Client handle 41 soc:qcom,npu-npu-llcc-bw
+[    0.889957] register_client_adhoc:find path.src 770 dest 512
+[    0.889990] register_client_adhoc:Client handle 42 soc:qcom,npu-llcc-ddr-bw
+[    0.890065] register_client_adhoc:find path.src 154 dest 512
+[    0.890127] register_client_adhoc:Client handle 43 soc:qcom,npudsp-npu-ddr-bw
+[    0.890234] register_client_adhoc:find path.src 154 dest 512
+[    0.890293] register_client_adhoc:Client handle 44 soc:qcom,npu-npu-ddr-latfloor
+[    0.890325] register_client_adhoc:find path.src 1 dest 770
+[    0.890346] register_client_adhoc:Client handle 45 soc:qcom,cpu0-cpu-llcc-lat
+[    0.890396] register_client_adhoc:find path.src 1 dest 770
+[    0.890414] register_client_adhoc:Client handle 46 soc:qcom,cpu4-cpu-llcc-lat
+[    0.890468] register_client_adhoc:find path.src 129 dest 512
+[    0.890488] register_client_adhoc:Client handle 47 soc:qcom,cpu0-llcc-ddr-lat
+[    0.890541] register_client_adhoc:find path.src 129 dest 512
+[    0.890562] register_client_adhoc:Client handle 48 soc:qcom,cpu4-llcc-ddr-lat
+[    0.890619] register_client_adhoc:find path.src 129 dest 512
+[    0.890639] register_client_adhoc:Client handle 49 soc:qcom,cpu4-cpu-ddr-latfloor
+[    0.890780] register_client_adhoc:find path.src 26 dest 512
+[    0.890827] register_client_adhoc:Client handle 51 soc:qcom,gpubw
+[    0.893326] register_client_adhoc:find path.src 1 dest 590
+[    0.893412] register_client_adhoc:Client handle 50 disp_rsc_reg
+[    0.893421] register_client_adhoc:find path.src 20003 dest 20513
+[    0.893482] register_client_adhoc:find path.src 20004 dest 20513
+[    0.893531] register_client_adhoc:Client handle 52 disp_rsc_mnoc_llcc
+[    0.893541] register_client_adhoc:find path.src 20000 dest 20512
+[    0.893567] register_client_adhoc:Client handle 53 disp_rsc_ebi
+[    0.894101] AXI: get_pdata(): Error: Client name not found
+[    0.894103] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
+[    0.894135] AXI: get_pdata(): Error: Client name not found
+[    0.894137] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
+[    0.894383] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    0.894460] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] invalid number of elements -22
+[    0.894463] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] failed to parse fod dim lut
+[    0.899474] register_client_adhoc:find path.src 1 dest 589
+[    0.899573] register_client_adhoc:Client handle 54 cam_ahb
+[    0.899622] register_client_adhoc:find path.src 170 dest 512
+[    0.899693] register_client_adhoc:Client handle 55 cam_hf_0_mnoc
+[    0.899744] register_client_adhoc:find path.src 137 dest 512
+[    0.899814] register_client_adhoc:Client handle 56 cam_sf_0_mnoc
+[    0.899857] register_client_adhoc:find path.src 171 dest 512
+[    0.899925] register_client_adhoc:Client handle 57 cam_sf_icp_mnoc
+[    0.903309] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+[    0.913263] minidump-id not found for npu
+[    0.914595] register_client_adhoc:find path.src 26 dest 512
+[    0.914676] register_client_adhoc:Client handle 58 grp3d
+[    0.914684] register_client_adhoc:find path.src 26 dest 10036
+[    0.914734] register_client_adhoc:Client handle 59 cnoc
+[    0.914737] query_client_usecase_all: query_start
+[    0.914749] query_client_usecase_all: query_start
+[    0.929195] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    0.929266] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.929277] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.929642] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.929656] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.930021] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    0.930211] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
+[    0.930253] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.930256] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
+[    0.930258] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.930260] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
+[    0.931045] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
+[    0.936538] ssusb redriver 2-001a: failed to get phandle for redriver
+[    0.936995] QCOM-BATT: qcom_batt_create_debugfs: Couldn't create battery debugfs rc=-19
+[    0.937942] pm8150b_charger: smblib_usb_plugin_locked: battery supply smblib_usb_plugin_locked
+[    0.938188] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
+[    0.938231] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
+[    0.938944] batt power supply prop 4 not supported
+[    0.939802] get_battery_serialnumber: Battsn unused
+[    0.939827] pm8150b_charger: jeita_update_work: Couldn't get fcc values for soft JEITA rc=-22
+[    0.946703] batt power supply prop 4 not supported
+[    0.957407] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    0.957459] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.957468] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.957814] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.957824] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.958123] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    0.958308] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
+[    0.958347] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.958350] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
+[    0.958352] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.958354] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
+[    0.959301] i2c_geni 884000.i2c: i2c error :-107
+[    0.959304] fsa4480-driver 2-0042: fsa4480_probe,device id read failed:-107
+[    0.959417] i2c_geni 884000.i2c: i2c error :-107
+[    0.959531] i2c_geni 884000.i2c: i2c error :-107
+[    0.959645] i2c_geni 884000.i2c: i2c error :-107
+[    0.959760] i2c_geni 884000.i2c: i2c error :-107
+[    0.959874] i2c_geni 884000.i2c: i2c error :-107
+[    0.959988] i2c_geni 884000.i2c: i2c error :-107
+[    0.960103] i2c_geni 884000.i2c: i2c error :-107
+[    0.960224] i2c_geni 884000.i2c: i2c error :-107
+[    0.960337] i2c_geni 884000.i2c: i2c error :-107
+[    0.960450] i2c_geni 884000.i2c: i2c error :-107
+[    0.965955] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.965961] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.966320] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.966329] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.966628] register_client_adhoc:find path.src 61 dest 512
+[    0.966774] register_client_adhoc:find path.src 61 dest 676
+[    0.966889] register_client_adhoc:find path.src 1 dest 583
+[    0.966957] register_client_adhoc:Client handle 60 usb0
+[    0.966972] msm-dwc3 a600000.ssusb: setting pm-qos-latency to zero.
+[    0.966978] msm-dwc3 a600000.ssusb: vbus:1 event received
+[    0.966982] msm-dwc3 a600000.ssusb: Connected to CDP, pull DP up
+[    0.976067] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 1
+[    0.981833] ufshcd_slave_configure: ufsfeature set lun 0 sdev 0000000069c2479b q 0000000004ec7d5f
+[    0.982359] ufshcd_slave_configure: ufsfeature set lun 1 sdev 000000000f8760ea q 00000000217a4864
+[    0.982760] ufshcd_slave_configure: ufsfeature set lun 2 sdev 00000000fab1b4de q 00000000b510970a
+[    0.983172] ufshcd_slave_configure: ufsfeature set lun 3 sdev 00000000aad1ce48 q 00000000b2befec2
+[    0.983585] ufshcd_slave_configure: ufsfeature set lun 4 sdev 000000001bd0bb40 q 000000008da17a5d
+[    0.984000] ufshcd_slave_configure: ufsfeature set lun 5 sdev 000000005971ddc6 q 0000000073f02d27
+[    1.011200] register_client_adhoc:find path.src 45 dest 512
+[    1.011415] register_client_adhoc:Client handle 61 msm-cnss
+[    1.193367] msm-dwc3 a600000.ssusb: vbus:1 event received
+[    1.193376] msm-dwc3 a600000.ssusb: dwc3_resume_work: dwc3 resume work
+[    1.193393] msm-dwc3 a600000.ssusb: XCVR: ID set
+[    1.193398] msm-dwc3 a600000.ssusb: XCVR: BSV set
+[    1.193404] msm-dwc3 a600000.ssusb: undefined state
+[    1.193405] msm-dwc3 a600000.ssusb: XCVR: SUSP clear
+[    1.193409] msm-dwc3 a600000.ssusb: eud: state:0 active:0 hs_phy_flags:0x0
+[    1.193421] msm-dwc3 a600000.ssusb: b_sess_vld
+[    1.193429] msm-dwc3 a600000.ssusb: DWC3-msm runtime resume
+[    1.193435] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exiting lpm
+[    1.193551] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
+[    1.194967] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
+[    1.195472] msm-usb-ssphy-qmp 88e8000.ssphy: USB DP QMP PHY: Update TYPEC CTRL(3)
+[    1.203623] register_client_adhoc:find path.src 1 dest 590
+[    1.203752] register_client_adhoc:Client handle 62 mdss_reg
+[    1.203763] register_client_adhoc:find path.src 22 dest 512
+[    1.203857] register_client_adhoc:find path.src 23 dest 512
+[    1.203941] register_client_adhoc:Client handle 63 mdss_sde
+[    1.206780] [drm:dsi_panel_get_mode] *ERROR* [msm-dsi-error]: failed to parse panel phy ldo rc=-22
+[    1.213048] cam_cc_sleep_clk_src: CXO configuration failed
+[    1.213575] msm_bus_late_init: Remove handoff bw requests
+[    1.214012] Warning: unable to open an initial console.
+[    1.242433] init: Failed to copy /avb into /metadata/gsi/dsu/avb/: No such file or directory
+[    1.246015] init: [libfs_avb] Invalid hash size: 
+[    1.246019] init: [libfs_avb] Failed to verify vbmeta digest
+[    1.246027] init: Top-level vbmeta is disabled, skip Hashtree setup for /system
+[    1.250064] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_POST_RESET_EVENT received
+[    1.250086] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
+[    1.250093] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
+[    1.250099] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
+[    1.250105] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
+[    1.250118] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381010
+[    1.250124] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
+[    1.250144] msm-dwc3 a600000.ssusb: dwc3_otg_start_peripheral: turn on gadget dwc3-gadget
+[    1.251411] msm-dwc3 a600000.ssusb: peripheral state
+[    1.262258] batt power supply prop 4 not supported
+[    1.372979] init: Init cannot set 'ro.boot.verifiedbootstate' to 'orange': Read-only property was already set
+[    1.395930] init: /vendor/etc/init/hw/init.mmi.rc: 592: ignored duplicate definition of service 'bugreport'
+[    1.411119] init: /vendor/etc/init/android.hardware.audio.service.rc: 1: ignored duplicate definition of service 'vendor.audio-hal'
+[    1.413207] init: /vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc: 1: ignored duplicate definition of service 'vendor.sensors-hal-2-0-multihal'
+[    1.416358] init: /vendor/etc/init/init.time_daemon.rc: 10: ignored duplicate definition of service 'time_daemon'
+[    1.417820] init: /vendor/etc/init/poweropt-service.rc: 10: ignored duplicate definition of service 'poweropt-service'
+[    1.454124] ueventd: /vendor/etc/ueventd.rc: 66: ignoring duplicate subsystem entry
+[    1.455084] ueventd: /vendor/etc/ueventd.rc: 240: /sys/ lines must have 5 or 6 entries
+[    1.455547] ueventd: /vendor/etc/ueventd.rc: 427: /sys/ lines must have 5 or 6 entries
+[    1.455564] ueventd: /vendor/etc/ueventd.rc: 428: /sys/ lines must have 5 or 6 entries
+[    1.495019] batt power supply prop 4 not supported
+[    1.793763] init: File /vendor/bin/init.oem.hw.sh (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    1.821020] init: Unable to set property 'ro.carrier' from uid:0 gid:0 pid:587: Read-only property was already set
+[    2.100452] cutils-trace: Error opening trace file: No such file or directory (2)
+[    2.144592] sec_ts_init
+[    2.144888] sec_ts 1-0048: sec_ts_parse_dt: i2c buffer limit: 256, lcd_id:000000, bringup:0, FW:(null)(-22), id:-2,-2, mis_cal:0 dex:0, gesture:0
+[    2.147144] sec_ts 1-0048: sec_ts_power: on: pm8150_l13:on, pm8150a_l1:on
+[    2.235792] sec_ts 1-0048: sec_ts_fn_init: Failed to create input symbolic link
+[    2.240931] sec_ts 1-0048: sec_ts_probe: done
+[    2.267964] ueventd: Failed to find device dev: 252:43: No such device or address
+[    2.285677] init: Unable to set property 'ro.boottime.init.fsck.persist' from uid:0 gid:0 pid:1: Read-only property was already set
+[    2.286978] init: Unable to set property 'ro.boottime.init.mount.persist' from uid:0 gid:0 pid:1: Read-only property was already set
+[    2.295143] init: [libfs_mgr] Failed to mount an un-encryptable, interrupted, or wiped partition on /dev/block/bootdevice/by-name/fsg_a at /vendor/fsg options: context=u:object_r:fsg_file:s0: No such file or directory
+[    2.301324] goodix: No regulator control parameter defined
+[    2.352770] stmvl53l1_setup: device name VL53L1 cut1.1
+[    2.352770] type VL53L1
+[    2.352867] stmvl53l1_setup: Misc device registration name:laser
+[    2.469504] pm8150b_charger: smblib_pd_contract_work: Failed to get pd_voltage_max_uvfrom device tree, rc = -22
+[    2.469510] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.475884] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.511949] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.537332] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.551076] mmi_sys_temp soc:sys_temp_support: bad number of sensors-listener: -22
+[    2.555200] i2c_geni 884000.i2c: i2c error :-107
+[    2.555326] i2c_geni 884000.i2c: i2c error :-107
+[    2.558959] SMBMMI: PMIC 32 is pm8150b_charger
+[    2.559016] qcom,qpnp-smbcharger-mmi c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5-mmi: Error getting the pd phandle -6
+[    2.559681] pm8150b_charger: SMBMMI: smb_mmi_probe: DISABLE all QCOM JEITA
+[    2.559750] qcom,qpnp-smbcharger-mmi c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5-mmi: SMBMMI: Suspending USB for 50 ms to clear
+[    2.566688] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.573418] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.613086] power_supply battery: SMBMMI: smb_mmi_power_supply_changed: POWER_SUPPLY_CHARGE_RATE=Normal
+[    2.613524] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    2.613532] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    2.627474] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.631999] power_supply battery: SMBMMI: smb_mmi_power_supply_changed: POWER_SUPPLY_CHARGE_RATE=Turbo
+[    2.663537] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.666686] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.766699] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.806400] [sar SX933x]: [ERR]<sx933x_parse_dt><987>[SX933x]: sx933x_parse_dt - get ref-phases error
+[    2.806404] [sar SX933x]: [ERR]<sx933x_parse_dt><991>[SX933x]: sx933x_parse_dt - get ref-phases-b error
+[    2.809070] i2c_geni 884000.i2c: i2c error :-107
+[    2.809074] [sar SX933x]: [ERR]<sx933x_i2c_write_16bit><118> i2c write reg 0x4240 error -107
+[    2.873258] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.909318] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.909367] pm8150b_charger: smblib_pd_contract_work: smblib_pd_contract_work: 5000000 uV, 3000000 uA
+[    3.040035] get_battery_serialnumber: Battsn unused
+[    3.040044] QCOM-STEPCHG: read_range_data_from_node: Count qcom,step-chg-ranges failed, rc=-22
+[    3.040046] QCOM-STEPCHG: read_range_data_from_node: Count qcom,jeita-fcc-ranges failed, rc=-22
+[    3.040048] QCOM-STEPCHG: read_range_data_from_node: Count qcom,jeita-fv-ranges failed, rc=-22
+[    3.253405] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
+[    3.261711] batt power supply prop 4 not supported
+[    3.628894] batt power supply prop 4 not supported
+[    4.090344] [sar SX933x]: [ERR]<sx933x_probe><1586>sx933x_Hardware_CheckFail!
+[    4.092050] st21nfc_probe: st21nfc_probe : supported device found
+[    4.196240] selinux: SELinux:  Could not stat /sys/kernel/debug: No such file or directory.
+[    4.210158] gsi soc:qcom,msm_gsi: gsi_register_device:1208 GSI irq is wake enabled 32
+[    4.212250] ipa-wan ipa3_wwan_probe:2531 rmnet_ipa completed initialization
+[    4.217564] init: File /system/bin/sh (labeled "u:object_r:shell_exec:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    4.221709] ipa ipa3_uc_wdi_event_log_info_handler:351 WDI protocol missing 0x21
+[    4.221716] ipa ipa3_uc_ntn_event_log_info_handler:34 NTN stats ofst=0x500e0
+[    4.282650] init: [libfs_mgr] Failed to open /sys/fs/f2fs/features/linear_lookup: No such file or directory
+[    4.349052] F2FS-fs (sde27): checkpoint=disable on readonly fs
+[    4.451494] F2FS-fs (sde27): checkpoint=disable on readonly fs
+[    4.572298] vold: metadata_encryption options cannot be set in legacy mode
+[    4.572365] vdc: Command: cryptfs encryptFstab /dev/block/bootdevice/by-name/userdata /data false f2fs false 0   Failed: Status(-8, EX_SERVICE_SPECIFIC): '0: '
+[    4.572697] init: vdc call failed with error code: 25
+[    4.572706] init: [libfs_mgr] Encryption failed
+[    4.573396] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
+[    4.584856] selinux: SELinux: Could not get canonical path for /data/misc/keystore restorecon: No such file or directory.
+[    4.623550] DEBUG: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+[    4.623559] DEBUG: Build fingerprint: 'motorola/burton_reteu/burton:12/S1PB32.41-10-17-3-4/f9362b-54db3:user/release-keys'
+[    4.623569] DEBUG: Kernel Release: '4.19.325-cip136-st20-perf-g7a75775b4ee4'
+[    4.623576] DEBUG: Revision: 'pvt2'
+[    4.623582] DEBUG: ABI: 'arm64'
+[    4.623588] DEBUG: Timestamp: 1970-01-01 16:08:07.372575958+0000
+[    4.623595] DEBUG: Process uptime: 1s
+[    4.623604] DEBUG: Executable: /system/bin/keystore2
+[    4.623611] DEBUG: Cmdline: /system/bin/keystore2 /data/misc/keystore
+[    4.623618] DEBUG: pid: 800, ppid: 1, tid: 846, name: keystore2  >>> /system/bin/keystore2 <<<
+[    4.623626] DEBUG: uid: 1017
+[    4.623635] DEBUG: signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+[    4.623646] DEBUG: Abort message: 'Failed to open database: Failed to attach database persistent.
+[    4.623649] DEBUG: 
+[    4.623650] DEBUG: Caused by:
+[    4.623652] DEBUG:     0: unable to open database: file:/data/misc/keystore/persistent.sqlite
+[    4.623654] DEBUG:     1: Error code 14: Unable to open the database file'
+[    4.623665] DEBUG:     x0  0000000000000000  x1  000000000000034e  x2  0000000000000006  x3  000000757f5ef310
+[    4.623673] DEBUG:     x4  1f63646b6860451f  x5  1f63646b6860451f  x6  1f63646b6860451f  x7  7f7f7f7f7f7f7f7f
+[    4.623680] DEBUG:     x8  00000000000000f0  x9  7977c9ae7335e4ca  x10 0000000000000001  x11 0000007607b5f6e0
+[    4.623686] DEBUG:     x12 0000000000000005  x13 00000000000000e0  x14 0000000000000000  x15 0000000000000020
+[    4.623693] DEBUG:     x16 0000007607bd40e8  x17 0000007607bb7380  x18 000000757a9ec000  x19 0000000000000320
+[    4.623700] DEBUG:     x20 000000000000034e  x21 00000000ffffffff  x22 000000757f5ef4a0  x23 0000005d55616ba8
+[    4.623748] DEBUG:     x24 0000005d5561bad8  x25 b400007582622000  x26 0000000000000000  x27 000000003b9ac9ff
+[    4.623790] DEBUG:     x28 00000000c4653600  x29 000000757f5ef390
+[    4.623820] DEBUG:     lr  0000007607b4522c  sp  000000757f5ef310  pc  0000007607b45250  pst 0000000000001000
+[    4.623849] DEBUG:     esr 0000000000000000  vg  0000000000000000
+[    4.623875] DEBUG: 16 total frames
+[    4.623887] DEBUG: backtrace:
+[    4.623901] DEBUG:       #00 pc 00000000000b3250  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
+[    4.623911] DEBUG:       #01 pc 0000000000206560  /system/bin/keystore2 (std::sys::pal::unix::abort_internal+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623918] DEBUG:       #02 pc 0000000000203340  /system/bin/keystore2 (std::process::abort+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623925] DEBUG:       #03 pc 00000000001ff6e4  /system/bin/keystore2 (__rustc::__rust_abort+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623932] DEBUG:       #04 pc 00000000001df64c  /system/bin/keystore2 (__rustc::__rust_start_panic+16) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623939] DEBUG:       #05 pc 00000000001ff63c  /system/bin/keystore2 (__rustc::rust_panic+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623946] DEBUG:       #06 pc 0000000000203640  /system/bin/keystore2 (std::panicking::panic_with_hook+272) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623953] DEBUG:       #07 pc 00000000001fed28  /system/bin/keystore2 (std::panicking::panic_handler::{closure#0}+60) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623965] DEBUG:       #08 pc 00000000001ff7fc  /system/bin/keystore2 (__rustc::rust_begin_unwind+28) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.623973] DEBUG:       #09 pc 00000000000d899c  /system/bin/keystore2 (core::panicking::panic_fmt+36) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.624008] DEBUG:       #10 pc 00000000000d8868  /system/bin/keystore2 (core::result::unwrap_failed+72) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.624039] DEBUG:       #11 pc 0000000000116e54  /system/bin/keystore2 (<<keystore2::gc::Gc>::new_init_with<keystore2::globals::GC::{closure#0}::{closure#0}>::{closure#0} as core::ops::function::FnOnce<(&mut keystore2::async_task::Shelf,)>>::call_once::{shim:vtable#0}+1200) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.624066] DEBUG:       #12 pc 000000000011a680  /system/bin/keystore2 (<std::thread::lifecycle::spawn_unchecked<<keystore2::async_task::AsyncTask>::spawn_thread::{closure#0}, ()>::{closure#1} as core::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}+1100) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.624098] DEBUG:       #13 pc 0000000000207138  /system/bin/keystore2 (<std::sys::thread::unix::Thread>::new::thread_start+252) (BuildId: 893cbbd35ddd8416179296825985c4ad)
+[    4.624128] DEBUG:       #14 pc 00000000000c7af0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
+[    4.624157] DEBUG:       #15 pc 00000000000b6be4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
+[    4.624186] DEBUG: Note: To display stack pointer information, use the pbtombstone tool:
+[    4.624214] DEBUG:         pbtombstone --display-sp tombstone_XX.pb
+[    4.630146] vold: keystore2 Communication with Keystore earlyBootEnded failed error: -129
+[    4.630986] init: Could not load single persistent property file, trying legacy directory: Unable to read persistent property file: open() failed: No such file or directory
+[    4.630998] init: Unable to load legacy persistent properties: Unable to open persistent property directory "/data/property": No such file or directory
+[    4.637352] logd: Cannot read /data/misc/logd/event-log-tags
+[    4.637610] logd: FrameworkListener: read() failed (Connection reset by peer)
+[    4.651681] selinux: SELinux: Could not get canonical path for /data/system/environ restorecon: No such file or directory.
+[    4.651959] selinux: SELinux: Could not get canonical path for /data/system/shutdown-checkpoints restorecon: No such file or directory.
+[    4.665710] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.665810] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.665876] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.665942] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666007] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666078] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666146] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666208] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666270] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666337] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666408] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666479] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666543] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666613] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666731] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666804] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666873] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.666939] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667007] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667077] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667143] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667206] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667268] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667337] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667400] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667463] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667521] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.667585] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
+[    4.689080] apexd: Failed to decompress : /system/apex/com.android.webapp.capex Failed to open decompression destination /data/apex/decompressed/com.android.webapp@370399999.decompressed.apex: No such file or directory
+[    4.689088] apexd: Failed to decompress : /system/apex/com.android.npumanager.capex Failed to open decompression destination /data/apex/decompressed/com.android.npumanager@370399999.decompressed.apex: No such file or directory
+[    4.689091] apexd: Failed to decompress : /system/apex/com.android.ondevicepersonalization.capex Failed to open decompression destination /data/apex/decompressed/com.android.ondevicepersonalization@370399999.decompressed.apex: No such file or directory
+[    4.689094] apexd: Failed to decompress : /system/apex/com.android.crashrecovery.capex Failed to open decompression destination /data/apex/decompressed/com.android.crashrecovery@370399999.decompressed.apex: No such file or directory
+[    4.689097] apexd: Failed to decompress : /system/apex/com.android.mediaprovider.capex Failed to open decompression destination /data/apex/decompressed/com.android.mediaprovider@370399999.decompressed.apex: No such file or directory
+[    4.689100] apexd: Failed to decompress : /system/apex/com.android.bt.capex Failed to open decompression destination /data/apex/decompressed/com.android.bt@370399999.decompressed.apex: No such file or directory
+[    4.689103] apexd: Failed to decompress : /system/apex/com.android.adbd.capex Failed to open decompression destination /data/apex/decompressed/com.android.adbd@370399999.decompressed.apex: No such file or directory
+[    4.689106] apexd: Failed to decompress : /system/apex/com.android.uprobestats.capex Failed to open decompression destination /data/apex/decompressed/com.android.uprobestats@370399999.decompressed.apex: No such file or directory
+[    4.689109] apexd: Failed to decompress : /system/apex/com.android.media.swcodec.capex Failed to open decompression destination /data/apex/decompressed/com.android.media.swcodec@370399999.decompressed.apex: No such file or directory
+[    4.689112] apexd: Failed to decompress : /system/apex/com.android.tethering.capex Failed to open decompression destination /data/apex/decompressed/com.android.tethering@370399999.decompressed.apex: No such file or directory
+[    4.689114] apexd: Failed to decompress : /system/apex/com.android.ipsec.capex Failed to open decompression destination /data/apex/decompressed/com.android.ipsec@370399999.decompressed.apex: No such file or directory
+[    4.689117] apexd: Failed to decompress : /system/apex/com.android.configinfrastructure.capex Failed to open decompression destination /data/apex/decompressed/com.android.configinfrastructure@370399999.decompressed.apex: No such file or directory
+[    4.689121] apexd: Failed to decompress : /system/apex/com.android.adservices.capex Failed to open decompression destination /data/apex/decompressed/com.android.adservices@370399999.decompressed.apex: No such file or directory
+[    4.689124] apexd: Failed to decompress : /system/apex/com.android.wifi.capex Failed to open decompression destination /data/apex/decompressed/com.android.wifi@370399999.decompressed.apex: No such file or directory
+[    4.689127] apexd: Failed to decompress : /system/apex/com.android.neuralnetworks.capex Failed to open decompression destination /data/apex/decompressed/com.android.neuralnetworks@370399999.decompressed.apex: No such file or directory
+[    4.689130] apexd: Failed to decompress : /system/apex/com.android.cellbroadcast.capex Failed to open decompression destination /data/apex/decompressed/com.android.cellbroadcast@370399999.decompressed.apex: No such file or directory
+[    4.689133] apexd: Failed to decompress : /system/apex/com.android.permission.capex Failed to open decompression destination /data/apex/decompressed/com.android.permission@370399999.decompressed.apex: No such file or directory
+[    4.689136] apexd: Failed to decompress : /system/apex/com.android.conscrypt.capex Failed to open decompression destination /data/apex/decompressed/com.android.conscrypt@370399999.decompressed.apex: No such file or directory
+[    4.689139] apexd: Failed to decompress : /system/apex/com.android.art.capex Failed to open decompression destination /data/apex/decompressed/com.android.art@370399999.decompressed.apex: No such file or directory
+[    4.689141] apexd: Failed to decompress : /system/apex/com.android.telephonycore.capex Failed to open decompression destination /data/apex/decompressed/com.android.telephonycore@370399999.decompressed.apex: No such file or directory
+[    4.689145] apexd: Failed to decompress : /system/apex/com.android.uwb.capex Failed to open decompression destination /data/apex/decompressed/com.android.uwb@370399999.decompressed.apex: No such file or directory
+[    4.689148] apexd: Failed to decompress : /system/apex/com.android.extservices.capex Failed to open decompression destination /data/apex/decompressed/com.android.extservices@370399999.decompressed.apex: No such file or directory
+[    4.689151] apexd: Failed to decompress : /system/apex/com.android.resolv.capex Failed to open decompression destination /data/apex/decompressed/com.android.resolv@370399999.decompressed.apex: No such file or directory
+[    4.689153] apexd: Failed to decompress : /system/apex/com.android.nfcservices.capex Failed to open decompression destination /data/apex/decompressed/com.android.nfcservices@370399999.decompressed.apex: No such file or directory
+[    4.689156] apexd: Failed to decompress : /system/apex/com.android.media.capex Failed to open decompression destination /data/apex/decompressed/com.android.media@370399999.decompressed.apex: No such file or directory
+[    4.689159] apexd: Failed to decompress : /system/apex/com.android.profiling.capex Failed to open decompression destination /data/apex/decompressed/com.android.profiling@370399999.decompressed.apex: No such file or directory
+[    4.689161] apexd: Failed to decompress : /system/apex/com.android.appsearch.capex Failed to open decompression destination /data/apex/decompressed/com.android.appsearch@370399999.decompressed.apex: No such file or directory
+[    4.689164] apexd: Failed to decompress : /system/apex/com.android.scheduling.capex Failed to open decompression destination /data/apex/decompressed/com.android.scheduling@370399999.decompressed.apex: No such file or directory
+[    4.689175] apexd: Failed to activate packages: Failed to decompress : /system/apex/com.android.webapp.capex Failed to open decompression destination /data/apex/decompressed/com.android.webapp@370399999.decompressed.apex: No such file or directory
+[    4.689197] apexd: Failed to revert : Revert requested, when there are no active sessions.
+[    4.746787] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    4.746800] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    4.769323] DEBUG: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+[    4.769333] DEBUG: Build fingerprint: 'motorola/burton_reteu/burton:12/S1PB32.41-10-17-3-4/f9362b-54db3:user/release-keys'
+[    4.769343] DEBUG: Kernel Release: '4.19.325-cip136-st20-perf-g7a75775b4ee4'
+[    4.769349] DEBUG: Revision: 'pvt2'
+[    4.769355] DEBUG: ABI: 'arm64'
+[    4.769362] DEBUG: Timestamp: 1970-01-01 16:08:07.499890606+0000
+[    4.769370] DEBUG: Process uptime: 1s
+[    4.769380] DEBUG: Executable: /system/bin/surfaceflinger
+[    4.769386] DEBUG: Cmdline: /system/bin/surfaceflinger
+[    4.769393] DEBUG: pid: 809, ppid: 1, tid: 832, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+[    4.769400] DEBUG: uid: 1000
+[    4.769408] DEBUG: signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+[    4.769417] DEBUG: Abort message: 'no suitable EGLConfig found, giving up (format: 1, vendor: Android, version: 1.4 Android META-EGL, extensions: EGL_ANDROID_front_buffer_auto_refresh EGL_ANDROID_get_native_client_buffer EGL_ANDROID_presentation_time EGL_EXT_surface_CTA861_3_metadata EGL_EXT_surface_SMPTE2086_metadata EGL_KHR_get_all_proc_addresses EGL_KHR_swap_buffers_with_damage EGL_ANDROID_get_frame_timestamps , Client API: OpenGL_ES)'
+[    4.769429] DEBUG:     x0  0000000000000000  x1  0000000000000340  x2  0000000000000006  x3  0000007b5bb00c80
+[    4.769437] DEBUG:     x4  7568661f2b636d74  x5  7568661f2b636d74  x6  7568661f2b636d74  x7  7f7f7f7f7f7f7f7f
+[    4.769444] DEBUG:     x8  00000000000000f0  x9  38f746b34c990f02  x10 0000000000000001  x11 0000007be79206e0
+[    4.769451] DEBUG:     x12 000000001624476d  x13 00000000341555ad  x14 0000000000000018  x15 0000000016232d84
+[    4.769458] DEBUG:     x16 0000007be79950e8  x17 0000007be7978380  x18 0000007b5aab0000  x19 0000000000000329
+[    4.769464] DEBUG:     x20 0000000000000340  x21 00000000ffffffff  x22 b400007b60836709  x23 b400007b60869dc0
+[    4.769471] DEBUG:     x24 b400007b60869dc0  x25 0000000000000329  x26 0000007b5bb01550  x27 0000007bed1b78c0
+[    4.769477] DEBUG:     x28 0000007bee50f068  x29 0000007b5bb00d00
+[    4.769484] DEBUG:     lr  0000007be790622c  sp  0000007b5bb00c80  pc  0000007be7906250  pst 0000000000001000
+[    4.769491] DEBUG:     esr 0000000000000000  vg  0000000000000000
+[    4.769499] DEBUG: 11 total frames
+[    4.769505] DEBUG: backtrace:
+[    4.769514] DEBUG:       #00 pc 00000000000b3250  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
+[    4.769521] DEBUG:       #01 pc 0000000000009c3c  /system/lib64/liblog.so (__android_log_default_aborter+12) (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+[    4.769529] DEBUG:       #02 pc 0000000000009f24  /system/lib64/liblog.so (__android_log_assert+292) (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+[    4.769537] DEBUG:       #03 pc 0000000000594be8  /system/bin/surfaceflinger (android::renderengine::skia::SkiaGLRenderEngine::chooseEglConfig(void*, int, bool)+600) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
+[    4.769546] DEBUG:       #04 pc 00000000005945c8  /system/bin/surfaceflinger (android::renderengine::skia::SkiaGLRenderEngine::create(android::renderengine::RenderEngineCreationArgs const&)+152) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
+[    4.769555] DEBUG:       #05 pc 000000000057ddd4  /system/bin/surfaceflinger (std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> std::__1::__invoke_void_return_wrapper<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>>, false>::__call[abi:nn220000]<android::renderengine::RenderEngine::create(android::renderengine::RenderEngineCreationArgs const&)::$_2&>(android::renderengine::RenderEngine::create(android::renderengine::RenderEngineCreationArgs const&)::$_2&) (.__uniq.168491058817890268359270899140672846441)+52) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
+[    4.769564] DEBUG:       #06 pc 0000000000353064  /system/bin/surfaceflinger (android::renderengine::threaded::RenderEngineThreaded::threadMain(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>)+196) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
+[    4.769579] DEBUG:       #07 pc 0000000000580558  /system/bin/surfaceflinger (decltype(__builtin_invoke(std::declval<void (android::renderengine::threaded::RenderEngineThreaded::*)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>)>(), std::declval<android::renderengine::threaded::RenderEngineThreaded*>(), std::declval<std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>>())) std::__1::__invoke[abi:nn220000]<void (android::renderengine::threaded::RenderEngineThreaded::*)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>), android::renderengine::threaded::RenderEngineThreaded*, std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>>(void (android::renderengine::threaded::RenderEngineThreaded::*&&)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>), android::renderengine::threaded::RenderEngineThreaded*&&, std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>&&)+88) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
+[    4.769590] DEBUG:       #08 pc 0000000000580480  /system/bin/surfaceflinger (void* std::__1::__thread_proxy[abi:nn220000]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, void (android::renderengine::threaded::RenderEngineThreaded::*)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>), android::renderengine::threaded::RenderEngineThreaded*, std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>>>(void*)+80) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
+[    4.769599] DEBUG:       #09 pc 00000000000c7af0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
+[    4.769606] DEBUG:       #10 pc 00000000000b6be4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
+[    4.769614] DEBUG: Note: To display stack pointer information, use the pbtombstone tool:
+[    4.769620] DEBUG:         pbtombstone --display-sp tombstone_XX.pb
+[    5.386705] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
+[    5.520843] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
+[    6.521007] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
+[    6.880133] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    6.880142] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    7.520061] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
+[    7.521200] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
+[    8.521562] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
+[    9.015789] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    9.015800] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    9.302079] cutils: Failed to mkdir(/data/misc/vold/user_keys): No such file or directory
+[    9.302101] vold: Failed to prepare /data/misc/vold/user_keys: No such file or directory
+[    9.302197] vdc: Command: cryptfs init_user0 Failed: Status(-8, EX_SERVICE_SPECIFIC): '0: '
+[    9.302688] init: Exec service failed, status 25: Rebooting into recovery, reason: init_user0_failed
+[    9.302695] init: Rebooting into recovery
+[    9.305561] init: File /vendor/bin/init.mmi.shutdown.sh (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    9.326266] init: Recovering persistent properties from memory: Unable to read persistent property file: open() failed: No such file or directory
+[    9.330924] init: Recovering persistent properties from memory: Unable to read persistent property file: open() failed: No such file or directory
+[    9.354891] sec_ts 1-0048: sec_ts_fn_remove
+[    9.359870] sec_ts 1-0048: sec_ts_power: off: pm8150_l13:off, pm8150a_l1:off
+[    9.365722] reboot: Restarting system with command 'recovery'
