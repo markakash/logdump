@@ -1,578 +1,524 @@
-[    0.005577] scm_call failed: func id 0x42001907, ret: -1, syscall returns: 0x0, 0x0, 0x0
-[    0.005585] scm_mem_protection_init_do_qrks: SCM call failed
-[    0.005730] scm_mem_protection_init: SCM call failed
-[    0.324987] Unable to find DT property: qcom,msm-imem-download_mode
-[    0.325608] Unable to find DT property: qcom,msm-imem-emergency_download_mode
-[    0.330943] msm-dcc 1023000.dcc_v2: DCC list passed 3
-[    0.331248] msm-dcc 1023000.dcc_v2: DCC list passed 6
-[    0.331577] msm-dcc 1023000.dcc_v2: DCC list passed 7
-[    0.339505] rpmh_regulator_probe: smpf1: could not find RPMh address for resource
-[    0.339573] rpmh_regulator_probe: smpf2: could not find RPMh address for resource
-[    0.339632] rpmh_regulator_probe: ldof1: could not find RPMh address for resource
-[    0.339700] rpmh_regulator_probe: ldof2: could not find RPMh address for resource
-[    0.339756] rpmh_regulator_probe: ldof3: could not find RPMh address for resource
-[    0.339813] rpmh_regulator_probe: ldof5: could not find RPMh address for resource
-[    0.339889] rpmh_regulator_probe: ldof6: could not find RPMh address for resource
-[    0.339974] rpmh_regulator_probe: ldof7: could not find RPMh address for resource
-[    0.345508] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.345919] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.345929] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: read 0x4 failed
-[    0.345936] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: failed to populate gpio 0, ret=-5
-[    0.424839] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.424849] video_cc-kona abf0000.qcom,videocc: Unable to register for bw voting
-[    0.427721] msm_bus_fabric_rpmh_init_driver
-[    0.427807] msm_bus: Probe started
-[    0.430285] msm_bus: DT Parsing complete
-[    0.431460] msm_bus_fab_init_noc_ops: Invalid Bus type
-[    0.431494] msm_bus_fab_init_noc_ops: Invalid Bus type
-[    0.431642] msm_bus_fab_init_noc_ops: Invalid Bus type
-[    0.447940] register_client_adhoc:find path.src 161 dest 627
-[    0.448127] register_client_adhoc:Client handle 1 apps_smmu
-[    0.448979] register_client_adhoc:find path.src 161 dest 627
-[    0.449171] register_client_adhoc:Client handle 2 apps_smmu
-[    0.449305] register_client_adhoc:find path.src 161 dest 627
-[    0.449483] register_client_adhoc:Client handle 3 apps_smmu
-[    0.449639] register_client_adhoc:find path.src 22 dest 773
-[    0.449725] register_client_adhoc:Client handle 4 mnoc_hf_0_tbu
-[    0.449864] register_client_adhoc:find path.src 22 dest 773
-[    0.449944] register_client_adhoc:Client handle 5 mnoc_hf_1_tbu
-[    0.450078] register_client_adhoc:find path.src 154 dest 10070
-[    0.450141] register_client_adhoc:Client handle 6 apps_smmu
-[    0.450247] register_client_adhoc:find path.src 154 dest 10070
-[    0.450304] register_client_adhoc:Client handle 7 apps_smmu
-[    0.450410] register_client_adhoc:find path.src 161 dest 627
-[    0.450589] register_client_adhoc:Client handle 8 apps_smmu
-[    0.450717] register_client_adhoc:find path.src 161 dest 627
-[    0.450892] register_client_adhoc:Client handle 9 apps_smmu
-[    0.451025] register_client_adhoc:find path.src 137 dest 772
-[    0.451111] register_client_adhoc:Client handle 10 mnoc_sf_0_tbu
-[    0.451246] register_client_adhoc:find path.src 137 dest 772
-[    0.451328] register_client_adhoc:Client handle 11 mnoc_sf_1_tbu
-[    0.451784] Error: Driver 'arm-smmu' is already registered, aborting...
-[    0.453394] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.453401] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800: Register read failed, addr=0x0805, rc=-5
-[    0.458691] virt zone: sensor[gpuss-1-usr] read error:-22
-[    0.458728] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    0.458744] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    0.458757] virt zone: sensor[skin-therm-usr] read error:-22
-[    0.458770] virt zone: sensor[skin-msm-therm-usr] read error:-22
-[    0.458782] virt zone: sensor[chg-therm-usr] read error:-22
-[    0.504795] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
-[    0.504804] read failed rc=-5
-[    0.504806] Invalid REVID peripheral type: 00
-[    0.505291] register_client_adhoc:find path.src 90 dest 770
-[    0.505431] register_client_adhoc:find path.src 129 dest 512
-[    0.505459] register_client_adhoc:find path.src 90 dest 585
-[    0.505553] register_client_adhoc:find path.src 1 dest 676
-[    0.505630] register_client_adhoc:find path.src 143 dest 777
-[    0.505653] register_client_adhoc:Client handle 12 ipa
-[    0.526763] pcie:pcie_init.
-[    0.527365] register_client_adhoc:find path.src 45 dest 512
-[    0.527531] register_client_adhoc:Client handle 13 pcie0
-[    0.527821] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
-[    0.527824] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
-[    0.528041] register_client_adhoc:find path.src 108 dest 512
-[    0.528115] register_client_adhoc:Client handle 14 pcie2
-[    0.528274] msm_pcie_get_reg: PCIe: RC2: no tcsr resource found.
-[    0.528277] msm_pcie_get_reg: PCIe: RC2: no rumi resource found.
-[    0.528281] msm_pcie_probe: PCIe: RC2 could not get pinctrl sleep state
-[    0.528535] register_client_adhoc:find path.src 22 dest 512
-[    0.528617] register_client_adhoc:find path.src 23 dest 512
-[    0.528685] register_client_adhoc:Client handle 15 bus-proxy-client
-[    0.530132] register_client_adhoc:find path.src 1 dest 589
-[    0.530224] register_client_adhoc:Client handle 16 bps_gdsc_ahb
-[    0.530428] register_client_adhoc:find path.src 1 dest 589
-[    0.530495] register_client_adhoc:Client handle 17 ife_0_gdsc_ahb
-[    0.530596] register_client_adhoc:find path.src 1 dest 589
-[    0.530661] register_client_adhoc:Client handle 18 ife_1_gdsc_ahb
-[    0.530762] register_client_adhoc:find path.src 1 dest 589
-[    0.530826] register_client_adhoc:Client handle 19 ipe_0_gdsc_ahb
-[    0.530922] register_client_adhoc:find path.src 1 dest 589
-[    0.530986] register_client_adhoc:Client handle 20 sbi_gdsc_ahb
-[    0.531084] register_client_adhoc:find path.src 1 dest 589
-[    0.531147] register_client_adhoc:Client handle 21 titan_top_gdsc_ahb
-[    0.531249] register_client_adhoc:find path.src 1 dest 590
-[    0.531315] register_client_adhoc:Client handle 22 mdss_core_gdsc_ahb
-[    0.531507] register_client_adhoc:find path.src 1 dest 596
-[    0.531576] register_client_adhoc:Client handle 23 mvs0_gdsc_ahb
-[    0.531728] register_client_adhoc:find path.src 1 dest 596
-[    0.531797] register_client_adhoc:Client handle 24 mvs0c_gdsc_ahb
-[    0.531927] register_client_adhoc:find path.src 1 dest 596
-[    0.531995] register_client_adhoc:Client handle 25 mvs1_gdsc_ahb
-[    0.532123] register_client_adhoc:find path.src 1 dest 596
-[    0.532190] register_client_adhoc:Client handle 26 mvs1c_gdsc_ahb
-[    0.532337] register_client_adhoc:find path.src 1 dest 589
-[    0.532408] register_client_adhoc:Client handle 27 clk_camcc_debugfs
-[    0.539334] register_client_adhoc:find path.src 1 dest 590
-[    0.539403] register_client_adhoc:Client handle 28 clk_dispcc_debugfs
-[    0.542669] register_client_adhoc:find path.src 1 dest 596
-[    0.542741] register_client_adhoc:Client handle 29 clk_videocc_debugfs
-[    0.690391] register_client_adhoc:find path.src 125 dest 512
-[    0.690599] register_client_adhoc:Client handle 30 scm_pas
-[    0.690613] minidump-id not found for ipa_fws
-[    0.690719] minidump-id not found for ipa_uc
-[    0.690813] minidump-id not found for adsp
-[    0.691021] register_client_adhoc:find path.src 154 dest 10070
-[    0.691039] register_client_adhoc:Client handle 31 pil-cdsp
-[    0.691044] minidump-id not found for cdsp
-[    0.691216] register_client_adhoc:find path.src 63 dest 512
-[    0.691300] register_client_adhoc:Client handle 32 pil-venus
-[    0.691304] minidump-id not found for venus
-[    0.691365] minidump-id not found for spss
-[    0.691457] minidump-id not found for cvpss
-[    0.691505] minidump-id not found for npu
-[    0.691540] subsys-restart: __get_smem_state(): Could not get smem-states qcom,force-stop
-[    0.691641] minidump-id not found for slpi
-[    0.691770] minidump-id not found for a650_zap
-[    0.693629] msm_geni_serial 998000.qcom,qup_uart: Failed to create dbg dir
-[    0.694244] register_client_adhoc:find path.src 1 dest 618
-[    0.694325] register_client_adhoc:Client handle 33 msm-rng-noc
-[    0.706417] register_client_adhoc:find path.src 125 dest 512
-[    0.706612] register_client_adhoc:Client handle 34 qcedev-noc
-[    0.709375] register_client_adhoc:find path.src 125 dest 512
-[    0.709486] register_client_adhoc:Client handle 35 qcrypto-noc
-[    0.712735] register_client_adhoc:find path.src 123 dest 512
-[    0.712847] register_client_adhoc:find path.src 1 dest 757
-[    0.712930] register_client_adhoc:Client handle 36 ufshc_mem
-[    0.725078] cnss_utils: Unable to create debugfs -19
-[    0.725295] wcnss_pre_alloc_init: Failed to create debugfs dir
-[    0.725464] cnss: CPR PMIC address is not available for smpf2
-[    0.725583] cnss: Failed to get regulator vdd-wlan-core, no such device
-[    0.725597] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
-[    0.725642] cnss: Failed to get regulator vdd-wlan-xtal-aon, no such device
-[    0.725675] cnss: Failed to get regulator vdd-wlan-xtal, no such device
-[    0.725709] cnss: Failed to get regulator vdd-wlan, no such device
-[    0.725743] cnss: Failed to get regulator vdd-wlan-ctrl1, no such device
-[    0.725778] cnss: Failed to get regulator vdd-wlan-ctrl2, no such device
-[    0.725810] cnss: Failed to get regulator vdd-wlan-sp2t, no such device
-[    0.725870] cnss: Failed to get regulator wlan-soc-swreg, no such device
-[    0.726002] cnss: Failed to get regulator vdd-wlan-en, no such device
-[    0.726857] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    0.726876] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    0.727420] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    0.727457] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    0.727827] msm-dwc3 a600000.ssusb: unable to get ssphy device
-[    0.728358] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
-[    0.730032] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
-[    0.736125] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
-[    0.739292] ssusb redriver 2-001a: failed to get phandle for redriver
-[    0.742967] register_client_adhoc:find path.src 154 dest 512
-[    0.743074] register_client_adhoc:find path.src 154 dest 620
-[    0.743196] register_client_adhoc:Client handle 37 9900000.qcom,msm_npu
-[    0.745662] NPU_ERR: npu_debugfs_init: 303 debugfs_create_dir for npu failed, error -19
+[    0.005618] scm_call failed: func id 0x42001907, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    0.005626] scm_mem_protection_init_do_qrks: SCM call failed
+[    0.005768] scm_mem_protection_init: SCM call failed
+[    0.325153] Unable to find DT property: qcom,msm-imem-download_mode
+[    0.325781] Unable to find DT property: qcom,msm-imem-emergency_download_mode
+[    0.331108] msm-dcc 1023000.dcc_v2: DCC list passed 3
+[    0.331414] msm-dcc 1023000.dcc_v2: DCC list passed 6
+[    0.331746] msm-dcc 1023000.dcc_v2: DCC list passed 7
+[    0.339711] rpmh_regulator_probe: smpf1: could not find RPMh address for resource
+[    0.339778] rpmh_regulator_probe: smpf2: could not find RPMh address for resource
+[    0.339850] rpmh_regulator_probe: ldof1: could not find RPMh address for resource
+[    0.339917] rpmh_regulator_probe: ldof2: could not find RPMh address for resource
+[    0.339983] rpmh_regulator_probe: ldof3: could not find RPMh address for resource
+[    0.340079] rpmh_regulator_probe: ldof5: could not find RPMh address for resource
+[    0.340153] rpmh_regulator_probe: ldof6: could not find RPMh address for resource
+[    0.340239] rpmh_regulator_probe: ldof7: could not find RPMh address for resource
+[    0.345635] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.346047] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.346057] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: read 0x4 failed
+[    0.346065] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: failed to populate gpio 0, ret=-5
+[    0.425273] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.425281] video_cc-kona abf0000.qcom,videocc: Unable to register for bw voting
+[    0.428159] msm_bus_fabric_rpmh_init_driver
+[    0.428246] msm_bus: Probe started
+[    0.430682] msm_bus: DT Parsing complete
+[    0.431810] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.431845] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.431991] msm_bus_fab_init_noc_ops: Invalid Bus type
+[    0.448290] register_client_adhoc:find path.src 161 dest 627
+[    0.448476] register_client_adhoc:Client handle 1 apps_smmu
+[    0.449324] register_client_adhoc:find path.src 161 dest 627
+[    0.449509] register_client_adhoc:Client handle 2 apps_smmu
+[    0.449644] register_client_adhoc:find path.src 161 dest 627
+[    0.449820] register_client_adhoc:Client handle 3 apps_smmu
+[    0.449979] register_client_adhoc:find path.src 22 dest 773
+[    0.450087] register_client_adhoc:Client handle 4 mnoc_hf_0_tbu
+[    0.450228] register_client_adhoc:find path.src 22 dest 773
+[    0.450311] register_client_adhoc:Client handle 5 mnoc_hf_1_tbu
+[    0.450423] register_client_adhoc:find path.src 154 dest 10070
+[    0.450485] register_client_adhoc:Client handle 6 apps_smmu
+[    0.450590] register_client_adhoc:find path.src 154 dest 10070
+[    0.450649] register_client_adhoc:Client handle 7 apps_smmu
+[    0.450753] register_client_adhoc:find path.src 161 dest 627
+[    0.450931] register_client_adhoc:Client handle 8 apps_smmu
+[    0.451058] register_client_adhoc:find path.src 161 dest 627
+[    0.451231] register_client_adhoc:Client handle 9 apps_smmu
+[    0.451363] register_client_adhoc:find path.src 137 dest 772
+[    0.451449] register_client_adhoc:Client handle 10 mnoc_sf_0_tbu
+[    0.451584] register_client_adhoc:find path.src 137 dest 772
+[    0.451665] register_client_adhoc:Client handle 11 mnoc_sf_1_tbu
+[    0.452119] Error: Driver 'arm-smmu' is already registered, aborting...
+[    0.453713] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.453720] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800: Register read failed, addr=0x0805, rc=-5
+[    0.459008] virt zone: sensor[gpuss-1-usr] read error:-22
+[    0.459046] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    0.459061] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    0.459074] virt zone: sensor[skin-therm-usr] read error:-22
+[    0.459088] virt zone: sensor[skin-msm-therm-usr] read error:-22
+[    0.459101] virt zone: sensor[chg-therm-usr] read error:-22
+[    0.505151] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.505160] read failed rc=-5
+[    0.505162] Invalid REVID peripheral type: 00
+[    0.505615] register_client_adhoc:find path.src 90 dest 770
+[    0.505751] register_client_adhoc:find path.src 129 dest 512
+[    0.505778] register_client_adhoc:find path.src 90 dest 585
+[    0.505873] register_client_adhoc:find path.src 1 dest 676
+[    0.505953] register_client_adhoc:find path.src 143 dest 777
+[    0.505976] register_client_adhoc:Client handle 12 ipa
+[    0.526881] pcie:pcie_init.
+[    0.527501] register_client_adhoc:find path.src 45 dest 512
+[    0.527659] register_client_adhoc:Client handle 13 pcie0
+[    0.527960] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+[    0.527963] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+[    0.528205] register_client_adhoc:find path.src 108 dest 512
+[    0.528276] register_client_adhoc:Client handle 14 pcie2
+[    0.528436] msm_pcie_get_reg: PCIe: RC2: no tcsr resource found.
+[    0.528439] msm_pcie_get_reg: PCIe: RC2: no rumi resource found.
+[    0.528443] msm_pcie_probe: PCIe: RC2 could not get pinctrl sleep state
+[    0.528703] register_client_adhoc:find path.src 22 dest 512
+[    0.528783] register_client_adhoc:find path.src 23 dest 512
+[    0.528851] register_client_adhoc:Client handle 15 bus-proxy-client
+[    0.530312] register_client_adhoc:find path.src 1 dest 589
+[    0.530405] register_client_adhoc:Client handle 16 bps_gdsc_ahb
+[    0.530612] register_client_adhoc:find path.src 1 dest 589
+[    0.530681] register_client_adhoc:Client handle 17 ife_0_gdsc_ahb
+[    0.530781] register_client_adhoc:find path.src 1 dest 589
+[    0.530846] register_client_adhoc:Client handle 18 ife_1_gdsc_ahb
+[    0.530950] register_client_adhoc:find path.src 1 dest 589
+[    0.531015] register_client_adhoc:Client handle 19 ipe_0_gdsc_ahb
+[    0.531113] register_client_adhoc:find path.src 1 dest 589
+[    0.531177] register_client_adhoc:Client handle 20 sbi_gdsc_ahb
+[    0.531275] register_client_adhoc:find path.src 1 dest 589
+[    0.531339] register_client_adhoc:Client handle 21 titan_top_gdsc_ahb
+[    0.531439] register_client_adhoc:find path.src 1 dest 590
+[    0.531505] register_client_adhoc:Client handle 22 mdss_core_gdsc_ahb
+[    0.531696] register_client_adhoc:find path.src 1 dest 596
+[    0.531765] register_client_adhoc:Client handle 23 mvs0_gdsc_ahb
+[    0.531916] register_client_adhoc:find path.src 1 dest 596
+[    0.531986] register_client_adhoc:Client handle 24 mvs0c_gdsc_ahb
+[    0.532114] register_client_adhoc:find path.src 1 dest 596
+[    0.532183] register_client_adhoc:Client handle 25 mvs1_gdsc_ahb
+[    0.532310] register_client_adhoc:find path.src 1 dest 596
+[    0.532377] register_client_adhoc:Client handle 26 mvs1c_gdsc_ahb
+[    0.532520] register_client_adhoc:find path.src 1 dest 589
+[    0.532591] register_client_adhoc:Client handle 27 clk_camcc_debugfs
+[    0.539505] register_client_adhoc:find path.src 1 dest 590
+[    0.539575] register_client_adhoc:Client handle 28 clk_dispcc_debugfs
+[    0.542854] register_client_adhoc:find path.src 1 dest 596
+[    0.542924] register_client_adhoc:Client handle 29 clk_videocc_debugfs
+[    0.689645] register_client_adhoc:find path.src 125 dest 512
+[    0.689841] register_client_adhoc:Client handle 30 scm_pas
+[    0.689856] minidump-id not found for ipa_fws
+[    0.689965] minidump-id not found for ipa_uc
+[    0.690066] minidump-id not found for adsp
+[    0.690279] register_client_adhoc:find path.src 154 dest 10070
+[    0.690297] register_client_adhoc:Client handle 31 pil-cdsp
+[    0.690302] minidump-id not found for cdsp
+[    0.690470] register_client_adhoc:find path.src 63 dest 512
+[    0.690552] register_client_adhoc:Client handle 32 pil-venus
+[    0.690556] minidump-id not found for venus
+[    0.690623] minidump-id not found for spss
+[    0.690718] minidump-id not found for cvpss
+[    0.690769] minidump-id not found for npu
+[    0.690806] subsys-restart: __get_smem_state(): Could not get smem-states qcom,force-stop
+[    0.690907] minidump-id not found for slpi
+[    0.691065] minidump-id not found for a650_zap
+[    0.692933] msm_geni_serial 998000.qcom,qup_uart: Failed to create dbg dir
+[    0.693569] register_client_adhoc:find path.src 1 dest 618
+[    0.693649] register_client_adhoc:Client handle 33 msm-rng-noc
+[    0.705839] register_client_adhoc:find path.src 125 dest 512
+[    0.706031] register_client_adhoc:Client handle 34 qcedev-noc
+[    0.708803] register_client_adhoc:find path.src 125 dest 512
+[    0.708915] register_client_adhoc:Client handle 35 qcrypto-noc
+[    0.712326] register_client_adhoc:find path.src 123 dest 512
+[    0.712438] register_client_adhoc:find path.src 1 dest 757
+[    0.712519] register_client_adhoc:Client handle 36 ufshc_mem
+[    0.725122] cnss_utils: Unable to create debugfs -19
+[    0.725345] wcnss_pre_alloc_init: Failed to create debugfs dir
+[    0.725518] cnss: CPR PMIC address is not available for smpf2
+[    0.725625] cnss: Failed to get regulator vdd-wlan-core, no such device
+[    0.725668] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    0.725700] cnss: Failed to get regulator vdd-wlan-xtal-aon, no such device
+[    0.725732] cnss: Failed to get regulator vdd-wlan-xtal, no such device
+[    0.725760] cnss: Failed to get regulator vdd-wlan, no such device
+[    0.725793] cnss: Failed to get regulator vdd-wlan-ctrl1, no such device
+[    0.725826] cnss: Failed to get regulator vdd-wlan-ctrl2, no such device
+[    0.725858] cnss: Failed to get regulator vdd-wlan-sp2t, no such device
+[    0.725917] cnss: Failed to get regulator wlan-soc-swreg, no such device
+[    0.726047] cnss: Failed to get regulator vdd-wlan-en, no such device
+[    0.726894] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.726913] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.727450] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.727485] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.727871] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    0.728408] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
+[    0.730050] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
+[    0.736137] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+[    0.739304] ssusb redriver 2-001a: failed to get phandle for redriver
+[    0.743105] register_client_adhoc:find path.src 154 dest 512
+[    0.743217] register_client_adhoc:find path.src 154 dest 620
+[    0.743338] register_client_adhoc:Client handle 37 9900000.qcom,msm_npu
+[    0.745652] NPU_ERR: npu_debugfs_init: 303 debugfs_create_dir for npu failed, error -19
 [    0.846690] rtc6226: rtc6226_pinctrl_init: target does not use pinctrl
 [    0.846694] rtc6226: rtc6226_i2c_probe: rtc6226_pinctrl_init returned -19
-[    0.847427] Couldn't parse device tree rc=-517
-[    0.857094] debugfs is not enabled in the kernel
-[    0.858051] get_battery_serialnumber: Battsn unused
-[    0.863783] FG: fg_psy_get_property: unsupported property 4
-[    0.886239] msm_pcie_enumerate: PCIe: RC0: has already been enumerated.
-[    0.888826] register_client_adhoc:find path.src 1 dest 627
-[    0.888984] register_client_adhoc:Client handle 38 soc:qcom,snoc_cnoc_keepalive
-[    0.889106] register_client_adhoc:find path.src 1 dest 770
-[    0.889132] register_client_adhoc:Client handle 39 soc:qcom,cpu-cpu-llcc-bw
-[    0.889470] register_client_adhoc:find path.src 129 dest 512
-[    0.889492] register_client_adhoc:Client handle 40 soc:qcom,cpu-llcc-ddr-bw
-[    0.889847] register_client_adhoc:find path.src 154 dest 770
-[    0.889885] register_client_adhoc:Client handle 41 soc:qcom,npu-npu-llcc-bw
-[    0.889957] register_client_adhoc:find path.src 770 dest 512
-[    0.889990] register_client_adhoc:Client handle 42 soc:qcom,npu-llcc-ddr-bw
-[    0.890065] register_client_adhoc:find path.src 154 dest 512
-[    0.890127] register_client_adhoc:Client handle 43 soc:qcom,npudsp-npu-ddr-bw
-[    0.890234] register_client_adhoc:find path.src 154 dest 512
-[    0.890293] register_client_adhoc:Client handle 44 soc:qcom,npu-npu-ddr-latfloor
-[    0.890325] register_client_adhoc:find path.src 1 dest 770
-[    0.890346] register_client_adhoc:Client handle 45 soc:qcom,cpu0-cpu-llcc-lat
-[    0.890396] register_client_adhoc:find path.src 1 dest 770
-[    0.890414] register_client_adhoc:Client handle 46 soc:qcom,cpu4-cpu-llcc-lat
-[    0.890468] register_client_adhoc:find path.src 129 dest 512
-[    0.890488] register_client_adhoc:Client handle 47 soc:qcom,cpu0-llcc-ddr-lat
-[    0.890541] register_client_adhoc:find path.src 129 dest 512
-[    0.890562] register_client_adhoc:Client handle 48 soc:qcom,cpu4-llcc-ddr-lat
-[    0.890619] register_client_adhoc:find path.src 129 dest 512
-[    0.890639] register_client_adhoc:Client handle 49 soc:qcom,cpu4-cpu-ddr-latfloor
-[    0.890780] register_client_adhoc:find path.src 26 dest 512
-[    0.890827] register_client_adhoc:Client handle 51 soc:qcom,gpubw
-[    0.893326] register_client_adhoc:find path.src 1 dest 590
-[    0.893412] register_client_adhoc:Client handle 50 disp_rsc_reg
-[    0.893421] register_client_adhoc:find path.src 20003 dest 20513
-[    0.893482] register_client_adhoc:find path.src 20004 dest 20513
-[    0.893531] register_client_adhoc:Client handle 52 disp_rsc_mnoc_llcc
-[    0.893541] register_client_adhoc:find path.src 20000 dest 20512
-[    0.893567] register_client_adhoc:Client handle 53 disp_rsc_ebi
-[    0.894101] AXI: get_pdata(): Error: Client name not found
-[    0.894103] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
-[    0.894135] AXI: get_pdata(): Error: Client name not found
-[    0.894137] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
-[    0.894383] OF: graph: no port node found in /soc/qcom,dsi-display-primary
-[    0.894460] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] invalid number of elements -22
-[    0.894463] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] failed to parse fod dim lut
-[    0.899474] register_client_adhoc:find path.src 1 dest 589
-[    0.899573] register_client_adhoc:Client handle 54 cam_ahb
-[    0.899622] register_client_adhoc:find path.src 170 dest 512
-[    0.899693] register_client_adhoc:Client handle 55 cam_hf_0_mnoc
-[    0.899744] register_client_adhoc:find path.src 137 dest 512
-[    0.899814] register_client_adhoc:Client handle 56 cam_sf_0_mnoc
-[    0.899857] register_client_adhoc:find path.src 171 dest 512
-[    0.899925] register_client_adhoc:Client handle 57 cam_sf_icp_mnoc
-[    0.903309] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
-[    0.913263] minidump-id not found for npu
-[    0.914595] register_client_adhoc:find path.src 26 dest 512
-[    0.914676] register_client_adhoc:Client handle 58 grp3d
-[    0.914684] register_client_adhoc:find path.src 26 dest 10036
-[    0.914734] register_client_adhoc:Client handle 59 cnoc
-[    0.914737] query_client_usecase_all: query_start
-[    0.914749] query_client_usecase_all: query_start
-[    0.929195] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
-[    0.929266] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    0.929277] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    0.929642] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    0.929656] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    0.930021] msm-dwc3 a600000.ssusb: unable to get ssphy device
-[    0.930211] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
-[    0.930253] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    0.930256] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
-[    0.930258] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    0.930260] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
-[    0.931045] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
-[    0.936538] ssusb redriver 2-001a: failed to get phandle for redriver
-[    0.936995] QCOM-BATT: qcom_batt_create_debugfs: Couldn't create battery debugfs rc=-19
-[    0.937942] pm8150b_charger: smblib_usb_plugin_locked: battery supply smblib_usb_plugin_locked
-[    0.938188] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[    0.938231] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
-[    0.938944] batt power supply prop 4 not supported
-[    0.939802] get_battery_serialnumber: Battsn unused
-[    0.939827] pm8150b_charger: jeita_update_work: Couldn't get fcc values for soft JEITA rc=-22
-[    0.946703] batt power supply prop 4 not supported
-[    0.957407] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
-[    0.957459] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    0.957468] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    0.957814] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    0.957824] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    0.958123] msm-dwc3 a600000.ssusb: unable to get ssphy device
-[    0.958308] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
-[    0.958347] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    0.958350] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
-[    0.958352] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
-[    0.958354] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
-[    0.959301] i2c_geni 884000.i2c: i2c error :-107
-[    0.959304] fsa4480-driver 2-0042: fsa4480_probe,device id read failed:-107
-[    0.959417] i2c_geni 884000.i2c: i2c error :-107
-[    0.959531] i2c_geni 884000.i2c: i2c error :-107
-[    0.959645] i2c_geni 884000.i2c: i2c error :-107
-[    0.959760] i2c_geni 884000.i2c: i2c error :-107
-[    0.959874] i2c_geni 884000.i2c: i2c error :-107
-[    0.959988] i2c_geni 884000.i2c: i2c error :-107
-[    0.960103] i2c_geni 884000.i2c: i2c error :-107
-[    0.960224] i2c_geni 884000.i2c: i2c error :-107
-[    0.960337] i2c_geni 884000.i2c: i2c error :-107
-[    0.960450] i2c_geni 884000.i2c: i2c error :-107
-[    0.965955] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
-[    0.965961] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
-[    0.966320] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
-[    0.966329] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
-[    0.966628] register_client_adhoc:find path.src 61 dest 512
-[    0.966774] register_client_adhoc:find path.src 61 dest 676
-[    0.966889] register_client_adhoc:find path.src 1 dest 583
-[    0.966957] register_client_adhoc:Client handle 60 usb0
-[    0.966972] msm-dwc3 a600000.ssusb: setting pm-qos-latency to zero.
-[    0.966978] msm-dwc3 a600000.ssusb: vbus:1 event received
-[    0.966982] msm-dwc3 a600000.ssusb: Connected to CDP, pull DP up
-[    0.976067] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 1
-[    0.981833] ufshcd_slave_configure: ufsfeature set lun 0 sdev 0000000069c2479b q 0000000004ec7d5f
-[    0.982359] ufshcd_slave_configure: ufsfeature set lun 1 sdev 000000000f8760ea q 00000000217a4864
-[    0.982760] ufshcd_slave_configure: ufsfeature set lun 2 sdev 00000000fab1b4de q 00000000b510970a
-[    0.983172] ufshcd_slave_configure: ufsfeature set lun 3 sdev 00000000aad1ce48 q 00000000b2befec2
-[    0.983585] ufshcd_slave_configure: ufsfeature set lun 4 sdev 000000001bd0bb40 q 000000008da17a5d
-[    0.984000] ufshcd_slave_configure: ufsfeature set lun 5 sdev 000000005971ddc6 q 0000000073f02d27
-[    1.011200] register_client_adhoc:find path.src 45 dest 512
-[    1.011415] register_client_adhoc:Client handle 61 msm-cnss
-[    1.193367] msm-dwc3 a600000.ssusb: vbus:1 event received
-[    1.193376] msm-dwc3 a600000.ssusb: dwc3_resume_work: dwc3 resume work
-[    1.193393] msm-dwc3 a600000.ssusb: XCVR: ID set
-[    1.193398] msm-dwc3 a600000.ssusb: XCVR: BSV set
-[    1.193404] msm-dwc3 a600000.ssusb: undefined state
-[    1.193405] msm-dwc3 a600000.ssusb: XCVR: SUSP clear
-[    1.193409] msm-dwc3 a600000.ssusb: eud: state:0 active:0 hs_phy_flags:0x0
-[    1.193421] msm-dwc3 a600000.ssusb: b_sess_vld
-[    1.193429] msm-dwc3 a600000.ssusb: DWC3-msm runtime resume
-[    1.193435] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exiting lpm
-[    1.193551] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[    1.194967] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
-[    1.195472] msm-usb-ssphy-qmp 88e8000.ssphy: USB DP QMP PHY: Update TYPEC CTRL(3)
-[    1.203623] register_client_adhoc:find path.src 1 dest 590
-[    1.203752] register_client_adhoc:Client handle 62 mdss_reg
-[    1.203763] register_client_adhoc:find path.src 22 dest 512
-[    1.203857] register_client_adhoc:find path.src 23 dest 512
-[    1.203941] register_client_adhoc:Client handle 63 mdss_sde
-[    1.206780] [drm:dsi_panel_get_mode] *ERROR* [msm-dsi-error]: failed to parse panel phy ldo rc=-22
-[    1.213048] cam_cc_sleep_clk_src: CXO configuration failed
-[    1.213575] msm_bus_late_init: Remove handoff bw requests
-[    1.214012] Warning: unable to open an initial console.
-[    1.242433] init: Failed to copy /avb into /metadata/gsi/dsu/avb/: No such file or directory
-[    1.246015] init: [libfs_avb] Invalid hash size: 
-[    1.246019] init: [libfs_avb] Failed to verify vbmeta digest
-[    1.246027] init: Top-level vbmeta is disabled, skip Hashtree setup for /system
-[    1.250064] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_POST_RESET_EVENT received
+[    0.847469] Couldn't parse device tree rc=-517
+[    0.857058] debugfs is not enabled in the kernel
+[    0.858056] get_battery_serialnumber: Battsn unused
+[    0.863490] FG: fg_psy_get_property: unsupported property 4
+[    0.883690] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+[    0.886246] msm_pcie_enumerate: PCIe: RC0: has already been enumerated.
+[    0.889574] register_client_adhoc:find path.src 1 dest 627
+[    0.889727] register_client_adhoc:Client handle 38 soc:qcom,snoc_cnoc_keepalive
+[    0.889851] register_client_adhoc:find path.src 1 dest 770
+[    0.889883] register_client_adhoc:Client handle 39 soc:qcom,cpu-cpu-llcc-bw
+[    0.890240] register_client_adhoc:find path.src 129 dest 512
+[    0.890262] register_client_adhoc:Client handle 40 soc:qcom,cpu-llcc-ddr-bw
+[    0.890616] register_client_adhoc:find path.src 154 dest 770
+[    0.890655] register_client_adhoc:Client handle 41 soc:qcom,npu-npu-llcc-bw
+[    0.890725] register_client_adhoc:find path.src 770 dest 512
+[    0.890759] register_client_adhoc:Client handle 42 soc:qcom,npu-llcc-ddr-bw
+[    0.890820] register_client_adhoc:find path.src 154 dest 512
+[    0.890879] register_client_adhoc:Client handle 43 soc:qcom,npudsp-npu-ddr-bw
+[    0.890988] register_client_adhoc:find path.src 154 dest 512
+[    0.891048] register_client_adhoc:Client handle 44 soc:qcom,npu-npu-ddr-latfloor
+[    0.891083] register_client_adhoc:find path.src 1 dest 770
+[    0.891102] register_client_adhoc:Client handle 45 soc:qcom,cpu0-cpu-llcc-lat
+[    0.891152] register_client_adhoc:find path.src 1 dest 770
+[    0.891170] register_client_adhoc:Client handle 46 soc:qcom,cpu4-cpu-llcc-lat
+[    0.891229] register_client_adhoc:find path.src 129 dest 512
+[    0.891251] register_client_adhoc:Client handle 47 soc:qcom,cpu0-llcc-ddr-lat
+[    0.891306] register_client_adhoc:find path.src 129 dest 512
+[    0.891325] register_client_adhoc:Client handle 48 soc:qcom,cpu4-llcc-ddr-lat
+[    0.891398] register_client_adhoc:find path.src 129 dest 512
+[    0.891419] register_client_adhoc:Client handle 49 soc:qcom,cpu4-cpu-ddr-latfloor
+[    0.891547] register_client_adhoc:find path.src 26 dest 512
+[    0.891593] register_client_adhoc:Client handle 51 soc:qcom,gpubw
+[    0.894126] register_client_adhoc:find path.src 1 dest 590
+[    0.894202] register_client_adhoc:Client handle 50 disp_rsc_reg
+[    0.894211] register_client_adhoc:find path.src 20003 dest 20513
+[    0.894271] register_client_adhoc:find path.src 20004 dest 20513
+[    0.894321] register_client_adhoc:Client handle 52 disp_rsc_mnoc_llcc
+[    0.894330] register_client_adhoc:find path.src 20000 dest 20512
+[    0.894355] register_client_adhoc:Client handle 53 disp_rsc_ebi
+[    0.894883] AXI: get_pdata(): Error: Client name not found
+[    0.894885] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
+[    0.894918] AXI: get_pdata(): Error: Client name not found
+[    0.894919] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
+[    0.895148] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    0.895226] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] invalid number of elements -22
+[    0.895228] [drm:dsi_panel_parse_bl_config] *ERROR* [msm-dsi-error]: [mipi_mot_cmd_boe_1080p_dsc_667] failed to parse fod dim lut
+[    0.900342] register_client_adhoc:find path.src 1 dest 589
+[    0.900436] register_client_adhoc:Client handle 54 cam_ahb
+[    0.900482] register_client_adhoc:find path.src 170 dest 512
+[    0.900550] register_client_adhoc:Client handle 55 cam_hf_0_mnoc
+[    0.900602] register_client_adhoc:find path.src 137 dest 512
+[    0.900670] register_client_adhoc:Client handle 56 cam_sf_0_mnoc
+[    0.900711] register_client_adhoc:find path.src 171 dest 512
+[    0.900779] register_client_adhoc:Client handle 57 cam_sf_icp_mnoc
+[    0.914213] minidump-id not found for npu
+[    0.915510] register_client_adhoc:find path.src 26 dest 512
+[    0.915591] register_client_adhoc:Client handle 58 grp3d
+[    0.915598] register_client_adhoc:find path.src 26 dest 10036
+[    0.915648] register_client_adhoc:Client handle 59 cnoc
+[    0.915651] query_client_usecase_all: query_start
+[    0.915663] query_client_usecase_all: query_start
+[    0.930230] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    0.930303] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.930313] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.930690] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.930704] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.931042] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    0.931230] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
+[    0.931272] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.931275] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
+[    0.931277] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.931280] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
+[    0.932003] qpnp-pdphy c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700: usbpd_create failed: -517
+[    0.937500] ssusb redriver 2-001a: failed to get phandle for redriver
+[    0.937953] QCOM-BATT: qcom_batt_create_debugfs: Couldn't create battery debugfs rc=-19
+[    0.938870] pm8150b_charger: smblib_usb_plugin_locked: battery supply smblib_usb_plugin_locked
+[    0.939116] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
+[    0.939160] pm8150b_charger: send_vbus_present_uevent: battery supply get fail
+[    0.939868] batt power supply prop 4 not supported
+[    0.940742] get_battery_serialnumber: Battsn unused
+[    0.940768] pm8150b_charger: jeita_update_work: Couldn't get fcc values for soft JEITA rc=-22
+[    0.945423] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 1
+[    0.946718] batt power supply prop 4 not supported
+[    0.951297] ufshcd_slave_configure: ufsfeature set lun 0 sdev 000000002776cd23 q 00000000e4f20ee6
+[    0.951802] ufshcd_slave_configure: ufsfeature set lun 1 sdev 00000000e93e844c q 000000005d634f28
+[    0.952200] ufshcd_slave_configure: ufsfeature set lun 2 sdev 0000000060dd740f q 00000000187d891f
+[    0.952637] ufshcd_slave_configure: ufsfeature set lun 3 sdev 00000000d355ed7f q 00000000922264bd
+[    0.953040] ufshcd_slave_configure: ufsfeature set lun 4 sdev 0000000046307810 q 00000000b573bb5f
+[    0.953451] ufshcd_slave_configure: ufsfeature set lun 5 sdev 000000009cfa18c0 q 000000001b50a899
+[    0.957836] msm-usb-ssphy-qmp 88e8000.ssphy: failed to get phandle for msm_ssphy_qmp
+[    0.957893] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.957901] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.958368] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.958381] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.958747] msm-dwc3 a600000.ssusb: unable to get ssphy device
+[    0.958939] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_FREE
+[    0.958981] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.958985] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
+[    0.958987] ipa_rm ipa_rm_delete_resource:139 IPA RM was not initialized
+[    0.958989] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
+[    0.960000] i2c_geni 884000.i2c: i2c error :-107
+[    0.960003] fsa4480-driver 2-0042: fsa4480_probe,device id read failed:-107
+[    0.960135] i2c_geni 884000.i2c: i2c error :-107
+[    0.960266] i2c_geni 884000.i2c: i2c error :-107
+[    0.960382] i2c_geni 884000.i2c: i2c error :-107
+[    0.960496] i2c_geni 884000.i2c: i2c error :-107
+[    0.960633] i2c_geni 884000.i2c: i2c error :-107
+[    0.960760] i2c_geni 884000.i2c: i2c error :-107
+[    0.960875] i2c_geni 884000.i2c: i2c error :-107
+[    0.961015] i2c_geni 884000.i2c: i2c error :-107
+[    0.961150] i2c_geni 884000.i2c: i2c error :-107
+[    0.961269] i2c_geni 884000.i2c: i2c error :-107
+[    0.966987] msm-dwc3 a600000.ssusb: USB core frequency = 200000000
+[    0.966995] msm-dwc3 a600000.ssusb: setting lpm_to_suspend_delay to zero.
+[    0.967399] dwc3 a600000.dwc3: Failed to get clk 'ref': -2
+[    0.967410] msm-dwc3 a600000.ssusb: DWC3_GSI_EVT_BUF_ALLOC
+[    0.967753] register_client_adhoc:find path.src 61 dest 512
+[    0.967896] register_client_adhoc:find path.src 61 dest 676
+[    0.968011] register_client_adhoc:find path.src 1 dest 583
+[    0.968083] register_client_adhoc:Client handle 60 usb0
+[    0.968101] msm-dwc3 a600000.ssusb: setting pm-qos-latency to zero.
+[    0.968107] msm-dwc3 a600000.ssusb: vbus:1 event received
+[    0.968111] msm-dwc3 a600000.ssusb: Connected to CDP, pull DP up
+[    1.010601] register_client_adhoc:find path.src 45 dest 512
+[    1.010817] register_client_adhoc:Client handle 61 msm-cnss
+[    1.193369] msm-dwc3 a600000.ssusb: vbus:1 event received
+[    1.193378] msm-dwc3 a600000.ssusb: dwc3_resume_work: dwc3 resume work
+[    1.193405] msm-dwc3 a600000.ssusb: undefined state
+[    1.193417] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exiting lpm
+[    1.193537] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
+[    1.194935] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
+[    1.195437] msm-usb-ssphy-qmp 88e8000.ssphy: USB DP QMP PHY: Update TYPEC CTRL(3)
+[    1.203539] register_client_adhoc:find path.src 1 dest 590
+[    1.203671] register_client_adhoc:Client handle 62 mdss_reg
+[    1.203682] register_client_adhoc:find path.src 22 dest 512
+[    1.203776] register_client_adhoc:find path.src 23 dest 512
+[    1.203859] register_client_adhoc:Client handle 63 mdss_sde
+[    1.206737] [drm:dsi_panel_get_mode] *ERROR* [msm-dsi-error]: failed to parse panel phy ldo rc=-22
+[    1.212998] cam_cc_sleep_clk_src: CXO configuration failed
+[    1.213494] msm_bus_late_init: Remove handoff bw requests
+[    1.213934] Warning: unable to open an initial console.
+[    1.234381] init: Failed to copy /avb into /metadata/gsi/dsu/avb/: No such file or directory
+[    1.237984] init: [libfs_avb] Invalid hash size: 
+[    1.237989] init: [libfs_avb] Failed to verify vbmeta digest
+[    1.237998] init: Top-level vbmeta is disabled, skip Hashtree setup for /system
+[    1.250058] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_POST_RESET_EVENT received
 [    1.250086] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
-[    1.250093] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
-[    1.250099] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
-[    1.250105] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[    1.250118] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381010
-[    1.250124] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
-[    1.250144] msm-dwc3 a600000.ssusb: dwc3_otg_start_peripheral: turn on gadget dwc3-gadget
-[    1.251411] msm-dwc3 a600000.ssusb: peripheral state
-[    1.262258] batt power supply prop 4 not supported
-[    1.372979] init: Init cannot set 'ro.boot.verifiedbootstate' to 'orange': Read-only property was already set
-[    1.395930] init: /vendor/etc/init/hw/init.mmi.rc: 592: ignored duplicate definition of service 'bugreport'
-[    1.411119] init: /vendor/etc/init/android.hardware.audio.service.rc: 1: ignored duplicate definition of service 'vendor.audio-hal'
-[    1.413207] init: /vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc: 1: ignored duplicate definition of service 'vendor.sensors-hal-2-0-multihal'
-[    1.416358] init: /vendor/etc/init/init.time_daemon.rc: 10: ignored duplicate definition of service 'time_daemon'
-[    1.417820] init: /vendor/etc/init/poweropt-service.rc: 10: ignored duplicate definition of service 'poweropt-service'
-[    1.454124] ueventd: /vendor/etc/ueventd.rc: 66: ignoring duplicate subsystem entry
-[    1.455084] ueventd: /vendor/etc/ueventd.rc: 240: /sys/ lines must have 5 or 6 entries
-[    1.455547] ueventd: /vendor/etc/ueventd.rc: 427: /sys/ lines must have 5 or 6 entries
-[    1.455564] ueventd: /vendor/etc/ueventd.rc: 428: /sys/ lines must have 5 or 6 entries
-[    1.495019] batt power supply prop 4 not supported
-[    1.793763] init: File /vendor/bin/init.oem.hw.sh (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
-[    1.821020] init: Unable to set property 'ro.carrier' from uid:0 gid:0 pid:587: Read-only property was already set
-[    2.100452] cutils-trace: Error opening trace file: No such file or directory (2)
-[    2.144592] sec_ts_init
-[    2.144888] sec_ts 1-0048: sec_ts_parse_dt: i2c buffer limit: 256, lcd_id:000000, bringup:0, FW:(null)(-22), id:-2,-2, mis_cal:0 dex:0, gesture:0
-[    2.147144] sec_ts 1-0048: sec_ts_power: on: pm8150_l13:on, pm8150a_l1:on
-[    2.235792] sec_ts 1-0048: sec_ts_fn_init: Failed to create input symbolic link
-[    2.240931] sec_ts 1-0048: sec_ts_probe: done
-[    2.267964] ueventd: Failed to find device dev: 252:43: No such device or address
-[    2.285677] init: Unable to set property 'ro.boottime.init.fsck.persist' from uid:0 gid:0 pid:1: Read-only property was already set
-[    2.286978] init: Unable to set property 'ro.boottime.init.mount.persist' from uid:0 gid:0 pid:1: Read-only property was already set
-[    2.295143] init: [libfs_mgr] Failed to mount an un-encryptable, interrupted, or wiped partition on /dev/block/bootdevice/by-name/fsg_a at /vendor/fsg options: context=u:object_r:fsg_file:s0: No such file or directory
-[    2.301324] goodix: No regulator control parameter defined
-[    2.352770] stmvl53l1_setup: device name VL53L1 cut1.1
-[    2.352770] type VL53L1
-[    2.352867] stmvl53l1_setup: Misc device registration name:laser
-[    2.469504] pm8150b_charger: smblib_pd_contract_work: Failed to get pd_voltage_max_uvfrom device tree, rc = -22
-[    2.469510] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[    2.475884] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
-[    2.511949] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
-[    2.537332] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
-[    2.551076] mmi_sys_temp soc:sys_temp_support: bad number of sensors-listener: -22
-[    2.555200] i2c_geni 884000.i2c: i2c error :-107
-[    2.555326] i2c_geni 884000.i2c: i2c error :-107
-[    2.558959] SMBMMI: PMIC 32 is pm8150b_charger
-[    2.559016] qcom,qpnp-smbcharger-mmi c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5-mmi: Error getting the pd phandle -6
-[    2.559681] pm8150b_charger: SMBMMI: smb_mmi_probe: DISABLE all QCOM JEITA
-[    2.559750] qcom,qpnp-smbcharger-mmi c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5-mmi: SMBMMI: Suspending USB for 50 ms to clear
-[    2.566688] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[    2.573418] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
-[    2.613086] power_supply battery: SMBMMI: smb_mmi_power_supply_changed: POWER_SUPPLY_CHARGE_RATE=Normal
-[    2.613524] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    2.613532] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    2.627474] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[    2.631999] power_supply battery: SMBMMI: smb_mmi_power_supply_changed: POWER_SUPPLY_CHARGE_RATE=Turbo
-[    2.663537] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[    2.666686] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[    2.766699] usbpd usbpd0: select_pdo: Cannot select new PDO yet
-[    2.806400] [sar SX933x]: [ERR]<sx933x_parse_dt><987>[SX933x]: sx933x_parse_dt - get ref-phases error
-[    2.806404] [sar SX933x]: [ERR]<sx933x_parse_dt><991>[SX933x]: sx933x_parse_dt - get ref-phases-b error
-[    2.809070] i2c_geni 884000.i2c: i2c error :-107
-[    2.809074] [sar SX933x]: [ERR]<sx933x_i2c_write_16bit><118> i2c write reg 0x4240 error -107
-[    2.873258] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[    2.909318] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
-[    2.909367] pm8150b_charger: smblib_pd_contract_work: smblib_pd_contract_work: 5000000 uV, 3000000 uA
-[    3.040035] get_battery_serialnumber: Battsn unused
-[    3.040044] QCOM-STEPCHG: read_range_data_from_node: Count qcom,step-chg-ranges failed, rc=-22
-[    3.040046] QCOM-STEPCHG: read_range_data_from_node: Count qcom,jeita-fcc-ranges failed, rc=-22
+[    1.250087] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
+[    1.250091] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
+[    1.250095] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
+[    1.250104] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381010
+[    1.250107] msm-dwc3 a600000.ssusb: DWC3-msm runtime idle
+[    1.250112] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
+[    1.250115] msm-dwc3 a600000.ssusb: DWC3-msm runtime suspend
+[    1.250564] msm-dwc3 a600000.ssusb: dwc3_msm_suspend: power collapse
+[    1.250831] msm-dwc3 a600000.ssusb: XCVR: ID set
+[    1.250838] msm-dwc3 a600000.ssusb: XCVR: BSV set
+[    1.250843] msm-dwc3 a600000.ssusb: XCVR: SUSP clear
+[    1.250849] msm-dwc3 a600000.ssusb: eud: state:0 active:0 hs_phy_flags:0x0
+[    1.250864] msm-dwc3 a600000.ssusb: idle state
+[    1.250872] msm-dwc3 a600000.ssusb: b_sess_vld
+[    1.250882] msm-dwc3 a600000.ssusb: DWC3-msm runtime resume
+[    1.250889] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exiting lpm
+[    1.251028] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
+[    1.252743] msm-dwc3 a600000.ssusb: dwc3_msm_resume: exit power collapse
+[    1.252966] msm-usb-ssphy-qmp 88e8000.ssphy: USB DP QMP PHY: Update TYPEC CTRL(3)
+[    1.254433] batt power supply prop 4 not supported
+[    1.306721] msm-dwc3 a600000.ssusb: DWC3_CONTROLLER_POST_RESET_EVENT received
+[    1.306744] msm-dwc3 a600000.ssusb: msm_dwc3_pwr_irq received
+[    1.306746] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
+[    1.306750] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
+[    1.306755] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler irq_stat=381034
+[    1.306758] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: handling PWR_EVNT_LPM_OUT_L2_MASK
+[    1.306761] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
+[    1.306769] msm-dwc3 a600000.ssusb: dwc3_pwr_event_handler: unexpected PWR_EVNT, irq_stat=381010
+[    1.306790] msm-dwc3 a600000.ssusb: dwc3_otg_start_peripheral: turn on gadget dwc3-gadget
+[    1.308050] msm-dwc3 a600000.ssusb: peripheral state
+[    1.366066] init: Init cannot set 'ro.boot.verifiedbootstate' to 'orange': Read-only property was already set
+[    1.389187] init: /vendor/etc/init/hw/init.mmi.rc: 592: ignored duplicate definition of service 'bugreport'
+[    1.404579] init: /vendor/etc/init/android.hardware.audio.service.rc: 1: ignored duplicate definition of service 'vendor.audio-hal'
+[    1.406700] init: /vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc: 1: ignored duplicate definition of service 'vendor.sensors-hal-2-0-multihal'
+[    1.409840] init: /vendor/etc/init/init.time_daemon.rc: 10: ignored duplicate definition of service 'time_daemon'
+[    1.411317] init: /vendor/etc/init/poweropt-service.rc: 10: ignored duplicate definition of service 'poweropt-service'
+[    1.446455] ueventd: /vendor/etc/ueventd.rc: 66: ignoring duplicate subsystem entry
+[    1.447441] ueventd: /vendor/etc/ueventd.rc: 240: /sys/ lines must have 5 or 6 entries
+[    1.447922] ueventd: /vendor/etc/ueventd.rc: 427: /sys/ lines must have 5 or 6 entries
+[    1.447940] ueventd: /vendor/etc/ueventd.rc: 428: /sys/ lines must have 5 or 6 entries
+[    1.495872] batt power supply prop 4 not supported
+[    1.796814] init: File /vendor/bin/init.oem.hw.sh (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    1.824221] init: Unable to set property 'ro.carrier' from uid:0 gid:0 pid:587: Read-only property was already set
+[    2.129785] cutils-trace: Error opening trace file: No such file or directory (2)
+[    2.172443] sec_ts_init
+[    2.172762] sec_ts 1-0048: sec_ts_parse_dt: i2c buffer limit: 256, lcd_id:000000, bringup:0, FW:(null)(-22), id:-2,-2, mis_cal:0 dex:0, gesture:0
+[    2.175034] sec_ts 1-0048: sec_ts_power: on: pm8150_l13:on, pm8150a_l1:on
+[    2.262468] sec_ts 1-0048: sec_ts_fn_init: Failed to create input symbolic link
+[    2.267669] sec_ts 1-0048: sec_ts_probe: done
+[    2.280995] init: Unable to set property 'ro.boottime.init.mount.persist' from uid:0 gid:0 pid:1: Read-only property was already set
+[    2.293096] init: [libfs_mgr] Failed to mount an un-encryptable, interrupted, or wiped partition on /dev/block/bootdevice/by-name/fsg_a at /vendor/fsg options: context=u:object_r:fsg_file:s0: No such file or directory
+[    2.294981] ueventd: Failed to find device dev: 252:43: No such device or address
+[    2.299667] goodix: No regulator control parameter defined
+[    2.351184] stmvl53l1_setup: device name VL53L1 cut1.1
+[    2.351184] type VL53L1
+[    2.351284] stmvl53l1_setup: Misc device registration name:laser
+[    2.470387] pm8150b_charger: smblib_pd_contract_work: Failed to get pd_voltage_max_uvfrom device tree, rc = -22
+[    2.470393] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.476821] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.512883] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.538275] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.549838] mmi_sys_temp soc:sys_temp_support: bad number of sensors-listener: -22
+[    2.552069] i2c_geni 884000.i2c: i2c error :-107
+[    2.552193] i2c_geni 884000.i2c: i2c error :-107
+[    2.555928] SMBMMI: PMIC 32 is pm8150b_charger
+[    2.555985] qcom,qpnp-smbcharger-mmi c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5-mmi: Error getting the pd phandle -6
+[    2.556705] pm8150b_charger: SMBMMI: smb_mmi_probe: DISABLE all QCOM JEITA
+[    2.556766] qcom,qpnp-smbcharger-mmi c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5-mmi: SMBMMI: Suspending USB for 50 ms to clear
+[    2.570019] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.574359] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 1500000
+[    2.614113] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    2.614122] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    2.614944] power_supply battery: SMBMMI: smb_mmi_power_supply_changed: POWER_SUPPLY_CHARGE_RATE=Normal
+[    2.628892] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.633405] power_supply battery: SMBMMI: smb_mmi_power_supply_changed: POWER_SUPPLY_CHARGE_RATE=Turbo
+[    2.664962] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.670021] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.770020] usbpd usbpd0: select_pdo: Cannot select new PDO yet
+[    2.802866] [sar SX933x]: [ERR]<sx933x_parse_dt><987>[SX933x]: sx933x_parse_dt - get ref-phases error
+[    2.802870] [sar SX933x]: [ERR]<sx933x_parse_dt><991>[SX933x]: sx933x_parse_dt - get ref-phases-b error
+[    2.805577] i2c_geni 884000.i2c: i2c error :-107
+[    2.805581] [sar SX933x]: [ERR]<sx933x_i2c_write_16bit><118> i2c write reg 0x4240 error -107
+[    2.876592] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.912654] pm8150b_charger: smblib_set_prop_pd_current_max: set pd current 3000000
+[    2.912704] pm8150b_charger: smblib_pd_contract_work: smblib_pd_contract_work: 5000000 uV, 3000000 uA
+[    3.040034] get_battery_serialnumber: Battsn unused
+[    3.040043] QCOM-STEPCHG: read_range_data_from_node: Count qcom,step-chg-ranges failed, rc=-22
+[    3.040045] QCOM-STEPCHG: read_range_data_from_node: Count qcom,jeita-fcc-ranges failed, rc=-22
 [    3.040048] QCOM-STEPCHG: read_range_data_from_node: Count qcom,jeita-fv-ranges failed, rc=-22
-[    3.253405] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[    3.261711] batt power supply prop 4 not supported
-[    3.628894] batt power supply prop 4 not supported
-[    4.090344] [sar SX933x]: [ERR]<sx933x_probe><1586>sx933x_Hardware_CheckFail!
-[    4.092050] st21nfc_probe: st21nfc_probe : supported device found
-[    4.196240] selinux: SELinux:  Could not stat /sys/kernel/debug: No such file or directory.
-[    4.210158] gsi soc:qcom,msm_gsi: gsi_register_device:1208 GSI irq is wake enabled 32
-[    4.212250] ipa-wan ipa3_wwan_probe:2531 rmnet_ipa completed initialization
-[    4.217564] init: File /system/bin/sh (labeled "u:object_r:shell_exec:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
-[    4.221709] ipa ipa3_uc_wdi_event_log_info_handler:351 WDI protocol missing 0x21
-[    4.221716] ipa ipa3_uc_ntn_event_log_info_handler:34 NTN stats ofst=0x500e0
-[    4.282650] init: [libfs_mgr] Failed to open /sys/fs/f2fs/features/linear_lookup: No such file or directory
-[    4.349052] F2FS-fs (sde27): checkpoint=disable on readonly fs
-[    4.451494] F2FS-fs (sde27): checkpoint=disable on readonly fs
-[    4.572298] vold: metadata_encryption options cannot be set in legacy mode
-[    4.572365] vdc: Command: cryptfs encryptFstab /dev/block/bootdevice/by-name/userdata /data false f2fs false 0   Failed: Status(-8, EX_SERVICE_SPECIFIC): '0: '
-[    4.572697] init: vdc call failed with error code: 25
-[    4.572706] init: [libfs_mgr] Encryption failed
-[    4.573396] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
-[    4.584856] selinux: SELinux: Could not get canonical path for /data/misc/keystore restorecon: No such file or directory.
-[    4.623550] DEBUG: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-[    4.623559] DEBUG: Build fingerprint: 'motorola/burton_reteu/burton:12/S1PB32.41-10-17-3-4/f9362b-54db3:user/release-keys'
-[    4.623569] DEBUG: Kernel Release: '4.19.325-cip136-st20-perf-g7a75775b4ee4'
-[    4.623576] DEBUG: Revision: 'pvt2'
-[    4.623582] DEBUG: ABI: 'arm64'
-[    4.623588] DEBUG: Timestamp: 1970-01-01 16:08:07.372575958+0000
-[    4.623595] DEBUG: Process uptime: 1s
-[    4.623604] DEBUG: Executable: /system/bin/keystore2
-[    4.623611] DEBUG: Cmdline: /system/bin/keystore2 /data/misc/keystore
-[    4.623618] DEBUG: pid: 800, ppid: 1, tid: 846, name: keystore2  >>> /system/bin/keystore2 <<<
-[    4.623626] DEBUG: uid: 1017
-[    4.623635] DEBUG: signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
-[    4.623646] DEBUG: Abort message: 'Failed to open database: Failed to attach database persistent.
-[    4.623649] DEBUG: 
-[    4.623650] DEBUG: Caused by:
-[    4.623652] DEBUG:     0: unable to open database: file:/data/misc/keystore/persistent.sqlite
-[    4.623654] DEBUG:     1: Error code 14: Unable to open the database file'
-[    4.623665] DEBUG:     x0  0000000000000000  x1  000000000000034e  x2  0000000000000006  x3  000000757f5ef310
-[    4.623673] DEBUG:     x4  1f63646b6860451f  x5  1f63646b6860451f  x6  1f63646b6860451f  x7  7f7f7f7f7f7f7f7f
-[    4.623680] DEBUG:     x8  00000000000000f0  x9  7977c9ae7335e4ca  x10 0000000000000001  x11 0000007607b5f6e0
-[    4.623686] DEBUG:     x12 0000000000000005  x13 00000000000000e0  x14 0000000000000000  x15 0000000000000020
-[    4.623693] DEBUG:     x16 0000007607bd40e8  x17 0000007607bb7380  x18 000000757a9ec000  x19 0000000000000320
-[    4.623700] DEBUG:     x20 000000000000034e  x21 00000000ffffffff  x22 000000757f5ef4a0  x23 0000005d55616ba8
-[    4.623748] DEBUG:     x24 0000005d5561bad8  x25 b400007582622000  x26 0000000000000000  x27 000000003b9ac9ff
-[    4.623790] DEBUG:     x28 00000000c4653600  x29 000000757f5ef390
-[    4.623820] DEBUG:     lr  0000007607b4522c  sp  000000757f5ef310  pc  0000007607b45250  pst 0000000000001000
-[    4.623849] DEBUG:     esr 0000000000000000  vg  0000000000000000
-[    4.623875] DEBUG: 16 total frames
-[    4.623887] DEBUG: backtrace:
-[    4.623901] DEBUG:       #00 pc 00000000000b3250  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
-[    4.623911] DEBUG:       #01 pc 0000000000206560  /system/bin/keystore2 (std::sys::pal::unix::abort_internal+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623918] DEBUG:       #02 pc 0000000000203340  /system/bin/keystore2 (std::process::abort+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623925] DEBUG:       #03 pc 00000000001ff6e4  /system/bin/keystore2 (__rustc::__rust_abort+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623932] DEBUG:       #04 pc 00000000001df64c  /system/bin/keystore2 (__rustc::__rust_start_panic+16) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623939] DEBUG:       #05 pc 00000000001ff63c  /system/bin/keystore2 (__rustc::rust_panic+8) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623946] DEBUG:       #06 pc 0000000000203640  /system/bin/keystore2 (std::panicking::panic_with_hook+272) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623953] DEBUG:       #07 pc 00000000001fed28  /system/bin/keystore2 (std::panicking::panic_handler::{closure#0}+60) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623965] DEBUG:       #08 pc 00000000001ff7fc  /system/bin/keystore2 (__rustc::rust_begin_unwind+28) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.623973] DEBUG:       #09 pc 00000000000d899c  /system/bin/keystore2 (core::panicking::panic_fmt+36) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.624008] DEBUG:       #10 pc 00000000000d8868  /system/bin/keystore2 (core::result::unwrap_failed+72) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.624039] DEBUG:       #11 pc 0000000000116e54  /system/bin/keystore2 (<<keystore2::gc::Gc>::new_init_with<keystore2::globals::GC::{closure#0}::{closure#0}>::{closure#0} as core::ops::function::FnOnce<(&mut keystore2::async_task::Shelf,)>>::call_once::{shim:vtable#0}+1200) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.624066] DEBUG:       #12 pc 000000000011a680  /system/bin/keystore2 (<std::thread::lifecycle::spawn_unchecked<<keystore2::async_task::AsyncTask>::spawn_thread::{closure#0}, ()>::{closure#1} as core::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}+1100) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.624098] DEBUG:       #13 pc 0000000000207138  /system/bin/keystore2 (<std::sys::thread::unix::Thread>::new::thread_start+252) (BuildId: 893cbbd35ddd8416179296825985c4ad)
-[    4.624128] DEBUG:       #14 pc 00000000000c7af0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
-[    4.624157] DEBUG:       #15 pc 00000000000b6be4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
-[    4.624186] DEBUG: Note: To display stack pointer information, use the pbtombstone tool:
-[    4.624214] DEBUG:         pbtombstone --display-sp tombstone_XX.pb
-[    4.630146] vold: keystore2 Communication with Keystore earlyBootEnded failed error: -129
-[    4.630986] init: Could not load single persistent property file, trying legacy directory: Unable to read persistent property file: open() failed: No such file or directory
-[    4.630998] init: Unable to load legacy persistent properties: Unable to open persistent property directory "/data/property": No such file or directory
-[    4.637352] logd: Cannot read /data/misc/logd/event-log-tags
-[    4.637610] logd: FrameworkListener: read() failed (Connection reset by peer)
-[    4.651681] selinux: SELinux: Could not get canonical path for /data/system/environ restorecon: No such file or directory.
-[    4.651959] selinux: SELinux: Could not get canonical path for /data/system/shutdown-checkpoints restorecon: No such file or directory.
-[    4.665710] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.665810] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.665876] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.665942] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666007] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666078] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666146] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666208] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666270] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666337] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666408] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666479] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666543] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666613] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666731] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666804] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666873] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.666939] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667007] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667077] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667143] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667206] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667268] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667337] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667400] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667463] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667521] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.667585] apexd: Failed to clean up reserved space: Failed to delete /data/apex/ota_reserved : Can't open /data/apex/ota_reserved for reading: No such file or directory
-[    4.689080] apexd: Failed to decompress : /system/apex/com.android.webapp.capex Failed to open decompression destination /data/apex/decompressed/com.android.webapp@370399999.decompressed.apex: No such file or directory
-[    4.689088] apexd: Failed to decompress : /system/apex/com.android.npumanager.capex Failed to open decompression destination /data/apex/decompressed/com.android.npumanager@370399999.decompressed.apex: No such file or directory
-[    4.689091] apexd: Failed to decompress : /system/apex/com.android.ondevicepersonalization.capex Failed to open decompression destination /data/apex/decompressed/com.android.ondevicepersonalization@370399999.decompressed.apex: No such file or directory
-[    4.689094] apexd: Failed to decompress : /system/apex/com.android.crashrecovery.capex Failed to open decompression destination /data/apex/decompressed/com.android.crashrecovery@370399999.decompressed.apex: No such file or directory
-[    4.689097] apexd: Failed to decompress : /system/apex/com.android.mediaprovider.capex Failed to open decompression destination /data/apex/decompressed/com.android.mediaprovider@370399999.decompressed.apex: No such file or directory
-[    4.689100] apexd: Failed to decompress : /system/apex/com.android.bt.capex Failed to open decompression destination /data/apex/decompressed/com.android.bt@370399999.decompressed.apex: No such file or directory
-[    4.689103] apexd: Failed to decompress : /system/apex/com.android.adbd.capex Failed to open decompression destination /data/apex/decompressed/com.android.adbd@370399999.decompressed.apex: No such file or directory
-[    4.689106] apexd: Failed to decompress : /system/apex/com.android.uprobestats.capex Failed to open decompression destination /data/apex/decompressed/com.android.uprobestats@370399999.decompressed.apex: No such file or directory
-[    4.689109] apexd: Failed to decompress : /system/apex/com.android.media.swcodec.capex Failed to open decompression destination /data/apex/decompressed/com.android.media.swcodec@370399999.decompressed.apex: No such file or directory
-[    4.689112] apexd: Failed to decompress : /system/apex/com.android.tethering.capex Failed to open decompression destination /data/apex/decompressed/com.android.tethering@370399999.decompressed.apex: No such file or directory
-[    4.689114] apexd: Failed to decompress : /system/apex/com.android.ipsec.capex Failed to open decompression destination /data/apex/decompressed/com.android.ipsec@370399999.decompressed.apex: No such file or directory
-[    4.689117] apexd: Failed to decompress : /system/apex/com.android.configinfrastructure.capex Failed to open decompression destination /data/apex/decompressed/com.android.configinfrastructure@370399999.decompressed.apex: No such file or directory
-[    4.689121] apexd: Failed to decompress : /system/apex/com.android.adservices.capex Failed to open decompression destination /data/apex/decompressed/com.android.adservices@370399999.decompressed.apex: No such file or directory
-[    4.689124] apexd: Failed to decompress : /system/apex/com.android.wifi.capex Failed to open decompression destination /data/apex/decompressed/com.android.wifi@370399999.decompressed.apex: No such file or directory
-[    4.689127] apexd: Failed to decompress : /system/apex/com.android.neuralnetworks.capex Failed to open decompression destination /data/apex/decompressed/com.android.neuralnetworks@370399999.decompressed.apex: No such file or directory
-[    4.689130] apexd: Failed to decompress : /system/apex/com.android.cellbroadcast.capex Failed to open decompression destination /data/apex/decompressed/com.android.cellbroadcast@370399999.decompressed.apex: No such file or directory
-[    4.689133] apexd: Failed to decompress : /system/apex/com.android.permission.capex Failed to open decompression destination /data/apex/decompressed/com.android.permission@370399999.decompressed.apex: No such file or directory
-[    4.689136] apexd: Failed to decompress : /system/apex/com.android.conscrypt.capex Failed to open decompression destination /data/apex/decompressed/com.android.conscrypt@370399999.decompressed.apex: No such file or directory
-[    4.689139] apexd: Failed to decompress : /system/apex/com.android.art.capex Failed to open decompression destination /data/apex/decompressed/com.android.art@370399999.decompressed.apex: No such file or directory
-[    4.689141] apexd: Failed to decompress : /system/apex/com.android.telephonycore.capex Failed to open decompression destination /data/apex/decompressed/com.android.telephonycore@370399999.decompressed.apex: No such file or directory
-[    4.689145] apexd: Failed to decompress : /system/apex/com.android.uwb.capex Failed to open decompression destination /data/apex/decompressed/com.android.uwb@370399999.decompressed.apex: No such file or directory
-[    4.689148] apexd: Failed to decompress : /system/apex/com.android.extservices.capex Failed to open decompression destination /data/apex/decompressed/com.android.extservices@370399999.decompressed.apex: No such file or directory
-[    4.689151] apexd: Failed to decompress : /system/apex/com.android.resolv.capex Failed to open decompression destination /data/apex/decompressed/com.android.resolv@370399999.decompressed.apex: No such file or directory
-[    4.689153] apexd: Failed to decompress : /system/apex/com.android.nfcservices.capex Failed to open decompression destination /data/apex/decompressed/com.android.nfcservices@370399999.decompressed.apex: No such file or directory
-[    4.689156] apexd: Failed to decompress : /system/apex/com.android.media.capex Failed to open decompression destination /data/apex/decompressed/com.android.media@370399999.decompressed.apex: No such file or directory
-[    4.689159] apexd: Failed to decompress : /system/apex/com.android.profiling.capex Failed to open decompression destination /data/apex/decompressed/com.android.profiling@370399999.decompressed.apex: No such file or directory
-[    4.689161] apexd: Failed to decompress : /system/apex/com.android.appsearch.capex Failed to open decompression destination /data/apex/decompressed/com.android.appsearch@370399999.decompressed.apex: No such file or directory
-[    4.689164] apexd: Failed to decompress : /system/apex/com.android.scheduling.capex Failed to open decompression destination /data/apex/decompressed/com.android.scheduling@370399999.decompressed.apex: No such file or directory
-[    4.689175] apexd: Failed to activate packages: Failed to decompress : /system/apex/com.android.webapp.capex Failed to open decompression destination /data/apex/decompressed/com.android.webapp@370399999.decompressed.apex: No such file or directory
-[    4.689197] apexd: Failed to revert : Revert requested, when there are no active sessions.
-[    4.746787] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    4.746800] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    4.769323] DEBUG: *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
-[    4.769333] DEBUG: Build fingerprint: 'motorola/burton_reteu/burton:12/S1PB32.41-10-17-3-4/f9362b-54db3:user/release-keys'
-[    4.769343] DEBUG: Kernel Release: '4.19.325-cip136-st20-perf-g7a75775b4ee4'
-[    4.769349] DEBUG: Revision: 'pvt2'
-[    4.769355] DEBUG: ABI: 'arm64'
-[    4.769362] DEBUG: Timestamp: 1970-01-01 16:08:07.499890606+0000
-[    4.769370] DEBUG: Process uptime: 1s
-[    4.769380] DEBUG: Executable: /system/bin/surfaceflinger
-[    4.769386] DEBUG: Cmdline: /system/bin/surfaceflinger
-[    4.769393] DEBUG: pid: 809, ppid: 1, tid: 832, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
-[    4.769400] DEBUG: uid: 1000
-[    4.769408] DEBUG: signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
-[    4.769417] DEBUG: Abort message: 'no suitable EGLConfig found, giving up (format: 1, vendor: Android, version: 1.4 Android META-EGL, extensions: EGL_ANDROID_front_buffer_auto_refresh EGL_ANDROID_get_native_client_buffer EGL_ANDROID_presentation_time EGL_EXT_surface_CTA861_3_metadata EGL_EXT_surface_SMPTE2086_metadata EGL_KHR_get_all_proc_addresses EGL_KHR_swap_buffers_with_damage EGL_ANDROID_get_frame_timestamps , Client API: OpenGL_ES)'
-[    4.769429] DEBUG:     x0  0000000000000000  x1  0000000000000340  x2  0000000000000006  x3  0000007b5bb00c80
-[    4.769437] DEBUG:     x4  7568661f2b636d74  x5  7568661f2b636d74  x6  7568661f2b636d74  x7  7f7f7f7f7f7f7f7f
-[    4.769444] DEBUG:     x8  00000000000000f0  x9  38f746b34c990f02  x10 0000000000000001  x11 0000007be79206e0
-[    4.769451] DEBUG:     x12 000000001624476d  x13 00000000341555ad  x14 0000000000000018  x15 0000000016232d84
-[    4.769458] DEBUG:     x16 0000007be79950e8  x17 0000007be7978380  x18 0000007b5aab0000  x19 0000000000000329
-[    4.769464] DEBUG:     x20 0000000000000340  x21 00000000ffffffff  x22 b400007b60836709  x23 b400007b60869dc0
-[    4.769471] DEBUG:     x24 b400007b60869dc0  x25 0000000000000329  x26 0000007b5bb01550  x27 0000007bed1b78c0
-[    4.769477] DEBUG:     x28 0000007bee50f068  x29 0000007b5bb00d00
-[    4.769484] DEBUG:     lr  0000007be790622c  sp  0000007b5bb00c80  pc  0000007be7906250  pst 0000000000001000
-[    4.769491] DEBUG:     esr 0000000000000000  vg  0000000000000000
-[    4.769499] DEBUG: 11 total frames
-[    4.769505] DEBUG: backtrace:
-[    4.769514] DEBUG:       #00 pc 00000000000b3250  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
-[    4.769521] DEBUG:       #01 pc 0000000000009c3c  /system/lib64/liblog.so (__android_log_default_aborter+12) (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
-[    4.769529] DEBUG:       #02 pc 0000000000009f24  /system/lib64/liblog.so (__android_log_assert+292) (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
-[    4.769537] DEBUG:       #03 pc 0000000000594be8  /system/bin/surfaceflinger (android::renderengine::skia::SkiaGLRenderEngine::chooseEglConfig(void*, int, bool)+600) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
-[    4.769546] DEBUG:       #04 pc 00000000005945c8  /system/bin/surfaceflinger (android::renderengine::skia::SkiaGLRenderEngine::create(android::renderengine::RenderEngineCreationArgs const&)+152) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
-[    4.769555] DEBUG:       #05 pc 000000000057ddd4  /system/bin/surfaceflinger (std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> std::__1::__invoke_void_return_wrapper<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>>, false>::__call[abi:nn220000]<android::renderengine::RenderEngine::create(android::renderengine::RenderEngineCreationArgs const&)::$_2&>(android::renderengine::RenderEngine::create(android::renderengine::RenderEngineCreationArgs const&)::$_2&) (.__uniq.168491058817890268359270899140672846441)+52) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
-[    4.769564] DEBUG:       #06 pc 0000000000353064  /system/bin/surfaceflinger (android::renderengine::threaded::RenderEngineThreaded::threadMain(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>)+196) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
-[    4.769579] DEBUG:       #07 pc 0000000000580558  /system/bin/surfaceflinger (decltype(__builtin_invoke(std::declval<void (android::renderengine::threaded::RenderEngineThreaded::*)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>)>(), std::declval<android::renderengine::threaded::RenderEngineThreaded*>(), std::declval<std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>>())) std::__1::__invoke[abi:nn220000]<void (android::renderengine::threaded::RenderEngineThreaded::*)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>), android::renderengine::threaded::RenderEngineThreaded*, std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>>(void (android::renderengine::threaded::RenderEngineThreaded::*&&)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>), android::renderengine::threaded::RenderEngineThreaded*&&, std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>&&)+88) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
-[    4.769590] DEBUG:       #08 pc 0000000000580480  /system/bin/surfaceflinger (void* std::__1::__thread_proxy[abi:nn220000]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, void (android::renderengine::threaded::RenderEngineThreaded::*)(std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>), android::renderengine::threaded::RenderEngineThreaded*, std::__1::function<std::__1::unique_ptr<android::renderengine::RenderEngine, std::__1::default_delete<android::renderengine::RenderEngine>> ()>>>(void*)+80) (BuildId: e89b768f1bff6b28df50426a65dd56cd)
-[    4.769599] DEBUG:       #09 pc 00000000000c7af0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
-[    4.769606] DEBUG:       #10 pc 00000000000b6be4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: 02127907a5a46a65efb73ddfd3cb92ea)
-[    4.769614] DEBUG: Note: To display stack pointer information, use the pbtombstone tool:
-[    4.769620] DEBUG:         pbtombstone --display-sp tombstone_XX.pb
-[    5.386705] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[    5.520843] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
-[    6.521007] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
-[    6.880133] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    6.880142] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    7.520061] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
-[    7.521200] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
-[    8.521562] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
-[    9.015789] virt zone: sensor[modem-mmw0-usr] read error:-22
-[    9.015800] virt zone: sensor[modem-mmw1-usr] read error:-22
-[    9.302079] cutils: Failed to mkdir(/data/misc/vold/user_keys): No such file or directory
-[    9.302101] vold: Failed to prepare /data/misc/vold/user_keys: No such file or directory
-[    9.302197] vdc: Command: cryptfs init_user0 Failed: Status(-8, EX_SERVICE_SPECIFIC): '0: '
-[    9.302688] init: Exec service failed, status 25: Rebooting into recovery, reason: init_user0_failed
-[    9.302695] init: Rebooting into recovery
-[    9.305561] init: File /vendor/bin/init.mmi.shutdown.sh (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
-[    9.326266] init: Recovering persistent properties from memory: Unable to read persistent property file: open() failed: No such file or directory
-[    9.330924] init: Recovering persistent properties from memory: Unable to read persistent property file: open() failed: No such file or directory
-[    9.354891] sec_ts 1-0048: sec_ts_fn_remove
-[    9.359870] sec_ts 1-0048: sec_ts_power: off: pm8150_l13:off, pm8150a_l1:off
-[    9.365722] reboot: Restarting system with command 'recovery'
+[    3.253752] batt power supply prop 4 not supported
+[    3.466713] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
+[    4.087008] [sar SX933x]: [ERR]<sx933x_probe><1586>sx933x_Hardware_CheckFail!
+[    4.089272] st21nfc_probe: st21nfc_probe : supported device found
+[    4.203225] selinux: SELinux:  Could not stat /sys/kernel/debug: No such file or directory.
+[    4.216581] gsi soc:qcom,msm_gsi: gsi_register_device:1208 GSI irq is wake enabled 32
+[    4.218788] ipa-wan ipa3_wwan_probe:2531 rmnet_ipa completed initialization
+[    4.222830] init: File /system/bin/sh (labeled "u:object_r:shell_exec:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    4.228631] ipa ipa3_uc_wdi_event_log_info_handler:351 WDI protocol missing 0x21
+[    4.228639] ipa ipa3_uc_ntn_event_log_info_handler:34 NTN stats ofst=0x500e0
+[    4.284336] init: [libfs_mgr] mount_with_alternatives(): skipping mount due to invalid magic, mountpoint=/data blk_dev=/dev/block/sde27 rec[5].fs_type=f2fs
+[    4.340768] vold: [libfs_mgr] Failed to open /sys/fs/f2fs/features/linear_lookup: No such file or directory
+[    4.746833] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    4.746854] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    4.798974] init: Control message: Could not find 'aidl/android.system.keystore2.IKeystoreService/default' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
+[    4.800976] init: Control message: Could not find 'aidl/SurfaceFlingerAIDL' for ctl.interface_start from pid: 712 (/system/bin/servicemanager)
+[    4.881941] init: Could not load single persistent property file, trying legacy directory: Unable to read persistent property file: open() failed: No such file or directory
+[    4.888408] logd: Cannot read /data/misc/logd/event-log-tags
+[    4.888637] logd: FrameworkListener: read() failed (Connection reset by peer)
+[    4.990478] init: Control message: Could not find 'vendor.qti.qspmhal@1.0::IQspmhal/default' for ctl.interface_start from pid: 713 (/system/system_ext/bin/hwservicemanager)
+[    5.043485] SELinux: avc:  denied  { find } for pid=803 uid=1000 name=vendor.qti.hardware.display.config.IDisplayConfig/default scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager permissive=1
+[    5.203574] init: Control message: Could not find 'vendor.qti.qspmhal@1.0::IQspmhal/default' for ctl.interface_start from pid: 713 (/system/system_ext/bin/hwservicemanager)
+[    5.600063] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
+[    6.184735] sec_ts 1-0048: sec_ts_set_lowpowermode: EXIT(0)
+[    6.184739] sec_ts 1-0048: sec_ts_set_lowpowermode: setting gesture mode (1)
+[    6.366973] sec_ts 1-0048: sec_ts_power: off: pm8150_l13:off, pm8150a_l1:off
+[    6.526776] sec_ts 1-0048: sec_ts_power: on: pm8150_l13:on, pm8150a_l1:on
+[    6.880126] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    6.880139] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    7.733389] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
+[    8.915683] libprocessgroup: Failed to open /sys/fs/cgroup/system/uid_0/pid_1082/cgroup.procs: No such file or directory
+[    8.936932] init: Unable to set property 'ro.vendor.build.fingerprint' from uid:0 gid:0 pid:587: Read-only property was already set
+[    8.943865] init: File /vendor/bin/init.mmi.modules.sh (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    9.008032] NetBpfLoad: Android 25Q2 requires kernel 5.4.
+[    9.008536] init: Service bpfloader has 'reboot_on_failure' option and failed, shutting down system.
+[    9.009398] init: File /vendor/bin/init.mmi.shutdown.sh (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    9.013464] virt zone: sensor[modem-mmw0-usr] read error:-22
+[    9.013474] virt zone: sensor[modem-mmw1-usr] read error:-22
+[    9.040843] init: Could not start shutdown critical service 'chre': Cannot find '/vendor/bin/chre': No such file or directory
+[    9.043023] init: File /vendor/bin/hw/android.hardware.nfc@1.2-service.st (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    9.044804] init: File /vendor/bin/hw/vendor.qti.hardware.lights.service (labeled "u:object_r:vendor_file:s0") has incorrect label or no domain transition from u:r:init:s0 to another SELinux domain defined. Have you configured your service correctly? https://source.android.com/security/selinux/device-policy#label_new_services_and_address_denials
+[    9.052405] init: Unable to set property 'ctl.interface_start' from uid:1000 gid:1000 pid:712: Received control message after shutdown, ignoring
+[    9.052959] SELinux: avc:  denied  { add } for pid=1111 uid=1000 name=android.hardware.light.ILights/default scontext=u:r:init:s0 tcontext=u:object_r:hal_light_service:s0 tclass=service_manager permissive=1
+[    9.056744] rmt_storage:ERR:check_support_using_property: Remote storage service is not supported on mdm target
+[    9.088216] sec_ts 1-0048: sec_ts_set_lowpowermode: EXIT(0)
+[    9.088223] sec_ts 1-0048: sec_ts_set_lowpowermode: setting gesture mode (1)
+[    9.140699] libprocessgroup: Failed to open /sys/fs/cgroup/system/uid_1036/pid_710/cgroup.procs: No such file or directory
+[    9.140902] libprocessgroup: Failed to open /sys/fs/cgroup/system/uid_0/pid_739/cgroup.procs: No such file or directory
+[    9.140907] init: Service vold has 'reboot_on_failure' option and failed, shutting down system.
+[    9.141089] libprocessgroup: Failed to open /sys/fs/cgroup/system/uid_1058/pid_853/cgroup.procs: No such file or directory
+[    9.270368] sec_ts 1-0048: sec_ts_power: off: pm8150_l13:off, pm8150a_l1:off
+[    9.866713] msm_dwc3_perf_vote_work: in_perf_mode:0, interrupts in last sample:0
+[   10.454807] init: No dm-enabled block device is found.
+[   10.464859] sysrq: Terminate All Tasks
+[   10.464943] init: Service 'ueventd' (pid 588) received SIGTERM
+[   10.464949] init: Sending SIGKILL to service 'ueventd' (pid 588) process group...
+[   10.465048] libprocessgroup: Removed cgroup /sys/fs/cgroup/system/uid_0/pid_588
+[   10.465271] init: Service 'servicemanager' (pid 712) received SIGTERM
+[   10.465276] init: Sending SIGKILL to service 'servicemanager' (pid 712) process group...
+[   10.465345] libprocessgroup: Removed cgroup /sys/fs/cgroup/system/uid_1000/pid_712
+[   10.465514] init: Service 'hwservicemanager' (pid 713) received SIGTERM
+[   10.465518] init: Sending SIGKILL to service 'hwservicemanager' (pid 713) process group...
+[   10.465586] libprocessgroup: Removed cgroup /sys/fs/cgroup/system/uid_1000/pid_713
+[   10.465748] init: Service 'vndservicemanager' (pid 714) received SIGTERM
+[   10.465752] init: Sending SIGKILL to service 'vndservicemanager' (pid 714) process group...
+[   10.465815] libprocessgroup: Removed cgroup /sys/fs/cgroup/system/uid_1000/pid_714
+[   10.465973] init: Service 'vendor.sensors' (pid 802) received SIGTERM
+[   10.465977] init: Sending SIGKILL to service 'vendor.sensors' (pid 802) process group...
+[   10.466043] libprocessgroup: Removed cgroup /sys/fs/cgroup/system/uid_1000/pid_802
+[   10.466197] init: Service 'blank_screen' (pid 1109) exited with status 0 oneshot service took 1.424000 seconds in background
+[   10.466201] init: Sending SIGKILL to service 'blank_screen' (pid 1109) process group...
+[   10.466213] libprocessgroup: Failed to open /sys/fs/cgroup/system/uid_1000/pid_1109/cgroup.procs: No such file or directory
+[   10.466368] init: Service 'vendor.st_nfc_hal_service' (pid 1110) received SIGTERM
+[   10.466372] init: Sending SIGKILL to service 'vendor.st_nfc_hal_service' (pid 1110) process group...
+[   10.466445] libprocessgroup: Removed cgroup /sys/fs/cgroup/system/uid_1027/pid_1110
+[   10.466822] init: Unmounting /dev/block/dm-43:/data/user/0 opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466881] init: Umounted /dev/block/dm-43:/data/user/0 opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466885] init: Unmounting /dev/block/dm-43:/data_mirror/data_ce/null/0 opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466897] init: Cannot umount /dev/block/dm-43:/data_mirror/data_ce/null/0 opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal: Invalid argument
+[   10.466901] init: Unmounting /dev/block/dm-43:/data_mirror/ref_profiles opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466914] init: Umounted /dev/block/dm-43:/data_mirror/ref_profiles opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466917] init: Unmounting /dev/block/dm-43:/data_mirror/cur_profiles opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466927] init: Umounted /dev/block/dm-43:/data_mirror/cur_profiles opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466931] init: Unmounting /dev/block/dm-43:/data_mirror/storage_area opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466941] init: Umounted /dev/block/dm-43:/data_mirror/storage_area opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466944] init: Unmounting /dev/block/dm-43:/data_mirror/misc_de/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466955] init: Umounted /dev/block/dm-43:/data_mirror/misc_de/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466959] init: Unmounting /dev/block/dm-43:/data_mirror/misc_ce/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466968] init: Umounted /dev/block/dm-43:/data_mirror/misc_ce/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466972] init: Unmounting /dev/block/dm-43:/data_mirror/data_de/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466981] init: Umounted /dev/block/dm-43:/data_mirror/data_de/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466985] init: Unmounting /dev/block/dm-43:/data_mirror/data_ce/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466993] init: Umounted /dev/block/dm-43:/data_mirror/data_ce/null opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.466996] init: Unmounting /dev/block/dm-43:/data opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.491258] pm8150b_charger: wdog_snarl_irq_handler: IRQ: wdog-snarl
+[   10.491280] batt power supply prop 4 not supported
+[   10.493447] __loop_clr_fd: partition scan of loop11 failed (rc=-13)
+[   10.527078] init: Umounted /dev/block/dm-43:/data opts rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,nodiscard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint=disable:0,checkpoint_merge,fsync_mode=nobarrier,discard_unit=block,memory=normal
+[   10.527085] init: Unmounting /dev/block/sde3:/mnt/product/persist opts rw,seclabel,nosuid,nodev,noatime,data=ordered
+[   10.527914] init: Umounted /dev/block/sde3:/mnt/product/persist opts rw,seclabel,nosuid,nodev,noatime,data=ordered
+[   10.527919] init: Unmounting /dev/block/sde2:/mnt/vendor/persist opts rw,seclabel,nosuid,nodev,noatime,data=ordered
+[   10.529283] init: Umounted /dev/block/sde2:/mnt/vendor/persist opts rw,seclabel,nosuid,nodev,noatime,data=ordered
+[   10.529287] init: Unmounting /dev/block/sde9:/metadata opts rw,seclabel,nosuid,nodev,noatime,discard,data=ordered
+[   10.531353] init: Umounted /dev/block/sde9:/metadata opts rw,seclabel,nosuid,nodev,noatime,discard,data=ordered
+[   10.531511] init: sync() after umount...
+[   10.531565] init: sync() after umount took0ms
+[   10.631704] init: powerctl_shutdown_time_ms:1594:0
+[   10.631709] init: Reboot ending, jumping to kernel
+[   10.631721] msm_drm ae00000.qcom,mdss_mdp: prepare to shutdown
+[   10.634118] NPU_INFO: npu_reboot_handler: 750 Device is rebooting with code 1
+[   10.634124] cnss: Reboot is in progress with action 1
+[   10.634217] sec_ts 1-0048: sec_ts_shutdown
+[   10.634219] sec_ts 1-0048: sec_ts_remove
+[   10.634267] sec_ts 1-0048: sec_ts_remove: irq disabled
+[   10.634269] sec_ts 1-0048: sec_ts_fn_remove
+[   10.634285] sec_cmd_exit
+[   10.634464] sec_ts 1-0048: sec_ts_pinctrl_configure: SUSPEND
+[   10.634472] sec_ts 1-0048: Dropping the link to regulator.37
+[   10.634478] sec_ts 1-0048: Dropping the link to regulator.24
+[   10.634614] [drm:msm_atomic_commit] *ERROR* priv is null or shutdwon is in-progress
+[   10.634619] last close failed: -22
+[   10.634958] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[   10.639917] reboot: Restarting system with command 'bpfloader-failed'
+[   10.639931] Going down for restart now
