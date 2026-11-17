@@ -1,15 +1,3 @@
-11-17 21:34:53.269  1717  1717 I auditd  : type=1400 audit(0.0:586): avc:  denied  { read write } for  comm="android.hardwar" name="goodix_fp" dev="tmpfs" ino=16580 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:34:53.269  1717  1717 I auditd  : type=1400 audit(0.0:587): avc:  denied  { open } for  comm="android.hardwar" path="/dev/goodix_fp" dev="tmpfs" ino=16580 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:34:53.273  1717  1717 I auditd  : type=1400 audit(0.0:588): avc:  denied  { ioctl } for  comm="android.hardwar" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6707 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:34:54.169   723   723 I auditd  : type=1400 audit(0.0:619): avc:  denied  { open } for  comm="qseecomd" path="/mnt/vendor/persist/goodix/gf_persist.so" dev="sde2" ino=80 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
-11-17 21:34:55.210   714   714 I auditd  : avc:  denied  { find } for interface=vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon sid=u:r:init:s0 pid=1717 scontext=u:r:init:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
-11-17 21:34:55.211   714   714 I auditd  : avc:  denied  { add } for interface=vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon sid=u:r:init:s0 pid=1717 scontext=u:r:init:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
-11-17 21:34:55.209  1717  1717 I auditd  : type=1400 audit(0.0:646): avc:  denied  { open } for  comm="android.hardwar" path="/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui" dev="sysfs" ino=61235 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
-11-17 21:34:55.226   723   723 I auditd  : type=1400 audit(0.0:647): avc:  denied  { write } for  comm="qseecomd" name="goodix" dev="sde2" ino=73 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1
-11-17 21:34:55.239   723   723 I auditd  : type=1400 audit(0.0:652): avc:  denied  { write } for  comm="qseecomd" path="/mnt/vendor/persist/goodix/gf_persist.so_bak" dev="sde2" ino=75 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
-11-17 21:35:05.413  1717  1717 I auditd  : type=1400 audit(0.0:700): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:35:05.889  1717  1717 I auditd  : type=1400 audit(0.0:705): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6706 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:35:06.483  1717  1717 I auditd  : type=1400 audit(0.0:713): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6706 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
 11-17 21:36:02.926  4040  4399 I dvm_lock_sample: [com.google.android.as,0,aiai-app-predictor-0,529,PG,-1,java.lang.Object akpi.d(),-,-1,java.lang.Object akpi.d(),100]
 11-17 21:36:03.559  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]e69520a,applyTransactionOnDraw applyImmediately]
 11-17 21:36:03.560  2649  2649 I surfaceview_layout: [SV[74741599 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
@@ -141,269 +129,1115 @@
 11-17 21:57:12.823  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f860d2d,Resumed drawing after screen turned on]
 11-17 21:57:30.502  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,4861bc1 UdfpsControllerOverlay], on displayId 0
 11-17 21:57:30.512  2649  2649 I surfaceview_layout: [SV[128667350 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
-11-17 21:57:30.516  2649  2649 I Surface : Creating surface for consumer 7ab4ed6 SurfaceView[UdfpsControllerOverlay]#32(BLAST Consumer)32 with slotExpansion=1 for 64 slots
 11-17 21:57:30.516  2649  2649 I surfaceview_callback: [SV[128667350 UdfpsControllerOverlay],surfaceCreated]
 11-17 21:57:30.516  2649  2649 I surfaceview_callback: [SV[128667350 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
 11-17 21:57:30.516  2649  2649 I surfaceview_callback: [SV[128667350 UdfpsControllerOverlay],surfaceRedrawNeeded]
-11-17 21:57:30.519  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
-11-17 21:57:30.519  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:30.519  2649  2649 D UdfpsController:              x: 533.0
-11-17 21:57:30.519  2649  2649 D UdfpsController:              y: 2024.0
-11-17 21:57:30.519  2649  2649 D UdfpsController:          minor: 121.0
-11-17 21:57:30.519  2649  2649 D UdfpsController:          major: 182.0
-11-17 21:57:30.519  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:30.519  2649  2649 D UdfpsController:           time: 568451
-11-17 21:57:30.519  2649  2649 D UdfpsController:   gestureStart: 568451
-11-17 21:57:30.519  2649  2649 D UdfpsController: }
-11-17 21:57:30.522  2649  2649 D UdfpsController: sessionId: 184794, isAod: false, touchConfigId: 0
-11-17 21:57:30.523  2049  4115 I InputDispatcher: Channel 4861bc1 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
 11-17 21:57:30.552  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,4861bc1 UdfpsControllerOverlay], on displayId 0
-11-17 21:57:30.571  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=84 !
-11-17 21:57:30.571  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
 11-17 21:57:30.567  1717  1717 I auditd  : type=1400 audit(0.0:88355): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:57:30.567  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:88355): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:57:30.588  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:30.588  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:30.588  2649  2649 D UdfpsController:              x: 512.41406
-11-17 21:57:30.588  2649  2649 D UdfpsController:              y: 2041.5859
-11-17 21:57:30.588  2649  2649 D UdfpsController:          minor: 152.0
-11-17 21:57:30.588  2649  2649 D UdfpsController:          major: 213.0
-11-17 21:57:30.588  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:30.588  2649  2649 D UdfpsController:           time: 568521
-11-17 21:57:30.588  2649  2649 D UdfpsController:   gestureStart: 568451
-11-17 21:57:30.588  2649  2649 D UdfpsController: }
-11-17 21:57:30.588  2649  2649 D UdfpsController: sessionId: 184794, isAod: false, touchConfigId: 0
-11-17 21:57:30.644  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:30.644  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:30.644  2649  2649 D UdfpsController:              x: 482.33887
-11-17 21:57:30.644  2649  2649 D UdfpsController:              y: 2048.0
-11-17 21:57:30.644  2649  2649 D UdfpsController:          minor: 167.0
-11-17 21:57:30.644  2649  2649 D UdfpsController:          major: 243.0
-11-17 21:57:30.644  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:30.644  2649  2649 D UdfpsController:           time: 568577
-11-17 21:57:30.644  2649  2649 D UdfpsController:   gestureStart: 568451
-11-17 21:57:30.644  2649  2649 D UdfpsController: }
-11-17 21:57:30.644  2649  2649 D UdfpsController: sessionId: 184794, isAod: false, touchConfigId: 0
-11-17 21:57:30.778  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:30.778  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:30.778  2649  2649 D UdfpsController:              x: 477.0
-11-17 21:57:30.778  2649  2649 D UdfpsController:              y: 2048.0
-11-17 21:57:30.778  2649  2649 D UdfpsController:          minor: 213.0
-11-17 21:57:30.778  2649  2649 D UdfpsController:          major: 289.0
-11-17 21:57:30.778  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:30.778  2649  2649 D UdfpsController:           time: 568702
-11-17 21:57:30.778  2649  2649 D UdfpsController:   gestureStart: 568451
-11-17 21:57:30.778  2649  2649 D UdfpsController: }
-11-17 21:57:30.778  2649  2649 D UdfpsController: sessionId: 184794, isAod: false, touchConfigId: 0
-11-17 21:57:30.845  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:30.845  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:30.845  2649  2649 D UdfpsController:              x: 479.21777
-11-17 21:57:30.845  2649  2649 D UdfpsController:              y: 2048.0
-11-17 21:57:30.845  2649  2649 D UdfpsController:          minor: 228.0
-11-17 21:57:30.845  2649  2649 D UdfpsController:          major: 304.0
-11-17 21:57:30.845  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:30.845  2649  2649 D UdfpsController:           time: 568778
-11-17 21:57:30.845  2649  2649 D UdfpsController:   gestureStart: 568451
-11-17 21:57:30.845  2649  2649 D UdfpsController: }
-11-17 21:57:30.845  2649  2649 D UdfpsController: sessionId: 184794, isAod: false, touchConfigId: 0
-11-17 21:57:30.878  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
-11-17 21:57:30.878  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=724165102, gid=0)
 11-17 21:57:30.887  2649  2649 I surfaceview_layout: [SV[128667350 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
 11-17 21:57:30.887  2649  2649 I surfaceview_callback: [SV[128667350 UdfpsControllerOverlay],surfaceDestroyed]
-11-17 21:57:30.894  2649  3047 E BufferQueueProducer: [7ab4ed6 SurfaceView[UdfpsControllerOverlay]#32(BLAST Consumer)32](id:a5900000020,api:0,p:-1,c:2649) disconnect: not connected (req=1)
-11-17 21:57:30.894  2649  3047 E Surface : [7ab4ed6 SurfaceView[UdfpsControllerOverlay]#32(BLAST Consumer)32-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
-11-17 21:57:30.896  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
-11-17 21:57:30.917  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
-11-17 21:57:30.917  2649  2649 W UdfpsDisplayMode: disable | already disabled
-11-17 21:57:30.917  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{2183b80 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
 11-17 21:57:30.936  2649  2649 I surfaceview_layout: [SV[128667350 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
 11-17 21:57:30.936  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f860d2d,applyTransactionOnDraw applyImmediately]
-11-17 21:57:30.961  2049  2961 I InputDispatcher: Touched window was removed: 4861bc1 UdfpsControllerOverlay in display %0
-11-17 21:57:30.963  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{2183b80 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
-11-17 21:57:31.455  1215  4160 E audio_hw_extn: audio_extn_perf_lock_acquire: Incorrect params, Failed to acquire perf lock, err 
-11-17 21:57:31.516  1215  4160 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
-11-17 21:57:35.636  1215  4160 E audio_hw_extn: audio_extn_perf_lock_acquire: Incorrect params, Failed to acquire perf lock, err 
 11-17 21:57:35.654  1717  1717 I auditd  : type=1400 audit(0.0:89391): avc:  denied  { ioctl } for  comm="HwBinder:1717_1" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:57:35.654  1717  1717 I HwBinder:1717_1: type=1400 audit(0.0:89391): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:57:35.661  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
-11-17 21:57:35.674  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
-11-17 21:57:35.700  1215  4160 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
-11-17 21:57:36.615  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{94eb90a V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
 11-17 21:57:36.641  2049  2696 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#302)/@0xea021b8 for f2e462a UdfpsControllerOverlay
-11-17 21:57:36.645  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#35(BLAST Consumer)35 with slotExpansion=1 for 64 slots
 11-17 21:57:36.645  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]7155f62,applyTransactionOnDraw applyImmediately]
 11-17 21:57:36.647  2649  2649 I surfaceview_layout: [SV[113344087 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
 11-17 21:57:36.650  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]7155f62,reportDrawFinished seqId=1]
 11-17 21:57:36.655  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]7155f62,Not drawing due to screen off]
-11-17 21:57:36.660  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{94eb90a V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
 11-17 21:57:36.977  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]7155f62,Resumed drawing after screen turned on]
 11-17 21:57:37.664  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,f2e462a UdfpsControllerOverlay], on displayId 0
 11-17 21:57:37.673  2649  2649 I surfaceview_layout: [SV[113344087 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
-11-17 21:57:37.676  2649  2649 I Surface : Creating surface for consumer 6c17e57 SurfaceView[UdfpsControllerOverlay]#36(BLAST Consumer)36 with slotExpansion=1 for 64 slots
 11-17 21:57:37.676  2649  2649 I surfaceview_callback: [SV[113344087 UdfpsControllerOverlay],surfaceCreated]
 11-17 21:57:37.677  2649  2649 I surfaceview_callback: [SV[113344087 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
 11-17 21:57:37.677  2649  2649 I surfaceview_callback: [SV[113344087 UdfpsControllerOverlay],surfaceRedrawNeeded]
-11-17 21:57:37.681  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
-11-17 21:57:37.681  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:37.681  2649  2649 D UdfpsController:              x: 554.0
-11-17 21:57:37.681  2649  2649 D UdfpsController:              y: 2006.0
-11-17 21:57:37.681  2649  2649 D UdfpsController:          minor: 136.0
-11-17 21:57:37.681  2649  2649 D UdfpsController:          major: 197.0
-11-17 21:57:37.681  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:37.681  2649  2649 D UdfpsController:           time: 575613
-11-17 21:57:37.681  2649  2649 D UdfpsController:   gestureStart: 575613
-11-17 21:57:37.681  2649  2649 D UdfpsController: }
-11-17 21:57:37.681  2649  2649 D UdfpsController: sessionId: 1033489, isAod: false, touchConfigId: 0
-11-17 21:57:37.682  2049  3344 I InputDispatcher: Channel f2e462a UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
-11-17 21:57:37.727  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=92 !
-11-17 21:57:37.727  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
 11-17 21:57:37.747  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,f2e462a UdfpsControllerOverlay], on displayId 0
-11-17 21:57:37.767  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:37.767  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:37.767  2649  2649 D UdfpsController:              x: 552.3408
-11-17 21:57:37.767  2649  2649 D UdfpsController:              y: 2006.0
-11-17 21:57:37.767  2649  2649 D UdfpsController:          minor: 167.0
-11-17 21:57:37.767  2649  2649 D UdfpsController:          major: 258.0
-11-17 21:57:37.767  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:37.767  2649  2649 D UdfpsController:           time: 575700
-11-17 21:57:37.767  2649  2649 D UdfpsController:   gestureStart: 575613
-11-17 21:57:37.767  2649  2649 D UdfpsController: }
-11-17 21:57:37.767  2649  2649 D UdfpsController: sessionId: 1033489, isAod: false, touchConfigId: 0
-11-17 21:57:37.823  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:37.823  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:37.823  2649  2649 D UdfpsController:              x: 546.667
-11-17 21:57:37.823  2649  2649 D UdfpsController:              y: 2009.0
-11-17 21:57:37.823  2649  2649 D UdfpsController:          minor: 182.0
-11-17 21:57:37.823  2649  2649 D UdfpsController:          major: 273.0
-11-17 21:57:37.823  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:37.823  2649  2649 D UdfpsController:           time: 575756
-11-17 21:57:37.823  2649  2649 D UdfpsController:   gestureStart: 575613
-11-17 21:57:37.823  2649  2649 D UdfpsController: }
-11-17 21:57:37.823  2649  2649 D UdfpsController: sessionId: 1033489, isAod: false, touchConfigId: 0
-11-17 21:57:37.880  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:37.880  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:37.880  2649  2649 D UdfpsController:              x: 542.78125
-11-17 21:57:37.880  2649  2649 D UdfpsController:              y: 2010.0
-11-17 21:57:37.880  2649  2649 D UdfpsController:          minor: 197.0
-11-17 21:57:37.880  2649  2649 D UdfpsController:          major: 289.0
-11-17 21:57:37.880  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:37.880  2649  2649 D UdfpsController:           time: 575812
-11-17 21:57:37.880  2649  2649 D UdfpsController:   gestureStart: 575613
-11-17 21:57:37.880  2649  2649 D UdfpsController: }
-11-17 21:57:37.881  2649  2649 D UdfpsController: sessionId: 1033489, isAod: false, touchConfigId: 0
-11-17 21:57:37.957  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:37.957  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:37.957  2649  2649 D UdfpsController:              x: 540.0
-11-17 21:57:37.957  2649  2649 D UdfpsController:              y: 2011.0
-11-17 21:57:37.957  2649  2649 D UdfpsController:          minor: 213.0
-11-17 21:57:37.957  2649  2649 D UdfpsController:          major: 304.0
-11-17 21:57:37.957  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:37.957  2649  2649 D UdfpsController:           time: 575881
-11-17 21:57:37.957  2649  2649 D UdfpsController:   gestureStart: 575613
-11-17 21:57:37.957  2649  2649 D UdfpsController: }
-11-17 21:57:37.957  2649  2649 D UdfpsController: sessionId: 1033489, isAod: false, touchConfigId: 0
-11-17 21:57:38.027  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
-11-17 21:57:38.027  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=724165102, gid=0)
 11-17 21:57:38.032  2649  2649 I surfaceview_layout: [SV[113344087 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
 11-17 21:57:38.033  2649  2649 I surfaceview_callback: [SV[113344087 UdfpsControllerOverlay],surfaceDestroyed]
-11-17 21:57:38.046  2649  3047 E BufferQueueProducer: [6c17e57 SurfaceView[UdfpsControllerOverlay]#36(BLAST Consumer)36](id:a5900000024,api:0,p:-1,c:2649) disconnect: not connected (req=1)
-11-17 21:57:38.046  2649  3047 E Surface : [6c17e57 SurfaceView[UdfpsControllerOverlay]#36(BLAST Consumer)36-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
-11-17 21:57:38.047  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
-11-17 21:57:38.070  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
-11-17 21:57:38.071  2649  2649 W UdfpsDisplayMode: disable | already disabled
-11-17 21:57:38.071  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{94eb90a V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
 11-17 21:57:38.116  2649  2649 I surfaceview_layout: [SV[113344087 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
 11-17 21:57:38.116  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]7155f62,applyTransactionOnDraw applyImmediately]
-11-17 21:57:38.135  2049  3344 I InputDispatcher: Touched window was removed: f2e462a UdfpsControllerOverlay in display %0
-11-17 21:57:38.141  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{94eb90a V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
 11-17 21:57:38.154  1717  1717 I auditd  : type=1400 audit(0.0:90431): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:57:38.154  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:90431): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
-11-17 21:57:39.028  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
-11-17 21:57:39.039  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
-11-17 21:57:39.982  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{734b703 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
 11-17 21:57:40.034  2049  2079 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#320)/@0x9a28fb0 for 2ded562 UdfpsControllerOverlay
-11-17 21:57:40.040  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#38(BLAST Consumer)38 with slotExpansion=1 for 64 slots
 11-17 21:57:40.040  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec037b,applyTransactionOnDraw applyImmediately]
 11-17 21:57:40.042  2649  2649 I surfaceview_layout: [SV[43387564 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
 11-17 21:57:40.047  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec037b,reportDrawFinished seqId=1]
 11-17 21:57:40.057  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec037b,Not drawing due to screen off]
-11-17 21:57:40.072  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{734b703 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
 11-17 21:57:40.255  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec037b,Resumed drawing after screen turned on]
 11-17 21:57:40.976  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,2ded562 UdfpsControllerOverlay], on displayId 0
 11-17 21:57:40.988  2649  2649 I surfaceview_layout: [SV[43387564 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
-11-17 21:57:40.991  2649  2649 I Surface : Creating surface for consumer 2960aac SurfaceView[UdfpsControllerOverlay]#39(BLAST Consumer)39 with slotExpansion=1 for 64 slots
 11-17 21:57:40.991  2649  2649 I surfaceview_callback: [SV[43387564 UdfpsControllerOverlay],surfaceCreated]
 11-17 21:57:40.992  2649  2649 I surfaceview_callback: [SV[43387564 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
 11-17 21:57:40.992  2649  2649 I surfaceview_callback: [SV[43387564 UdfpsControllerOverlay],surfaceRedrawNeeded]
-11-17 21:57:40.997  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
-11-17 21:57:40.997  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:40.997  2649  2649 D UdfpsController:              x: 559.0
-11-17 21:57:40.997  2649  2649 D UdfpsController:              y: 2017.0
-11-17 21:57:40.997  2649  2649 D UdfpsController:          minor: 136.0
-11-17 21:57:40.997  2649  2649 D UdfpsController:          major: 167.0
-11-17 21:57:40.997  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:40.997  2649  2649 D UdfpsController:           time: 578924
-11-17 21:57:40.997  2649  2649 D UdfpsController:   gestureStart: 578924
-11-17 21:57:40.997  2649  2649 D UdfpsController: }
-11-17 21:57:40.997  2649  2649 D UdfpsController: sessionId: 1004659, isAod: true, touchConfigId: 0
-11-17 21:57:40.998  2049  2560 I InputDispatcher: Channel 2ded562 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
-11-17 21:57:41.043  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=95 !
-11-17 21:57:41.043  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
 11-17 21:57:41.102  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,2ded562 UdfpsControllerOverlay], on displayId 0
-11-17 21:57:41.130  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:41.130  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:41.130  2649  2649 D UdfpsController:              x: 557.58594
-11-17 21:57:41.130  2649  2649 D UdfpsController:              y: 2018.0
-11-17 21:57:41.130  2649  2649 D UdfpsController:          minor: 167.0
-11-17 21:57:41.130  2649  2649 D UdfpsController:          major: 228.0
-11-17 21:57:41.130  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:41.130  2649  2649 D UdfpsController:           time: 579061
-11-17 21:57:41.130  2649  2649 D UdfpsController:   gestureStart: 578924
-11-17 21:57:41.130  2649  2649 D UdfpsController: }
-11-17 21:57:41.130  2649  2649 D UdfpsController: sessionId: 1004659, isAod: true, touchConfigId: 0
-11-17 21:57:41.225  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
-11-17 21:57:41.225  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:41.225  2649  2649 D UdfpsController:              x: 555.0
-11-17 21:57:41.225  2649  2649 D UdfpsController:              y: 2018.0
-11-17 21:57:41.225  2649  2649 D UdfpsController:          minor: 167.0
-11-17 21:57:41.225  2649  2649 D UdfpsController:          major: 243.0
-11-17 21:57:41.225  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:41.225  2649  2649 D UdfpsController:           time: 579141
-11-17 21:57:41.225  2649  2649 D UdfpsController:   gestureStart: 578924
-11-17 21:57:41.225  2649  2649 D UdfpsController: }
-11-17 21:57:41.225  2649  2649 D UdfpsController: sessionId: 1004659, isAod: true, touchConfigId: 0
 11-17 21:57:41.841  2649  2649 I surfaceview_layout: [SV[43387564 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
 11-17 21:57:41.842  2649  2649 I surfaceview_callback: [SV[43387564 UdfpsControllerOverlay],surfaceDestroyed]
-11-17 21:57:41.849  2649  3047 E BufferQueueProducer: [2960aac SurfaceView[UdfpsControllerOverlay]#39(BLAST Consumer)39](id:a5900000027,api:0,p:-1,c:2649) disconnect: not connected (req=1)
-11-17 21:57:41.849  2649  3047 E Surface : [2960aac SurfaceView[UdfpsControllerOverlay]#39(BLAST Consumer)39-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
-11-17 21:57:41.852  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
-11-17 21:57:41.852  2649  2649 D UdfpsController: NormalizedTouchData [UP] {
-11-17 21:57:41.852  2649  2649 D UdfpsController:      pointerId: 0
-11-17 21:57:41.852  2649  2649 D UdfpsController:              x: 554.0
-11-17 21:57:41.852  2649  2649 D UdfpsController:              y: 2018.0
-11-17 21:57:41.852  2649  2649 D UdfpsController:          minor: 167.0
-11-17 21:57:41.852  2649  2649 D UdfpsController:          major: 243.0
-11-17 21:57:41.852  2649  2649 D UdfpsController:    orientation: 0.0
-11-17 21:57:41.852  2649  2649 D UdfpsController:           time: 579777
-11-17 21:57:41.852  2649  2649 D UdfpsController:   gestureStart: 578924
-11-17 21:57:41.852  2649  2649 D UdfpsController: }
-11-17 21:57:41.852  2649  2649 D UdfpsController: sessionId: 1004659, isAod: true, touchConfigId: 0
-11-17 21:57:41.944  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
-11-17 21:57:41.945  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=-1636885344, gid=0)
-11-17 21:57:41.985  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
-11-17 21:57:41.985  2649  2649 W UdfpsDisplayMode: disable | already disabled
-11-17 21:57:41.985  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{734b703 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
 11-17 21:57:42.019  2649  2649 I surfaceview_layout: [SV[43387564 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
 11-17 21:57:42.019  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec037b,applyTransactionOnDraw applyImmediately]
-11-17 21:57:42.050  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{734b703 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
-11-17 21:57:42.907  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
-11-17 21:57:42.917  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
-11-17 21:57:43.869  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{15a7cb3 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
 11-17 21:57:43.894  2049  2441 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#341)/@0xc8767f2 for c908f54 UdfpsControllerOverlay
-11-17 21:57:43.898  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#41(BLAST Consumer)41 with slotExpansion=1 for 64 slots
 11-17 21:57:43.898  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]6e10c34,applyTransactionOnDraw applyImmediately]
 11-17 21:57:43.900  2649  2649 I surfaceview_layout: [SV[77917473 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
 11-17 21:57:43.905  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]6e10c34,reportDrawFinished seqId=1]
 11-17 21:57:43.910  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]6e10c34,Not drawing due to screen off]
-11-17 21:57:43.917  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{15a7cb3 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
 11-17 21:57:44.200  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]6e10c34,Resumed drawing after screen turned on]
+11-17 21:57:45.340  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,c908f54 UdfpsControllerOverlay], on displayId 0
+11-17 21:57:45.345  2649  2649 I surfaceview_layout: [SV[77917473 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 21:57:45.347  2649  2649 I surfaceview_callback: [SV[77917473 UdfpsControllerOverlay],surfaceCreated]
+11-17 21:57:45.347  2649  2649 I surfaceview_callback: [SV[77917473 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 21:57:45.347  2649  2649 I surfaceview_callback: [SV[77917473 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 21:57:45.710  1717  1717 I auditd  : type=1400 audit(0.0:91568): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6706 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:57:45.730  2649  2649 I surfaceview_layout: [SV[77917473 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:57:45.730  2649  2649 I surfaceview_callback: [SV[77917473 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 21:57:45.758  2649  2649 I surfaceview_layout: [SV[77917473 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 21:57:45.758  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]6e10c34,applyTransactionOnDraw applyImmediately]
+11-17 21:57:48.035  2049  3724 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#359)/@0x2c411e7 for 4443901 UdfpsControllerOverlay
+11-17 21:57:48.040  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f8f4b46,applyTransactionOnDraw applyImmediately]
+11-17 21:57:48.042  2649  2649 I surfaceview_layout: [SV[256003371 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:57:48.046  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f8f4b46,reportDrawFinished seqId=1]
+11-17 21:57:48.053  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f8f4b46,Not drawing due to screen off]
+11-17 21:57:48.142  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f8f4b46,Resumed drawing after screen turned on]
+11-17 21:57:49.029  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,4443901 UdfpsControllerOverlay], on displayId 0
+11-17 21:57:49.041  2649  2649 I surfaceview_layout: [SV[256003371 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 21:57:49.044  2649  2649 I surfaceview_callback: [SV[256003371 UdfpsControllerOverlay],surfaceCreated]
+11-17 21:57:49.045  2649  2649 I surfaceview_callback: [SV[256003371 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 21:57:49.045  2649  2649 I surfaceview_callback: [SV[256003371 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 21:57:49.397  2649  2649 I surfaceview_layout: [SV[256003371 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:57:49.397  2649  2649 I surfaceview_callback: [SV[256003371 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 21:57:49.453  2649  2649 I surfaceview_layout: [SV[256003371 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 21:57:49.453  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f8f4b46,applyTransactionOnDraw applyImmediately]
+11-17 21:57:51.600  2049  2961 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#377)/@0xc0b783f for a2aaae0 UdfpsControllerOverlay
+11-17 21:57:51.603  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]c05cb2b,applyTransactionOnDraw applyImmediately]
+11-17 21:57:51.605  2649  2649 I surfaceview_layout: [SV[146026908 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:57:51.609  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]c05cb2b,reportDrawFinished seqId=1]
+11-17 21:57:51.615  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]c05cb2b,Not drawing due to screen off]
+11-17 21:57:51.694  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]c05cb2b,Resumed drawing after screen turned on]
+11-17 21:57:52.274  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,a2aaae0 UdfpsControllerOverlay], on displayId 0
+11-17 21:57:52.284  2649  2649 I surfaceview_layout: [SV[146026908 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 21:57:52.290  2649  2649 I surfaceview_callback: [SV[146026908 UdfpsControllerOverlay],surfaceCreated]
+11-17 21:57:52.290  2649  2649 I surfaceview_callback: [SV[146026908 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 21:57:52.290  2649  2649 I surfaceview_callback: [SV[146026908 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 21:57:52.334  1717  1717 I auditd  : type=1400 audit(0.0:93762): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:57:53.026  2649  2649 I surfaceview_layout: [SV[146026908 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:57:53.027  2649  2649 I surfaceview_callback: [SV[146026908 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 21:57:53.065  2649  2649 I surfaceview_layout: [SV[146026908 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 21:57:53.065  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]c05cb2b,applyTransactionOnDraw applyImmediately]
+11-17 21:57:54.230  1717  1717 I auditd  : type=1400 audit(0.0:93794): avc:  denied  { ioctl } for  comm="HwBinder:1717_1" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:57:54.230  1717  1717 I HwBinder:1717_1: type=1400 audit(0.0:93794): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:57:54.247  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 21:57:54.249  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 21:57:55.210  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{e1cc258 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 21:57:55.257  2049  2560 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#395)/@0x9e5a016 for 74b19d8 UdfpsControllerOverlay
+11-17 21:57:55.265  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#50(BLAST Consumer)50 with slotExpansion=1 for 64 slots
+11-17 21:57:55.265  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]a158470,applyTransactionOnDraw applyImmediately]
+11-17 21:57:55.267  2649  2649 I surfaceview_layout: [SV[42313197 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:57:55.272  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]a158470,reportDrawFinished seqId=1]
+11-17 21:57:55.278  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]a158470,Not drawing due to screen off]
+11-17 21:57:55.289  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{e1cc258 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 21:57:57.602  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]a158470,Resumed drawing after screen turned on]
+11-17 21:59:45.897  1215  4160 E audio_hw_extn: audio_extn_perf_lock_acquire: Incorrect params, Failed to acquire perf lock, err 
+11-17 21:59:45.958  1215  4160 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
+11-17 21:59:46.100  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,74b19d8 UdfpsControllerOverlay], on displayId 0
+11-17 21:59:46.116  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:46.116  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:46.116  2649  2649 D UdfpsController:              x: 303.0
+11-17 21:59:46.116  2649  2649 D UdfpsController:              y: 1644.0
+11-17 21:59:46.116  2649  2649 D UdfpsController:          minor: 91.0
+11-17 21:59:46.116  2649  2649 D UdfpsController:          major: 121.0
+11-17 21:59:46.116  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:46.116  2649  2649 D UdfpsController:           time: 608893
+11-17 21:59:46.116  2649  2649 D UdfpsController:   gestureStart: 608893
+11-17 21:59:46.116  2649  2649 D UdfpsController: }
+11-17 21:59:46.116  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:46.169  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:46.169  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:46.169  2649  2649 D UdfpsController:              x: 198.99023
+11-17 21:59:46.169  2649  2649 D UdfpsController:              y: 1568.4951
+11-17 21:59:46.169  2649  2649 D UdfpsController:          minor: 106.0
+11-17 21:59:46.169  2649  2649 D UdfpsController:          major: 121.0
+11-17 21:59:46.169  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:46.169  2649  2649 D UdfpsController:           time: 608957
+11-17 21:59:46.169  2649  2649 D UdfpsController:   gestureStart: 608893
+11-17 21:59:46.169  2649  2649 D UdfpsController: }
+11-17 21:59:46.169  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:46.228  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:46.228  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:46.228  2649  2649 D UdfpsController:              x: 95.899414
+11-17 21:59:46.228  2649  2649 D UdfpsController:              y: 1533.0
+11-17 21:59:46.228  2649  2649 D UdfpsController:          minor: 106.0
+11-17 21:59:46.228  2649  2649 D UdfpsController:          major: 121.0
+11-17 21:59:46.228  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:46.228  2649  2649 D UdfpsController:           time: 609013
+11-17 21:59:46.228  2649  2649 D UdfpsController:   gestureStart: 608893
+11-17 21:59:46.228  2649  2649 D UdfpsController: }
+11-17 21:59:46.228  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:46.280  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:46.280  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:46.280  2649  2649 D UdfpsController:              x: 44.16504
+11-17 21:59:46.280  2649  2649 D UdfpsController:              y: 1579.3916
+11-17 21:59:46.280  2649  2649 D UdfpsController:          minor: 106.0
+11-17 21:59:46.280  2649  2649 D UdfpsController:          major: 136.0
+11-17 21:59:46.280  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:46.280  2649  2649 D UdfpsController:           time: 609068
+11-17 21:59:46.280  2649  2649 D UdfpsController:   gestureStart: 608893
+11-17 21:59:46.280  2649  2649 D UdfpsController: }
+11-17 21:59:46.280  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:46.349  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:46.349  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:46.349  2649  2649 D UdfpsController:              x: 17.0
+11-17 21:59:46.349  2649  2649 D UdfpsController:              y: 1661.0
+11-17 21:59:46.349  2649  2649 D UdfpsController:          minor: 76.0
+11-17 21:59:46.349  2649  2649 D UdfpsController:          major: 136.0
+11-17 21:59:46.349  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:46.349  2649  2649 D UdfpsController:           time: 609115
+11-17 21:59:46.349  2649  2649 D UdfpsController:   gestureStart: 608893
+11-17 21:59:46.349  2649  2649 D UdfpsController: }
+11-17 21:59:46.349  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:46.419  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:46.419  2649  2649 D UdfpsController:      pointerId: 1
+11-17 21:59:46.419  2649  2649 D UdfpsController:              x: 147.0
+11-17 21:59:46.419  2649  2649 D UdfpsController:              y: 2229.3662
+11-17 21:59:46.419  2649  2649 D UdfpsController:          minor: 76.0
+11-17 21:59:46.419  2649  2649 D UdfpsController:          major: 91.0
+11-17 21:59:46.419  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:46.419  2649  2649 D UdfpsController:           time: 609202
+11-17 21:59:46.419  2649  2649 D UdfpsController:   gestureStart: 609121
+11-17 21:59:46.419  2649  2649 D UdfpsController: }
+11-17 21:59:46.419  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:46.484  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:46.484  2649  2649 D UdfpsController:      pointerId: 1
+11-17 21:59:46.484  2649  2649 D UdfpsController:              x: 85.0
+11-17 21:59:46.484  2649  2649 D UdfpsController:              y: 2171.0
+11-17 21:59:46.484  2649  2649 D UdfpsController:          minor: 60.0
+11-17 21:59:46.484  2649  2649 D UdfpsController:          major: 91.0
+11-17 21:59:46.484  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:46.484  2649  2649 D UdfpsController:           time: 609265
+11-17 21:59:46.484  2649  2649 D UdfpsController:   gestureStart: 609121
+11-17 21:59:46.484  2649  2649 D UdfpsController: }
+11-17 21:59:46.485  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:52.398  2649  2649 I surfaceview_layout: [SV[42313197 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 21:59:52.401  2649  2649 I Surface : Creating surface for consumer 285a5ed SurfaceView[UdfpsControllerOverlay]#52(BLAST Consumer)52 with slotExpansion=1 for 64 slots
+11-17 21:59:52.401  2649  2649 I surfaceview_callback: [SV[42313197 UdfpsControllerOverlay],surfaceCreated]
+11-17 21:59:52.401  2649  2649 I surfaceview_callback: [SV[42313197 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 21:59:52.401  2649  2649 I surfaceview_callback: [SV[42313197 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 21:59:52.415  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 21:59:52.415  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:52.415  2649  2649 D UdfpsController:              x: 536.0
+11-17 21:59:52.415  2649  2649 D UdfpsController:              y: 1981.0
+11-17 21:59:52.415  2649  2649 D UdfpsController:          minor: 121.0
+11-17 21:59:52.415  2649  2649 D UdfpsController:          major: 136.0
+11-17 21:59:52.415  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:52.415  2649  2649 D UdfpsController:           time: 615181
+11-17 21:59:52.415  2649  2649 D UdfpsController:   gestureStart: 615181
+11-17 21:59:52.415  2649  2649 D UdfpsController: }
+11-17 21:59:52.415  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:52.416  2049  2560 I InputDispatcher: Channel 74b19d8 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 21:59:52.439  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,74b19d8 UdfpsControllerOverlay], on displayId 0
+11-17 21:59:52.458  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 21:59:52.455  1717  1717 I auditd  : type=1400 audit(0.0:100700): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:59:52.455  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:100700): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:59:52.459  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=114 !
+11-17 21:59:52.468  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:52.468  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:52.468  2649  2649 D UdfpsController:              x: 538.3164
+11-17 21:59:52.468  2649  2649 D UdfpsController:              y: 1985.6328
+11-17 21:59:52.468  2649  2649 D UdfpsController:          minor: 136.0
+11-17 21:59:52.468  2649  2649 D UdfpsController:          major: 167.0
+11-17 21:59:52.468  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:52.468  2649  2649 D UdfpsController:           time: 615242
+11-17 21:59:52.468  2649  2649 D UdfpsController:   gestureStart: 615181
+11-17 21:59:52.468  2649  2649 D UdfpsController: }
+11-17 21:59:52.468  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:52.525  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:52.525  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:52.525  2649  2649 D UdfpsController:              x: 538.1719
+11-17 21:59:52.525  2649  2649 D UdfpsController:              y: 2003.8281
+11-17 21:59:52.525  2649  2649 D UdfpsController:          minor: 152.0
+11-17 21:59:52.525  2649  2649 D UdfpsController:          major: 197.0
+11-17 21:59:52.525  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:52.525  2649  2649 D UdfpsController:           time: 615298
+11-17 21:59:52.525  2649  2649 D UdfpsController:   gestureStart: 615181
+11-17 21:59:52.525  2649  2649 D UdfpsController: }
+11-17 21:59:52.525  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:52.601  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:52.601  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:52.601  2649  2649 D UdfpsController:              x: 536.6699
+11-17 21:59:52.601  2649  2649 D UdfpsController:              y: 2005.0
+11-17 21:59:52.601  2649  2649 D UdfpsController:          minor: 167.0
+11-17 21:59:52.601  2649  2649 D UdfpsController:          major: 228.0
+11-17 21:59:52.601  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:52.601  2649  2649 D UdfpsController:           time: 615376
+11-17 21:59:52.601  2649  2649 D UdfpsController:   gestureStart: 615181
+11-17 21:59:52.601  2649  2649 D UdfpsController: }
+11-17 21:59:52.601  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:52.666  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:52.666  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:52.666  2649  2649 D UdfpsController:              x: 535.5
+11-17 21:59:52.666  2649  2649 D UdfpsController:              y: 2007.0
+11-17 21:59:52.666  2649  2649 D UdfpsController:          minor: 182.0
+11-17 21:59:52.666  2649  2649 D UdfpsController:          major: 243.0
+11-17 21:59:52.666  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:52.666  2649  2649 D UdfpsController:           time: 615442
+11-17 21:59:52.666  2649  2649 D UdfpsController:   gestureStart: 615181
+11-17 21:59:52.666  2649  2649 D UdfpsController: }
+11-17 21:59:52.666  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:52.734  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:52.734  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:52.734  2649  2649 D UdfpsController:              x: 536.0
+11-17 21:59:52.734  2649  2649 D UdfpsController:              y: 2007.0
+11-17 21:59:52.734  2649  2649 D UdfpsController:          minor: 182.0
+11-17 21:59:52.734  2649  2649 D UdfpsController:          major: 258.0
+11-17 21:59:52.734  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:52.734  2649  2649 D UdfpsController:           time: 615506
+11-17 21:59:52.734  2649  2649 D UdfpsController:   gestureStart: 615181
+11-17 21:59:52.734  2649  2649 D UdfpsController: }
+11-17 21:59:52.734  2649  2649 D UdfpsController: sessionId: 656472, isAod: false, touchConfigId: 0
+11-17 21:59:52.771  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 21:59:52.771  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=724165102, gid=0)
+11-17 21:59:52.775  2649  2649 I surfaceview_layout: [SV[42313197 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:59:52.775  2649  2649 I surfaceview_callback: [SV[42313197 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 21:59:52.783  2649  3047 E BufferQueueProducer: [285a5ed SurfaceView[UdfpsControllerOverlay]#52(BLAST Consumer)52](id:a5900000034,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 21:59:52.783  2649  3047 E Surface : [285a5ed SurfaceView[UdfpsControllerOverlay]#52(BLAST Consumer)52-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 21:59:52.787  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 21:59:52.812  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 21:59:52.812  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 21:59:52.812  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{e1cc258 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 21:59:52.823  2649  2649 I surfaceview_layout: [SV[42313197 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 21:59:52.823  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]a158470,applyTransactionOnDraw applyImmediately]
+11-17 21:59:52.841  2049  2490 W InputDispatcher: Not creating InputTarget for 74b19d8 UdfpsControllerOverlay, no input channel
+11-17 21:59:52.844  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{e1cc258 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 21:59:52.846  2049  2490 W InputDispatcher: Not creating InputTarget for 74b19d8 UdfpsControllerOverlay, no input channel
+11-17 21:59:52.847  2049  2961 I InputDispatcher: Touched window was removed: 74b19d8 UdfpsControllerOverlay in display %0
+11-17 21:59:53.331  1215  4160 E audio_hw_extn: audio_extn_perf_lock_acquire: Incorrect params, Failed to acquire perf lock, err 
+11-17 21:59:53.396  1215  4160 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
+11-17 21:59:53.739  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 21:59:53.745  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 21:59:54.663  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{6d98ee0 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 21:59:54.697  2049  4115 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#418)/@0x8e736b3 for a92c04 UdfpsControllerOverlay
+11-17 21:59:54.702  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#54(BLAST Consumer)54 with slotExpansion=1 for 64 slots
+11-17 21:59:54.702  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]9fe59f8,applyTransactionOnDraw applyImmediately]
+11-17 21:59:54.704  2649  2649 I surfaceview_layout: [SV[177250901 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:59:54.708  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]9fe59f8,reportDrawFinished seqId=1]
+11-17 21:59:54.722  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]9fe59f8,Not drawing due to screen off]
+11-17 21:59:54.766  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{6d98ee0 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 21:59:54.777  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]9fe59f8,Resumed drawing after screen turned on]
+11-17 21:59:55.213  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,a92c04 UdfpsControllerOverlay], on displayId 0
+11-17 21:59:55.221  2649  2649 I surfaceview_layout: [SV[177250901 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 21:59:55.224  2649  2649 I Surface : Creating surface for consumer a90a255 SurfaceView[UdfpsControllerOverlay]#55(BLAST Consumer)55 with slotExpansion=1 for 64 slots
+11-17 21:59:55.224  2649  2649 I surfaceview_callback: [SV[177250901 UdfpsControllerOverlay],surfaceCreated]
+11-17 21:59:55.224  2649  2649 I surfaceview_callback: [SV[177250901 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 21:59:55.224  2649  2649 I surfaceview_callback: [SV[177250901 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 21:59:55.230  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 21:59:55.230  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:55.230  2649  2649 D UdfpsController:              x: 541.0
+11-17 21:59:55.230  2649  2649 D UdfpsController:              y: 2020.0
+11-17 21:59:55.230  2649  2649 D UdfpsController:          minor: 121.0
+11-17 21:59:55.230  2649  2649 D UdfpsController:          major: 197.0
+11-17 21:59:55.230  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:55.230  2649  2649 D UdfpsController:           time: 618006
+11-17 21:59:55.230  2649  2649 D UdfpsController:   gestureStart: 618006
+11-17 21:59:55.230  2649  2649 D UdfpsController: }
+11-17 21:59:55.230  2649  2649 D UdfpsController: sessionId: 845832, isAod: false, touchConfigId: 0
+11-17 21:59:55.231  2049  3724 I InputDispatcher: Channel a92c04 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 21:59:55.287  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 21:59:55.285  1717  1717 I auditd  : type=1400 audit(0.0:100748): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:59:55.285  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:100748): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 21:59:55.287  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=119 !
+11-17 21:59:55.590  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 21:59:55.590  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=724165102, gid=0)
+11-17 21:59:55.602  2649  2649 I surfaceview_layout: [SV[177250901 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:59:55.603  2649  2649 I surfaceview_callback: [SV[177250901 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 21:59:55.605  2649  3047 E BufferQueueProducer: [a90a255 SurfaceView[UdfpsControllerOverlay]#55(BLAST Consumer)55](id:a5900000037,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 21:59:55.605  2649  3047 E Surface : [a90a255 SurfaceView[UdfpsControllerOverlay]#55(BLAST Consumer)55-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 21:59:55.607  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 21:59:55.629  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 21:59:55.629  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 21:59:55.629  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{6d98ee0 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 21:59:55.650  2649  2649 I surfaceview_layout: [SV[177250901 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 21:59:55.650  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]9fe59f8,applyTransactionOnDraw applyImmediately]
+11-17 21:59:55.660  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{6d98ee0 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 21:59:55.665  2049  7110 I InputDispatcher: Touched window was removed: a92c04 UdfpsControllerOverlay in display %0
+11-17 21:59:56.401  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 21:59:56.422  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 21:59:57.354  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{ddeb399 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 21:59:57.388  2049  7110 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#436)/@0x8dfc814 for 9c5d626 UdfpsControllerOverlay
+11-17 21:59:57.393  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#57(BLAST Consumer)57 with slotExpansion=1 for 64 slots
+11-17 21:59:57.394  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]75a3cd1,applyTransactionOnDraw applyImmediately]
+11-17 21:59:57.396  2649  2649 I surfaceview_layout: [SV[74934890 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:59:57.401  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]75a3cd1,reportDrawFinished seqId=1]
+11-17 21:59:57.406  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]75a3cd1,Not drawing due to screen off]
+11-17 21:59:57.418  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{ddeb399 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 21:59:57.723  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]75a3cd1,Resumed drawing after screen turned on]
+11-17 21:59:58.175  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,9c5d626 UdfpsControllerOverlay], on displayId 0
+11-17 21:59:58.185  2649  2649 I surfaceview_layout: [SV[74934890 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 21:59:58.188  2649  2649 I Surface : Creating surface for consumer 4776a6a SurfaceView[UdfpsControllerOverlay]#58(BLAST Consumer)58 with slotExpansion=1 for 64 slots
+11-17 21:59:58.188  2649  2649 I surfaceview_callback: [SV[74934890 UdfpsControllerOverlay],surfaceCreated]
+11-17 21:59:58.188  2649  2649 I surfaceview_callback: [SV[74934890 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 21:59:58.188  2649  2649 I surfaceview_callback: [SV[74934890 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 21:59:58.195  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 21:59:58.195  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:58.195  2649  2649 D UdfpsController:              x: 552.0
+11-17 21:59:58.195  2649  2649 D UdfpsController:              y: 1994.0
+11-17 21:59:58.195  2649  2649 D UdfpsController:          minor: 136.0
+11-17 21:59:58.195  2649  2649 D UdfpsController:          major: 182.0
+11-17 21:59:58.195  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:58.195  2649  2649 D UdfpsController:           time: 620968
+11-17 21:59:58.195  2649  2649 D UdfpsController:   gestureStart: 620968
+11-17 21:59:58.195  2649  2649 D UdfpsController: }
+11-17 21:59:58.195  2649  2649 D UdfpsController: sessionId: 810097, isAod: false, touchConfigId: 0
+11-17 21:59:58.195  2049  7110 I InputDispatcher: Channel 9c5d626 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 21:59:58.255  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=122 !
+11-17 21:59:58.255  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 21:59:58.274  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,9c5d626 UdfpsControllerOverlay], on displayId 0
+11-17 21:59:58.294  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:58.294  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:58.294  2649  2649 D UdfpsController:              x: 550.3506
+11-17 21:59:58.294  2649  2649 D UdfpsController:              y: 1994.6494
+11-17 21:59:58.294  2649  2649 D UdfpsController:          minor: 182.0
+11-17 21:59:58.294  2649  2649 D UdfpsController:          major: 258.0
+11-17 21:59:58.294  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:58.294  2649  2649 D UdfpsController:           time: 621072
+11-17 21:59:58.294  2649  2649 D UdfpsController:   gestureStart: 620968
+11-17 21:59:58.294  2649  2649 D UdfpsController: }
+11-17 21:59:58.294  2649  2649 D UdfpsController: sessionId: 810097, isAod: false, touchConfigId: 0
+11-17 21:59:58.507  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:58.507  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:58.507  2649  2649 D UdfpsController:              x: 549.0
+11-17 21:59:58.507  2649  2649 D UdfpsController:              y: 1996.6348
+11-17 21:59:58.507  2649  2649 D UdfpsController:          minor: 228.0
+11-17 21:59:58.507  2649  2649 D UdfpsController:          major: 319.0
+11-17 21:59:58.507  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:58.507  2649  2649 D UdfpsController:           time: 621283
+11-17 21:59:58.507  2649  2649 D UdfpsController:   gestureStart: 620968
+11-17 21:59:58.507  2649  2649 D UdfpsController: }
+11-17 21:59:58.508  2649  2649 D UdfpsController: sessionId: 810097, isAod: false, touchConfigId: 0
+11-17 21:59:58.555  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 21:59:58.555  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=724165102, gid=0)
+11-17 21:59:58.561  2649  2649 I surfaceview_layout: [SV[74934890 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 21:59:58.561  2649  2649 I surfaceview_callback: [SV[74934890 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 21:59:58.572  2649  3047 E BufferQueueProducer: [4776a6a SurfaceView[UdfpsControllerOverlay]#58(BLAST Consumer)58](id:a590000003a,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 21:59:58.572  2649  3047 E Surface : [4776a6a SurfaceView[UdfpsControllerOverlay]#58(BLAST Consumer)58-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 21:59:58.574  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 21:59:58.576  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 21:59:58.576  2649  2649 D UdfpsController:      pointerId: 0
+11-17 21:59:58.576  2649  2649 D UdfpsController:              x: 527.34766
+11-17 21:59:58.576  2649  2649 D UdfpsController:              y: 2016.6523
+11-17 21:59:58.576  2649  2649 D UdfpsController:          minor: 228.0
+11-17 21:59:58.576  2649  2649 D UdfpsController:          major: 319.0
+11-17 21:59:58.576  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 21:59:58.576  2649  2649 D UdfpsController:           time: 621350
+11-17 21:59:58.576  2649  2649 D UdfpsController:   gestureStart: 620968
+11-17 21:59:58.576  2649  2649 D UdfpsController: }
+11-17 21:59:58.576  2649  2649 D UdfpsController: sessionId: 810097, isAod: false, touchConfigId: 0
+11-17 21:59:58.595  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 21:59:58.596  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 21:59:58.596  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{ddeb399 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 21:59:58.615  2649  2649 I surfaceview_layout: [SV[74934890 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 21:59:58.615  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]75a3cd1,applyTransactionOnDraw applyImmediately]
+11-17 21:59:58.647  2049  7110 I InputDispatcher: Touched window was removed: 9c5d626 UdfpsControllerOverlay in display %0
+11-17 21:59:58.651  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{ddeb399 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 21:59:59.534  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 21:59:59.541  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:00.421  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{73a6614 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:00.577  2049  2560 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#454)/@0xd712231 for ab3efec UdfpsControllerOverlay
+11-17 22:00:00.580  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#60(BLAST Consumer)60 with slotExpansion=1 for 64 slots
+11-17 22:00:00.580  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec01957,applyTransactionOnDraw applyImmediately]
+11-17 22:00:00.582  2649  2649 I surfaceview_layout: [SV[83496600 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:00.587  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec01957,reportDrawFinished seqId=1]
+11-17 22:00:00.678  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{73a6614 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 22:00:00.728  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,ab3efec UdfpsControllerOverlay], on displayId 0
+11-17 22:00:00.734  2649  2649 I surfaceview_layout: [SV[83496600 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:00.738  2649  2649 I Surface : Creating surface for consumer 4fa0e98 SurfaceView[UdfpsControllerOverlay]#61(BLAST Consumer)61 with slotExpansion=1 for 64 slots
+11-17 22:00:00.739  2649  2649 I surfaceview_callback: [SV[83496600 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:00.739  2649  2649 I surfaceview_callback: [SV[83496600 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:00.739  2649  2649 I surfaceview_callback: [SV[83496600 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:00.744  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:00.744  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:00.744  2649  2649 D UdfpsController:              x: 623.0
+11-17 22:00:00.744  2649  2649 D UdfpsController:              y: 1959.0
+11-17 22:00:00.744  2649  2649 D UdfpsController:          minor: 136.0
+11-17 22:00:00.744  2649  2649 D UdfpsController:          major: 228.0
+11-17 22:00:00.744  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:00.744  2649  2649 D UdfpsController:           time: 623520
+11-17 22:00:00.744  2649  2649 D UdfpsController:   gestureStart: 623520
+11-17 22:00:00.744  2649  2649 D UdfpsController: }
+11-17 22:00:00.744  2649  2649 D UdfpsController: sessionId: 175489, isAod: false, touchConfigId: 0
+11-17 22:00:00.744  2049  2560 I InputDispatcher: Channel ab3efec UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:00.800  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,ab3efec UdfpsControllerOverlay], on displayId 0
+11-17 22:00:00.802  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=127 !
+11-17 22:00:00.802  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:00.798  1717  1717 I auditd  : type=1400 audit(0.0:100810): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:00.798  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:100810): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:00.811  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:00.811  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:00.811  2649  2649 D UdfpsController:              x: 623.0
+11-17 22:00:00.811  2649  2649 D UdfpsController:              y: 1960.0
+11-17 22:00:00.811  2649  2649 D UdfpsController:          minor: 152.0
+11-17 22:00:00.811  2649  2649 D UdfpsController:          major: 228.0
+11-17 22:00:00.811  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:00.811  2649  2649 D UdfpsController:           time: 623593
+11-17 22:00:00.811  2649  2649 D UdfpsController:   gestureStart: 623520
+11-17 22:00:00.811  2649  2649 D UdfpsController: }
+11-17 22:00:00.811  2649  2649 D UdfpsController: sessionId: 175489, isAod: false, touchConfigId: 0
+11-17 22:00:00.863  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:00.863  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:00.863  2649  2649 D UdfpsController:              x: 622.34766
+11-17 22:00:00.863  2649  2649 D UdfpsController:              y: 1964.6523
+11-17 22:00:00.863  2649  2649 D UdfpsController:          minor: 152.0
+11-17 22:00:00.863  2649  2649 D UdfpsController:          major: 228.0
+11-17 22:00:00.863  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:00.863  2649  2649 D UdfpsController:           time: 623641
+11-17 22:00:00.863  2649  2649 D UdfpsController:   gestureStart: 623520
+11-17 22:00:00.863  2649  2649 D UdfpsController: }
+11-17 22:00:00.863  2649  2649 D UdfpsController: sessionId: 175489, isAod: false, touchConfigId: 0
+11-17 22:00:00.920  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:00.920  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:00.920  2649  2649 D UdfpsController:              x: 624.0
+11-17 22:00:00.920  2649  2649 D UdfpsController:              y: 1974.6289
+11-17 22:00:00.920  2649  2649 D UdfpsController:          minor: 167.0
+11-17 22:00:00.920  2649  2649 D UdfpsController:          major: 243.0
+11-17 22:00:00.920  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:00.920  2649  2649 D UdfpsController:           time: 623696
+11-17 22:00:00.920  2649  2649 D UdfpsController:   gestureStart: 623520
+11-17 22:00:00.920  2649  2649 D UdfpsController: }
+11-17 22:00:00.920  2649  2649 D UdfpsController: sessionId: 175489, isAod: false, touchConfigId: 0
+11-17 22:00:00.974  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:00.974  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:00.974  2649  2649 D UdfpsController:              x: 619.0
+11-17 22:00:00.974  2649  2649 D UdfpsController:              y: 1978.0
+11-17 22:00:00.974  2649  2649 D UdfpsController:          minor: 182.0
+11-17 22:00:00.974  2649  2649 D UdfpsController:          major: 258.0
+11-17 22:00:00.974  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:00.974  2649  2649 D UdfpsController:           time: 623760
+11-17 22:00:00.974  2649  2649 D UdfpsController:   gestureStart: 623520
+11-17 22:00:00.974  2649  2649 D UdfpsController: }
+11-17 22:00:00.974  2649  2649 D UdfpsController: sessionId: 175489, isAod: false, touchConfigId: 0
+11-17 22:00:00.987  2649  2649 I surfaceview_layout: [SV[83496600 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:00.987  2649  2649 I surfaceview_callback: [SV[83496600 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:01.003  2649  3047 E BufferQueueProducer: [4fa0e98 SurfaceView[UdfpsControllerOverlay]#61(BLAST Consumer)61](id:a590000003d,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:01.003  2649  3047 E Surface : [4fa0e98 SurfaceView[UdfpsControllerOverlay]#61(BLAST Consumer)61-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:01.006  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:01.006  2649  2649 D UdfpsController: NormalizedTouchData [UP] {
+11-17 22:00:01.006  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:01.006  2649  2649 D UdfpsController:              x: 614.0
+11-17 22:00:01.006  2649  2649 D UdfpsController:              y: 1981.0
+11-17 22:00:01.006  2649  2649 D UdfpsController:          minor: 182.0
+11-17 22:00:01.006  2649  2649 D UdfpsController:          major: 258.0
+11-17 22:00:01.006  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:01.006  2649  2649 D UdfpsController:           time: 623771
+11-17 22:00:01.006  2649  2649 D UdfpsController:   gestureStart: 623520
+11-17 22:00:01.006  2649  2649 D UdfpsController: }
+11-17 22:00:01.006  2649  2649 D UdfpsController: sessionId: 175489, isAod: false, touchConfigId: 0
+11-17 22:00:01.101  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 22:00:01.101  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=-1636885344, gid=0)
+11-17 22:00:01.135  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 22:00:01.136  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 22:00:01.136  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{73a6614 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:01.140  2649  2649 I surfaceview_layout: [SV[83496600 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 22:00:01.140  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]ec01957,applyTransactionOnDraw applyImmediately]
+11-17 22:00:01.172  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{73a6614 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 22:00:01.833  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 22:00:01.833  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:02.356  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{2cc9383 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:02.366  2049  2078 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#478)/@0x9d6810e for 9cd2b0d UdfpsControllerOverlay
+11-17 22:00:02.370  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#63(BLAST Consumer)63 with slotExpansion=1 for 64 slots
+11-17 22:00:02.370  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]dd38271,applyTransactionOnDraw applyImmediately]
+11-17 22:00:02.374  2649  2649 I surfaceview_layout: [SV[194952586 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:02.376  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]dd38271,reportDrawFinished seqId=1]
+11-17 22:00:02.387  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{2cc9383 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 22:00:02.633  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,9cd2b0d UdfpsControllerOverlay], on displayId 0
+11-17 22:00:02.638  2649  2649 I surfaceview_layout: [SV[194952586 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:02.641  2649  2649 I Surface : Creating surface for consumer b9ebd8a SurfaceView[UdfpsControllerOverlay]#64(BLAST Consumer)64 with slotExpansion=1 for 64 slots
+11-17 22:00:02.641  2649  2649 I surfaceview_callback: [SV[194952586 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:02.641  2649  2649 I surfaceview_callback: [SV[194952586 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:02.641  2649  2649 I surfaceview_callback: [SV[194952586 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:02.646  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:02.646  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:02.646  2649  2649 D UdfpsController:              x: 541.0
+11-17 22:00:02.646  2649  2649 D UdfpsController:              y: 1978.0
+11-17 22:00:02.646  2649  2649 D UdfpsController:          minor: 136.0
+11-17 22:00:02.646  2649  2649 D UdfpsController:          major: 182.0
+11-17 22:00:02.646  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:02.646  2649  2649 D UdfpsController:           time: 625426
+11-17 22:00:02.646  2649  2649 D UdfpsController:   gestureStart: 625426
+11-17 22:00:02.646  2649  2649 D UdfpsController: }
+11-17 22:00:02.646  2649  2649 D UdfpsController: sessionId: 23548, isAod: false, touchConfigId: 0
+11-17 22:00:02.647  2049  3724 I InputDispatcher: Channel 9cd2b0d UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:02.707  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=130 !
+11-17 22:00:02.707  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:02.710  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,9cd2b0d UdfpsControllerOverlay], on displayId 0
+11-17 22:00:02.736  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:02.736  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:02.736  2649  2649 D UdfpsController:              x: 540.0
+11-17 22:00:02.736  2649  2649 D UdfpsController:              y: 1979.3252
+11-17 22:00:02.736  2649  2649 D UdfpsController:          minor: 152.0
+11-17 22:00:02.736  2649  2649 D UdfpsController:          major: 197.0
+11-17 22:00:02.736  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:02.736  2649  2649 D UdfpsController:           time: 625513
+11-17 22:00:02.736  2649  2649 D UdfpsController:   gestureStart: 625426
+11-17 22:00:02.736  2649  2649 D UdfpsController: }
+11-17 22:00:02.736  2649  2649 D UdfpsController: sessionId: 23548, isAod: false, touchConfigId: 0
+11-17 22:00:02.791  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:02.791  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:02.791  2649  2649 D UdfpsController:              x: 539.0
+11-17 22:00:02.791  2649  2649 D UdfpsController:              y: 1982.4795
+11-17 22:00:02.791  2649  2649 D UdfpsController:          minor: 167.0
+11-17 22:00:02.791  2649  2649 D UdfpsController:          major: 213.0
+11-17 22:00:02.791  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:02.791  2649  2649 D UdfpsController:           time: 625567
+11-17 22:00:02.791  2649  2649 D UdfpsController:   gestureStart: 625426
+11-17 22:00:02.791  2649  2649 D UdfpsController: }
+11-17 22:00:02.791  2649  2649 D UdfpsController: sessionId: 23548, isAod: false, touchConfigId: 0
+11-17 22:00:02.847  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:02.847  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:02.847  2649  2649 D UdfpsController:              x: 538.0
+11-17 22:00:02.847  2649  2649 D UdfpsController:              y: 1984.5
+11-17 22:00:02.847  2649  2649 D UdfpsController:          minor: 167.0
+11-17 22:00:02.847  2649  2649 D UdfpsController:          major: 228.0
+11-17 22:00:02.847  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:02.847  2649  2649 D UdfpsController:           time: 625621
+11-17 22:00:02.847  2649  2649 D UdfpsController:   gestureStart: 625426
+11-17 22:00:02.847  2649  2649 D UdfpsController: }
+11-17 22:00:02.848  2649  2649 D UdfpsController: sessionId: 23548, isAod: false, touchConfigId: 0
+11-17 22:00:02.904  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:02.904  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:02.904  2649  2649 D UdfpsController:              x: 537.0
+11-17 22:00:02.904  2649  2649 D UdfpsController:              y: 1986.5
+11-17 22:00:02.904  2649  2649 D UdfpsController:          minor: 182.0
+11-17 22:00:02.904  2649  2649 D UdfpsController:          major: 228.0
+11-17 22:00:02.904  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:02.904  2649  2649 D UdfpsController:           time: 625674
+11-17 22:00:02.904  2649  2649 D UdfpsController:   gestureStart: 625426
+11-17 22:00:02.904  2649  2649 D UdfpsController: }
+11-17 22:00:02.904  2649  2649 D UdfpsController: sessionId: 23548, isAod: false, touchConfigId: 0
+11-17 22:00:02.947  2649  2649 I surfaceview_layout: [SV[194952586 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:02.948  2649  2649 I surfaceview_callback: [SV[194952586 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:02.957  2649  3047 E BufferQueueProducer: [b9ebd8a SurfaceView[UdfpsControllerOverlay]#64(BLAST Consumer)64](id:a5900000040,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:02.957  2649  3047 E Surface : [b9ebd8a SurfaceView[UdfpsControllerOverlay]#64(BLAST Consumer)64-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:02.958  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:02.959  2649  2649 D UdfpsController: NormalizedTouchData [UP] {
+11-17 22:00:02.959  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:02.959  2649  2649 D UdfpsController:              x: 539.0
+11-17 22:00:02.959  2649  2649 D UdfpsController:              y: 1988.0
+11-17 22:00:02.959  2649  2649 D UdfpsController:          minor: 167.0
+11-17 22:00:02.959  2649  2649 D UdfpsController:          major: 228.0
+11-17 22:00:02.959  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:02.959  2649  2649 D UdfpsController:           time: 625738
+11-17 22:00:02.959  2649  2649 D UdfpsController:   gestureStart: 625426
+11-17 22:00:02.959  2649  2649 D UdfpsController: }
+11-17 22:00:02.959  2649  2649 D UdfpsController: sessionId: 23548, isAod: false, touchConfigId: 0
+11-17 22:00:03.006  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 22:00:03.006  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=-1636885344, gid=0)
+11-17 22:00:03.035  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 22:00:03.036  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 22:00:03.036  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{2cc9383 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:03.046  2649  2649 I surfaceview_layout: [SV[194952586 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 22:00:03.046  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]dd38271,applyTransactionOnDraw applyImmediately]
+11-17 22:00:03.071  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{2cc9383 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 22:00:03.608  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 22:00:03.611   723   723 I auditd  : type=1400 audit(0.0:100853): avc:  denied  { read write open } for  comm="qseecomd" path="/mnt/vendor/persist/goodix/autoCalibrationParams.so_0_n" dev="sde2" ino=94 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
+11-17 22:00:03.611   723   723 I qseecomd: type=1400 audit(0.0:100853): avc:  denied  { read write open } for  path="/mnt/vendor/persist/goodix/autoCalibrationParams.so_0_n" dev="sde2" ino=94 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
+11-17 22:00:03.687  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:04.100  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{7decbf8 V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:04.109  2049  3724 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#500)/@0x99de6cb for e850eaf UdfpsControllerOverlay
+11-17 22:00:04.113  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#66(BLAST Consumer)66 with slotExpansion=1 for 64 slots
+11-17 22:00:04.113  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]886fd2f,applyTransactionOnDraw applyImmediately]
+11-17 22:00:04.114  2649  2649 I surfaceview_layout: [SV[26944016 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:04.119  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]886fd2f,reportDrawFinished seqId=1]
+11-17 22:00:04.144  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{7decbf8 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 22:00:04.248  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,e850eaf UdfpsControllerOverlay], on displayId 0
+11-17 22:00:04.252  2649  2649 I surfaceview_layout: [SV[26944016 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:04.255  2649  2649 I Surface : Creating surface for consumer 19b2210 SurfaceView[UdfpsControllerOverlay]#67(BLAST Consumer)67 with slotExpansion=1 for 64 slots
+11-17 22:00:04.255  2649  2649 I surfaceview_callback: [SV[26944016 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:04.255  2649  2649 I surfaceview_callback: [SV[26944016 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:04.255  2649  2649 I surfaceview_callback: [SV[26944016 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:04.259  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:04.259  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:04.259  2649  2649 D UdfpsController:              x: 547.0
+11-17 22:00:04.259  2649  2649 D UdfpsController:              y: 2016.0
+11-17 22:00:04.259  2649  2649 D UdfpsController:          minor: 152.0
+11-17 22:00:04.259  2649  2649 D UdfpsController:          major: 228.0
+11-17 22:00:04.259  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:04.259  2649  2649 D UdfpsController:           time: 627042
+11-17 22:00:04.259  2649  2649 D UdfpsController:   gestureStart: 627042
+11-17 22:00:04.259  2649  2649 D UdfpsController: }
+11-17 22:00:04.259  2649  2649 D UdfpsController: sessionId: 279715, isAod: false, touchConfigId: 0
+11-17 22:00:04.259  2049  2442 I InputDispatcher: Channel e850eaf UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:04.311  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=131 !
+11-17 22:00:04.311  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:04.315  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,e850eaf UdfpsControllerOverlay], on displayId 0
+11-17 22:00:04.329  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:04.329  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:04.329  2649  2649 D UdfpsController:              x: 548.8379
+11-17 22:00:04.329  2649  2649 D UdfpsController:              y: 2017.8379
+11-17 22:00:04.329  2649  2649 D UdfpsController:          minor: 182.0
+11-17 22:00:04.329  2649  2649 D UdfpsController:          major: 289.0
+11-17 22:00:04.329  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:04.329  2649  2649 D UdfpsController:           time: 627117
+11-17 22:00:04.329  2649  2649 D UdfpsController:   gestureStart: 627042
+11-17 22:00:04.329  2649  2649 D UdfpsController: }
+11-17 22:00:04.329  2649  2649 D UdfpsController: sessionId: 279715, isAod: false, touchConfigId: 0
+11-17 22:00:04.385  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:04.385  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:04.385  2649  2649 D UdfpsController:              x: 552.0
+11-17 22:00:04.385  2649  2649 D UdfpsController:              y: 2020.0
+11-17 22:00:04.385  2649  2649 D UdfpsController:          minor: 197.0
+11-17 22:00:04.385  2649  2649 D UdfpsController:          major: 304.0
+11-17 22:00:04.385  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:04.385  2649  2649 D UdfpsController:           time: 627164
+11-17 22:00:04.385  2649  2649 D UdfpsController:   gestureStart: 627042
+11-17 22:00:04.385  2649  2649 D UdfpsController: }
+11-17 22:00:04.385  2649  2649 D UdfpsController: sessionId: 279715, isAod: false, touchConfigId: 0
+11-17 22:00:04.610  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 22:00:04.611  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=-1636885344, gid=0)
+11-17 22:00:04.624  2649  2649 I surfaceview_layout: [SV[26944016 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:04.624  2649  2649 I surfaceview_callback: [SV[26944016 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:04.627  2649  3047 E BufferQueueProducer: [19b2210 SurfaceView[UdfpsControllerOverlay]#67(BLAST Consumer)67](id:a5900000043,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:04.627  2649  3047 E Surface : [19b2210 SurfaceView[UdfpsControllerOverlay]#67(BLAST Consumer)67-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:04.628  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:04.640  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 22:00:04.640  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 22:00:04.641  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{7decbf8 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:04.655  2649  2649 I surfaceview_layout: [SV[26944016 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 22:00:04.656  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]886fd2f,applyTransactionOnDraw applyImmediately]
+11-17 22:00:04.688  2049  2490 W InputDispatcher: Not creating InputTarget for e850eaf UdfpsControllerOverlay, no input channel
+11-17 22:00:04.689  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{7decbf8 V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 22:00:04.690  2049  4155 I InputDispatcher: Touched window was removed: e850eaf UdfpsControllerOverlay in display %0
+11-17 22:00:05.157  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 22:00:05.337  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:05.555  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{32ff83a V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:05.570  2049  2079 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#518)/@0xb4b6412 for 89d7586 UdfpsControllerOverlay
+11-17 22:00:05.578  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#68(BLAST Consumer)68 with slotExpansion=1 for 64 slots
+11-17 22:00:05.579  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f039a60,applyTransactionOnDraw applyImmediately]
+11-17 22:00:05.580  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:05.584  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f039a60,reportDrawFinished seqId=1]
+11-17 22:00:05.605  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{32ff83a V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 22:00:05.714  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,89d7586 UdfpsControllerOverlay], on displayId 0
+11-17 22:00:05.719  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:05.722  2649  2649 I Surface : Creating surface for consumer e1a0a1d SurfaceView[UdfpsControllerOverlay]#69(BLAST Consumer)69 with slotExpansion=1 for 64 slots
+11-17 22:00:05.722  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:05.722  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:05.722  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:05.727  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:05.727  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:05.727  2649  2649 D UdfpsController:              x: 557.0
+11-17 22:00:05.727  2649  2649 D UdfpsController:              y: 2002.0
+11-17 22:00:05.727  2649  2649 D UdfpsController:          minor: 121.0
+11-17 22:00:05.727  2649  2649 D UdfpsController:          major: 136.0
+11-17 22:00:05.727  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:05.727  2649  2649 D UdfpsController:           time: 628507
+11-17 22:00:05.727  2649  2649 D UdfpsController:   gestureStart: 628507
+11-17 22:00:05.727  2649  2649 D UdfpsController: }
+11-17 22:00:05.727  2649  2649 D UdfpsController: sessionId: 436963, isAod: false, touchConfigId: 0
+11-17 22:00:05.727  2049  7110 I InputDispatcher: Channel 89d7586 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:05.772  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:05.768  1717  1717 I auditd  : type=1400 audit(0.0:100865): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:05.768  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:100865): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:05.772  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=132 !
+11-17 22:00:06.159  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:06.159  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:06.166  2649  3047 E BufferQueueProducer: [e1a0a1d SurfaceView[UdfpsControllerOverlay]#69(BLAST Consumer)69](id:a5900000045,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:06.166  2649  3047 E Surface : [e1a0a1d SurfaceView[UdfpsControllerOverlay]#69(BLAST Consumer)69-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:06.167  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:06.168  2649  2649 D UdfpsController: NormalizedTouchData [UP] {
+11-17 22:00:06.168  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:06.168  2649  2649 D UdfpsController:              x: 557.0
+11-17 22:00:06.168  2649  2649 D UdfpsController:              y: 2002.0
+11-17 22:00:06.168  2649  2649 D UdfpsController:          minor: 121.0
+11-17 22:00:06.168  2649  2649 D UdfpsController:          major: 136.0
+11-17 22:00:06.168  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:06.168  2649  2649 D UdfpsController:           time: 628942
+11-17 22:00:06.168  2649  2649 D UdfpsController:   gestureStart: 628507
+11-17 22:00:06.168  2649  2649 D UdfpsController: }
+11-17 22:00:06.168  2649  2649 D UdfpsController: sessionId: 436963, isAod: false, touchConfigId: 0
+11-17 22:00:06.306  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:06.429  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:06.432  2649  2649 I Surface : Creating surface for consumer e1a0a1d SurfaceView[UdfpsControllerOverlay]#70(BLAST Consumer)70 with slotExpansion=1 for 64 slots
+11-17 22:00:06.432  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:06.432  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:06.432  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:06.444  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:06.444  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:06.444  2649  2649 D UdfpsController:              x: 553.0
+11-17 22:00:06.444  2649  2649 D UdfpsController:              y: 2003.0
+11-17 22:00:06.444  2649  2649 D UdfpsController:          minor: 121.0
+11-17 22:00:06.444  2649  2649 D UdfpsController:          major: 152.0
+11-17 22:00:06.444  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:06.444  2649  2649 D UdfpsController:           time: 629215
+11-17 22:00:06.444  2649  2649 D UdfpsController:   gestureStart: 629215
+11-17 22:00:06.444  2649  2649 D UdfpsController: }
+11-17 22:00:06.444  2649  2649 D UdfpsController: sessionId: 436963, isAod: false, touchConfigId: 0
+11-17 22:00:06.445  2049  4115 I InputDispatcher: Channel 89d7586 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:06.485  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=133 !
+11-17 22:00:06.485  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:06.647  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:06.647  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:06.663  2649  3047 E BufferQueueProducer: [e1a0a1d SurfaceView[UdfpsControllerOverlay]#70(BLAST Consumer)70](id:a5900000046,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:06.663  2649  3047 E Surface : [e1a0a1d SurfaceView[UdfpsControllerOverlay]#70(BLAST Consumer)70-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:06.665  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:06.666  2649  2649 D UdfpsController: NormalizedTouchData [UP] {
+11-17 22:00:06.666  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:06.666  2649  2649 D UdfpsController:              x: 553.0
+11-17 22:00:06.666  2649  2649 D UdfpsController:              y: 2003.0
+11-17 22:00:06.666  2649  2649 D UdfpsController:          minor: 121.0
+11-17 22:00:06.666  2649  2649 D UdfpsController:          major: 152.0
+11-17 22:00:06.666  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:06.666  2649  2649 D UdfpsController:           time: 629432
+11-17 22:00:06.666  2649  2649 D UdfpsController:   gestureStart: 629215
+11-17 22:00:06.666  2649  2649 D UdfpsController: }
+11-17 22:00:06.666  2649  2649 D UdfpsController: sessionId: 436963, isAod: false, touchConfigId: 0
+11-17 22:00:06.857  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:07.053  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:07.055  2649  2649 I Surface : Creating surface for consumer e1a0a1d SurfaceView[UdfpsControllerOverlay]#71(BLAST Consumer)71 with slotExpansion=1 for 64 slots
+11-17 22:00:07.055  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:07.055  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:07.055  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:07.064  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:07.064  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:07.064  2649  2649 D UdfpsController:              x: 532.0
+11-17 22:00:07.064  2649  2649 D UdfpsController:              y: 2008.0
+11-17 22:00:07.064  2649  2649 D UdfpsController:          minor: 152.0
+11-17 22:00:07.064  2649  2649 D UdfpsController:          major: 197.0
+11-17 22:00:07.064  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:07.064  2649  2649 D UdfpsController:           time: 629840
+11-17 22:00:07.064  2649  2649 D UdfpsController:   gestureStart: 629840
+11-17 22:00:07.064  2649  2649 D UdfpsController: }
+11-17 22:00:07.064  2649  2649 D UdfpsController: sessionId: 436963, isAod: false, touchConfigId: 0
+11-17 22:00:07.064  2049  4115 I InputDispatcher: Channel 89d7586 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:07.110  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:07.111  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=134 !
+11-17 22:00:07.407  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 22:00:07.407  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=-1636885344, gid=0)
+11-17 22:00:07.432  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:07.432  2649  2649 I surfaceview_callback: [SV[236587549 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:07.433  2649  3047 E BufferQueueProducer: [e1a0a1d SurfaceView[UdfpsControllerOverlay]#71(BLAST Consumer)71](id:a5900000047,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:07.433  2649  3047 E Surface : [e1a0a1d SurfaceView[UdfpsControllerOverlay]#71(BLAST Consumer)71-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:07.434  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:07.448  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 22:00:07.449  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 22:00:07.449  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{32ff83a V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:07.460  2649  2649 I surfaceview_layout: [SV[236587549 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 22:00:07.460  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]f039a60,applyTransactionOnDraw applyImmediately]
+11-17 22:00:07.476  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{32ff83a V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 22:00:07.499  2049  2961 I InputDispatcher: Touched window was removed: 89d7586 UdfpsControllerOverlay in display %0
+11-17 22:00:07.558   723   723 I auditd  : type=1400 audit(0.0:100875): avc:  denied  { open } for  comm="qseecomd" path="/mnt/vendor/persist/goodix/autoCalibrationParams.so_0_n" dev="sde2" ino=94 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
+11-17 22:00:07.558   723   723 I qseecomd: type=1400 audit(0.0:100875): avc:  denied  { open } for  path="/mnt/vendor/persist/goodix/autoCalibrationParams.so_0_n" dev="sde2" ino=94 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
+11-17 22:00:07.568   723   723 I auditd  : type=1400 audit(0.0:100876): avc:  denied  { write } for  comm="qseecomd" name="goodix" dev="sde2" ino=73 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1
+11-17 22:00:07.568   723   723 I qseecomd: type=1400 audit(0.0:100876): avc:  denied  { write } for  name="goodix" dev="sde2" ino=73 scontext=u:r:tee:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1
+11-17 22:00:08.108  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 22:00:08.119  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:08.654  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{135e2be V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:08.682  2049  4113 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#547)/@0x4585031 for 3a2a3e UdfpsControllerOverlay
+11-17 22:00:08.685  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#73(BLAST Consumer)73 with slotExpansion=1 for 64 slots
+11-17 22:00:08.685  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]8b23007,applyTransactionOnDraw applyImmediately]
+11-17 22:00:08.686  2649  2649 I surfaceview_layout: [SV[12560520 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:08.689  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]8b23007,reportDrawFinished seqId=1]
+11-17 22:00:08.708  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]8b23007,Not drawing due to screen off]
+11-17 22:00:08.747  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{135e2be V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 22:00:08.805  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]8b23007,Resumed drawing after screen turned on]
+11-17 22:00:09.592  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,3a2a3e UdfpsControllerOverlay], on displayId 0
+11-17 22:00:09.597  2649  2649 I surfaceview_layout: [SV[12560520 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:09.600  2649  2649 I Surface : Creating surface for consumer bfa888 SurfaceView[UdfpsControllerOverlay]#74(BLAST Consumer)74 with slotExpansion=1 for 64 slots
+11-17 22:00:09.600  2649  2649 I surfaceview_callback: [SV[12560520 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:09.600  2649  2649 I surfaceview_callback: [SV[12560520 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:09.600  2649  2649 I surfaceview_callback: [SV[12560520 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:09.606  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:09.606  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:09.606  2649  2649 D UdfpsController:              x: 556.0
+11-17 22:00:09.606  2649  2649 D UdfpsController:              y: 1994.0
+11-17 22:00:09.606  2649  2649 D UdfpsController:          minor: 152.0
+11-17 22:00:09.606  2649  2649 D UdfpsController:          major: 197.0
+11-17 22:00:09.606  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:09.606  2649  2649 D UdfpsController:           time: 632385
+11-17 22:00:09.606  2649  2649 D UdfpsController:   gestureStart: 632385
+11-17 22:00:09.606  2649  2649 D UdfpsController: }
+11-17 22:00:09.606  2649  2649 D UdfpsController: sessionId: 999345, isAod: false, touchConfigId: 0
+11-17 22:00:09.607  2049  4155 I InputDispatcher: Channel 3a2a3e UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:09.658  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=138 !
+11-17 22:00:09.658  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:09.655  1717  1717 I auditd  : type=1400 audit(0.0:100902): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:09.655  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:100902): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:09.944  2649  2649 I surfaceview_layout: [SV[12560520 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:09.945  2649  2649 I surfaceview_callback: [SV[12560520 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:09.950  2649  3047 E BufferQueueProducer: [bfa888 SurfaceView[UdfpsControllerOverlay]#74(BLAST Consumer)74](id:a590000004a,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:09.950  2649  3047 E Surface : [bfa888 SurfaceView[UdfpsControllerOverlay]#74(BLAST Consumer)74-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:09.951  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:09.952  2649  2649 D UdfpsController: NormalizedTouchData [UP] {
+11-17 22:00:09.952  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:09.952  2649  2649 D UdfpsController:              x: 556.0
+11-17 22:00:09.952  2649  2649 D UdfpsController:              y: 1994.0
+11-17 22:00:09.952  2649  2649 D UdfpsController:          minor: 152.0
+11-17 22:00:09.952  2649  2649 D UdfpsController:          major: 197.0
+11-17 22:00:09.952  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:09.952  2649  2649 D UdfpsController:           time: 632730
+11-17 22:00:09.952  2649  2649 D UdfpsController:   gestureStart: 632385
+11-17 22:00:09.952  2649  2649 D UdfpsController: }
+11-17 22:00:09.952  2649  2649 D UdfpsController: sessionId: 999345, isAod: false, touchConfigId: 0
+11-17 22:00:09.962  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 22:00:09.962  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=-1636885344, gid=0)
+11-17 22:00:10.003  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 22:00:10.003  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 22:00:10.003  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{135e2be V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:10.011  2649  2649 I surfaceview_layout: [SV[12560520 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 22:00:10.011  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]8b23007,applyTransactionOnDraw applyImmediately]
+11-17 22:00:10.028  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{135e2be V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 22:00:10.694  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:10.695  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 22:00:11.630  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{765d9ab V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:11.668  2049  2079 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#565)/@0x77788c4 for 5ce9b56 UdfpsControllerOverlay
+11-17 22:00:11.672  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#76(BLAST Consumer)76 with slotExpansion=1 for 64 slots
+11-17 22:00:11.673  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]779d323,applyTransactionOnDraw applyImmediately]
+11-17 22:00:11.675  2649  2649 I surfaceview_layout: [SV[62033076 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:11.682  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]779d323,reportDrawFinished seqId=1]
+11-17 22:00:11.688  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]779d323,Not drawing due to screen off]
+11-17 22:00:11.694  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{765d9ab V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 22:00:12.465  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]779d323,Resumed drawing after screen turned on]
+11-17 22:00:12.843  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,5ce9b56 UdfpsControllerOverlay], on displayId 0
+11-17 22:00:12.859  2649  2649 I surfaceview_layout: [SV[62033076 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:12.864  2649  2649 I Surface : Creating surface for consumer 3b28cb4 SurfaceView[UdfpsControllerOverlay]#77(BLAST Consumer)77 with slotExpansion=1 for 64 slots
+11-17 22:00:12.864  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:12.864  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:12.864  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:12.869  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:12.869  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:12.869  2649  2649 D UdfpsController:              x: 466.0
+11-17 22:00:12.869  2649  2649 D UdfpsController:              y: 1915.0
+11-17 22:00:12.869  2649  2649 D UdfpsController:          minor: 91.0
+11-17 22:00:12.869  2649  2649 D UdfpsController:          major: 121.0
+11-17 22:00:12.869  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:12.869  2649  2649 D UdfpsController:           time: 635636
+11-17 22:00:12.869  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:12.869  2649  2649 D UdfpsController: }
+11-17 22:00:12.869  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:12.870  2049  3724 I InputDispatcher: Channel 5ce9b56 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:12.893  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,5ce9b56 UdfpsControllerOverlay], on displayId 0
+11-17 22:00:12.911  1717  1717 I auditd  : type=1400 audit(0.0:100934): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:12.911  1717  1717 I fingerprint@2.3: type=1400 audit(0.0:100934): avc:  denied  { ioctl } for  path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+11-17 22:00:12.914  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:12.915  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=141 !
+11-17 22:00:12.925  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:12.925  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:12.925  2649  2649 D UdfpsController:              x: 469.96875
+11-17 22:00:12.925  2649  2649 D UdfpsController:              y: 1911.5156
+11-17 22:00:12.925  2649  2649 D UdfpsController:          minor: 91.0
+11-17 22:00:12.925  2649  2649 D UdfpsController:          major: 121.0
+11-17 22:00:12.925  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:12.925  2649  2649 D UdfpsController:           time: 635698
+11-17 22:00:12.925  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:12.925  2649  2649 D UdfpsController: }
+11-17 22:00:12.925  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:12.980  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:12.980  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:12.980  2649  2649 D UdfpsController:              x: 531.0
+11-17 22:00:12.980  2649  2649 D UdfpsController:              y: 1902.001
+11-17 22:00:12.980  2649  2649 D UdfpsController:          minor: 106.0
+11-17 22:00:12.980  2649  2649 D UdfpsController:          major: 121.0
+11-17 22:00:12.980  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:12.980  2649  2649 D UdfpsController:           time: 635753
+11-17 22:00:12.980  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:12.980  2649  2649 D UdfpsController: }
+11-17 22:00:12.981  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.041  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.041  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.041  2649  2649 D UdfpsController:              x: 536.9951
+11-17 22:00:13.041  2649  2649 D UdfpsController:              y: 1918.9951
+11-17 22:00:13.041  2649  2649 D UdfpsController:          minor: 106.0
+11-17 22:00:13.041  2649  2649 D UdfpsController:          major: 136.0
+11-17 22:00:13.041  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.041  2649  2649 D UdfpsController:           time: 635809
+11-17 22:00:13.041  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:13.041  2649  2649 D UdfpsController: }
+11-17 22:00:13.042  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.100  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.100  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.100  2649  2649 D UdfpsController:              x: 543.0
+11-17 22:00:13.100  2649  2649 D UdfpsController:              y: 1924.002
+11-17 22:00:13.100  2649  2649 D UdfpsController:          minor: 121.0
+11-17 22:00:13.100  2649  2649 D UdfpsController:          major: 152.0
+11-17 22:00:13.100  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.100  2649  2649 D UdfpsController:           time: 635876
+11-17 22:00:13.100  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:13.100  2649  2649 D UdfpsController: }
+11-17 22:00:13.100  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.156  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.156  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.156  2649  2649 D UdfpsController:              x: 542.0
+11-17 22:00:13.156  2649  2649 D UdfpsController:              y: 1926.0
+11-17 22:00:13.156  2649  2649 D UdfpsController:          minor: 121.0
+11-17 22:00:13.156  2649  2649 D UdfpsController:          major: 167.0
+11-17 22:00:13.156  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.156  2649  2649 D UdfpsController:           time: 635932
+11-17 22:00:13.156  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:13.156  2649  2649 D UdfpsController: }
+11-17 22:00:13.156  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.211  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.211  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.211  2649  2649 D UdfpsController:              x: 537.999
+11-17 22:00:13.211  2649  2649 D UdfpsController:              y: 1926.0
+11-17 22:00:13.211  2649  2649 D UdfpsController:          minor: 136.0
+11-17 22:00:13.211  2649  2649 D UdfpsController:          major: 197.0
+11-17 22:00:13.211  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.211  2649  2649 D UdfpsController:           time: 635988
+11-17 22:00:13.211  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:13.211  2649  2649 D UdfpsController: }
+11-17 22:00:13.211  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.267  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.267  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.267  2649  2649 D UdfpsController:              x: 527.001
+11-17 22:00:13.267  2649  2649 D UdfpsController:              y: 1928.001
+11-17 22:00:13.267  2649  2649 D UdfpsController:          minor: 136.0
+11-17 22:00:13.267  2649  2649 D UdfpsController:          major: 213.0
+11-17 22:00:13.267  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.267  2649  2649 D UdfpsController:           time: 636043
+11-17 22:00:13.267  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:13.267  2649  2649 D UdfpsController: }
+11-17 22:00:13.267  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.308  2649  2649 I surfaceview_layout: [SV[62033076 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:13.309  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:13.320  2649  3047 E BufferQueueProducer: [3b28cb4 SurfaceView[UdfpsControllerOverlay]#77(BLAST Consumer)77](id:a590000004d,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:13.320  2649  3047 E Surface : [3b28cb4 SurfaceView[UdfpsControllerOverlay]#77(BLAST Consumer)77-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:13.323  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:13.324  2649  2649 D UdfpsController: NormalizedTouchData [UP] {
+11-17 22:00:13.324  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.324  2649  2649 D UdfpsController:              x: 528.0
+11-17 22:00:13.324  2649  2649 D UdfpsController:              y: 1929.0
+11-17 22:00:13.324  2649  2649 D UdfpsController:          minor: 136.0
+11-17 22:00:13.324  2649  2649 D UdfpsController:          major: 213.0
+11-17 22:00:13.324  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.324  2649  2649 D UdfpsController:           time: 636099
+11-17 22:00:13.324  2649  2649 D UdfpsController:   gestureStart: 635636
+11-17 22:00:13.324  2649  2649 D UdfpsController: }
+11-17 22:00:13.324  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.637  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,5ce9b56 UdfpsControllerOverlay], on displayId 0
+11-17 22:00:13.653  2649  2649 I surfaceview_layout: [SV[62033076 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:13.655  2649  2649 I Surface : Creating surface for consumer 3b28cb4 SurfaceView[UdfpsControllerOverlay]#78(BLAST Consumer)78 with slotExpansion=1 for 64 slots
+11-17 22:00:13.655  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:13.655  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:13.655  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:13.665  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:13.665  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.665  2649  2649 D UdfpsController:              x: 526.0
+11-17 22:00:13.665  2649  2649 D UdfpsController:              y: 2024.0
+11-17 22:00:13.665  2649  2649 D UdfpsController:          minor: 106.0
+11-17 22:00:13.665  2649  2649 D UdfpsController:          major: 167.0
+11-17 22:00:13.665  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.665  2649  2649 D UdfpsController:           time: 636430
+11-17 22:00:13.665  2649  2649 D UdfpsController:   gestureStart: 636430
+11-17 22:00:13.665  2649  2649 D UdfpsController: }
+11-17 22:00:13.665  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.666  2049  3724 I InputDispatcher: Channel 5ce9b56 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:13.705  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=144 !
+11-17 22:00:13.720  2049  2490 I input_interaction: Interaction with: [PointerEventDispatcher0,5ce9b56 UdfpsControllerOverlay], on displayId 0
+11-17 22:00:13.730  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:13.730  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:13.746  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.746  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.746  2649  2649 D UdfpsController:              x: 515.4785
+11-17 22:00:13.746  2649  2649 D UdfpsController:              y: 2026.0
+11-17 22:00:13.746  2649  2649 D UdfpsController:          minor: 167.0
+11-17 22:00:13.746  2649  2649 D UdfpsController:          major: 258.0
+11-17 22:00:13.746  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.746  2649  2649 D UdfpsController:           time: 636523
+11-17 22:00:13.746  2649  2649 D UdfpsController:   gestureStart: 636430
+11-17 22:00:13.746  2649  2649 D UdfpsController: }
+11-17 22:00:13.746  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.813  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.813  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.813  2649  2649 D UdfpsController:              x: 505.0
+11-17 22:00:13.813  2649  2649 D UdfpsController:              y: 2027.0
+11-17 22:00:13.813  2649  2649 D UdfpsController:          minor: 182.0
+11-17 22:00:13.813  2649  2649 D UdfpsController:          major: 273.0
+11-17 22:00:13.813  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.813  2649  2649 D UdfpsController:           time: 636580
+11-17 22:00:13.813  2649  2649 D UdfpsController:   gestureStart: 636430
+11-17 22:00:13.813  2649  2649 D UdfpsController: }
+11-17 22:00:13.813  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.892  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.892  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.892  2649  2649 D UdfpsController:              x: 505.0
+11-17 22:00:13.892  2649  2649 D UdfpsController:              y: 2028.0
+11-17 22:00:13.892  2649  2649 D UdfpsController:          minor: 197.0
+11-17 22:00:13.892  2649  2649 D UdfpsController:          major: 289.0
+11-17 22:00:13.892  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.892  2649  2649 D UdfpsController:           time: 636659
+11-17 22:00:13.892  2649  2649 D UdfpsController:   gestureStart: 636430
+11-17 22:00:13.892  2649  2649 D UdfpsController: }
+11-17 22:00:13.892  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:13.947  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:13.947  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:13.947  2649  2649 D UdfpsController:              x: 507.0
+11-17 22:00:13.947  2649  2649 D UdfpsController:              y: 2028.0
+11-17 22:00:13.947  2649  2649 D UdfpsController:          minor: 197.0
+11-17 22:00:13.947  2649  2649 D UdfpsController:          major: 304.0
+11-17 22:00:13.947  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:13.947  2649  2649 D UdfpsController:           time: 636720
+11-17 22:00:13.947  2649  2649 D UdfpsController:   gestureStart: 636430
+11-17 22:00:13.947  2649  2649 D UdfpsController: }
+11-17 22:00:13.947  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:14.014  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:14.014  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:14.014  2649  2649 D UdfpsController:              x: 508.4463
+11-17 22:00:14.014  2649  2649 D UdfpsController:              y: 2027.0
+11-17 22:00:14.014  2649  2649 D UdfpsController:          minor: 197.0
+11-17 22:00:14.014  2649  2649 D UdfpsController:          major: 304.0
+11-17 22:00:14.014  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:14.014  2649  2649 D UdfpsController:           time: 636790
+11-17 22:00:14.014  2649  2649 D UdfpsController:   gestureStart: 636430
+11-17 22:00:14.014  2649  2649 D UdfpsController: }
+11-17 22:00:14.014  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:14.037  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(0)
+11-17 22:00:14.037  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAuthenticated(fid=724165102, gid=0)
+11-17 22:00:14.046  2649  2649 I surfaceview_layout: [SV[62033076 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:14.046  2649  2649 I surfaceview_callback: [SV[62033076 UdfpsControllerOverlay],surfaceDestroyed]
+11-17 22:00:14.052  2649  3047 E BufferQueueProducer: [3b28cb4 SurfaceView[UdfpsControllerOverlay]#78(BLAST Consumer)78](id:a590000004e,api:0,p:-1,c:2649) disconnect: not connected (req=1)
+11-17 22:00:14.052  2649  3047 E Surface : [3b28cb4 SurfaceView[UdfpsControllerOverlay]#78(BLAST Consumer)78-DISCONNECTED](id:0) Surface failed to disconnect. Cleaning up internals anyway. Error -19 (NO_INIT).
+11-17 22:00:14.053  2649  2649 W UdfpsDisplayMode: disable | onDisabled is null
+11-17 22:00:14.075  2649  2649 D UdfpsController: NormalizedTouchData [UNCHANGED] {
+11-17 22:00:14.075  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:14.075  2649  2649 D UdfpsController:              x: 506.5
+11-17 22:00:14.075  2649  2649 D UdfpsController:              y: 2028.0
+11-17 22:00:14.075  2649  2649 D UdfpsController:          minor: 197.0
+11-17 22:00:14.075  2649  2649 D UdfpsController:          major: 304.0
+11-17 22:00:14.075  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:14.075  2649  2649 D UdfpsController:           time: 636820
+11-17 22:00:14.075  2649  2649 D UdfpsController:   gestureStart: 636430
+11-17 22:00:14.075  2649  2649 D UdfpsController: }
+11-17 22:00:14.075  2649  2649 D UdfpsController: sessionId: 204681, isAod: false, touchConfigId: 0
+11-17 22:00:14.083  2649  2649 D UdfpsControllerOverlay: hideUdfpsControllerOverlay wasShowing=true
+11-17 22:00:14.083  2649  2649 W UdfpsDisplayMode: disable | already disabled
+11-17 22:00:14.085  2649  2649 D UdfpsControllerOverlay: removing view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{765d9ab V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:14.101  2649  2649 I surfaceview_layout: [SV[62033076 UdfpsControllerOverlay],1,1080,2340,1,layout,0,0,0]
+11-17 22:00:14.101  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]779d323,applyTransactionOnDraw applyImmediately]
+11-17 22:00:14.130  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{765d9ab V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}-detached]: update shouldHandleTouches=false
+11-17 22:00:14.137  2049  2441 I InputDispatcher: Touched window was removed: 5ce9b56 UdfpsControllerOverlay in display %0
+11-17 22:00:14.614  1215  4160 E audio_hw_extn: audio_extn_perf_lock_acquire: Incorrect params, Failed to acquire perf lock, err 
+11-17 22:00:14.671  1215  4160 E audio_hw_extn: audio_extn_perf_lock_release: Perf lock release error 
+11-17 22:00:14.828  1717  1926 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:14.838  2649  2649 D UdfpsController: showUdfpsOverlay | adding window reason=4
+11-17 22:00:15.794  2649  2649 D UdfpsControllerOverlay: adding view=com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{698078b V.E...... ......I. 0,0-0,0 #7f0a09d9 app:id/udfps_touch_overlay}
+11-17 22:00:15.833  2049  2078 D WindowManager: setClientSurface Surface(name=VRI-UdfpsControllerOverlay#586)/@0xc0b1c3 for 659b4d4 UdfpsControllerOverlay
+11-17 22:00:15.837  2649  2649 I Surface : Creating surface for consumer VRI[UdfpsControllerOverlay]#80(BLAST Consumer)80 with slotExpansion=1 for 64 slots
+11-17 22:00:15.837  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]d47dd03,applyTransactionOnDraw applyImmediately]
+11-17 22:00:15.838  2649  2649 I surfaceview_layout: [SV[158235412 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,0]
+11-17 22:00:15.843  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]d47dd03,reportDrawFinished seqId=1]
+11-17 22:00:15.846  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]d47dd03,Not drawing due to screen off]
+11-17 22:00:15.855  2649  2649 D UdfpsTouchOverlayBinder: [com.android.systemui.biometrics.ui.view.UdfpsTouchOverlay{698078b V.E...... ........ 0,0-1080,2340 #7f0a09d9 app:id/udfps_touch_overlay}]: update shouldHandleTouches=true
+11-17 22:00:15.916  2649  2649 I viewroot_draw_event: [VRI[UdfpsControllerOverlay]d47dd03,Resumed drawing after screen turned on]
+11-17 22:00:16.359  2049  2490 I input_interaction: Interaction with: [6ee7595 NotificationShade,PointerEventDispatcher0,[Gesture Monitor] swipe-up,[Gesture Monitor] edge-swipe,659b4d4 UdfpsControllerOverlay], on displayId 0
+11-17 22:00:16.367  2649  2649 I surfaceview_layout: [SV[158235412 UdfpsControllerOverlay],1,1080,2340,1,layout,1,0,1]
+11-17 22:00:16.371  2649  2649 I Surface : Creating surface for consumer 96e7b14 SurfaceView[UdfpsControllerOverlay]#81(BLAST Consumer)81 with slotExpansion=1 for 64 slots
+11-17 22:00:16.371  2649  2649 I surfaceview_callback: [SV[158235412 UdfpsControllerOverlay],surfaceCreated]
+11-17 22:00:16.371  2649  2649 I surfaceview_callback: [SV[158235412 UdfpsControllerOverlay],surfaceChanged -- format=1 w=1080 h=2340]
+11-17 22:00:16.371  2649  2649 I surfaceview_callback: [SV[158235412 UdfpsControllerOverlay],surfaceRedrawNeeded]
+11-17 22:00:16.375  2649  2649 D UdfpsController: NormalizedTouchData [DOWN] {
+11-17 22:00:16.375  2649  2649 D UdfpsController:      pointerId: 0
+11-17 22:00:16.375  2649  2649 D UdfpsController:              x: 519.0
+11-17 22:00:16.375  2649  2649 D UdfpsController:              y: 1970.0
+11-17 22:00:16.375  2649  2649 D UdfpsController:          minor: 91.0
+11-17 22:00:16.375  2649  2649 D UdfpsController:          major: 121.0
+11-17 22:00:16.375  2649  2649 D UdfpsController:    orientation: 0.0
+11-17 22:00:16.375  2649  2649 D UdfpsController:           time: 639152
+11-17 22:00:16.375  2649  2649 D UdfpsController:   gestureStart: 639152
+11-17 22:00:16.375  2649  2649 D UdfpsController: }
+11-17 22:00:16.375  2649  2649 D UdfpsController: sessionId: 755467, isAod: false, touchConfigId: 0
+11-17 22:00:16.377  2049  2961 I InputDispatcher: Channel 659b4d4 UdfpsControllerOverlay is stealing input gesture for device 5 from [6ee7595 NotificationShade, [Gesture Monitor] swipe-up, [Gesture Monitor] edge-swipe]
+11-17 22:00:16.435  1717  1927 E [GF_HAL][HalContext]: [onExtModuleCommand] perf_lock_acq succeed perf_handle=147 !
+11-17 22:00:16.435  1717  1924 D android.hardware.biometrics.fingerprint@2.3-service.moto_sm8250: onAcquired(6)
+11-17 22:00:16.431  1717  1717 I auditd  : type=1400 audit(0.0:102028): avc:  denied  { ioctl } for  comm="fingerprint@2.3" path="/dev/goodix_fp" dev="tmpfs" ino=16580 ioctlcmd=0x6705 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file
