@@ -277,7 +277,7 @@ Panic#2 Part1
 <6>[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
 <6>[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
 <6>[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 3004709
-<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=null firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 video=vfb:640x400,bpp=32,memsize=3072000 androidboot.init_fatal_reboot_target=recovery androidboot.selinux=permissive printk.devkmsg=on quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.revision=pvt2 androidboot.hwrev=0xC200 androidboot.radio=CANADA androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 wifimacaddr=F8:1F:32:1F:54:00,F8:1F:32:1F:54:01 androidboot.btmacaddr=F8:1F:32:1F:53:FF androidboot.bootloader=MBM-3.0-burton_reteu-9376d694c30-220726 androidboot.carrier=reteu androidboot.hardware.sku=XT2061-3 androidboot.mode=normal androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_mot_boe_lsi_667_1080p_cmd_v0: androidboot.slot_suffix=_a rootwait ro init=/init androidboot.dtbo_idx=12 androidboot.dtb_idx=0 storage_mfrid=0x1CE androidboot.sku_variant=n androidboot.secure_hardware=1 androidboot.cid=0x0032 androidboot.write_protect=0 androidboot.bl_state=2 androidboot.ssm_data=00000000000F9991
+<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=null firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 video=vfb:640x400,bpp=32,memsize=3072000 androidboot.init_fatal_reboot_target=recovery androidboot.selinux=permissive printk.devkmsg=on quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.uf
 <6>[    0.000000] cgroup: Disabling pressure control group feature
 <7>[    0.000000] cnss: get_moto_device: device [burton]
 <7>[    0.000000] cnss: get_moto_radio: radio [CANADA]
@@ -292,15 +292,20 @@ Panic#2 Part1
 <6>[    0.000000] Memory: 10753584K/12215348K available (24060K kernel code, 2714K rwdata, 13236K rodata, 2048K init, 8843K bss, 355844K reserved, 1105920K cma-reserved)
 <6>[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
 <6>[    0.000000] rcu: Preemptible hierarchical RCU implementation.
-<6>[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
-<6>[    0.000000] 	All grace periods are expedited (rcu_expedited).
-<6>[    0.000000] 	Trampoline variant of Tasks RCU enabled.
-<6>[    0.000000] 	Tracing variant of Tasks RCU enabled.
+<6>[    0.000000] rcu: 
+RCU dyntick-idle grace-period acceleration is enabled.
+<6>[    0.000000] 
+All grace periods are expedited (rcu_expedited).
+<6>[    0.000000] 
+Trampoline variant of Tasks RCU enabled.
+<6>[    0.000000] 
+Tracing variant of Tasks RCU enabled.
 <6>[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
 <6>[    0.000000] GICv3: Distributor has no Range Selector support
 <6>[    0.000000] GICv3: no VLPI support, no direct LPI support
 <4>[    0.000000] ITS: No ITS available, not enabling LPIs
-<6>[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+<6>[    0.000000] rcu: 
+Offload RCU callbacks from CPUs: 0-7.
 <6>[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
 <6>[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
 <6>[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
@@ -493,14 +498,20 @@ Panic#2 Part1
 <3>[    0.430258] msm_bus_fab_init_noc_ops: Invalid Bus type
 <6>[    0.443871] disp_vci: supplied by pm8150a_l11
 <6>[    0.445010] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
-<5>[    0.445064] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
-<5>[    0.445066] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.445069] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+<5>[    0.445064] arm-smmu 3da0000.kgsl-smmu: 
+non-coherent table walk
+<5>[    0.445066] arm-smmu 3da0000.kgsl-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.445069] arm-smmu 3da0000.kgsl-smmu: 
+stream matching with 6 register groups
 <3>[    0.446460] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.446645] register_client_adhoc:Client handle 1 apps_smmu
-<5>[    0.446715] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
-<5>[    0.446721] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.446725] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+<5>[    0.446715] arm-smmu 15000000.apps-smmu: 
+non-coherent table walk
+<5>[    0.446721] arm-smmu 15000000.apps-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.446725] arm-smmu 15000000.apps-smmu: 
+stream matching with 87 register groups
 <3>[    0.447667] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.447859] register_client_adhoc:Client handle 2 apps_smmu
 <3>[    0.447991] register_client_adhoc:find path.src 161 dest 627
@@ -1086,7 +1097,7 @@ Panic#2 Part1
 <6>[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
 <6>[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
 <6>[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 3004709
-<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm firmware_class.path=/vendor/firmware_mnt/image buildvariant=user androidboot.selinux=permissive quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.revision=pvt2 androidboot.hwrev=0xC200 androidboot.radio=CANADA androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 wifimacaddr=F8:1F:32:1F:54:00,F8:1F:32:1F:54:01 androidboot.btmacaddr=F8:1F:32:1F:53:FF androidboot.bootloader=MBM-3.0-burton_reteu-9376d694c30-220726 androidboot.carrier=reteu androidboot.hardware.sku=XT2061-3 androidboot.mode=normal androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_mot_boe_lsi_667_1080p_cmd_v0: androidboot.slot_suffix=_a rootwait ro init=/init androidboot.dtbo_idx=12 androidboot.dtb_idx=0 storage_mfrid=0x1CE androidboot.sku_variant=n androidboot.secure_hardware=1 androidboot.cid=0x0032 androidboot.write_protect=0 androidboot.bl_state=2 androidboot.ssm_data=00000000000F9991
+<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm firmware_class.path=/vendor/firmware_mnt/image buildvariant=user androidboot.selinux=permissive quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidbo
 <6>[    0.000000] cgroup: Disabling pressure control group feature
 <7>[    0.000000] cnss: get_moto_device: device [burton]
 <7>[    0.000000] cnss: get_moto_radio: radio [CANADA]
@@ -1102,14 +1113,18 @@ Panic#2 Part1
 <5>[    0.000000] random: random: get_random_u64 called from __kmem_cache_create+0x88/0x680 with crng_init=1
 <6>[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
 <6>[    0.000000] rcu: Preemptible hierarchical RCU implementation.
-<6>[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
-<6>[    0.000000] 	All grace periods are expedited (rcu_expedited).
-<6>[    0.000000] 	Tasks RCU enabled.
+<6>[    0.000000] rcu: 
+RCU dyntick-idle grace-period acceleration is enabled.
+<6>[    0.000000] 
+All grace periods are expedited (rcu_expedited).
+<6>[    0.000000] 
+Tasks RCU enabled.
 <6>[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
 <6>[    0.000000] GICv3: Distributor has no Range Selector support
 <6>[    0.000000] GICv3: no VLPI support, no direct LPI support
 <4>[    0.000000] ITS: No ITS available, not enabling LPIs
-<6>[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+<6>[    0.000000] rcu: 
+Offload RCU callbacks from CPUs: 0-7.
 <6>[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
 <6>[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
 <6>[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
@@ -1296,14 +1311,20 @@ Panic#2 Part1
 <3>[    0.337876] msm_bus_fab_init_noc_ops: Invalid Bus type
 <6>[    0.349936] disp_vci: supplied by pm8150a_l11
 <6>[    0.350684] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
-<5>[    0.350735] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
-<5>[    0.350738] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.350741] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+<5>[    0.350735] arm-smmu 3da0000.kgsl-smmu: 
+non-coherent table walk
+<5>[    0.350738] arm-smmu 3da0000.kgsl-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.350741] arm-smmu 3da0000.kgsl-smmu: 
+stream matching with 6 register groups
 <3>[    0.352051] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.352192] register_client_adhoc:Client handle 1 apps_smmu
-<5>[    0.352265] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
-<5>[    0.352271] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.352274] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+<5>[    0.352265] arm-smmu 15000000.apps-smmu: 
+non-coherent table walk
+<5>[    0.352271] arm-smmu 15000000.apps-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.352274] arm-smmu 15000000.apps-smmu: 
+stream matching with 87 register groups
 <3>[    0.353073] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.353207] register_client_adhoc:Client handle 2 apps_smmu
 <3>[    0.353328] register_client_adhoc:find path.src 161 dest 627
@@ -1902,7 +1923,7 @@ Panic#2 Part1
 <6>[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
 <6>[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
 <6>[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 3004709
-<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm firmware_class.path=/vendor/firmware_mnt/image buildvariant=user androidboot.selinux=permissive quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.revision=pvt2 androidboot.hwrev=0xC200 androidboot.radio=CANADA androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 wifimacaddr=F8:1F:32:1F:54:00,F8:1F:32:1F:54:01 androidboot.btmacaddr=F8:1F:32:1F:53:FF androidboot.bootloader=MBM-3.0-burton_reteu-9376d694c30-220726 androidboot.carrier=reteu androidboot.hardware.sku=XT2061-3 androidboot.mode=normal androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_mot_boe_lsi_667_1080p_cmd_v0: androidboot.slot_suffix=_a rootwait ro init=/init androidboot.dtbo_idx=12 androidboot.dtb_idx=0 storage_mfrid=0x1CE androidboot.sku_variant=n androidboot.secure_hardware=1 androidboot.cid=0x0032 androidboot.write_protect=0 androidboot.bl_state=2 androidboot.ssm_data=00000000000F9991
+<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm firmware_class.path=/vendor/firmware_mnt/image buildvariant=user androidboot.selinux=permissive quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidbo
 <6>[    0.000000] cgroup: Disabling pressure control group feature
 <7>[    0.000000] cnss: get_moto_device: device [burton]
 <7>[    0.000000] cnss: get_moto_radio: radio [CANADA]
@@ -1918,14 +1939,18 @@ Panic#2 Part1
 <5>[    0.000000] random: random: get_random_u64 called from __kmem_cache_create+0x88/0x680 with crng_init=1
 <6>[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
 <6>[    0.000000] rcu: Preemptible hierarchical RCU implementation.
-<6>[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
-<6>[    0.000000] 	All grace periods are expedited (rcu_expedited).
-<6>[    0.000000] 	Tasks RCU enabled.
+<6>[    0.000000] rcu: 
+RCU dyntick-idle grace-period acceleration is enabled.
+<6>[    0.000000] 
+All grace periods are expedited (rcu_expedited).
+<6>[    0.000000] 
+Tasks RCU enabled.
 <6>[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
 <6>[    0.000000] GICv3: Distributor has no Range Selector support
 <6>[    0.000000] GICv3: no VLPI support, no direct LPI support
 <4>[    0.000000] ITS: No ITS available, not enabling LPIs
-<6>[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+<6>[    0.000000] rcu: 
+Offload RCU callbacks from CPUs: 0-7.
 <6>[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
 <6>[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
 <6>[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
@@ -2112,14 +2137,20 @@ Panic#2 Part1
 <3>[    0.337480] msm_bus_fab_init_noc_ops: Invalid Bus type
 <6>[    0.349566] disp_vci: supplied by pm8150a_l11
 <6>[    0.350311] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
-<5>[    0.350360] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
-<5>[    0.350363] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.350366] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+<5>[    0.350360] arm-smmu 3da0000.kgsl-smmu: 
+non-coherent table walk
+<5>[    0.350363] arm-smmu 3da0000.kgsl-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.350366] arm-smmu 3da0000.kgsl-smmu: 
+stream matching with 6 register groups
 <3>[    0.351704] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.351848] register_client_adhoc:Client handle 1 apps_smmu
-<5>[    0.351922] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
-<5>[    0.351927] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.351930] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+<5>[    0.351922] arm-smmu 15000000.apps-smmu: 
+non-coherent table walk
+<5>[    0.351927] arm-smmu 15000000.apps-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.351930] arm-smmu 15000000.apps-smmu: 
+stream matching with 87 register groups
 <3>[    0.352788] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.352921] register_client_adhoc:Client handle 2 apps_smmu
 <3>[    0.353042] register_client_adhoc:find path.src 161 dest 627
@@ -2718,7 +2749,7 @@ Panic#2 Part1
 <6>[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
 <6>[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
 <6>[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 3004709
-<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm firmware_class.path=/vendor/firmware_mnt/image buildvariant=user androidboot.selinux=permissive quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.revision=pvt2 androidboot.hwrev=0xC200 androidboot.radio=CANADA androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 wifimacaddr=F8:1F:32:1F:54:00,F8:1F:32:1F:54:01 androidboot.btmacaddr=F8:1F:32:1F:53:FF androidboot.bootloader=MBM-3.0-burton_reteu-9376d694c30-220726 androidboot.carrier=reteu androidboot.hardware.sku=XT2061-3 androidboot.mode=normal androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_mot_boe_lsi_667_1080p_cmd_v0: androidboot.slot_suffix=_a rootwait ro init=/init androidboot.dtbo_idx=12 androidboot.dtb_idx=0 storage_mfrid=0x1CE androidboot.sku_variant=n androidboot.secure_hardware=1 androidboot.cid=0x0032 androidboot.write_protect=0 androidboot.bl_state=2 androidboot.ssm_data=00000000000F9991
+<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm firmware_class.path=/vendor/firmware_mnt/image buildvariant=user androidboot.selinux=permissive quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidbo
 <6>[    0.000000] cgroup: Disabling pressure control group feature
 <7>[    0.000000] cnss: get_moto_device: device [burton]
 <7>[    0.000000] cnss: get_moto_radio: radio [CANADA]
@@ -2734,14 +2765,18 @@ Panic#2 Part1
 <5>[    0.000000] random: random: get_random_u64 called from __kmem_cache_create+0x88/0x680 with crng_init=1
 <6>[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
 <6>[    0.000000] rcu: Preemptible hierarchical RCU implementation.
-<6>[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
-<6>[    0.000000] 	All grace periods are expedited (rcu_expedited).
-<6>[    0.000000] 	Tasks RCU enabled.
+<6>[    0.000000] rcu: 
+RCU dyntick-idle grace-period acceleration is enabled.
+<6>[    0.000000] 
+All grace periods are expedited (rcu_expedited).
+<6>[    0.000000] 
+Tasks RCU enabled.
 <6>[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
 <6>[    0.000000] GICv3: Distributor has no Range Selector support
 <6>[    0.000000] GICv3: no VLPI support, no direct LPI support
 <4>[    0.000000] ITS: No ITS available, not enabling LPIs
-<6>[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+<6>[    0.000000] rcu: 
+Offload RCU callbacks from CPUs: 0-7.
 <6>[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
 <6>[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
 <6>[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
@@ -2928,14 +2963,20 @@ Panic#2 Part1
 <3>[    0.336606] msm_bus_fab_init_noc_ops: Invalid Bus type
 <6>[    0.348635] disp_vci: supplied by pm8150a_l11
 <6>[    0.349362] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
-<5>[    0.349411] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
-<5>[    0.349414] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.349417] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+<5>[    0.349411] arm-smmu 3da0000.kgsl-smmu: 
+non-coherent table walk
+<5>[    0.349414] arm-smmu 3da0000.kgsl-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.349417] arm-smmu 3da0000.kgsl-smmu: 
+stream matching with 6 register groups
 <3>[    0.350787] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.350932] register_client_adhoc:Client handle 1 apps_smmu
-<5>[    0.351008] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
-<5>[    0.351014] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.351018] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+<5>[    0.351008] arm-smmu 15000000.apps-smmu: 
+non-coherent table walk
+<5>[    0.351014] arm-smmu 15000000.apps-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.351018] arm-smmu 15000000.apps-smmu: 
+stream matching with 87 register groups
 <3>[    0.351905] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.352051] register_client_adhoc:Client handle 2 apps_smmu
 <3>[    0.352178] register_client_adhoc:find path.src 161 dest 627
@@ -9259,7 +9300,7 @@ Panic#2 Part1
 <6>[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
 <6>[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
 <6>[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 3004709
-<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.hardware=qcom androidboot.memcg=1 androidboot.selinux=permissive androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=null loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.revision=pvt2 androidboot.hwrev=0xC200 androidboot.radio=CANADA androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 wifimacaddr=F8:1F:32:1F:54:00,F8:1F:32:1F:54:01 androidboot.btmacaddr=F8:1F:32:1F:53:FF androidboot.bootloader=MBM-3.0-burton_reteu-9376d694c30-220726 androidboot.carrier=reteu androidboot.hardware.sku=XT2061-3 androidboot.mode=recovery androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_mot_boe_lsi_667_1080p_cmd_v0: androidboot.slot_suffix=_a rootwait ro init=/init androidboot.dtbo_idx=5 androidboot.dtb_idx=0 storage_mfrid=0x1CE androidboot.sku_variant=n androidboot.secure_hardware=1 androidboot.cid=0x0032 androidboot.write_protect=0 androidboot.bl_state=2 androidboot.ssm_data=00000000000F9991
+<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.hardware=qcom androidboot.memcg=1 androidboot.selinux=permissive androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=null loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.re
 <6>[    0.000000] cgroup: Disabling pressure control group feature
 <6>[    0.000000] log_buf_len individual max cpu contribution: 131072 bytes
 <6>[    0.000000] log_buf_len total cpu_extra contributions: 917504 bytes
@@ -9287,14 +9328,18 @@ Panic#2 Part1
 <4>[    0.000000] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
 <4>[    0.000000] **********************************************************
 <6>[    0.000000] rcu: Preemptible hierarchical RCU implementation.
-<6>[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
-<6>[    0.000000] 	All grace periods are expedited (rcu_expedited).
-<6>[    0.000000] 	Tasks RCU enabled.
+<6>[    0.000000] rcu: 
+RCU dyntick-idle grace-period acceleration is enabled.
+<6>[    0.000000] 
+All grace periods are expedited (rcu_expedited).
+<6>[    0.000000] 
+Tasks RCU enabled.
 <6>[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
 <6>[    0.000000] GICv3: Distributor has no Range Selector support
 <6>[    0.000000] GICv3: no VLPI support, no direct LPI support
 <4>[    0.000000] ITS: No ITS available, not enabling LPIs
-<6>[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+<6>[    0.000000] rcu: 
+Offload RCU callbacks from CPUs: 0-7.
 <6>[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
 <6>[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
 <6>[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
@@ -9484,14 +9529,20 @@ Panic#2 Part1
 <3>[    0.324342] msm_bus_fab_init_noc_ops: Invalid Bus type
 <6>[    0.334764] disp_vci: supplied by pm8150a_l11
 <6>[    0.335412] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
-<5>[    0.335465] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
-<5>[    0.335468] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.335472] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+<5>[    0.335465] arm-smmu 3da0000.kgsl-smmu: 
+non-coherent table walk
+<5>[    0.335468] arm-smmu 3da0000.kgsl-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.335472] arm-smmu 3da0000.kgsl-smmu: 
+stream matching with 6 register groups
 <3>[    0.336764] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.336909] register_client_adhoc:Client handle 1 apps_smmu
-<5>[    0.336972] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
-<5>[    0.336978] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.336982] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+<5>[    0.336972] arm-smmu 15000000.apps-smmu: 
+non-coherent table walk
+<5>[    0.336978] arm-smmu 15000000.apps-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.336982] arm-smmu 15000000.apps-smmu: 
+stream matching with 87 register groups
 <3>[    0.337584] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.337717] register_client_adhoc:Client handle 2 apps_smmu
 <3>[    0.337835] register_client_adhoc:find path.src 161 dest 627
@@ -10410,7 +10461,7 @@ Panic#2 Part1
 <6>[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
 <6>[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
 <6>[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 3004709
-<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.hardware=qcom androidboot.memcg=1 androidboot.selinux=permissive androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=null loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.revision=pvt2 androidboot.hwrev=0xC200 androidboot.radio=CANADA androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 wifimacaddr=F8:1F:32:1F:54:00,F8:1F:32:1F:54:01 androidboot.btmacaddr=F8:1F:32:1F:53:FF androidboot.bootloader=MBM-3.0-burton_reteu-9376d694c30-220726 androidboot.carrier=reteu androidboot.hardware.sku=XT2061-3 androidboot.mode=recovery androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_mot_boe_lsi_667_1080p_cmd_v0: androidboot.slot_suffix=_a rootwait ro init=/init androidboot.dtbo_idx=5 androidboot.dtb_idx=0 storage_mfrid=0x1CE androidboot.sku_variant=n androidboot.secure_hardware=1 androidboot.cid=0x0032 androidboot.write_protect=0 androidboot.bl_state=2 androidboot.ssm_data=00000000000F9991
+<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.hardware=qcom androidboot.memcg=1 androidboot.selinux=permissive androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=null loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.re
 <6>[    0.000000] cgroup: Disabling pressure control group feature
 <6>[    0.000000] log_buf_len individual max cpu contribution: 131072 bytes
 <6>[    0.000000] log_buf_len total cpu_extra contributions: 917504 bytes
@@ -10424,14 +10475,18 @@ Panic#2 Part1
 <5>[    0.000000] random: random: get_random_u64 called from __kmem_cache_create+0x8c/0x6a0 with crng_init=1
 <6>[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
 <6>[    0.000000] rcu: Preemptible hierarchical RCU implementation.
-<6>[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
-<6>[    0.000000] 	All grace periods are expedited (rcu_expedited).
-<6>[    0.000000] 	Tasks RCU enabled.
+<6>[    0.000000] rcu: 
+RCU dyntick-idle grace-period acceleration is enabled.
+<6>[    0.000000] 
+All grace periods are expedited (rcu_expedited).
+<6>[    0.000000] 
+Tasks RCU enabled.
 <6>[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
 <6>[    0.000000] GICv3: Distributor has no Range Selector support
 <6>[    0.000000] GICv3: no VLPI support, no direct LPI support
 <4>[    0.000000] ITS: No ITS available, not enabling LPIs
-<6>[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+<6>[    0.000000] rcu: 
+Offload RCU callbacks from CPUs: 0-7.
 <6>[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
 <6>[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
 <6>[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
@@ -10621,14 +10676,20 @@ Panic#2 Part1
 <3>[    0.341715] msm_bus_fab_init_noc_ops: Invalid Bus type
 <6>[    0.353498] disp_vci: supplied by pm8150a_l11
 <6>[    0.354127] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
-<5>[    0.354177] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
-<5>[    0.354180] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.354183] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+<5>[    0.354177] arm-smmu 3da0000.kgsl-smmu: 
+non-coherent table walk
+<5>[    0.354180] arm-smmu 3da0000.kgsl-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.354183] arm-smmu 3da0000.kgsl-smmu: 
+stream matching with 6 register groups
 <3>[    0.355513] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.355655] register_client_adhoc:Client handle 1 apps_smmu
-<5>[    0.355718] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
-<5>[    0.355723] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
-<5>[    0.355726] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+<5>[    0.355718] arm-smmu 15000000.apps-smmu: 
+non-coherent table walk
+<5>[    0.355723] arm-smmu 15000000.apps-smmu: 
+(IDR0.CTTW overridden by FW configuration)
+<5>[    0.355726] arm-smmu 15000000.apps-smmu: 
+stream matching with 87 register groups
 <3>[    0.356360] register_client_adhoc:find path.src 161 dest 627
 <3>[    0.356494] register_client_adhoc:Client handle 2 apps_smmu
 <3>[    0.356622] register_client_adhoc:find path.src 161 dest 627

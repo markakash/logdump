@@ -1,0 +1,594 @@
+Panic#2 Part1
+<6>[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51df805e]
+<5>[    0.000000] Linux version 4.19.325-cip136-st20-perf-g7a75775b4ee4 (redead@ServerHive) (Android (15071444, +pgo, +bolt, +lto, +mlgo, based on r596125) clang version 22.0.2 (https://android.googlesource.com/toolchain/llvm-project de03d430485c884861198b25459851f429cbdbad), LLD 22.0.2 (/mnt/disks/build-disk/src/googleplex-android/llvm-r596125-release/out/llvm-project/llvm de03d430485c884861198b25459851f429cbdbad)) #1 SMP PREEMPT Sun Nov 15 08:27:15 UTC 2026
+<5>[    0.000000] random: crng init done
+<6>[    0.000000] Machine model: Burton
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fec00000, size 16 MiB
+<6>[    0.000000] OF: reserved mem: initialized node qseecom_ta_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created DMA memory pool at 0x00000000ffc00000, size 0 MiB
+<6>[    0.000000] OF: reserved mem: initialized node mailbox_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x0000000353000000, size 720 MiB
+<6>[    0.000000] OF: reserved mem: initialized node mmns_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fd800000, size 20 MiB
+<6>[    0.000000] OF: reserved mem: initialized node cnss_wlan_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fcc00000, size 12 MiB
+<6>[    0.000000] OF: reserved mem: initialized node adsp_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fac00000, size 32 MiB
+<6>[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f8c00000, size 32 MiB
+<6>[    0.000000] OF: reserved mem: initialized node qseecom_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f6400000, size 40 MiB
+<6>[    0.000000] OF: reserved mem: initialized node mem_dump_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ec000000, size 164 MiB
+<6>[    0.000000] OF: reserved mem: initialized node secure_display_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ebc00000, size 4 MiB
+<6>[    0.000000] OF: reserved mem: initialized node cdsp_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000eac00000, size 16 MiB
+<6>[    0.000000] OF: reserved mem: initialized node user_contig_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ea400000, size 8 MiB
+<6>[    0.000000] OF: reserved mem: initialized node sdsp_region, compatible id shared-dma-pool
+<6>[    0.000000] Reserved memory: created CMA memory pool at 0x00000000e9400000, size 16 MiB
+<6>[    0.000000] OF: reserved mem: initialized node sp_region, compatible id shared-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000080880000, size 0 MiB
+<6>[    0.000000] OF: reserved mem: initialized node res_xbl_uefi_log_region@80880000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000086200000, size 5 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_camera_region@86200000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000086700000, size 1 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_wlan_fw_region@86700000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000086800000, size 0 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_ipa_fw_region@86800000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000086810000, size 0 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_ipa_gsi_region@86810000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x000000008681a000, size 0 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_gpu_region@8681a000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000086900000, size 5 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_npu_region@86900000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000086e00000, size 5 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_video_region@86e00000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000087300000, size 5 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_cvp_region@87300000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000087800000, size 20 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_cdsp_region@87800000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x0000000088c00000, size 21 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_slpi_region@88c00000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x000000008a100000, size 29 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_adsp_region@8a100000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x000000008be00000, size 1 MiB
+<6>[    0.000000] OF: reserved mem: initialized node pil_spss_region@8be00000, compatible id removed-dma-pool
+<6>[    0.000000] Removed memory: created DMA memory pool at 0x000000008bf00000, size 70 MiB
+<6>[    0.000000] OF: reserved mem: initialized node cdsp_secure_heap@8bf00000, compatible id removed-dma-pool
+<7>[    0.000000] On node 0 totalpages: 3053837
+<7>[    0.000000]   Normal zone: 49128 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 3053837 pages, LIFO batch:63
+<6>[    0.000000] psci: probing for conduit method from DT.
+<6>[    0.000000] psci: PSCIv1.1 detected in firmware.
+<6>[    0.000000] psci: Using standard PSCI v0.2 function IDs
+<6>[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+<6>[    0.000000] psci: SMC Calling Convention v1.1
+<6>[    0.000000] percpu: Embedded 26 pages/cpu s66520 r8192 d31784 u106496
+<7>[    0.000000] pcpu-alloc: s66520 r8192 d31784 u106496 alloc=26*4096
+<7>[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+<6>[    0.000000] Detected VIPT I-cache on CPU0
+<6>[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+<6>[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+<6>[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 3004709
+<5>[    0.000000] Kernel command line: cgroup_disable=pressure rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=null firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 reboot=panic_warm service_locator.enable=1 swiotlb=2048 video=vfb:640x400,bpp=32,memsize=3072000 androidboot.init_fatal_reboot_target=recovery androidboot.selinux=permissive printk.devkmsg=on quiet androidboot.verifiedbootstate=orange androidboot.keymaster=1 androidboot.vbmeta.device=PARTUUID=43d85442-8bc5-fefe-54ed-2a4952418581 androidboot.vbmeta.avb_version=1.0 androidboot.vbmeta.device_state=unlocked androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.size=4096 androidboot.vbmeta.digest=58bf902b1e59f1aa829535937267ddf58dd609dbba32e3ceafbddd3d44de8661 androidboot.vbmeta.invalidate_on_error=yes androidboot.veritymode=enforcing androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=ZY227D49PH androidboot.device=burton androidboot.revision=pvt2 androidboot.hwrev=0xC200 androidboot.radio=CANADA androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 wifimacaddr=F8:1F:32:1F:54:00,F8:1F:32:1F:54:01 androidboot.btmacaddr=F8:1F:32:1F:53:FF androidboot.bootloader=MBM-3.0-burton_reteu-9376d694c30-220726 androidboot.carrier=reteu androidboot.hardware.sku=XT2061-3 androidboot.mode=normal androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_mot_boe_lsi_667_1080p_cmd_v0: androidboot.slot_suffix=_a rootwait ro init=/init androidboot.dtbo_idx=12 androidboot.dtb_idx=0 storage_mfrid=0x1CE androidboot.sku_variant=n androidboot.secure_hardware=1 androidboot.cid=0x0032 androidboot.write_protect=0 androidboot.bl_state=2 androidboot.ssm_data=00000000000F9991
+<6>[    0.000000] cgroup: Disabling pressure control group feature
+<7>[    0.000000] cnss: get_moto_device: device [burton]
+<7>[    0.000000] cnss: get_moto_radio: radio [CANADA]
+<6>[    0.000000] log_buf_len individual max cpu contribution: 131072 bytes
+<6>[    0.000000] log_buf_len total cpu_extra contributions: 917504 bytes
+<6>[    0.000000] log_buf_len min size: 131072 bytes
+<6>[    0.000000] log_buf_len: 1048576 bytes
+<6>[    0.000000] early log buf free: 121840(92%)
+<6>[    0.000000] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+<6>[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+<6>[    0.000000] Memory: 10753584K/12215348K available (24060K kernel code, 2714K rwdata, 13236K rodata, 2048K init, 8843K bss, 355844K reserved, 1105920K cma-reserved)
+<6>[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+<6>[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+<6>[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+<6>[    0.000000] 	All grace periods are expedited (rcu_expedited).
+<6>[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+<6>[    0.000000] 	Tracing variant of Tasks RCU enabled.
+<6>[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+<6>[    0.000000] GICv3: Distributor has no Range Selector support
+<6>[    0.000000] GICv3: no VLPI support, no direct LPI support
+<4>[    0.000000] ITS: No ITS available, not enabling LPIs
+<6>[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+<6>[    0.000000] Successfully registered dummy reset controller for cpucc_clocks
+<6>[    0.000000] Successfully registered dummy clock controller for cpucc_clocks
+<6>[    0.000000] arch_timer: CPU0: Trapping CNTVCT access
+<6>[    0.000000] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+<6>[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+<6>[    0.000004] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+<6>[    0.000013] clocksource: Switched to clocksource arch_sys_counter
+<6>[    0.001554] kfence: initialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)
+<6>[    0.001676] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.00 BogoMIPS (lpj=64000)
+<6>[    0.001682] pid_max: default: 32768 minimum: 301
+<6>[    0.001791] LSM: Security Framework initializing
+<6>[    0.001826] SELinux:  Initializing.
+<5>[    0.001883] *** VALIDATE SELinux ***
+<6>[    0.001912] LSM support for eBPF active
+<6>[    0.001965] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes)
+<6>[    0.001992] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes)
+<5>[    0.002025] *** VALIDATE tmpfs ***
+<6>[    0.003654] ASID allocator initialised with 65536 entries
+<6>[    0.003737] rcu: Hierarchical SRCU implementation.
+<3>[    0.005575] scm_call failed: func id 0x42001907, ret: -1, syscall returns: 0x0, 0x0, 0x0
+<3>[    0.005584] scm_mem_protection_init_do_qrks: SCM call failed
+<3>[    0.005727] scm_mem_protection_init: SCM call failed
+<4>[    0.008474] shmbridge is enabled
+<6>[    0.008971] smp: Bringing up secondary CPUs ...
+<6>[    0.010076] Detected VIPT I-cache on CPU1
+<6>[    0.010136] arch_timer: CPU1: Trapping CNTVCT access
+<6>[    0.010145] CPU1: Booted secondary processor 0x0000000100 [0x51df805e]
+<6>[    0.011219] Detected VIPT I-cache on CPU2
+<6>[    0.011253] arch_timer: CPU2: Trapping CNTVCT access
+<6>[    0.011259] CPU2: Booted secondary processor 0x0000000200 [0x51df805e]
+<6>[    0.014306] Detected VIPT I-cache on CPU3
+<6>[    0.014333] arch_timer: CPU3: Trapping CNTVCT access
+<6>[    0.014338] CPU3: Booted secondary processor 0x0000000300 [0x51df805e]
+<6>[    0.015684] CPU features: enabling workaround for Mismatched cache type
+<6>[    0.015693] CPU features: enabling workaround for Broken broadcast TLBI completion
+<6>[    0.015700] CPU features: enabling workaround for Spectre-BHB
+<6>[    0.015705] CPU features: enabling workaround for ARM erratum 1542418
+<6>[    0.015711] CPU features: enabling workaround for SSBS not fully self-synchronizing
+<6>[    0.015717] CPU features: detected: Hardware dirty bit management
+<6>[    0.015723] Detected PIPT I-cache on CPU4
+<4>[    0.015747] CPU features: Unsupported CPU feature variation detected.
+<6>[    0.015779] arch_timer: CPU4: Trapping CNTVCT access
+<6>[    0.015792] CPU4: Booted secondary processor 0x0000000400 [0x411fd0d0]
+<6>[    0.017116] Detected PIPT I-cache on CPU5
+<6>[    0.017171] arch_timer: CPU5: Trapping CNTVCT access
+<6>[    0.017184] CPU5: Booted secondary processor 0x0000000500 [0x411fd0d0]
+<6>[    0.018517] Detected PIPT I-cache on CPU6
+<6>[    0.018571] arch_timer: CPU6: Trapping CNTVCT access
+<6>[    0.018585] CPU6: Booted secondary processor 0x0000000600 [0x411fd0d0]
+<6>[    0.020023] Detected PIPT I-cache on CPU7
+<6>[    0.020050] arch_timer: CPU7: Trapping CNTVCT access
+<6>[    0.020056] CPU7: Booted secondary processor 0x0000000700 [0x411fd0d0]
+<6>[    0.020212] smp: Brought up 1 node, 8 CPUs
+<6>[    0.020218] SMP: Total of 8 processors activated.
+<6>[    0.020222] CPU features: detected: GIC system register CPU interface
+<6>[    0.020224] CPU features: detected: Privileged Access Never
+<6>[    0.020226] CPU features: detected: LSE atomic instructions
+<6>[    0.020228] CPU features: detected: User Access Override
+<6>[    0.020230] CPU features: detected: 32-bit EL0 Support
+<6>[    0.020232] CPU features: detected: RAS Extension Support
+<6>[    0.134746] CPU: All CPU(s) started at EL1
+<6>[    0.134793] alternatives: patching kernel code
+<5>[    0.286710] Registered cp15_barrier emulation handler
+<5>[    0.286722] Registered setend emulation handler
+<6>[    0.287025] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+<6>[    0.287046] futex hash table entries: 2048 (order: 5, 131072 bytes)
+<6>[    0.297031] pinctrl core: initialized pinctrl subsystem
+<4>[    0.297079] regulator: Failed to create debugfs directory
+<6>[    0.297459] NET: Registered protocol family 16
+<6>[    0.298179] schedtune: configured to support 6 boost groups
+<6>[    0.298223] audit: initializing netlink subsys (disabled)
+<5>[    0.298390] audit: type=2000 audit(0.296:1): state=initialized audit_enabled=0 res=1
+<6>[    0.298771] cpuidle: using governor qcom
+<6>[    0.298858] NET: Registered protocol family 42
+<6>[    0.299132] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+<6>[    0.300191] DMA: preallocated 256 KiB pool for atomic allocations
+<6>[    0.300588] DMA: preallocated 256 KiB pool for atomic allocations
+<6>[    0.300788] exit: IPA_USB init success!
+<6>[    0.302342] console [pstore-1] enabled
+<6>[    0.302380] pstore: Registered ramoops as persistent store backend
+<6>[    0.302384] ramoops: attached 0xc0000@0xaf000000, ecc: 0/0
+<6>[    0.304370] platform 82400000.qseecom: assigned reserved memory node qseecom_region
+<6>[    0.307053] platform soc:qcom,ipa_fws: assigned reserved memory node pil_ipa_gsi_region@86810000
+<6>[    0.307095] platform soc:qcom,ipa_uc: assigned reserved memory node pil_ipa_fw_region@86800000
+<6>[    0.307484] platform 17300000.qcom,lpass: assigned reserved memory node pil_adsp_region@8a100000
+<6>[    0.307564] platform 8300000.qcom,turing: assigned reserved memory node pil_cdsp_region@87800000
+<6>[    0.307613] platform aab0000.qcom,venus: assigned reserved memory node pil_video_region@86e00000
+<6>[    0.307697] platform 188101c.qcom,spss: assigned reserved memory node pil_spss_region@8be00000
+<6>[    0.307742] platform abb0000.qcom,cvpss: assigned reserved memory node pil_cvp_region@87300000
+<6>[    0.307790] platform 9800000.qcom,npu: assigned reserved memory node pil_npu_region@86900000
+<6>[    0.307916] platform soc:qcom,msm-adsprpc-mem: assigned reserved memory node adsp_region
+<6>[    0.308152] platform soc:mem_dump: assigned reserved memory node mem_dump_region
+<6>[    0.308259] platform 5c00000.qcom,ssc: assigned reserved memory node pil_slpi_region@88c00000
+<6>[    0.309420] platform 88a7000.msm_tspp: assigned reserved memory node qseecom_region
+<6>[    0.321604] msm_watchdog 17c10000.qcom,wdt: wdog absent resource not present
+<6>[    0.321716] msm_watchdog 17c10000.qcom,wdt: MSM Watchdog Initialized
+<3>[    0.322929] Unable to find DT property: qcom,msm-imem-download_mode
+<3>[    0.323569] Unable to find DT property: qcom,msm-imem-emergency_download_mode
+<3>[    0.328904] msm-dcc 1023000.dcc_v2: DCC list passed 3
+<6>[    0.329101] msm-dcc 1023000.dcc_v2: All values written to enable.
+<3>[    0.329200] msm-dcc 1023000.dcc_v2: DCC list passed 6
+<6>[    0.329431] msm-dcc 1023000.dcc_v2: All values written to enable.
+<3>[    0.329526] msm-dcc 1023000.dcc_v2: DCC list passed 7
+<6>[    0.329751] msm-dcc 1023000.dcc_v2: All values written to enable.
+<6>[    0.330446] sps:sps is ready.
+<6>[    0.330646] spmi spmi-0: PMIC arbiter version v5 (0x50010000)
+<6>[    0.331769] pm8150_s3_level: supplied by pm8150a_s3_level
+<6>[    0.331817] pm8150_s3_level_ao: supplied by pm8150a_s3_level_ao
+<6>[    0.332062] pm8150a_s3_mmcx_sup_level: supplied by pm8150_s3_mmcx_sup_level
+<6>[    0.335005] pm8150a_s4_level: supplied by pm8150a_s3_mmcx_sup_level
+<6>[    0.335222] pm8150a_s4_level_ao: supplied by pm8150a_s3_level_ao
+<3>[    0.337668] rpmh_regulator_probe: smpf1: could not find RPMh address for resource
+<3>[    0.337734] rpmh_regulator_probe: smpf2: could not find RPMh address for resource
+<3>[    0.337798] rpmh_regulator_probe: ldof1: could not find RPMh address for resource
+<3>[    0.337857] rpmh_regulator_probe: ldof2: could not find RPMh address for resource
+<3>[    0.337919] rpmh_regulator_probe: ldof3: could not find RPMh address for resource
+<3>[    0.337985] rpmh_regulator_probe: ldof5: could not find RPMh address for resource
+<3>[    0.338052] rpmh_regulator_probe: ldof6: could not find RPMh address for resource
+<3>[    0.338141] rpmh_regulator_probe: ldof7: could not find RPMh address for resource
+<6>[    0.343179] oledb: Bringing 0uV into 4925000-4925000uV
+<6>[    0.343294] ab: Bringing 0uV into 4600000-4600000uV
+<6>[    0.343408] ibb: Bringing 0uV into 800000-800000uV
+<3>[    0.343562] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+<3>[    0.343966] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+<3>[    0.343976] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: read 0x4 failed
+<3>[    0.343984] qcom-spmi-gpio c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000: failed to populate gpio 0, ret=-5
+<4>[    0.344003] qcom-spmi-gpio: probe of c440000.qcom,spmi:qcom,pm8009@a:pinctrl@c000 failed with error -5
+<6>[    0.351062] MSM Memory Dump base table set up
+<6>[    0.351069] MSM Memory Dump apps data table set up
+<6>[    0.358951] cryptd: max_cpu_qlen set to 1000
+<6>[    0.359255] vServices Framework 1.0
+<6>[    0.360248] gdsc ad07004.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360259] gdsc ad07004.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360315] gdsc ad0a004.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360321] gdsc ad0a004.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360372] gdsc ad0b004.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360377] gdsc ad0b004.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360419] gdsc ad08004.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360424] gdsc ad08004.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360462] gdsc ad09004.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360466] gdsc ad09004.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360506] gdsc ad0c144.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360510] gdsc ad0c144.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360550] gdsc af03000.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360555] gdsc af03000.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360606] gdsc 3d9106c.qcom,gdsc: Linked as a consumer to regulator.4
+<6>[    0.360660] gpu_cx_gdsc: supplied by pm8150_s3_level
+<6>[    0.360729] gdsc 3d9100c.qcom,gdsc: Linked as a consumer to regulator.30
+<6>[    0.360786] gpu_gx_gdsc: supplied by pm8150a_s1_level
+<6>[    0.360867] gdsc abf0d18.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360872] gdsc abf0d18.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360911] gdsc abf0bf8.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360915] gdsc abf0bf8.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360953] gdsc abf0d98.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360957] gdsc abf0d98.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.360994] gdsc abf0c98.qcom,gdsc: Linked as a consumer to regulator.31
+<6>[    0.360998] gdsc abf0c98.qcom,gdsc: Dropping the link to regulator.31
+<6>[    0.361952] qmp-aop-clk soc:qcom,aopclk: Registered clocks with AOP
+<6>[    0.362544] gcc-kona 100000.qcom,gcc: Linked as a consumer to regulator.31
+<6>[    0.362554] gcc-kona 100000.qcom,gcc: Linked as a consumer to regulator.4
+<6>[    0.362563] gcc-kona 100000.qcom,gcc: Linked as a consumer to regulator.5
+<6>[    0.395146] gcc-kona 100000.qcom,gcc: Registered GCC clocks
+<6>[    0.395427] gpu_cc-kona 3d90000.qcom,gpucc: Linked as a consumer to regulator.4
+<6>[    0.395437] gpu_cc-kona 3d90000.qcom,gpucc: Linked as a consumer to regulator.1
+<6>[    0.401122] gpu_cc-kona 3d90000.qcom,gpucc: Registered GPU CC clocks
+<6>[    0.401380] npu_cc-kona 9980000.qcom,npucc: Linked as a consumer to regulator.4
+<6>[    0.423045] npu_cc-kona 9980000.qcom,npucc: Registered NPU_CC clocks
+<6>[    0.423372] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.1
+<6>[    0.423387] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.31
+<3>[    0.423391] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+<3>[    0.423400] video_cc-kona abf0000.qcom,videocc: Unable to register for bw voting
+<6>[    0.423408] video_cc-kona abf0000.qcom,videocc: Dropping the link to regulator.31
+<6>[    0.423415] video_cc-kona abf0000.qcom,videocc: Dropping the link to regulator.1
+<6>[    0.426303] KPI: Bootloader start count = 78591
+<6>[    0.426305] KPI: Bootloader end count = 1094003
+<6>[    0.426307] KPI: Bootloader display count = 929731726
+<6>[    0.426309] KPI: Bootloader load kernel count = 1075101737
+<6>[    0.426313] KPI: Kernel MPM timestamp = 1140657
+<6>[    0.426315] KPI: Kernel MPM Clock frequency = 32768
+<6>[    0.426327] socinfo_print: v0.15, id=356, ver=2.1, raw_id=195, raw_ver=2, hw_plat=8, hw_plat_ver=65536
+<6>[    0.426327]  accessory_chip=1, hw_plat_subtype=0, pmic_model=65566, pmic_die_revision=196608 foundry_id=1 serial_number=1320940637 num_pmics=5 chip_family=0x5d raw_device_family=0x6 raw_device_number=0x8 nproduct_id=0x412 num_clusters=0x1 ncluster_array_offset=0xb0 num_subset_parts=0xc nsubset_parts_array_offset=0xb4 nmodem_supported=0x0
+<3>[    0.426329] msm_bus_fabric_rpmh_init_driver
+<3>[    0.426419] msm_bus: Probe started
+<4>[    0.426901] msm_bus_device 16e0000.ad-hoc-bus: Bus type is missing
+<4>[    0.426917] msm_bus_device 16e0000.ad-hoc-bus: Bus type is missing
+<4>[    0.426969] msm_bus_device 16e0000.ad-hoc-bus: Bus type is missing
+<3>[    0.428854] msm_bus: DT Parsing complete
+<3>[    0.430004] msm_bus_fab_init_noc_ops: Invalid Bus type
+<3>[    0.430060] msm_bus_fab_init_noc_ops: Invalid Bus type
+<3>[    0.430215] msm_bus_fab_init_noc_ops: Invalid Bus type
+<6>[    0.443827] disp_vci: supplied by pm8150a_l11
+<6>[    0.444948] arm-smmu 3da0000.kgsl-smmu: Linked as a consumer to regulator.64
+<5>[    0.445000] arm-smmu 3da0000.kgsl-smmu: 	non-coherent table walk
+<5>[    0.445002] arm-smmu 3da0000.kgsl-smmu: 	(IDR0.CTTW overridden by FW configuration)
+<5>[    0.445008] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+<3>[    0.446445] register_client_adhoc:find path.src 161 dest 627
+<3>[    0.446636] register_client_adhoc:Client handle 1 apps_smmu
+<5>[    0.446710] arm-smmu 15000000.apps-smmu: 	non-coherent table walk
+<5>[    0.446716] arm-smmu 15000000.apps-smmu: 	(IDR0.CTTW overridden by FW configuration)
+<5>[    0.446720] arm-smmu 15000000.apps-smmu: 	stream matching with 87 register groups
+<3>[    0.447654] register_client_adhoc:find path.src 161 dest 627
+<3>[    0.447846] register_client_adhoc:Client handle 2 apps_smmu
+<3>[    0.447974] register_client_adhoc:find path.src 161 dest 627
+<3>[    0.448147] register_client_adhoc:Client handle 3 apps_smmu
+<6>[    0.448267] qsmmuv500-tbu 1518d000.mnoc_hf_0_tbu: Linked as a consumer to regulator.60
+<3>[    0.448295] register_client_adhoc:find path.src 22 dest 773
+<3>[    0.448380] register_client_adhoc:Client handle 4 mnoc_hf_0_tbu
+<6>[    0.448492] qsmmuv500-tbu 15191000.mnoc_hf_1_tbu: Linked as a consumer to regulator.61
+<3>[    0.448519] register_client_adhoc:find path.src 22 dest 773
+<3>[    0.448600] register_client_adhoc:Client handle 5 mnoc_hf_1_tbu
+<3>[    0.448707] register_client_adhoc:find path.src 154 dest 10070
+<3>[    0.448768] register_client_adhoc:Client handle 6 apps_smmu
+<3>[    0.448875] register_client_adhoc:find path.src 154 dest 10070
+<3>[    0.448934] register_client_adhoc:Client handle 7 apps_smmu
+<3>[    0.449040] register_client_adhoc:find path.src 161 dest 627
+<3>[    0.449219] register_client_adhoc:Client handle 8 apps_smmu
+<3>[    0.449345] register_client_adhoc:find path.src 161 dest 627
+<3>[    0.449519] register_client_adhoc:Client handle 9 apps_smmu
+<6>[    0.449630] qsmmuv500-tbu 151a5000.mnoc_sf_0_tbu: Linked as a consumer to regulator.62
+<3>[    0.449656] register_client_adhoc:find path.src 137 dest 772
+<3>[    0.449742] register_client_adhoc:Client handle 10 mnoc_sf_0_tbu
+<6>[    0.449845] qsmmuv500-tbu 151a9000.mnoc_sf_1_tbu: Linked as a consumer to regulator.63
+<3>[    0.449874] register_client_adhoc:find path.src 137 dest 772
+<3>[    0.449957] register_client_adhoc:Client handle 11 mnoc_sf_1_tbu
+<3>[    0.450466] Error: Driver 'arm-smmu' is already registered, aborting...
+<6>[    0.450502] vgaarb: loaded
+<5>[    0.450693] SCSI subsystem initialized
+<6>[    0.450763] usbcore: registered new interface driver usbfs
+<6>[    0.450779] usbcore: registered new interface driver hub
+<6>[    0.450795] usbcore: registered new device driver usb
+<4>[    0.450941] usb_phy_generic soc:usb_nop_phy: soc:usb_nop_phy supply vcc not found, using dummy regulator
+<6>[    0.450949] usb_phy_generic soc:usb_nop_phy: Linked as a consumer to regulator.0
+<6>[    0.451353] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800: PMIC@SID0 Power-on reason: Triggered from Hard Reset and 'cold' boot
+<6>[    0.451370] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800: PON Register , addr=0x08C7, val=0x80
+<6>[    0.451385] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800: PON Register , addr=0x08C5, val=0x0
+<6>[    0.451388] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800: PMIC@SID0: Power-off reason: Triggered from PS_HOLD (PS_HOLD/MSM Controlled Shutdown)
+<6>[    0.451529] input: qpnp_pon as /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,power-on@800/input/input0
+<6>[    0.451853] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150b@2:qcom,power-on@800: PMIC@SID2 Power-on reason: Triggered from CBL (External Power Supply) and 'cold' boot
+<6>[    0.451868] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150b@2:qcom,power-on@800: PON Register , addr=0x08C7, val=0x80
+<6>[    0.451883] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150b@2:qcom,power-on@800: PON Register , addr=0x08C5, val=0x0
+<6>[    0.451887] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150b@2:qcom,power-on@800: PMIC@SID2: Power-off reason: Triggered from SOFT (Software)
+<6>[    0.452021] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800: PMIC@SID4 Power-on reason: Triggered from PON1 (Secondary PMIC) and 'cold' boot
+<6>[    0.452036] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800: PON Register , addr=0x08C7, val=0x80
+<6>[    0.452050] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800: PON Register , addr=0x08C5, val=0x0
+<6>[    0.452053] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8150l@4:qcom,power-on@800: PMIC@SID4: Power-off reason: Triggered from SOFT (Software)
+<3>[    0.452137] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+<3>[    0.452145] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800: Register read failed, addr=0x0805, rc=-5
+<4>[    0.452156] qcom,qpnp-power-on: probe of c440000.qcom,spmi:qcom,pm8009@a:qcom,power-on@800 failed with error -5
+<6>[    0.452220] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800: PMIC@SID8 Power-on reason: Triggered from PON1 (Secondary PMIC) and 'cold' boot
+<6>[    0.452235] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800: PON Register , addr=0x08C7, val=0x80
+<6>[    0.452249] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800: PON Register , addr=0x08C5, val=0x0
+<6>[    0.452252] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmxprairie@8:qcom,power-on@800: PMIC@SID8: Power-off reason: Triggered from SOFT (Software)
+<6>[    0.452332] media: Linux media interface: v0.10
+<6>[    0.452344] videodev: Linux video capture interface: v2.00
+<6>[    0.452361] pps_core: LinuxPPS API ver. 1 registered
+<6>[    0.452363] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+<6>[    0.452370] PTP clock support registered
+<3>[    0.457560] virt zone: sensor[gpuss-1-usr] read error:-22
+<4>[    0.457567] thermal thermal_zone25: failed to read out thermal zone (-22)
+<3>[    0.457601] virt zone: sensor[modem-mmw0-usr] read error:-22
+<4>[    0.457607] thermal thermal_zone88: failed to read out thermal zone (-22)
+<3>[    0.457620] virt zone: sensor[modem-mmw1-usr] read error:-22
+<4>[    0.457626] thermal thermal_zone89: failed to read out thermal zone (-22)
+<3>[    0.457634] virt zone: sensor[skin-therm-usr] read error:-22
+<4>[    0.457639] thermal thermal_zone90: failed to read out thermal zone (-22)
+<3>[    0.457648] virt zone: sensor[skin-msm-therm-usr] read error:-22
+<4>[    0.457653] thermal thermal_zone91: failed to read out thermal zone (-22)
+<3>[    0.457661] virt zone: sensor[chg-therm-usr] read error:-22
+<4>[    0.457667] thermal thermal_zone92: failed to read out thermal zone (-22)
+<6>[    0.459810] EDAC MC: Ver: 3.0.0
+<6>[    0.460953] cpufreq: driver qcom-cpufreq-hw up and running
+<6>[    0.461388] platform soc:qcom,ion:qcom,ion-heap@22: assigned reserved memory node sdsp_region
+<6>[    0.461426] platform soc:qcom,ion:qcom,ion-heap@26: assigned reserved memory node user_contig_region
+<6>[    0.461445] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region
+<6>[    0.461463] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+<6>[    0.461480] platform soc:qcom,ion:qcom,ion-heap@13: assigned reserved memory node sp_region
+<6>[    0.461497] platform soc:qcom,ion:qcom,ion-heap@10: assigned reserved memory node secure_display_region
+<6>[    0.461530] platform soc:qcom,ion:qcom,ion-heap@30: assigned reserved memory node mmns_region
+<6>[    0.461784] ION heap system created
+<6>[    0.461855] ION heap adsp created at 0x00000000ea400000 with size 800000
+<6>[    0.461860] ION heap secure_heap created
+<6>[    0.461861] ION heap user_contig created at 0x00000000eac00000 with size 1000000
+<6>[    0.461862] ION heap qsecom created at 0x00000000f8c00000 with size 2000000
+<6>[    0.461863] ION heap qsecom_ta created at 0x00000000fec00000 with size 1000000
+<6>[    0.461864] ION heap spss created at 0x00000000e9400000 with size 1000000
+<6>[    0.461866] ION heap secure_display created at 0x00000000ec000000 with size a400000
+<6>[    0.498106] platform soc:qcom,ion:qcom,ion-heap@14: ion_secure_carveout: creating heap@0x8bf00000, size 0x4600000
+<6>[    0.498109] ION heap secure_carveout created
+<6>[    0.502356] ION heap mmns created at 0x0000000353000000 with size 2d000000
+<6>[    0.503435] PMIC@SID2: PM8150B v2.0 options: 0, 0, 0, 0
+<6>[    0.503541] PMIC@SID4: (null) v2.0 options: 0, 0, 0, 0
+<3>[    0.503567] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+<3>[    0.503575] read failed rc=-5
+<3>[    0.503578] Invalid REVID peripheral type: 00
+<4>[    0.503585] qcom,qpnp-revid: probe of c440000.qcom,spmi:qcom,pm8009@a:qcom,revid@100 failed with error -22
+<3>[    0.504068] register_client_adhoc:find path.src 90 dest 770
+<3>[    0.504221] register_client_adhoc:find path.src 129 dest 512
+<3>[    0.504249] register_client_adhoc:find path.src 90 dest 585
+<3>[    0.504346] register_client_adhoc:find path.src 1 dest 676
+<3>[    0.504425] register_client_adhoc:find path.src 143 dest 777
+<3>[    0.504448] register_client_adhoc:Client handle 12 ipa
+<6>[    0.505419] ipa 1e00000.qcom,ipa:ipa_smmu_ap: Linked as a consumer to 15000000.apps-smmu
+<6>[    0.509673] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_ap to group 0
+<6>[    0.509846] ipa 1e00000.qcom,ipa:ipa_smmu_wlan: Linked as a consumer to 15000000.apps-smmu
+<6>[    0.514037] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_wlan to group 1
+<6>[    0.514339] ipa 1e00000.qcom,ipa:ipa_smmu_uc: Linked as a consumer to 15000000.apps-smmu
+<6>[    0.518790] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_uc to group 2
+<6>[    0.519027] ipa 1e00000.qcom,ipa:ipa_smmu_11ad: Linked as a consumer to 15000000.apps-smmu
+<6>[    0.523594] iommu: Adding device 1e00000.qcom,ipa:ipa_smmu_11ad to group 3
+<6>[    0.524627] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat: Devfreq QCOM Firmware dev registered.
+<6>[    0.524673] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat: Devfreq QCOM Firmware dev registered.
+<6>[    0.524709] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat: Devfreq QCOM Firmware dev registered.
+<6>[    0.524745] devfreq-qcom-fw 18590000.qcom,devfreq-l3:qcom,cdsp-cdsp-l3-lat: Devfreq QCOM Firmware dev registered.
+<6>[    0.524747] devfreq-qcom-fw 18590000.qcom,devfreq-l3: Devfreq QCOM Firmware parent dev inited.
+<6>[    0.525029] SDAM base=0xb100 size=128 registered successfully
+<6>[    0.525076] Advanced Linux Sound Architecture Driver Initialized.
+<6>[    0.525326] Bluetooth: Core ver 2.22
+<6>[    0.525331] NET: Registered protocol family 31
+<6>[    0.525332] Bluetooth: HCI device and connection manager initialized
+<6>[    0.525334] Bluetooth: HCI socket layer initialized
+<6>[    0.525336] Bluetooth: L2CAP socket layer initialized
+<6>[    0.525338] Bluetooth: SCO socket layer initialized
+<1>[    0.525384] pcie:pcie_init.
+<3>[    0.525956] register_client_adhoc:find path.src 45 dest 512
+<3>[    0.526111] register_client_adhoc:Client handle 13 pcie0
+<4>[    0.526269] pci-msm 1c00000.qcom,pcie: 1c00000.qcom,pcie supply vreg-3p3 not found, using dummy regulator
+<6>[    0.526281] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.0
+<6>[    0.526296] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.18
+<6>[    0.526301] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.13
+<6>[    0.526308] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.4
+<6>[    0.526324] pci-msm 1c00000.qcom,pcie: Linked as a consumer to regulator.54
+<3>[    0.526435] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+<3>[    0.526438] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+<3>[    0.526664] register_client_adhoc:find path.src 108 dest 512
+<3>[    0.526772] register_client_adhoc:Client handle 14 pcie2
+<4>[    0.526851] pci-msm 1c10000.qcom,pcie: 1c10000.qcom,pcie supply vreg-3p3 not found, using dummy regulator
+<6>[    0.526856] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.0
+<6>[    0.526862] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.18
+<6>[    0.526867] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.13
+<6>[    0.526874] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.4
+<6>[    0.526881] pci-msm 1c10000.qcom,pcie: Linked as a consumer to regulator.56
+<3>[    0.526939] msm_pcie_get_reg: PCIe: RC2: no tcsr resource found.
+<3>[    0.526942] msm_pcie_get_reg: PCIe: RC2: no rumi resource found.
+<3>[    0.526946] msm_pcie_probe: PCIe: RC2 could not get pinctrl sleep state
+<3>[    0.527195] register_client_adhoc:find path.src 22 dest 512
+<3>[    0.527277] register_client_adhoc:find path.src 23 dest 512
+<3>[    0.527345] register_client_adhoc:Client handle 15 bus-proxy-client
+<6>[    0.527603] qupv3_geni_se 9c0000.qcom,qupv3_0_geni_se: Linked as a consumer to 15000000.apps-smmu
+<6>[    0.527881] iommu: Adding device 9c0000.qcom,qupv3_0_geni_se to group 4
+<6>[    0.528012] qupv3_geni_se ac0000.qcom,qupv3_1_geni_se: Linked as a consumer to 15000000.apps-smmu
+<6>[    0.528177] iommu: Adding device ac0000.qcom,qupv3_1_geni_se to group 5
+<6>[    0.528277] qupv3_geni_se 8c0000.qcom,qupv3_2_geni_se: Linked as a consumer to 15000000.apps-smmu
+<6>[    0.528437] iommu: Adding device 8c0000.qcom,qupv3_2_geni_se to group 6
+<6>[    0.528533] gdsc ad07004.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.528547] register_client_adhoc:find path.src 1 dest 589
+<3>[    0.528641] register_client_adhoc:Client handle 16 bps_gdsc_ahb
+<6>[    0.528688] msm-bus-type slv-qhs-camera-cfg: Linked as a consumer to regulator.31
+<6>[    0.528789] bps_gdsc: supplied by pm8150a_s4_level
+<6>[    0.528814] gdsc ad0a004.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.528823] register_client_adhoc:find path.src 1 dest 589
+<3>[    0.528893] register_client_adhoc:Client handle 17 ife_0_gdsc_ahb
+<6>[    0.528958] ife_0_gdsc: supplied by pm8150a_s4_level
+<6>[    0.528978] gdsc ad0b004.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.528985] register_client_adhoc:find path.src 1 dest 589
+<3>[    0.529052] register_client_adhoc:Client handle 18 ife_1_gdsc_ahb
+<6>[    0.529116] ife_1_gdsc: supplied by pm8150a_s4_level
+<6>[    0.529139] gdsc ad08004.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.529148] register_client_adhoc:find path.src 1 dest 589
+<3>[    0.529212] register_client_adhoc:Client handle 19 ipe_0_gdsc_ahb
+<6>[    0.529275] ipe_0_gdsc: supplied by pm8150a_s4_level
+<6>[    0.529296] gdsc ad09004.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.529303] register_client_adhoc:find path.src 1 dest 589
+<3>[    0.529367] register_client_adhoc:Client handle 20 sbi_gdsc_ahb
+<6>[    0.529429] sbi_gdsc: supplied by pm8150a_s4_level
+<6>[    0.529450] gdsc ad0c144.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.529459] register_client_adhoc:find path.src 1 dest 589
+<3>[    0.529523] register_client_adhoc:Client handle 21 titan_top_gdsc_ahb
+<6>[    0.529589] titan_top_gdsc: supplied by pm8150a_s4_level
+<6>[    0.529611] gdsc af03000.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.529619] register_client_adhoc:find path.src 1 dest 590
+<3>[    0.529687] register_client_adhoc:Client handle 22 mdss_core_gdsc_ahb
+<6>[    0.529730] msm-bus-type slv-qhs-display-cfg: Linked as a consumer to regulator.31
+<6>[    0.529768] mdss_core_gdsc: supplied by pm8150a_s4_level
+<6>[    0.529858] gdsc abf0d18.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.529866] register_client_adhoc:find path.src 1 dest 596
+<3>[    0.529936] register_client_adhoc:Client handle 23 mvs0_gdsc_ahb
+<6>[    0.529979] msm-bus-type slv-qhs-venus-cfg: Linked as a consumer to regulator.31
+<6>[    0.530060] mvs0_gdsc: supplied by pm8150a_s4_level
+<6>[    0.530081] gdsc abf0bf8.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.530087] register_client_adhoc:find path.src 1 dest 596
+<3>[    0.530156] register_client_adhoc:Client handle 24 mvs0c_gdsc_ahb
+<6>[    0.530252] mvs0c_gdsc: supplied by pm8150a_s4_level
+<6>[    0.530275] gdsc abf0d98.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.530281] register_client_adhoc:find path.src 1 dest 596
+<3>[    0.530352] register_client_adhoc:Client handle 25 mvs1_gdsc_ahb
+<6>[    0.530445] mvs1_gdsc: supplied by pm8150a_s4_level
+<6>[    0.530466] gdsc abf0c98.qcom,gdsc: Linked as a consumer to regulator.31
+<3>[    0.530472] register_client_adhoc:find path.src 1 dest 596
+<3>[    0.530540] register_client_adhoc:Client handle 26 mvs1c_gdsc_ahb
+<6>[    0.530633] mvs1c_gdsc: supplied by pm8150a_s4_level
+<6>[    0.530670] cam_cc-kona ad00000.qcom,camcc: Linked as a consumer to regulator.1
+<6>[    0.530673] cam_cc-kona ad00000.qcom,camcc: Linked as a consumer to regulator.31
+<3>[    0.530679] register_client_adhoc:find path.src 1 dest 589
+<3>[    0.530750] register_client_adhoc:Client handle 27 clk_camcc_debugfs
+<6>[    0.537316] cam_cc-kona ad00000.qcom,camcc: Registered CAM CC clocks
+<6>[    0.537386] disp_cc-kona af00000.qcom,dispcc: Linked as a consumer to regulator.31
+<3>[    0.537394] register_client_adhoc:find path.src 1 dest 590
+<3>[    0.537468] register_client_adhoc:Client handle 28 clk_dispcc_debugfs
+<6>[    0.540450] disp_cc-kona af00000.qcom,dispcc: Registered Display CC clocks
+<6>[    0.540484] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.1
+<6>[    0.540488] video_cc-kona abf0000.qcom,videocc: Linked as a consumer to regulator.31
+<3>[    0.540494] register_client_adhoc:find path.src 1 dest 596
+<3>[    0.540569] register_client_adhoc:Client handle 29 clk_videocc_debugfs
+<6>[    0.541698] video_cc-kona abf0000.qcom,videocc: Registered Video CC clocks
+<6>[    0.541873] clocksource: Switched to clocksource arch_sys_counter
+<5>[    0.555071] *** VALIDATE bpf ***
+<5>[    0.555199] VFS: Disk quotas dquot_6.6.0
+<6>[    0.555223] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+<5>[    0.555262] *** VALIDATE ramfs ***
+<6>[    0.555760] mdss_pll_probe: MDSS pll label = MDSS DSI 0 PLL
+<6>[    0.555763] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 0 PLL PLL SSC enabled
+<6>[    0.557401] dsi_pll_clock_register_7nm: Registered DSI PLL ndx=0, clocks successfully
+<6>[    0.557431] mdss_pll_probe: MDSS pll label = MDSS DSI 1 PLL
+<6>[    0.557433] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 1 PLL PLL SSC enabled
+<6>[    0.568564] dsi_pll_clock_register_7nm: Registered DSI PLL ndx=1, clocks successfully
+<6>[    0.568574] mdss_pll_probe: MDSS pll label = MDSS DP PLL
+<6>[    0.569386] NET: Registered protocol family 2
+<6>[    0.569721] IP idents hash table entries: 262144 (order: 9, 2097152 bytes)
+<6>[    0.571137] tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes)
+<6>[    0.571404] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+<6>[    0.571788] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+<6>[    0.572196] TCP: Hash tables configured (established 131072 bind 65536)
+<6>[    0.572299] UDP hash table entries: 8192 (order: 6, 262144 bytes)
+<6>[    0.572389] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes)
+<6>[    0.572460] NET: Registered protocol family 1
+<6>[    0.572742] NET: Registered protocol family 44
+<7>[    0.572747] PCI: CLS 0 bytes, default 64
+<6>[    0.572960] Trying to unpack rootfs image as initramfs...
+<1>[    0.573854] Unable to handle kernel paging request at virtual address ffffffc22ef9e000
+<1>[    0.573864] Mem abort info:
+<1>[    0.573866]   ESR = 0x96000007
+<1>[    0.573870]   Exception class = DABT (current EL), IL = 32 bits
+<1>[    0.573872]   SET = 0, FnV = 0
+<1>[    0.573874]   EA = 0, S1PTW = 0
+<1>[    0.573877] Data abort info:
+<1>[    0.573879]   ISV = 0, ISS = 0x00000007
+<1>[    0.573882]   CM = 0, WnR = 0
+<1>[    0.573886] swapper pgtable: 4k pages, 39-bit VAs, pgdp = 00000000735b4ba3
+<1>[    0.573889] [ffffffc22ef9e000] pgd=0000000352ffa003, pud=0000000352ffa003, pmd=0000000352f11003, pte=0000000000000000
+<0>[    0.573897] Internal error: Oops: 96000007 [#1] PREEMPT SMP
+<4>[    0.573901] Modules linked in:
+<0>[    0.573905] Process swapper/0 (pid: 1, stack limit = 0x000000000a2a5fab)
+<4>[    0.573910] CPU: 7 PID: 1 Comm: swapper/0 Tainted: G S                4.19.325-cip136-st20-perf-g7a75775b4ee4 #1
+<4>[    0.573913] Hardware name: Burton (DT)
+<4>[    0.573916] pstate: 60c00005 (nZCv daif +PAN +UAO)
+<4>[    0.573930] pc : inflate_fast+0x8c/0x4a4
+<4>[    0.573933] lr :           (null)
+<4>[    0.573936] sp : ffffff801005ba40
+<4>[    0.573938] x29: ffffff801005bac0 x28: 0000000000000010 
+<4>[    0.573941] x27: 0000000000052000 x26: 0000000000000012 
+<4>[    0.573944] x25: 0000000000006e6f x24: ffffffc4a5e462d9 
+<4>[    0.573946] x23: 0000000000000000 x22: 000000000000002b 
+<4>[    0.573949] x21: 000000000000000e x20: 0000000000008000 
+<4>[    0.573951] x19: ffffffa562ab3bf4 x18: ffffffc27fce3058 
+<4>[    0.573953] x17: ffffffa562a6394b x16: 0000000000008000 
+<4>[    0.573956] x15: 0000000000008000 x14: 00000000ffffffff 
+<4>[    0.573958] x13: ffffffc4a5e4630e x12: ffffffc4a5e47eff 
+<4>[    0.573961] x11: 0000000000000c52 x10: ffffffc22fffed3f 
+<4>[    0.573963] x9 : ffffffc22ef9dfff x8 : ffffffc4a5e50000 
+<4>[    0.573966] x7 : 000000000000003f x6 : 00000000000001ff 
+<4>[    0.573968] x5 : ffffffc4a5e50e70 x4 : ffffffc4a5e50548 
+<4>[    0.573970] x3 : ffffffc4a5e52548 x2 : 0000000000000000 
+<4>[    0.573972] x1 : ffffffc4a5e40000 x0 : ffffffc4a680ec80 
+<4>[    0.573975] Call trace:
+<4>[    0.573979]  inflate_fast+0x8c/0x4a4
+<4>[    0.573990]  __gunzip+0x2a0/0x32c
+<4>[    0.573993]  gunzip+0x1c/0x28
+<4>[    0.573998]  unpack_to_rootfs+0x17c/0x2a4
+<4>[    0.574000]  populate_rootfs+0x7c/0xc0
+<4>[    0.574007]  do_one_initcall+0xec/0x384
+<4>[    0.574011]  do_initcall_level+0xb0/0x1b0
+<4>[    0.574013]  do_basic_setup+0x34/0x50
+<4>[    0.574016]  kernel_init_freeable+0xbc/0x140
+<4>[    0.574023]  kernel_init+0x14/0x118
+<4>[    0.574028]  ret_from_fork+0x10/0x18
+<0>[    0.574032] Code: 91252e31 71003abf 54000148 39400136 (39400537) 
+<4>[    0.574036] ---[ end trace 6e4e272a63887bb5 ]---
+<0>[    0.574283] Kernel panic - not syncing: Attempted to kill init! exitcode=0x0000000b
+<0>[    0.574283] 
+<2>[    0.574290] SMP: stopping secondary CPUs
+<3>[    0.574396] ipa ipa3_active_clients_panic_notifier:305 
+<3>[    0.574396] ---- Active Clients Table ----
+<3>[    0.574396] 
+<3>[    0.574396] Total active clients count: 0
+<3>[    0.574396] 
