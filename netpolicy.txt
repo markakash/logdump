@@ -1,0 +1,1935 @@
+System ready: true
+Restrict background: false
+Restrict power: false
+Device idle: false
+Restricted networking mode: true
+Low Power Standby mode: false
+Metered ifaces: {}
+
+Flags:
+com.android.server.net.use_metered_firewall_chains: true
+com.android.server.net.use_different_delays_for_background_chain: false
+com.android.server.net.never_apply_rules_to_core_uids: true
+android.net.platform.flags.use_netstats_per_query_flags: true
+
+mRestrictBackgroundLowPowerMode: false
+mRestrictBackgroundBeforeBsm: false
+mLoadedRestrictBackground: false
+mRestrictBackgroundChangedInBsm: false
+
+Network policies:
+  NetworkPolicy{template=NetworkTemplate: matchRule=CARRIER, matchSubscriberIds=[206201...], matchWifiNetworkKeys=[], metered=YES cycleRule=RecurrenceRule{start=2025-01-23T00:00+01:00[Europe/Brussels] end=null period=P1M} warningBytes=2147483648 limitBytes=-1 lastWarningSnooze=-1 lastLimitSnooze=-1 lastRapidSnooze=-1 metered=true inferred=true}
+
+Subscription plans:
+
+Active subscriptions:
+  1=206201...
+
+Merged subscriptions: [206201...]
+Default platform warning bytes: 2147483648
+
+Policy for UIDs:
+  UID=10120 policy=4 (ALLOW_METERED_BACKGROUND)
+  UID=10129 policy=4 (ALLOW_METERED_BACKGROUND)
+  UID=10157 policy=262144 (REJECT_ALL)
+  UID=10208 policy=4 (ALLOW_METERED_BACKGROUND)
+  UID=10249 policy=4 (ALLOW_METERED_BACKGROUND)
+  UID=10253 policy=4 (ALLOW_METERED_BACKGROUND)
+  UID=10291 policy=262144 (REJECT_ALL)
+  UID=10292 policy=262144 (REJECT_ALL)
+Power save whitelist (except idle) app ids:
+  UID=1001: true
+  UID=2000: true
+  UID=10102: true
+  UID=10112: true
+  UID=10115: true
+  UID=10120: true
+  UID=10124: true
+  UID=10129: true
+  UID=10130: true
+  UID=10174: true
+  UID=10192: true
+  UID=10193: true
+  UID=10198: true
+  UID=10200: true
+  UID=10202: true
+  UID=10203: true
+  UID=10208: true
+  UID=10217: true
+  UID=10247: true
+  UID=10249: true
+  UID=10253: true
+  UID=10294: true
+Power save whitelist app ids:
+  UID=1001: true
+  UID=2000: true
+  UID=10102: true
+  UID=10120: true
+  UID=10124: true
+  UID=10174: true
+  UID=10192: true
+  UID=10198: true
+  UID=10202: true
+  UID=10203: true
+  UID=10208: true
+  UID=10247: true
+  UID=10249: true
+  UID=10253: true
+  UID=10294: true
+App idle whitelist app ids:
+  UID=30107: true
+Default restrict background allowlist uids:
+  UID=10120
+  UID=10129
+  UID=10208
+  UID=10249
+  UID=10253
+
+
+Status for all known UIDs:
+  UID=-1 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=1000 state={procState=TOP ,seq=46,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=1000,proc_state=TOP ,seq=98648,cap=LCMNFUATI,pending=false} 
+  UID=1001 state={procState=PER ,seq=19,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=1001,proc_state=PER ,seq=19,cap=LCMNFUATI,pending=false} 
+  UID=1002 state={procState=PER ,seq=23,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=1002,proc_state=PER ,seq=23,cap=LCMNFUATI,pending=false} 
+  UID=1027 state={procState=PER ,seq=26,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=1027,proc_state=PER ,seq=26,cap=LCMNFUATI,pending=false} 
+  UID=1068 state={procState=PER ,seq=35,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=1068,proc_state=PER ,seq=35,cap=LCMNFUATI,pending=false} 
+  UID=1073 state={procState=PER ,seq=5,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=1073,proc_state=PER ,seq=5,cap=LCMNFUATI,pending=false} 
+  UID=2000 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10000 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10001 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10002 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10003 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10004 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10005 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10006 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10007 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10008 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10009 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10010 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10011 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10012 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10013 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10014 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10015 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10016 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10017 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10018 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10019 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10020 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10021 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10022 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10023 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10024 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10025 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10026 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10027 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10028 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10029 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10030 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10031 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10032 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10033 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10034 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10035 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10036 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10037 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10038 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10039 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10040 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10041 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10042 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10043 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10044 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10045 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10046 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10047 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10048 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10049 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10050 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10051 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10052 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10053 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10054 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10055 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10056 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10057 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10058 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10059 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10060 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10061 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10062 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10063 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10064 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10065 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10066 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10067 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10068 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10069 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10070 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10071 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10072 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10073 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10074 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10075 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10076 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10077 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10078 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10079 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10080 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10081 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10082 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10083 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10084 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10085 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10086 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10087 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10088 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10089 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10090 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10091 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10092 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10093 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10094 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10095 state={procState=PER ,seq=20,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10095,proc_state=PER ,seq=20,cap=LCMNFUATI,pending=false} 
+  UID=10096 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10097 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10098 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10099 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10100 state={procState=CEM ,seq=28816,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10100,proc_state=CEM ,seq=28816,cap=-------T-,pending=false} 
+  UID=10101 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10102 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10103 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10104 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10105 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10106 state={procState=CEM ,seq=93683,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10106,proc_state=CEM ,seq=93683,cap=---------,pending=false} 
+  UID=10107 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10108 state={procState=CEM ,seq=89579,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10108,proc_state=CEM ,seq=89579,cap=---------,pending=false} 
+  UID=10109 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10110 state={procState=CEM ,seq=28791,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10110,proc_state=CEM ,seq=28791,cap=-------T-,pending=false} 
+  UID=10111 state={procState=CEM ,seq=99150,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10111,proc_state=CEM ,seq=99150,cap=---------,pending=false} 
+  UID=10112 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10113 state={procState=CEM ,seq=89627,cap=---------} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10113,proc_state=CEM ,seq=89627,cap=---------,pending=false} 
+  UID=10114 state={procState=CEM ,seq=73356,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10114,proc_state=CEM ,seq=73356,cap=---------,pending=false} 
+  UID=10115 state={procState=CRE ,seq=89686,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10115,proc_state=CRE ,seq=89686,cap=---------,pending=false} 
+  UID=10116 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10117 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10118 state={procState=BFGS,seq=36359,cap=---NFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10118,proc_state=BFGS,seq=36359,cap=---NFUATI,pending=false} 
+  UID=10119 state={procState=CEM ,seq=28314,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10119,proc_state=CEM ,seq=28314,cap=-------T-,pending=false} 
+  UID=10120 state={procState=BFGS,seq=99051,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_USER_EXEMPTED|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10120,proc_state=BFGS,seq=99051,cap=LCMNFUATI,pending=false} 
+  UID=10121 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10122 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10123 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10124 state={procState=CEM ,seq=72277,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10124,proc_state=CEM ,seq=72277,cap=---------,pending=false} 
+  UID=10125 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10126 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10127 state={procState=CEM ,seq=28814,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10127,proc_state=CEM ,seq=28814,cap=-------T-,pending=false} 
+  UID=10128 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10129 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS|METERED_USER_EXEMPTED,effective=NONE} 
+    callback_info=null 
+  UID=10130 state={procState=CEM ,seq=96873,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10130,proc_state=CEM ,seq=96873,cap=---------,pending=false} 
+  UID=10131 state={procState=BFGS,seq=94849,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10131,proc_state=BFGS,seq=94849,cap=LCMNFUATI,pending=false} 
+  UID=10132 state={procState=CEM ,seq=70485,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10132,proc_state=CEM ,seq=70485,cap=---------,pending=false} 
+  UID=10133 state={procState=CAC ,seq=72204,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10133,proc_state=CAC ,seq=72204,cap=---------,pending=false} 
+  UID=10134 state={procState=SVC ,seq=99044,cap=-------TI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND,effective=NONE} 
+    callback_info={uid=10134,proc_state=SVC ,seq=99044,cap=-------TI,pending=false} 
+  UID=10135 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10136 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10137 state={procState=CAC ,seq=89446,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10137,proc_state=CAC ,seq=89446,cap=---------,pending=false} 
+  UID=10138 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10139 state={procState=CEM ,seq=73351,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10139,proc_state=CEM ,seq=73351,cap=---------,pending=false} 
+  UID=10140 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10141 state={procState=BFGS,seq=13612,cap=---NFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10141,proc_state=BFGS,seq=13612,cap=---NFUATI,pending=false} 
+  UID=10142 state={procState=IMPB,seq=69599,cap=-------TI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND,effective=NONE} 
+    callback_info={uid=10142,proc_state=IMPB,seq=69599,cap=-------TI,pending=false} 
+  UID=10143 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10144 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10145 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10146 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10147 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10148 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10149 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10150 state={procState=CEM ,seq=99148,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10150,proc_state=CEM ,seq=99148,cap=---------,pending=false} 
+  UID=10151 state={procState=CEM ,seq=72315,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10151,proc_state=CEM ,seq=72315,cap=---------,pending=false} 
+  UID=10152 state={procState=PER ,seq=540,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10152,proc_state=PER ,seq=540,cap=LCMNFUATI,pending=false} 
+  UID=10153 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10154 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10155 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10156 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10157 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10158 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10159 state={procState=CEM ,seq=46738,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10159,proc_state=CEM ,seq=46738,cap=---------,pending=false} 
+  UID=10160 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10161 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10162 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10163 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10164 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10165 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10166 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10167 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10168 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10169 state={procState=CEM ,seq=33088,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10169,proc_state=CEM ,seq=33088,cap=---------,pending=false} 
+  UID=10170 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10171 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10172 state={procState=BFGS,seq=94894,cap=---NFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10172,proc_state=BFGS,seq=94894,cap=---NFUATI,pending=false} 
+  UID=10173 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10174 state={procState=PER ,seq=28,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10174,proc_state=PER ,seq=28,cap=LCMNFUATI,pending=false} 
+  UID=10175 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10176 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10177 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10178 state={procState=PER ,seq=98733,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10178,proc_state=PER ,seq=98733,cap=LCMNFUATI,pending=false} 
+  UID=10179 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10180 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10181 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10182 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10183 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10184 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10185 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10186 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10187 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10188 state={procState=PER ,seq=22,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10188,proc_state=PER ,seq=22,cap=LCMNFUATI,pending=false} 
+  UID=10189 state={procState=PER ,seq=27,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10189,proc_state=PER ,seq=27,cap=LCMNFUATI,pending=false} 
+  UID=10190 state={procState=PER ,seq=43,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10190,proc_state=PER ,seq=43,cap=LCMNFUATI,pending=false} 
+  UID=10191 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10192 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10193 state={procState=CEM ,seq=28281,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10193,proc_state=CEM ,seq=28281,cap=-------T-,pending=false} 
+  UID=10194 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10195 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10196 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10197 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10198 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10199 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10200 state={procState=LAST,seq=98643,cap=--------I} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10200,proc_state=LAST,seq=98643,cap=--------I,pending=false} 
+  UID=10201 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10202 state={procState=CEM ,seq=30107,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10202,proc_state=CEM ,seq=30107,cap=-------T-,pending=false} 
+  UID=10203 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10204 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10205 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10206 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10207 state={procState=CEM ,seq=89427,cap=---------} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10207,proc_state=CEM ,seq=89427,cap=---------,pending=false} 
+  UID=10208 state={procState=CEM ,seq=89591,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS|METERED_USER_EXEMPTED,effective=NONE} 
+    callback_info={uid=10208,proc_state=CEM ,seq=89591,cap=---------,pending=false} 
+  UID=10209 state={procState=CEM ,seq=89453,cap=-------TI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10209,proc_state=CEM ,seq=89453,cap=-------TI,pending=false} 
+  UID=10210 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10211 state={procState=CEM ,seq=89241,cap=-------TI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10211,proc_state=CEM ,seq=89241,cap=-------TI,pending=false} 
+  UID=10212 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10213 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10214 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10215 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10217 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10218 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10219 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10220 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10221 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10222 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10223 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10224 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10225 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10226 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10227 state={procState=CEM ,seq=91214,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10227,proc_state=CEM ,seq=91214,cap=---------,pending=false} 
+  UID=10228 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10229 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10230 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10231 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10232 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10233 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10234 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10235 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10236 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10237 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10238 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10239 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10240 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10241 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10242 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10243 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10244 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10245 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10246 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10247 state={procState=CEM ,seq=96893,cap=---------} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10247,proc_state=CEM ,seq=96893,cap=---------,pending=false} 
+  UID=10248 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10249 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS|METERED_USER_EXEMPTED,effective=NONE} 
+    callback_info=null 
+  UID=10250 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10251 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10252 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10253 state={procState=CEM ,seq=89468,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS|METERED_USER_EXEMPTED,effective=NONE} 
+    callback_info={uid=10253,proc_state=CEM ,seq=89468,cap=---------,pending=false} 
+  UID=10254 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10255 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10256 state={procState=CEM ,seq=99154,cap=---------} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10256,proc_state=CEM ,seq=99154,cap=---------,pending=false} 
+  UID=10257 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10258 state={procState=PER ,seq=617,cap=LCMNFUATI} blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info={uid=10258,proc_state=PER ,seq=617,cap=LCMNFUATI,pending=false} 
+  UID=10259 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10260 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10261 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10262 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10263 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10264 state={procState=BFGS,seq=267,cap=---NFUATI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE} 
+    callback_info={uid=10264,proc_state=BFGS,seq=267,cap=---NFUATI,pending=false} 
+  UID=10265 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10266 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10267 state={procState=CEM ,seq=29034,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10267,proc_state=CEM ,seq=29034,cap=---------,pending=false} 
+  UID=10269 state={procState=CRE ,seq=97133,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10269,proc_state=CRE ,seq=97133,cap=---------,pending=false} 
+  UID=10270 state={procState=CRE ,seq=71534,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10270,proc_state=CRE ,seq=71534,cap=---------,pending=false} 
+  UID=10271 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10272 state={procState=CEM ,seq=29673,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10272,proc_state=CEM ,seq=29673,cap=-------T-,pending=false} 
+  UID=10273 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10274 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10275 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10276 state={procState=CAC ,seq=77382,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10276,proc_state=CAC ,seq=77382,cap=---------,pending=false} 
+  UID=10277 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10278 state={procState=CAC ,seq=93712,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10278,proc_state=CAC ,seq=93712,cap=---------,pending=false} 
+  UID=10279 state={procState=CEM ,seq=89679,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10279,proc_state=CEM ,seq=89679,cap=---------,pending=false} 
+  UID=10280 state={procState=CRE ,seq=96860,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10280,proc_state=CRE ,seq=96860,cap=---------,pending=false} 
+  UID=10281 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10282 state={procState=CAC ,seq=23054,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10282,proc_state=CAC ,seq=23054,cap=---------,pending=false} 
+  UID=10283 state={procState=CAC ,seq=96930,cap=-------T-} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10283,proc_state=CAC ,seq=96930,cap=-------T-,pending=false} 
+  UID=10284 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10285 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10286 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10287 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10288 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10289 state={procState=CAC ,seq=72637,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10289,proc_state=CAC ,seq=72637,cap=---------,pending=false} 
+  UID=10290 state=null blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info=null 
+  UID=10291 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10292 state=null blocked_state={blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE} 
+    callback_info=null 
+  UID=10293 state={procState=CAC ,seq=97110,cap=---------} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=RESTRICTED_MODE_PERMISSIONS,effective=APP_BACKGROUND} 
+    callback_info={uid=10293,proc_state=CAC ,seq=97110,cap=---------,pending=false} 
+  UID=10294 state={procState=IMPF,seq=47704,cap=-------TI} blocked_state={blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=POWER_SAVE_ALLOWLIST|POWER_SAVE_EXCEPT_IDLE_ALLOWLIST|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND,effective=NONE} 
+    callback_info={uid=10294,proc_state=IMPF,seq=47704,cap=-------TI,pending=false} 
+  UID=30107 state={procState=TOP ,seq=98898,cap=LCMNFUATI} blocked_state=null 
+    callback_info={uid=30107,proc_state=TOP ,seq=98899,cap=LCMNFUATI,pending=false} 
+  UID=90000 state={procState=CACC,seq=89445,cap=---------} blocked_state=null 
+    callback_info={uid=90000,proc_state=CACC,seq=89445,cap=---------,pending=false} 
+  UID=90001 state={procState=CACC,seq=89444,cap=---------} blocked_state=null 
+    callback_info={uid=90001,proc_state=CACC,seq=89444,cap=---------,pending=false} 
+  UID=90002 state={procState=CACC,seq=89443,cap=---------} blocked_state=null 
+    callback_info={uid=90002,proc_state=CACC,seq=89443,cap=---------,pending=false} 
+  UID=99000 state={procState=BFGS,seq=1159,cap=---NFUATI} blocked_state=null 
+    callback_info={uid=99000,proc_state=BFGS,seq=1159,cap=---NFUATI,pending=false} 
+  UID=99002 state={procState=CACC,seq=96929,cap=-------T-} blocked_state=null 
+    callback_info={uid=99002,proc_state=CACC,seq=96929,cap=-------T-,pending=false} 
+  UID=99003 state={procState=CEM ,seq=29734,cap=-------TI} blocked_state=null 
+    callback_info={uid=99003,proc_state=CEM ,seq=29734,cap=-------TI,pending=false} 
+  UID=99004 state={procState=CEM ,seq=38405,cap=-------TI} blocked_state=null 
+    callback_info={uid=99004,proc_state=CEM ,seq=38405,cap=-------TI,pending=false} 
+  UID=99005 state={procState=CACC,seq=37788,cap=-------TI} blocked_state=null 
+    callback_info={uid=99005,proc_state=CACC,seq=37788,cap=-------TI,pending=false} 
+  UID=99006 state={procState=CEM ,seq=71533,cap=---------} blocked_state=null 
+    callback_info={uid=99006,proc_state=CEM ,seq=71533,cap=---------,pending=false} 
+  UID=99007 state={procState=CACC,seq=45307,cap=-------TI} blocked_state=null 
+    callback_info={uid=99007,proc_state=CACC,seq=45307,cap=-------TI,pending=false} 
+  UID=99008 state={procState=CACC,seq=97107,cap=---------} blocked_state=null 
+    callback_info={uid=99008,proc_state=CACC,seq=97107,cap=---------,pending=false} 
+
+Admin restricted uids for metered data:
+  u0: {}
+
+Network to interfaces:
+  105: {wlan0}
+
+Active notifications: {}
+
+Stats:
+  updateNetworkEnabledNL(): count=170, total=5.1ms, avg=0.030ms, max calls/s=11 max dur/s=1.0ms max time=1.0ms
+  isUidNetworkingBlocked(): count=1555, total=67.0ms, avg=0.043ms, max calls/s=19 max dur/s=3.9ms max time=3.7ms
+
+mEventLogs (most recent first):
+  2026-11-23T13:43:50:050 - Firewall rule changed: 20111-background-default
+  2026-11-23T13:43:50:050 - Firewall rule changed: 10111-background-default
+  2026-11-23T13:43:50:050 - Firewall rule changed: 20150-background-default
+  2026-11-23T13:43:50:050 - Firewall rule changed: 10150-background-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:43:44:290 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:43:39:289 - Firewall rule changed: 20269-background-default
+  2026-11-23T13:43:39:289 - Firewall rule changed: 10269-background-default
+  2026-11-23T13:43:39:234 - Firewall rule changed: 20293-background-default
+  2026-11-23T13:43:39:234 - Firewall rule changed: 10293-background-default
+  2026-11-23T13:43:37:598 - Firewall rule changed: 20111-background-allow
+  2026-11-23T13:43:37:597 - Firewall rule changed: 10111-background-allow
+  2026-11-23T13:43:37:594 - Firewall rule changed: 20150-background-allow
+  2026-11-23T13:43:37:594 - Firewall rule changed: 10150-background-allow
+  2026-11-23T13:43:34:607 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:43:34:607 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:43:34:607 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:43:34:607 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:43:34:607 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:43:34:607 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:43:34:607 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:43:34:607 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:43:34:081 - Firewall rule changed: 20269-background-allow
+  2026-11-23T13:43:34:081 - Firewall rule changed: 10269-background-allow
+  2026-11-23T13:43:34:062 - Firewall rule changed: 20293-background-allow
+  2026-11-23T13:43:34:062 - Firewall rule changed: 10293-background-allow
+  2026-11-23T13:38:31:533 - Firewall rule changed: 20283-background-default
+  2026-11-23T13:38:31:532 - Firewall rule changed: 10283-background-default
+  2026-11-23T13:38:31:531 - Firewall rule changed: 20283-standby-default
+  2026-11-23T13:38:31:531 - Firewall rule changed: 10283-standby-default
+  2026-11-23T13:38:31:531 - temp-power-save whitelist for 10283 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:38:16:649 - Firewall rule changed: 20283-background-allow
+  2026-11-23T13:38:16:649 - Firewall rule changed: 10283-background-allow
+  2026-11-23T13:38:11:497 - Firewall rule changed: 20283-background-allow
+  2026-11-23T13:38:11:497 - Firewall rule changed: 10283-background-allow
+  2026-11-23T13:38:11:497 - Firewall rule changed: 20283-standby-default
+  2026-11-23T13:38:11:497 - Firewall rule changed: 10283-standby-default
+  2026-11-23T13:38:11:497 - temp-power-save whitelist for 10283 changed to: true; reason=PUSH_MESSAGING <9310ec7 com.google.android.c2dm.intent.RECEIVE/u0/0x2152>
+  2026-11-23T13:38:11:494 - Firewall rule changed: 20283-background-allow
+  2026-11-23T13:38:11:494 - Firewall rule changed: 10283-background-allow
+  2026-11-23T13:36:18:994 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:36:18:994 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:36:13:968 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:36:13:968 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:35:05:117 - Firewall rule changed: 20280-background-default
+  2026-11-23T13:35:05:117 - Firewall rule changed: 10280-background-default
+  2026-11-23T13:35:00:056 - Firewall rule changed: 20280-background-allow
+  2026-11-23T13:35:00:056 - Firewall rule changed: 10280-background-allow
+  2026-11-23T13:30:43:017 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:30:43:017 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:30:38:004 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:30:38:004 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:29:54:457 - Firewall rule changed: 20178-background-allow
+  2026-11-23T13:29:54:457 - Firewall rule changed: 10178-background-allow
+  2026-11-23T13:29:54:457 - Firewall rule changed: 20178-standby-default
+  2026-11-23T13:29:54:457 - Firewall rule changed: 10178-standby-default
+  2026-11-23T13:29:54:457 - temp-power-save whitelist for 10178 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:29:44:452 - Firewall rule changed: 20178-background-allow
+  2026-11-23T13:29:44:452 - Firewall rule changed: 10178-background-allow
+  2026-11-23T13:29:44:452 - Firewall rule changed: 20178-standby-default
+  2026-11-23T13:29:44:452 - Firewall rule changed: 10178-standby-default
+  2026-11-23T13:29:44:452 - temp-power-save whitelist for 10178 changed to: true; reason=ALARM_MANAGER_WHILE_IDLE <44e107a com.android.internal.policy.impl.PhoneWindowManager.DELAYED_KEYGUARD/u0/0x2056>
+  2026-11-23T13:29:39:971 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:29:39:971 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:29:39:971 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:29:39:971 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:29:39:970 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:29:39:970 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:29:39:970 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:29:39:970 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:27:42:566 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:27:42:566 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:27:37:560 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:27:37:560 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:27:33:235 - Firewall rule changed: 20111-background-default
+  2026-11-23T13:27:33:235 - Firewall rule changed: 10111-background-default
+  2026-11-23T13:27:33:234 - Firewall rule changed: 20150-background-default
+  2026-11-23T13:27:33:233 - Firewall rule changed: 10150-background-default
+  2026-11-23T13:27:20:711 - Firewall rule changed: 20111-background-allow
+  2026-11-23T13:27:20:711 - Firewall rule changed: 10111-background-allow
+  2026-11-23T13:27:20:711 - Firewall rule changed: 20150-background-allow
+  2026-11-23T13:27:20:711 - Firewall rule changed: 10150-background-allow
+  2026-11-23T13:27:19:582 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:27:19:582 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:27:19:582 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:27:19:581 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:27:19:579 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:27:19:579 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:27:19:579 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:27:19:579 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:26:54:179 - Firewall rule changed: 20178-background-allow
+  2026-11-23T13:26:54:179 - Firewall rule changed: 10178-background-allow
+  2026-11-23T13:26:54:179 - Firewall rule changed: 20178-standby-default
+  2026-11-23T13:26:54:179 - Firewall rule changed: 10178-standby-default
+  2026-11-23T13:26:54:178 - temp-power-save whitelist for 10178 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:26:44:977 - Firewall rule changed: 20293-background-default
+  2026-11-23T13:26:44:977 - Firewall rule changed: 10293-background-default
+  2026-11-23T13:26:44:905 - Firewall rule changed: 20269-background-default
+  2026-11-23T13:26:44:905 - Firewall rule changed: 10269-background-default
+  2026-11-23T13:26:44:165 - Firewall rule changed: 20178-background-allow
+  2026-11-23T13:26:44:165 - Firewall rule changed: 10178-background-allow
+  2026-11-23T13:26:44:165 - Firewall rule changed: 20178-standby-default
+  2026-11-23T13:26:44:165 - Firewall rule changed: 10178-standby-default
+  2026-11-23T13:26:44:165 - temp-power-save whitelist for 10178 changed to: true; reason=ALARM_MANAGER_WHILE_IDLE <2834a70 com.android.internal.policy.impl.PhoneWindowManager.DELAYED_KEYGUARD/u0/0x2056>
+  2026-11-23T13:26:39:769 - Firewall rule changed: 20269-background-allow
+  2026-11-23T13:26:39:769 - Firewall rule changed: 10269-background-allow
+  2026-11-23T13:26:39:741 - Firewall rule changed: 20293-background-allow
+  2026-11-23T13:26:39:741 - Firewall rule changed: 10293-background-allow
+  2026-11-23T13:25:52:478 - Firewall rule changed: 20278-background-default
+  2026-11-23T13:25:52:477 - Firewall rule changed: 10278-background-default
+  2026-11-23T13:25:42:352 - Firewall rule changed: 20278-background-allow
+  2026-11-23T13:25:42:352 - Firewall rule changed: 10278-background-allow
+  2026-11-23T13:25:13:854 - Firewall rule changed: 20294-background-allow
+  2026-11-23T13:25:13:854 - Firewall rule changed: 10294-background-allow
+  2026-11-23T13:25:13:854 - Firewall rule changed: 20294-standby-default
+  2026-11-23T13:25:13:854 - Firewall rule changed: 10294-standby-default
+  2026-11-23T13:25:13:854 - temp-power-save whitelist for 10294 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:25:05:345 - Firewall rule changed: 20106-background-default
+  2026-11-23T13:25:05:345 - Firewall rule changed: 10106-background-default
+  2026-11-23T13:25:03:838 - Firewall rule changed: 20294-background-allow
+  2026-11-23T13:25:03:838 - Firewall rule changed: 10294-background-allow
+  2026-11-23T13:25:03:838 - Firewall rule changed: 20294-standby-default
+  2026-11-23T13:25:03:838 - Firewall rule changed: 10294-standby-default
+  2026-11-23T13:25:03:837 - temp-power-save whitelist for 10294 changed to: true; reason=ALARM_MANAGER_WHILE_IDLE <d3bf228 org.microg.gms.gcm.mcs.RECONNECT/u0/0x2055>
+  2026-11-23T13:25:00:329 - Firewall rule changed: 20106-standby-default
+  2026-11-23T13:25:00:329 - Firewall rule changed: 10106-standby-default
+  2026-11-23T13:25:00:328 - Firewall rule changed: 20106-metered_allow-default
+  2026-11-23T13:25:00:328 - Firewall rule changed: 10106-metered_allow-default
+  2026-11-23T13:25:00:327 - Firewall rule changed: 20106-metered_deny_user-default
+  2026-11-23T13:25:00:327 - Firewall rule changed: 10106-metered_deny_user-default
+  2026-11-23T13:25:00:327 - Firewall rule changed: 20106-metered_deny_admin-default
+  2026-11-23T13:25:00:327 - Firewall rule changed: 10106-metered_deny_admin-default
+  2026-11-23T13:24:59:669 - Firewall rule changed: 20112-background-allow
+  2026-11-23T13:24:59:669 - Firewall rule changed: 10112-background-allow
+  2026-11-23T13:24:57:286 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:24:57:286 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:24:52:251 - Firewall rule changed: 20130-background-allow
+  2026-11-23T13:24:52:251 - Firewall rule changed: 10130-background-allow
+  2026-11-23T13:24:46:158 - Firewall rule changed: 20111-background-default
+  2026-11-23T13:24:46:158 - Firewall rule changed: 10111-background-default
+  2026-11-23T13:24:46:156 - Firewall rule changed: 20150-background-default
+  2026-11-23T13:24:46:156 - Firewall rule changed: 10150-background-default
+  2026-11-23T13:24:44:374 - Firewall rule changed: 20294-background-allow
+  2026-11-23T13:24:44:374 - Firewall rule changed: 10294-background-allow
+  2026-11-23T13:24:44:374 - Firewall rule changed: 20294-standby-default
+  2026-11-23T13:24:44:374 - Firewall rule changed: 10294-standby-default
+  2026-11-23T13:24:44:374 - temp-power-save whitelist for 10294 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:24:39:786 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:39:786 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:39:786 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:24:39:785 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:24:39:785 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:39:785 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:39:785 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:39:785 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:24:34:480 - Firewall rule changed: 20293-background-default
+  2026-11-23T13:24:34:480 - Firewall rule changed: 10293-background-default
+  2026-11-23T13:24:33:755 - Firewall rule changed: 20150-background-allow
+  2026-11-23T13:24:33:755 - Firewall rule changed: 10150-background-allow
+  2026-11-23T13:24:33:725 - Firewall rule changed: 20111-background-allow
+  2026-11-23T13:24:33:725 - Firewall rule changed: 10111-background-allow
+  2026-11-23T13:24:33:433 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:33:433 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:33:433 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:24:33:433 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:24:33:433 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:33:433 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:33:433 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:33:433 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:31:741 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:24:29:476 - Firewall rule changed: 20293-standby-default
+  2026-11-23T13:24:29:476 - Firewall rule changed: 10293-standby-default
+  2026-11-23T13:24:29:476 - App idle whitelist state of uid 10293: false
+  2026-11-23T13:24:29:382 - Firewall rule changed: 20293-background-allow
+  2026-11-23T13:24:29:382 - Firewall rule changed: 10293-background-allow
+  2026-11-23T13:24:29:358 - App idle whitelist state of uid 30107: true
+  2026-11-23T13:24:29:157 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:29:157 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:29:157 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:24:29:157 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:24:29:156 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:29:156 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:29:156 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:29:156 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:24:28:780 - Firewall rule changed: 20293-standby-default
+  2026-11-23T13:24:28:780 - Firewall rule changed: 10293-standby-default
+  2026-11-23T13:24:28:780 - App idle whitelist state of uid 10293: true
+  2026-11-23T13:24:28:249 - Interfaces of netId=105 changed to {wlan0}
+  2026-11-23T13:24:28:248 - Roaming of netId=105 changed to false
+  2026-11-23T13:24:28:248 - Meteredness of netId=105 changed to false
+  2026-11-23T13:24:27:952 - Firewall rule changed: 20227-background-default
+  2026-11-23T13:24:27:951 - Firewall rule changed: 10227-background-default
+  2026-11-23T13:24:27:786 - Firewall rule changed: 20294-background-allow
+  2026-11-23T13:24:27:786 - Firewall rule changed: 10294-background-allow
+  2026-11-23T13:24:27:786 - Firewall rule changed: 20294-standby-default
+  2026-11-23T13:24:27:786 - Firewall rule changed: 10294-standby-default
+  2026-11-23T13:24:27:786 - temp-power-save whitelist for 10294 changed to: true; reason=ALARM_MANAGER_WHILE_IDLE <7144ce6 org.microg.gms.gcm.mcs.RECONNECT/u0/0x2055>
+  2026-11-23T13:24:25:990 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:25:990 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:25:990 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:24:25:990 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:24:25:989 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:25:989 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:25:989 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:25:989 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:24:25:927 - App idle whitelist state of uid 30107: false
+  2026-11-23T13:24:25:266 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:25:266 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:25:266 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:24:25:266 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:24:25:266 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:25:266 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:25:266 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:25:266 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:24:23:002 - Interfaces of netId=104 changed to {rmnet_data3}
+  2026-11-23T13:24:23:001 - Roaming of netId=104 changed to false
+  2026-11-23T13:24:23:001 - Meteredness of netId=104 changed to true
+  2026-11-23T13:24:22:934 - Firewall rule changed: 20227-background-allow
+  2026-11-23T13:24:22:934 - Firewall rule changed: 10227-background-allow
+  2026-11-23T13:24:20:462 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:20:462 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:20:462 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:24:20:462 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:24:20:462 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:20:462 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:20:462 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:20:462 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:24:18:774 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:24:18:774 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:24:18:774 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:24:18:774 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:24:18:774 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:24:18:774 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:24:18:774 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:24:18:774 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:23:54:250 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:23:54:250 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:23:54:250 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:23:54:249 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:23:54:249 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:23:54:249 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:23:54:249 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:23:54:249 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:23:52:628 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:23:52:628 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:23:52:628 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:23:52:627 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:23:52:627 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:23:52:627 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:23:52:627 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:23:52:627 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:23:38:016 - temp-power-save whitelist for 1000 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:23:33:983 - temp-power-save whitelist for 30107 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:23:31:974 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:23:31:974 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:23:30:570 - Firewall rule changed: 20279-background-default
+  2026-11-23T13:23:30:570 - Firewall rule changed: 10279-background-default
+  2026-11-23T13:23:25:551 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:23:25:551 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:23:25:540 - Firewall rule changed: 20279-background-allow
+  2026-11-23T13:23:25:539 - Firewall rule changed: 10279-background-allow
+  2026-11-23T13:23:13:539 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:23:13:539 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:23:13:437 - Firewall rule changed: 20208-background-allow
+  2026-11-23T13:23:13:437 - Firewall rule changed: 10208-background-allow
+  2026-11-23T13:23:13:414 - Firewall rule changed: 20108-background-default
+  2026-11-23T13:23:13:414 - Firewall rule changed: 10108-background-default
+  2026-11-23T13:23:13:333 - Firewall rule changed: 20253-background-allow
+  2026-11-23T13:23:13:333 - Firewall rule changed: 10253-background-allow
+  2026-11-23T13:23:13:205 - Firewall rule changed: 20137-background-default
+  2026-11-23T13:23:13:204 - Firewall rule changed: 10137-background-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:23:08:588 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:23:08:581 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:23:08:581 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:23:08:581 - Firewall rule changed: 20134-metered_allow-allow
+  2026-11-23T13:23:08:580 - Firewall rule changed: 10134-metered_allow-allow
+  2026-11-23T13:23:08:580 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:23:08:580 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:23:08:580 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:23:08:580 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:23:08:512 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:23:08:512 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:23:08:397 - Firewall rule changed: 20208-background-allow
+  2026-11-23T13:23:08:397 - Firewall rule changed: 10208-background-allow
+  2026-11-23T13:23:08:366 - Firewall rule changed: 20115-standby-default
+  2026-11-23T13:23:08:366 - Firewall rule changed: 10115-standby-default
+  2026-11-23T13:23:08:366 - Firewall rule changed: 20115-metered_allow-default
+  2026-11-23T13:23:08:366 - Firewall rule changed: 10115-metered_allow-default
+  2026-11-23T13:23:08:366 - Firewall rule changed: 20115-metered_deny_user-default
+  2026-11-23T13:23:08:366 - Firewall rule changed: 10115-metered_deny_user-default
+  2026-11-23T13:23:08:366 - Firewall rule changed: 20115-metered_deny_admin-default
+  2026-11-23T13:23:08:366 - Firewall rule changed: 10115-metered_deny_admin-default
+  2026-11-23T13:23:08:340 - Firewall rule changed: 20108-background-allow
+  2026-11-23T13:23:08:340 - Firewall rule changed: 10108-background-allow
+  2026-11-23T13:23:08:318 - Firewall rule changed: 20115-standby-default
+  2026-11-23T13:23:08:318 - Firewall rule changed: 10115-standby-default
+  2026-11-23T13:23:08:318 - Firewall rule changed: 20115-metered_allow-allow
+  2026-11-23T13:23:08:318 - Firewall rule changed: 10115-metered_allow-allow
+  2026-11-23T13:23:08:317 - Firewall rule changed: 20115-metered_deny_user-default
+  2026-11-23T13:23:08:317 - Firewall rule changed: 10115-metered_deny_user-default
+  2026-11-23T13:23:08:317 - Firewall rule changed: 20115-metered_deny_admin-default
+  2026-11-23T13:23:08:317 - Firewall rule changed: 10115-metered_deny_admin-default
+  2026-11-23T13:23:08:244 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:23:08:244 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:23:08:231 - Firewall rule changed: 20253-background-allow
+  2026-11-23T13:23:08:231 - Firewall rule changed: 10253-background-allow
+  2026-11-23T13:23:08:171 - Firewall rule changed: 20137-background-allow
+  2026-11-23T13:23:08:171 - Firewall rule changed: 10137-background-allow
+  2026-11-23T13:23:08:025 - temp-power-save whitelist for 1000 changed to: true; reason=KEY_CHAIN <keychain>
+  2026-11-23T13:23:07:956 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:23:07:956 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:23:07:821 - Firewall rule changed: 20268-background-default
+  2026-11-23T13:23:07:821 - Firewall rule changed: 10268-background-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 20134-standby-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 10134-standby-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 20134-metered_allow-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 10134-metered_allow-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 20134-metered_deny_user-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 10134-metered_deny_user-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 20134-metered_deny_admin-default
+  2026-11-23T13:23:03:762 - Firewall rule changed: 10134-metered_deny_admin-default
+  2026-11-23T13:23:03:426 - App idle whitelist state of uid 30107: true
+  2026-11-23T13:23:03:422 - Firewall rule changed: 20106-background-allow
+  2026-11-23T13:23:03:422 - Firewall rule changed: 10106-background-allow
+  2026-11-23T13:23:03:422 - Firewall rule changed: 20106-standby-default
+  2026-11-23T13:23:03:422 - Firewall rule changed: 10106-standby-default
+  2026-11-23T13:23:03:422 - Firewall rule changed: 20106-metered_allow-allow
+  2026-11-23T13:23:03:422 - Firewall rule changed: 10106-metered_allow-allow
+  2026-11-23T13:23:03:422 - Firewall rule changed: 20106-metered_deny_user-default
+  2026-11-23T13:23:03:422 - Firewall rule changed: 10106-metered_deny_user-default
+  2026-11-23T13:23:03:422 - Firewall rule changed: 20106-metered_deny_admin-default
+  2026-11-23T13:23:03:422 - Firewall rule changed: 10106-metered_deny_admin-default
+  2026-11-23T13:23:03:199 - App idle whitelist state of uid 30107: false
+  2026-11-23T13:23:03:172 - Firewall rule changed: 20106-standby-default
+  2026-11-23T13:23:03:172 - Firewall rule changed: 10106-standby-default
+  2026-11-23T13:23:03:172 - Firewall rule changed: 20106-metered_allow-default
+  2026-11-23T13:23:03:172 - Firewall rule changed: 10106-metered_allow-default
+  2026-11-23T13:23:03:172 - Firewall rule changed: 20106-metered_deny_user-default
+  2026-11-23T13:23:03:172 - Firewall rule changed: 10106-metered_deny_user-default
+  2026-11-23T13:23:03:172 - Firewall rule changed: 20106-metered_deny_admin-default
+  2026-11-23T13:23:03:172 - Firewall rule changed: 10106-metered_deny_admin-default
+  2026-11-23T13:23:02:319 - Firewall rule changed: 20208-background-allow
+  2026-11-23T13:23:02:319 - Firewall rule changed: 10208-background-allow
+  2026-11-23T13:23:02:181 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:23:02:181 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:23:02:128 - Firewall rule changed: 20137-background-default
+  2026-11-23T13:23:02:128 - Firewall rule changed: 10137-background-default
+  2026-11-23T13:22:57:799 - temp-power-save whitelist for 30107 changed to: true; reason=SERVICE_LAUNCH <fg-service-launch>
+  2026-11-23T13:22:57:674 - App idle whitelist state of uid 30107: true
+  2026-11-23T13:22:57:423 - Firewall rule changed: 20106-background-allow
+  2026-11-23T13:22:57:423 - Firewall rule changed: 10106-background-allow
+  2026-11-23T13:22:57:423 - Firewall rule changed: 20106-standby-default
+  2026-11-23T13:22:57:423 - Firewall rule changed: 10106-standby-default
+  2026-11-23T13:22:57:422 - Firewall rule changed: 20106-metered_allow-allow
+  2026-11-23T13:22:57:422 - Firewall rule changed: 10106-metered_allow-allow
+  2026-11-23T13:22:57:422 - Firewall rule changed: 20106-metered_deny_user-default
+  2026-11-23T13:22:57:422 - Firewall rule changed: 10106-metered_deny_user-default
+  2026-11-23T13:22:57:422 - Firewall rule changed: 20106-metered_deny_admin-default
+  2026-11-23T13:22:57:422 - Firewall rule changed: 10106-metered_deny_admin-default
+  2026-11-23T13:22:57:307 - Firewall rule changed: 20208-background-allow
+  2026-11-23T13:22:57:307 - Firewall rule changed: 10208-background-allow
+  2026-11-23T13:22:57:147 - Firewall rule changed: 20115-background-allow
+  2026-11-23T13:22:57:147 - Firewall rule changed: 10115-background-allow
+  2026-11-23T13:22:57:142 - App idle whitelist state of uid 30107: false
+  2026-11-23T13:22:57:114 - Firewall rule changed: 20137-background-allow
+  2026-11-23T13:22:57:114 - Firewall rule changed: 10137-background-allow
+  2026-11-23T13:22:56:999 - Firewall rule changed: 20106-standby-default
+  2026-11-23T13:22:56:999 - Firewall rule changed: 10106-standby-default
+  2026-11-23T13:22:56:999 - Firewall rule changed: 20106-metered_allow-default
+  2026-11-23T13:22:56:999 - Firewall rule changed: 10106-metered_allow-default
+  2026-11-23T13:22:56:999 - Firewall rule changed: 20106-metered_deny_user-default
+  2026-11-23T13:22:56:999 - Firewall rule changed: 10106-metered_deny_user-default
+  2026-11-23T13:22:56:999 - Firewall rule changed: 20106-metered_deny_admin-default
+  2026-11-23T13:22:56:999 - Firewall rule changed: 10106-metered_deny_admin-default
+  2026-11-23T13:22:53:677 - temp-power-save whitelist for 1000 changed to: false; reason=UNKNOWN <null>
+  2026-11-23T13:22:52:604 - Firewall rule changed: 20269-background-default
+  2026-11-23T13:22:52:604 - Firewall rule changed: 10269-background-default
+  2026-11-23T13:22:51:645 - Firewall rule changed: 20106-background-allow
+  2026-11-23T13:22:51:645 - Firewall rule changed: 10106-background-allow
+  2026-11-23T13:22:51:645 - Firewall rule changed: 20106-standby-default
+
+mNetworkBlockedLogs (most recent first):
+  2026-11-23T13:43:44:281 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:43:44:279 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:43:43:789 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:43:43:780 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:43:42:928 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:42:891 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:42:553 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:42:546 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:42:070 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:40:167 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:40:165 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:40:141 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:39:686 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:37:552 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:37:495 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:37:082 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:36:848 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:36:792 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:35:990 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:35:958 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:35:046 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:35:044 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:35:043 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:35:019 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:34:629 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:34:597 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:43:34:171 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:29:44:474 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:28:44:762 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:38:364 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:38:358 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:37:859 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:31:939 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:31:937 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:31:925 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:31:432 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:25:344 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:23:988 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:23:979 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:23:494 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:22:264 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:20:653 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:20:628 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:19:623 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:19:622 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:19:585 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:15:842 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:15:839 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:15:293 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:15:288 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:09:975 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:08:939 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:08:929 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:08:927 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:08:924 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:08:371 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:08:369 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:27:06:958 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:06:948 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:06:935 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:06:929 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:06:913 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:06:890 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:27:06:843 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:26:44:191 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:25:50:520 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:39:795 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:39:781 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:39:295 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:39:293 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:37:728 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:37:726 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:37:264 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:34:176 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:33:968 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:33:961 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:33:445 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:33:444 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:31:764 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:31:756 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:31:754 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:31:745 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:31:142 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:31:015 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:31:014 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:30:981 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:30:975 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:30:555 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:30:545 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:29:340 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:29:333 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:29:165 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:28:849 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:28:790 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:25:974 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:25:973 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:25:937 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:25:927 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:25:910 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:25:419 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:25:416 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:23:992 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:23:753 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:23:011 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:22:316 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:20:472 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:20:466 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:19:987 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:19:982 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:19:237 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:18:810 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:18:810 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:24:18:789 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:13:144 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:10:081 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:24:00:876 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:57:941 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:57:848 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:57:663 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:57:654 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:55:635 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:55:317 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:55:313 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:54:256 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:54:251 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:53:766 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:53:761 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:23:53:178 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:53:170 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:52:639 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:52:637 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:51:702 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:48:672 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:33:432 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:27:294 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:21:188 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:11:963 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:08:913 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:08:293 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:08:093 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:08:024 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:07:529 - 10211-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:07:523 - 10211-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:07:191 - 10211-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:07:189 - 10211-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:05:892 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:03:764 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:03:755 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:03:499 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:03:493 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:02:827 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:02:083 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:01:987 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:01:432 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:01:424 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:23:01:418 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:59:836 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:22:59:815 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:22:59:799 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:22:59:786 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:22:56:864 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:56:817 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:56:815 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:51:794 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:22:51:793 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:22:51:783 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:22:51:441 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:51:433 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:50:941 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:50:546 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:50:544 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:50:195 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:50:185 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:47:669 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:47:611 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:47:607 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:47:524 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:47:519 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:47:513 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:22:47:430 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:21:01:610 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:59:138 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:58:042 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:58:040 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:58:038 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:58:026 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:57:628 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:57:585 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:53:054 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:50:162 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:49:528 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:47:818 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:46:735 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:46:733 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:46:387 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:46:383 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:45:187 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:20:45:185 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:20:45:184 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:20:45:183 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:20:45:177 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:20:44:772 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:20:44:763 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:20:44:703 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:41:864 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:40:535 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:38:999 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:33:963 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:33:962 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:33:959 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:33:948 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:33:558 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:33:531 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:33:024 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:31:944 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:28:838 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:22:744 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:19:754 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:18:499 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:16:180 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:16:178 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:16:177 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:16:164 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:15:766 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:15:721 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:13:590 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:04:449 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:20:01:367 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:58:316 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:52:301 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:40:654 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:34:506 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:16:423 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:15:856 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:14:827 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:00:254 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:00:253 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:00:251 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:19:00:239 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:59:842 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:59:804 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:56:650 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:53:622 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:52:290 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:52:289 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:51:764 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:51:755 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:49:993 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:49:974 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:49:063 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:49:054 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:49:047 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:47:912 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:18:47:099 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:18:47:095 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:18:47:086 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:18:45:013 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:45:011 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:44:858 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:44:535 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:43:065 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:43:064 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:43:062 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:43:055 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:42:576 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:42:481 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:42:479 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:40:589 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:40:589 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:40:587 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:40:578 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:40:176 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:40:131 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:38:874 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:36:245 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:34:455 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:34:448 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:33:953 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:33:948 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:18:13:066 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:18:06:975 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:48:632 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:47:362 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:47:358 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:46:771 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:46:764 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:45:595 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:44:333 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:44:331 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:44:115 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:44:112 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:39:488 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:38:576 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:38:576 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:38:574 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:38:560 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:38:155 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:38:135 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:36:367 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:30:424 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:30:130 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:26:264 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:26:260 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:25:713 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:25:712 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:20:850 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:14:763 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:14:266 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:14:265 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:14:061 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:14:043 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:11:674 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:04:206 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:04:205 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:03:687 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:02:557 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:02:277 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:02:275 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:17:02:231 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:01:199 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:01:193 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:00:708 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:17:00:700 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:59:541 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:16:58:055 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:16:58:053 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:16:57:595 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:16:57:593 - 30107-{blocked=NONE,allowed=NONE,effective=NONE}
+  2026-11-23T13:16:56:758 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:56:755 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:56:214 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:56:213 - 1000-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:53:451 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:51:225 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:51:223 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:51:217 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:50:649 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:50:646 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:50:420 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:49:207 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:49:204 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:49:199 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:49:172 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:49:170 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:49:142 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:49:137 - 10172-{blocked=RESTRICTED_MODE,allowed=RESTRICTED_MODE_PERMISSIONS,effective=NONE}
+  2026-11-23T13:16:44:333 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:42:692 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:42:609 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:42:582 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:42:252 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:38:186 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:32:095 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:19:859 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:10:700 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:04:597 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:16:01:551 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:58:451 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:55:400 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:46:295 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:43:207 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:37:103 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:31:013 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:24:855 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:21:805 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:18:752 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:12:671 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:09:569 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:06:536 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:15:03:467 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:14:48:203 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:14:45:181 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:14:32:907 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:14:26:770 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:14:23:704 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:14:20:676 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:13:56:221 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:13:53:185 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:13:47:087 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:13:44:012 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:13:19:601 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:13:16:559 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:55:119 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:42:908 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:30:680 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:24:566 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:21:479 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:15:404 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:12:316 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:12:03:162 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:11:32:643 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:11:20:412 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:11:14:320 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:11:11:280 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:11:05:178 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:10:46:855 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:10:43:753 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:10:37:616 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:10:31:514 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+  2026-11-23T13:10:07:179 - 10278-{blocked=RESTRICTED_MODE|APP_BACKGROUND,allowed=FOREGROUND|TOP|RESTRICTED_MODE_PERMISSIONS|NOT_IN_BACKGROUND|METERED_FOREGROUND,effective=NONE}
+
+mUidStateChangeLogs (most recent first):
+  2026-11-23T13:43:47:627 - 10256:CEM :---------:99154
+  2026-11-23T13:43:45:046 - 10111:CEM :---------:99150
+  2026-11-23T13:43:45:046 - 10150:CEM :---------:99148
+  2026-11-23T13:43:44:291 - 10120:BFGS:LCMNFUATI:99051
+  2026-11-23T13:43:44:290 - 10134:SVC :-------TI:99044
+  2026-11-23T13:43:44:289 - 10256:SVC :-------TI:99018
+  2026-11-23T13:43:43:709 - 30107:TOP :LCMNFUATI:98899
+  2026-11-23T13:43:43:707 - 30107:TOP :LCMNFUATI:98898
+  2026-11-23T13:43:43:376 - 10178:PER :LCMNFUATI:98733
+  2026-11-23T13:43:42:924 - 10200:LAST:--------I:98643
+  2026-11-23T13:43:42:923 - 1000:TOP :LCMNFUATI:98648
+  2026-11-23T13:43:42:921 - 1000:TOP :LCMNFUATI:98642
+  2026-11-23T13:43:42:882 - 10178:PERU:LCMNFUATI:98633
+  2026-11-23T13:43:42:871 - 1000:TOP :LCMNFUATI:98626
+  2026-11-23T13:43:42:019 - 1000:TOP :LCMNFUATI:98440
+  2026-11-23T13:43:42:018 - 1000:TOP :LCMNFUATI:98434
+  2026-11-23T13:43:39:591 - 1000:TOP :LCMNFUATI:98173
+  2026-11-23T13:43:37:994 - 10178:PER :LCMNFUATI:97999
+  2026-11-23T13:43:37:597 - 10111:SVC :-------TI:97908
+  2026-11-23T13:43:37:594 - 10150:SVC :-------TI:97905
+  2026-11-23T13:43:37:546 - 1000:TOP :LCMNFUATI:97902
+  2026-11-23T13:43:37:544 - 1000:TOP :LCMNFUATI:97896
+  2026-11-23T13:43:37:492 - 10178:PERU:LCMNFUATI:97887
+  2026-11-23T13:43:37:468 - 1000:TOP :LCMNFUATI:97880
+  2026-11-23T13:43:37:300 - 10178:PER :LCMNFUATI:97715
+  2026-11-23T13:43:36:916 - 10200:BTOP:----F--TI:97628
+  2026-11-23T13:43:36:841 - 1000:TOP :LCMNFUATI:97626
+  2026-11-23T13:43:36:838 - 1000:TOP :LCMNFUATI:97621
+  2026-11-23T13:43:36:782 - 10178:PERU:LCMNFUATI:97612
+  2026-11-23T13:43:36:771 - 1000:TOP :LCMNFUATI:97606
+  2026-11-23T13:43:36:437 - 10178:PER :LCMNFUATI:97441
+  2026-11-23T13:43:35:984 - 1000:TOP :LCMNFUATI:97356
+  2026-11-23T13:43:35:983 - 1000:TOP :LCMNFUATI:97351
+  2026-11-23T13:43:35:949 - 10178:PERU:LCMNFUATI:97342
+  2026-11-23T13:43:35:927 - 1000:TOP :LCMNFUATI:97336
+  2026-11-23T13:43:35:119 - 10178:PER :LCMNFUATI:97322
+  2026-11-23T13:43:34:649 - 10256:BTOP:---NFUATI:97229
+  2026-11-23T13:43:34:607 - 10120:BTOP:LCMNFUATI:97202
+  2026-11-23T13:43:34:606 - 10134:BTOP:----F--TI:97195
+  2026-11-23T13:43:34:603 - 1000:TOP :LCMNFUATI:97220
+  2026-11-23T13:43:34:601 - 1000:TOP :LCMNFUATI:97141
+  2026-11-23T13:43:34:288 - 10269:CRE :---------:97133
+  2026-11-23T13:43:34:232 - 10293:CAC :---------:97110
+  2026-11-23T13:43:34:232 - 99008:CACC:---------:97107
+  2026-11-23T13:43:34:081 - 10269:TRNB:-------TI:97083
+  2026-11-23T13:43:34:061 - 10293:TRNB:-------TI:97066
+  2026-11-23T13:43:34:061 - 99008:TRNB:-------TI:97063
+  2026-11-23T13:43:33:982 - 10178:PERU:LCMNFUATI:96995
+  2026-11-23T13:38:11:646 - 10283:CAC :-------T-:96930
+  2026-11-23T13:38:11:646 - 99002:CACC:-------T-:96929
+  2026-11-23T13:38:11:494 - 10283:RCVR:-------TI:96900
+  2026-11-23T13:38:11:493 - 99002:RCVR:-------TI:96899
+  2026-11-23T13:37:28:393 - 10247:CEM :---------:96893
+  2026-11-23T13:37:28:384 - 10247:RCVR:-------TI:96892
+  2026-11-23T13:36:13:988 - 10130:CEM :---------:96873
+  2026-11-23T13:36:13:968 - 10130:RCVR:-------TI:96871
+  2026-11-23T13:35:00:109 - 10280:CRE :---------:96860
+  2026-11-23T13:35:00:055 - 10280:TRNB:-------TI:96840
+  2026-11-23T13:30:38:011 - 10130:CEM :---------:96777
+  2026-11-23T13:30:38:004 - 10130:RCVR:-------TI:96774
+  2026-11-23T13:29:44:470 - 10178:BFGS:LCMNFUATI:96763
+  2026-11-23T13:29:44:467 - 10178:PERU:LCMNFUATI:96758
+  2026-11-23T13:29:41:455 - 10178:BFGS:LCMNFUATI:96753
+  2026-11-23T13:29:40:197 - 10178:PERU:LCMNFUATI:96725
+  2026-11-23T13:29:39:971 - 10120:BFGS:LCMNFUATI:96543
+  2026-11-23T13:29:39:970 - 10134:SVC :-------TI:96536
+  2026-11-23T13:27:48:073 - 10256:CEM :---------:96388
+  2026-11-23T13:27:48:059 - 10256:SVC :-------TI:96387
+  2026-11-23T13:27:37:955 - 10256:BTOP:---NFUATI:96145
+  2026-11-23T13:27:37:827 - 1000:TOP :LCMNFUATI:96134
+  2026-11-23T13:27:37:826 - 1000:TOP :LCMNFUATI:96130
+  2026-11-23T13:27:37:564 - 10130:CEM :---------:96125
+  2026-11-23T13:27:37:560 - 10130:RCVR:-------TI:96123
+  2026-11-23T13:27:33:597 - 10256:CEM :---------:96109
+  2026-11-23T13:27:33:582 - 10256:SVC :-------TI:96108
+  2026-11-23T13:27:31:393 - 1000:TOP :LCMNFUATI:95854
+  2026-11-23T13:27:31:370 - 1000:TOP :LCMNFUATI:95844
+  2026-11-23T13:27:31:369 - 1000:TOP :LCMNFUATI:95839
+  2026-11-23T13:27:29:460 - 10200:LAST:--------I:95838
+  2026-11-23T13:27:28:227 - 10111:CEM :---------:95834
+  2026-11-23T13:27:28:227 - 10150:CEM :---------:95832
+  2026-11-23T13:27:23:340 - 10200:BTOP:----F--TI:95574
+  2026-11-23T13:27:23:322 - 1000:TOP :LCMNFUATI:95569
+  2026-11-23T13:27:23:321 - 1000:TOP :LCMNFUATI:95564
+  2026-11-23T13:27:21:116 - 10178:PER :LCMNFUATI:95387
+  2026-11-23T13:27:20:711 - 10111:SVC :-------TI:95297
+  2026-11-23T13:27:20:711 - 10150:SVC :-------TI:95295
+  2026-11-23T13:27:20:646 - 1000:TOP :LCMNFUATI:95290
+  2026-11-23T13:27:20:638 - 10256:BTOP:---NFUATI:95289
+  2026-11-23T13:27:20:628 - 10178:PERU:LCMNFUATI:95284
+  2026-11-23T13:27:20:606 - 1000:TOP :LCMNFUATI:95274
+  2026-11-23T13:27:20:068 - 10178:PER :LCMNFUATI:95107
+  2026-11-23T13:27:19:646 - 30107:BFGS:LCMNFUATI:95037
+  2026-11-23T13:27:19:615 - 1000:TOP :LCMNFUATI:95025
+  2026-11-23T13:27:19:612 - 1000:TOP :LCMNFUATI:95021
+  2026-11-23T13:27:19:582 - 10178:PERU:LCMNFUATI:95012
+  2026-11-23T13:27:19:582 - 10120:BTOP:LCMNFUATI:95009
+  2026-11-23T13:27:19:578 - 10134:BTOP:----F--TI:95008
+  2026-11-23T13:27:19:562 - 1000:TOP :LCMNFUATI:95007
+  2026-11-23T13:27:15:843 - 10172:BFGS:---NFUATI:94894
+  2026-11-23T13:27:15:838 - 10120:BFGS:LCMNFUATI:94850
+  2026-11-23T13:27:15:836 - 10131:BFGS:LCMNFUATI:94849
+  2026-11-23T13:27:15:278 - 30107:TOP :LCMNFUATI:94755
+  2026-11-23T13:27:15:270 - 30107:TOP :LCMNFUATI:94753
+  2026-11-23T13:27:08:930 - 30107:BFGS:LCMNFUATI:94592
+  2026-11-23T13:27:08:916 - 10172:TOP :LCMNFUATI:94580
+  2026-11-23T13:27:08:374 - 10120:BTOP:LCMNFUATI:94494
+  2026-11-23T13:27:08:374 - 10131:BTOP:LCMNFUATI:94493
+  2026-11-23T13:27:08:355 - 10172:TOP :LCMNFUATI:94485
+  2026-11-23T13:27:08:348 - 10172:TOP :LCMNFUATI:94483
+  2026-11-23T13:27:07:006 - 10178:PER :LCMNFUATI:94468
+  2026-11-23T13:27:06:866 - 30107:TOP :LCMNFUATI:94375
+  2026-11-23T13:27:06:852 - 30107:TOP :LCMNFUATI:94291
+  2026-11-23T13:27:06:850 - 30107:TOP :LCMNFUATI:94279
+  2026-11-23T13:27:04:996 - 10178:PERU:LCMNFUATI:94197
+  2026-11-23T13:26:44:197 - 10178:BFGS:LCMNFUATI:94175
+  2026-11-23T13:26:44:195 - 10178:PERU:LCMNFUATI:94170
+  2026-11-23T13:26:41:170 - 10178:BFGS:LCMNFUATI:94165
+  2026-11-23T13:26:39:977 - 10293:CAC :---------:94158
+  2026-11-23T13:26:39:977 - 99008:CACC:---------:94155
+  2026-11-23T13:26:39:914 - 10178:PERU:LCMNFUATI:94105
+  2026-11-23T13:26:39:900 - 10269:CRE :---------:94097
+  2026-11-23T13:26:39:769 - 10269:TRNB:-------TI:93977
+  2026-11-23T13:26:39:740 - 10293:TRNB:-------TI:93890
+  2026-11-23T13:26:39:739 - 99008:TRNB:-------TI:93887
+  2026-11-23T13:26:39:702 - 30107:BFGS:LCMNFUATI:93820
+  2026-11-23T13:25:47:465 - 10278:CAC :---------:93712
+  2026-11-23T13:25:42:351 - 10278:RCVR:-------TI:93695
+  2026-11-23T13:25:00:343 - 10106:CEM :---------:93683
+  2026-11-23T13:25:00:327 - 10106:SVC :-------TI:93682
+  2026-11-23T13:24:59:618 - 10198:CEM :---------:93679
+  2026-11-23T13:24:52:280 - 10130:CEM :---------:93673
+  2026-11-23T13:24:52:250 - 10130:RCVR:-------TI:93670
+  2026-11-23T13:24:46:496 - 10247:CEM :---------:93660
+  2026-11-23T13:24:46:496 - 10247:RCVR:-------TI:93659
+  2026-11-23T13:24:43:661 - 10256:CEM :---------:93649
+  2026-11-23T13:24:41:411 - 10247:CEM :---------:93646
+  2026-11-23T13:24:41:404 - 10247:RCVR:-------TI:93645
+  2026-11-23T13:24:41:148 - 10111:CEM :---------:93636
+  2026-11-23T13:24:41:148 - 10150:CEM :---------:93634
+  2026-11-23T13:24:39:786 - 10120:BFGS:LCMNFUATI:93530
+  2026-11-23T13:24:39:785 - 10134:SVC :-------TI:93523
+  2026-11-23T13:24:39:785 - 10256:SVC :-------TI:93496
+  2026-11-23T13:24:39:219 - 10106:BTOP:---NFUATI:93372
+  2026-11-23T13:24:39:219 - 30107:TOP :LCMNFUATI:93371
+  2026-11-23T13:24:39:215 - 30107:TOP :LCMNFUATI:93370
+  2026-11-23T13:24:37:124 - 1000:TOP :LCMNFUATI:93080
+  2026-11-23T13:24:37:124 - 1000:TOP :LCMNFUATI:93075
+  2026-11-23T13:24:33:963 - 10131:BFGS:LCMNFUATI:92956
+  2026-11-23T13:24:33:963 - 10172:BFGS:---NFUATI:92943
+  2026-11-23T13:24:33:884 - 10178:PER :LCMNFUATI:92804
+  2026-11-23T13:24:33:754 - 10150:SVC :-------TI:92796
+  2026-11-23T13:24:33:725 - 10111:SVC :-------TI:92793
+  2026-11-23T13:24:33:506 - 10256:BTOP:---NFUATI:92703
+  2026-11-23T13:24:33:433 - 10134:BTOP:----F--TI:92694
+  2026-11-23T13:24:33:428 - 1000:TOP :LCMNFUATI:92693
+  2026-11-23T13:24:33:425 - 10178:PERU:LCMNFUATI:92691
+  2026-11-23T13:24:31:755 - 10106:BFGS:---NFUATI:92504
+  2026-11-23T13:24:31:755 - 30107:BFGS:LCMNFUATI:92443
+  2026-11-23T13:24:31:744 - 10172:TOP :LCMNFUATI:92431
+  2026-11-23T13:24:31:741 - 10134:SVC :-------TI:92405
+  2026-11-23T13:24:30:970 - 10131:BTOP:LCMNFUATI:92261
+  2026-11-23T13:24:30:951 - 10172:TOP :LCMNFUATI:92253
+  2026-11-23T13:24:30:945 - 10172:TOP :LCMNFUATI:92251
+  2026-11-23T13:24:30:478 - 10106:BTOP:---NFUATI:92157
+  2026-11-23T13:24:30:477 - 30107:TOP :LCMNFUATI:92160
+  2026-11-23T13:24:30:476 - 30107:TOP :LCMNFUATI:92155
+  2026-11-23T13:24:29:762 - 10178:PER :LCMNFUATI:91980
+  2026-11-23T13:24:29:480 - 10293:CAC :---------:91977
+  2026-11-23T13:24:29:479 - 99008:CACC:---------:91974
+  2026-11-23T13:24:29:382 - 10293:TRNB:-------TI:91953
+  2026-11-23T13:24:29:381 - 99008:TRNB:-------TI:91950
+  2026-11-23T13:24:29:353 - 10106:BFGS:---NFUATI:91941
+  2026-11-23T13:24:29:352 - 30107:BFGS:LCMNFUATI:91880
+  2026-11-23T13:24:29:311 - 1000:TOP :LCMNFUATI:91865
+  2026-11-23T13:24:29:162 - 10178:PERU:LCMNFUATI:91856
+  2026-11-23T13:24:29:157 - 10120:BTOP:LCMNFUATI:91853
+  2026-11-23T13:24:29:156 - 10134:BTOP:----F--TI:91852
+  2026-11-23T13:24:29:144 - 1000:TOP :LCMNFUATI:91851
+  2026-11-23T13:24:28:899 - 10247:CEM :---------:91850
+  2026-11-23T13:24:28:899 - 10247:RCVR:-------TI:91846
+  2026-11-23T13:24:28:054 - 10178:PER :LCMNFUATI:91837
+  2026-11-23T13:24:26:622 - 10178:PERU:LCMNFUATI:91818
+  2026-11-23T13:24:26:413 - 10178:PER :LCMNFUATI:91645
+  2026-11-23T13:24:25:990 - 10120:BFGS:LCMNFUATI:91623
+  2026-11-23T13:24:25:989 - 10134:SVC :-------TI:91616
+  2026-11-23T13:24:25:966 - 30107:TOP :LCMNFUATI:91558
+  2026-11-23T13:24:25:931 - 10178:PERU:LCMNFUATI:91468
+  2026-11-23T13:24:25:925 - 10106:BTOP:---NFUATI:91466
+  2026-11-23T13:24:25:925 - 30107:TOP :LCMNFUATI:91465
+  2026-11-23T13:24:25:921 - 30107:TOP :LCMNFUATI:91464
+  2026-11-23T13:24:25:918 - 10106:BFGS:---NFUATI:91455
+  2026-11-23T13:24:25:918 - 30107:BFGS:LCMNFUATI:91394
+  2026-11-23T13:24:25:266 - 10120:BTOP:LCMNFUATI:91285
+  2026-11-23T13:24:25:266 - 10134:BTOP:----F--TI:91284
+  2026-11-23T13:24:25:264 - 1000:TOP :LCMNFUATI:91283
+  2026-11-23T13:24:24:026 - 10247:CEM :---------:91280
+  2026-11-23T13:24:24:023 - 10247:RCVR:-------TI:91279
+  2026-11-23T13:24:23:966 - 10247:CEM :---------:91272
+  2026-11-23T13:24:23:961 - 10247:RCVR:-------TI:91268
+  2026-11-23T13:24:23:944 - 10247:CEM :---------:91264
+  2026-11-23T13:24:23:939 - 10247:RCVR:-------TI:91263
+  2026-11-23T13:24:23:084 - 10247:CEM :---------:91242
+  2026-11-23T13:24:23:075 - 10247:RCVR:-------TI:91238
+  2026-11-23T13:24:22:950 - 10227:CEM :---------:91214
+  2026-11-23T13:24:22:934 - 10178:PER :LCMNFUATI:91210
+  2026-11-23T13:24:22:928 - 10227:RCVR:-------TI:91208
+  2026-11-23T13:24:22:860 - 10247:CEM :---------:91205
+  2026-11-23T13:24:22:856 - 10247:RCVR:-------TI:91204
+  2026-11-23T13:24:21:620 - 10178:PERU:LCMNFUATI:91185
+  2026-11-23T13:24:20:462 - 10120:BFGS:LCMNFUATI:91084
+  2026-11-23T13:24:20:462 - 10134:SVC :-------TI:91077
+  2026-11-23T13:24:19:913 - 10106:BTOP:---NFUATI:90926
+  2026-11-23T13:24:19:913 - 30107:TOP :LCMNFUATI:90925
+  2026-11-23T13:24:19:911 - 30107:TOP :LCMNFUATI:90924
+  2026-11-23T13:24:19:264 - 10178:PER :LCMNFUATI:90749
+  2026-11-23T13:24:18:827 - 10106:BFGS:---NFUATI:90735
+  2026-11-23T13:24:18:827 - 30107:BFGS:LCMNFUATI:90674
+  2026-11-23T13:24:18:801 - 1000:TOP :LCMNFUATI:90659
+  2026-11-23T13:24:18:784 - 10178:PERU:LCMNFUATI:90650
+  2026-11-23T13:24:18:784 - 10120:BTOP:LCMNFUATI:90647
+  2026-11-23T13:24:18:774 - 10134:BTOP:----F--TI:90646
+  2026-11-23T13:24:18:768 - 1000:TOP :LCMNFUATI:90645
+  2026-11-23T13:23:57:688 - 10172:BFGS:---NFUATI:90493
+  2026-11-23T13:23:57:618 - 30107:TOP :LCMNFUATI:90443
+  2026-11-23T13:23:55:291 - 10172:TOP :LCMNFUATI:90349
+  2026-11-23T13:23:55:285 - 10172:TOP :LCMNFUATI:90347
+  2026-11-23T13:23:54:250 - 10120:BFGS:LCMNFUATI:90245
+  2026-11-23T13:23:54:249 - 10134:SVC :-------TI:90238
+  2026-11-23T13:23:53:623 - 10106:BTOP:---NFUATI:90087
+  2026-11-23T13:23:53:623 - 30107:TOP :LCMNFUATI:90086
+  2026-11-23T13:23:53:621 - 30107:TOP :LCMNFUATI:90085
+  2026-11-23T13:23:53:176 - 10131:BFGS:LCMNFUATI:89978
+  2026-11-23T13:23:53:176 - 10172:BFGS:---NFUATI:89965
+  2026-11-23T13:23:52:939 - 10178:PER :LCMNFUATI:89826
+  2026-11-23T13:23:52:627 - 10134:BTOP:----F--TI:89737
+  2026-11-23T13:23:52:624 - 10178:PERU:LCMNFUATI:89735
+  2026-11-23T13:23:52:623 - 1000:TOP :LCMNFUATI:89734
+  2026-11-23T13:23:51:458 - 10178:PER :LCMNFUATI:89728
+  2026-11-23T13:23:50:530 - 10178:PERU:LCMNFUATI:89718
+  2026-11-23T13:23:48:699 - 10178:PER :LCMNFUATI:89716
+  2026-11-23T13:23:37:780 - 10178:PERU:LCMNFUATI:89698
+  2026-11-23T13:23:26:973 - 10115:CRE :---------:89686
+  2026-11-23T13:23:25:563 - 10279:CEM :---------:89679
+  2026-11-23T13:23:25:551 - 10115:TRNB:-------TI:89677
+  2026-11-23T13:23:25:538 - 10279:RCVR:-------TI:89676
+  2026-11-23T13:23:13:252 - 10256:CEM :---------:89646
+  2026-11-23T13:23:11:433 - 10113:CEM :---------:89627
+  2026-11-23T13:23:10:283 - 10200:LAST:--------I:89625
+  2026-11-23T13:23:08:588 - 10134:SVC :-------TI:89619
+  2026-11-23T13:23:08:580 - 10134:FGS :---NFU-TI:89615
+  2026-11-23T13:23:08:539 - 10115:CRE :---------:89614
+  2026-11-23T13:23:08:512 - 10115:TRNB:-------TI:89611
+  2026-11-23T13:23:08:482 - 10113:IMPF:-------TI:89601
+  2026-11-23T13:23:08:462 - 10113:FGS :---NFUATI:89597
+  2026-11-23T13:23:08:440 - 10115:CRE :---------:89592
+  2026-11-23T13:23:08:436 - 10208:CEM :---------:89591
+  2026-11-23T13:23:08:412 - 10108:CEM :---------:89579
+  2026-11-23T13:23:08:409 - 10113:IMPF:-------TI:89577
+  2026-11-23T13:23:08:397 - 10208:RCVR:-------TI:89576
+  2026-11-23T13:23:08:366 - 10115:SVC :-------TI:89488
+  2026-11-23T13:23:08:339 - 10108:RCVR:-------TI:89477
+  2026-11-23T13:23:08:333 - 10253:CEM :---------:89468
+  2026-11-23T13:23:08:317 - 10115:BTOP:---NFUATI:89457
+  2026-11-23T13:23:08:301 - 10209:CEM :-------TI:89453
+  2026-11-23T13:23:08:243 - 10115:RCVR:-------TI:89449
+  2026-11-23T13:23:08:231 - 10253:RCVR:-------TI:89448
+  2026-11-23T13:23:08:202 - 10137:CAC :---------:89446
+  2026-11-23T13:23:08:202 - 90000:CACC:---------:89445
+  2026-11-23T13:23:08:202 - 90001:CACC:---------:89444
+  2026-11-23T13:23:08:201 - 90002:CACC:---------:89443
+  2026-11-23T13:23:08:171 - 10137:RCVR:-------TI:89438
+  2026-11-23T13:23:08:171 - 90000:RCVR:-------TI:89437
+  2026-11-23T13:23:08:171 - 90001:RCVR:-------TI:89436
+  2026-11-23T13:23:08:170 - 90002:RCVR:-------TI:89435
+  2026-11-23T13:23:08:105 - 10207:CEM :---------:89427
+  2026-11-23T13:23:08:090 - 10207:RCVR:-------TI:89421
+  2026-11-23T13:23:08:037 - 10115:CRE :---------:89418
+  2026-11-23T13:23:08:002 - 10211:CEM :-------TI:89241
+  2026-11-23T13:23:07:973 - 10172:TOP :LCMNFUATI:89239
+  2026-11-23T13:23:07:956 - 10115:RCVR:-------TI:89078
+  2026-11-23T13:23:07:136 - 10211:TOP :LCMNFUATI:88663
+  2026-11-23T13:23:07:112 - 10211:TOP :LCMNFUATI:88661
+  2026-11-23T13:23:07:110 - 10211:TOP :LCMNFUATI:88660
+  2026-11-23T13:23:03:762 - 10134:SVC :-------TI:88468
+  2026-11-23T13:23:03:762 - 10256:SVC :-------TI:88442
+  2026-11-23T13:23:03:749 - 10172:TOP :LCMNFUATI:88412
+  2026-11-23T13:23:03:622 - 10200:BFGS:----F--TI:88402
+  2026-11-23T13:23:03:504 - 10131:BTOP:LCMNFUATI:88301
+  2026-11-23T13:23:03:482 - 10172:TOP :LCMNFUATI:88291
+  2026-11-23T13:23:03:480 - 10172:TOP :LCMNFUATI:88289
+  2026-11-23T13:23:03:422 - 10106:BFGS:---NFUATI:88265
+  2026-11-23T13:23:03:386 - 30107:BFGS:LCMNFUATI:88261
+  2026-11-23T13:23:03:248 - 30107:CEM :-------TI:88256
+  2026-11-23T13:23:03:185 - 10106:CEM :---------:88255
+  2026-11-23T13:23:03:172 - 10106:SVC :-------TI:88166
+  2026-11-23T13:23:03:169 - 10200:CEM :---------:88131
+  2026-11-23T13:23:02:474 - 10178:PER :LCMNFUATI:87912
+  2026-11-23T13:23:02:077 - 1000:TOP :LCMNFUATI:87827
+  2026-11-23T13:23:02:075 - 1000:TOP :LCMNFUATI:87822
+  2026-11-23T13:23:02:026 - 10256:BTOP:---NFUATI:87820
+  2026-11-23T13:23:01:985 - 10178:PERU:LCMNFUATI:87816
+  2026-11-23T13:23:01:950 - 1000:TOP :LCMNFUATI:87806
+  2026-11-23T13:23:01:425 - 10106:FGS :---NFUATI:87704
+  2026-11-23T13:23:01:425 - 10200:BFGS:----F--TI:87703
+  2026-11-23T13:23:01:425 - 30107:FGS :LCMNFUATI:87702
+  2026-11-23T13:23:01:392 - 1000:TOP :LCMNFUATI:87689
+  2026-11-23T13:23:01:386 - 1000:TOP :LCMNFUATI:87685
+  2026-11-23T13:23:00:304 - 10256:CEM :---------:87681
+  2026-11-23T13:23:00:293 - 10256:SVC :-------TI:87680
+  2026-11-23T13:22:59:726 - 10200:BTOP:----F--TI:87580
+  2026-11-23T13:22:59:563 - 10106:BTOP:---NFUATI:87559
+  2026-11-23T13:22:59:541 - 30107:TOP :LCMNFUATI:87554
+  2026-11-23T13:22:59:514 - 30107:TOP :LCMNFUATI:87553
+  2026-11-23T13:22:57:656 - 10200:BFGS:----F--TI:87430
+  2026-11-23T13:22:57:422 - 10106:BFGS:---NFUATI:87389
+  2026-11-23T13:22:57:375 - 30107:BFGS:LCMNFUATI:87385
+  2026-11-23T13:22:57:319 - 10207:CEM :---------:87381
+  2026-11-23T13:22:57:319 - 10208:CEM :---------:87380
+  2026-11-23T13:22:57:308 - 10207:RCVR:-------TI:87378
+  2026-11-23T13:22:57:307 - 10208:RCVR:-------TI:87377
+  2026-11-23T13:22:57:225 - 10207:CEM :-------TI:87357
+  2026-11-23T13:22:57:190 - 30107:CEM :-------TI:87345
+  2026-11-23T13:22:57:180 - 10115:CRE :---------:87343
+  2026-11-23T13:22:57:147 - 10115:RCVR:-------TI:87340
+  2026-11-23T13:22:57:128 - 10137:CAC :---------:87337
+  2026-11-23T13:22:57:128 - 90000:CACC:---------:87336
+  2026-11-23T13:22:57:128 - 90001:CACC:---------:87335
+  2026-11-23T13:22:57:127 - 90002:CACC:---------:87334
+  2026-11-23T13:22:57:114 - 10137:RCVR:-------TI:87332
+  2026-11-23T13:22:57:114 - 90000:RCVR:-------TI:87329
+  2026-11-23T13:22:57:114 - 90001:RCVR:-------TI:87328
+  2026-11-23T13:22:57:113 - 90002:RCVR:-------TI:87327
+  2026-11-23T13:22:57:007 - 10106:CEM :---------:87246
+  2026-11-23T13:22:56:999 - 10106:SVC :-------TI:87077
+  2026-11-23T13:22:56:998 - 10200:CEM :---------:87042
+  2026-11-23T13:22:56:873 - 10106:BFGS:---NFUATI:86907
+  2026-11-23T13:22:56:873 - 10200:BFGS:----F--TI:86906
+  2026-11-23T13:22:56:873 - 30107:BFGS:LCMNFUATI:86905
+  2026-11-23T13:22:56:805 - 1000:TOP :LCMNFUATI:86881
+  2026-11-23T13:22:51:711 - 10200:BTOP:----F--TI:86744
+  2026-11-23T13:22:51:644 - 10106:BTOP:---NFUATI:86734
+  2026-11-23T13:22:51:582 - 10198:SVC :-------TI:86731
+  2026-11-23T13:22:51:581 - 10198:CEM :---------:86730
+  2026-11-23T13:22:51:578 - 10198:RCVR:-------TI:86729
+  2026-11-23T13:22:51:576 - 30107:TOP :LCMNFUATI:86726
+  2026-11-23T13:22:51:563 - 10198:CEM :-------TI:86725
+  2026-11-23T13:22:51:544 - 30107:TOP :LCMNFUATI:86724
+  2026-11-23T13:22:50:864 - 1000:TOP :LCMNFUATI:86467
+  2026-11-23T13:22:50:864 - 1000:TOP :LCMNFUATI:86462
+  2026-11-23T13:22:50:541 - 10131:BFGS:LCMNFUATI:86356
+  2026-11-23T13:22:50:541 - 10172:BFGS:---NFUATI:86343
+  2026-11-23T13:22:50:216 - 10256:BTOP:---NFUATI:86206
+  2026-11-23T13:22:50:174 - 10134:BTOP:----F--TI:86201
+  2026-11-23T13:22:50:168 - 1000:TOP :LCMNFUATI:86200
+  2026-11-23T13:22:47:605 - 10178:PER :LCMNFUATI:86174
+  2026-11-23T13:22:47:602 - 10269:CRE :---------:86172
+  2026-11-23T13:22:47:458 - 10120:BTOP:LCMNFUATI:85952
+  2026-11-23T13:22:47:458 - 10131:BTOP:LCMNFUATI:85951
+  2026-11-23T13:22:47:451 - 10269:TRNB:-------TI:85936
+  2026-11-23T13:22:47:446 - 10172:TOP :LCMNFUATI:85931
+  2026-11-23T13:22:47:437 - 10172:TOP :LCMNFUATI:85895
+  2026-11-23T13:22:47:434 - 10172:TOP :LCMNFUATI:85850
+  2026-11-23T13:22:45:485 - 10178:PERU:LCMNFUATI:85846
+  2026-11-23T13:21:50:866 - 10278:CAC :---------:85814
+  2026-11-23T13:21:50:298 - 10106:CEM :---------:85811
+  2026-11-23T13:21:50:296 - 10106:SVC :-------TI:85810
+  2026-11-23T13:21:42:213 - 10278:RCVR:-------TI:85754
+  2026-11-23T13:21:41:823 - 10130:CEM :---------:85749
+  2026-11-23T13:21:41:814 - 10130:RCVR:-------TI:85746
+  2026-11-23T13:21:02:901 - 10178:BFGS:LCMNFUATI:85599
+  2026-11-23T13:21:01:431 - 10178:PERU:LCMNFUATI:85565
+  2026-11-23T13:21:01:387 - 10178:PER :LCMNFUATI:85472
+  2026-11-23T13:21:01:349 - 10120:BFGS:LCMNFUATI:85288
+  2026-11-23T13:21:01:349 - 10131:BFGS:LCMNFUATI:85284
+  2026-11-23T13:21:01:349 - 10172:BFGS:---NFUATI:85271
+  2026-11-23T13:20:58:246 - 10178:PERU:LCMNFUATI:85101
+  2026-11-23T13:20:58:122 - 10178:PER :LCMNFUATI:85099
+  2026-11-23T13:20:57:601 - 10120:BTOP:LCMNFUATI:84988
+  2026-11-23T13:20:57:601 - 10131:BTOP:LCMNFUATI:84987
+  2026-11-23T13:20:57:594 - 10172:TOP :LCMNFUATI:84981
+  2026-11-23T13:20:57:590 - 10172:TOP :LCMNFUATI:84900
+  2026-11-23T13:20:49:342 - 10178:PERU:LCMNFUATI:84665
+  2026-11-23T13:20:49:305 - 10120:BFGS:LCMNFUATI:84557
+  2026-11-23T13:20:49:305 - 10131:BFGS:LCMNFUATI:84553
+  2026-11-23T13:20:49:304 - 10172:BFGS:---NFUATI:84540
+  2026-11-23T13:20:48:578 - 10178:PER :LCMNFUATI:84412
+  2026-11-23T13:20:46:844 - 10198:CEM :---------:84405
+  2026-11-23T13:20:46:729 - 10106:BFGS:---NFUATI:84313
+  2026-11-23T13:20:46:729 - 30107:BFGS:LCMNFUATI:84252
+  2026-11-23T13:20:46:710 - 10172:TOP :LCMNFUATI:84236
+  2026-11-23T13:20:46:690 - 10178:PERU:LCMNFUATI:84228
+  2026-11-23T13:20:46:377 - 10120:BTOP:LCMNFUATI:84146
+  2026-11-23T13:20:46:376 - 10131:BTOP:LCMNFUATI:84145
+  2026-11-23T13:20:46:356 - 10172:TOP :LCMNFUATI:84137
+  2026-11-23T13:20:46:355 - 10172:TOP :LCMNFUATI:84134
+  2026-11-23T13:20:45:323 - 10178:PER :LCMNFUATI:84118
+  2026-11-23T13:20:45:177 - 10172:BFGS:---NFUATI:83995
+  2026-11-23T13:20:45:170 - 10120:BFGS:LCMNFUATI:83947
+  2026-11-23T13:20:45:170 - 10131:BFGS:LCMNFUATI:83946
+
+MultipathPolicyTracker:
