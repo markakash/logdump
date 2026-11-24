@@ -1,0 +1,486 @@
+D -     11102 - Segments hash check
+D -     23546 - APPSBL -  Image Loaded, Delta - (2564096 Bytes)
+D -         0 - sbl1_save_appsbl_index
+B -   1771684 - SBL1, End
+D -   1679452 - SBL1, Delta
+S - Flash Throughput, 157178 KB/s  (8802000 Bytes,  56572 us)
+S - DDR Frequency, 1555 MHz
+uild-bp-81220-pvvnf-8k130-w8wv5
+S - Boot Interface: UFS
+S - Secure Boot: On
+S - Boot Config @ 0x00786070 = 0x00000001
+S - JTAG ID @ 0x00786130 = 0x301350e1
+S - OEM ID @ 0x00786138 = 0x00720000
+S - Serial Number @ 0x00786134 = 0xcd35a42d
+S - Feature Config Row 0 @ 0x00784148 = 0x0000000000000000
+S - Feature Config Row 1 @ 0x00784150 = 0x0000000000000000
+S - Core 0 Frequency, 1459 MHz
+S - PBL Patch Ver: 3
+D -      9313 - pbl_apps_init_timestamp
+D -     38508 - bootable_media_detect_timestamp
+D -      1037 - bl_elf_metadata_loading_timestamp
+D -      8552 - bl_hash_seg_auth_timestamp
+D -      6957 - bl_elf_loadable_segment_loading_timestamp
+D -      4599 - bl_elf_segs_hash_verify_timestamp
+D -     17037 - bl_sec_hash_seg_auth_timestamp
+D -       817 - bl_sec_segs_hash_verify_timestamp
+D -        26 - pbl_populate_shared_data_and_exit_timestamp
+S -     86846 - PBL, End
+B -     95678 - SBL1, Start
+B -    218471 - SBL1 BUILD @ 14:25:57 on Feb 20 2025
+B -    222528 - usb: usb2_rcal , 0xa
+B -    225913 - usb: platform
+B -    229299 - usb: usb_shared_hs_phy_init: hs phy cfg size , 0xc
+D -    237839 - sbl1_hw_init
+B -    418460 - UFS INQUIRY ID: KIOXIA  THGJFAT1T84BAIRB1201
+B -    420259 - UFS Boot LUN: 2
+B -    431178 - UFS GEAR: 4
+D -    201422 - boot_media_init
+D -         0 - smss_load_cancel
+B -    442555 - SMSS -  Image Load, Start
+D -      3019 - SMSS -  Image Loaded, Delta - (0 Bytes)
+D -      5033 - Auth Metadata
+D -      6131 - sbl1_xblconfig_init
+B -    457744 - XBL Config -  Image Load, Start
+D -        30 - shrm_load_cancel
+B -    465430 - SHRM -  Image Load, Start
+D -      4606 - Auth Metadata
+D -      1220 - Segments hash check
+D -     13115 - SHRM -  Image Loaded, Delta - (39960 Bytes)
+D -         0 - boot_default_cdt_init
+B -    487359 - Using default CDT
+D -      3477 - boot_cdt_init
+B -    493917 - CDT -  Image Load, Start
+B -    496723 - CDT Version:3,Platform ID:8,Major ID:1,Minor ID:0,Subtype:0
+D -     16531 - sbl1_hw_platform_pre_ddr
+D -         0 - devcfg init
+B -    522800 - PMIC A:2.0 B:2.2 C:2.2 D:2.0 E:2.3
+B -    522800 - PM: pm_device_pre_init
+B -    529327 - PM: Reset by PSHOLD
+B -    531035 - PM: Reset Type: Hard Reset
+B -    534360 - PM: PON by SYSOK
+B -    785344 - PM: SET_VAL:Skip
+B -    785680 - PM: PSI: b0x00_v0x81
+B -    791749 - PM: Device Init # SPMI Transn: 15140
+D -    278526 - pm_device_init, Delta
+B -    796629 - pm_driver_init, Start
+B -    808768 - PM: pon_reason.rtc:1,pon_reason.smpl:1,pon_reason.kpdpwr:0,pon_reason.dc_chg:0,pon_reason.usb_chg:0, pon_reason.pon1:0, pon_reason.hard_reset:1
+B -    820236 - PM: Driver Init # SPMI Transn: 556
+D -     23027 - pm_driver_init, Delta
+B -    828197 - PM: pm_app_chg_apply_charger_config: 1500mA
+B -    832284 - PM: Battery ID: 101176Ohm
+B -    836889 - PM: CHG Init # SPMI Transn: 15748, VBAT:4409
+B -    840580 - vsense_init, Start
+D -         0 - vsense_init, Delta
+D -    369020 - sbl1_hw_pre_ddr_init
+D -         0 - boot_dload_handle_forced_dload_timeout
+D -      3629 - sbl1_load_ddr_training_data
+B -    890722 - Pre_DDR_clock_init, Start
+D -        92 - Pre_DDR_clock_init, Delta
+D -     12871 - sbl1_ddr_set_params
+B -    902434 - sbl1_ddr_init, Start
+B -    905819 - LP5 DDR detected
+B -    924760 - eCDT MRR - Data Starting Address: 0x09066D00
+
+B -    924790 - Mi MRR 0x05 = 0x01
+B -    930402 - Mi MRR 0x06 = 0x08
+B -    933605 - Mi MRR 0x07 = 0x00
+B -    936838 - Mi MRR 0x31 = 0x03
+B -    940071 - ddr serial number: 0000030600000000
+D -     43035 - sbl1_ddr_init, Delta
+B -    948794 - DSF version = 247.8.25
+B -    952179 - Manufacturer ID = 1, Device Type = 8
+B -    955778 - Rank 0 size = 8192 MB, Rank 1 size = 0 MB
+D -     58377 - sbl1_ddr_init
+D -         0 - boot_pre_ddi_entry
+B -    968619 - do_ddr_training, Start
+D -       213 - sbl1_load_gsort_data
+B -   1014704 - DDR: Start of DDR Training Restore
+B -   1021963 - Current DDR Freq = 1709 MHz
+B -   1021994 - Max enabled DDR Freq = 3196 MHz
+B -   1025989 - DDR: End of DDR Training Restore
+D -     58560 - do_ddr_training, Delta
+D -     66429 - sbl1_do_ddr_training
+D -       244 - sbl1_load_gsort_data
+B -   1041819 - magic str match
+B -   1045204 - magic_str: gsort, test_trigger_bitmap: 0
+B -   1048163 - gsort_version:offset:8.val:0x1
+B -   1053348 - trigger bit map is null
+D -     19215 - sbl1_do_ddr_gsort
+D -       610 - boot_ddi_entry
+B -   1064419 - Pimem init cmd, entry
+D -      9150 - Pimem init cmd, exit
+B -   1076863 - External heap init, Start
+B -   1079852 - External heap init, End
+D -     23516 - sbl1_post_ddr_init
+D -         0 - sbl1_hw_init_secondary
+B -   1095590 - ADC done - mv: 837391, percent: 29268
+B -   1099159 - ADC done - mv: 1631833, percent: 57035
+B -   1102788 - chiptype: 415, projectid adc within range 27604 to 30728, hwid adc within range 55047 to 58857
+B -   1113494 - ProjectType:2 ProductName:star HwLevel:MP HwCountry:CN HwId:0x90001
+D -     29188 - sbl1_hw_get_mihwinfo
+B -   1125389 - DDR -  Image Load, Start
+B -   1128866 - usb: UFS Serial - 43fe64d5
+B -   1132556 - usb: chgr -  CDP_CHARGER
+B -   1136887 - usb: usb2_rcal , 0xa
+B -   1140212 - usb: platform , 0x8
+B -   1143628 - usb: usb_shared_hs_phy_init: hs phy cfg size , 0xc
+B -   1352583 - usb: usb_dp_toggled_for_cdp , 0xc8
+D -    223778 - boot_fedl_check
+B -   1357250 - APDP -  Image Load, Start
+D -      4971 - Auth Metadata
+D -       580 - Segments hash check
+D -     11407 - APDP -  Image Loaded, Delta - (7996 Bytes)
+D -        31 - boot_dload_dump_security_regions
+D -         0 - ramdump_load_cancel
+B -   1381741 - RamDump -  Image Load, Start
+D -      3325 - RamDump -  Image Loaded, Delta - (0 Bytes)
+D -         0 - boot_update_abnormal_reset_status
+D -         0 - boot_cache_set_memory_barrier
+D -        31 - boot_smem_debug_init
+D -       519 - boot_smem_init
+D -        30 - boot_smem_alloc_for_minidump
+D -        91 - boot_smem_store_pon_status
+D -        31 - sbl1_hw_platform_smem
+D -        30 - sbl1_hw_store_mihwinfo_smem
+D -         0 - boot_smem_store_ddr_status
+D -        61 - boot_ddr_share_data_to_aop
+D -       366 - boot_clock_init_rpm
+D -         0 - boot_vsense_copy_to_smem
+D -         0 - boot_populate_ram_partition_table
+D -        30 - boot_populate_ddr_details_shared_table
+D -         0 - sbl1_tlmm_init
+D -         0 - sbl1_efs_handle_cookies
+B -   1452440 - OEM_MISC -  Image Load, Start
+D -      4026 - OEM_MISC -  Image Loaded, Delta - (64 Bytes)
+B -   1460309 - QTI_MISC -  Image Load, Start
+D -      5521 - QTI_MISC -  Image Loaded, Delta - (0 Bytes)
+B -   1478365 - PM: PM Total Mem Allocated: 2666 
+D -      8357 - sbl1_pm_aop_pre_init_wrapper
+B -   1482940 - AOP -  Image Load, Start
+D -      4636 - Auth Metadata
+D -      1738 - Segments hash check
+D -     15189 - AOP -  Image Loaded, Delta - (238732 Bytes)
+B -   1501454 - QSEE Dev Config -  Image Load, Start
+D -      4605 - Auth Metadata
+D -       458 - Segments hash check
+D -     13328 - QSEE Dev Config -  Image Loaded, Delta - (43668 Bytes)
+B -   1523810 - QSEE -  Image Load, Start
+D -     21045 - Auth Metadata
+D -     21625 - Segments hash check
+D -     97783 - QSEE -  Image Loaded, Delta - (3685381 Bytes)
+B -   1624887 - SEC -  Image Load, Start
+D -      4545 - Auth Metadata
+D -       244 - Segments hash check
+D -     13603 - SEC -  Image Loaded, Delta - (7252 Bytes)
+B -   1641815 - CPUCPFW -  Image Load, Start
+D -     21076 - Auth Metadata
+D -     14091 - Segments hash check
+D -     47122 - CPUCPFW -  Image Loaded, Delta - (90200 Bytes)
+B -   1692262 - QHEE -  Image Load, Start
+D -     21381 - Auth Metadata
+D -      9333 - Segments hash check
+D -     43279 - QHEE -  Image Loaded, Delta - (1961729 Bytes)
+B -   1738866 - APPSBL -  Image Load, Start
+D -      4697 - Auth Metadata
+
+
+UEFI Start     [ 2026]
+ - 0x09FC01000 [ 2030] Sec.efi
+ASLR        : ON
+DEP         : ON (RTB)
+Timer Delta : +1 mS
+RAM Entry 0 : Base 0x0080000000  Size 0x0039700000
+RAM Entry 1 : Base 0x00C0000000  Size 0x01C0000000
+Total Available RAM : 8087 MB (0x01F9700000)
+Total Installed RAM : 8192 MB (0x0200000000)
+Init 1 aux cores of 7
+Init CPU core 1
+  > Scheduler up on Core 1
+UEFI Ver    : 6.0.250220.BOOT.MXF.1.0-00852-LAHAINA-2.12801.13
+Build Info  : 64b Feb 20 2025 14:26:37
+Boot Device : UFS
+PROD Mode   : TRUE
+Retail      : TRUE
+UFS INQUIRY ID: KIOXIA  THGJFAT1T84BAIRB1201
+UFS Boot LUN: 2
+HW Wdog Setting from PCD : Disabled
+PM0: 47, PM1: 48, PM2: 49, PM3: 50, PM4: 51, 
+Module cannot re-initialize DAL module environment
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_INIT
+Setvariable Logo Image returned Success
+LogoCompressedBlockNum:334 LogoCompressedBytesNum:1367249 
+DecompressBufferSize:86847544  ScratchSize:131072
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELDTINFO
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_POWERUP
+0 Panel_Default_PowerUp: enter 
+DisplayDxe: MDP_DISPLAY_PRIMARY_PowerUp_GPIO13
+DisplayDxe: MDP_DISPLAY_PRIMARY_PowerUp_GPIO74
+0 Panel_Default_PowerUp: exit 
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELCONFIG
+DisplayDxe: MDPPLATFORM_PANEL_K2_SDC_EA8182_MP_QHD_PLUS_DSC_CMD
+DispalyDxe: Set boot service variable <DisplayOledPanelId> = androidboot.oled_panel_id=K2_0A_MP
+DisplayDxe: Resolution 1440x3200 (1 intf)
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_POWERUP
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_POWERUP
+1 Panel_Default_PowerUp: enter 
+DisplayDxe: MDP_DISPLAY_SECONDARY_PowerUp_35_3
+1 Panel_Default_PowerUp: exit 
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_GETPANELCONFIG
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_RESETPANEL
+DisplayDxe: Panel_Default_Reset
+Detected second panel id:80
+DisplayDxe: MDPPLATFORM_SEC_PANEL_TRULY_CMD
+DisplayDxe: Resolution 126x294 (1 intf)
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_POWERUP
+DisplayDxe: pFrameBufferBase = 0xEA600000
+DisplayDxe: uFrameBufferSize = 18432000
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SETGPIOSTATE
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SETGPIOSTATE
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_RESETPANEL
+DisplayDxe: Panel_Default_Reset
+Overriding PIL cfg by caller
+pil-SPSS Failed to get MDT size
+pil-SPSS Failed to load metadata
+SPSSDxe:: SPSSDxe_LoadSPSS ProcessPilImageExt = Load Error 
+DisplayDxe: pSecFrameBufferBase = 0xEB79C000
+DisplayDxe: uSecFrameBufferSize = 148176
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SW_RENDERER
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_SETGPIOSTATE
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_SETGPIOSTATE
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_RESETPANEL
+DisplayDxe: Panel_Default_Reset
+smem_alloc_ex: SMEM alloc_ex failed with err=-3! smem_type=478, remote=13, size=32, flags=0x40000000.ChargerLib:: ChargerLibTarget_HWInit Charger PlatHWConfig = 1, (overrided by CFG item)
+ChargerLib:: ChargerLibTarget_HWInit PlatformType = 8: ChargerHW = 1, GaugeHW = 1 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLibTarget_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_SetOS  SetOS = 1 
+QcomChargerDxe:: ChargerPlatform_Init Successfully initialized ChargerLibCommon Success 
+QcomChargerDxe:: ChargerPlatform_Init Enabled WDOG.
+
+QcomChargerDxe:: ChargerPlatform_Init Successfully Success 
+InitUsbClocks: ClockProtocol unavailable
+UsbConfigLibOpenProtocols: PMI version (0x30)
+UsbConfigLibOpenProtocols: PMI version (0x30)
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_IsChargingSupported PlatformType = 8: ChargerHW = 1, GaugeHW = 1 
+ChargerLib:: ChargerLibTarget_IsChargingSupported Support Charging = 1
+ChargerLib:: ChargerLib_IsChargingSupported Support Charging = 1
+UsbConfigInit: UsbConfigInit, not start on port: 0, mode 0
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 100981 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 100981 
+ChargerLib:: ChargerLib_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_IsChargingSupported PlatformType = 8: ChargerHW = 1, GaugeHW = 1 
+ChargerLib:: ChargerLibTarget_IsChargingSupported Support Charging = 1
+ChargerLib:: ChargerLib_IsChargingSupported Support Charging = 1
+UsbConfigInit: UsbConfigInit, not start on port: 1, mode 0
+UsbConfigPortsQueryConnectionChange: usbport->connectstate: ATT
+ButtonsDxeTest: Keypress SDAM data payload 0 
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_SETBACKLIGHT
+DisplayDxe: Panel_Default_Brightness_Enable
+DisplayDxe: Panel_Default_Brightness_Level
+DisplayDxe: Panel_Default_Brightness_Level: 0 E1
+Read Dsi White Color Coordinate Register: 01 F7 0B B2 0C 46 93 6B 41 32 
+Read White Color Coordinate: 01 F7 0B B2 0C 46 
+DispalyDxe: Set boot service variable <DisplayOledPanelWp> = androidboot.oled_wp=01f70bb20c46
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Lahaina] eDisplayId:0, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_SETBACKLIGHT
+DisplayDxe: Panel_Default_Brightness_Level
+DisplayDxe: Panel_Default_Brightness_Level: 80 0
+DisplayDxe: Unknown display panel
+DisplayDxe: Failed to read White Color Coordinate
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_GETPLATFORMINFO
+[Lahaina] eDisplayId:1, Config = MDPPLATFORM_CONFIG_GETPANELSUPPORTFLAGS
+MinidumpTADxe: Minidump TA loading not enabled.
+Disp init wait [ 3107] 
+Display_Utils_RenderSplashScreen USE IMAGEFV
+Display_Utils_RenderSplashScreen: hw_country CN, uLogoIndex = 0
+DeCompressLogoData: Setvariable Logo Image returned Success
+DeCompressLogoData: Setvariable Logo Image returned LG!!i
+DeCompressLogoData: LogoCompressedBlockNum:105 LogoCompressedBytesNum:428372 
+DeCompressLogoData: DecompressBufferSize:138240558  ScratchSize:131072
+LoadBitmapImageFromLogoData USE IMAGEFV
+DisplayUtils: enter render.
+DisplayUtils: Display_Utils_RenderBGRTImage end Status:0
+Display_Utils_RenderSplashScreen USE IMAGEFV
+Display_Utils_RenderSplashScreen: hw_country CN, uLogoIndex = 10
+DeCompressLogoData: Setvariable Logo Image returned Success
+DeCompressLogoData: Setvariable Logo Image returned LG!!i
+DeCompressLogoData: LogoCompressedBlockNum:105 LogoCompressedBytesNum:428372 
+DeCompressLogoData: DecompressBufferSize:138240558  ScratchSize:131072
+LoadBitmapImageFromLogoData USE IMAGEFV
+DisplayUtils: Header NULL.
+DisplayUtils: Display_Utils_RenderBGRTImage end Status:0
+-----------------------------
+Platform Init  [ 4033] BDS
+INFO: UEFI NV tables are enabled as VOLATILE!
+UEFI Ver   : 6.0.250220.BOOT.MXF.1.0-00852-LAHAINA-2.12801.13
+Platform           : MTP
+Subtype            : 0
+Boot Device        : UFS
+Chip Name          : SM_LAHAINA
+Chip Ver           : 2.1
+Chip Serial Number : 0xCD35A42D
+-----------------------------
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_IsChargingSupported PlatformType = 8: ChargerHW = 1, GaugeHW = 1 
+ChargerLib:: ChargerLibTarget_IsChargingSupported Support Charging = 1
+ChargerLib:: ChargerLib_IsChargingSupported Support Charging = 1
+ChargerLib:: ChargerLib_GetDAMConnectStatus Factory Mode Connect Status = 0
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib::ChargerLibTarget_GetBatteryStatus BatteryTemp might be off as batt therm pull up (from profile) is not read yet 
+TNT BatteryVoltage::= 4450
+ChargerLib::ChargerLib_GetBatteryTempStatus BatteryTemp = 29 C 
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib::ChargerLibTarget_GetBatteryStatus BatteryTemp might be off as batt therm pull up (from profile) is not read yet 
+TNT BatteryVoltage::= 4450
+ChargerLib:: ChargerLib_GetBatteryVoltageStatus Battery voltage = 4450 mV 
+ChargerLib:: ChargerLib_GetErrors pChargingError = 0 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_IsChargingSupported PlatformType = 8: ChargerHW = 1, GaugeHW = 1 
+ChargerLib:: ChargerLibTarget_IsChargingSupported Support Charging = 1
+ChargerLib:: ChargerLib_IsChargingSupported Support Charging = 1
+QcomChargerPlatform:: ChargerPlatform_ChkChgFwLoadRequired PonReasonType.KPDPWR = 0,  PonReasonType.HARD_RESET = 1, PonReasonType.CBLPWR = 0, PonReasonType.USB_CHG = 0, PonReasonType.DC_CHG = 0
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib::ChargerLibTarget_GetBatteryStatus BatteryTemp might be off as batt therm pull up (from profile) is not read yet 
+TNT BatteryVoltage::= 4450
+QcomChargerDxe:: ChargerPlatform_ChkChgFwLoadRequired VBatt = 4450 V, gThresholdVbatt = 3590 V 
+QcomChargerDxe:: ChargerPlatform_ChkChgFwLoadRequired Chg Fw Load not required boot to HLOS 
+read once_run_flag=0 
+read load_adsp_value=0x0 
+read load_adsp_value=0x0 
+QcomChargerDxe:: ChargerPlatform_ChkChgFwLoadRequired boot to hlos, set load_adsp_value=0
+ChargerLib:: ChargerLibTarget_GetBatteryStatus use PmicFgProtocol 
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib::ChargerLibTarget_GetBatteryStatus BatteryTemp might be off as batt therm pull up (from profile) is not read yet 
+TNT BatteryVoltage::= 4450
+QcomChargerDxe:: ChargerPlatform_CheckIfOkToBoot VBatt = 4450 mV, Ocv = 4427 mV, dgThresholdVbatt = 3590 , vbatt_threshold_margin_in_mv = 100 
+QcomChargerDxe:: ChargerPlatform_CheckIfOkToBoot no fw loaded good to boot 
+QcomChargerDxe:: ChargerPlatform_GetChargingAction Action Returned = 3 
+ChargerLib:: ChargerLibTarget_GetDisplayImageType Display Image type = 0 
+ChargerLib:: ChargerLib_Exit ChargerLibExit 
+ChargerLib:: ChargerLibTarget_LedOn LED TURNED OFF = Success 
+ChargerLib:: ChargerLibTarget_LedOn LED TURNED OFF = Success 
+UEFI Total : 2052 ms
+POST Time      [ 4078] OS Loader
+Loader Build Info: Mar  3 2025 02:35:48
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+VB: RWDeviceState: Succeed using rpmb!
+ProjectType:0x2 hw_id:0x90001 hw_level:MP
+Total DDR Size: 0x00000001F9700000 
+==>Get PowerOff Protect Flag: NN
+ PON Reason is 1 cold_boot:1
+ProjectType:0x2 hw_id:0x90001 hw_level:MP
+Total DDR Size: 0x00000001F9700000 
+getting IsColdBoot reset status: 1, key: 0
+MpDevice!!
+Results[0] 0x1
+Results[1] 0x2
+Results[2] 0x0
+Results[3] 0x70
+KeyPress:0, BootReason:33
+Fastboot=0, Recovery:1
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 101006 
+ChargerLib:: ChargerLib_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_IsChargingSupported PlatformType = 8: ChargerHW = 1, GaugeHW = 1 
+ChargerLib:: ChargerLibTarget_IsChargingSupported Support Charging = 1
+ChargerLib:: ChargerLib_IsChargingSupported Support Charging = 1
+A/B retry count NOT decremented
+Booting from slot (_b)
+Booting Into Recovery Mode
+Loading Image Start : 4109 ms
+Loading Image Done : 4110 ms
+Total Image Read size : 4096 Bytes
+Load Image vbmeta_b total time: 2 ms 
+avb_slot_verify.c:680: ERROR: vbmeta_b: Public key used to sign data rejected.
+Load Image boot_b total time: 129 ms 
+Load Image dtbo_b total time: 17 ms 
+Load Image vendor_boot_b total time: 77 ms 
+GetHandleInfo: No media!
+AvbGetSizeOfPartition: GetHandleInfo failedQseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+QseeResponse->result = 0xFFFFFFFF
+Status = 0x7
+VB2: Authenticate complete! boot state is: orange
+VB2: boot state: orange(1)
+LoadBitmapImageFromLogoData USE IMAGEFV
+Picture 2 Successfully load
+DisplayUtils: enter render.
+DisplayUtils: Display_Utils_RenderBGRTImage end Status:0
+Picture 2 Successfully render
+LoadBitmapImageFromLogoData USE IMAGEFV
+Picture 12 Successfully load
+DisplayUtils: Header NULL.
+DisplayUtils: Display_Utils_RenderBGRTImage end Status:0
+Picture 12 Successfully render
+display picture 12  [ 4514]
+fatal error is not set
+Hyp version: 1
+Memory Base Address: 0x80000000
+Apply Overlay total time: 401 ms 
+build not factory version
+ChargerLib:: ChargerLibTarget_GetBatteryID BATT_ID_2 = 100981 
+ChargerLib:: ChargerLib_GetBatteryID BATT_ID_2 = 100981 
+ChargerLib:: ChargerLib_GetBatteryType Battery type = 0 
+ChargerLib:: ChargerLibTarget_IsChargingSupported PlatformType = 8: ChargerHW = 1, GaugeHW = 1 
+ChargerLib:: ChargerLibTarget_IsChargingSupported Support Charging = 1
+ChargerLib:: ChargerLib_IsChargingSupported Support Charging = 1
+MARK!  androidboot.camera.config=0VB: RWDeviceState: read_req err ! status: 0 read status: -15 
+VBRwDevice failed with: 00000050
+Unable to read display cmdline: 00000050
+Unable to get SecOledPanelId Config, Not Found
+Unable to get MsmDrmSecOledPanelId Config, Not Found
+Unable to get CellId Config, Not Found
+pureason = 20001
+pdreason = 2
+Cmdline: androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=ttyMSM0,115200n8 loop.max_part=7 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=0 pcie_p
+RAM Partitions
+Add Base: 0x0000000080000000 Available Length: 0x0000000039700000 
+Add Base: 0x00000000C0000000 Available Length: 0x00000001C0000000 
+Unable to get splash buffer info, Not Found
+Update Device Tree total time: 59 ms 
+
+Shutting Down UEFI Boot Services: 5052 ms
+Start EBS        [ 5052] 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
