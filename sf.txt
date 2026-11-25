@@ -8,7 +8,9 @@ Device supports wide color: 0
 DisplayColorSetting: Enhanced
 Display 4630946736638489730 color modes:
     ColorMode::NATIVE (0)
-    Current color mode: ColorMode::NATIVE (0)
+    ColorMode::SRGB (7)
+    ColorMode::DISPLAY_P3 (9)
+    Current color mode: ColorMode::SRGB (7)
 
 Sync configuration: [using: EGL_ANDROID_native_fence_sync EGL_KHR_wait_sync]
 
@@ -37,8 +39,8 @@ FrameRateOverrides=none
   GL early app duration:  11666666 ns	GL early SF duration:  12333333 ns
        HWC min duration:         0 ns
 
-ScreenOff: 0d00:00:00.000
-120.00 Hz: 0d00:00:30.955
+ScreenOff: 0d00:00:00.001
+120.00 Hz: 0d00:00:50.760
 
 Pacesetter Display 4630946736638489730
     renderRate=120.00 Hz
@@ -51,24 +53,24 @@ Pacesetter Display 4630946736638489730
     idleTimer=
         interval=2000.000 ms
         controller=Platform
-    Total missed frame count: 6
-    HWC missed frame count: 0
-    GPU missed frame count: 6
+    Total missed frame count: 4
+    HWC missed frame count: 3
+    GPU missed frame count: 1
     isModeChangePending=false
     displayPowerTimer=nullopt
 
 
 debugDisplayModeSetByBackdoor=false
 
-app: state=Idle VSyncState={displayId=4630946736638489730, count=8}
-mWorkDuration=11.67 mReadyDuration=12.33 last vsync time -19563.95ms relative to now
- with vsync committed at -19572.25ms  pending events (count=0):
+app: state=Idle VSyncState={displayId=4630946736638489730, count=6}
+mWorkDuration=11.67 mReadyDuration=12.33 last vsync time -39828.59ms relative to now
+ with vsync committed at -39836.91ms  pending events (count=0):
   connections (count=5):
-    Connection{0xb400007a6c51a000, VSyncRequest::None, owned by (pid=1688, uid=1003)}
-    Connection{0xb400007a6c51a0c0, VSyncRequest::None, owned by (pid=2184, uid=1000)}
-    Connection{0xb400007a5f0b5bc0, VSyncRequest::None, owned by (pid=2184, uid=1000)}
-    Connection{0xb400007a5f0b5c80, VSyncRequest::None, owned by (pid=2184, uid=1000)}
-    Connection{0xb400007a5f0b6580, VSyncRequest::None, owned by (pid=2184, uid=1000)}
+    Connection{0xb40000770f6b6cc0, VSyncRequest::None, owned by (pid=1892, uid=1003)}
+    Connection{0xb40000770f6b6d80, VSyncRequest::None, owned by (pid=2262, uid=1000)}
+    Connection{0xb40000770f6b6e40, VSyncRequest::None, owned by (pid=2262, uid=1000)}
+    Connection{0xb40000770f6b6f00, VSyncRequest::None, owned by (pid=2262, uid=1000)}
+    Connection{0xb40000770f6b6c00, VSyncRequest::None, owned by (pid=2262, uid=1000)}
 
 VsyncSchedule for pacesetter 4630946736638489730:
 hwVsyncState=Disabled
@@ -84,21 +86,21 @@ No Last HW vsync
 VSyncTracker:
 	mDisplayModePtr={id=0, hwcId=0, resolution=1440x3200, vsyncRate=120.00 Hz, dpi=515.15x514.43, group=0, vrrConfig=N/A, hdrOutputType=INVALID}
 	Refresh Rate Map:
-		For ideal period 8.33ms: period = 8.30ms, intercept = 18144
+		For ideal period 8.33ms: period = 8.30ms, intercept = 13716
 	mTimelines.size()=1
 VsyncDispatch:
 	Timer:
 		DebugState: Waiting
 	mTimerSlack: 0.50ms mMinVsyncDistance: 3.00ms
 	mIntendedWakeupTime: 9223372013568.00ms from now
-	mLastTimerCallback: 23.89ms ago mLastTimerSchedule: 26.61ms ago
+	mLastTimerCallback: 15.38ms ago mLastTimerSchedule: 21.46ms ago
 	Callbacks:
 		sf:  
-			workDuration: 12.33ms readyDuration: 0.00ms lastVsync: -36.50ms relative to now committedVsync: -36.50ms relative to now
-			mLastDispatchTime: 11.61ms ago
+			workDuration: 12.33ms readyDuration: 0.00ms lastVsync: -28.02ms relative to now committedVsync: -28.02ms relative to now
+			mLastDispatchTime: 3.13ms ago
 		app:  
-			workDuration: 11.67ms readyDuration: 12.33ms lastVsync: -19572.33ms relative to now committedVsync: -19572.33ms relative to now
-			mLastDispatchTime: 19564.04ms ago
+			workDuration: 11.67ms readyDuration: 12.33ms lastVsync: -39837.00ms relative to now committedVsync: -39837.00ms relative to now
+			mLastDispatchTime: 39828.68ms ago
  Early Wakeup Requests (count=0):
 
 Active Layers - layers with client handles (count = 35)
@@ -106,14 +108,14 @@ Active Layers - layers with client handles (count = 35)
 Composition list (top to bottom)
 LayerStack=0
   Layer [2] [BBQ] BootAnimation#1#2
-    visible reason= buffer=7249904795650 frame=1026 contentDirty
+    visible reason= buffer=8126078124033 frame=1773 contentDirty
     bounds={0,0,3200,1440}
     input{(NO_INPUT_CHANNEL) touchableRegion={0,0,0,0}}
 
 Input list
 LayerStack=0
   Layer [2] [BBQ] BootAnimation#1#2
-    visible reason= buffer=7249904795650 frame=1026 contentDirty
+    visible reason= buffer=8126078124033 frame=1773 contentDirty
     bounds={0,0,3200,1440}
     input{(NO_INPUT_CHANNEL) touchableRegion={0,0,0,0}}
   Layer [33] PointerEventDispatcherOverlay0#33
@@ -123,41 +125,41 @@ LayerStack=0
 
 Layer Hierarchy
  ROOT
- ├─ Display 0 name="Built-in Screen"#29 pid=2184 uid=1000 cookie=b400007a5e30b6c0
- │  ├─ WindowedMagnification:0:31#3 pid=2184 uid=1000 cookie=b400007a5e2ffc80
- │  │  ├─ OneHanded:0:23#4 pid=2184 uid=1000 cookie=b400007a5e2fff00
- │  │  │  ├─ AppZoomOut:0:0#5 pid=2184 uid=1000 cookie=b400007a5e2fff80
- │  │  │  │  └─ Leaf:0:0#6 pid=2184 uid=1000 cookie=b400007a5e309000
- │  │  │  ├─ Leaf:1:1#7 pid=2184 uid=1000 cookie=b400007a5e309080
- │  │  │  ├─ AppZoomOut:2:14#8 pid=2184 uid=1000 cookie=b400007a5e309200
- │  │  │  │  ├─ DefaultTaskDisplayArea#9 pid=2184 uid=1000 cookie=b400007a5e3092c0
- │  │  │  │  │  └─ Task=1#35 pid=2184 uid=1000 cookie=b400007a5e30b7c0
- │  │  │  │  ├─ Leaf:3:12#10 pid=2184 uid=1000 cookie=b400007a5e309340
- │  │  │  │  └─ ImePlaceholder:13:14#11 pid=2184 uid=1000 cookie=b400007a5e309400
- │  │  │  │     └─ ImeContainer#12 parent=11 pid=2184 uid=1000 cookie=b400007a5e309140
- │  │  │  ├─ Leaf:15:15#13 pid=2184 uid=1000 cookie=b400007a5e309480
- │  │  │  ├─ AppZoomOut:16:16#14 pid=2184 uid=1000 cookie=b400007a5e309500
- │  │  │  │  └─ Leaf:16:16#15 pid=2184 uid=1000 cookie=b400007a5e3095c0
- │  │  │  ├─ Leaf:17:19#16 pid=2184 uid=1000 cookie=b400007a5e309640
- │  │  │  ├─ AppZoomOut:20:22#17 pid=2184 uid=1000 cookie=b400007a5e3096c0
- │  │  │  │  └─ Leaf:20:22#18 pid=2184 uid=1000 cookie=b400007a5e309740
- │  │  │  └─ Leaf:23:23#19 pid=2184 uid=1000 cookie=b400007a5e3097c0
- │  │  ├─ Leaf:24:25#20 pid=2184 uid=1000 cookie=b400007a5e3098c0
- │  │  └─ OneHanded:26:31#21 pid=2184 uid=1000 cookie=b400007a5e309980
- │  │     └─ Leaf:26:31#22 pid=2184 uid=1000 cookie=b400007a5e309a00
- │  ├─ OneHanded:32:32#23 pid=2184 uid=1000 cookie=b400007a5e309ac0
- │  │  └─ Leaf:32:32#24 pid=2184 uid=1000 cookie=b400007a5e309b80
- │  ├─ Leaf:33:33#25 pid=2184 uid=1000 cookie=b400007a5e309c00
- │  ├─ OneHanded:34:35#26 pid=2184 uid=1000 cookie=b400007a5e309c80
- │  │  └─ Leaf:34:35#27 pid=2184 uid=1000 cookie=b400007a5e30b480
- │  ├─ Leaf:36:36#28 pid=2184 uid=1000 cookie=b400007a5e30b580
- │  ├─ Accessibility Overlays#34 pid=2184 uid=1000 cookie=b400007a5e30ba40
- │  ├─ Input Overlays#32 pid=2184 uid=1000 cookie=b400007a5e30b8c0
- │  │  └─ PointerEventDispatcherOverlay0#33 pid=2184 uid=1000 cookie=b400007a5e30b940
- │  └─ Display Overlays#30 pid=2184 uid=1000 cookie=b400007a5e30b740
- │     └─ Pointer Overlays#31 pid=2184 uid=1000 cookie=b400007a5e30b840
- └─ BootAnimation#1 pid=1688 uid=1003 cookie=b400007a6c53e000
-    └─ [BBQ] BootAnimation#1#2 pid=1688 uid=1003 cookie=b400007a6c53e100
+ ├─ Display 0 name="Built-in Screen"#29 pid=2262 uid=1000 cookie=b40000770f682ac0
+ │  ├─ WindowedMagnification:0:31#3 pid=2262 uid=1000 cookie=b40000770f750880
+ │  │  ├─ OneHanded:0:23#4 pid=2262 uid=1000 cookie=b40000770f750940
+ │  │  │  ├─ AppZoomOut:0:0#5 pid=2262 uid=1000 cookie=b40000770f7509c0
+ │  │  │  │  └─ Leaf:0:0#6 pid=2262 uid=1000 cookie=b40000770f750a40
+ │  │  │  ├─ Leaf:1:1#7 pid=2262 uid=1000 cookie=b40000770f750ac0
+ │  │  │  ├─ AppZoomOut:2:14#8 pid=2262 uid=1000 cookie=b40000770f750bc0
+ │  │  │  │  ├─ DefaultTaskDisplayArea#9 pid=2262 uid=1000 cookie=b40000770f750c40
+ │  │  │  │  │  └─ Task=1#35 pid=2262 uid=1000 cookie=b40000770f682dc0
+ │  │  │  │  ├─ Leaf:3:12#10 pid=2262 uid=1000 cookie=b40000770f750cc0
+ │  │  │  │  └─ ImePlaceholder:13:14#11 pid=2262 uid=1000 cookie=b40000770f750d40
+ │  │  │  │     └─ ImeContainer#12 parent=11 pid=2262 uid=1000 cookie=b40000770f750b80
+ │  │  │  ├─ Leaf:15:15#13 pid=2262 uid=1000 cookie=b40000770f750dc0
+ │  │  │  ├─ AppZoomOut:16:16#14 pid=2262 uid=1000 cookie=b40000770f750e40
+ │  │  │  │  └─ Leaf:16:16#15 pid=2262 uid=1000 cookie=b40000770f750ec0
+ │  │  │  ├─ Leaf:17:19#16 pid=2262 uid=1000 cookie=b40000770f750f40
+ │  │  │  ├─ AppZoomOut:20:22#17 pid=2262 uid=1000 cookie=b40000770f750fc0
+ │  │  │  │  └─ Leaf:20:22#18 pid=2262 uid=1000 cookie=b40000770f682040
+ │  │  │  └─ Leaf:23:23#19 pid=2262 uid=1000 cookie=b40000770f6820c0
+ │  │  ├─ Leaf:24:25#20 pid=2262 uid=1000 cookie=b40000770f682140
+ │  │  └─ OneHanded:26:31#21 pid=2262 uid=1000 cookie=b40000770f6821c0
+ │  │     └─ Leaf:26:31#22 pid=2262 uid=1000 cookie=b40000770f682240
+ │  ├─ OneHanded:32:32#23 pid=2262 uid=1000 cookie=b40000770f6822c0
+ │  │  └─ Leaf:32:32#24 pid=2262 uid=1000 cookie=b40000770f682340
+ │  ├─ Leaf:33:33#25 pid=2262 uid=1000 cookie=b40000770f682840
+ │  ├─ OneHanded:34:35#26 pid=2262 uid=1000 cookie=b40000770f6828c0
+ │  │  └─ Leaf:34:35#27 pid=2262 uid=1000 cookie=b40000770f682940
+ │  ├─ Leaf:36:36#28 pid=2262 uid=1000 cookie=b40000770f682a40
+ │  ├─ Accessibility Overlays#34 pid=2262 uid=1000 cookie=b40000770f682d00
+ │  ├─ Input Overlays#32 pid=2262 uid=1000 cookie=b40000770f682a00
+ │  │  └─ PointerEventDispatcherOverlay0#33 pid=2262 uid=1000 cookie=b40000770f682c40
+ │  └─ Display Overlays#30 pid=2262 uid=1000 cookie=b40000770f682b40
+ │     └─ Pointer Overlays#31 pid=2262 uid=1000 cookie=b40000770f682bc0
+ └─ BootAnimation#1 pid=1892 uid=1003 cookie=b40000770f7186c0
+    └─ [BBQ] BootAnimation#1#2 pid=1892 uid=1003 cookie=b40000770f7187c0
 Offscreen Hierarchy
  ROOT
 
@@ -171,7 +173,7 @@ Display 4630946736638489730 HWC layers (top to bottom):
            Z |  Window Type |  Layer Class | Comp Type |  Transform |   Disp Frame (LTRB) |          Source Crop (LTRB) |     Frame Rate (Explicit) (Seamlessness) [Focused]
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
  [BBQ] BootAnimation#1#2
-           1 |            0 |            0 |     CLIENT |          0 |    0    0 1440 3200 |    0.0    0.0 1440.0 3200.0 |                                              [ ]
+           1 |            0 |            0 |     DEVICE |          0 |    0    0 1440 3200 |    0.0    0.0 1440.0 3200.0 |                                              [ ]
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Window Infos:
@@ -185,6 +187,8 @@ Display 4630946736638489730
     connectionType=Internal
     colorModes=
         ColorMode::NATIVE
+        ColorMode::SRGB
+        ColorMode::DISPLAY_P3
     deviceProductInfo={name="", manufacturerPnpId=QCM, productId=1, manufactureWeek=27, manufactureYear=2006, relativeAddress=[]}
     name=""
     powerMode=On
@@ -206,8 +210,8 @@ Virtual Display Helper Threads (Pooled by UID)
 
 Display 4630946736638489730 (physical, "")
    Composition Display State:
-   isEnabled=true isSecure=true usesDeviceComposition=false 
-   usesClientComposition=true flipClientTarget=false reusedClientComposition=false 
+   isEnabled=true isSecure=true usesDeviceComposition=true 
+   usesClientComposition=false flipClientTarget=false reusedClientComposition=false 
    layerFilter={layerStack=0 toInternalDisplay=true skipScreenshot=false }
    transform (ROT_0) (IDENTITY)
    layerStackSpace=ProjectionSpace{bounds=Rect(0, 0, 1440, 3200), content=Rect(0, 0, 1440, 3200), orientation=ROTATION_0} 
@@ -215,7 +219,7 @@ Display 4630946736638489730 (physical, "")
    orientedDisplaySpace=ProjectionSpace{bounds=Rect(0, 0, 1440, 3200), content=Rect(0, 0, 1440, 3200), orientation=ROTATION_0} 
    displaySpace=ProjectionSpace{bounds=Rect(0, 0, 1440, 3200), content=Rect(0, 0, 1440, 3200), orientation=ROTATION_0} 
    needsFiltering=false 
-   colorMode=NATIVE (0) renderIntent=COLORIMETRIC (0) dataspace=UNKNOWN (0) 
+   colorMode=SRGB (7) renderIntent=ENHANCE (1) dataspace=V0_SRGB (142671872) 
    colorTransformMatrix=[[1.000,0.000,0.000,0.000][0.000,1.000,0.000,0.000][0.000,0.000,1.000,0.000][0.000,0.000,0.000,1.000]] 
    displayBrightnessNits=-1.000000 sdrWhitePointNits=-1.000000 clientTargetBrightness=1.000000 displayBrightness=nullopt 
    compositionStrategyPredictionState=DISABLED 
@@ -223,47 +227,47 @@ Display 4630946736638489730 (physical, "")
    treat170mAsSrgb=false 
 
    Composition Display Color State:
-   HWC Support: wideColorGamut=false hdr10plus=true hdr10=true hlg=true dv=false metadata=7 
+   HWC Support: wideColorGamut=true hdr10plus=true hdr10=true hlg=true dv=false metadata=7 
    Hdr Luminance Info:desiredMinLuminance=0.323000 desiredMaxLuminance=420.000000 desiredMaxAverageLuminance=210.161499 
 
    Composition RenderSurface State:
-   size=[1440 3200] ANativeWindow=0xb400007a60d09210 (format 1) 
+   size=[1440 3200] ANativeWindow=0xb40000770f62ba10 (format 1) 
    LegacyFramebufferSurface
-      mDataspace=Default (0)
+      mDataspace=BT709 sRGB Full range (142671872)
       mAbandoned=0
       - BufferQueue mMaxAcquiredBufferCount=1 mMaxDequeuedBufferCount=1
         mDequeueBufferCannotBlock=0 mAsyncMode=0
         mQueueBufferCanDrop=0 mLegacyBufferDrop=1
-        default-size=[1440x3200] default-format=1         transform-hint=00 frame-counter=1030
+        default-size=[1440x3200] default-format=1         transform-hint=00 frame-counter=1
         mTransformHintInUse=00 mAutoPrerotation=0
         mProducerThrottlingEnabled=false
       FIFO(0):
       (mConsumerName=LegacyFramebufferSurface, mConnectedApi=1, mConsumerUsageBits=6656, mPresentMode=1
-mId=5ce00000000, producer=[1486:/system/bin/surfaceflinger], consumer=[1486:/system/bin/surfaceflinger])
+mId=56f00000000, producer=[1391:/system/bin/surfaceflinger], consumer=[1391:/system/bin/surfaceflinger])
       Slots:
-       >[00:0xb400007a6dccfa00] state=ACQUIRED 0xb400007a60d1f780 frame=1030 [1440x3200:1472,  1]
-        [01:0xb400007a6dcd0800] state=FREE     0xb400007a60d1f800 frame=1029 [1440x3200:1472,  1]
+       >[01:0xb40000770f659c00] state=ACQUIRED 0xb40000770f61e500 frame=1 [1440x3200:1472,  1]
+        [00:0xb40000770f658e00] state=FREE     0xb40000770f61e480 frame=0 [1440x3200:1472,  1]
 
    1 Layers
-  - Output Layer 0xb400007a5f1f8c00([BBQ] BootAnimation#1#2)
-        Region visibleRegion (this=0xb400007a5f1f8c20, count=1)
+  - Output Layer 0xb40000770f620200([BBQ] BootAnimation#1#2)
+        Region visibleRegion (this=0xb40000770f620220, count=1)
     [  0,   0, 1440, 3200]
-        Region visibleNonTransparentRegion (this=0xb400007a5f1f8c88, count=1)
+        Region visibleNonTransparentRegion (this=0xb40000770f620288, count=1)
     [  0,   0, 1440, 3200]
-        Region coveredRegion (this=0xb400007a5f1f8cf0, count=1)
+        Region coveredRegion (this=0xb40000770f6202f0, count=1)
     [  0,   0,   0,   0]
-        Region output visibleRegion (this=0xb400007a5f1f8dc8, count=1)
+        Region output visibleRegion (this=0xb40000770f6203c8, count=1)
     [  0,   0, 1440, 3200]
-        Region shadowRegion (this=0xb400007a5f1f8e30, count=1)
+        Region shadowRegion (this=0xb40000770f620430, count=1)
     [  0,   0,   0,   0]
-        Region outputSpaceBlockingRegionHint (this=0xb400007a5f1f8ec8, count=1)
+        Region outputSpaceBlockingRegionHint (this=0xb40000770f6204c8, count=1)
     [  0,   0,   0,   0]
-      forceClientComposition=false clearClientTarget=false displayFrame=[0 0 1440 3200] sourceCrop=[0.000000 0.000000 1440.000000 3200.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=-1.000000 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb400007a5f1f8f88, count=1)
+      forceClientComposition=false clearClientTarget=false displayFrame=[0 0 1440 3200] sourceCrop=[0.000000 0.000000 1440.000000 3200.000000] bufferTransform=0 (0) dataspace=V0_SRGB (142671872) whitePointNits=-1.000000 dimmingRatio=1.000000 override buffer=0x0 override acquire fence=0x0 override display frame=[0 0 -1 -1] override dataspace=UNKNOWN (0) override display space=ProjectionSpace{bounds=Rect(0, 0, -1, -1), content=Rect(0, 0, -1, -1), orientation=ROTATION_0} override damage region=  Region  (this=0xb40000770f620588, count=1)
     [  0,   0,  -1,  -1]
- override visible region=  Region  (this=0xb400007a5f1f8ff0, count=1)
+ override visible region=  Region  (this=0xb40000770f6205f0, count=1)
     [  0,   0,   0,   0]
  override peekThroughLayer=0x0 override disableBackgroundBlur=false 
-      hwc: layer=0x082 composition=CLIENT (1) 
+      hwc: layer=0x082 composition=DEVICE (2) 
 
 
 SurfaceFlinger global state:
@@ -279,23 +283,22 @@ RenderEngine shaders cached since last dump/primeCache: 98
 Skia's CPU caches:  0 bytes, 0.00 bytes (0.00 bytes is purgeable)
 Skia's GPU caches (context, 61.52 MiB limit):  837956 bytes, 818.32 KB (818.19 KB is purgeable)
   Texture/RenderBuffer: 671.62 KB (5 entries)
-    skia/gpu_resources/resource_25/texture_renderbuffer: size[4.50 KB] type[RenderTarget] purgeable_size[4.50 KB] label[MakeDevice] category[Scratch]
-    skia/gpu_resources/resource_18/texture_renderbuffer: size[72.00 KB] type[RenderTarget] purgeable_size[72.00 KB] label[ResourceAllocatorRegister] category[Scratch]
-    skia/gpu_resources/resource_26/texture_renderbuffer: size[1.12 KB] type[RenderTarget] purgeable_size[1.12 KB] label[MakeDevice] category[Scratch]
-    skia/gpu_resources/resource_19/texture_renderbuffer: size[18.00 KB] type[RenderTarget] purgeable_size[18.00 KB] label[ResourceAllocatorRegister] category[Scratch]
-    skia/gpu_resources/resource_17/texture_renderbuffer: size[576.00 KB] type[RenderTarget] purgeable_size[576.00 KB] label[MakeDevice] category[Scratch]
+    skia/gpu_resources/resource_25/texture_renderbuffer: size[4.50 KB] type[RenderTarget] label[MakeDevice] category[Scratch] purgeable_size[4.50 KB]
+    skia/gpu_resources/resource_18/texture_renderbuffer: size[72.00 KB] type[RenderTarget] label[ResourceAllocatorRegister] category[Scratch] purgeable_size[72.00 KB]
+    skia/gpu_resources/resource_26/texture_renderbuffer: size[1.12 KB] type[RenderTarget] label[MakeDevice] category[Scratch] purgeable_size[1.12 KB]
+    skia/gpu_resources/resource_19/texture_renderbuffer: size[18.00 KB] type[RenderTarget] label[ResourceAllocatorRegister] category[Scratch] purgeable_size[18.00 KB]
+    skia/gpu_resources/resource_17/texture_renderbuffer: size[576.00 KB] type[RenderTarget] label[MakeDevice] category[Scratch] purgeable_size[576.00 KB]
   Texture: 192.00 bytes (2 entries)
-    skia/gpu_resources/resource_62/texture: size[64.00 bytes] type[Texture] purgeable_size[64.00 bytes] label[ProxyProvider_CreateNonMippedProxyFromBitmap] category[Image]
+    skia/gpu_resources/resource_62/texture: size[64.00 bytes] type[Texture] label[ProxyProvider_CreateNonMippedProxyFromBitmap] category[Image] purgeable_size[64.00 bytes]
     skia/gpu_resources/resource_8/texture: size[128.00 bytes] type[Texture] label[ProxyProvider_CreateNonMippedProxyFromBitmap] category[Scratch]
   Other: 146.50 KB (5 entries)
-    skia/gpu_resources/resource_2: size[180.00 bytes] type[Buffer Object] purgeable_size[180.00 bytes] label[MakeGlBuffer] category[Other]
-    skia/gpu_resources/resource_11: size[144.00 KB] type[StencilAttachment] purgeable_size[144.00 KB] label[GLAttachmentMakeStencil] category[Other]
-    skia/gpu_resources/resource_9: size[272.00 bytes] type[Buffer Object] purgeable_size[272.00 bytes] label[MakeGlBuffer] category[Other]
-    skia/gpu_resources/resource_10: size[192.00 bytes] type[Buffer Object] purgeable_size[192.00 bytes] label[MakeGlBuffer] category[Other]
-    skia/gpu_resources/resource_3: size[1.88 KB] type[Buffer Object] purgeable_size[1.88 KB] label[MakeGlBuffer] category[Other]
+    skia/gpu_resources/resource_2: size[180.00 bytes] type[Buffer Object] label[MakeGlBuffer] category[Other] purgeable_size[180.00 bytes]
+    skia/gpu_resources/resource_11: size[144.00 KB] type[StencilAttachment] label[GLAttachmentMakeStencil] category[Other] purgeable_size[144.00 KB]
+    skia/gpu_resources/resource_9: size[272.00 bytes] type[Buffer Object] label[MakeGlBuffer] category[Other] purgeable_size[272.00 bytes]
+    skia/gpu_resources/resource_10: size[192.00 bytes] type[Buffer Object] label[MakeGlBuffer] category[Other] purgeable_size[192.00 bytes]
+    skia/gpu_resources/resource_3: size[1.88 KB] type[Buffer Object] label[MakeGlBuffer] category[Other] purgeable_size[1.88 KB]
 Skia's wrapped objects (context):
-  Texture/RenderBuffer: 35.16 MB (2 entries)
-    skia/gpu_resources/resource_313/texture_renderbuffer: size[17.58 MB]
+  Texture/RenderBuffer: 17.58 MB (1 entry)
     skia/gpu_resources/resource_311/texture_renderbuffer: size[17.58 MB]
 
 RenderEngine chosen blur algorithm: KawaseDualFilterV2
@@ -461,33 +464,31 @@ RenderEngine LinearEffects (RuntimeEffects): 20
     .type = shaders::LinearEffect::SkSLType::Shader,
 },
 
-RenderEngine tracked buffers: 6
+RenderEngine tracked buffers: 5
 Dumping buffer ids...
-- 0x69800000004 - 1 refs 
-- 0x69800000003 - 1 refs 
-- 0x5ce0000000b - 1 refs 
-- 0x5ce00000007 - 1 refs 
-- 0x69800000002 - 1 refs 
-- 0x69800000001 - 1 refs 
-RenderEngine AHB/BackendTexture cache size: 6
+- 0x76400000004 - 1 refs 
+- 0x76400000003 - 1 refs 
+- 0x76400000002 - 1 refs 
+- 0x56f00000007 - 1 refs 
+- 0x76400000001 - 1 refs 
+RenderEngine AHB/BackendTexture cache size: 5
 Dumping buffer ids...
-- 0x69800000004 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
-- 0x69800000003 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
-- 0x5ce0000000b (isOutputBuffer=true, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 4, )))
-- 0x5ce00000007 (isOutputBuffer=true, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 4, )))
-- 0x69800000002 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
-- 0x69800000001 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
+- 0x76400000004 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
+- 0x76400000003 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
+- 0x76400000002 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
+- 0x56f00000007 (isOutputBuffer=true, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 4, )))
+- 0x76400000001 (isOutputBuffer=false, GaneshBackendTexture(dimensions=1440x3200, internalColorType: 5, )))
 
 ClientCache state:
- Cache owner: 0xb400007a6c508500
-	ID: 7249904795652, size: 1440x3200
-	ID: 7249904795651, size: 1440x3200
-	ID: 7249904795650, size: 1440x3200
-	ID: 7249904795649, size: 1440x3200
-  Region undefinedRegion (this=0xb400007a6dc95df8, count=1)
+ Cache owner: 0xb40000770f626400
+	ID: 8126078124036, size: 1440x3200
+	ID: 8126078124035, size: 1440x3200
+	ID: 8126078124034, size: 1440x3200
+	ID: 8126078124033, size: 1440x3200
+  Region undefinedRegion (this=0xb40000770f6441f8, count=1)
     [  0,   0,   0,   0]
   orientation=ROTATION_0, isPoweredOn=1
-  transaction-flags         : 00000010
+  transaction-flags         : 00000000
   peak-refresh-rate         : 120.00 Hz
   x-dpi                     : 515.15
   y-dpi                     : 514.43
@@ -495,7 +496,7 @@ ClientCache state:
 
 Transaction tracing: enabled
   queued transactions=0 created layers=0 states=0
-  number of entries: 1034 (0.14MB / 0.50MB) duration: 30547ms
+  number of entries: 1776 (0.24MB / 0.50MB) duration: 50455ms
 
 Planner is disabled
 h/w composer state:
@@ -503,15 +504,14 @@ h/w composer state:
 
 ------------HWC----------------
 HWC2 display_id: 0
-layer:    2 z: 0 composition: Device/Client alpha: 255 format:         RGBX_8888_UBWC dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb4000079ace3fd80 secure: 0
-
----------client target---------
-format: RGBA_8888_UBWC dataspace:0x08810000  buffer_id: 0xb4000079ace3fe00 secure: 0
+layer:    2 z: 0 composition: Device/Device alpha: 255 format:         RGBX_8888_UBWC dataspace:0x08810000 transform: 0/0/0 buffer_id: 0xb400006f42de7e00 secure: 0
 
 ----------Color Modes---------
 color modes supported: 
 mode: 0 RIs { 0 } 
-current mode: 0
+mode: 7 RIs { 0 1 2 3 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 281 282 283 284 285 286 287 288 } 
+mode: 9 RIs { 0 1 2 3 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 281 282 283 284 285 286 287 288 } 
+current mode: 7
 current render_intent: 0
 current dynamic_range: SDR
 current transform: 
@@ -533,7 +533,7 @@ Display Attributes:
  Display WxH: 1440x3200 MixerWxH: 1440x3200 DPI: 515.155x514.43 LM_Split: true
  vsync_period 8333333 v_back_porch: 32 v_front_porch: 24 v_pulse_width: 24
  v_total: 3280 h_total: 1536 clk: 181335 Topology: 7 Qsync mode: 0
-Current Color Mode: gamut 255 gamma 255 intent 65535 Dynamice_range SDR
+Current Color Mode: gamut 1 gamma 1 intent 1 Dynamice_range SDR
 ROI(LTRB)#0 LEFT(0 0 1440 3200)
 
 |-----|---------------|-----------|------|-------------|--------------------------|---------------------|---------------------|----|------------|-----------|----|-----|----|
@@ -550,22 +550,22 @@ OverlayProperties:
 OverlayProperties{combinations: [], supportMixedColorSpaces: false, lutProperties: (null)}
 GraphicBufferAllocator buffers:
             Handle |         Size |     W (Stride) x H | Layers |   Format |      Usage | Requestor
-0xb400007a60d1f780 | 18400.00 KiB | 1440 (1472) x 3200 |      1 |        1 | 0x    1b00 | LegacyFramebufferSurface
-0xb400007a60d1f800 | 18400.00 KiB | 1440 (1472) x 3200 |      1 |        1 | 0x    1b00 | LegacyFramebufferSurface
+0xb40000770f61e480 | 18400.00 KiB | 1440 (1472) x 3200 |      1 |        1 | 0x    1a00 | LegacyFramebufferSurface
+0xb40000770f61e500 | 18400.00 KiB | 1440 (1472) x 3200 |      1 |        1 | 0x    1b00 | LegacyFramebufferSurface
 Total allocated by GraphicBufferAllocator (estimate): 36800.00 KB
 Imported gralloc buffers:
-+ name:LegacyFramebufferSurface, id:12, size:18500.00KiB, w/h:1440x3200, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x0, compressed: true
-	planes: R/G/B/A:	 w/h:1440x3200, stride:5888 bytes, size:18944000
-+ name:[BBQ] BootAnimation#1#0(BLAST Consumer)0, id:10, size:18500.00KiB, w/h:1440x3200, usage: 0x10000900, req fmt:2, fourcc/mod:875709016/360287970189639681, dataspace: 0x8810000, compressed: true
++ name:[BBQ] BootAnimation#1#0(BLAST Consumer)0, id:11, size:18500.00KiB, w/h:1440x3200, usage: 0x10000900, req fmt:2, fourcc/mod:875709016/360287970189639681, dataspace: 0x8810000, compressed: true
 	planes: R/G/B:	 w/h:1440x3200, stride:5888 bytes, size:18944000
 + name:[BBQ] BootAnimation#1#0(BLAST Consumer)0, id:9, size:18500.00KiB, w/h:1440x3200, usage: 0x10000900, req fmt:2, fourcc/mod:875709016/360287970189639681, dataspace: 0x8810000, compressed: true
 	planes: R/G/B:	 w/h:1440x3200, stride:5888 bytes, size:18944000
-+ name:[BBQ] BootAnimation#1#0(BLAST Consumer)0, id:11, size:18500.00KiB, w/h:1440x3200, usage: 0x10000900, req fmt:2, fourcc/mod:875709016/360287970189639681, dataspace: 0x8810000, compressed: true
-	planes: R/G/B:	 w/h:1440x3200, stride:5888 bytes, size:18944000
-+ name:LegacyFramebufferSurface, id:8, size:18500.00KiB, w/h:1440x3200, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x0, compressed: true
++ name:LegacyFramebufferSurface, id:8, size:18500.00KiB, w/h:1440x3200, usage: 0x1b00, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x8810000, compressed: true
 	planes: R/G/B/A:	 w/h:1440x3200, stride:5888 bytes, size:18944000
++ name:[BBQ] BootAnimation#1#0(BLAST Consumer)0, id:10, size:18500.00KiB, w/h:1440x3200, usage: 0x10000900, req fmt:2, fourcc/mod:875709016/360287970189639681, dataspace: 0x8810000, compressed: true
+	planes: R/G/B:	 w/h:1440x3200, stride:5888 bytes, size:18944000
 + name:[BBQ] BootAnimation#1#0(BLAST Consumer)0, id:7, size:18500.00KiB, w/h:1440x3200, usage: 0x10000900, req fmt:2, fourcc/mod:875709016/360287970189639681, dataspace: 0x8810000, compressed: true
 	planes: R/G/B:	 w/h:1440x3200, stride:5888 bytes, size:18944000
++ name:LegacyFramebufferSurface, id:1, size:18500.00KiB, w/h:1440x3200, usage: 0x1a00, req fmt:1, fourcc/mod:875708993/0, dataspace: 0x0, compressed: true
+	planes: R/G/B/A:	 w/h:1440x3200, stride:5888 bytes, size:18944000
 Total imported by gralloc: 111000.00KiB
 FlagManager values: 
 debug.sf.disable_sched_fifo_sf: false
