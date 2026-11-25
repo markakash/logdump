@@ -1,15 +1,16 @@
-Start begin: 11-25 18:09:25.154
-Start end:   11-25 18:09:31.997
-Now:         11-25 18:11:42.401
+Start begin: 11-25 18:16:11.725
+Start end:   11-25 18:16:15.869
+Now:         11-25 18:16:52.234
 Notification Clients:
    pid    uid  name
-  5204   1041  audioserver
   5358   1000  android.uid.system
   5836  10183  android.uid.qtiphone
-  6213  10184  com.google.android.pixel.setupwizard
-  6297  10151  com.google.android.tts
+ 11720   1000  android.uid.system
+ 14805   1041  audioserver
 Global session refs:
   session  cnt     pid    uid  name
+     4425    1   11720   1000  android.uid.system
+     4497    1   11720   1000  android.uid.system
 Hardware status: 0
 Vibrator infos(size=1):
   - AudioVibratorInfo{id: 0, resonantFrequency: nan, qFactor: nan, maxAmplitude: nan}
@@ -17,7 +18,7 @@ Bluetooth latency modes are enabled
 
  ## BEGIN thread dump 
 
-Output thread 0xb40000754ed3f2c0, name AudioOut_D, tid 5432, type 0 (MIXER):
+Output thread 0xb4000076bc7455c0, name AudioOut_D, tid 14890, type 0 (MIXER):
   I/O handle: 13
   Standby: yes
   Sample rate: 48000 Hz
@@ -47,7 +48,7 @@ Output thread 0xb40000754ed3f2c0, name AudioOut_D, tid 5432, type 0 (MIXER):
   Hw supports pause: no
   Hw paused: no
   Flush pending: no
-  AudioStreamOut: 0xb40000754ed0e2d0 flags 0x6 (AUDIO_OUTPUT_FLAG_PRIMARY|AUDIO_OUTPUT_FLAG_FAST)
+  AudioStreamOut: 0xb4000076bc70f330 flags 0x6 (AUDIO_OUTPUT_FLAG_PRIMARY|AUDIO_OUTPUT_FLAG_FAST)
   Frames written: 0
   Suspended frames: 0
   PipeSink frames written: 0
@@ -62,7 +63,7 @@ Output thread 0xb40000754ed3f2c0, name AudioOut_D, tid 5432, type 0 (MIXER):
   AudioMixer tracks: 
   Master mono: off
   Master balance: 0.000000 (0.000000)
-  FastMixer thread 0xb40000754ed904c0 tid=5430  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
+  FastMixer thread 0xb4000076bc796cc0 tid=14889  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
             numTracks=0 writeErrors=0 underruns=0 overruns=0
             sampleRate=0 frameCount=0 measuredWarmup=0 ms, warmupCycles=0
             mixPeriod=nan ms latency=0.00 ms
@@ -87,10 +88,10 @@ Supported latency modes: { }
   0 Effect Chains
   Local log:
                                                          Type     Id Active Client(pid/uid) Session Port Id S  Flags   Format Chn mask  SRate ST Usg CT  G db  L dB  R dB  VS dB  PortVol dB  PortMuted   Server FrmCnt  FrmRdy F Underruns  Flushed BitPerfect InternalMute   Latency
-   11-25 18:09:29.096 threadLoop_standby
-   11-25 18:09:29.122 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
+   11-25 18:16:15.548 threadLoop_standby
+   11-25 18:16:15.585 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
 
-Output thread 0xb40000752f1eeb80, name AudioOut_15, tid 5435, type 0 (MIXER):
+Output thread 0xb4000076a337efc0, name AudioOut_15, tid 14892, type 0 (MIXER):
   I/O handle: 21
   Standby: yes
   Sample rate: 48000 Hz
@@ -120,7 +121,7 @@ Output thread 0xb40000752f1eeb80, name AudioOut_15, tid 5435, type 0 (MIXER):
   Hw supports pause: no
   Hw paused: no
   Flush pending: no
-  AudioStreamOut: 0xb40000754ed0e360 flags 0x104 (AUDIO_OUTPUT_FLAG_FAST|AUDIO_OUTPUT_FLAG_RAW)
+  AudioStreamOut: 0xb4000076bc70f420 flags 0x104 (AUDIO_OUTPUT_FLAG_FAST|AUDIO_OUTPUT_FLAG_RAW)
   Frames written: 0
   Suspended frames: 0
   PipeSink frames written: 0
@@ -135,7 +136,7 @@ Output thread 0xb40000752f1eeb80, name AudioOut_15, tid 5435, type 0 (MIXER):
   AudioMixer tracks: 
   Master mono: off
   Master balance: 0.000000 (0.000000)
-  FastMixer thread 0xb40000752f23fb00 tid=5434  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
+  FastMixer thread 0xb4000076a33cf680 tid=14891  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
             numTracks=0 writeErrors=0 underruns=0 overruns=0
             sampleRate=0 frameCount=0 measuredWarmup=0 ms, warmupCycles=0
             mixPeriod=nan ms latency=0.00 ms
@@ -160,10 +161,10 @@ Supported latency modes: { }
   0 Effect Chains
   Local log:
                                                          Type     Id Active Client(pid/uid) Session Port Id S  Flags   Format Chn mask  SRate ST Usg CT  G db  L dB  R dB  VS dB  PortVol dB  PortMuted   Server FrmCnt  FrmRdy F Underruns  Flushed BitPerfect InternalMute   Latency
-   11-25 18:09:29.126 threadLoop_standby
-   11-25 18:09:29.146 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
+   11-25 18:16:15.596 threadLoop_standby
+   11-25 18:16:15.621 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
 
-Output thread 0xb40000752f290500, name AudioOut_1D, tid 5436, type 0 (MIXER):
+Output thread 0xb4000076a3420c40, name AudioOut_1D, tid 14893, type 0 (MIXER):
   I/O handle: 29
   Standby: yes
   Sample rate: 48000 Hz
@@ -193,7 +194,7 @@ Output thread 0xb40000752f290500, name AudioOut_1D, tid 5436, type 0 (MIXER):
   Hw supports pause: no
   Hw paused: no
   Flush pending: no
-  AudioStreamOut: 0xb40000754ed0e510 flags 0x8 (AUDIO_OUTPUT_FLAG_DEEP_BUFFER)
+  AudioStreamOut: 0xb4000076bc70f570 flags 0x8 (AUDIO_OUTPUT_FLAG_DEEP_BUFFER)
   Frames written: 0
   Suspended frames: 0
   Hal stream dump:
@@ -217,10 +218,10 @@ Supported latency modes: { }
   0 Effect Chains
   Local log:
                                                          Type     Id Active Client(pid/uid) Session Port Id S  Flags   Format Chn mask  SRate ST Usg CT  G db  L dB  R dB  VS dB  PortVol dB  PortMuted   Server FrmCnt  FrmRdy F Underruns  Flushed BitPerfect InternalMute   Latency
-   11-25 18:09:29.154 threadLoop_standby
-   11-25 18:09:29.208 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
+   11-25 18:16:15.628 threadLoop_standby
+   11-25 18:16:15.685 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
 
-Output thread 0xb40000752f325740, name AudioOut_2D, tid 5443, type 0 (MIXER):
+Output thread 0xb4000076a34a3bc0, name AudioOut_2D, tid 14899, type 0 (MIXER):
   I/O handle: 45
   Standby: yes
   Sample rate: 48000 Hz
@@ -250,7 +251,7 @@ Output thread 0xb40000752f325740, name AudioOut_2D, tid 5443, type 0 (MIXER):
   Hw supports pause: no
   Hw paused: no
   Flush pending: no
-  AudioStreamOut: 0xb40000754ed0e8a0 flags 0 (AUDIO_OUTPUT_FLAG_NONE)
+  AudioStreamOut: 0xb4000076bc70f750 flags 0 (AUDIO_OUTPUT_FLAG_NONE)
   Frames written: 0
   Suspended frames: 0
   PipeSink frames written: 0
@@ -265,7 +266,7 @@ Output thread 0xb40000752f325740, name AudioOut_2D, tid 5443, type 0 (MIXER):
   AudioMixer tracks: 
   Master mono: off
   Master balance: 0.000000 (0.000000)
-  FastMixer thread 0xb40000752f3a5540 tid=5442  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
+  FastMixer thread 0xb4000076a3523700 tid=14898  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
             numTracks=0 writeErrors=0 underruns=0 overruns=0
             sampleRate=0 frameCount=0 measuredWarmup=0 ms, warmupCycles=0
             mixPeriod=nan ms latency=0.00 ms
@@ -290,10 +291,10 @@ Supported latency modes: { }
   0 Effect Chains
   Local log:
                                                          Type     Id Active Client(pid/uid) Session Port Id S  Flags   Format Chn mask  SRate ST Usg CT  G db  L dB  R dB  VS dB  PortVol dB  PortMuted   Server FrmCnt  FrmRdy F Underruns  Flushed BitPerfect InternalMute   Latency
-   11-25 18:09:29.219 threadLoop_standby
-   11-25 18:09:29.277 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x10000 (AUDIO_DEVICE_OUT_TELEPHONY_TX)
+   11-25 18:16:15.704 threadLoop_standby
+   11-25 18:16:15.764 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x10000 (AUDIO_DEVICE_OUT_TELEPHONY_TX)
 
-Output thread 0xb4000075299f8040, name AudioOut_35, tid 5444, type 0 (MIXER):
+Output thread 0xb4000076a358c9c0, name AudioOut_35, tid 14901, type 0 (MIXER):
   I/O handle: 53
   Standby: yes
   Sample rate: 48000 Hz
@@ -323,7 +324,7 @@ Output thread 0xb4000075299f8040, name AudioOut_35, tid 5444, type 0 (MIXER):
   Hw supports pause: no
   Hw paused: no
   Flush pending: no
-  AudioStreamOut: 0xb40000754ed0ed20 flags 0x8000 (AUDIO_OUTPUT_FLAG_VOIP_RX)
+  AudioStreamOut: 0xb4000076bc70f9f0 flags 0x8000 (AUDIO_OUTPUT_FLAG_VOIP_RX)
   Frames written: 0
   Suspended frames: 0
   Hal stream dump:
@@ -347,10 +348,10 @@ Supported latency modes: { }
   0 Effect Chains
   Local log:
                                                          Type     Id Active Client(pid/uid) Session Port Id S  Flags   Format Chn mask  SRate ST Usg CT  G db  L dB  R dB  VS dB  PortVol dB  PortMuted   Server FrmCnt  FrmRdy F Underruns  Flushed BitPerfect InternalMute   Latency
-   11-25 18:09:29.282 threadLoop_standby
-   11-25 18:09:29.300 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
+   11-25 18:16:15.768 threadLoop_standby
+   11-25 18:16:15.790 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x2 (AUDIO_DEVICE_OUT_SPEAKER)
 
-Output thread 0xb400007529a49700, name AudioOut_3D, tid 5446, type 0 (MIXER):
+Output thread 0xb40000769ca8a3c0, name AudioOut_3D, tid 14904, type 0 (MIXER):
   I/O handle: 61
   Standby: yes
   Sample rate: 48000 Hz
@@ -380,7 +381,7 @@ Output thread 0xb400007529a49700, name AudioOut_3D, tid 5446, type 0 (MIXER):
   Hw supports pause: no
   Hw paused: no
   Flush pending: no
-  AudioStreamOut: 0xb40000754ec5a5b0 flags 0x10000 (AUDIO_OUTPUT_FLAG_INCALL_MUSIC)
+  AudioStreamOut: 0xb4000076bc70fe10 flags 0x10000 (AUDIO_OUTPUT_FLAG_INCALL_MUSIC)
   Frames written: 0
   Suspended frames: 0
   PipeSink frames written: 0
@@ -395,7 +396,7 @@ Output thread 0xb400007529a49700, name AudioOut_3D, tid 5446, type 0 (MIXER):
   AudioMixer tracks: 
   Master mono: off
   Master balance: 0.000000 (0.000000)
-  FastMixer thread 0xb400007529a9adc0 tid=5445  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
+  FastMixer thread 0xb40000769cadb780 tid=14903  FastMixer command=COLD_IDLE writeSequence=0 framesWritten=0
             numTracks=0 writeErrors=0 underruns=0 overruns=0
             sampleRate=0 frameCount=0 measuredWarmup=0 ms, warmupCycles=0
             mixPeriod=nan ms latency=0.00 ms
@@ -420,10 +421,10 @@ Supported latency modes: { }
   0 Effect Chains
   Local log:
                                                          Type     Id Active Client(pid/uid) Session Port Id S  Flags   Format Chn mask  SRate ST Usg CT  G db  L dB  R dB  VS dB  PortVol dB  PortMuted   Server FrmCnt  FrmRdy F Underruns  Flushed BitPerfect InternalMute   Latency
-   11-25 18:09:29.308 threadLoop_standby
-   11-25 18:09:29.361 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x10000 (AUDIO_DEVICE_OUT_TELEPHONY_TX)
-Historical Thread Log 11-25 18:09:29.215 - 
-- Output thread 0xb40000752f3169c0, name AudioOut_25, tid 5440, type 4 (OFFLOAD):
+   11-25 18:16:15.792 threadLoop_standby
+   11-25 18:16:15.850 CFG_EVENT_CREATE_AUDIO_PATCH: old device  (Empty device types) new device 0x10000 (AUDIO_DEVICE_OUT_TELEPHONY_TX)
+Historical Thread Log 11-25 18:16:15.693 - 
+- Output thread 0xb4000076a3494b40, name AudioOut_25, tid 14896, type 4 (OFFLOAD):
 -   I/O handle: 37
 -   Standby: yes
 -   Sample rate: 8000 Hz
@@ -438,7 +439,7 @@ Historical Thread Log 11-25 18:09:29.215 -
 -   Output devices:  (Empty device types)
 -   Input device: 0 (AUDIO_DEVICE_NONE)
 -   Audio source: 0 (AUDIO_SOURCE_DEFAULT)
--   Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
+-   Timestamp stats: n=0 disc=1 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
 -   Timestamp corrected: no
 -   Master volume: 1.000000
 -   Master mute: off
@@ -453,7 +454,7 @@ Historical Thread Log 11-25 18:09:29.215 -
 -   Hw supports pause: yes
 -   Hw paused: no
 -   Flush pending: no
--   AudioStreamOut: 0xb40000754ed0e8a0 flags 0x31 (AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_COMPRESS_OFFLOAD|AUDIO_OUTPUT_FLAG_NON_BLOCKING)
+-   AudioStreamOut: 0xb4000076bc70f750 flags 0x31 (AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_COMPRESS_OFFLOAD|AUDIO_OUTPUT_FLAG_NON_BLOCKING)
 -   Frames written: 0
 -   Suspended frames: 0
 -   Hal stream dump:
@@ -468,8 +469,8 @@ Historical Thread Log 11-25 18:09:29.215 -
 -   Local log:
 -                                                          Type     Id Active Client(pid/uid) Session Port Id S  Flags   Format Chn mask  SRate ST Usg CT  G db  L dB  R dB  VS dB  PortVol dB  PortMuted   Server FrmCnt  FrmRdy F Underruns  Flushed BitPerfect InternalMute   Latency
 
-Historical Thread Log 11-25 18:09:29.363 - 
-- Input thread 0xb400007529aeb808, name AudioIn_E, tid 5447, type 3 (RECORD):
+Historical Thread Log 11-25 18:16:15.852 - 
+- Input thread 0xb40000769cb3bc88, name AudioIn_E, tid 14908, type 3 (RECORD):
 -   I/O handle: 14
 -   Standby: no
 -   Sample rate: 48000 Hz
@@ -486,7 +487,7 @@ Historical Thread Log 11-25 18:09:29.363 -
 -   Audio source: 0 (AUDIO_SOURCE_DEFAULT)
 -   Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
 -   Timestamp corrected: no
--   AudioStreamIn: 0xb40000754ecf6340 flags 0 (AUDIO_INPUT_FLAG_NONE)
+-   AudioStreamIn: 0xb4000076bc743240 flags 0 (AUDIO_INPUT_FLAG_NONE)
 -   Frames read: 0
 -   No active record clients
 -   Hal stream dump:
@@ -505,8 +506,8 @@ Historical Thread Log 11-25 18:09:29.363 -
 -   Local log:
 -                                                          Active     Id Client(pid/uid) Session Port Id  S  Flags   Format Chn mask  SRate Source   Server FrmCnt FrmRdy Sil   Latency
 
-Historical Thread Log 11-25 18:09:29.365 - 
-- Input thread 0xb400007529aebc48, name AudioIn_16, tid 5451, type 3 (RECORD):
+Historical Thread Log 11-25 18:16:15.854 - 
+- Input thread 0xb40000769cb3b348, name AudioIn_16, tid 14911, type 3 (RECORD):
 -   I/O handle: 22
 -   Standby: no
 -   Sample rate: 48000 Hz
@@ -523,7 +524,7 @@ Historical Thread Log 11-25 18:09:29.365 -
 -   Audio source: 0 (AUDIO_SOURCE_DEFAULT)
 -   Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
 -   Timestamp corrected: no
--   AudioStreamIn: 0xb40000754ecf6300 flags 0x1 (AUDIO_INPUT_FLAG_FAST)
+-   AudioStreamIn: 0xb4000076bc743200 flags 0x1 (AUDIO_INPUT_FLAG_FAST)
 -   Frames read: 0
 -   No active record clients
 -   Hal stream dump:
@@ -545,8 +546,8 @@ Historical Thread Log 11-25 18:09:29.365 -
 -   Local log:
 -                                                          Active     Id Client(pid/uid) Session Port Id  S  Flags   Format Chn mask  SRate Source   Server FrmCnt FrmRdy Sil   Latency
 
-Historical Thread Log 11-25 18:09:29.368 - 
-- Input thread 0xb400007529aebf08, name AudioIn_1E, tid 5453, type 3 (RECORD):
+Historical Thread Log 11-25 18:16:15.855 - 
+- Input thread 0xb40000769cb3b4c8, name AudioIn_1E, tid 14913, type 3 (RECORD):
 -   I/O handle: 30
 -   Standby: no
 -   Sample rate: 48000 Hz
@@ -563,7 +564,7 @@ Historical Thread Log 11-25 18:09:29.368 -
 -   Audio source: 0 (AUDIO_SOURCE_DEFAULT)
 -   Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
 -   Timestamp corrected: no
--   AudioStreamIn: 0xb40000754ecf6340 flags 0 (AUDIO_INPUT_FLAG_NONE)
+-   AudioStreamIn: 0xb4000076bc743240 flags 0 (AUDIO_INPUT_FLAG_NONE)
 -   Frames read: 0
 -   No active record clients
 -   Hal stream dump:
@@ -582,8 +583,8 @@ Historical Thread Log 11-25 18:09:29.368 -
 -   Local log:
 -                                                          Active     Id Client(pid/uid) Session Port Id  S  Flags   Format Chn mask  SRate Source   Server FrmCnt FrmRdy Sil   Latency
 
-Historical Thread Log 11-25 18:09:29.371 - 
-- Input thread 0xb400007529aebd48, name AudioIn_26, tid 5455, type 3 (RECORD):
+Historical Thread Log 11-25 18:16:15.857 - 
+- Input thread 0xb40000769cb3b688, name AudioIn_26, tid 14915, type 3 (RECORD):
 -   I/O handle: 38
 -   Standby: no
 -   Sample rate: 48000 Hz
@@ -600,7 +601,7 @@ Historical Thread Log 11-25 18:09:29.371 -
 -   Audio source: 0 (AUDIO_SOURCE_DEFAULT)
 -   Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
 -   Timestamp corrected: no
--   AudioStreamIn: 0xb40000754ecf6300 flags 0x20 (AUDIO_INPUT_FLAG_VOIP_TX)
+-   AudioStreamIn: 0xb4000076bc743200 flags 0x20 (AUDIO_INPUT_FLAG_VOIP_TX)
 -   Frames read: 0
 -   No active record clients
 -   Hal stream dump:
@@ -619,8 +620,8 @@ Historical Thread Log 11-25 18:09:29.371 -
 -   Local log:
 -                                                          Active     Id Client(pid/uid) Session Port Id  S  Flags   Format Chn mask  SRate Source   Server FrmCnt FrmRdy Sil   Latency
 
-Historical Thread Log 11-25 18:09:29.383 - 
-- Input thread 0xb400007529aeb688, name AudioIn_2E, tid 5458, type 3 (RECORD):
+Historical Thread Log 11-25 18:16:15.861 - 
+- Input thread 0xb40000769cb3b808, name AudioIn_2E, tid 14917, type 3 (RECORD):
 -   I/O handle: 46
 -   Standby: no
 -   Sample rate: 48000 Hz
@@ -637,7 +638,7 @@ Historical Thread Log 11-25 18:09:29.383 -
 -   Audio source: 0 (AUDIO_SOURCE_DEFAULT)
 -   Timestamp stats: n=0 disc=0 cold=0 nRdy=0 err=0 jitterMs(unavail) localSR(nan, nan) correctedJitterMs(unavail)
 -   Timestamp corrected: no
--   AudioStreamIn: 0xb40000754ecf63c0 flags 0 (AUDIO_INPUT_FLAG_NONE)
+-   AudioStreamIn: 0xb4000076bc7432c0 flags 0 (AUDIO_INPUT_FLAG_NONE)
 -   Frames read: 0
 -   No active record clients
 -   Hal stream dump:
@@ -658,59 +659,60 @@ Historical Thread Log 11-25 18:09:29.383 -
   Rejected setParameters:
 
   App setParameters:
-    11-25 18:09:35.562 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
-    11-25 18:09:35.565 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
-    11-25 18:09:35.573 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
-    11-25 18:09:35.583 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
-    11-25 18:09:35.584 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
-    11-25 18:09:35.589 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
-    11-25 18:09:47.661 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
-    11-25 18:09:47.687 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
-    11-25 18:09:47.730 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
-    11-25 18:09:47.780 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
-    11-25 18:09:47.781 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
-    11-25 18:09:47.820 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.399 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.404 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.409 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.412 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.415 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.418 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.420 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.424 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.426 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.429 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.431 UID 10183, 3 KVP received: vsid=299651072;call_state=1;call_type=UNKNOWN
+    11-25 18:16:16.434 UID 10183, 3 KVP received: vsid=297816064;call_state=1;call_type=UNKNOWN
 
   System setParameters:
-    11-25 18:09:32.893 UID  1000, 1 KVP received: BT_SCO=off
-    11-25 18:09:32.893 UID  1000, 1 KVP received: A2dpSuspended=false
-    11-25 18:09:32.894 UID  1000, 1 KVP received: LeAudioSuspended=false
-    11-25 18:09:33.066 UID  1000, 1 KVP received: rotation=0
-    11-25 18:09:33.067 UID  1000, 1 KVP received: device_folded=off
-    11-25 18:11:32.239 UID  1000, 1 KVP received: screen_state=off
+    11-25 18:16:16.301 UID  1000, 1 KVP received: restarting=true
+    11-25 18:16:16.303 UID  1000, 8 KVP received: ans_on=false;orientation=landscape;hdr_record_on=false;hdr_audio_sampling_rate=0;wnr_on=false;facing=none;hdr_audio_channel_count=0;inverted=false
+    11-25 18:16:16.319 UID  1000, 1 KVP received: BT_SCO=off
+    11-25 18:16:16.320 UID  1000, 1 KVP received: A2dpSuspended=false
+    11-25 18:16:16.321 UID  1000, 1 KVP received: LeAudioSuspended=false
+    11-25 18:16:16.363 UID  1000, 1 KVP received: restarting=false
+    11-25 18:16:16.391 UID  1000, 1 KVP received: rotation=0
+    11-25 18:16:16.393 UID  1000, 1 KVP received: device_folded=off
 
  ## BEGIN misc af dump 
 
 Patches:
-  Patch 12: No software bridge (thread 0x0 => thread 0x0) thread 0xb40000754ed83b28 num sinks (1) first device type 00000002
-  Patch 20: No software bridge (thread 0x0 => thread 0x0) thread 0xb40000752f2333e8 num sinks (1) first device type 00000002
-  Patch 28: No software bridge (thread 0x0 => thread 0x0) thread 0xb40000752f2d4d68 num sinks (1) first device type 00000002
-  Patch 36: No software bridge (thread 0x0 => thread 0x0) thread 0xb40000752f369fa8 num sinks (1) first device type 00010000
-  Patch 44: No software bridge (thread 0x0 => thread 0x0) thread 0xb400007529a3c8a8 num sinks (1) first device type 00000002
-  Patch 52: No software bridge (thread 0x0 => thread 0x0) thread 0xb400007529a8df68 num sinks (1) first device type 00010000
-  11-25 18:09:29.122 add patch 12 srcs {mix 13 id 1} sinks {dev 0x2 id 3} hal create
-  11-25 18:09:29.146 add patch 20 srcs {mix 21 id 6} sinks {dev 0x2 id 3} hal create
-  11-25 18:09:29.208 add patch 28 srcs {mix 29 id 8} sinks {dev 0x2 id 3} hal create
-  11-25 18:09:29.277 add patch 36 srcs {mix 45 id 11} sinks {dev 0x10000 id 12} hal create
-  11-25 18:09:29.301 add patch 44 srcs {mix 53 id 14} sinks {dev 0x2 id 3} hal create
-  11-25 18:09:29.361 add patch 52 srcs {mix 61 id 16} sinks {dev 0x10000 id 12} hal create
+  Patch 12: No software bridge (thread 0x0 => thread 0x0) thread 0xb4000076bc789e28 num sinks (1) first device type 00000002
+  Patch 20: No software bridge (thread 0x0 => thread 0x0) thread 0xb4000076a33c3828 num sinks (1) first device type 00000002
+  Patch 28: No software bridge (thread 0x0 => thread 0x0) thread 0xb4000076a34654a8 num sinks (1) first device type 00000002
+  Patch 36: No software bridge (thread 0x0 => thread 0x0) thread 0xb4000076a34e8428 num sinks (1) first device type 00010000
+  Patch 44: No software bridge (thread 0x0 => thread 0x0) thread 0xb4000076a35d1228 num sinks (1) first device type 00000002
+  Patch 52: No software bridge (thread 0x0 => thread 0x0) thread 0xb40000769cacec28 num sinks (1) first device type 00010000
+  11-25 18:16:15.586 add patch 12 srcs {mix 13 id 1} sinks {dev 0x2 id 3} hal create
+  11-25 18:16:15.622 add patch 20 srcs {mix 21 id 6} sinks {dev 0x2 id 3} hal create
+  11-25 18:16:15.686 add patch 28 srcs {mix 29 id 8} sinks {dev 0x2 id 3} hal create
+  11-25 18:16:15.765 add patch 36 srcs {mix 45 id 11} sinks {dev 0x10000 id 12} hal create
+  11-25 18:16:15.790 add patch 44 srcs {mix 53 id 14} sinks {dev 0x2 id 3} hal create
+  11-25 18:16:15.850 add patch 52 srcs {mix 61 id 16} sinks {dev 0x10000 id 12} hal create
 
 Device Effects:
 
 Sound Dose:
-CSD is disabled
+
+Cached Mel Records:
+
  ## BEGIN power dump
 star_global-user 14 UKQ1.240624.001 OS2.0.7.0.UKAMIXM release-keys
 Power Tokens:
-  Client-0:  start: 18:09:25.154 pid: 5204
-  Client-1:  start: 18:09:32.892 pid: 5358
-  Client-2:  start: 18:09:35.562 pid: 5836
-  Client-3:  start: 18:09:35.997 pid: 6213
-  Client-4:  start: 18:09:36.367 pid: 6297
+  Client-0:  start: 18:16:11.726 pid: 14805
+  Client-1:  start: 18:16:15.867 pid: 5358
+  Client-2:  start: 18:16:15.907 pid: 11720
+  Client-3:  start: 18:16:16.398 pid: 5836
 Power Clients: (some snapshots quantized in time)
-  (idle) uid: 1000 android.uid.system  sessions: 0  actual_seconds: 0.000000 { 5358 }{ }
-  (idle) uid: 1041 audioserver  sessions: 0  actual_seconds: 0.000000 { 5204 }{ }
-  (idle) uid: 10151 com.google.android.tts  sessions: 0  actual_seconds: 0.000000 { 6297 }{ }
+  (idle) uid: 1000 android.uid.system  sessions: 0  actual_seconds: 0.000000 { 5358 11720 }{ }
+  (idle) uid: 1041 audioserver  sessions: 0  actual_seconds: 0.000000 { 14805 }{ }
   (idle) uid: 10183 android.uid.qtiphone  sessions: 0  actual_seconds: 0.000000 { 5836 }{ }
-  (idle) uid: 10184 com.google.android.pixel.setupwizard  sessions: 0  actual_seconds: 0.000000 { 6213 }{ }
 Power Client History:
