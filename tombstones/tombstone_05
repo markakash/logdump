@@ -1,0 +1,1362 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'Xiaomi/star_global/star:14/UKQ1.240624.001/OS2.0.7.0.UKAMIXM:user/release-keys'
+Kernel Release: '5.4.302-qgki-ga2594274b0d3-dirty'
+Revision: '0'
+ABI: 'arm64'
+Timestamp: 2026-11-25 19:03:54.169858131+0100
+Process uptime: 6s
+Executable: /vendor/bin/hw/dolbycodec2
+Cmdline: /vendor/bin/hw/dolbycodec2
+pid: 22146, ppid: 1, tid: 22146, name: dolbycodec2  >>> /vendor/bin/hw/dolbycodec2 <<<
+uid: 1046
+signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+Abort message: 'could not dlopen c2.dolby.hevc.dec.so: dlopen failed: cannot locate symbol "_ZN7android8hardware5media2c24V1_05utils6objcpyEPNS3_10WorkBundleERKNSt3__14listINS7_10unique_ptrI6C2WorkNS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEEPNS4_16BufferPoolSenderE" referenced by "/vendor/lib64/c2.dolby.client.so"...'
+    x0  0000000000000000  x1  0000000000005682  x2  0000000000000006  x3  0000007fc35f5fd0
+    x4  632d627564672d78  x5  632d627564672d78  x6  632d627564672d78  x7  7f7f7f7f7f7f7f7f
+    x8  00000000000000f0  x9  3073ef9c7b2f4df2  x10 0000000000000001  x11 00000079f692c6a0
+    x12 0000000f4bdb008c  x13 0000000034155555  x14 0000000000000018  x15 0000000f4bda6255
+    x16 00000079f69a10e8  x17 00000079f6984340  x18 0000007a03590000  x19 0000000000005682
+    x20 0000000000005682  x21 00000000ffffffff  x22 0000000000000000  x23 b400007975e1e570
+    x24 b400007975e1fa40  x25 0000007a02b13e00  x26 b400007975e85698  x27 00000079fddad018
+    x28 0000007a02b13e00  x29 0000007fc35f6050
+    lr  00000079f69121ec  sp  0000007fc35f5fd0  pc  00000079f6912210  pst 0000000000001000
+    esr 0000000000000000  vg  0000000000000000
+
+14 total frames
+backtrace:
+      #00 pc 00000000000b2210  /apex/com.android.runtime/lib64/bionic/libc.so (abort+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #01 pc 0000000000009c3c  /system/lib64/liblog.so (__android_log_default_aborter+12) (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+      #02 pc 0000000000009f24  /system/lib64/liblog.so (__android_log_assert+292) (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+      #03 pc 0000000000007c90  /vendor/lib64/c2.dolby.store.so (android::DolbyC2Store::ComponentModule::init(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, bool)+3160) (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+      #04 pc 000000000000c084  /vendor/lib64/c2.dolby.store.so (android::DolbyC2Store::ComponentLoader::fetchModule(std::__1::shared_ptr<android::DolbyC2Store::ComponentModule>*, bool)+272) (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+      #05 pc 000000000000bcbc  /vendor/lib64/c2.dolby.store.so (android::DolbyC2Store::visitComponents()+140) (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+      #06 pc 000000000000b7b8  /vendor/lib64/c2.dolby.store.so (android::DolbyC2Store::listComponents()+52) (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+      #07 pc 0000000000025870  /vendor/lib64/libcodec2_hidl@1.0.so (android::hardware::media::c2::V1_0::utils::ComponentStore::listComponents(std::__1::function<void (android::hardware::media::c2::V1_0::Status, android::hardware::hidl_vec<android::hardware::media::c2::V1_0::IComponentStore::ComponentTraits> const&)>)+96) (BuildId: b09932cf966daa981df0fa9cddd91ca6)
+      #08 pc 000000000005ed9c  /vendor/lib64/android.hardware.media.c2@1.0.so (android::hardware::media::c2::V1_0::BnHwComponentStore::_hidl_listComponents(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+252) (BuildId: 16cc7b2dd04accbd6a639e6e8312831f)
+      #09 pc 000000000006010c  /vendor/lib64/android.hardware.media.c2@1.0.so (android::hardware::media::c2::V1_0::BnHwComponentStore::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+716) (BuildId: 16cc7b2dd04accbd6a639e6e8312831f)
+      #10 pc 0000000000097d30  /vendor/lib64/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+96) (BuildId: 983eea2e161324ca089d786cd1918ce0)
+      #11 pc 00000000000432f4  /vendor/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+1572) (BuildId: 983eea2e161324ca089d786cd1918ce0)
+      #12 pc 000000000000138c  /vendor/bin/hw/dolbycodec2 (main.cfi+800) (BuildId: b55779d5d147564c86c598faf345773e)
+      #13 pc 00000000000a3a7c  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+Note: To display stack pointer information, use the pbtombstone tool:
+        pbtombstone --display-sp tombstone_XX.pb
+
+memory near x3 ([stack]):
+    0000007fc35f5fb0 0000000000000000 0000000000000000  ................
+    0000007fc35f5fc0 00000079f64d7e8b 00000079fdda344f  .~M.y...O4..y...
+    0000007fc35f5fd0 0000000000000000 00000000ffffffff  ................
+    0000007fc35f5fe0 0000041600005682 0000000000000000  .V..............
+    0000007fc35f5ff0 0000000000000000 0000000000000000  ................
+    0000007fc35f6000 0000000000000000 0000000000000000  ................
+    0000007fc35f6010 0000000000000000 0000000000000000  ................
+    0000007fc35f6020 0000000000000000 0000000000000000  ................
+    0000007fc35f6030 0000000000000000 0000000000000000  ................
+    0000007fc35f6040 0000000000000000 0000000000000000  ................
+    0000007fc35f6050 0000007fc35f6080 00000079f64dec40  .`_.....@.M.y...
+    0000007fc35f6060 0000000000000000 0000000000000020  ........ .......
+    0000007fc35f6070 00000079f64d7e8b 00000079fdda344f  .~M.y...O4..y...
+    0000007fc35f6080 0000007fc35f6580 00000079f64def28  .e_.....(.M.y...
+    0000007fc35f6090 343662696c2f726f 626c6f642e32632f  or/lib64/c2.dolb
+    0000007fc35f60a0 746e65696c632e79 002e2e2e226f732e  y.client.so"....
+
+memory near x11 (/apex/com.android.runtime/lib64/bionic/libc.so):
+    00000079f692c680 528002c99401b144 b900000912800008  D......R........
+    00000079f692c690 2a0803e0a8c17bfd d65f03c0d50323bf  .{.....*.#...._.
+    00000079f692c6a0 b4000180d503245f 3101051f51010428  _$......(..Q...1
+    00000079f692c6b0 5100042854000129 5280002af9400009  )..T(..Q..@.*..R
+    00000079f692c6c0 8a2801299ac82148 2a1f03e0f9000009  H!..).(........*
+    00000079f692c6d0 d503233fd65f03c0 910003fda9bf7bfd  .._.?#...{......
+    00000079f692c6e0 528002c99401b12c b900000912800008  ,......R........
+    00000079f692c6f0 2a0803e0a8c17bfd d65f03c0d50323bf  .{.....*.#...._.
+    00000079f692c700 b4000080d503245f 2a1f03e0f900001f  _$.............*
+    00000079f692c710 d503233fd65f03c0 910003fda9bf7bfd  .._.?#...{......
+    00000079f692c720 528002c99401b11c b900000912800008  .......R........
+    00000079f692c730 2a0803e0a8c17bfd d65f03c0d50323bf  .{.....*.#...._.
+    00000079f692c740 b4000080d503245f 2a1f03e0f900001f  _$.............*
+    00000079f692c750 d503233fd65f03c0 910003fda9bf7bfd  .._.?#...{......
+    00000079f692c760 528002c99401b10c b900000912800008  .......R........
+    00000079f692c770 2a0803e0a8c17bfd d65f03c0d50323bf  .{.....*.#...._.
+
+memory near x16 (/apex/com.android.runtime/lib64/bionic/libc.so):
+    00000079f69a10c0 00000079f6926500 00000079f692a090  .e..y.......y...
+    00000079f69a10d0 00000079f6926b00 00000079f69352c0  .k..y....R..y...
+    00000079f69a10e0 00000079f69290d0 00000079f6984340  ....y...@C..y...
+    00000079f69a10f0 00000079f6928b50 00000079f692bbf0  P...y.......y...
+    00000079f69a1100 00000079f6927f30 00000079f6927f90  0...y.......y...
+    00000079f69a1110 00000079f691b7b0 00000079f69281f0  ....y.......y...
+    00000079f69a1120 00000079f6929f10 00000079f692f830  ....y...0...y...
+    00000079f69a1130 00000079f6904d40 00000079f6904900  @M..y....I..y...
+    00000079f69a1140 00000079f6986f00 00000079f6903ec0  .o..y....>..y...
+    00000079f69a1150 00000079f6941b00 00000079f692e5c0  ....y.......y...
+    00000079f69a1160 00000079f692e8c0 00000079f69280a0  ....y.......y...
+    00000079f69a1170 00000079f6928110 00000079f69280c0  ....y.......y...
+    00000079f69a1180 00000079f6935460 00000079f6985c80  `T..y....\..y...
+    00000079f69a1190 00000079f6985040 00000079f6985100  @P..y....Q..y...
+    00000079f69a11a0 00000079f6931840 00000079f6923450  @...y...P4..y...
+    00000079f69a11b0 00000079f6927c40 00000079f69390d0  @|..y.......y...
+
+memory near x17 (/apex/com.android.runtime/lib64/bionic/libc.so):
+    00000079f6984320 aa1f03f7f94007f6 f85f03a9f94016c8  ..@.......@..._.
+    00000079f6984330 54fffe20eb09011f 0000000094005222  .... ..T"R......
+    00000079f6984340 d4000001d28015c8 54c6ea22b13ffc1f  ..........?."..T
+    00000079f6984350 d503201fd65f03c0 d503201fd503201f  .._.. ... ... ..
+    00000079f6984360 d503201fd503201f d503201fd503201f  . ... ... ... ..
+    00000079f6984370 d503201fd503201f d503201fd503201f  . ... ... ... ..
+    00000079f6984380 d4000001d2801608 54c6e822b13ffc1f  ..........?."..T
+    00000079f6984390 d503201fd65f03c0 d503201fd503201f  .._.. ... ... ..
+    00000079f69843a0 d503201fd503201f d503201fd503201f  . ... ... ... ..
+    00000079f69843b0 d503201fd503201f d503201fd503201f  . ... ... ... ..
+    00000079f69843c0 d4000001d28015e8 54c6e622b13ffc1f  ..........?."..T
+    00000079f69843d0 d503201fd65f03c0 d503201fd503201f  .._.. ... ... ..
+    00000079f69843e0 d503201fd503201f d503201fd503201f  . ... ... ... ..
+    00000079f69843f0 d503201fd503201f d503201fd503201f  . ... ... ... ..
+    00000079f6984400 d4000001d2801628 54c6e422b13ffc1f  (.........?."..T
+    00000079f6984410 d503201fd65f03c0 d503201fd503201f  .._.. ... ... ..
+
+memory near x18:
+    0000007a03590000 0000000000000000 0000000000000000  ................
+    0000007a03590010 0000000000000000 0000000000000000  ................
+    0000007a03590020 0000000000000000 0000000000000000  ................
+    0000007a03590030 0000000000000000 0000000000000000  ................
+    0000007a03590040 0000000000000000 0000000000000000  ................
+    0000007a03590050 0000000000000000 0000000000000000  ................
+    0000007a03590060 0000000000000000 0000000000000000  ................
+    0000007a03590070 0000000000000000 0000000000000000  ................
+    0000007a03590080 0000000000000000 0000000000000000  ................
+    0000007a03590090 0000000000000000 0000000000000000  ................
+    0000007a035900a0 0000000000000000 0000000000000000  ................
+    0000007a035900b0 0000000000000000 0000000000000000  ................
+    0000007a035900c0 0000000000000000 0000000000000000  ................
+    0000007a035900d0 0000000000000000 0000000000000000  ................
+    0000007a035900e0 0000000000000000 0000000000000000  ................
+    0000007a035900f0 0000000000000000 0000000000000000  ................
+
+memory near x23 ([anon:libc_malloc]):
+    0000007975e1e550 0000000000000000 0000000000000000  ................
+    0000007975e1e560 0000000000000000 0000000000000000  ................
+    0000007975e1e570 626c6f642e326328 642e637665682e79  (c2.dolby.hevc.d
+    0000007975e1e580 0000006f732e6365 0000000000000000  ec.so...........
+    0000007975e1e590 0000000000000000 0000000000000000  ................
+    0000007975e1e5a0 0000000000000000 0000000000000000  ................
+    0000007975e1e5b0 b400007975e1e500 0000000000000000  ...uy...........
+    0000007975e1e5c0 0000000000000021 0000000000000018  !...............
+    0000007975e1e5d0 b400007975e15460 0000000000000000  `T.uy...........
+    0000007975e1e5e0 0000000000000000 0000000000000000  ................
+    0000007975e1e5f0 0000000000000000 0000000000000000  ................
+    0000007975e1e600 0000000000000000 0000000000000000  ................
+    0000007975e1e610 0000000000000021 0000000000000018  !...............
+    0000007975e1e620 b400007975e154c0 0000000000000000  .T.uy...........
+    0000007975e1e630 0000000000000000 0000000000000000  ................
+    0000007975e1e640 0000000000000000 0000000000000000  ................
+
+memory near x24 ([anon:libc_malloc]):
+    0000007975e1fa20 b400007975e15e40 0000000000000000  @^.uy...........
+    0000007975e1fa30 0000000000000000 0000000000000000  ................
+    0000007975e1fa40 00000079fddad380 0000000000000000  ....y...........
+    0000007975e1fa50 0000000000000001 00000079fddad018  ............y...
+    0000007975e1fa60 b400007975e1fa58 b400007975e1fa40  X..uy...@..uy...
+    0000007975e1fa70 0000000000004000 0000000000000000  .@..............
+    0000007975e1fa80 0000000000000000 0000000000000000  ................
+    0000007975e1fa90 0000000000000000 0000000000000000  ................
+    0000007975e1faa0 0000000000000000 0000000000000013  ................
+    0000007975e1fab0 0000000000000000 0000000000000000  ................
+    0000007975e1fac0 0000000000000000 0000000000000000  ................
+    0000007975e1fad0 0000000000000000 0000000000000000  ................
+    0000007975e1fae0 0000000000000000 0000000000000000  ................
+    0000007975e1faf0 b400007975e1e780 0000000000000000  ...uy...........
+    0000007975e1fb00 0000000000000021 0000000000000018  !...............
+    0000007975e1fb10 b400007975e15e60 000000000000ffff  `^.uy...........
+
+memory near x25 ([anon:stack_and_tls:main]):
+    0000007a02b13de0 0000000000000000 0000000000000000  ................
+    0000007a02b13df0 0000000000000000 0000007a02b13e40  ........@>..z...
+    0000007a02b13e00 0000007a03cdc030 0000007a03e93068  0...z...h0..z...
+    0000007a02b13e10 0000000000000000 0000000000000000  ................
+    0000007a02b13e20 0000000000000000 3073ef9c7b2f4df2  .........M/{..s0
+    0000007a02b13e30 0000000000000000 0000000000000000  ................
+    0000007a02b13e40 0000000000000001 0000007975e01400  ...........uy...
+    0000007a02b13e50 0000000000000000 0000000000000000  ................
+    0000007a02b13e60 0000000000000000 0000000000000000  ................
+    0000007a02b13e70 0000000000000001 b400007975e2b000  ...........uy...
+    0000007a02b13e80 0000000000000000 0000000000000000  ................
+    0000007a02b13e90 0000000000000000 0000000000000000  ................
+    0000007a02b13ea0 0000000000000000 0000000000000000  ................
+    0000007a02b13eb0 0000000000000000 0000000000000000  ................
+    0000007a02b13ec0 0000000000000000 0000000000000000  ................
+    0000007a02b13ed0 0000000000000000 0000000000000000  ................
+
+memory near x26 ([anon:libc_malloc]):
+    0000007975e85670 0000000000000000 0000000000000000  ................
+    0000007975e85680 0000000000000000 0000000000000000  ................
+    0000007975e85690 b400007975e1e500 b400007975e1e500  ...uy......uy...
+    0000007975e856a0 0000000000000002 b400007975e856b0  .........V.uy...
+    0000007975e856b0 0000000000000000 0000000000000000  ................
+    0000007975e856c0 0000000000000000 0000000000000000  ................
+    0000007975e856d0 0000000000000000 b400007975e0a4f8  ...........uy...
+    0000007975e856e0 b400007975e0a4e0 00000079fddad160  ...uy...`...y...
+    0000007975e856f0 0000000000000000 0000000000000000  ................
+    0000007975e85700 0000000000000000 0000000000000000  ................
+    0000007975e85710 0000000000000000 b400007975e0a4f8  ...........uy...
+    0000007975e85720 b400007975e0a4e0 b400007975e4b818  ...uy......uy...
+    0000007975e85730 b400007975e4b800 b400007975e15480  ...uy....T.uy...
+    0000007975e85740 b400007975e154a0 0000000000000000  .T.uy...........
+    0000007975e85750 0000000000000000 0000000000000000  ................
+    0000007975e85760 0000000000000000 0000000000000000  ................
+
+memory near x27 (/vendor/lib64/c2.dolby.store.so):
+    00000079fddacff0 0000000000000000 0000000000000000  ................
+    00000079fddad000 00000079fddad000 0000000000000000  ....y...........
+    00000079fddad010 0000000000000000 00000079fdda629c  .........b..y...
+    00000079fddad020 00000079fdda6570 00000079fdda6174  pe..y...ta..y...
+    00000079fddad030 00000079fdda6844 0000000000000000  Dh..y...........
+    00000079fddad040 0000000000000000 00000079fdda9368  ........h...y...
+    00000079fddad050 00000079fdda9398 00000079fdda95b0  ....y.......y...
+    00000079fddad060 00000079fdda9784 00000079fdda9868  ....y...h...y...
+    00000079fddad070 00000079fdda9870 00000079fdda98dc  p...y.......y...
+    00000079fddad080 00000079fdda9948 00000079fdda9974  H...y...t...y...
+    00000079fddad090 00000079fdda99c8 00000079fdda9a44  ....y...D...y...
+    00000079fddad0a0 00000079fdda9a20 0000000000000000   ...y...........
+    00000079fddad0b0 0000000000000000 00000079fdda60e4  .........`..y...
+    00000079fddad0c0 00000079fdda60e0 00000079fdda60e8  .`..y....`..y...
+    00000079fddad0d0 00000079fdda6110 00000079fdda60e4  .a..y....`..y...
+    00000079fddad0e0 00000079fdda60e0 00000079fdda6124  .`..y...$a..y...
+
+memory near x28 ([anon:stack_and_tls:main]):
+    0000007a02b13de0 0000000000000000 0000000000000000  ................
+    0000007a02b13df0 0000000000000000 0000007a02b13e40  ........@>..z...
+    0000007a02b13e00 0000007a03cdc030 0000007a03e93068  0...z...h0..z...
+    0000007a02b13e10 0000000000000000 0000000000000000  ................
+    0000007a02b13e20 0000000000000000 3073ef9c7b2f4df2  .........M/{..s0
+    0000007a02b13e30 0000000000000000 0000000000000000  ................
+    0000007a02b13e40 0000000000000001 0000007975e01400  ...........uy...
+    0000007a02b13e50 0000000000000000 0000000000000000  ................
+    0000007a02b13e60 0000000000000000 0000000000000000  ................
+    0000007a02b13e70 0000000000000001 b400007975e2b000  ...........uy...
+    0000007a02b13e80 0000000000000000 0000000000000000  ................
+    0000007a02b13e90 0000000000000000 0000000000000000  ................
+    0000007a02b13ea0 0000000000000000 0000000000000000  ................
+    0000007a02b13eb0 0000000000000000 0000000000000000  ................
+    0000007a02b13ec0 0000000000000000 0000000000000000  ................
+    0000007a02b13ed0 0000000000000000 0000000000000000  ................
+
+memory near x29 ([stack]):
+    0000007fc35f6030 0000000000000000 0000000000000000  ................
+    0000007fc35f6040 0000000000000000 0000000000000000  ................
+    0000007fc35f6050 0000007fc35f6080 00000079f64dec40  .`_.....@.M.y...
+    0000007fc35f6060 0000000000000000 0000000000000020  ........ .......
+    0000007fc35f6070 00000079f64d7e8b 00000079fdda344f  .~M.y...O4..y...
+    0000007fc35f6080 0000007fc35f6580 00000079f64def28  .e_.....(.M.y...
+    0000007fc35f6090 343662696c2f726f 626c6f642e32632f  or/lib64/c2.dolb
+    0000007fc35f60a0 746e65696c632e79 002e2e2e226f732e  y.client.so"....
+    0000007fc35f60b0 45455f445349726f 315f34534e504545  orISD_EEEEPNS4_1
+    0000007fc35f60c0 5072656666754236 65646e65536c6f6f  6BufferPoolSende
+    0000007fc35f60d0 65646e65536c6f6f 6566657220224572  oolSenderE" refe
+    0000007fc35f60e0 62206465636e6572 646e65762f222079  renced by "/vend
+    0000007fc35f60f0 0000000600000006 0000000000000000  ................
+    0000007fc35f6100 0006000000000006 0000000000000000  ................
+    0000007fc35f6110 0000000000000000 0000007fc35f66e1  .........f_.....
+    0000007fc35f6120 0000007a03e93168 0000007a03e93276  h1..z...v2..z...
+
+memory near lr (/apex/com.android.runtime/lib64/bionic/libc.so):
+    00000079f69121c0 6f00e40094021b6c aa0003f412800015  l......o........
+    00000079f69121d0 ad0103e0ad0003e0 ad0303e0ad0203e0  ................
+    00000079f69121e0 b90013f3b9000bf5 93407e6894021b2e  ............h~@.
+    00000079f69121f0 b90017e0f9000fff 93407e81aa0803e0  .............~@.
+    00000079f6912200 528000c2910003e3 d400000152801e08  .......R...R....
+    00000079f6912210 4b0003f3b6f80080 b900001394021a5e  .......K^.......
+    00000079f6912220 aa1f03e1528000c0 5280158094021ade  ...R...........R
+    00000079f6912230 aa0003f394021b50 94021b4d52801640  P.......@..RM...
+    00000079f6912240 aa0003f46f00e400 ad0103e0ad0003e0  ...o............
+    00000079f6912250 ad0303e0ad0203e0 b90013f3b9000bf5  ................
+    00000079f6912260 93407e6894021b10 b90017e0f9000fff  ....h~@.........
+    00000079f6912270 93407e81aa0803e0 528000c2910003e3  .....~@........R
+    00000079f6912280 d400000152801e08 4b0003f3b6f80080  ...R...........K
+    00000079f6912290 b900001394021a40 94021c2d52800fe0  @..........R-...
+    00000079f69122a0 7100001fd503245f d65f03c05a805400  _$.....q.T.Z.._.
+    00000079f69122b0 f100001fd503245f d65f03c0da805400  _$.......T...._.
+
+memory near sp ([stack]):
+    0000007fc35f5fb0 0000000000000000 0000000000000000  ................
+    0000007fc35f5fc0 00000079f64d7e8b 00000079fdda344f  .~M.y...O4..y...
+    0000007fc35f5fd0 0000000000000000 00000000ffffffff  ................
+    0000007fc35f5fe0 0000041600005682 0000000000000000  .V..............
+    0000007fc35f5ff0 0000000000000000 0000000000000000  ................
+    0000007fc35f6000 0000000000000000 0000000000000000  ................
+    0000007fc35f6010 0000000000000000 0000000000000000  ................
+    0000007fc35f6020 0000000000000000 0000000000000000  ................
+    0000007fc35f6030 0000000000000000 0000000000000000  ................
+    0000007fc35f6040 0000000000000000 0000000000000000  ................
+    0000007fc35f6050 0000007fc35f6080 00000079f64dec40  .`_.....@.M.y...
+    0000007fc35f6060 0000000000000000 0000000000000020  ........ .......
+    0000007fc35f6070 00000079f64d7e8b 00000079fdda344f  .~M.y...O4..y...
+    0000007fc35f6080 0000007fc35f6580 00000079f64def28  .e_.....(.M.y...
+    0000007fc35f6090 343662696c2f726f 626c6f642e32632f  or/lib64/c2.dolb
+    0000007fc35f60a0 746e65696c632e79 002e2e2e226f732e  y.client.so"....
+
+memory near pc (/apex/com.android.runtime/lib64/bionic/libc.so):
+    00000079f69121f0 b90017e0f9000fff 93407e81aa0803e0  .............~@.
+    00000079f6912200 528000c2910003e3 d400000152801e08  .......R...R....
+    00000079f6912210 4b0003f3b6f80080 b900001394021a5e  .......K^.......
+    00000079f6912220 aa1f03e1528000c0 5280158094021ade  ...R...........R
+    00000079f6912230 aa0003f394021b50 94021b4d52801640  P.......@..RM...
+    00000079f6912240 aa0003f46f00e400 ad0103e0ad0003e0  ...o............
+    00000079f6912250 ad0303e0ad0203e0 b90013f3b9000bf5  ................
+    00000079f6912260 93407e6894021b10 b90017e0f9000fff  ....h~@.........
+    00000079f6912270 93407e81aa0803e0 528000c2910003e3  .....~@........R
+    00000079f6912280 d400000152801e08 4b0003f3b6f80080  ...R...........K
+    00000079f6912290 b900001394021a40 94021c2d52800fe0  @..........R-...
+    00000079f69122a0 7100001fd503245f d65f03c05a805400  _$.....q.T.Z.._.
+    00000079f69122b0 f100001fd503245f d65f03c0da805400  _$.......T...._.
+    00000079f69122c0 f100001fd503245f d65f03c0da805400  _$.......T...._.
+    00000079f69122d0 f100001fd503245f d65f03c0da805400  _$.......T...._.
+    00000079f69122e0 2a1f03e3d503245f 0000000014021bea  _$.....*........
+
+memory map (433 entries):
+    00000063'449c1000-00000063'449c1fff r--         0      1000  /vendor/bin/hw/dolbycodec2 (BuildId: b55779d5d147564c86c598faf345773e)
+                               VmFlags: rd mr mw me dw
+    00000063'449c2000-00000063'449c3fff r-x      1000      2000  /vendor/bin/hw/dolbycodec2 (BuildId: b55779d5d147564c86c598faf345773e)
+                               VmFlags: rd ex mr mw me dw
+    00000063'449c4000-00000063'449c4fff r--      3000      1000  /vendor/bin/hw/dolbycodec2 (BuildId: b55779d5d147564c86c598faf345773e)
+                               VmFlags: rd mr mw me dw ac
+    00000079'6ef0a000-00000079'6f79bfff ---         0    892000
+                               VmFlags: mr mw me
+    00000079'6f79c000-00000079'6f79ffff rw-         0      4000
+                               VmFlags: rd wr mr mw me ac
+    00000079'6f7a0000-00000079'708dffff ---         0   1140000
+                               VmFlags: mr mw me
+    00000079'708e0000-00000079'708e3fff rw-         0      4000
+                               VmFlags: rd wr mr mw me ac
+    00000079'708e4000-00000079'70f09fff ---         0    626000
+                               VmFlags: mr mw me
+    00000079'70f0a000-00000079'70f0afff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'70f0b000-00000079'71006fff rw-         0     fc000  [anon:stack_and_tls:22189]
+                               VmFlags: rd wr mr mw me nr
+    00000079'71007000-00000079'71008fff ---         0      2000
+                               VmFlags: mr mw me nr
+    00000079'71009000-00000079'71104fff rw-         0     fc000  [anon:stack_and_tls:22187]
+                               VmFlags: rd wr mr mw me nr
+    00000079'71105000-00000079'71105fff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'71106000-00000079'71543fff ---         0    43e000
+                               VmFlags: mr mw me
+    00000079'71544000-00000079'71547fff rw-         0      4000
+                               VmFlags: rd wr mr mw me ac
+    00000079'71548000-00000079'72105fff ---         0    bbe000
+                               VmFlags: mr mw me
+    00000079'72106000-00000079'72106fff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'72107000-00000079'72202fff rw-         0     fc000  [anon:stack_and_tls:22150]
+                               VmFlags: rd wr mr mw me nr
+    00000079'72203000-00000079'72203fff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'72204000-00000079'72ce3fff ---         0    ae0000
+                               VmFlags: mr mw me
+    00000079'72ce4000-00000079'72ce7fff rw-         0      4000
+                               VmFlags: rd wr mr mw me ac
+    00000079'72ce8000-00000079'73203fff ---         0    51c000
+                               VmFlags: mr mw me
+    00000079'73204000-00000079'73204fff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'73205000-00000079'73300fff rw-         0     fc000  [anon:stack_and_tls:22149]
+                               VmFlags: rd wr mr mw me nr
+    00000079'73301000-00000079'73301fff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'73302000-00000079'734a3fff ---         0    1a2000
+                               VmFlags: mr mw me
+    00000079'734a4000-00000079'734a7fff rw-         0      4000
+                               VmFlags: rd wr mr mw me ac
+    00000079'734a8000-00000079'74301fff ---         0    e5a000
+                               VmFlags: mr mw me
+    00000079'74302000-00000079'74302fff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'74303000-00000079'743fefff rw-         0     fc000  [anon:stack_and_tls:22148]
+                               VmFlags: rd wr mr mw me nr
+    00000079'743ff000-00000079'743fffff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'74400000-00000079'747fffff rw-         0    400000  [anon:libc_malloc]
+                               VmFlags: rd wr mr mw me ac
+    00000079'74804000-00000079'74d7ffff ---         0    57c000
+                               VmFlags: mr mw me
+    00000079'74d80000-00000079'74d83fff rw-         0      4000
+                               VmFlags: rd wr mr mw me ac
+    00000079'74d84000-00000079'75803fff ---         0    a80000
+                               VmFlags: mr mw me
+    00000079'75902000-00000079'75902fff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'75903000-00000079'759fefff rw-         0     fc000  [anon:stack_and_tls:22147]
+                               VmFlags: rd wr mr mw me nr
+    00000079'759ff000-00000079'759fffff ---         0      1000
+                               VmFlags: mr mw me nr
+    00000079'75a00000-00000079'761fffff rw-         0    800000  [anon:libc_malloc]
+                               VmFlags: rd wr mr mw me ac
+    00000079'76398000-00000079'766b1fff ---         0    31a000  [anon:cfi shadow]
+                               VmFlags: mr mw me nr
+    00000079'766b2000-00000079'766b2fff r--         0      1000  [anon:cfi shadow]
+                               VmFlags: rd mr mw me ac
+    00000079'766b3000-00000079'76762fff ---         0     b0000  [anon:cfi shadow]
+                               VmFlags: mr mw me nr
+    00000079'76763000-00000079'76763fff r--         0      1000  [anon:cfi shadow]
+                               VmFlags: rd mr mw me ac
+    00000079'76764000-00000079'76766fff ---         0      3000  [anon:cfi shadow]
+                               VmFlags: mr mw me nr
+    00000079'76767000-00000079'76767fff r--         0      1000  [anon:cfi shadow]
+                               VmFlags: rd mr mw me ac
+    00000079'76768000-00000079'76768fff r--         0      1000  [anon:cfi shadow]
+                               VmFlags: rd mr mw me ac
+    00000079'76769000-00000079'f6397fff ---         0  7fc2f000  [anon:cfi shadow]
+                               VmFlags: mr mw me nr
+    00000079'f6398000-00000079'f6399fff r--         0      2000  /system/lib64/android.hardware.common-V2-ndk.so (BuildId: 0480dccca1e7981c6ba793152f4c7436)
+                               VmFlags: rd mr mw me
+    00000079'f639a000-00000079'f639afff r-x      2000      1000  /system/lib64/android.hardware.common-V2-ndk.so (BuildId: 0480dccca1e7981c6ba793152f4c7436)
+                               VmFlags: rd ex mr mw me
+    00000079'f639b000-00000079'f639bfff r--      3000      1000  /system/lib64/android.hardware.common-V2-ndk.so (BuildId: 0480dccca1e7981c6ba793152f4c7436)
+                               VmFlags: rd mr mw me ac
+    00000079'f639c000-00000079'f639cfff rw-      4000      1000  /system/lib64/android.hardware.common-V2-ndk.so (BuildId: 0480dccca1e7981c6ba793152f4c7436)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f63ef000-00000079'f63effff r--         0      1000  /vendor/lib64/android.hidl.safe_union@1.0.so (BuildId: 3e8f441bf955b304e9fe39e5952a54db)
+                               VmFlags: rd mr mw me
+    00000079'f63f0000-00000079'f63f0fff r-x      1000      1000  /vendor/lib64/android.hidl.safe_union@1.0.so (BuildId: 3e8f441bf955b304e9fe39e5952a54db)
+                               VmFlags: rd ex mr mw me
+    00000079'f63f1000-00000079'f63f1fff r--      2000      1000  /vendor/lib64/android.hidl.safe_union@1.0.so (BuildId: 3e8f441bf955b304e9fe39e5952a54db)
+                               VmFlags: rd mr mw me ac
+    00000079'f6418000-00000079'f641ffff r--         0      8000  /vendor/lib64/libgralloctypes.so (BuildId: d09a77dc1f01502932846939a1c7f359)
+                               VmFlags: rd mr mw me
+    00000079'f6420000-00000079'f642afff r-x      8000      b000  /vendor/lib64/libgralloctypes.so (BuildId: d09a77dc1f01502932846939a1c7f359)
+                               VmFlags: rd ex mr mw me
+    00000079'f642b000-00000079'f642bfff r--     13000      1000  /vendor/lib64/libgralloctypes.so (BuildId: d09a77dc1f01502932846939a1c7f359)
+                               VmFlags: rd mr mw me ac
+    00000079'f642c000-00000079'f642cfff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'f6444000-00000079'f6459fff r--         0     16000  /vendor/lib64/libcodec2_hidl@1.0.so (BuildId: b09932cf966daa981df0fa9cddd91ca6)
+                               VmFlags: rd mr mw me
+    00000079'f645a000-00000079'f6480fff r-x     16000     27000  /vendor/lib64/libcodec2_hidl@1.0.so (BuildId: b09932cf966daa981df0fa9cddd91ca6)
+                               VmFlags: rd ex mr mw me
+    00000079'f6481000-00000079'f6483fff r--     3d000      3000  /vendor/lib64/libcodec2_hidl@1.0.so (BuildId: b09932cf966daa981df0fa9cddd91ca6)
+                               VmFlags: rd mr mw me ac
+    00000079'f6484000-00000079'f6484fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'f64d5000-00000079'f64d9fff r--         0      5000  /system/lib64/liblog.so (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+                               VmFlags: rd mr mw me
+    00000079'f64da000-00000079'f64e3fff r-x      5000      a000  /system/lib64/liblog.so (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+                               VmFlags: rd ex mr mw me
+    00000079'f64e4000-00000079'f64e4fff r--      f000      1000  /system/lib64/liblog.so (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+                               VmFlags: rd mr mw me ac
+    00000079'f64e5000-00000079'f64e5fff rw-     10000      1000  /system/lib64/liblog.so (BuildId: 076721364a1e42f50eb8e60e6fbc7a2d)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f651b000-00000079'f6523fff r--         0      9000  /system/lib64/libcutils.so (BuildId: 06bfd5b4d42efe8a08167670a03d8bb1)
+                               VmFlags: rd mr mw me
+    00000079'f6524000-00000079'f652ffff r-x      9000      c000  /system/lib64/libcutils.so (BuildId: 06bfd5b4d42efe8a08167670a03d8bb1)
+                               VmFlags: rd ex mr mw me
+    00000079'f6530000-00000079'f6531fff r--     15000      2000  /system/lib64/libcutils.so (BuildId: 06bfd5b4d42efe8a08167670a03d8bb1)
+                               VmFlags: rd mr mw me ac
+    00000079'f6532000-00000079'f6532fff rw-     17000      1000  /system/lib64/libcutils.so (BuildId: 06bfd5b4d42efe8a08167670a03d8bb1)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f6561000-00000079'f6566fff r--         0      6000  /vendor/lib64/libcodec2_hal_common.so (BuildId: 411ea40845590ff2d7f1dd633bba71df)
+                               VmFlags: rd mr mw me
+    00000079'f6567000-00000079'f6574fff r-x      6000      e000  /vendor/lib64/libcodec2_hal_common.so (BuildId: 411ea40845590ff2d7f1dd633bba71df)
+                               VmFlags: rd ex mr mw me
+    00000079'f6575000-00000079'f6575fff r--     14000      1000  /vendor/lib64/libcodec2_hal_common.so (BuildId: 411ea40845590ff2d7f1dd633bba71df)
+                               VmFlags: rd mr mw me ac
+    00000079'f65a1000-00000079'f65a2fff r--         0      2000  /vendor/lib64/android.hardware.common-V2-ndk.so (BuildId: 96fc28e4860cb88645001f236829d461)
+                               VmFlags: rd mr mw me
+    00000079'f65a3000-00000079'f65a3fff r-x      2000      1000  /vendor/lib64/android.hardware.common-V2-ndk.so (BuildId: 96fc28e4860cb88645001f236829d461)
+                               VmFlags: rd ex mr mw me
+    00000079'f65a4000-00000079'f65a4fff r--      3000      1000  /vendor/lib64/android.hardware.common-V2-ndk.so (BuildId: 96fc28e4860cb88645001f236829d461)
+                               VmFlags: rd mr mw me ac
+    00000079'f65a5000-00000079'f65a5fff rw-      4000      1000  /vendor/lib64/android.hardware.common-V2-ndk.so (BuildId: 96fc28e4860cb88645001f236829d461)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f65d2000-00000079'f65e1fff r--         0     10000  /vendor/lib64/libstagefright_aidl_bufferpool2.so (BuildId: 26b2972406a6085e314d67e130c6a98a)
+                               VmFlags: rd mr mw me
+    00000079'f65e2000-00000079'f65f9fff r-x     10000     18000  /vendor/lib64/libstagefright_aidl_bufferpool2.so (BuildId: 26b2972406a6085e314d67e130c6a98a)
+                               VmFlags: rd ex mr mw me
+    00000079'f65fa000-00000079'f65fafff r--     28000      1000  /vendor/lib64/libstagefright_aidl_bufferpool2.so (BuildId: 26b2972406a6085e314d67e130c6a98a)
+                               VmFlags: rd mr mw me ac
+    00000079'f65fb000-00000079'f65fbfff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'f6606000-00000079'f660efff r--         0      9000  /system/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 82570b0cde6474002441df693fe9a1e7)
+                               VmFlags: rd mr mw me
+    00000079'f660f000-00000079'f6617fff r-x      9000      9000  /system/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 82570b0cde6474002441df693fe9a1e7)
+                               VmFlags: rd ex mr mw me
+    00000079'f6618000-00000079'f6619fff r--     12000      2000  /system/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 82570b0cde6474002441df693fe9a1e7)
+                               VmFlags: rd mr mw me ac
+    00000079'f661a000-00000079'f661afff rw-     14000      1000  /system/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 82570b0cde6474002441df693fe9a1e7)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f665b000-00000079'f665bfff r--         0      1000  /system/lib64/android.hardware.graphics.common@1.2.so (BuildId: e4d15c023256a07c1b35afb13beace6b)
+                               VmFlags: rd mr mw me
+    00000079'f665c000-00000079'f665cfff r-x      1000      1000  /system/lib64/android.hardware.graphics.common@1.2.so (BuildId: e4d15c023256a07c1b35afb13beace6b)
+                               VmFlags: rd ex mr mw me
+    00000079'f665d000-00000079'f665dfff r--      2000      1000  /system/lib64/android.hardware.graphics.common@1.2.so (BuildId: e4d15c023256a07c1b35afb13beace6b)
+                               VmFlags: rd mr mw me ac
+    00000079'f6695000-00000079'f6695fff r--         0      1000  /vendor/lib64/libcodec2.so (BuildId: 32691e29aeaca6a84ac7099ad44affbc)
+                               VmFlags: rd mr mw me
+    00000079'f6696000-00000079'f6696fff r-x      1000      1000  /vendor/lib64/libcodec2.so (BuildId: 32691e29aeaca6a84ac7099ad44affbc)
+                               VmFlags: rd ex mr mw me
+    00000079'f6697000-00000079'f6697fff r--      2000      1000  /vendor/lib64/libcodec2.so (BuildId: 32691e29aeaca6a84ac7099ad44affbc)
+                               VmFlags: rd mr mw me ac
+    00000079'f66c8000-00000079'f66c8fff r--         0      1000  /vendor/lib64/android.hardware.common.fmq-V1-ndk.so (BuildId: dc75e39d1f986a6a9684c60ecd83ca98)
+                               VmFlags: rd mr mw me
+    00000079'f66c9000-00000079'f66c9fff r-x      1000      1000  /vendor/lib64/android.hardware.common.fmq-V1-ndk.so (BuildId: dc75e39d1f986a6a9684c60ecd83ca98)
+                               VmFlags: rd ex mr mw me
+    00000079'f66ca000-00000079'f66cafff r--      2000      1000  /vendor/lib64/android.hardware.common.fmq-V1-ndk.so (BuildId: dc75e39d1f986a6a9684c60ecd83ca98)
+                               VmFlags: rd mr mw me ac
+    00000079'f66cb000-00000079'f66cbfff rw-      3000      1000  /vendor/lib64/android.hardware.common.fmq-V1-ndk.so (BuildId: dc75e39d1f986a6a9684c60ecd83ca98)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f6708000-00000079'f6753fff r--         0     4c000  /vendor/lib64/libbinder.so (BuildId: 23d1e778e852ce41921999f298baa474)
+                               VmFlags: rd mr mw me
+    00000079'f6754000-00000079'f67d1fff r-x     4c000     7e000  /vendor/lib64/libbinder.so (BuildId: 23d1e778e852ce41921999f298baa474)
+                               VmFlags: rd ex mr mw me
+    00000079'f67d2000-00000079'f67e1fff r--     ca000     10000  /vendor/lib64/libbinder.so (BuildId: 23d1e778e852ce41921999f298baa474)
+                               VmFlags: rd mr mw me ac
+    00000079'f67e2000-00000079'f67e2fff rw-     da000      1000  /vendor/lib64/libbinder.so (BuildId: 23d1e778e852ce41921999f298baa474)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f6828000-00000079'f6828fff r--         0      1000  /vendor/lib64/android.hardware.graphics.common@1.2.so (BuildId: e4d15c023256a07c1b35afb13beace6b)
+                               VmFlags: rd mr mw me
+    00000079'f6829000-00000079'f6829fff r-x      1000      1000  /vendor/lib64/android.hardware.graphics.common@1.2.so (BuildId: e4d15c023256a07c1b35afb13beace6b)
+                               VmFlags: rd ex mr mw me
+    00000079'f682a000-00000079'f682afff r--      2000      1000  /vendor/lib64/android.hardware.graphics.common@1.2.so (BuildId: e4d15c023256a07c1b35afb13beace6b)
+                               VmFlags: rd mr mw me ac
+    00000079'f6860000-00000079'f68c4fff r--         0     65000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+                               VmFlags: rd mr mw me
+    00000079'f68c5000-00000079'f699afff r-x     65000     d6000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+                               VmFlags: rd ex mr mw me
+    00000079'f699b000-00000079'f69a1fff r--    13b000      7000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+                               VmFlags: rd mr mw me ac
+    00000079'f69a2000-00000079'f69a3fff rw-    142000      2000  /apex/com.android.runtime/lib64/bionic/libc.so (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+                               VmFlags: rd wr mr mw me ac
+    00000079'f69a4000-00000079'f6bb3fff rw-         0    210000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'f6bb4000-00000079'f6bb4fff r--         0      1000  [anon:.bss]
+                               VmFlags: rd mr mw me ac
+    00000079'f6bb5000-00000079'f6bbcfff rw-         0      8000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'f6c00000-00000079'fa9fffff ---         0   3e00000
+                               VmFlags: mr mw me
+    00000079'faa27000-00000079'faaa2fff r--         0     7c000  /system/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd mr mw me
+    00000079'faaa3000-00000079'faaa5fff ---         0      3000
+                               VmFlags: mr mw me
+    00000079'faaa6000-00000079'fab3afff r-x     7b000     95000  /system/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd ex mr mw me
+    00000079'fab3b000-00000079'fab3dfff ---         0      3000
+                               VmFlags: mr mw me
+    00000079'fab3e000-00000079'fab45fff r--    10f000      8000  /system/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd mr mw me ac
+    00000079'fab46000-00000079'fab46fff r--         0      1000  [anon:.bss]
+                               VmFlags: rd mr mw me ac
+    00000079'fab47000-00000079'fab48fff ---         0      2000
+                               VmFlags: mr mw me
+    00000079'fab49000-00000079'fab49fff rw-    116000      1000  /system/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fab4a000-00000079'fab51fff rw-         0      8000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'fabc4000-00000079'fabc4fff r--         0      1000  /system/lib64/libvndksupport.so (BuildId: 2090115bc8817b4a6be0c71aa1484b4b)
+                               VmFlags: rd mr mw me
+    00000079'fabc5000-00000079'fabc5fff r-x      1000      1000  /system/lib64/libvndksupport.so (BuildId: 2090115bc8817b4a6be0c71aa1484b4b)
+                               VmFlags: rd ex mr mw me
+    00000079'fabc6000-00000079'fabc6fff r--      2000      1000  /system/lib64/libvndksupport.so (BuildId: 2090115bc8817b4a6be0c71aa1484b4b)
+                               VmFlags: rd mr mw me ac
+    00000079'fabc7000-00000079'fabc7fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'fac00000-00000079'fdbfffff ---         0   3000000
+                               VmFlags: mr mw me
+    00000079'fdc64000-00000079'fdc6dfff r--         0      a000  /vendor/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 40c31fc0a593729f93c0215d034be1c1)
+                               VmFlags: rd mr mw me
+    00000079'fdc6e000-00000079'fdc77fff r-x      a000      a000  /vendor/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 40c31fc0a593729f93c0215d034be1c1)
+                               VmFlags: rd ex mr mw me
+    00000079'fdc78000-00000079'fdc79fff r--     14000      2000  /vendor/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 40c31fc0a593729f93c0215d034be1c1)
+                               VmFlags: rd mr mw me ac
+    00000079'fdc7a000-00000079'fdc7afff rw-     16000      1000  /vendor/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 40c31fc0a593729f93c0215d034be1c1)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdc93000-00000079'fdc95fff r--         0      3000  /system/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: f614f3040e31dd7a703d9426e8d4ff86)
+                               VmFlags: rd mr mw me
+    00000079'fdc96000-00000079'fdc98fff r-x      3000      3000  /system/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: f614f3040e31dd7a703d9426e8d4ff86)
+                               VmFlags: rd ex mr mw me
+    00000079'fdc99000-00000079'fdc99fff r--      6000      1000  /system/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: f614f3040e31dd7a703d9426e8d4ff86)
+                               VmFlags: rd mr mw me ac
+    00000079'fdc9a000-00000079'fdc9afff rw-      7000      1000  /system/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: f614f3040e31dd7a703d9426e8d4ff86)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdcc4000-00000079'fdcd1fff r--         0      e000  /vendor/lib64/libutils.so (BuildId: 1038ebc33fba2af6725dabff7696c646)
+                               VmFlags: rd mr mw me
+    00000079'fdcd2000-00000079'fdce2fff r-x      e000     11000  /vendor/lib64/libutils.so (BuildId: 1038ebc33fba2af6725dabff7696c646)
+                               VmFlags: rd ex mr mw me
+    00000079'fdce3000-00000079'fdce3fff r--     1f000      1000  /vendor/lib64/libutils.so (BuildId: 1038ebc33fba2af6725dabff7696c646)
+                               VmFlags: rd mr mw me ac
+    00000079'fdce4000-00000079'fdce4fff rw-     20000      1000  /vendor/lib64/libutils.so (BuildId: 1038ebc33fba2af6725dabff7696c646)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdd03000-00000079'fdd16fff r--         0     14000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 50bb8bd84f8a66e3a2641f7b2edd787a)
+                               VmFlags: rd mr mw me
+    00000079'fdd17000-00000079'fdd3dfff r-x     14000     27000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 50bb8bd84f8a66e3a2641f7b2edd787a)
+                               VmFlags: rd ex mr mw me
+    00000079'fdd3e000-00000079'fdd3efff r--     3b000      1000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 50bb8bd84f8a66e3a2641f7b2edd787a)
+                               VmFlags: rd mr mw me ac
+    00000079'fdd3f000-00000079'fdd3ffff rw-     3c000      1000  /apex/com.android.runtime/lib64/bionic/libm.so (BuildId: 50bb8bd84f8a66e3a2641f7b2edd787a)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdd49000-00000079'fdd49fff r--         0      1000  /apex/com.android.runtime/lib64/bionic/libdl_android.so (BuildId: 801dd0f4b9039afdd478e92339d12e32)
+                               VmFlags: rd mr mw me
+    00000079'fdd4a000-00000079'fdd4afff r-x      1000      1000  /apex/com.android.runtime/lib64/bionic/libdl_android.so (BuildId: 801dd0f4b9039afdd478e92339d12e32)
+                               VmFlags: rd ex mr mw me
+    00000079'fdd4b000-00000079'fdd4bfff r--      2000      1000  /apex/com.android.runtime/lib64/bionic/libdl_android.so (BuildId: 801dd0f4b9039afdd478e92339d12e32)
+                               VmFlags: rd mr mw me ac
+    00000079'fdd9e000-00000079'fdda4fff r--         0      7000  /vendor/lib64/c2.dolby.store.so (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+                               VmFlags: rd mr mw me
+    00000079'fdda5000-00000079'fddacfff r-x      7000      8000  /vendor/lib64/c2.dolby.store.so (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+                               VmFlags: rd ex mr mw me
+    00000079'fddad000-00000079'fddadfff r--      f000      1000  /vendor/lib64/c2.dolby.store.so (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+                               VmFlags: rd mr mw me ac
+    00000079'fddae000-00000079'fddaefff rw-      f000      1000  /vendor/lib64/c2.dolby.store.so (BuildId: 4016cad49ce5d0a9dfb7f789390477bd)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fddc7000-00000079'fddd1fff r--         0      b000  /vendor/lib64/android.hardware.media.bufferpool2-V2-ndk.so (BuildId: 4f105dfcd34381a080849f3ea74aac6a)
+                               VmFlags: rd mr mw me
+    00000079'fddd2000-00000079'fddd9fff r-x      b000      8000  /vendor/lib64/android.hardware.media.bufferpool2-V2-ndk.so (BuildId: 4f105dfcd34381a080849f3ea74aac6a)
+                               VmFlags: rd ex mr mw me
+    00000079'fddda000-00000079'fdddbfff r--     13000      2000  /vendor/lib64/android.hardware.media.bufferpool2-V2-ndk.so (BuildId: 4f105dfcd34381a080849f3ea74aac6a)
+                               VmFlags: rd mr mw me ac
+    00000079'fdddc000-00000079'fdddcfff rw-     15000      1000  /vendor/lib64/android.hardware.media.bufferpool2-V2-ndk.so (BuildId: 4f105dfcd34381a080849f3ea74aac6a)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fde02000-00000079'fde17fff r--         0     16000  /vendor/lib64/android.hardware.graphics.bufferqueue@1.0.so (BuildId: dd540bbce22ce4a7df6e1d93f1749322)
+                               VmFlags: rd mr mw me
+    00000079'fde18000-00000079'fde39fff r-x     16000     22000  /vendor/lib64/android.hardware.graphics.bufferqueue@1.0.so (BuildId: dd540bbce22ce4a7df6e1d93f1749322)
+                               VmFlags: rd ex mr mw me
+    00000079'fde3a000-00000079'fde3dfff r--     38000      4000  /vendor/lib64/android.hardware.graphics.bufferqueue@1.0.so (BuildId: dd540bbce22ce4a7df6e1d93f1749322)
+                               VmFlags: rd mr mw me ac
+    00000079'fde3e000-00000079'fde3efff rw-     3c000      1000  /vendor/lib64/android.hardware.graphics.bufferqueue@1.0.so (BuildId: dd540bbce22ce4a7df6e1d93f1749322)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fde4d000-00000079'fde55fff r--         0      9000  /vendor/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 4c3842b5bf888df3f068652db7cbfaad)
+                               VmFlags: rd mr mw me
+    00000079'fde56000-00000079'fde5efff r-x      9000      9000  /vendor/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 4c3842b5bf888df3f068652db7cbfaad)
+                               VmFlags: rd ex mr mw me
+    00000079'fde5f000-00000079'fde60fff r--     12000      2000  /vendor/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 4c3842b5bf888df3f068652db7cbfaad)
+                               VmFlags: rd mr mw me ac
+    00000079'fde61000-00000079'fde61fff rw-     14000      1000  /vendor/lib64/android.hardware.graphics.allocator@4.0.so (BuildId: 4c3842b5bf888df3f068652db7cbfaad)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdeb7000-00000079'fdeb7fff r--         0      1000  /apex/com.android.runtime/lib64/bionic/libdl.so (BuildId: 5a0d14482dff5fa650ba4df8be7b969a)
+                               VmFlags: rd mr mw me
+    00000079'fdeb8000-00000079'fdeb8fff r-x      1000      1000  /apex/com.android.runtime/lib64/bionic/libdl.so (BuildId: 5a0d14482dff5fa650ba4df8be7b969a)
+                               VmFlags: rd ex mr mw me
+    00000079'fdeb9000-00000079'fdeb9fff r--      2000      1000  /apex/com.android.runtime/lib64/bionic/libdl.so (BuildId: 5a0d14482dff5fa650ba4df8be7b969a)
+                               VmFlags: rd mr mw me ac
+    00000079'fdeba000-00000079'fdebafff r--         0      1000  [anon:.bss]
+                               VmFlags: rd mr mw me ac
+    00000079'fdec7000-00000079'fdedafff r--         0     14000  /vendor/lib64/android.hardware.graphics.bufferqueue@2.0.so (BuildId: cf6b459d95500950e34214a5f3be0af9)
+                               VmFlags: rd mr mw me
+    00000079'fdedb000-00000079'fdef7fff r-x     14000     1d000  /vendor/lib64/android.hardware.graphics.bufferqueue@2.0.so (BuildId: cf6b459d95500950e34214a5f3be0af9)
+                               VmFlags: rd ex mr mw me
+    00000079'fdef8000-00000079'fdefbfff r--     31000      4000  /vendor/lib64/android.hardware.graphics.bufferqueue@2.0.so (BuildId: cf6b459d95500950e34214a5f3be0af9)
+                               VmFlags: rd mr mw me ac
+    00000079'fdefc000-00000079'fdefcfff rw-     35000      1000  /vendor/lib64/android.hardware.graphics.bufferqueue@2.0.so (BuildId: cf6b459d95500950e34214a5f3be0af9)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdf02000-00000079'fdf0bfff r--         0      a000  /system/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 16267b18acf30cc3ee564d22719f1703)
+                               VmFlags: rd mr mw me
+    00000079'fdf0c000-00000079'fdf15fff r-x      a000      a000  /system/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 16267b18acf30cc3ee564d22719f1703)
+                               VmFlags: rd ex mr mw me
+    00000079'fdf16000-00000079'fdf17fff r--     14000      2000  /system/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 16267b18acf30cc3ee564d22719f1703)
+                               VmFlags: rd mr mw me ac
+    00000079'fdf18000-00000079'fdf18fff rw-     16000      1000  /system/lib64/android.hardware.graphics.allocator@3.0.so (BuildId: 16267b18acf30cc3ee564d22719f1703)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdf58000-00000079'fdf60fff r--         0      9000  /vendor/lib64/libcutils.so (BuildId: 1380ae529aafa779f58860db5bb076e5)
+                               VmFlags: rd mr mw me
+    00000079'fdf61000-00000079'fdf6cfff r-x      9000      c000  /vendor/lib64/libcutils.so (BuildId: 1380ae529aafa779f58860db5bb076e5)
+                               VmFlags: rd ex mr mw me
+    00000079'fdf6d000-00000079'fdf6efff r--     15000      2000  /vendor/lib64/libcutils.so (BuildId: 1380ae529aafa779f58860db5bb076e5)
+                               VmFlags: rd mr mw me ac
+    00000079'fdf6f000-00000079'fdf6ffff rw-     17000      1000  /vendor/lib64/libcutils.so (BuildId: 1380ae529aafa779f58860db5bb076e5)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdf8f000-00000079'fdf9afff r--         0      c000  /system/lib64/libaconfig_storage_read_api_cc.so (BuildId: 0773a93aba2a57320be353183a7a9118)
+                               VmFlags: rd mr mw me
+    00000079'fdf9b000-00000079'fdfb4fff r-x      c000     1a000  /system/lib64/libaconfig_storage_read_api_cc.so (BuildId: 0773a93aba2a57320be353183a7a9118)
+                               VmFlags: rd ex mr mw me
+    00000079'fdfb5000-00000079'fdfb7fff r--     26000      3000  /system/lib64/libaconfig_storage_read_api_cc.so (BuildId: 0773a93aba2a57320be353183a7a9118)
+                               VmFlags: rd mr mw me ac
+    00000079'fdfb8000-00000079'fdfb8fff rw-     29000      1000  /system/lib64/libaconfig_storage_read_api_cc.so (BuildId: 0773a93aba2a57320be353183a7a9118)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fdfe4000-00000079'fdfedfff r--         0      a000  /vendor/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: a8f6eab6c3145fa8688a4facbb3d564e)
+                               VmFlags: rd mr mw me
+    00000079'fdfee000-00000079'fdff7fff r-x      a000      a000  /vendor/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: a8f6eab6c3145fa8688a4facbb3d564e)
+                               VmFlags: rd ex mr mw me
+    00000079'fdff8000-00000079'fdff9fff r--     14000      2000  /vendor/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: a8f6eab6c3145fa8688a4facbb3d564e)
+                               VmFlags: rd mr mw me ac
+    00000079'fdffa000-00000079'fdffafff rw-     16000      1000  /vendor/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: a8f6eab6c3145fa8688a4facbb3d564e)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe02c000-00000079'fe02efff r--         0      3000  /vendor/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: 757bf56b0ff135d8091c2dabf591e126)
+                               VmFlags: rd mr mw me
+    00000079'fe02f000-00000079'fe031fff r-x      3000      3000  /vendor/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: 757bf56b0ff135d8091c2dabf591e126)
+                               VmFlags: rd ex mr mw me
+    00000079'fe032000-00000079'fe032fff r--      6000      1000  /vendor/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: 757bf56b0ff135d8091c2dabf591e126)
+                               VmFlags: rd mr mw me ac
+    00000079'fe033000-00000079'fe033fff rw-      7000      1000  /vendor/lib64/android.hardware.graphics.common-V7-ndk.so (BuildId: 757bf56b0ff135d8091c2dabf591e126)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe062000-00000079'fe062fff r--         0      1000  /system/lib64/libsync.so (BuildId: c91e35e80afb9ed8f5e88d6625d87cc6)
+                               VmFlags: rd mr mw me
+    00000079'fe063000-00000079'fe063fff r-x      1000      1000  /system/lib64/libsync.so (BuildId: c91e35e80afb9ed8f5e88d6625d87cc6)
+                               VmFlags: rd ex mr mw me
+    00000079'fe064000-00000079'fe064fff r--      2000      1000  /system/lib64/libsync.so (BuildId: c91e35e80afb9ed8f5e88d6625d87cc6)
+                               VmFlags: rd mr mw me ac
+    00000079'fe065000-00000079'fe065fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe098000-00000079'fe0a2fff r--         0      b000  /system/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: 7f1310c3fd174692eca2a4bef362f039)
+                               VmFlags: rd mr mw me
+    00000079'fe0a3000-00000079'fe0aefff r-x      b000      c000  /system/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: 7f1310c3fd174692eca2a4bef362f039)
+                               VmFlags: rd ex mr mw me
+    00000079'fe0af000-00000079'fe0b0fff r--     17000      2000  /system/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: 7f1310c3fd174692eca2a4bef362f039)
+                               VmFlags: rd mr mw me ac
+    00000079'fe0b1000-00000079'fe0b1fff rw-     19000      1000  /system/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: 7f1310c3fd174692eca2a4bef362f039)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe0f1000-00000079'fe0f5fff r--         0      5000  /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: ce9ca67d30b67e49ae675ac45d74f9c9)
+                               VmFlags: rd mr mw me
+    00000079'fe0f6000-00000079'fe0f9fff r-x      5000      4000  /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: ce9ca67d30b67e49ae675ac45d74f9c9)
+                               VmFlags: rd ex mr mw me
+    00000079'fe0fa000-00000079'fe0fafff r--      9000      1000  /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: ce9ca67d30b67e49ae675ac45d74f9c9)
+                               VmFlags: rd mr mw me ac
+    00000079'fe0fb000-00000079'fe0fbfff rw-      a000      1000  /vendor/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: ce9ca67d30b67e49ae675ac45d74f9c9)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe101000-00000079'fe116fff r--         0     16000  /vendor/lib64/libstagefright_foundation.so (BuildId: 57f91f34a57de8e39158328d1446b473)
+                               VmFlags: rd mr mw me
+    00000079'fe117000-00000079'fe136fff r-x     16000     20000  /vendor/lib64/libstagefright_foundation.so (BuildId: 57f91f34a57de8e39158328d1446b473)
+                               VmFlags: rd ex mr mw me
+    00000079'fe137000-00000079'fe138fff r--     36000      2000  /vendor/lib64/libstagefright_foundation.so (BuildId: 57f91f34a57de8e39158328d1446b473)
+                               VmFlags: rd mr mw me ac
+    00000079'fe139000-00000079'fe139fff rw-     38000      1000  /vendor/lib64/libstagefright_foundation.so (BuildId: 57f91f34a57de8e39158328d1446b473)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe142000-00000079'fe169fff r--         0     28000  /vendor/lib64/android.hardware.media.omx@1.0.so (BuildId: 8264cb57b133143d1bfb04b3eb51277b)
+                               VmFlags: rd mr mw me
+    00000079'fe16a000-00000079'fe1b0fff r-x     28000     47000  /vendor/lib64/android.hardware.media.omx@1.0.so (BuildId: 8264cb57b133143d1bfb04b3eb51277b)
+                               VmFlags: rd ex mr mw me
+    00000079'fe1b1000-00000079'fe1b8fff r--     6f000      8000  /vendor/lib64/android.hardware.media.omx@1.0.so (BuildId: 8264cb57b133143d1bfb04b3eb51277b)
+                               VmFlags: rd mr mw me ac
+    00000079'fe1b9000-00000079'fe1b9fff rw-     77000      1000  /vendor/lib64/android.hardware.media.omx@1.0.so (BuildId: 8264cb57b133143d1bfb04b3eb51277b)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe1e0000-00000079'fe1e1fff r--         0      2000  /vendor/lib64/server_configurable_flags.so (BuildId: ac67a272e7a741e0a262f2c1a974e036)
+                               VmFlags: rd mr mw me
+    00000079'fe1e2000-00000079'fe1e3fff r-x      2000      2000  /vendor/lib64/server_configurable_flags.so (BuildId: ac67a272e7a741e0a262f2c1a974e036)
+                               VmFlags: rd ex mr mw me
+    00000079'fe1e4000-00000079'fe1e4fff r--      4000      1000  /vendor/lib64/server_configurable_flags.so (BuildId: ac67a272e7a741e0a262f2c1a974e036)
+                               VmFlags: rd mr mw me ac
+    00000079'fe223000-00000079'fe22dfff r--         0      b000  /vendor/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 59957543b5e975f70147c5d8b95c6201)
+                               VmFlags: rd mr mw me
+    00000079'fe22e000-00000079'fe239fff r-x      b000      c000  /vendor/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 59957543b5e975f70147c5d8b95c6201)
+                               VmFlags: rd ex mr mw me
+    00000079'fe23a000-00000079'fe23bfff r--     17000      2000  /vendor/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 59957543b5e975f70147c5d8b95c6201)
+                               VmFlags: rd mr mw me ac
+    00000079'fe23c000-00000079'fe23cfff rw-     19000      1000  /vendor/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 59957543b5e975f70147c5d8b95c6201)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe26e000-00000079'fe272fff r--         0      5000  /system/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: 7a9ecaf57f18a90b0464a08e2435a4d6)
+                               VmFlags: rd mr mw me
+    00000079'fe273000-00000079'fe276fff r-x      5000      4000  /system/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: 7a9ecaf57f18a90b0464a08e2435a4d6)
+                               VmFlags: rd ex mr mw me
+    00000079'fe277000-00000079'fe277fff r--      9000      1000  /system/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: 7a9ecaf57f18a90b0464a08e2435a4d6)
+                               VmFlags: rd mr mw me ac
+    00000079'fe278000-00000079'fe278fff rw-      a000      1000  /system/lib64/android.hardware.graphics.allocator-V2-ndk.so (BuildId: 7a9ecaf57f18a90b0464a08e2435a4d6)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe2a3000-00000079'fe2a4fff r--         0      2000  /vendor/lib64/libfmq.so (BuildId: 6fa28395fcecd2e4b1dad59a2e519368)
+                               VmFlags: rd mr mw me
+    00000079'fe2a5000-00000079'fe2a5fff r-x      2000      1000  /vendor/lib64/libfmq.so (BuildId: 6fa28395fcecd2e4b1dad59a2e519368)
+                               VmFlags: rd ex mr mw me
+    00000079'fe2a6000-00000079'fe2a6fff r--      3000      1000  /vendor/lib64/libfmq.so (BuildId: 6fa28395fcecd2e4b1dad59a2e519368)
+                               VmFlags: rd mr mw me ac
+    00000079'fe2c8000-00000079'fe2fafff r--         0     33000  /vendor/lib64/android.hardware.media.c2@1.0.so (BuildId: 16cc7b2dd04accbd6a639e6e8312831f)
+                               VmFlags: rd mr mw me
+    00000079'fe2fb000-00000079'fe354fff r-x     33000     5a000  /vendor/lib64/android.hardware.media.c2@1.0.so (BuildId: 16cc7b2dd04accbd6a639e6e8312831f)
+                               VmFlags: rd ex mr mw me
+    00000079'fe355000-00000079'fe35efff r--     8d000      a000  /vendor/lib64/android.hardware.media.c2@1.0.so (BuildId: 16cc7b2dd04accbd6a639e6e8312831f)
+                               VmFlags: rd mr mw me ac
+    00000079'fe35f000-00000079'fe35ffff rw-     97000      1000  /vendor/lib64/android.hardware.media.c2@1.0.so (BuildId: 16cc7b2dd04accbd6a639e6e8312831f)
+                               VmFlags: rd wr mr mw me ac
+    00000079'fe3c8000-00000079'fe3c8fff r--         0      1000  /system/lib64/android.hardware.graphics.common@1.1.so (BuildId: d0763e0a1b66981bdb653df2e8524ac4)
+                               VmFlags: rd mr mw me
+    00000079'fe3c9000-00000079'fe3c9fff r-x      1000      1000  /system/lib64/android.hardware.graphics.common@1.1.so (BuildId: d0763e0a1b66981bdb653df2e8524ac4)
+                               VmFlags: rd ex mr mw me
+    00000079'fe3ca000-00000079'fe3cafff r--      2000      1000  /system/lib64/android.hardware.graphics.common@1.1.so (BuildId: d0763e0a1b66981bdb653df2e8524ac4)
+                               VmFlags: rd mr mw me ac
+    00000079'fe400000-0000007a'00ffffff ---         0   2c00000
+                               VmFlags: mr mw me
+    0000007a'01060000-0000007a'01067fff r--         0      8000  /system/lib64/libgralloctypes.so (BuildId: d9d41feeeed982ed5f21848089865ed4)
+                               VmFlags: rd mr mw me
+    0000007a'01068000-0000007a'01072fff r-x      8000      b000  /system/lib64/libgralloctypes.so (BuildId: d9d41feeeed982ed5f21848089865ed4)
+                               VmFlags: rd ex mr mw me
+    0000007a'01073000-0000007a'01073fff r--     13000      1000  /system/lib64/libgralloctypes.so (BuildId: d9d41feeeed982ed5f21848089865ed4)
+                               VmFlags: rd mr mw me ac
+    0000007a'01074000-0000007a'01074fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01081000-0000007a'0108ffff r--         0      f000  /vendor/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: 8676bd1c7141cb0a63276791a140f23e)
+                               VmFlags: rd mr mw me
+    0000007a'01090000-0000007a'010a2fff r-x      f000     13000  /vendor/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: 8676bd1c7141cb0a63276791a140f23e)
+                               VmFlags: rd ex mr mw me
+    0000007a'010a3000-0000007a'010a5fff r--     22000      3000  /vendor/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: 8676bd1c7141cb0a63276791a140f23e)
+                               VmFlags: rd mr mw me ac
+    0000007a'010a6000-0000007a'010a6fff rw-     25000      1000  /vendor/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: 8676bd1c7141cb0a63276791a140f23e)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'010db000-0000007a'010e5fff r--         0      b000  /system/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 41d598485a73c3ef741c4e917421e3b7)
+                               VmFlags: rd mr mw me
+    0000007a'010e6000-0000007a'010f1fff r-x      b000      c000  /system/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 41d598485a73c3ef741c4e917421e3b7)
+                               VmFlags: rd ex mr mw me
+    0000007a'010f2000-0000007a'010f3fff r--     17000      2000  /system/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 41d598485a73c3ef741c4e917421e3b7)
+                               VmFlags: rd mr mw me ac
+    0000007a'010f4000-0000007a'010f4fff rw-     19000      1000  /system/lib64/android.hardware.graphics.mapper@2.1.so (BuildId: 41d598485a73c3ef741c4e917421e3b7)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01103000-0000007a'01114fff r--         0     12000  /vendor/lib64/libstagefright_bufferpool@2.0.1.so (BuildId: 1d8543a35e52358aa36905b57fba379a)
+                               VmFlags: rd mr mw me
+    0000007a'01115000-0000007a'01131fff r-x     12000     1d000  /vendor/lib64/libstagefright_bufferpool@2.0.1.so (BuildId: 1d8543a35e52358aa36905b57fba379a)
+                               VmFlags: rd ex mr mw me
+    0000007a'01132000-0000007a'01133fff r--     2f000      2000  /vendor/lib64/libstagefright_bufferpool@2.0.1.so (BuildId: 1d8543a35e52358aa36905b57fba379a)
+                               VmFlags: rd mr mw me ac
+    0000007a'01134000-0000007a'01134fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0114f000-0000007a'0115afff r--         0      c000  /system/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: 580050448f3087d9b207c94baf89a9b1)
+                               VmFlags: rd mr mw me
+    0000007a'0115b000-0000007a'01168fff r-x      c000      e000  /system/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: 580050448f3087d9b207c94baf89a9b1)
+                               VmFlags: rd ex mr mw me
+    0000007a'01169000-0000007a'0116afff r--     1a000      2000  /system/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: 580050448f3087d9b207c94baf89a9b1)
+                               VmFlags: rd mr mw me ac
+    0000007a'0116b000-0000007a'0116bfff rw-     1c000      1000  /system/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: 580050448f3087d9b207c94baf89a9b1)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01184000-0000007a'011adfff r--         0     2a000  /system/lib64/libui.so (BuildId: 44a4d3f1a57d4b6897fb37f44aad1639)
+                               VmFlags: rd mr mw me
+    0000007a'011ae000-0000007a'011e6fff r-x     2a000     39000  /system/lib64/libui.so (BuildId: 44a4d3f1a57d4b6897fb37f44aad1639)
+                               VmFlags: rd ex mr mw me
+    0000007a'011e7000-0000007a'011e9fff r--     63000      3000  /system/lib64/libui.so (BuildId: 44a4d3f1a57d4b6897fb37f44aad1639)
+                               VmFlags: rd mr mw me ac
+    0000007a'011ea000-0000007a'011ebfff rw-         0      2000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0122c000-0000007a'0122cfff r--         0      1000  /vendor/lib64/android.hardware.media@1.0.so (BuildId: f4635011d8212e939f323ff67708e205)
+                               VmFlags: rd mr mw me
+    0000007a'0122d000-0000007a'0122dfff r-x      1000      1000  /vendor/lib64/android.hardware.media@1.0.so (BuildId: f4635011d8212e939f323ff67708e205)
+                               VmFlags: rd ex mr mw me
+    0000007a'0122e000-0000007a'0122efff r--      2000      1000  /vendor/lib64/android.hardware.media@1.0.so (BuildId: f4635011d8212e939f323ff67708e205)
+                               VmFlags: rd mr mw me ac
+    0000007a'01245000-0000007a'01259fff r--         0     15000  /vendor/lib64/android.hardware.media.bufferpool@2.0.so (BuildId: d01ee4cd3a63d7a43feecbc805bfd10c)
+                               VmFlags: rd mr mw me
+    0000007a'0125a000-0000007a'01275fff r-x     15000     1c000  /vendor/lib64/android.hardware.media.bufferpool@2.0.so (BuildId: d01ee4cd3a63d7a43feecbc805bfd10c)
+                               VmFlags: rd ex mr mw me
+    0000007a'01276000-0000007a'0127afff r--     31000      5000  /vendor/lib64/android.hardware.media.bufferpool@2.0.so (BuildId: d01ee4cd3a63d7a43feecbc805bfd10c)
+                               VmFlags: rd mr mw me ac
+    0000007a'0127b000-0000007a'0127bfff rw-     36000      1000  /vendor/lib64/android.hardware.media.bufferpool@2.0.so (BuildId: d01ee4cd3a63d7a43feecbc805bfd10c)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01290000-0000007a'012a2fff r--         0     13000  /system/lib64/libbinder_ndk.so (BuildId: 3e727256930da3d365b4fcff4cb26505)
+                               VmFlags: rd mr mw me
+    0000007a'012a3000-0000007a'012b7fff r-x     13000     15000  /system/lib64/libbinder_ndk.so (BuildId: 3e727256930da3d365b4fcff4cb26505)
+                               VmFlags: rd ex mr mw me
+    0000007a'012b8000-0000007a'012b9fff r--     28000      2000  /system/lib64/libbinder_ndk.so (BuildId: 3e727256930da3d365b4fcff4cb26505)
+                               VmFlags: rd mr mw me ac
+    0000007a'012ba000-0000007a'012bafff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'012d2000-0000007a'012d2fff r--         0      1000  /vendor/lib64/android.hardware.graphics.common@1.0.so (BuildId: 46839a5a6d591442f31fc6ee080b7cb3)
+                               VmFlags: rd mr mw me
+    0000007a'012d3000-0000007a'012d3fff r-x      1000      1000  /vendor/lib64/android.hardware.graphics.common@1.0.so (BuildId: 46839a5a6d591442f31fc6ee080b7cb3)
+                               VmFlags: rd ex mr mw me
+    0000007a'012d4000-0000007a'012d4fff r--      2000      1000  /vendor/lib64/android.hardware.graphics.common@1.0.so (BuildId: 46839a5a6d591442f31fc6ee080b7cb3)
+                               VmFlags: rd mr mw me ac
+    0000007a'01307000-0000007a'01314fff r--         0      e000  /system/lib64/libbase.so (BuildId: d3f429700eee39231d05e8f0df348ff6)
+                               VmFlags: rd mr mw me
+    0000007a'01315000-0000007a'01339fff r-x      e000     25000  /system/lib64/libbase.so (BuildId: d3f429700eee39231d05e8f0df348ff6)
+                               VmFlags: rd ex mr mw me
+    0000007a'0133a000-0000007a'0133afff r--     33000      1000  /system/lib64/libbase.so (BuildId: d3f429700eee39231d05e8f0df348ff6)
+                               VmFlags: rd mr mw me ac
+    0000007a'0133b000-0000007a'0133bfff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01356000-0000007a'0137ffff r--         0     2a000  /vendor/lib64/libui.so (BuildId: fd46b6358552a9d4694c84256c42cfea)
+                               VmFlags: rd mr mw me
+    0000007a'01380000-0000007a'013b8fff r-x     2a000     39000  /vendor/lib64/libui.so (BuildId: fd46b6358552a9d4694c84256c42cfea)
+                               VmFlags: rd ex mr mw me
+    0000007a'013b9000-0000007a'013bbfff r--     63000      3000  /vendor/lib64/libui.so (BuildId: fd46b6358552a9d4694c84256c42cfea)
+                               VmFlags: rd mr mw me ac
+    0000007a'013bc000-0000007a'013bdfff rw-         0      2000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'013cd000-0000007a'013d6fff r--         0      a000  /system/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: 2f834568dd6e6740d58ef6f2646fcab3)
+                               VmFlags: rd mr mw me
+    0000007a'013d7000-0000007a'013e0fff r-x      a000      a000  /system/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: 2f834568dd6e6740d58ef6f2646fcab3)
+                               VmFlags: rd ex mr mw me
+    0000007a'013e1000-0000007a'013e2fff r--     14000      2000  /system/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: 2f834568dd6e6740d58ef6f2646fcab3)
+                               VmFlags: rd mr mw me ac
+    0000007a'013e3000-0000007a'013e3fff rw-     16000      1000  /system/lib64/android.hardware.graphics.allocator@2.0.so (BuildId: 2f834568dd6e6740d58ef6f2646fcab3)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01436000-0000007a'01436fff r--         0      1000  /system/lib64/android.hardware.graphics.common@1.0.so (BuildId: 46839a5a6d591442f31fc6ee080b7cb3)
+                               VmFlags: rd mr mw me
+    0000007a'01437000-0000007a'01437fff r-x      1000      1000  /system/lib64/android.hardware.graphics.common@1.0.so (BuildId: 46839a5a6d591442f31fc6ee080b7cb3)
+                               VmFlags: rd ex mr mw me
+    0000007a'01438000-0000007a'01438fff r--      2000      1000  /system/lib64/android.hardware.graphics.common@1.0.so (BuildId: 46839a5a6d591442f31fc6ee080b7cb3)
+                               VmFlags: rd mr mw me ac
+    0000007a'01455000-0000007a'01463fff r--         0      f000  /system/lib64/libapexsupport.so (BuildId: a3ac85b5325c40e5695af0815eb36b47)
+                               VmFlags: rd mr mw me
+    0000007a'01464000-0000007a'01478fff r-x      f000     15000  /system/lib64/libapexsupport.so (BuildId: a3ac85b5325c40e5695af0815eb36b47)
+                               VmFlags: rd ex mr mw me
+    0000007a'01479000-0000007a'0147afff r--     24000      2000  /system/lib64/libapexsupport.so (BuildId: a3ac85b5325c40e5695af0815eb36b47)
+                               VmFlags: rd mr mw me ac
+    0000007a'0147b000-0000007a'0147bfff rw-     26000      1000  /system/lib64/libapexsupport.so (BuildId: a3ac85b5325c40e5695af0815eb36b47)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01487000-0000007a'01502fff r--         0     7c000  /vendor/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd mr mw me
+    0000007a'01503000-0000007a'01505fff ---         0      3000
+                               VmFlags: mr mw me
+    0000007a'01506000-0000007a'0159afff r-x     7b000     95000  /vendor/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd ex mr mw me
+    0000007a'0159b000-0000007a'0159dfff ---         0      3000
+                               VmFlags: mr mw me
+    0000007a'0159e000-0000007a'015a5fff r--    10f000      8000  /vendor/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd mr mw me ac
+    0000007a'015a6000-0000007a'015a6fff r--         0      1000  [anon:.bss]
+                               VmFlags: rd mr mw me ac
+    0000007a'015a7000-0000007a'015a8fff ---         0      2000
+                               VmFlags: mr mw me
+    0000007a'015a9000-0000007a'015a9fff rw-    116000      1000  /vendor/lib64/libc++.so (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba) (load bias 0x4000)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'015aa000-0000007a'015b1fff rw-         0      8000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'015c1000-0000007a'015cefff r--         0      e000  /vendor/lib64/libbase.so (BuildId: 10cf67da5110d42839a11dfa3ad949df)
+                               VmFlags: rd mr mw me
+    0000007a'015cf000-0000007a'015f3fff r-x      e000     25000  /vendor/lib64/libbase.so (BuildId: 10cf67da5110d42839a11dfa3ad949df)
+                               VmFlags: rd ex mr mw me
+    0000007a'015f4000-0000007a'015f4fff r--     33000      1000  /vendor/lib64/libbase.so (BuildId: 10cf67da5110d42839a11dfa3ad949df)
+                               VmFlags: rd mr mw me ac
+    0000007a'015f5000-0000007a'015f5fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01612000-0000007a'0161dfff r--         0      c000  /vendor/lib64/libaconfig_storage_read_api_cc.so (BuildId: 3f74b73212efdf1bdb13ddb98a9aab7c)
+                               VmFlags: rd mr mw me
+    0000007a'0161e000-0000007a'01637fff r-x      c000     1a000  /vendor/lib64/libaconfig_storage_read_api_cc.so (BuildId: 3f74b73212efdf1bdb13ddb98a9aab7c)
+                               VmFlags: rd ex mr mw me
+    0000007a'01638000-0000007a'0163afff r--     26000      3000  /vendor/lib64/libaconfig_storage_read_api_cc.so (BuildId: 3f74b73212efdf1bdb13ddb98a9aab7c)
+                               VmFlags: rd mr mw me ac
+    0000007a'0163b000-0000007a'0163bfff rw-     29000      1000  /vendor/lib64/libaconfig_storage_read_api_cc.so (BuildId: 3f74b73212efdf1bdb13ddb98a9aab7c)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01646000-0000007a'01654fff r--         0      f000  /system/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: d0dce98f20a45c98ccc4f87be271eb10)
+                               VmFlags: rd mr mw me
+    0000007a'01655000-0000007a'01667fff r-x      f000     13000  /system/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: d0dce98f20a45c98ccc4f87be271eb10)
+                               VmFlags: rd ex mr mw me
+    0000007a'01668000-0000007a'0166afff r--     22000      3000  /system/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: d0dce98f20a45c98ccc4f87be271eb10)
+                               VmFlags: rd mr mw me ac
+    0000007a'0166b000-0000007a'0166bfff rw-     25000      1000  /system/lib64/android.hardware.graphics.mapper@4.0.so (BuildId: d0dce98f20a45c98ccc4f87be271eb10)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0168e000-0000007a'016d8fff r--         0     4b000  /vendor/lib64/libcodec2_vndk.so (BuildId: f7cf48f67caf9eb056ed467d25b31bd9)
+                               VmFlags: rd mr mw me
+    0000007a'016d9000-0000007a'0174ffff r-x     4b000     77000  /vendor/lib64/libcodec2_vndk.so (BuildId: f7cf48f67caf9eb056ed467d25b31bd9)
+                               VmFlags: rd ex mr mw me
+    0000007a'01750000-0000007a'01754fff r--     c2000      5000  /vendor/lib64/libcodec2_vndk.so (BuildId: f7cf48f67caf9eb056ed467d25b31bd9)
+                               VmFlags: rd mr mw me ac
+    0000007a'01755000-0000007a'01755fff rw-     c7000      1000  /vendor/lib64/libcodec2_vndk.so (BuildId: f7cf48f67caf9eb056ed467d25b31bd9)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01784000-0000007a'0178bfff r--         0      8000  /vendor/lib64/libdmabufheap.so (BuildId: f4426cb912b5c03ba3e26e5225968d53)
+                               VmFlags: rd mr mw me
+    0000007a'0178c000-0000007a'01797fff r-x      8000      c000  /vendor/lib64/libdmabufheap.so (BuildId: f4426cb912b5c03ba3e26e5225968d53)
+                               VmFlags: rd ex mr mw me
+    0000007a'01798000-0000007a'01798fff r--     14000      1000  /vendor/lib64/libdmabufheap.so (BuildId: f4426cb912b5c03ba3e26e5225968d53)
+                               VmFlags: rd mr mw me ac
+    0000007a'01799000-0000007a'01799fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'017cb000-0000007a'017d5fff r--         0      b000  /vendor/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: e3f468152247d35390fc3a582f4e0e99)
+                               VmFlags: rd mr mw me
+    0000007a'017d6000-0000007a'017e1fff r-x      b000      c000  /vendor/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: e3f468152247d35390fc3a582f4e0e99)
+                               VmFlags: rd ex mr mw me
+    0000007a'017e2000-0000007a'017e3fff r--     17000      2000  /vendor/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: e3f468152247d35390fc3a582f4e0e99)
+                               VmFlags: rd mr mw me ac
+    0000007a'017e4000-0000007a'017e4fff rw-     19000      1000  /vendor/lib64/android.hardware.graphics.mapper@2.0.so (BuildId: e3f468152247d35390fc3a582f4e0e99)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01801000-0000007a'01841fff r--         0     41000  /vendor/lib64/libhidlbase.so (BuildId: 983eea2e161324ca089d786cd1918ce0)
+                               VmFlags: rd mr mw me
+    0000007a'01842000-0000007a'018a3fff r-x     41000     62000  /vendor/lib64/libhidlbase.so (BuildId: 983eea2e161324ca089d786cd1918ce0)
+                               VmFlags: rd ex mr mw me
+    0000007a'018a4000-0000007a'018aefff r--     a3000      b000  /vendor/lib64/libhidlbase.so (BuildId: 983eea2e161324ca089d786cd1918ce0)
+                               VmFlags: rd mr mw me ac
+    0000007a'018af000-0000007a'018affff rw-     ae000      1000  /vendor/lib64/libhidlbase.so (BuildId: 983eea2e161324ca089d786cd1918ce0)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'018eb000-0000007a'018ebfff r--         0      1000  /vendor/lib64/android.hardware.graphics.common@1.1.so (BuildId: d0763e0a1b66981bdb653df2e8524ac4)
+                               VmFlags: rd mr mw me
+    0000007a'018ec000-0000007a'018ecfff r-x      1000      1000  /vendor/lib64/android.hardware.graphics.common@1.1.so (BuildId: d0763e0a1b66981bdb653df2e8524ac4)
+                               VmFlags: rd ex mr mw me
+    0000007a'018ed000-0000007a'018edfff r--      2000      1000  /vendor/lib64/android.hardware.graphics.common@1.1.so (BuildId: d0763e0a1b66981bdb653df2e8524ac4)
+                               VmFlags: rd mr mw me ac
+    0000007a'0190d000-0000007a'0195cfff r--         0     50000  /system/lib64/libbinder.so (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+                               VmFlags: rd mr mw me
+    0000007a'0195d000-0000007a'019e4fff r-x     50000     88000  /system/lib64/libbinder.so (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+                               VmFlags: rd ex mr mw me
+    0000007a'019e5000-0000007a'019f5fff r--     d8000     11000  /system/lib64/libbinder.so (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+                               VmFlags: rd mr mw me ac
+    0000007a'019f6000-0000007a'019f6fff rw-     e9000      1000  /system/lib64/libbinder.so (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01a18000-0000007a'01a58fff r--         0     41000  /system/lib64/libhidlbase.so (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+                               VmFlags: rd mr mw me
+    0000007a'01a59000-0000007a'01abafff r-x     41000     62000  /system/lib64/libhidlbase.so (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+                               VmFlags: rd ex mr mw me
+    0000007a'01abb000-0000007a'01ac5fff r--     a3000      b000  /system/lib64/libhidlbase.so (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+                               VmFlags: rd mr mw me ac
+    0000007a'01ac6000-0000007a'01ac6fff rw-     ae000      1000  /system/lib64/libhidlbase.so (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01ae2000-0000007a'01b41fff rw-         0     60000  [anon:linker_alloc]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01b42000-0000007a'01b4ffff r--         0      e000  /system/lib64/libutils.so (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+                               VmFlags: rd mr mw me
+    0000007a'01b50000-0000007a'01b60fff r-x      e000     11000  /system/lib64/libutils.so (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+                               VmFlags: rd ex mr mw me
+    0000007a'01b61000-0000007a'01b61fff r--     1f000      1000  /system/lib64/libutils.so (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+                               VmFlags: rd mr mw me ac
+    0000007a'01b62000-0000007a'01b62fff rw-     20000      1000  /system/lib64/libutils.so (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01b80000-0000007a'01b84fff r--         0      5000  /vendor/lib64/libcodec2_hidl_plugin.so (BuildId: 791c1badcaad0fbd324ece5f221b44b9)
+                               VmFlags: rd mr mw me
+    0000007a'01b85000-0000007a'01b94fff r-x      5000     10000  /vendor/lib64/libcodec2_hidl_plugin.so (BuildId: 791c1badcaad0fbd324ece5f221b44b9)
+                               VmFlags: rd ex mr mw me
+    0000007a'01b95000-0000007a'01b95fff r--     15000      1000  /vendor/lib64/libcodec2_hidl_plugin.so (BuildId: 791c1badcaad0fbd324ece5f221b44b9)
+                               VmFlags: rd mr mw me ac
+    0000007a'01bef000-0000007a'01bf3fff r--         0      5000  /system/lib64/libnativewindow.so (BuildId: 0d4c76059e03e4f554f86d7cb26d92ff)
+                               VmFlags: rd mr mw me
+    0000007a'01bf4000-0000007a'01bf6fff r-x      5000      3000  /system/lib64/libnativewindow.so (BuildId: 0d4c76059e03e4f554f86d7cb26d92ff)
+                               VmFlags: rd ex mr mw me
+    0000007a'01bf7000-0000007a'01bf7fff r--      8000      1000  /system/lib64/libnativewindow.so (BuildId: 0d4c76059e03e4f554f86d7cb26d92ff)
+                               VmFlags: rd mr mw me ac
+    0000007a'01bf8000-0000007a'01bf8fff rw-         0      1000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'01c00000-0000007a'025fffff ---         0    a00000
+                               VmFlags: mr mw me
+    0000007a'0264b000-0000007a'02656fff r--         0      c000  /vendor/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: a220b2d962cbd4d38b081cc829491a16)
+                               VmFlags: rd mr mw me
+    0000007a'02657000-0000007a'02664fff r-x      c000      e000  /vendor/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: a220b2d962cbd4d38b081cc829491a16)
+                               VmFlags: rd ex mr mw me
+    0000007a'02665000-0000007a'02666fff r--     1a000      2000  /vendor/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: a220b2d962cbd4d38b081cc829491a16)
+                               VmFlags: rd mr mw me ac
+    0000007a'02667000-0000007a'02667fff rw-     1c000      1000  /vendor/lib64/android.hardware.graphics.mapper@3.0.so (BuildId: a220b2d962cbd4d38b081cc829491a16)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'026b4000-0000007a'026b4fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02729000-0000007a'02729fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0278b000-0000007a'0278bfff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0280d000-0000007a'0280dfff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0285d000-0000007a'0285dfff ---         0      1000
+                               VmFlags: mr mw me ac
+    0000007a'0285e000-0000007a'02865fff rw-         0      8000  [anon:thread signal stack]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02866000-0000007a'02868fff r--         0      3000  /system/lib64/libnetd_client.so (BuildId: 460222f8d9c3345d161557e408af6a75)
+                               VmFlags: rd mr mw me
+    0000007a'02869000-0000007a'0286cfff r-x      3000      4000  /system/lib64/libnetd_client.so (BuildId: 460222f8d9c3345d161557e408af6a75)
+                               VmFlags: rd ex mr mw me
+    0000007a'0286d000-0000007a'0286dfff r--      7000      1000  /system/lib64/libnetd_client.so (BuildId: 460222f8d9c3345d161557e408af6a75)
+                               VmFlags: rd mr mw me ac
+    0000007a'0286e000-0000007a'0286efff rw-      8000      1000  /system/lib64/libnetd_client.so (BuildId: 460222f8d9c3345d161557e408af6a75)
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02876000-0000007a'02876fff ---         0      1000
+                               VmFlags: mr mw me ac
+    0000007a'02877000-0000007a'0287efff rw-         0      8000  [anon:thread signal stack]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0287f000-0000007a'0287ffff ---         0      1000
+                               VmFlags: mr mw me ac
+    0000007a'02880000-0000007a'02887fff rw-         0      8000  [anon:thread signal stack]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02888000-0000007a'02888fff ---         0      1000
+                               VmFlags: mr mw me ac
+    0000007a'02889000-0000007a'02890fff rw-         0      8000  [anon:thread signal stack]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02891000-0000007a'02891fff ---         0      1000
+                               VmFlags: mr mw me ac
+    0000007a'02892000-0000007a'02899fff rw-         0      8000  [anon:thread signal stack]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'0289a000-0000007a'0289afff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'028a2000-0000007a'028c1fff r--         0     20000  /dev/__properties__/u:object_r:hwservicemanager_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'028c2000-0000007a'028c2fff ---         0      1000
+                               VmFlags: mr mw me ac
+    0000007a'028c3000-0000007a'028cafff rw-         0      8000  [anon:thread signal stack]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'028cb000-0000007a'028eafff r--         0     20000  /dev/__properties__/u:object_r:log_file_logger_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'028eb000-0000007a'0290afff r--         0     20000  /dev/__properties__/u:object_r:log_tag_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'0290b000-0000007a'0292afff r--         0     20000  /dev/__properties__/u:object_r:heapprofd_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'0292b000-0000007a'0294afff r--         0     20000  /dev/__properties__/u:object_r:libc_debug_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'0294b000-0000007a'0296afff r--         0     20000  /dev/__properties__/u:object_r:gwp_asan_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'0296b000-0000007a'0298afff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'0298b000-0000007a'029aafff r--         0     20000  /dev/__properties__/properties_serial
+                               VmFlags: rd mr me ms
+    0000007a'029ab000-0000007a'029cdfff r--         0     23000  /dev/__properties__/property_info
+                               VmFlags: rd mr me ms
+    0000007a'029ce000-0000007a'029edfff r--         0     20000  /dev/__properties__/u:object_r:vendor_default_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'029ee000-0000007a'02a0dfff r--         0     20000  /dev/__properties__/u:object_r:build_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'02a0e000-0000007a'02a2dfff r--         0     20000  /dev/__properties__/u:object_r:vendor_socket_hook_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'02a2e000-0000007a'02aedfff r--         0     c0000  [anon:linker_alloc]
+                               VmFlags: rd mr mw me ac
+    0000007a'02aee000-0000007a'02aeefff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02af0000-0000007a'02af0fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02af2000-0000007a'02af3fff rw-         0      2000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02af5000-0000007a'02af5fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02af9000-0000007a'02afafff rw-         0      2000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02afc000-0000007a'02afcfff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02afe000-0000007a'02afefff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02b03000-0000007a'02b06fff r--         0      4000  [anon:atexit handlers]
+                               VmFlags: rd mr mw me ac
+    0000007a'02b07000-0000007a'02b07fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02b0c000-0000007a'02b11fff rw-         0      6000  [anon:System property context nodes]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02b12000-0000007a'02b12fff ---         0      1000
+                               VmFlags: mr mw me nr
+    0000007a'02b13000-0000007a'02b16fff rw-         0      4000  [anon:stack_and_tls:main]
+                               VmFlags: rd wr mr mw me nr
+    0000007a'02b17000-0000007a'02b17fff ---         0      1000
+                               VmFlags: mr mw me nr
+    0000007a'02b18000-0000007a'02b1dfff rw-         0      6000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02b1e000-0000007a'02b3dfff r--         0     20000  /dev/__properties__/u:object_r:vndk_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'02b3e000-0000007a'02b40fff rw-         0      3000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02b41000-0000007a'02b60fff r--         0     20000  /dev/__properties__/u:object_r:device_config_memory_safety_native_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'02b61000-0000007a'02b80fff r--         0     20000  /dev/__properties__/u:object_r:arm64_memtag_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'02b81000-0000007a'02be0fff r--         0     60000  [anon:linker_alloc]
+                               VmFlags: rd mr mw me ac
+    0000007a'02be1000-0000007a'02be1fff rw-         0      1000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02be2000-0000007a'02c01fff r--         0     20000  /dev/__properties__/u:object_r:debug_prop:s0
+                               VmFlags: rd mr me ms
+    0000007a'02c02000-0000007a'02c02fff ---         0      1000
+                               VmFlags: mr mw me
+    0000007a'02c03000-0000007a'02c0afff rw-         0      8000
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02c0b000-0000007a'02c0bfff ---         0      1000
+                               VmFlags: mr mw me
+    0000007a'02c0c000-0000007a'02c2bfff r--         0     20000  /dev/__properties__/properties_serial
+                               VmFlags: rd mr me ms
+    0000007a'02c2c000-0000007a'02c31fff rw-         0      6000  [anon:System property context nodes]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02c32000-0000007a'02c54fff r--         0     23000  /dev/__properties__/property_info
+                               VmFlags: rd mr me ms
+    0000007a'02c55000-0000007a'02cb4fff r--         0     60000  [anon:linker_alloc]
+                               VmFlags: rd mr mw me ac
+    0000007a'02cb5000-0000007a'02cb6fff rw-         0      2000  [anon:bionic_alloc_small_objects]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'02cb7000-0000007a'02cb7fff r--         0      1000  [anon:atexit handlers]
+                               VmFlags: rd mr mw me ac
+    0000007a'02cb8000-0000007a'0358ffff ---         0    8d8000
+                               VmFlags: mr mw me
+    0000007a'03590000-0000007a'03593fff rw-         0      4000
+                               VmFlags: rd wr mr mw me ac
+    0000007a'03594000-0000007a'03cb7fff ---         0    724000
+                               VmFlags: mr mw me
+    0000007a'03cb8000-0000007a'03cb8fff ---         0      1000
+                               VmFlags: mr mw me ac
+    0000007a'03cb9000-0000007a'03cc0fff rw-         0      8000  [anon:thread signal stack]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'03cc1000-0000007a'03cc1fff rw-         0      1000  [anon:arc4random data]
+                               VmFlags: rd wr mr mw me ac wf
+    0000007a'03cc3000-0000007a'03cc3fff rw-         0      1000  [anon:abort message]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'03cc4000-0000007a'03cc4fff rw-         0      1000  [anon:arc4random data]
+                               VmFlags: rd wr mr mw me ac wf
+    0000007a'03cc5000-0000007a'03cc5fff r--         0      1000  [vvar]
+                               VmFlags: rd mr de
+    0000007a'03cc6000-0000007a'03cc6fff r-x         0      1000  [vdso]
+                               VmFlags: rd ex mr mw me de
+    0000007a'03cc7000-0000007a'03d13fff r--         0     4d000  /apex/com.android.runtime/bin/linker64 (BuildId: 113efc1f7c2daa3575150b8230429fe4)
+                               VmFlags: rd mr mw me dw
+    0000007a'03d14000-0000007a'03e81fff r-x     4d000    16e000  /apex/com.android.runtime/bin/linker64 (BuildId: 113efc1f7c2daa3575150b8230429fe4)
+                               VmFlags: rd ex mr mw me dw
+    0000007a'03e82000-0000007a'03e8bfff r--    1bb000      a000  /apex/com.android.runtime/bin/linker64 (BuildId: 113efc1f7c2daa3575150b8230429fe4)
+                               VmFlags: rd mr mw me dw ac
+    0000007a'03e8c000-0000007a'03e8efff rw-    1c5000      3000  /apex/com.android.runtime/bin/linker64 (BuildId: 113efc1f7c2daa3575150b8230429fe4)
+                               VmFlags: rd wr mr mw me dw ac
+    0000007a'03e8f000-0000007a'03e90fff rw-         0      2000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007a'03e91000-0000007a'03e91fff r--         0      1000  [anon:.bss]
+                               VmFlags: rd mr mw me ac
+    0000007a'03e92000-0000007a'03eb3fff rw-         0     22000  [anon:.bss]
+                               VmFlags: rd wr mr mw me ac
+    0000007f'c35d7000-0000007f'c35f8fff rw-         0     22000  [stack]
+                               VmFlags: rd wr mr mw me gd ac
+--------- tail end of log main
+11-25 19:03:49.154 22146 22146 I android.hardware.media.c2@1.0-Dolby: Dolby Codec2 service starting...
+11-25 19:03:49.155 22146 22146 I android.hardware.media.c2@1.0-Dolby: Instantiating Dolby Codec2's IComponentStore service...
+11-25 19:03:49.155 22146 22146 E Codec2-FilterWrapper: plugin not OK: -19
+11-25 19:03:49.158 22146 22146 I HidlServiceManagement: Registered android.hardware.media.c2@1.0::IComponentStore/dolby
+11-25 19:03:49.158 22146 22146 I android.hardware.media.c2@1.0-Dolby: Codec2's Dolby IComponentStore creation success.
+11-25 19:03:54.130 22146 22146 F DolbyStore: could not dlopen c2.dolby.hevc.dec.so: dlopen failed: cannot locate symbol "_ZN7android8hardware5media2c24V1_05utils6objcpyEPNS3_10WorkBundleERKNSt3__14listINS7_10unique_ptrI6C2WorkNS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEEPNS4_16BufferPoolSenderE" referenced by "/vendor/lib64/c2.dolby.client.so"...
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Executable: /vendor/bin/hw/dolbycodec2
+Cmdline: /vendor/bin/hw/dolbycodec2
+pid: 22146, ppid: 1, tid: 22147, name: hwbinder:22146_  >>> /vendor/bin/hw/dolbycodec2 <<<
+uid: 1046
+    x0  fffffffffffffffc  x1  00000000c0306201  x2  00000079759fb740  x3  000000000000720c
+    x4  00000079743fba90  x5  00000079f6926a00  x6  00000079743fba80  x7  00000000001f3000
+    x8  000000000000001d  x9  00000079759fb6c0  x10 00000079759fb6c0  x11 00000079759fb690
+    x12 ffffff80ffffffd0  x13 00000000ffffffff  x14 b400007974402100  x15 0000000000000008
+    x16 00000079f67e0fa0  x17 00000079f6921090  x18 0000007974d80000  x19 00000079759fbe00
+    x20 b400007974400120  x21 00000000fffffff7  x22 00000079759fbe00  x23 00000079759fbe00
+    x24 ffffffffffffffff  x25 8000000000000000  x26 0000000005f5e101  x27 0000007a02b13e00
+    x28 8000000000000000  x29 00000079759fb6f0
+    lr  00000079f6921134  sp  00000079759fb610  pc  00000079f6985348  pst 0000000080001000
+    esr 0000000000000000  vg  0000000000000000
+
+9 total frames
+backtrace:
+      #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #02 pc 000000000005920c  /vendor/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+220) (BuildId: 23d1e778e852ce41921999f298baa474)
+      #03 pc 000000000008d78c  /vendor/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+156) (BuildId: 23d1e778e852ce41921999f298baa474)
+      #04 pc 000000000008d6d8  /vendor/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 23d1e778e852ce41921999f298baa474)
+      #05 pc 0000000000017594  /vendor/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #06 pc 0000000000019b14  /vendor/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #07 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #08 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Executable: /vendor/bin/hw/dolbycodec2
+Cmdline: /vendor/bin/hw/dolbycodec2
+pid: 22146, ppid: 1, tid: 22148, name: hwbinder:22146_  >>> /vendor/bin/hw/dolbycodec2 <<<
+uid: 1046
+    x0  fffffffffffffffc  x1  00000000c0306201  x2  00000079743fb740  x3  000000000000720c
+    x4  000000000000000c  x5  0000000000000000  x6  0000000000000000  x7  000000000016f000
+    x8  000000000000001d  x9  00000079743fb6c0  x10 00000079743fb6c0  x11 00000079743fb690
+    x12 ffffff80ffffffd0  x13 00000000ffffffff  x14 b400007975e23d00  x15 0000000000008000
+    x16 00000079f67e0fa0  x17 00000079f6921090  x18 00000079734a4000  x19 00000079743fbe00
+    x20 b400007975e4d520  x21 00000000fffffff7  x22 00000079743fbe00  x23 00000079743fbe00
+    x24 ffffffffffffffff  x25 8000000000000000  x26 0000000005f5e101  x27 00000079759fbe00
+    x28 8000000000000000  x29 00000079743fb6f0
+    lr  00000079f6921134  sp  00000079743fb610  pc  00000079f6985348  pst 0000000080001000
+    esr 0000000000000000  vg  0000000000000000
+
+9 total frames
+backtrace:
+      #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #02 pc 000000000005920c  /vendor/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+220) (BuildId: 23d1e778e852ce41921999f298baa474)
+      #03 pc 000000000008d78c  /vendor/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+156) (BuildId: 23d1e778e852ce41921999f298baa474)
+      #04 pc 000000000008d6d8  /vendor/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 23d1e778e852ce41921999f298baa474)
+      #05 pc 0000000000017594  /vendor/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #06 pc 0000000000019b14  /vendor/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #07 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #08 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Executable: /vendor/bin/hw/dolbycodec2
+Cmdline: /vendor/bin/hw/dolbycodec2
+pid: 22146, ppid: 1, tid: 22149, name: HwBinder:22146_  >>> /vendor/bin/hw/dolbycodec2 <<<
+uid: 1046
+    x0  fffffffffffffffc  x1  00000000c0306201  x2  00000079732fd7b0  x3  0000000000000004
+    x4  00000079721ffa90  x5  00000079f6926a00  x6  00000079721ffa80  x7  7f7f7f7f7f7f7f7f
+    x8  000000000000001d  x9  00000079732fd6a0  x10 00000079732fd6a0  x11 00000079732fd670
+    x12 ffffff80ffffffd0  x13 b400007974402400  x14 b400007974402500  x15 0000000000000080
+    x16 0000007a018aec40  x17 00000079f6921090  x18 0000007972ce4000  x19 00000079732fde00
+    x20 0000000000000000  x21 b400007975e1f540  x22 0000000000007200  x23 0000007a018af398
+    x24 00000079732fde00  x25 000000000000720c  x26 0000000000000000  x27 000000000000720c
+    x28 0000000000000000  x29 00000079732fd6d0
+    lr  00000079f6921134  sp  00000079732fd5f0  pc  00000079f6985348  pst 0000000080001000
+    esr 0000000000000000  vg  0000000000000000
+
+8 total frames
+backtrace:
+      #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #02 pc 0000000000042dec  /vendor/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+284) (BuildId: 983eea2e161324ca089d786cd1918ce0)
+      #03 pc 0000000000046338  /vendor/lib64/libhidlbase.so (android::hardware::PoolThread::threadLoop()+24) (BuildId: 983eea2e161324ca089d786cd1918ce0)
+      #04 pc 0000000000017594  /vendor/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #05 pc 0000000000019b14  /vendor/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Executable: /vendor/bin/hw/dolbycodec2
+Cmdline: /vendor/bin/hw/dolbycodec2
+pid: 22146, ppid: 1, tid: 22150, name: HwBinder:22146_  >>> /vendor/bin/hw/dolbycodec2 <<<
+uid: 1046
+    x0  fffffffffffffffc  x1  00000000c0306201  x2  00000079721ff7b0  x3  0000000000000004
+    x4  7472756500000000  x5  0000000065757274  x6  0000000065757274  x7  00000079721ff665
+    x8  000000000000001d  x9  00000079721ff6a0  x10 00000079721ff6a0  x11 00000079721ff670
+    x12 ffffff80ffffffd0  x13 b400007975e9f000  x14 b400007975e9f100  x15 0000000000000028
+    x16 0000007a018aec40  x17 00000079f6921090  x18 0000007971544000  x19 00000079721ffe00
+    x20 0000000000000000  x21 b400007974406280  x22 0000000000007200  x23 0000007a018af398
+    x24 00000079721ffe00  x25 000000000000720c  x26 0000000000000000  x27 000000000000720c
+    x28 0000000000000000  x29 00000079721ff6d0
+    lr  00000079f6921134  sp  00000079721ff5f0  pc  00000079f6985348  pst 0000000080001000
+    esr 0000000000000000  vg  0000000000000000
+
+8 total frames
+backtrace:
+      #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #02 pc 0000000000042dec  /vendor/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+284) (BuildId: 983eea2e161324ca089d786cd1918ce0)
+      #03 pc 0000000000046338  /vendor/lib64/libhidlbase.so (android::hardware::PoolThread::threadLoop()+24) (BuildId: 983eea2e161324ca089d786cd1918ce0)
+      #04 pc 0000000000017594  /vendor/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #05 pc 0000000000019b14  /vendor/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 1038ebc33fba2af6725dabff7696c646)
+      #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Executable: /vendor/bin/hw/dolbycodec2
+Cmdline: /vendor/bin/hw/dolbycodec2
+pid: 22146, ppid: 1, tid: 22187, name: dolbycodec2  >>> /vendor/bin/hw/dolbycodec2 <<<
+uid: 1046
+    x0  b400007975e4b940  x1  0000000000000089  x2  0000000000000000  x3  0000000000000000
+    x4  0000000000000000  x5  00000000ffffffff  x6  00000000ffffffff  x7  7f7f7f7f7f7f7f7f
+    x8  0000000000000062  x9  0000000000000089  x10 0000000000000009  x11 00000079f6883848
+    x12 0000000000000038  x13 0000000000000000  x14 0000000000000005  x15 0000000000000032
+    x16 00000079f69a1150  x17 00000079f6941b00  x18 000000796f79c000  x19 0000000000000000
+    x20 0000000000000000  x21 b400007975e4b940  x22 0000000000000089  x23 0000007971101d88
+    x24 0000007971101e00  x25 0000000000000000  x26 0000000000000001  x27 00000079711019a0
+    x28 0000007a03e93068  x29 00000079711018d0
+    lr  00000079f6914468  sp  00000079711018b0  pc  00000079f6941b1c  pst 0000000040001000
+    esr 0000000000000000  vg  0000000000000000
+
+8 total frames
+backtrace:
+      #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #03 pc 00000000000b0140  /vendor/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+      #04 pc 000000000001d60c  /vendor/lib64/libstagefright_bufferpool@2.0.1.so (android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl::invalidatorThread(std::__1::map<unsigned int, std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, std::__1::less<unsigned int>, std::__1::allocator<std::__1::pair<unsigned int const, std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const>>>&, std::__1::mutex&, std::__1::condition_variable&, bool&) (.cfi)+140) (BuildId: 1d8543a35e52358aa36905b57fba379a)
+      #05 pc 000000000001dd30  /vendor/lib64/libstagefright_bufferpool@2.0.1.so (void* std::__1::__thread_proxy[abi:nn220000]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, void (*)(std::__1::map<unsigned int, std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, std::__1::less<unsigned int>, std::__1::allocator<std::__1::pair<unsigned int const, std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const>>>&, std::__1::mutex&, std::__1::condition_variable&, bool&), std::__1::reference_wrapper<std::__1::map<unsigned int, std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, std::__1::less<unsigned int>, std::__1::allocator<std::__1::pair<unsigned int const, std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const>>>>, std::__1::reference_wrapper<std::__1::mutex>, std::__1::reference_wrapper<std::__1::condition_variable>, std::__1::reference_wrapper<bool>>>(void*) (.cfi)+64) (BuildId: 1d8543a35e52358aa36905b57fba379a)
+      #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+Executable: /vendor/bin/hw/dolbycodec2
+Cmdline: /vendor/bin/hw/dolbycodec2
+pid: 22146, ppid: 1, tid: 22189, name: dolbycodec2  >>> /vendor/bin/hw/dolbycodec2 <<<
+uid: 1046
+    x0  b400007975e10ab0  x1  0000000000000089  x2  0000000000000000  x3  0000000000000000
+    x4  0000000000000000  x5  00000000ffffffff  x6  00000000ffffffff  x7  7f7f7f7f7f7f7f7f
+    x8  0000000000000062  x9  0000000000000089  x10 0000000000000009  x11 000000003b9ac9ff
+    x12 0000000f4bd9072f  x13 0000000034155555  x14 0000000000000018  x15 0000000f4bd80a55
+    x16 00000079f69a1150  x17 00000079f6941b00  x18 00000079708e0000  x19 0000000000000000
+    x20 0000000000000000  x21 b400007975e10ab0  x22 0000000000000089  x23 0000007971003d88
+    x24 0000007971003e00  x25 0000000000000000  x26 0000007971003a90  x27 0000007971003998
+    x28 b400007975e10a78  x29 00000079710038e0
+    lr  00000079f6914468  sp  00000079710038c0  pc  00000079f6941b1c  pst 0000000040001000
+    esr 0000000000000000  vg  0000000000000000
+
+8 total frames
+backtrace:
+      #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #03 pc 00000000000b0140  /vendor/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+      #04 pc 000000000001deac  /vendor/lib64/libstagefright_bufferpool@2.0.1.so (android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl::evictorThread(std::__1::map<std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, long, std::__1::owner_less<void>, std::__1::allocator<std::__1::pair<std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, long>>>&, std::__1::mutex&, std::__1::condition_variable&) (.cfi)+140) (BuildId: 1d8543a35e52358aa36905b57fba379a)
+      #05 pc 000000000001e250  /vendor/lib64/libstagefright_bufferpool@2.0.1.so (void* std::__1::__thread_proxy[abi:nn220000]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, void (*)(std::__1::map<std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, long, std::__1::owner_less<void>, std::__1::allocator<std::__1::pair<std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, long>>>&, std::__1::mutex&, std::__1::condition_variable&), std::__1::reference_wrapper<std::__1::map<std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, long, std::__1::owner_less<void>, std::__1::allocator<std::__1::pair<std::__1::weak_ptr<android::hardware::media::bufferpool::V2_0::implementation::Accessor::Impl> const, long>>>>, std::__1::reference_wrapper<std::__1::mutex>, std::__1::reference_wrapper<std::__1::condition_variable>>>(void*) (.cfi)+64) (BuildId: 1d8543a35e52358aa36905b57fba379a)
+      #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+      #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+open files:
+    fd 0: /dev/null (unowned)
+    fd 1: /dev/null (unowned)
+    fd 2: /dev/null (unowned)
+    fd 3: socket:[364994] (unowned)
+    fd 4: /dev/binderfs/hwbinder (unowned)
+    fd 5: /dev/binderfs/hwbinder (unowned)
+    fd 6: /sys/kernel/tracing/trace_marker (unowned)
+--------- log main
+11-25 19:03:49.154 22146 22146 I android.hardware.media.c2@1.0-Dolby: Dolby Codec2 service starting...
+11-25 19:03:49.155 22146 22146 I android.hardware.media.c2@1.0-Dolby: Instantiating Dolby Codec2's IComponentStore service...
+11-25 19:03:49.155 22146 22146 E Codec2-FilterWrapper: plugin not OK: -19
+11-25 19:03:49.158 22146 22146 I HidlServiceManagement: Registered android.hardware.media.c2@1.0::IComponentStore/dolby
+11-25 19:03:49.158 22146 22146 I android.hardware.media.c2@1.0-Dolby: Codec2's Dolby IComponentStore creation success.
+11-25 19:03:54.130 22146 22146 F DolbyStore: could not dlopen c2.dolby.hevc.dec.so: dlopen failed: cannot locate symbol "_ZN7android8hardware5media2c24V1_05utils6objcpyEPNS3_10WorkBundleERKNSt3__14listINS7_10unique_ptrI6C2WorkNS7_14default_deleteISA_EEEENS7_9allocatorISD_EEEEPNS4_16BufferPoolSenderE" referenced by "/vendor/lib64/c2.dolby.client.so"...
