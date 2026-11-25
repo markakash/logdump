@@ -10,18 +10,18 @@ UID Policy:
 		No UIDs present.
 	Input Method Service UID=10152
 	Is RTT Enabled: False
-AudioCommandThread: 0xb4000073ac880c00
+AudioCommandThread: 0xb400007312e80c00
 - Commands:
    Command Time        Status      Wait pParam
   Last Command
-   00      000052.976  00000000000 0    0xb400007399507f80
-OutputCommandThread: 0xb4000073ac880d80
+   00      000050.742  00000000000 0    0xb4000072e61a0e80
+OutputCommandThread: 0xb400007312e80d80
 - Commands:
    Command Time        Status      Wait pParam
   Last Command
-   04      000055.071  00000000000 0    0xb4000073ac910c00
+   04      000054.507  00000000000 0    0xb4000072e61d54c0
 
-AudioPolicyManager Dump: 0xb4000073ac88b400
+AudioPolicyManager Dump: 0xb400007312e8b400
  Primary Output I/O handle: 13
  Phone state: AUDIO_MODE_NORMAL
  Force use for communications: 0
@@ -782,24 +782,25 @@ AudioPolicyManager Dump: 0xb4000073ac88b400
  Outputs (6):
   1. Port ID: 1; I/O handle: 13; IOProfile name:primary output; Latency: 48; 0x0006 (AUDIO_OUTPUT_FLAG_PRIMARY|AUDIO_OUTPUT_FLAG_FAST)
      AUDIO_FORMAT_PCM_16_BIT; 48000; Channel mask: 0x3
-     Devices: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
+     Devices: {AUDIO_DEVICE_OUT_SPEAKER, @:}
      Global active count: 0
-   - Product Strategies (3):
-      id 0: - ActivityCount: 0, StopTime: 41190352273, 
-      id 2: - ActivityCount: 0, StopTime: 55075410705, 
-      id 3: - ActivityCount: 0, StopTime: 51172570967, 
+   - Product Strategies (4):
+      id 0: - ActivityCount: 0, StopTime: 46241184199, 
+      id 2: - ActivityCount: 0, StopTime: 48849062532, 
+      id 3: - ActivityCount: 0, StopTime: 50753824510, 
+      id 11: - ActivityCount: 0, StopTime: 54507590550, 
    - Volume Activities (14):
-      id 1: - ActivityCount: 0, StopTime: 0, , Volume: -35.400, MuteCount: 00
-      id 2: - ActivityCount: 0, StopTime: 55075410705, , Volume: -20.100, MuteCount: 00
-      id 3: - ActivityCount: 0, StopTime: 0, , Volume: -25.050, MuteCount: 00
-      id 4: - ActivityCount: 0, StopTime: 0, , Volume: -19.312, MuteCount: 00
-      id 5: - ActivityCount: 0, StopTime: 0, , Volume: -18.938, MuteCount: 00
-      id 6: - ActivityCount: 0, StopTime: 41190352273, , Volume: -36.550, MuteCount: 00
-      id 7: - ActivityCount: 0, StopTime: 51172570967, , Volume: -8.700, MuteCount: 00
+      id 1: - ActivityCount: 0, StopTime: 0, , Volume: -30.800, MuteCount: 00
+      id 2: - ActivityCount: 0, StopTime: 0, , Volume: -20.100, MuteCount: 00
+      id 3: - ActivityCount: 0, StopTime: 54507590550, , Volume: -32.525, MuteCount: 00
+      id 4: - ActivityCount: 0, StopTime: 0, , Volume: -10.765, MuteCount: 00
+      id 5: - ActivityCount: 0, StopTime: 0, , Volume: -11.118, MuteCount: 00
+      id 6: - ActivityCount: 0, StopTime: 46241184199, , Volume: -32.525, MuteCount: 00
+      id 7: - ActivityCount: 0, StopTime: 50753824510, , Volume: -17.400, MuteCount: 00
       id 8: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
       id 9: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
-      id 10: - ActivityCount: 0, StopTime: 49214535604, , Volume: -21.600, MuteCount: 00
-      id 11: - ActivityCount: 0, StopTime: 27905523476, , Volume: -18.938, MuteCount: 00
+      id 10: - ActivityCount: 0, StopTime: 48849062532, , Volume: -8.700, MuteCount: 00
+      id 11: - ActivityCount: 0, StopTime: 36937159515, , Volume: -11.118, MuteCount: 00
       id 12: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 01
       id 13: - ActivityCount: 0, StopTime: 0, , Volume: -11.879, MuteCount: 00
       id 14: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
@@ -810,7 +811,7 @@ AudioPolicyManager Dump: 0xb4000073ac88b400
          Stream: 1; Flags: 00000004; Refcount: 0; InternalMute: No
          DAP Primary Mix: 0x0
          Uid 10187
-  2. Port ID: 6; I/O handle: 21; IOProfile name:raw; Latency: 42; 0x0104 (AUDIO_OUTPUT_FLAG_FAST|AUDIO_OUTPUT_FLAG_RAW)
+  2. Port ID: 6; I/O handle: 21; IOProfile name:raw; Latency: 48; 0x0104 (AUDIO_OUTPUT_FLAG_FAST|AUDIO_OUTPUT_FLAG_RAW)
      AUDIO_FORMAT_PCM_16_BIT; 48000; Channel mask: 0x3
      Devices: {AUDIO_DEVICE_OUT_SPEAKER, @:}
      Global active count: 0
@@ -842,21 +843,21 @@ AudioPolicyManager Dump: 0xb4000073ac88b400
      Devices: {AUDIO_DEVICE_OUT_EARPIECE, @:}
      Global active count: 0
    - Product Strategies (1):
-      id 1: - ActivityCount: 0, StopTime: 45904041542, 
+      id 1: - ActivityCount: 0, StopTime: 41742812534, 
    - Volume Activities (14):
       id 1: - ActivityCount: 0, StopTime: 0, , Volume: -30.800, MuteCount: 00
-      id 2: - ActivityCount: 0, StopTime: 0, , Volume: -11.303, MuteCount: 00
+      id 2: - ActivityCount: 0, StopTime: 0, , Volume: -8.000, MuteCount: 00
       id 3: - ActivityCount: 0, StopTime: 0, , Volume: -32.525, MuteCount: 00
-      id 4: - ActivityCount: 0, StopTime: 0, , Volume: -11.303, MuteCount: 00
-      id 5: - ActivityCount: 0, StopTime: 0, , Volume: -11.303, MuteCount: 00
+      id 4: - ActivityCount: 0, StopTime: 0, , Volume: -10.765, MuteCount: 00
+      id 5: - ActivityCount: 0, StopTime: 0, , Volume: -11.118, MuteCount: 00
       id 6: - ActivityCount: 0, StopTime: 0, , Volume: -32.525, MuteCount: 00
       id 7: - ActivityCount: 0, StopTime: 0, , Volume: -14.500, MuteCount: 00
       id 8: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
       id 9: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
       id 10: - ActivityCount: 0, StopTime: 0, , Volume: -14.500, MuteCount: 00
-      id 11: - ActivityCount: 0, StopTime: 0, , Volume: -11.303, MuteCount: 00
+      id 11: - ActivityCount: 0, StopTime: 0, , Volume: -11.118, MuteCount: 00
       id 12: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 01
-      id 13: - ActivityCount: 0, StopTime: 45904041542, , Volume: -14.303, MuteCount: 00
+      id 13: - ActivityCount: 0, StopTime: 41742812534, , Volume: -24.000, MuteCount: 00
       id 14: - ActivityCount: 0, StopTime: 0, , Volume: 0.000, MuteCount: 00
   6. Port ID: 16; I/O handle: 61; IOProfile name:incall_music_uplink; Latency: 112; 0x10000 (AUDIO_OUTPUT_FLAG_INCALL_MUSIC)
      AUDIO_FORMAT_PCM_16_BIT; 48000; Channel mask: 0x3
@@ -870,12 +871,12 @@ AudioPolicyManager Dump: 0xb4000073ac88b400
 
  Inputs (0):
 
- Total Effects CPU: 0.000000 MIPS, Total Effects memory: 0 KB, Max memory used: 1 KB
+ Total Effects CPU: 0.000000 MIPS, Total Effects memory: 0 KB, Max memory used: 5 KB
 
  Audio Patches (6):
-  1. owner uid 1041; handle  5; HAL handle 84
+  1. owner uid 1041; handle  5; HAL handle 108
      [src  1] Mix Port ID: 1; I/O handle: 13;
-     [sink 1] Device Port ID: 4; {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
+     [sink 1] Device Port ID: 3; {AUDIO_DEVICE_OUT_SPEAKER, @:}
   2. owner uid 1041; handle  7; HAL handle 20
      [src  1] Mix Port ID: 6; I/O handle: 21;
      [sink 1] Device Port ID: 3; {AUDIO_DEVICE_OUT_SPEAKER, @:}
@@ -901,7 +902,7 @@ AudioPolicyManager Dump: 0xb4000073ac88b400
 Policy Engine dump:
   Product Strategies dump:
     -STRATEGY_MEDIA (id: 0)
-      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
        Group: 6 stream: AUDIO_STREAM_MUSIC
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_MEDIA Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
        Group: 6 stream: AUDIO_STREAM_MUSIC
@@ -926,19 +927,19 @@ Policy Engine dump:
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ALARM Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
 
     -STRATEGY_SONIFICATION_RESPECTFUL (id: 3)
-      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
        Group: 7 stream: AUDIO_STREAM_NOTIFICATION
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
        Group: 7 stream: AUDIO_STREAM_NOTIFICATION
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_NOTIFICATION_EVENT Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
 
     -STRATEGY_DTMF (id: 4)
-      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
        Group: 4 stream: AUDIO_STREAM_DTMF
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VOICE_COMMUNICATION_SIGNALLING Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
 
     -STRATEGY_ENFORCED_AUDIBLE (id: 5)
-      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
        Group: 5 stream: AUDIO_STREAM_ENFORCED_AUDIBLE
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_INVALID Flags: 0x1 Tags:  }
 
@@ -956,12 +957,12 @@ Policy Engine dump:
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_RINGTONE_VIBRATION Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
 
     -STRATEGY_ACCESSIBILITY (id: 7)
-      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
        Group: 1 stream: AUDIO_STREAM_ACCESSIBILITY
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANCE_ACCESSIBILITY Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
 
     -STRATEGY_REROUTING (id: 8)
-      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
        Group: 9 stream: AUDIO_STREAM_REROUTING
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_VIRTUAL_SOURCE Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags: reserved_internal_strategy }
 
@@ -976,7 +977,7 @@ Policy Engine dump:
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_UNKNOWN Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags: reserved_internal_strategy }
 
     -STRATEGY_ASSISTANT (id: 11)
-      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER, @:}
+      Selected Device: {AUDIO_DEVICE_OUT_SPEAKER_SAFE, @:}
        Group: 3 stream: AUDIO_STREAM_ASSISTANT
         Attributes: { Content type: AUDIO_CONTENT_TYPE_UNKNOWN Usage: AUDIO_USAGE_ASSISTANT Source: AUDIO_SOURCE_INVALID Flags: 0x0 Tags:  }
 
@@ -995,7 +996,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  0, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
        DEVICE_CATEGORY_HEARING_AID : { (  0, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          01         15         0002 : 05, 40000000 : 06, 
+        true          01         15         0002 : 06, 40000000 : 06, 
 
 
     -AUDIO_STREAM_ALARM (id: 2)
@@ -1021,7 +1022,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
        DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         15         0002 : 07, 40000000 : 05, 
+        true          00         15         0002 : 05, 40000000 : 05, 
 
 
     -AUDIO_STREAM_DTMF (id: 4)
@@ -1034,7 +1035,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
        DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         15         0002 : 04, 40000000 : 11, 
+        true          00         15         0002 : 11, 40000000 : 11, 
 
 
     -AUDIO_STREAM_ENFORCED_AUDIBLE (id: 5)
@@ -1047,7 +1048,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
        DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         07         0002 : 02, 40000000 : 05, 
+        true          00         07         0002 : 05, 40000000 : 05, 
 
 
     -AUDIO_STREAM_MUSIC (id: 6)
@@ -1063,7 +1064,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
        DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         15         0002 : 04, 40000000 : 05, 
+        true          00         15         0002 : 05, 40000000 : 05, 
 
 
     -AUDIO_STREAM_NOTIFICATION (id: 7)
@@ -1077,7 +1078,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
        DEVICE_CATEGORY_HEARING_AID : { (  1, -4950),  ( 33, -3350),  ( 66, -1700),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         07         0002 : 05, 40000000 : 05, 
+        true          00         07         0002 : 03, 40000000 : 05, 
 
 
     -AUDIO_STREAM_PATCH (id: 8)
@@ -1116,7 +1117,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
        DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         07         0002 : 02, 40000000 : 05, 
+        true          00         07         0002 : 05, 40000000 : 05, 
 
 
     -AUDIO_STREAM_SYSTEM (id: 11)
@@ -1129,7 +1130,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -2100),  (100, -1000) }
        DEVICE_CATEGORY_HEARING_AID : { (  1, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         07         0002 : 02, 40000000 : 05, 
+        true          00         07         0002 : 05, 40000000 : 05, 
 
 
     -AUDIO_STREAM_TTS (id: 12)
@@ -1146,7 +1147,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  0, -9600),  (100, -9600) }
        DEVICE_CATEGORY_HEARING_AID : { (  0, -9600),  (100, -9600) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          00         15         0002 : 04, 40000000 : 05, 
+        true          00         15         0002 : 05, 40000000 : 05, 
 
 
     -AUDIO_STREAM_VOICE_CALL (id: 13)
@@ -1159,7 +1160,7 @@ Policy Engine dump:
        DEVICE_CATEGORY_EXT_MEDIA : { (  1, -5800),  ( 20, -4000),  ( 60, -1700),  (100,     0) }
        DEVICE_CATEGORY_HEARING_AID : { (  0, -12700),  ( 20, -8000),  ( 60, -4000),  (100,     0) }
         Can be muted  Index Min  Index Max  Index Cur [device : index]...
-        true          01         11         0001 : 05, 40000000 : 06, 
+        true          01         11         0001 : 01, 40000000 : 06, 
 
 
     -AUDIO_STREAM_CALL_ASSISTANT (id: 14)
@@ -1179,12 +1180,12 @@ Policy Engine dump:
 
 Absolute volume devices with driving streams:
    - device type: 0x20000002, driving stream 6
-   - device type: 0x20000001, driving stream 6
-   - device type: 0x8000000, driving stream 6
    - device type: 0x10, driving stream 13
    - device type: 0x20000000, driving stream 6
    - device type: 0x20000004, driving stream 6
    - device type: 0x20, driving stream 6
+   - device type: 0x20000001, driving stream 6
+   - device type: 0x8000000, driving stream 6
 
 Mmap policy:
  - DEFAULT: {AudioDeviceDescription{type: IN_DEVICE, connection: usb}:AUTO AudioDeviceDescription{type: IN_HEADSET, connection: usb}:AUTO AudioDeviceDescription{type: IN_MICROPHONE, connection: }:AUTO AudioDeviceDescription{type: IN_MICROPHONE_BACK, connection: }:AUTO AudioDeviceDescription{type: OUT_DEVICE, connection: usb}:AUTO AudioDeviceDescription{type: OUT_HEADSET, connection: usb}:AUTO AudioDeviceDescription{type: OUT_SPEAKER, connection: }:AUTO AudioDeviceDescription{type: OUT_SPEAKER_EARPIECE, connection: }:AUTO AudioDeviceDescription{type: OUT_SPEAKER_SAFE, connection: }:AUTO }
@@ -1212,38 +1213,39 @@ USE_EXACT_ALARM: 1000, 2000, 10121, 10127, 10146, 10187, 10264
 Spatializer no supportted on this device
 
 IAudioPolicyService binder call profile
-6 setForceUse n=8 ave=0.743736 std=1.32011 min=0.01427 max=2.90099
-8 getOutput n=12 ave=0.281018 std=0.201496 min=0.081613 max=0.662655
-18 setDeviceAbsoluteVolumeEnabled n=8 ave=0.137336 std=0.0959916 min=0.059843 max=0.326561
-20 setStreamVolumeIndex n=225 ave=0.549171 std=0.655527 min=0.069217 max=4.40583
-26 getMaxVolumeIndexForGroup n=16 ave=0.0110693 std=0.00589509 min=0.005988 max=0.028124
-27 getMinVolumeIndexForGroup n=16 ave=0.00972506 std=0.0031467 min=0.006456 max=0.015885
-28 setMaxVolumeIndexForGroup n=11 ave=0.0164617 std=0.00715022 min=0.009166 max=0.035468
-29 setMinVolumeIndexForGroup n=11 ave=0.0345298 std=0.0333852 min=0.01328 max=0.131456
-30 setVolumeIndexForGroup n=19 ave=0.239859 std=0.13824 min=0.11453 max=0.662239
-33 getDevicesForAttributes n=60 ave=0.0921459 std=0.0504346 min=0.04552 max=0.396664
-47 setSupportedSystemUsages n=1 ave=0.015208 min=0.015208 max=0.015208
-49 getOffloadSupport n=12 ave=0.0470557 std=0.0202079 min=0.031873 max=0.102341
-51 listAudioPorts n=33 ave=3.24475 std=2.78514 min=0.321145 max=9.0375
-52 52 n=1 ave=0.143541 min=0.143541 max=0.143541
-56 listAudioPatches n=33 ave=1.15176 std=2.55822 min=0.086249 max=10.6149
-58 registerClient n=6 ave=0.05282 std=0.0185394 min=0.037239 max=0.088853
-59 setAudioPortCallbacksEnabled n=11 ave=0.0153159 std=0.00912511 min=0.006978 max=0.034166
-60 setAudioVolumeGroupCallbacksEnabled n=7 ave=0.0149466 std=0.0128041 min=0.004425 max=0.042707
-64 registerPolicyMixes n=2 ave=0.027837 std=0.0150628 min=0.017186 max=0.038488
-73 setMasterMono n=2 ave=0.017134 std=0.00574454 min=0.013072 max=0.021196
-75 getStreamVolumeDB n=12 ave=0.0348685 std=0.0408988 min=0.012914 max=0.160989
-80 setAssistantServicesUids n=3 ave=0.0207623 std=0.00186152 min=0.019321 max=0.022864
-81 setActiveAssistantServicesUids n=2 ave=0.0352325 std=0.0295733 min=0.014321 max=0.056144
-82 setA11yServicesUids n=7 ave=0.0291721 std=0.0135361 min=0.020467 max=0.059529
-83 setCurrentImeUid n=1 ave=0.049894 min=0.049894 max=0.049894
-84 isHapticPlaybackSupported n=1 ave=0.055051 min=0.055051 max=0.055051
-87 getAttributesForStreamType n=118 ave=0.0200483 std=0.013799 min=0.008332 max=0.119582
-88 getStreamTypeForAttributes n=42 ave=0.0580764 std=0.0341055 min=0.012081 max=0.183488
-89 listAudioProductStrategies n=1 ave=0.119477 min=0.119477 max=0.119477
-93 listAudioVolumeGroups n=1 ave=0.130051 min=0.130051 max=0.130051
-95 setRttEnabled n=2 ave=0.932029 std=1.29673 min=0.015102 max=1.84896
-96 isCallScreenModeSupported n=1 ave=0.016769 min=0.016769 max=0.016769
-106 registerSoundTriggerCaptureStateListener n=1 ave=0.087133 min=0.087133 max=0.087133
-115 getPermissionController n=1 ave=0.02302 min=0.02302 max=0.02302
-118 118 n=1 ave=0.008852 min=0.008852 max=0.008852
+6 setForceUse n=8 ave=0.682147 std=1.19782 min=0.012029 max=2.6489
+8 getOutput n=20 ave=0.335702 std=0.172628 min=0.068853 max=0.575467
+18 setDeviceAbsoluteVolumeEnabled n=8 ave=0.0850701 std=0.0743847 min=0.053228 max=0.266718
+20 setStreamVolumeIndex n=192 ave=3.02154 std=34.3176 min=0.048644 max=475.968
+26 getMaxVolumeIndexForGroup n=16 ave=0.0114276 std=0.00380133 min=0.007759 max=0.020832
+27 getMinVolumeIndexForGroup n=16 ave=0.0101224 std=0.00421755 min=0.007812 max=0.025208
+28 setMaxVolumeIndexForGroup n=11 ave=0.0174135 std=0.00841358 min=0.009477 max=0.030416
+29 setMinVolumeIndexForGroup n=11 ave=0.0260923 std=0.00858836 min=0.015727 max=0.045831
+30 setVolumeIndexForGroup n=19 ave=0.298041 std=0.429153 min=0.040987 max=2.02911
+33 getDevicesForAttributes n=61 ave=0.097576 std=0.0624406 min=0.038331 max=0.423592
+39 isStreamActive n=14 ave=0.051944 std=0.0328784 min=0.014062 max=0.117602
+47 setSupportedSystemUsages n=1 ave=0.02156 min=0.02156 max=0.02156
+49 getOffloadSupport n=20 ave=0.0801468 std=0.0368089 min=0.037499 max=0.16479
+51 listAudioPorts n=51 ave=2.12272 std=2.01248 min=0.237552 max=8.26036
+52 52 n=1 ave=0.137863 min=0.137863 max=0.137863
+56 listAudioPatches n=51 ave=0.383241 std=0.612852 min=0.055258 max=2.97526
+58 registerClient n=6 ave=0.0586357 std=0.0201416 min=0.039426 max=0.096978
+59 setAudioPortCallbacksEnabled n=11 ave=0.0128489 std=0.0110212 min=0.002915 max=0.034218
+60 setAudioVolumeGroupCallbacksEnabled n=7 ave=0.0161146 std=0.0202789 min=0.002968 max=0.058643
+64 registerPolicyMixes n=2 ave=0.0308835 std=0.0198138 min=0.016873 max=0.044894
+73 setMasterMono n=2 ave=0.01065 std=0.00151038 min=0.009582 max=0.011718
+75 getStreamVolumeDB n=12 ave=0.099851 std=0.123133 min=0.020624 max=0.359166
+80 setAssistantServicesUids n=3 ave=0.85413 std=1.41426 min=0.022134 max=2.48708
+81 setActiveAssistantServicesUids n=2 ave=0.0179675 std=0.00478641 min=0.014583 max=0.021352
+82 setA11yServicesUids n=7 ave=0.0308169 std=0.0287175 min=0.014268 max=0.095415
+83 setCurrentImeUid n=1 ave=0.023696 min=0.023696 max=0.023696
+84 isHapticPlaybackSupported n=1 ave=0.047291 min=0.047291 max=0.047291
+87 getAttributesForStreamType n=118 ave=0.0264369 std=0.0241439 min=0.008905 max=0.1963
+88 getStreamTypeForAttributes n=54 ave=0.0955676 std=0.121552 min=0.028331 max=0.93552
+89 listAudioProductStrategies n=1 ave=0.128072 min=0.128072 max=0.128072
+93 listAudioVolumeGroups n=1 ave=0.094843 min=0.094843 max=0.094843
+95 setRttEnabled n=2 ave=0.02888 std=0.0308992 min=0.007031 max=0.050729
+96 isCallScreenModeSupported n=1 ave=0.025364 min=0.025364 max=0.025364
+106 registerSoundTriggerCaptureStateListener n=1 ave=0.104686 min=0.104686 max=0.104686
+115 getPermissionController n=1 ave=0.029061 min=0.029061 max=0.029061
+118 118 n=1 ave=0.01281 min=0.01281 max=0.01281
