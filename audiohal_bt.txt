@@ -1,0 +1,153 @@
+
+
+----- pid 1328 at 2026-11-25 16:48:31.616755701+0000 -----
+Cmd line: /vendor/bin/hw/android.hardware.audio.service
+ABI: 'arm'
+Ppid: 1
+
+"audio.service" sysTid=1328
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0003927f  /vendor/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+322) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #03 pc 0000342d  /vendor/bin/hw/android.hardware.audio.service (main+4872) (BuildId: 603c425ff101bf71f7ca1d531e950afc)
+    #04 pc 0006bee3  /apex/com.android.runtime/lib/bionic/libc.so (__libc_init+74) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"vndbinder:1328_" sysTid=1334
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0003f98b  /vendor/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+454) (BuildId: dc939afe635078a841dba4d4028284d6)
+    #03 pc 0003f7bd  /vendor/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: dc939afe635078a841dba4d4028284d6)
+    #04 pc 0000b7bf  /vendor/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #05 pc 0000f2e1  /vendor/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #06 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #07 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"binder:1328_1" sysTid=1335
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 00041a0f  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+454) (BuildId: 451674f7ee55dedb0117c246f8d29d4f)
+    #03 pc 00041841  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: 451674f7ee55dedb0117c246f8d29d4f)
+    #04 pc 0000b7bf  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 3d6398999d57f8a74073555369f414be)
+    #05 pc 0000f2e1  /system/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 3d6398999d57f8a74073555369f414be)
+    #06 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #07 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"vndbinder:1328_" sysTid=1336
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0003f98b  /vendor/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+454) (BuildId: dc939afe635078a841dba4d4028284d6)
+    #03 pc 0003f7bd  /vendor/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: dc939afe635078a841dba4d4028284d6)
+    #04 pc 0000b7bf  /vendor/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #05 pc 0000f2e1  /vendor/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #06 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #07 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"binder:1328_2" sysTid=1337
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 00041a0f  /system/lib/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+454) (BuildId: 451674f7ee55dedb0117c246f8d29d4f)
+    #03 pc 00041841  /system/lib/libbinder.so (android::PoolThread::threadLoop()+12) (BuildId: 451674f7ee55dedb0117c246f8d29d4f)
+    #04 pc 0000b7bf  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 3d6398999d57f8a74073555369f414be)
+    #05 pc 0000f2e1  /system/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 3d6398999d57f8a74073555369f414be)
+    #06 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #07 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"HwBinder:1328_1" sysTid=1342
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0003927f  /vendor/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+322) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #03 pc 00039135  /vendor/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #04 pc 0000b7bf  /vendor/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #05 pc 0000f2e1  /vendor/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #06 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #07 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"HwBinder:1328_2" sysTid=1343
+    #00 pc 00004e00  /vendor/lib/libssrec.so (get_device_types+12) (BuildId: 9710fdeaccb023189a04c1556b805785)
+    #01 pc 00003b27  /vendor/lib/libssrec.so (ssr_check_usecase+98) (BuildId: 9710fdeaccb023189a04c1556b805785)
+    #02 pc 00071d9b  /vendor/lib/hw/audio.primary.star.so (audio_extn_check_and_set_multichannel_usecase+38) (BuildId: b439f0323152ba3eb9e455bc2e955f03)
+    #03 pc 0004f99f  /vendor/lib/hw/audio.primary.star.so (adev_open_input_stream+3398) (BuildId: b439f0323152ba3eb9e455bc2e955f03)
+    #04 pc 00014085  /vendor/lib/hw/android.hardware.audio@6.0-impl.so (android::hardware::audio::V6_0::implementation::Device::openInputStreamCore(int, android::hardware::audio::common::V6_0::DeviceAddress const&, android::hardware::audio::common::V6_0::AudioConfig const&, int const&, android::hardware::audio::common::V6_0::AudioSource, android::hardware::audio::common::V6_0::AudioConfig*)+144) (BuildId: 8fc5f10c2e213a3c2aa725610fb909c0)
+    #05 pc 000144df  /vendor/lib/hw/android.hardware.audio@6.0-impl.so (android::hardware::audio::V6_0::implementation::Device::openInputStreamImpl(int, android::hardware::audio::common::V6_0::DeviceAddress const&, android::hardware::audio::common::V6_0::AudioConfig const&, int, android::hardware::audio::common::V6_0::SinkMetadata const&)+206) (BuildId: 8fc5f10c2e213a3c2aa725610fb909c0)
+    #06 pc 00014621  /vendor/lib/hw/android.hardware.audio@6.0-impl.so (android::hardware::audio::V6_0::implementation::Device::openInputStream(int, android::hardware::audio::common::V6_0::DeviceAddress const&, android::hardware::audio::common::V6_0::AudioConfig const&, int, android::hardware::audio::common::V6_0::SinkMetadata const&, std::__1::function<void (android::hardware::audio::V6_0::Result, android::sp<android::hardware::audio::V6_0::IStreamIn> const&, android::hardware::audio::common::V6_0::AudioConfig const&)>)+68) (BuildId: 8fc5f10c2e213a3c2aa725610fb909c0)
+    #07 pc 0001739b  /vendor/lib/hw/android.hardware.audio@6.0-impl.so (android::hardware::audio::V6_0::implementation::PrimaryDevice::openInputStream(int, android::hardware::audio::common::V6_0::DeviceAddress const&, android::hardware::audio::common::V6_0::AudioConfig const&, int, android::hardware::audio::common::V6_0::SinkMetadata const&, std::__1::function<void (android::hardware::audio::V6_0::Result, android::sp<android::hardware::audio::V6_0::IStreamIn> const&, android::hardware::audio::common::V6_0::AudioConfig const&)>)+94) (BuildId: 8fc5f10c2e213a3c2aa725610fb909c0)
+    #08 pc 00037c73  /vendor/lib/android.hardware.audio@6.0.so (android::hardware::audio::V6_0::BnHwDevice::_hidl_openInputStream(android::hidl::base::V1_0::BnHwBase*, android::hardware::Parcel const&, android::hardware::Parcel*, std::__1::function<void (android::hardware::Parcel&)>)+326) (BuildId: 4c4882be929586402c4c291d1343a6f6)
+    #09 pc 00050f81  /vendor/lib/android.hardware.audio@6.0.so (android::hardware::audio::V6_0::BnHwPrimaryDevice::onTransact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+1964) (BuildId: 4c4882be929586402c4c291d1343a6f6)
+    #10 pc 00038f2b  /vendor/lib/libhidlbase.so (android::hardware::BHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+78) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #11 pc 00039671  /vendor/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+1332) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #12 pc 00039135  /vendor/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #13 pc 0000b7bf  /vendor/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #14 pc 0000f2e1  /vendor/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #15 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #16 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"audio.service" sysTid=2598
+    #00 pc 000c1d48  /apex/com.android.runtime/lib/bionic/libc.so (read+8) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 00016289  /vendor/lib/libdiag.so (CreateWaitThread+644) (BuildId: 124f8c5955dd7ce5a85dea4f251e6989)
+    #02 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #03 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"audio.service" sysTid=2599
+    #00 pc 000c46d0  /apex/com.android.runtime/lib/bionic/libc.so (__ppoll+16) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007e531  /apex/com.android.runtime/lib/bionic/libc.so (poll+52) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 00003bf9  /vendor/lib/libaudio_log_utils.so (monitor_mod_file_change+324) (BuildId: 4351bf936a787514733856b7970e90d8)
+    #03 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #04 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"audio.service" sysTid=2600
+    #00 pc 000c3348  /apex/com.android.runtime/lib/bionic/libc.so (nanosleep+8) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 00084221  /apex/com.android.runtime/lib/bionic/libc.so (sleep+32) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 00004cb7  /vendor/lib/libthermalclient.so (do_listen+570) (BuildId: d4b48adc28cd220b6db5ff7b786152a9)
+    #03 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #04 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"audio.service" sysTid=2601
+    #00 pc 0009121c  /apex/com.android.runtime/lib/bionic/libc.so (syscall+28) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 00074c99  /apex/com.android.runtime/lib/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+100) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0007f3c1  /apex/com.android.runtime/lib/bionic/libc.so (pthread_cond_wait+32) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #03 pc 000066b9  /vendor/lib/libspkrprot.so (spkr_calibration_thread+740) (BuildId: ddb4f94acfb578d56603ad9ee20126d1)
+    #04 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #05 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"audio.service" sysTid=2602
+    #00 pc 000c3348  /apex/com.android.runtime/lib/bionic/libc.so (nanosleep+8) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 00084221  /apex/com.android.runtime/lib/bionic/libc.so (sleep+32) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0000334b  /vendor/lib/libthermalclient.so (do_request_to_thermal+122) (BuildId: d4b48adc28cd220b6db5ff7b786152a9)
+    #03 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #04 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"audio.service" sysTid=2603
+    #00 pc 000c46d0  /apex/com.android.runtime/lib/bionic/libc.so (__ppoll+16) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007e531  /apex/com.android.runtime/lib/bionic/libc.so (poll+52) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 000032c3  /vendor/lib/libsndmonitor.so (monitor_thread_loop+198) (BuildId: abb728b91ed672c3a4fa7847f947f7d9)
+    #03 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #04 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"audio.service" sysTid=2648
+    #00 pc 000c4494  /apex/com.android.runtime/lib/bionic/libc.so (__epoll_pwait+20) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 000877f5  /apex/com.android.runtime/lib/bionic/libc.so (epoll_wait+16) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 000698e5  /vendor/lib/hw/audio.primary.star.so (ConThreadProcess+84) (BuildId: b439f0323152ba3eb9e455bc2e955f03)
+    #03 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #04 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"HwBinder:1328_3" sysTid=4441
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0003927f  /vendor/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+322) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #03 pc 00039135  /vendor/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #04 pc 0000b7bf  /vendor/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #05 pc 0000f2e1  /vendor/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #06 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #07 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+"HwBinder:1328_4" sysTid=4484
+    #00 pc 000c234c  /apex/com.android.runtime/lib/bionic/libc.so (__ioctl+12) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #01 pc 0007c7ab  /apex/com.android.runtime/lib/bionic/libc.so (ioctl+26) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #02 pc 0003927f  /vendor/lib/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+322) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #03 pc 00039135  /vendor/lib/libhidlbase.so (android::hardware::PoolThread::threadLoop()+12) (BuildId: d95ca3bfcad507579258570fc1bf6fba)
+    #04 pc 0000b7bf  /vendor/lib/libutils.so (android::Thread::_threadLoop(void*)+166) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #05 pc 0000f2e1  /vendor/lib/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+8) (BuildId: 49e0f6a7a02e679d436f2481e534a146)
+    #06 pc 0007fe03  /apex/com.android.runtime/lib/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+40) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+    #07 pc 00075a0f  /apex/com.android.runtime/lib/bionic/libc.so (__start_thread+30) (BuildId: 43642b08ec8f66ef93ddb9edfdc0e58c)
+
+----- end 1328 -----

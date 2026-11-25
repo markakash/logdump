@@ -1,0 +1,250 @@
+
+
+----- pid 1425 at 2026-11-25 16:48:25.152373464+0000 -----
+Cmd line: /system/bin/audioserver
+ABI: 'arm64'
+Ppid: 1
+
+"audioserver" sysTid=1425
+    #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000571b8  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::transact(int, unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int)+472) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #03 pc 0000000000056ed4  /system/lib64/libhidlbase.so (android::hardware::BpHwBinder::transact(unsigned int, android::hardware::Parcel const&, android::hardware::Parcel*, unsigned int, std::__1::function<void (android::hardware::Parcel&)>)+132) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #04 pc 000000000004a76c  /system/lib64/android.hardware.audio@6.0.so (android::hardware::audio::V6_0::BpHwDevice::_hidl_openInputStream(android::hardware::IInterface*, android::hardware::details::HidlInstrumentor*, int, android::hardware::audio::common::V6_0::DeviceAddress const&, android::hardware::audio::common::V6_0::AudioConfig const&, int, android::hardware::audio::common::V6_0::SinkMetadata const&, std::__1::function<void (android::hardware::audio::V6_0::Result, android::sp<android::hardware::audio::V6_0::IStreamIn> const&, android::hardware::audio::common::V6_0::AudioConfig const&)>)+764) (BuildId: 0c1479e52568ae975b155342b9afe0e3)
+    #05 pc 000000000007071c  /system/lib64/android.hardware.audio@6.0.so (android::hardware::audio::V6_0::BpHwPrimaryDevice::openInputStream(int, android::hardware::audio::common::V6_0::DeviceAddress const&, android::hardware::audio::common::V6_0::AudioConfig const&, int, android::hardware::audio::common::V6_0::SinkMetadata const&, std::__1::function<void (android::hardware::audio::V6_0::Result, android::sp<android::hardware::audio::V6_0::IStreamIn> const&, android::hardware::audio::common::V6_0::AudioConfig const&)>)+188) (BuildId: 0c1479e52568ae975b155342b9afe0e3)
+    #06 pc 000000000001358c  /system/lib64/libaudiohal@6.0.so (android::DeviceHalHidl::openInputStream(int, audio_devices_t, audio_config*, audio_input_flags_t, char const*, audio_source_t, audio_devices_t, char const*, android::sp<android::StreamInHalInterface>*, int)+540) (BuildId: 763309948fded52d0f2fba977db9ff0b)
+    #07 pc 00000000000055c4  /system/lib64/libaudioflinger_datapath.so (android::AudioStreamIn::open(int, audio_devices_t, audio_config*, char const*, audio_source_t, audio_devices_t, char const*, int)+340) (BuildId: b57a285040c53000c0fdf321d58704fe)
+    #08 pc 0000000000004478  /system/lib64/libaudioflinger_datapath.so (android::AudioHwDevice::openInputStream(android::AudioStreamIn**, int, audio_devices_t, audio_input_flags_t, audio_config*, char const*, audio_source_t, audio_devices_t, char const*, int)+248) (BuildId: b57a285040c53000c0fdf321d58704fe)
+    #09 pc 00000000000d9084  /system/bin/audioserver (android::AudioFlinger::openInput_l(int, int*, audio_config*, audio_devices_t, char const*, audio_source_t, audio_input_flags_t, audio_devices_t, android::String8 const&, int)+356) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #10 pc 00000000000cb508  /system/bin/audioserver (android::AudioFlinger::openInput(android::media::OpenInputRequest const&, android::media::OpenInputResponse*)+1112) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #11 pc 00000000002753a0  /system/bin/audioserver (android::AudioPolicyService::AudioPolicyClient::openInput(int, int*, audio_config*, audio_devices_t*, android::String8 const&, audio_source_t, audio_input_flags_t, int)+2416) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #12 pc 0000000000033cac  /system/lib64/libaudiopolicycomponents.so (android::AudioInputDescriptor::open(audio_config const*, android::sp<android::DeviceDescriptor> const&, audio_source_t, audio_input_flags_t, int*)+572) (BuildId: ac8d6e418051d5b2e81dc15ee3084322)
+    #13 pc 00000000000a6ec8  /system/lib64/libaudiopolicymanagerdefault.so (android::AudioPolicyManager::onNewAudioModulesAvailableInt(android::DeviceVector*)+6504) (BuildId: 1ab6380eb20aa1adbf4ed682918a70b8)
+    #14 pc 00000000000a9128  /system/lib64/libaudiopolicymanagerdefault.so (android::AudioPolicyManager::initialize()+280) (BuildId: 1ab6380eb20aa1adbf4ed682918a70b8)
+    #15 pc 000000000021fb0c  /system/bin/audioserver (android::createAudioPolicyManager(android::AudioPolicyClientInterface*) (.cfi)+1084) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #16 pc 0000000000222eb8  /system/bin/audioserver (android::AudioPolicyService::onFirstRef()+808) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #17 pc 00000000000813b4  /system/bin/audioserver (main.cfi+676) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #18 pc 00000000000a3a7c  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+124) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"binder:1425_1" sysTid=1551
+    #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 000000000005839c  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+220) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #03 pc 00000000000983ec  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+156) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #04 pc 0000000000098338  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #05 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #06 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #08 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"TimerQueue" sysTid=1552
+    #00 pc 0000000000127388  /apex/com.android.runtime/lib64/bionic/libc.so (__epoll_pwait+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000434f8  /system/lib64/libaudioutils.so (android::audio_utils::LinuxClock::wait(long)+152) (BuildId: 3ed77f0f1ac7fde7b33d75955a8bbb04)
+    #02 pc 0000000000043d1c  /system/lib64/libaudioutils.so (android::audio_utils::TimerQueue::threadLoop()+156) (BuildId: 3ed77f0f1ac7fde7b33d75955a8bbb04)
+    #03 pc 0000000000047cdc  /system/lib64/libaudioutils.so (void* std::__1::__thread_proxy[abi:nn220000]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, void (android::audio_utils::TimerQueue::*)(), android::audio_utils::TimerQueue*>>(void*)+60) (BuildId: 3ed77f0f1ac7fde7b33d75955a8bbb04)
+    #04 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #05 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"binder:1425_2" sysTid=1556
+    #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 000000000005839c  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+220) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #03 pc 00000000000983ec  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+156) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #04 pc 0000000000098338  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #05 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #06 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #08 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"HwBinder:1425_1" sysTid=1558
+    #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 0000000000042dec  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+284) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #03 pc 0000000000046338  /system/lib64/libhidlbase.so (android::hardware::PoolThread::threadLoop()+24) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #04 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #05 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"AudioFlinger_Pa" sysTid=1560
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 0000000000162b70  /system/bin/audioserver (android::PatchCommandThread::threadLoop()+3584) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"ApmAudio" sysTid=1561
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000022f8e0  /system/bin/audioserver (android::AudioPolicyService::AudioCommandThread::threadLoop()+9728) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"ApmOutput" sysTid=1562
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000022f8e0  /system/bin/audioserver (android::AudioPolicyService::AudioCommandThread::threadLoop()+9728) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"HwBinder:1425_2" sysTid=1566
+    #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 0000000000042dec  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+284) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #03 pc 0000000000046338  /system/lib64/libhidlbase.so (android::hardware::PoolThread::threadLoop()+24) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #04 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #05 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"TimerThread" sysTid=2650
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000084668  /system/lib64/libmediautils.so (android::mediautils::TimerThread::MonitorThread::threadFunc()+936) (BuildId: 4bca9f6cbedb0e443e5af407362698fc)
+    #05 pc 0000000000084278  /system/lib64/libmediautils.so (void* std::__1::__thread_proxy[abi:nn220000]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, android::mediautils::TimerThread::MonitorThread::MonitorThread(android::mediautils::TimerThread::RequestQueue&)::$_0>>(void*) (.cfi)+40) (BuildId: 4bca9f6cbedb0e443e5af407362698fc)
+    #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"FastMixer" sysTid=2651
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 000000000000cd0c  /system/lib64/libaudioflinger_fastpath.so (android::FastThread::threadLoop()+652) (BuildId: d9fbed0fba38d738176dd4237735d1f5)
+    #02 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #03 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #04 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #05 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"AudioOut_D" sysTid=2652
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000019bd70  /system/bin/audioserver (android::PlaybackThread::threadLoop()+5008) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"FastMixer" sysTid=2653
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 000000000000cd0c  /system/lib64/libaudioflinger_fastpath.so (android::FastThread::threadLoop()+652) (BuildId: d9fbed0fba38d738176dd4237735d1f5)
+    #02 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #03 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #04 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #05 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"AudioOut_15" sysTid=2654
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000019bd70  /system/bin/audioserver (android::PlaybackThread::threadLoop()+5008) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"AudioOut_1D" sysTid=2655
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000019bd70  /system/bin/audioserver (android::PlaybackThread::threadLoop()+5008) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"HwBinder:1425_3" sysTid=2660
+    #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 0000000000042dec  /system/lib64/libhidlbase.so (android::hardware::IPCThreadState::joinThreadPool(bool)+284) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #03 pc 0000000000046338  /system/lib64/libhidlbase.so (android::hardware::PoolThread::threadLoop()+24) (BuildId: 30aaab60e13f4e4cf7a77ee69645bf11)
+    #04 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #05 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #06 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #07 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"FastMixer" sysTid=2661
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 000000000000cd0c  /system/lib64/libaudioflinger_fastpath.so (android::FastThread::threadLoop()+652) (BuildId: d9fbed0fba38d738176dd4237735d1f5)
+    #02 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #03 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #04 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #05 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"AudioOut_2D" sysTid=2662
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000019bd70  /system/bin/audioserver (android::PlaybackThread::threadLoop()+5008) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"AudioOut_35" sysTid=2663
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000019bd70  /system/bin/audioserver (android::PlaybackThread::threadLoop()+5008) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"FastMixer" sysTid=2664
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 000000000000cd0c  /system/lib64/libaudioflinger_fastpath.so (android::FastThread::threadLoop()+652) (BuildId: d9fbed0fba38d738176dd4237735d1f5)
+    #02 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #03 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #04 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #05 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"AudioOut_3D" sysTid=2665
+    #00 pc 00000000000e1b1c  /apex/com.android.runtime/lib64/bionic/libc.so (syscall+28) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000b4464  /apex/com.android.runtime/lib64/bionic/libc.so (__futex_wait_ex(void volatile*, bool, int, bool, timespec const*)+148) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 00000000000c5c6c  /apex/com.android.runtime/lib64/bionic/libc.so (pthread_cond_wait+76) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #03 pc 00000000000b0140  /system/lib64/libc++.so (std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)+28) (BuildId: 3c55e736843ec0ef5373038263fc7da706a01eba)
+    #04 pc 0000000000163160  /system/bin/audioserver (void android::audio_utils::condition_variable::wait<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>(android::audio_utils::unique_lock<android::audio_utils::mutex_impl<android::audio_utils::AudioMutexAttributes>>&, int)+64) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #05 pc 000000000019bd70  /system/bin/audioserver (android::PlaybackThread::threadLoop()+5008) (BuildId: 0d6bd6c738edee7b3668a9612149b6f9)
+    #06 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #08 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #09 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+"binder:1425_3" sysTid=4303
+    #00 pc 0000000000125348  /apex/com.android.runtime/lib64/bionic/libc.so (__ioctl+8) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #01 pc 00000000000c1130  /apex/com.android.runtime/lib64/bionic/libc.so (ioctl+160) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #02 pc 000000000005839c  /system/lib64/libbinder.so (android::IPCThreadState::talkWithDriver(bool)+220) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #03 pc 00000000000983ec  /system/lib64/libbinder.so (android::IPCThreadState::joinThreadPool(bool)+156) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #04 pc 0000000000098338  /system/lib64/libbinder.so (android::PoolThread::threadLoop()+24) (BuildId: 1b16612a065cfb53a4fac3aca196adbb)
+    #05 pc 0000000000017594  /system/lib64/libutils.so (android::Thread::_threadLoop(void*)+260) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #06 pc 0000000000019b14  /system/lib64/libutils.so (libutil_thread_trampoline(void*) (.__uniq.226528677032898775202282855395389835431)+20) (BuildId: 24839191d5f12ce7a5a74b2403869b25)
+    #07 pc 00000000000c6ab0  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*) (.__uniq.67847048707805468364044055584648682506)+176) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+    #08 pc 00000000000b5ba4  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+68) (BuildId: ef5c84465d1eff88ba5c60279da08af0)
+
+----- end 1425 -----
