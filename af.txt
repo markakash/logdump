@@ -1,16 +1,14 @@
 Start begin: 11-25 18:16:11.725
 Start end:   11-25 18:16:15.869
-Now:         11-25 18:16:52.234
+Now:         11-25 18:19:58.314
 Notification Clients:
    pid    uid  name
   5358   1000  android.uid.system
+  5649  10187  android.uid.systemui
   5836  10183  android.uid.qtiphone
- 11720   1000  android.uid.system
  14805   1041  audioserver
 Global session refs:
   session  cnt     pid    uid  name
-     4425    1   11720   1000  android.uid.system
-     4497    1   11720   1000  android.uid.system
 Hardware status: 0
 Vibrator infos(size=1):
   - AudioVibratorInfo{id: 0, resonantFrequency: nan, qFactor: nan, maxAmplitude: nan}
@@ -681,6 +679,8 @@ Historical Thread Log 11-25 18:16:15.861 -
     11-25 18:16:16.363 UID  1000, 1 KVP received: restarting=false
     11-25 18:16:16.391 UID  1000, 1 KVP received: rotation=0
     11-25 18:16:16.393 UID  1000, 1 KVP received: device_folded=off
+    11-25 18:17:10.407 UID  1000, 1 KVP received: screen_state=off
+    11-25 18:19:06.913 UID  1000, 1 KVP received: screen_state=on
 
  ## BEGIN misc af dump 
 
@@ -709,10 +709,11 @@ star_global-user 14 UKQ1.240624.001 OS2.0.7.0.UKAMIXM release-keys
 Power Tokens:
   Client-0:  start: 18:16:11.726 pid: 14805
   Client-1:  start: 18:16:15.867 pid: 5358
-  Client-2:  start: 18:16:15.907 pid: 11720
   Client-3:  start: 18:16:16.398 pid: 5836
+  Client-5:  start: 18:19:34.800 pid: 5649
 Power Clients: (some snapshots quantized in time)
-  (idle) uid: 1000 android.uid.system  sessions: 0  actual_seconds: 0.000000 { 5358 11720 }{ }
+  (idle) uid: 1000 android.uid.system  sessions: 0  actual_seconds: 0.000000 { 5358 }{ }
   (idle) uid: 1041 audioserver  sessions: 0  actual_seconds: 0.000000 { 14805 }{ }
   (idle) uid: 10183 android.uid.qtiphone  sessions: 0  actual_seconds: 0.000000 { 5836 }{ }
+  (idle) uid: 10187 android.uid.systemui  sessions: 0  actual_seconds: 0.000000 { 5649 }{ }
 Power Client History:
