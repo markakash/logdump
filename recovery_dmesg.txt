@@ -1,0 +1,2283 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x412fd050]
+[    0.000000] Linux version 5.4.302-qgki-g2c0d4b8372fd-dirty (redead@ServerHive) (Android (14054515, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), LLD 21.0.0 (/mnt/disks/build-disk/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349)) #4 SMP PREEMPT Thu Nov 26 09:35:53 UTC 2026
+[    0.000000] memblock_reserve: 0xbf757 setup_arch+0x64/0x1e8
+[    0.000000] random: crng init done
+[    0.000000] Machine model: Star based on Qualcomm Technologies, Inc SM8350
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: UEFI not found.
+[    0.000000] mem-offine node not found in FDT
+[    0.000000] OF: fdt: Reserved memory: failed to reserve memory for node 'demura_region_0': base 0x0000000000000000, size 0 MiB
+[    0.000000] OF: fdt: Reserved memory: failed to reserve memory for node 'demura_region_1': base 0x0000000000000000, size 0 MiB
+[    0.000000] Reserved memory: created DMA memory pool at 0x00000000d8000000, size 8 MiB
+[    0.000000] OF: reserved mem: initialized node memshare_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000ff000000, size 12 MiB
+[    0.000000] OF: reserved mem: initialized node adsp_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fe000000, size 16 MiB
+[    0.000000] OF: reserved mem: initialized node user_contig_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fdc00000, size 4 MiB
+[    0.000000] OF: reserved mem: initialized node cdsp_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fcc00000, size 16 MiB
+[    0.000000] OF: reserved mem: initialized node qseecom_ta_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fc400000, size 8 MiB
+[    0.000000] OF: reserved mem: initialized node sdsp_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000fac00000, size 24 MiB
+[    0.000000] OF: reserved mem: initialized node qseecom_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f9800000, size 20 MiB
+[    0.000000] OF: reserved mem: initialized node cnss_wlan_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f8800000, size 16 MiB
+[    0.000000] OF: reserved mem: initialized node sp_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f5800000, size 48 MiB
+[    0.000000] OF: reserved mem: initialized node mem_dump_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000d6000000, size 32 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000f3c00000, size 28 MiB
+[    0.000000] OF: reserved mem: initialized node audio_cma_region, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x00000000cbc00000, size 164 MiB
+[    0.000000] OF: reserved mem: initialized node secure_display_region, compatible id shared-dma-pool
+[    0.000000] On node 0 totalpages: 1902416
+[    0.000000] Normal zone: 29726 pages used for memmap
+[    0.000000] Normal zone: 0 pages reserved
+[    0.000000] Normal zone: 1902416 pages, LIFO batch:63
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] psci: OSI mode supported.
+[    0.000000] psci: Switched to OSI mode.
+[    0.000000] percpu: Embedded 32 pages/cpu s93848 r8192 d29032 u131072
+[    0.000000] pcpu-alloc: s93848 r8192 d29032 u131072 alloc=32*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: GIC system register CPU interface
+[    0.000000] CPU features: kernel page table isolation forced OFF by kpti command line option
+[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1872690
+[    0.000000] Kernel command line: cgroup_disable=pressure log_buf_len=256K earlycon=msm_geni_serial,0x98c000 rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=ttyMSM0,115200n8 ip6table_raw.raw_before_defrag=1 iptable_raw.raw_before_defrag=1 loop.max_part=7 msm_rtb.filter=0x237 pcie_ports=compat service_locator.enable=1 swiotlb=0 ramoops.mem_address=0xb0000000 ramoops.mem_size=0x400000 ramoops.console_size=0x200000 ramoops.pmsg_size=0x100000 ramoops.record_size=0x40000 ramoops_memreserve=4M reboot=warm qcom_dload_mode.download_mode=0 androidboot.init_fatal_panic=true androidboot.selinux=permissive  androidboot.verifiedbootstate=orange androidboot.keymaster=1  androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=43fe64d5 bootinfo.pureason=0x20100 b
+[    0.000000] cgroup: Disabling pressure control group feature
+[    0.000000] (NULL device *): failed to set download mode: -5
+[    0.000000] printk: log_buf_len: 262144 bytes
+[    0.000000] printk: early log buf free: 124948(95%)
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000] Memory: 6952788K/7609664K available (20348K kernel code, 2730K rwdata, 13912K rodata, 1664K init, 2341K bss, 259564K reserved, 397312K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=8.
+[    0.000000] 	All grace periods are expedited (rcu_expedited).
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: 988 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] GICv3: Distributor has no Range Selector support
+[    0.000000] GICv3: 16 PPIs implemented
+[    0.000000] GICv3: no VLPI support, no direct LPI support
+[    0.000000] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000003] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000016] clocksource: Switched to clocksource arch_sys_counter
+[    0.005132] kfence: initialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.005278] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+[    0.005287] pid_max: default: 32768 minimum: 301
+[    0.005387] LSM: Security Framework initializing
+[    0.005430] SELinux:  Initializing.
+[    0.005545] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.005564] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.007146] ASID allocator initialised with 32768 entries
+[    0.007250] rcu: Hierarchical SRCU implementation.
+[    0.007531] dynamic_debug:dynamic_debug_init: Ignore empty _ddebug table in a CONFIG_DYNAMIC_DEBUG_CORE build
+[    0.009431] scm_mem_protection_init_do: SCM call failed
+[    0.009439] EFI services will not be available.
+[    0.009759] smp: Bringing up secondary CPUs ...
+[    0.010725] Detected VIPT I-cache on CPU1
+[    0.010836] CPU1: Booted secondary processor 0x0000000100 [0x412fd050]
+[    0.011991] Detected VIPT I-cache on CPU2
+[    0.012083] CPU2: Booted secondary processor 0x0000000200 [0x412fd050]
+[    0.013126] Detected VIPT I-cache on CPU3
+[    0.013217] CPU3: Booted secondary processor 0x0000000300 [0x412fd050]
+[    0.016479] CPU features: detected: Spectre-BHB
+[    0.016485] CPU features: detected: SSBS not fully self-synchronizing
+[    0.016521] Detected PIPT I-cache on CPU4
+[    0.016544] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU4: 0x00000000010142
+[    0.016552] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU4: 0x00000010010131
+[    0.016557] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU4: 0x00000010010000
+[    0.016562] CPU features: Unsupported CPU feature variation detected.
+[    0.016725] CPU4: Booted secondary processor 0x0000000400 [0x411fd410]
+[    0.018170] Detected PIPT I-cache on CPU5
+[    0.018193] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU5: 0x00000000010142
+[    0.018202] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU5: 0x00000010010131
+[    0.018206] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU5: 0x00000010010000
+[    0.018378] CPU5: Booted secondary processor 0x0000000500 [0x411fd410]
+[    0.019793] Detected PIPT I-cache on CPU6
+[    0.019816] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU6: 0x00000000010142
+[    0.019826] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU6: 0x00000010010131
+[    0.019832] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU6: 0x00000010010000
+[    0.020002] CPU6: Booted secondary processor 0x0000000600 [0x411fd410]
+[    0.023175] Detected PIPT I-cache on CPU7
+[    0.023181] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU7: 0x00000000010142
+[    0.023184] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU7: 0x00000010010131
+[    0.023185] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU7: 0x00000010010000
+[    0.023248] CPU7: Booted secondary processor 0x0000000700 [0x411fd440]
+[    0.023382] smp: Brought up 1 node, 8 CPUs
+[    0.023443] SMP: Total of 8 processors activated.
+[    0.023448] CPU features: detected: Privileged Access Never
+[    0.023452] CPU features: detected: LSE atomic instructions
+[    0.023456] CPU features: detected: User Access Override
+[    0.023460] CPU features: detected: 32-bit EL0 Support
+[    0.023464] CPU features: detected: Common not Private translations
+[    0.023468] CPU features: detected: RAS Extension Support
+[    0.023472] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.023477] CPU features: detected: CRC32 instructions
+[    0.061659] CPU: All CPU(s) started at EL1
+[    0.061718] alternatives: patching kernel code
+[    0.211898] Registered cp15_barrier emulation handler
+[    0.211921] Registered setend emulation handler
+[    0.212277] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.212303] futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.216333] pinctrl core: initialized pinctrl subsystem
+[    0.216735] NET: Registered protocol family 16
+[    0.217922] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.217945] audit: initializing netlink subsys (disabled)
+[    0.218064] audit: type=2000 audit(0.215:1): state=initialized audit_enabled=0 res=1
+[    0.218074] ramoops: using module parameters
+[    0.221579] printk: console [pstore-1] enabled
+[    0.221625] pstore: Registered ramoops as persistent store backend
+[    0.221632] ramoops: using 0x400000@0xb0000000, ecc: 0
+[    0.221855] cpuidle: using governor menu
+[    0.221915] NET: Registered protocol family 42
+[    0.222238] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.222695] Serial: AMBA PL011 UART driver
+[    0.223010] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.386974] pm8350_s5_level: supplied by pm8350_s9_level
+[    0.387091] pm8350_s5_lvl_ao: supplied by pm8350_s9_level_ao
+[    0.527158] pm8350c_s6_level: supplied by pm8350_s5_level
+[    0.527303] pm8350c_s6_level_ao: supplied by pm8350_s5_lvl_ao
+[    0.534685] pm8350_s9_mmcx_sup_level: supplied by pm8350c_s6_mmcx_sup_level
+[    0.534694] pm8350_s5_mmcx_sup_level: supplied by pm8350_s9_mmcx_sup_level
+[    0.534705] pm8350c_s8_level: supplied by pm8350_s5_mmcx_sup_level
+[    0.534823] pm8350c_s8_level_ao: supplied by pm8350_s5_lvl_ao
+[    0.595707] msm-dcc 117f000.dcc_v2: DCC list passed 3
+[    0.595980] msm-dcc 117f000.dcc_v2: All values written to enable.
+[    0.596112] msm-dcc 117f000.dcc_v2: DCC list passed 4
+[    0.596570] msm-dcc 117f000.dcc_v2: All values written to enable.
+[    0.596873] msm-dcc 117f000.dcc_v2: DCC list passed 6
+[    0.597423] msm-dcc 117f000.dcc_v2: All values written to enable.
+[    0.598165] Disable GPIO151, 200, 202 wakeup
+[    0.603524] spmi spmi-0: PMIC arbiter version v5 (0x50020000)
+[    0.604158] sps:sps is ready
+[    0.611119] hh-watchdog hypervisor:qcom,hh-watchdog: QCOM Apps Watchdog Initialized
+[    0.614361] cryptomgr_test (77) used greatest stack depth: 14880 bytes left
+[    0.615628] cryptd: max_cpu_qlen set to 1000
+[    0.619896] gcc_pcie_0_gdsc: supplied by pm8350c_s6_level
+[    0.621966] gcc_pcie_1_gdsc: supplied by pm8350c_s6_level
+[    0.622036] gcc_ufs_card_gdsc: supplied by pm8350c_s6_level
+[    0.624071] gcc_ufs_phy_gdsc: supplied by pm8350c_s6_level
+[    0.629371] gpu_cc_cx_gdsc: supplied by pm8350c_s6_level
+[    0.631045] gpu_cc_gx_gdsc: supplied by pm8350_s6_level
+[    0.634809] qmp-aop-clk soc:qcom,aopclk: Registered clocks with AOP
+[    0.636101] cryptomgr_test (78): highest shadow stack usage: 104 bytes
+[    0.636128] cryptomgr_test (77): highest shadow stack usage: 112 bytes
+[    0.652577] lahaina-gcc 100000.qcom,gcc: Registered GCC clocks
+[    0.661052] gpu_cc-lahaina 3d90000.qcom,gpucc: Registered GPU CC clocks
+[    0.662114] oledb: Bringing 0uV into 5000000-5000000uV
+[    0.662218] ab: Bringing 0uV into 4600000-4600000uV
+[    0.662304] ibb: Bringing 0uV into 1400000-1400000uV
+[    0.707949] Rate 19200000 for cam_cc_sleep_clk_src is greater than highest Fmax
+[    0.707955] Rate 19200000 for cam_cc_sleep_clk_src is greater than highest Fmax
+[    0.710330] lahaina-cam_cc ad00000.qcom,camcc: Registered CAM CC clocks
+[    0.722051] video_cc-lahaina abf0000.qcom,videocc: Registered VIDEO CC clocks
+[    0.725034] KPI: Bootloader start count = 136704
+[    0.725039] KPI: Bootloader end count = 189512
+[    0.725043] KPI: Bootloader display count = 482378077
+[    0.725047] KPI: Bootloader load kernel count = 1638248855
+[    0.725052] KPI: Kernel MPM timestamp = 225598
+[    0.725056] KPI: Kernel MPM Clock frequency = 32768
+[    0.725247] Minidump: Enabled with max number of regions 200
+[    0.725722] camera_wide_dvdd_ldo: supplied by pm8350c_l7
+[    0.725798] camera_front_dvdd_ldo: supplied by pm8350c_l7
+[    0.725829] reg-fixed-voltage 3.gpio-regulator: nonexclusive access to GPIO for 3.gpio-regulator
+[    0.726008] reg-fixed-voltage 6.gpio-regulator: nonexclusive access to GPIO for 6.gpio-regulator
+[    0.726554] qti-reg-fixed-voltage soc:display_gpio_regulator@1: nonexclusive access to GPIO for soc:display_gpio_regulator@1
+[    0.727034] iommu: Default domain type: Translated 
+[    0.729422] arm-smmu 3da0000.kgsl-smmu: 	coherent table walk
+[    0.729428] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+[    0.730975] SCSI subsystem initialized
+[    0.731026] usbcore: registered new interface driver usbfs
+[    0.731041] usbcore: registered new interface driver hub
+[    0.731054] usbcore: registered new device driver usb
+[    0.731156] usb_phy_generic soc:usb_nop_phy: soc:usb_nop_phy supply vcc not found, using dummy regulator
+[    0.731472] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmk8350@0:pon_pbs@800: IRQ pmic-wd-bark not found
+[    0.731633] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300: IRQ pmic-wd-bark not found
+[    0.731681] input: qpnp_pon as /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/input/input0
+[    0.732708] mc: Linux media interface: v0.10
+[    0.732718] videodev: Linux video capture interface: v2.00
+[    0.732754] thermal_sys: Registered thermal governor 'step_wise'
+[    0.732755] thermal_sys: Registered thermal governor 'user_space'
+[    0.732759] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.735425] Error creating thermal debugfs directory. err:-19
+[    0.735961] thermal_sys: of_parse_thermal_message board sensor: VIRTUAL-SENSOR
+[    0.741729] EDAC MC: Ver: 3.0.0
+[    0.742661] core_ctl: Creating CPU group 0
+[    0.742665] core_ctl: Init CPU0 state
+[    0.742668] core_ctl: Init CPU1 state
+[    0.742670] core_ctl: Init CPU2 state
+[    0.742672] core_ctl: Init CPU3 state
+[    0.742718] core_ctl: Creating CPU group 4
+[    0.742720] core_ctl: Init CPU4 state
+[    0.742722] core_ctl: Init CPU5 state
+[    0.742724] core_ctl: Init CPU6 state
+[    0.742778] core_ctl: Creating CPU group 7
+[    0.742781] core_ctl: Init CPU7 state
+[    0.746880] shmbridge is enabled
+[    0.747703] IPA framework init
+[    0.748175] dev-cpufreq: No tables parsed from DT.
+[    0.748290] SDAM base=0x7100 size=128 registered successfully
+[    0.748320] SDAM base=0x7400 size=128 registered successfully
+[    0.748345] SDAM base=0x7c00 size=128 registered successfully
+[    0.748371] SDAM base=0x7d00 size=128 registered successfully
+[    0.748395] SDAM base=0x8400 size=128 registered successfully
+[    0.748420] SDAM base=0x8500 size=128 registered successfully
+[    0.748444] SDAM base=0x8600 size=128 registered successfully
+[    0.748468] SDAM base=0x9d00 size=128 registered successfully
+[    0.748488] Advanced Linux Sound Architecture Driver Initialized.
+[    0.748694] IPA clients manager init
+[    0.748697] ipa_usb driver init
+[    0.748766] ipa_usb registered successfully
+[    0.748768] exit: IPA_USB init success!
+[    0.748771] ipa_wdi3 registered successfully
+[    0.748773] ipa_gsb registered successfully
+[    0.748775] ipa_uc_offload registered successfully
+[    0.748778] ipa_mhi registered successfully
+[    0.748780] ipa_wigig registered successfully
+[    0.748890] Bluetooth: Core ver 2.22
+[    0.748895] NET: Registered protocol family 31
+[    0.748897] Bluetooth: HCI device and connection manager initialized
+[    0.748901] Bluetooth: HCI socket layer initialized
+[    0.748904] Bluetooth: L2CAP socket layer initialized
+[    0.748907] Bluetooth: SCO socket layer initialized
+[    0.748942] pcie:pcie_init.
+[    0.750398] platform soc:qcom,ion:qcom,ion-heap@22: assigned reserved memory node sdsp_region
+[    0.751446] platform soc:qcom,ion:qcom,ion-heap@13: assigned reserved memory node sp_region
+[    0.751797] platform soc:qcom,ion:qcom,ion-heap@26: assigned reserved memory node user_contig_region
+[    0.752181] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region
+[    0.752531] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+[    0.752883] platform soc:qcom,ion:qcom,ion-heap@10: assigned reserved memory node secure_display_region
+[    0.753232] platform soc:qcom,ion:qcom,ion-heap@5: assigned reserved memory node audio_cma_region
+[    0.753349] ION heap system created
+[    0.753395] ION heap adsp created
+[    0.753401] ION heap secure_heap created
+[    0.796324] platform soc:qcom,ion:qcom,ion-heap@14: ion_secure_carveout: creating heap@0x80c00000, size 0x4600000
+[    0.796330] ION heap secure_carveout created
+[    0.796334] ION heap spss created
+[    0.796336] ION heap user_contig created
+[    0.796339] ION heap qsecom created
+[    0.796341] ION heap qsecom_ta created
+[    0.796343] ION heap secure_display created
+[    0.796345] ION heap audio_ml created
+[    0.796557] clocksource: Switched to clocksource arch_sys_counter
+[    0.808407] VFS: Disk quotas dquot_6.6.0
+[    0.808427] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.808837] debugcc-lahaina soc:qcom,cc-debug: Registered debug measure clocks
+[    0.809352] NET: Registered protocol family 2
+[    0.809439] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.810175] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.810230] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.810320] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.810381] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.810423] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.810442] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.810479] NET: Registered protocol family 1
+[    0.810711] NET: Registered protocol family 44
+[    0.810716] PCI: CLS 0 bytes, default 64
+[    0.810787] Trying to unpack rootfs image as initramfs...
+[    1.020442] Freeing initrd memory: 22944K
+[    1.021047] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    1.024243] Initialise system trusted keyrings
+[    1.024322] workingset: timestamp_bits=46 max_order=21 bucket_order=0
+[    1.025613] fuse: init (API version 7.32)
+[    1.035332] Key type asymmetric registered
+[    1.035336] Asymmetric key parser 'x509' registered
+[    1.035346] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 240)
+[    1.035349] io scheduler mq-deadline registered
+[    1.035351] io scheduler kyber registered
+[    1.035376] io scheduler bfq registered
+[    1.040006] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    1.040009] qcom-spmi-gpio c440000.qcom,spmi:qcom,pmr735b@5:pinctrl@8800: read 0x4 failed
+[    1.040034] qcom-spmi-gpio: probe of c440000.qcom,spmi:qcom,pmr735b@5:pinctrl@8800 failed with error -5
+[    1.042347] v0.15, id=415, ver=2.1, raw_id=309, raw_ver=3, hw_plat=8, hw_plat_ver=65536
+ accessory_chip=0, hw_plat_subtype=0, pmic_model=65583, pmic_die_revision=131072 foundry_id=3 serial_number=3442844717 num_pmics=5 chip_family=0x69 raw_device_family=0x6 raw_device_number=0xf nproduct_id=0x41d num_clusters=0x1 ncluster_array_offset=0xb0 num_defective_parts=0xf ndefective_parts_array_offset=0xb4 nmodem_supported=0xffffffff
+[    1.042795] lahaina-llcc 9200000.cache-controller: IRQ index 0 not found
+[    1.043193] msm_mem_dump soc:mem_dump: assigned reserved memory node mem_dump_region
+[    1.049077] MSM Memory Dump base table set up
+[    1.049081] MSM Memory Dump apps data table set up
+[    1.050165] PMIC PON log: Reset Type: WARM_RESET
+[    1.050220] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.050235] PMIC PON log: Reset Type: HARD_RESET
+[    1.050276] PMIC PON log: PON Trigger: USB_CHARGER
+[    1.050290] PMIC PON log: PON Trigger: HARD_RESET
+[    1.050355] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.050369] PMIC PON log: Reset Type: WARM_RESET
+[    1.050421] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.050435] PMIC PON log: Reset Type: WARM_RESET
+[    1.050487] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.050501] PMIC PON log: Reset Type: WARM_RESET
+[    1.051140] cdsprm: Init successful
+[    1.051355] 88e0000.qcom,msm-eud: ttyEUD0 at MMIO 0x0 (irq = 39, base_baud = 0) is a EUD UART
+[    1.051643] qbt:qbt_handler_init: entry
+[    1.053023] msm_geni_serial_init: Driver initialized
+[    1.053299] Error: swapper/0: fastrpc_device_init: failed to create debugfs root dir
+[    1.053460] Info: adsprpc (3094): swapper/0: fastrpc_get_dsp_status: adsprpc: fastrpc_get_dsp_status: cdsp node found with ret:1
+[    1.053500] fastrpc soc:qcom,msm-adsprpc-mem: assigned reserved memory node adsp_region
+[    1.053503] fastrpc soc:qcom,msm-adsprpc-mem: for adsp_rh segments only will be dumped.
+[    1.053525] Info: adsprpc (6809): swapper/0: init_secure_vmid_list: secure VMID = 22
+[    1.053527] Info: adsprpc (6809): swapper/0: init_secure_vmid_list: secure VMID = 37
+[    1.053530] adsprpc: fastrpc_init_privileged_gids: privileged GID: 2908
+[    1.053546] adsprpc: fastrpc_setup_service_locator: service location enabled for avs/audio (audio_pdr_adsprpc)
+[    1.053549] adsprpc: fastrpc_setup_service_locator: service location enabled for tms/servreg (sensors_pdr_adsprpc)
+[    1.060963] adsprpc: fastrpc_device_init: SSR notifier registered for adsp
+[    1.060965] adsprpc: fastrpc_device_init: SSR notifier registered for modem
+[    1.060968] adsprpc: fastrpc_device_init: SSR notifier registered for slpi
+[    1.060971] adsprpc: fastrpc_device_init: SSR notifier registered for cdsp
+[    1.070564] adreno-a6xx-gmu 3d6a000.qcom,gmu: Adding to iommu group 0
+[    1.072262] brd: module loaded
+[    1.072978] loop: module loaded
+[    1.073026] zram: Added device: zram0
+[    1.073076] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+[    1.073463] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region
+[    1.073537] platform soc:qcom,ion:qcom,ion-heap@26: assigned reserved memory node user_contig_region
+[    1.073629] qseecom soc:qseecom@c1700000: assigned reserved memory node qseecom_region
+[    1.073676] QSEECOM: qseecom_init_control: qseecom.qsee_version = 0x1402000
+[    1.073713] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE/FDE
+[    1.074373] spmi_pmic_arb_debug 6b12000.qcom,spmi-debug: SPMI PMIC arbiter debug bus disabled by fuse
+[    1.074613] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    1.074616] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    1.074708] tun: Universal TUN/TAP device driver, 1.6
+[    1.074720] PPP generic driver version 2.4.2
+[    1.074732] PPP BSD Compression module registered
+[    1.074735] PPP Deflate Compression module registered
+[    1.074752] PPP MPPE Compression module registered
+[    1.074755] NET: Registered protocol family 24
+[    1.074757] PPTP driver version 0.8.5
+[    1.074820] cnss_utils: Unable to create debugfs -19
+[    1.074823] CLD80211: Initializing
+[    1.075009] usbcore: registered new interface driver rtl8150
+[    1.075016] usbcore: registered new interface driver r8152
+[    1.075021] usbcore: registered new interface driver lan78xx
+[    1.075028] usbcore: registered new interface driver asix
+[    1.075033] usbcore: registered new interface driver ax88179_178a
+[    1.075039] usbcore: registered new interface driver cdc_ether
+[    1.075044] usbcore: registered new interface driver cdc_eem
+[    1.075052] usbcore: registered new interface driver cdc_ncm
+[    1.075057] usbcore: registered new interface driver aqc111
+[    1.077475] msm_sharedmem: msm_sharedmem_probe: Device created for client 'rmtfs'
+[    1.078356] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.078360] ehci-pci: EHCI PCI platform driver
+[    1.078369] ehci-platform: EHCI generic platform driver
+[    1.078758] usbcore: registered new interface driver uas
+[    1.078767] usbcore: registered new interface driver usb-storage
+[    1.078773] usbcore: registered new interface driver usb_ehset_test
+[    1.078778] usbcore: registered new interface driver lvs
+[    1.078912] dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+[    1.078916] dummy_hcd dummy_hcd.0: Dummy host controller
+[    1.078920] dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+[    1.079019] hub 1-0:1.0: USB hub found
+[    1.079026] hub 1-0:1.0: 1 port detected
+[    1.079382] usbcore: registered new interface driver xpad
+[    1.079392] usbcore: registered new interface driver usbtouchscreen
+[    1.079404] aw8697 driver version v1.1.3
+[    1.079409] aw8697_i2c_init success
+[    1.079749] rtc-pm8xxx c440000.qcom,spmi:qcom,pmk8350@0:rtc@6100: registered as rtc0
+[    1.079794] rtc-pm8xxx c440000.qcom,spmi:qcom,pmk8350@0:rtc@6100: setting system clock to 1975-07-13T09:54:31 UTC (174477271)
+[    1.079895] i2c /dev entries driver
+[    1.080003] synx: synx device initialization start
+[    1.080033] synx: synx device initialization success
+[    1.080036] msm_cvp:  err: Failed to create debugfs for msm_cvp
+[    1.080196] uvcvideo: Unable to create debugfs directory
+[    1.080206] usbcore: registered new interface driver uvcvideo
+[    1.080208] USB Video Class driver (1.1.1)
+[    1.080210] gspca_main: v2.14.0 registered
+[    1.084700] cpu_voltage_cooling:build_unified_table CPU1:7 CPU2:4
+[    1.084703] cpu_voltage_cooling:build_unified_table freq1:2841600 freq2:2419200
+[    1.084705] cpu_voltage_cooling:build_unified_table freq1:2764800 freq2:2342400
+[    1.084707] cpu_voltage_cooling:build_unified_table freq1:2688000 freq2:2227200
+[    1.084709] cpu_voltage_cooling:build_unified_table freq1:2592000 freq2:2112000
+[    1.084712] cpu_voltage_cooling:build_unified_table freq1:2496000 freq2:1996800
+[    1.084714] cpu_voltage_cooling:build_unified_table freq1:2380800 freq2:1996800
+[    1.084716] cpu_voltage_cooling:build_unified_table freq1:2265600 freq2:1881600
+[    1.084718] cpu_voltage_cooling:build_unified_table freq1:2150400 freq2:1670400
+[    1.084720] cpu_voltage_cooling:build_unified_table freq1:2035200 freq2:1440000
+[    1.084722] cpu_voltage_cooling:build_unified_table freq1:1900800 freq2:1324800
+[    1.084724] cpu_voltage_cooling:build_unified_table freq1:1785600 freq2:1209600
+[    1.084726] cpu_voltage_cooling:build_unified_table freq1:1670400 freq2:1075200
+[    1.084728] cpu_voltage_cooling:build_unified_table freq1:1555200 freq2:960000
+[    1.084729] cpu_voltage_cooling:build_unified_table freq1:1420800 freq2:844800
+[    1.084731] cpu_voltage_cooling:build_unified_table freq1:1305600 freq2:710400
+[    1.084733] cpu_voltage_cooling:build_unified_table freq1:1190400 freq2:710400
+[    1.084735] cpu_voltage_cooling:build_unified_table freq1:1075200 freq2:710400
+[    1.084737] cpu_voltage_cooling:build_unified_table freq1:960000 freq2:710400
+[    1.084739] cpu_voltage_cooling:build_unified_table freq1:844800 freq2:710400
+[    1.085399] device-mapper: uevent: version 1.0.3
+[    1.085435] device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[    1.085612] EDAC DEVICE0: Giving out device to module soc:erp controller cache: DEV soc:erp (INTERRUPT)
+[    1.085963] cpuidle: using governor qcom
+[    1.086541] sdhci: Secure Digital Host Controller Interface driver
+[    1.086544] sdhci: Copyright(c) Pierre Ossman
+[    1.086546] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.087460] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.087617] usbcore: registered new interface driver usbhid
+[    1.087619] usbhid: USB HID core driver
+[    1.087664] ashmem: initialized
+[    1.087819] hh_msgq: Registered client for label: 0
+[    1.097073] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): allocate IRQ 307, hwirq 8
+[    1.097077] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): found parent hwirq 144
+[    1.097081] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): alloc_irqs_parent for 307 parent hwirq 144
+[    1.097864] qcom-llcc-pmu 9095000.llcc-pmu: Registered llcc_pmu, type: 9
+[    1.099486] coresight-stm 6002000.stm: coresight-stm : stm_register_device failed, probing deferred
+[    1.103342] coresight-dummy soc:dummy_sink: Dummy device initialized
+[    1.103375] coresight-dummy soc:tpdm@6b46000: Dummy device initialized
+[    1.103418] coresight-dummy soc:dummy_source: Dummy device initialized
+[    1.103457] coresight-dummy soc:tpdm@69810000: Dummy device initialized
+[    1.103581] coresight-remote-etm soc:modem2_etm0: Remote ETM initialized
+[    1.103624] coresight-remote-etm soc:modem_etm0: Remote ETM initialized
+[    1.103665] coresight-remote-etm soc:turing_etm0: Remote ETM initialized
+[    1.103693] coresight-remote-etm soc:audio_etm0: Remote ETM initialized
+[    1.103732] coresight-remote-etm soc:ssc_etm0: Remote ETM initialized
+[    1.103815] coresight-csr 6001000.csr: CSR initialized: coresight-csr
+[    1.103842] coresight-csr 6b0f000.csr: CSR initialized: coresight-swao-csr
+[    1.104074] gnss: GNSS driver registered with major 494
+[    1.104214] usbcore: registered new interface driver snd-usb-audio
+[    1.104381] msm_vidc:   err : ffffffff: .....: Failed to create debugfs for msm_vidc
+[    1.104495] GACT probability NOT on
+[    1.104503] Mirror/redirect action on
+[    1.104511] netem: version 1.3
+[    1.104513] u32 classifier
+[    1.104515] input device check on
+[    1.104517] Actions configured
+[    1.104782] xt_time: kernel timezone is -0000
+[    1.104822] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    1.104915] gre: GRE over IPv4 demultiplexor driver
+[    1.104917] ip_gre: GRE over IPv4 tunneling driver
+[    1.105035] IPv4 over IPsec tunneling driver
+[    1.105128] iptable_raw: Enabling raw table before defrag
+[    1.105161] Initializing XFRM netlink socket
+[    1.105166] IPsec XFRM device driver
+[    1.105237] NET: Registered protocol family 10
+[    1.105703] Segment Routing with IPv6
+[    1.105726] mip6: Mobile IPv6
+[    1.105762] ip6table_raw: Enabling raw table before defrag
+[    1.105839] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.105928] ip6_gre: GRE over IPv6 tunneling driver
+[    1.105993] NET: Registered protocol family 17
+[    1.105998] NET: Registered protocol family 15
+[    1.106096] Bluetooth: RFCOMM TTY layer initialized
+[    1.106099] Bluetooth: RFCOMM socket layer initialized
+[    1.106101] Bluetooth: RFCOMM ver 1.11
+[    1.106103] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.106106] Bluetooth: HIDP socket layer initialized
+[    1.106110] l2tp_core: L2TP core driver, V2.0
+[    1.106113] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.106116] tipc: Activated (version 2.0.0)
+[    1.106136] NET: Registered protocol family 30
+[    1.106158] tipc: Started in single node mode
+[    1.106634] qcom_haven_qrtr soc:qrtr-haven: cant parse shared mem node!
+[    1.106641] qcom_haven_qrtr: probe of soc:qrtr-haven failed with error -22
+[    1.106835] No device name found in device tree.
+[    1.107146] ch_haven_recv soc:qcom,svm_neuron_block:channel0: cant parse shared mem node!
+[    1.107149] ch_haven_recv soc:qcom,svm_neuron_block:channel0: failed to map memory -22
+[    1.107153] ch_haven_recv: probe of soc:qcom,svm_neuron_block:channel0 failed with error -22
+[    1.107334] ch_haven_send soc:qcom,svm_neuron_block:channel1: cant parse shared mem node!
+[    1.107337] ch_haven_send: probe of soc:qcom,svm_neuron_block:channel1 failed with error -22
+[    1.107539] registered taskstats version 1
+[    1.107544] Loading compiled-in X.509 certificates
+[    1.107563] Key type ._fscrypt registered
+[    1.107565] Key type .fscrypt registered
+[    1.107568] Key type fscrypt-provisioning registered
+[    1.107698] pstore: Using crash dump compression: deflate
+[    1.109248] spss_utils [spss_parse_dt]: iar_buf_addr [0x8e800000].
+[    1.111527] Unable to map memory for DT property: dload_mode
+[    1.111545] clear_display_config clear display config
+[    1.115207] disp_cc_pll1 PLL is already enabled
+[    1.115377] disp_cc-lahaina af00000.qcom,dispcc: Registered DISP CC clocks
+[    1.115503] cam_cc_bps_gdsc: supplied by pm8350c_s8_level
+[    1.115567] cam_cc_ife_0_gdsc: supplied by pm8350c_s8_level
+[    1.115621] cam_cc_ife_1_gdsc: supplied by pm8350c_s8_level
+[    1.115674] cam_cc_ife_2_gdsc: supplied by pm8350c_s8_level
+[    1.115726] cam_cc_ipe_0_gdsc: supplied by pm8350c_s8_level
+[    1.115775] cam_cc_sbi_gdsc: supplied by pm8350c_s8_level
+[    1.115844] cam_cc_titan_top_gdsc: supplied by pm8350c_s8_level
+[    1.115898] disp_cc_mdss_core_gdsc: supplied by pm8350c_s8_level
+[    1.115973] video_cc_mvs0_gdsc: supplied by pm8350c_s8_level
+[    1.116041] video_cc_mvs0c_gdsc: supplied by pm8350c_s8_level
+[    1.116093] video_cc_mvs1_gdsc: supplied by pm8350c_s8_level
+[    1.116142] video_cc_mvs1c_gdsc: supplied by pm8350c_s8_level
+[    1.123340] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    1.125059] rmnet_ipa3 started initialization
+[    1.134823] arm-smmu 15000000.apps-smmu: 	coherent table walk
+[    1.134827] arm-smmu 15000000.apps-smmu: 	stream matching with 89 register groups
+[    1.135719] msm-dwc3 a600000.ssusb: Adding to iommu group 1
+[    1.136369] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    1.137127] usb_bam_init: setting SPS_BAM_SMMU_EN flag with (a704000.qcom,usbbam)
+[    1.137156] sps:BAM 0x000000000a704000 is registered
+[    1.137217] msm-dwc3 a600000.ssusb: Nominal values not found.
+[    1.137219] msm-dwc3 a600000.ssusb: Dynamic voting failed
+[    1.137235] msm-dwc3 a600000.ssusb: IRQ hs_phy_irq not found
+[    1.138087] msm-dwc3 a600000.ssusb: IRQ dp_hs_phy_irq1 not found
+[    1.138090] msm-dwc3 a600000.ssusb: IRQ dm_hs_phy_irq1 not found
+[    1.138093] msm-dwc3 a600000.ssusb: IRQ ss_phy_irq1 not found
+[    1.138377] msm_vidc:   err : ffffffff: .....: no device Registered
+[    1.138610] msm_vidc:   err : ffffffff: .....: Failed to create debugfs for msm_vidc
+[    1.139211] msm_vidc_v4l2 aa00000.qcom,vidc:non_secure_cb: Adding to iommu group 2
+[    1.140086] msm_vidc_v4l2 aa00000.qcom,vidc:secure_non_pixel_cb: Adding to iommu group 3
+[    1.140899] msm_vidc_v4l2 aa00000.qcom,vidc:secure_bitstream_cb: Adding to iommu group 4
+[    1.141702] msm_vidc_v4l2 aa00000.qcom,vidc:secure_pixel_cb: Adding to iommu group 5
+[    1.142050] spmi_pmic_arb_debug 6b12000.qcom,spmi-debug: SPMI PMIC arbiter debug bus disabled by fuse
+[    1.142431] coresight-tmc 6048000.tmc: Adding to iommu group 6
+[    1.142679] sps:BAM 0x0000000006064000 is registered
+[    1.142866] coresight-stm 6002000.stm: STM32 initialized
+[    1.143962] kgsl-3d 3d00000.qcom,kgsl-3d0: bound 3d6a000.qcom,gmu (ops a6xx_gmu_component_ops)
+[    1.145854] platform 3da0000.qcom,kgsl-iommu:gfx3d_user: Adding to iommu group 7
+[    1.146985] platform 3da0000.qcom,kgsl-iommu:gfx3d_lpac: Adding to iommu group 8
+[    1.147619] platform 3da0000.qcom,kgsl-iommu:gfx3d_secure: Adding to iommu group 9
+[    1.149377] msm_cvp:  err: Failed to create debugfs for msm_cvp
+[    1.150966] msm_cvp ab00000.qcom,cvp:cvp_non_secure_cb: Adding to iommu group 10
+[    1.151754] msm_cvp ab00000.qcom,cvp:cvp_secure_nonpixel_cb: Adding to iommu group 11
+[    1.152567] msm_cvp ab00000.qcom,cvp:cvp_secure_pixel_cb: Adding to iommu group 12
+[    1.153039] msm_cvp ab00000.qcom,cvp:qcom,msm-cvp,mem_cdsp: assigned reserved memory node cdsp_region
+[    1.153270] sdpm-clk-notify 636000.mx_sdpm: 636000.mx_sdpm supply gcc_gp1 not found, using dummy regulator
+[    1.153361] sdpm-clk-notify 634000.cx_sdpm: 634000.cx_sdpm supply ufs_phy not found, using dummy regulator
+[    1.154444] gpi_dma 900000.qcom,gpi-dma: Adding to iommu group 13
+[    1.154927] gpi_dma a00000.qcom,gpi-dma: Adding to iommu group 14
+[    1.155410] gpi_dma 800000.qcom,gpi-dma: Adding to iommu group 15
+[    1.155811] minidump-id not found for ipa_fws
+[    1.155833] subsys-pil-tz soc:qcom,ipa_fws: for ipa_fws segments only will be dumped.
+[    1.155851] subsys-pil-tz soc:qcom,ipa_fws: for md_ipa_fws segments only will be dumped.
+[    1.155928] minidump-id not found for evass
+[    1.155941] subsys-pil-tz abb0000.qcom,evass: for evass segments only will be dumped.
+[    1.155952] subsys-pil-tz abb0000.qcom,evass: for md_evass segments only will be dumped.
+[    1.156045] minidump-id not found for trustedvm
+[    1.156059] subsys-pil-tz soc:qcom,trustedvm@d0800000: for trustedvm segments only will be dumped.
+[    1.156071] subsys-pil-tz soc:qcom,trustedvm@d0800000: for md_trustedvm segments only will be dumped.
+[    1.156156] minidump-id not found for a660_zap
+[    1.156168] subsys-pil-tz soc:qcom,kgsl-hyp: for a660_zap segments only will be dumped.
+[    1.156180] subsys-pil-tz soc:qcom,kgsl-hyp: for md_a660_zap segments only will be dumped.
+[    1.156408] hh_msgq: Registered client for label: 1
+[    1.156611] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb1: Adding to iommu group 16
+[    1.156822] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb2: Adding to iommu group 17
+[    1.157025] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb3: Adding to iommu group 18
+[    1.157236] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb4: Adding to iommu group 19
+[    1.157440] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb5: Adding to iommu group 20
+[    1.157643] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb6: Adding to iommu group 21
+[    1.157847] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb7: Adding to iommu group 22
+[    1.158055] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb8: Adding to iommu group 23
+[    1.158508] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb9: Adding to iommu group 24
+[    1.158732] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb10: Adding to iommu group 25
+[    1.158933] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb11: Adding to iommu group 26
+[    1.159132] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb12: Adding to iommu group 27
+[    1.159331] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb13: Adding to iommu group 28
+[    1.159524] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb14: Adding to iommu group 29
+[    1.159718] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb15: Adding to iommu group 30
+[    1.159924] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb16: Adding to iommu group 31
+[    1.160155] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb17: Adding to iommu group 32
+[    1.160366] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb18: Adding to iommu group 33
+[    1.160568] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb19: Adding to iommu group 34
+[    1.176498] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    1.176506] spmi-temp-alarm c440000.qcom,spmi:qcom,pmr735b@5:qcom,temp-alarm@a00: could not read type
+[    1.176512] spmi-temp-alarm: probe of c440000.qcom,spmi:qcom,pmr735b@5:qcom,temp-alarm@a00 failed with error -5
+[    1.217843] qce 1de0000.qcedev: Adding to iommu group 35
+[    1.218355] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[    1.218522] qce 1de0000.qcedev: QTI Crypto 5.6.0 device found @0x1de0000
+[    1.218614] sps:BAM 0x0000000001dc4000 is registered
+[    1.218684] sps:BAM 0x0000000001dc4000 (va:0x00000000274d2b17) enabled: ver:0x27, number of pipes:16
+[    1.218780] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 40
+[    1.221364] qce 1de0000.qcedev:qcom_cedev_ns_cb: Adding to iommu group 36
+[    1.223975] qce 1de0000.qcedev:qcom_cedev_s_cb: Adding to iommu group 37
+[    1.224613] qcrypto 1de0000.qcrypto: Adding to iommu group 38
+[    1.224847] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[    1.225011] qcrypto 1de0000.qcrypto: QTI Crypto 5.6.0 device found @0x1de0000
+[    1.225129] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 40
+[    1.225398] qcrypto 1de0000.qcrypto: qcrypto-ecb-aes
+[    1.225551] qcrypto 1de0000.qcrypto: qcrypto-cbc-aes
+[    1.225678] qcrypto 1de0000.qcrypto: qcrypto-ctr-aes
+[    1.225798] qcrypto 1de0000.qcrypto: qcrypto-ecb-des
+[    1.225924] qcrypto 1de0000.qcrypto: qcrypto-cbc-des
+[    1.226051] qcrypto 1de0000.qcrypto: qcrypto-ecb-3des
+[    1.226199] qcrypto 1de0000.qcrypto: qcrypto-cbc-3des
+[    1.226325] qcrypto 1de0000.qcrypto: qcrypto-xts-aes
+[    1.226456] qcrypto 1de0000.qcrypto: qcrypto-sha1
+[    1.226581] qcrypto 1de0000.qcrypto: qcrypto-sha256
+[    1.226702] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
+[    1.226824] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
+[    1.226953] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
+[    1.227075] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
+[    1.227201] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
+[    1.227330] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
+[    1.227462] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha1
+[    1.227584] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha256
+[    1.227719] qcrypto 1de0000.qcrypto: qcrypto-aes-ccm
+[    1.227838] qcrypto 1de0000.qcrypto: qcrypto-rfc4309-aes-ccm
+[    1.229514] uaudio-qmi soc:usb_audio_qmi_dev: Adding to iommu group 39
+[    1.230382] spss_utils [spss_parse_dt]: iar_buf_addr [0x8e800000].
+[    1.232417] qupv3_geni_se 9c0000.qcom,qupv3_0_geni_se: Adding to iommu group 40
+[    1.232938] qupv3_geni_se ac0000.qcom,qupv3_1_geni_se: Adding to iommu group 41
+[    1.233444] qupv3_geni_se 8c0000.qcom,qupv3_2_geni_se: Adding to iommu group 42
+[    1.234570] minidump-id not found for spss
+[    1.237367] ufshcd-qcom 1d84000.ufshc: Adding to iommu group 43
+[    1.237642] ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: unable to find vdd-hba-max-microamp
+[    1.237666] ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: Unable to find vccq2-supply regulator, assuming enabled
+[    1.238316] ufshcd-qcom 1d84000.ufshc: -- Registered bus voting! (0) --
+[    1.239501] scsi host0: ufshcd
+[    1.246672] ufshcd-qcom 1d84000.ufshc: *** This is ../../../../../../kernel/xiaomi/sm8350/drivers/scsi/ufs/ufshcd.c ***
+[    1.247967] minidump-id not found for slpi
+[    1.248662] pci-msm 1c00000.qcom,pcie: PCIe: msm_pcie_probe
+[    1.249097] pci-msm 1c00000.qcom,pcie: 1c00000.qcom,pcie supply vreg-3p3 not found, using dummy regulator
+[    1.249292] pci-msm 1c00000.qcom,pcie: 1c00000.qcom,pcie supply vreg-mx not found, using dummy regulator
+[    1.249431] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 323, hwirq 96
+[    1.249439] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 148
+[    1.249448] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 323 parent hwirq 148
+[    1.249499] msm_pcie_get_reg: PCIe: RC0: no mhi resource found.
+[    1.249507] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+[    1.249514] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+[    1.254161] spi_geni 984000.spi: spi_geni_probe: completed
+[    1.254514] i2c_geni 990000.i2c: Bus frequency is set to 400000Hz.
+[    1.257964] i2c_geni 990000.i2c: I2C probed
+[    1.258397] i2c_geni 998000.i2c: Bus frequency is set to 400000Hz.
+[    1.260312] aw8697_i2c_probe enter
+[    1.260385] aw8697_haptic 1-005a: aw8697_parse_dt: reset gpio provided ok
+[    1.260395] aw8697_haptic 1-005a: aw8697_parse_dt: irq gpio provided ok.
+[    1.260421] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260427] aw8697_parse_dt ---2929 
+[    1.260433] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260437] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260443] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260449] aw8697_parse_dt ---2929 
+[    1.260454] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260459] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260465] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260469] aw8697_parse_dt ---2929 
+[    1.260473] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260478] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260484] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260489] aw8697_parse_dt ---2929 
+[    1.260494] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260499] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260504] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260509] aw8697_parse_dt ---2929 
+[    1.260514] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260519] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260525] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260529] aw8697_parse_dt ---2929 
+[    1.260534] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260539] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260545] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260549] aw8697_parse_dt ---2929 
+[    1.260554] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260558] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260564] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260569] aw8697_parse_dt ---2929 
+[    1.260574] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260578] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260583] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260587] aw8697_parse_dt ---2929 
+[    1.260593] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260597] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260603] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.260608] aw8697_parse_dt ---2929 
+[    1.260613] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.260618] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.260630] 20190420_dt       aw8697->info.bst_vol_default: 0x10
+[    1.260636] 20190420_dt       aw8697->info.bst_vol_ram: 0x10
+[    1.260641] 20190420_dt       aw8697->info.bst_vol_rtp: 0x10
+[    1.260645] aw8697_i2c_probe ---4617 
+[    1.260733] found pin control aw8697_reset_reset
+[    1.260739] Selected 'aw8697_interrupt_active'
+[    1.260744] found pin control aw8697_reset_active
+[    1.260748] Selected 'aw8697_interrupt_active'
+[    1.260753] found pin control aw8697_interrupt_active
+[    1.260762] Selected 'aw8697_interrupt_active'
+[    1.260767] aw8697_i2c_probe ---4657 
+[    1.260783] Selected 'aw8697_reset_active'
+[    1.264978] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+[    1.276062] Selected 'aw8697_reset_reset'
+[    1.288043] Selected 'aw8697_reset_active'
+[    1.288199] i2c_geni 998000.i2c: i2c error :-107
+[    1.288210] aw8697_i2c_read: i2c_read cnt=0 error=-107
+[    1.296317] aw8697_read_chipid aw8697 detected
+[    1.296323] aw8697_haptic_softreset enter
+[    1.302530] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 2
+[    1.302704] ufshcd-qcom 1d84000.ufshc: ufshcd_wb_config: Write Booster Configured
+[    1.302994] scsi 0:0:0:49488: Well-known LUN    KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.303356] scsi 0:0:0:49488: Attached scsi generic sg0 type 30
+[    1.303588] scsi 0:0:0:49476: Well-known LUN    KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.303883] scsi 0:0:0:49476: Attached scsi generic sg1 type 30
+[    1.304111] scsi 0:0:0:49456: Well-known LUN    KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.304439] scsi 0:0:0:49456: Attached scsi generic sg2 type 30
+[    1.304903] scsi 0:0:0:0: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.305268] sd 0:0:0:0: Attached scsi generic sg3 type 0
+[    1.305370] sd 0:0:0:0: Power-on or device reset occurred
+[    1.305611] scsi 0:0:0:1: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.305990] sd 0:0:0:1: Attached scsi generic sg4 type 0
+[    1.306007] sd 0:0:0:0: [sda] 61844480 4096-byte logical blocks: (253 GB/236 GiB)
+[    1.306084] sd 0:0:0:0: [sda] Write Protect is off
+[    1.306094] sd 0:0:0:0: [sda] Mode Sense: 00 32 00 10
+[    1.306242] sd 0:0:0:1: Power-on or device reset occurred
+[    1.306261] scsi 0:0:0:2: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.306294] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.306417] sd 0:0:0:0: [sda] Optimal transfer size 524288 bytes
+[    1.306658] scsi 0:0:0:2: Attached scsi generic sg5 type 0
+[    1.306925] sd 0:0:0:2: Power-on or device reset occurred
+[    1.306949] scsi 0:0:0:3: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.307022] sd 0:0:0:1: [sdb] 4096 4096-byte logical blocks: (16.8 MB/16.0 MiB)
+[    1.307116] sd 0:0:0:1: [sdb] Write Protect is off
+[    1.307124] sd 0:0:0:1: [sdb] Mode Sense: 00 32 00 10
+[    1.307291] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 329, hwirq 119
+[    1.307303] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 123
+[    1.307306] sd 0:0:0:1: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.307366] sd 0:0:0:1: [sdb] Optimal transfer size 524288 bytes
+[    1.307374] scsi 0:0:0:3: Attached scsi generic sg6 type 0
+[    1.307402] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 329 parent hwirq 123
+[    1.307536] sd 0:0:0:2: [sdc] 4096 4096-byte logical blocks: (16.8 MB/16.0 MiB)
+[    1.307654] sd 0:0:0:2: [sdc] Write Protect is off
+[    1.307663] sd 0:0:0:2: [sdc] Mode Sense: 00 32 00 10
+[    1.307697] scsi 0:0:0:4: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.307974] aw8697_vibrator_init enter
+[    1.307981] aw8697_haptic_init enter
+[    1.308096] sd 0:0:0:3: Power-on or device reset occurred
+[    1.308140] sd 0:0:0:2: [sdc] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.308297] sd 0:0:0:2: [sdc] Optimal transfer size 524288 bytes
+[    1.308509] scsi 0:0:0:4: Attached scsi generic sg7 type 0
+[    1.308954] scsi 0:0:0:5: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.309233] sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7 sda8 sda9 sda10 sda11 sda12 sda13 sda14 sda15 sda16 sda17 sda18 sda19 sda20 sda21 sda22 sda23 sda24 sda25 sda26 sda27 sda28 sda29 sda30 sda31 sda32 sda33 sda34
+[    1.309241] sd 0:0:0:4: Power-on or device reset occurred
+[    1.309582] scsi 0:0:0:5: Attached scsi generic sg8 type 0
+[    1.309809] sd 0:0:0:5: Power-on or device reset occurred
+[    1.310183] sd 0:0:0:3: [sdd] 8192 4096-byte logical blocks: (33.6 MB/32.0 MiB)
+[    1.310427] sd 0:0:0:3: [sdd] Write Protect is off
+[    1.310436] sd 0:0:0:3: [sdd] Mode Sense: 00 32 00 10
+[    1.310485] sdb: sdb1 sdb2
+[    1.310672] sd 0:0:0:4: [sde] 601088 4096-byte logical blocks: (2.46 GB/2.29 GiB)
+[    1.310679] sd 0:0:0:5: [sdf] 8192 4096-byte logical blocks: (33.6 MB/32.0 MiB)
+[    1.310887] sd 0:0:0:5: [sdf] Write Protect is off
+[    1.310896] sd 0:0:0:5: [sdf] Mode Sense: 00 32 00 10
+[    1.310934] sd 0:0:0:3: [sdd] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.311039] sd 0:0:0:3: [sdd] Optimal transfer size 524288 bytes
+[    1.311074] aw8697_haptic_play_mode enter
+[    1.311119] sd 0:0:0:5: [sdf] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.311221] sd 0:0:0:5: [sdf] Optimal transfer size 524288 bytes
+[    1.311319] sd 0:0:0:4: [sde] Write Protect is off
+[    1.311392] sd 0:0:0:4: [sde] Mode Sense: 00 32 00 10
+[    1.311637] sd 0:0:0:4: [sde] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.311847] sd 0:0:0:4: [sde] Optimal transfer size 524288 bytes
+[    1.311989] sdc: sdc1 sdc2
+[    1.313150] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.313959] aw8697_haptic_set_bst_peak_cur  779 enter
+[    1.314278] sd 0:0:0:1: [sdb] Attached SCSI disk
+[    1.314364] aw8697_haptic_swicth_motorprotect_config enter
+[    1.314556] sdf: sdf1 sdf2 sdf3 sdf4 sdf5 sdf6
+[    1.314685] sdd: sdd1 sdd2 sdd3 sdd4 sdd5
+[    1.314840] sd 0:0:0:2: [sdc] Attached SCSI disk
+[    1.315889] aw8697_haptic_offset_calibration enter
+[    1.315992] sd 0:0:0:3: [sdd] Attached SCSI disk
+[    1.316347] sde: sde1 sde2 sde3 sde4 sde5 sde6 sde7 sde8 sde9 sde10 sde11 sde12 sde13 sde14 sde15 sde16 sde17 sde18 sde19 sde20 sde21 sde22 sde23 sde24 sde25 sde26 sde27 sde28 sde29 sde30 sde31 sde32 sde33 sde34 sde35 sde36 sde37 sde38 sde39 sde40 sde41 sde42 sde43 sde44 sde45 sde46 sde47 sde48 sde49 sde50 sde51 sde52 sde53 sde54 sde55 sde56 sde57 sde58 sde59 sde60 sde61 sde62 sde63 sde64 sde65 sde66 sde67 sde68 sde69
+[    1.316787] sd 0:0:0:5: [sdf] Attached SCSI disk
+[    1.317682] aw8697_haptic_f0_calibration enter
+[    1.317836] aw8697_haptic_get_f0 enter
+[    1.317842] aw8697_haptic_stop enter
+[    1.318438] aw8697_haptic_play_mode enter
+[    1.319180] aw8697_haptic_play_mode enter
+[    1.319945] aw8697_haptic_active enter
+[    1.320161] sd 0:0:0:4: [sde] Attached SCSI disk
+[    1.322796] aw8697_haptic_set_f0_preset enter
+[    1.441523] aw8697_haptic_read_f0 enter
+[    1.443619] aw8697_haptic_read_f0 f0=1692
+[    1.443627] aw8697_haptic_read_beme  1248 enter
+[    1.445661] aw8697_haptic_read_beme max_pos_beme=127
+[    1.445668] aw8697_haptic_read_beme max_neg_beme=129
+[    1.448908] aw8697_haptic_f0_calibration  line=2167 f0_cali_step=-18
+[    1.448914] aw8697_haptic_f0_calibration line=2169  f0_limit=1692
+[    1.448919] aw8697_haptic_f0_calibration line=2171  aw8697->info.f0_pre=1700
+[    1.448923] aw8697_haptic_f0_calibration f0_cali_lra=62
+[    1.450540] aw8697_haptic_f0_calibration final trim_lra=0x3e
+[    1.450546] aw8697_haptic_play_mode enter
+[    1.455466] aw8697_haptic_stop enter
+[    1.458187] aw8697_haptic_play_mode enter
+[    1.464330] input: aw8697_haptic as /devices/platform/soc/998000.i2c/i2c-1/1-005a/input/input1
+[    1.464460] rb init
+[    1.464463] aw8697_i2c_probe probe completed successfully!
+[    1.464515] i2c_geni 998000.i2c: I2C probed
+[    1.467469] spi_geni a8c000.spi: spi_geni_probe: completed
+[    1.467923] i2c_geni a80000.i2c: Bus frequency is set to 400000Hz.
+[    1.471467] i2c_geni a80000.i2c: I2C probed
+[    1.471827] i2c_geni a94000.i2c: Multi-EE usecase
+[    1.471835] i2c_geni a94000.i2c: Bus frequency is set to 400000Hz.
+[    1.487421] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.494991] pm8008i_l1: Bringing 1200000uV into 1104000-1104000uV
+[    1.501189] pm8008i_l1: supplied by pm8350_s12
+[    1.506556] pm8008i_l2: Bringing 1200000uV into 1152000-1152000uV
+[    1.513151] pm8008i_l2: supplied by pm8350_s12
+[    1.520817] pm8008i_l3: supplied by pm8350c_s1
+[    1.528239] pm8008i_l4: supplied by pm8350c_s1
+[    1.530280] pm8008i_l5: supplied by pm8350c_s1
+[    1.532281] pm8008i_l6: supplied by pm8350c_bob
+[    1.534292] pm8008i_l7: supplied by pm8350c_bob
+[    1.534864] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.535454] i2c_geni a94000.i2c: i2c error :-107
+[    1.535463] PM8008: pm8008_read: failed to read 0x0950
+[    1.535468] PM8008: _pm8008_chip_is_enabled: qcom,pm8008-chip-en: failed to get chip state rc=-107
+[    1.535473] PM8008: pm8008_chip_probe: Failed to register chip enable regulator rc=-107
+[    1.535484] qcom,pm8008-chip: probe of a94000.i2c:pm8008j@c:pm8008-chip@900 failed with error -107
+[    1.535755] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.536537] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.536661] i2c_geni a94000.i2c: I2C probed
+[    1.537475] msm_geni_serial 890000.qcom,qup_uart: Wakeup byte 0xfd
+[    1.537545] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 330, hwirq 71
+[    1.537554] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 134
+[    1.537564] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 330 parent hwirq 134
+[    1.537663] msm_geni_serial 890000.qcom,qup_uart: Serial port0 added.FifoSize 64 is_console0
+[    1.537678] msm_geni_serial 890000.qcom,qup_uart: Failed to create dbg dir
+[    1.538223] 890000.qcom,qup_uart: ttyHS0 at MMIO 0x890000 (irq = 199, base_baud = 0) is a MSM
+[    1.539397] spi_geni 894000.spi: spi_geni_probe: completed
+[    1.539877] i2c_geni 884000.i2c: Bus frequency is set to 1000000Hz.
+[    1.540389] i2c_geni 884000.i2c: I2C probed
+[    1.540655] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 331, hwirq 87
+[    1.540663] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 138
+[    1.540671] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 331 parent hwirq 138
+[    1.540692] nfc_parse_dt: irq 395
+[    1.540710] nfc_parse_dt: ven 370, dwl req 394, clkreq 371
+[    1.540716] qcom,sn-nci 4-0028: error reading NFC VDDIO min and max value
+[    1.540722] qcom,sn-nci 4-0028: error reading NFC current value
+[    1.540815] nfc_i2c_dev_probe : requesting IRQ 331
+[    1.540873] nfc_ldo_config: regulator entry not present
+[    1.543113] ipa 1e00000.qcom,ipa:ipa_smmu_ap: Adding to iommu group 44
+[    1.543627] ipa 1e00000.qcom,ipa:ipa_smmu_wlan: Adding to iommu group 45
+[    1.544185] ipa 1e00000.qcom,ipa:ipa_smmu_uc: Adding to iommu group 46
+[    1.544695] ipa 1e00000.qcom,ipa:ipa_smmu_11ad: Adding to iommu group 47
+[    1.545286] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    1.545295] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    1.546392] minidump-id not found for venus
+[    1.547140] spss_utils [spss_parse_dt]: iar_buf_addr [0x8e800000].
+[    1.547225] spss_utils [spss_probe]: Probe completed successfully, [spss1p].
+[    1.552042] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): allocate IRQ 332, hwirq 5
+[    1.552046] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): found parent hwirq 141
+[    1.552049] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): alloc_irqs_parent for 332 parent hwirq 141
+[    1.552133] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 333, hwirq 80
+[    1.552135] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 126
+[    1.552137] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 333 parent hwirq 126
+[    1.552208] input: gpio-keys as /devices/platform/soc/soc:gpio_keys/input/input2
+[    1.554220] bimc-bwmon: Zone thres larger than hw limit: hi:0 med:4000 lo:0
+[    1.559024] bimc-bwmon: Zone thres larger than hw limit: hi:0 med:4000 lo:0
+[    1.560521] bimc-bwmon: Zone thres larger than hw limit: hi:0 med:4000 lo:0
+[    1.568666] RNDIS_IPA module is loaded.
+[    1.568693] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    1.569070] cryptomgr_probe (362) used greatest stack depth: 14416 bytes left
+[    1.569175] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    1.569290] cfg80211: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    1.569326] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    1.569329] platform regulatory.0: Falling back to sysfs fallback for: regulatory.db
+[    1.569346] clk: Disabling unused clocks
+[    1.569519] gpu_cc-lahaina 3d90000.qcom,gpucc: sync-state
+[    1.569544] video_cc-lahaina abf0000.qcom,videocc: sync-state
+[    1.569641] ALSA device list:
+[    1.569644] No soundcards found.
+[    1.569659] Warning: unable to open an initial console.
+[    1.576180] cryptomgr_probe (362): highest shadow stack usage: 160 bytes
+[    1.609227] NFC chip_type = a4
+[    1.609239] NFC fw version = 1.10.60
+[    1.609352] nfc_i2c_dev_probe success
+[    1.610250] Freeing unused kernel memory: 1664K
+[    1.610278] Run /init as init process
+[    1.610955] init: init first stage started!
+[    1.611126] init: Loading module /lib/modules/snd_event_dlkm.ko with args ''
+[    1.611933] init: Loaded kernel module /lib/modules/snd_event_dlkm.ko
+[    1.611947] init: Loading module /lib/modules/mmhardware_sysfs_dlkm.ko with args ''
+[    1.612885] init: Loaded kernel module /lib/modules/mmhardware_sysfs_dlkm.ko
+[    1.612912] init: Loading module /lib/modules/q6_pdr_dlkm.ko with args ''
+[    1.613303] init: Loaded kernel module /lib/modules/q6_pdr_dlkm.ko
+[    1.613317] init: Loading module /lib/modules/q6_notifier_dlkm.ko with args ''
+[    1.613562] init: Loaded kernel module /lib/modules/q6_notifier_dlkm.ko
+[    1.613590] init: Loading module /lib/modules/apr_dlkm.ko with args ''
+[    1.616353] xiaomi_touch_probe enter
+[    1.616370] xiaomi_touch_probe: kernel base:-340149141504, phy base:9890693120
+[    1.616372] xiaomi_touch_parse_dt touch,name:xiaomi-touch
+[    1.616415] xiaomi_touch_probe over
+[    1.625689] msm_drm: unknown parameter 'oled_wp' ignored
+[    1.626298] [drm:sde_power_parse_ib_votes:474]: error reading min core ib vote. rc=-22, np=ff11d6e8
+[    1.626302] [drm:sde_power_parse_ib_votes:482]: error reading min llcc ib vote. rc=-22
+[    1.626304] [drm:sde_power_parse_ib_votes:490]: error reading min dram ib vote. rc=-22
+[    1.626404] [sde_rsc_hw:rsc_hw_init_v3:537]: sde rsc init successfully done
+[    1.626419] [sde_rsc:sde_rsc_probe:1799]: sde rsc index:0 probed successfully
+[    1.626801] dsi_phy ae94400.qcom,mdss_dsi_phy0: ae94400.qcom,mdss_dsi_phy0 supply gdsc not found, using dummy regulator
+[    1.626905] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: DSI pll label = dsi_pll_5nm
+[    1.626963] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: PLL SSC enabled
+[    1.626968] dsi_pll_init: PLL base=000000004db159db
+[    1.627027] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    1.627031] vco_5nm_recalc_rate: handoff_resources true
+[    1.627327] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    1.627331] vco_5nm_recalc_rate: handoff_resources true
+[    1.627607] dsi_pll_clock_register_5nm: Registered DSI PLL ndx=0, clocks successfully
+[    1.627733] [drm:dsi_phy_driver_probe [msm_drm]] [msm-dsi-info]: DSI_0: Probe successful
+[    1.627782] dsi_phy ae96400.qcom,mdss_dsi_phy1: ae96400.qcom,mdss_dsi_phy1 supply gdsc not found, using dummy regulator
+[    1.627872] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: DSI pll label = dsi_pll_5nm
+[    1.627928] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_1: PLL SSC enabled
+[    1.627933] dsi_pll_init: PLL base=00000000de234bc8
+[    1.627957] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    1.627962] vco_5nm_recalc_rate: handoff_resources true
+[    1.628153] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    1.628158] vco_5nm_recalc_rate: handoff_resources true
+[    1.628239] dsi_pll_clock_register_5nm: Registered DSI PLL ndx=1, clocks successfully
+[    1.628304] [drm:dsi_phy_driver_probe [msm_drm]] [msm-dsi-info]: DSI_1: Probe successful
+[    1.629470] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    1.629721] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    1.629967] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    1.630212] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    1.630456] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    1.630652] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    1.630712] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    1.630767] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    1.630820] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    1.630871] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    1.630914] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    1.631206] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    1.631451] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    1.631696] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    1.631940] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    1.633500] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    1.633567] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    1.633624] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    1.633676] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    1.633726] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    1.635640] msmdrm_smmu soc:qcom,smmu_sde_unsec_cb: Adding to iommu group 48
+[    1.635681] [drm] probing device qcom,smmu_sde_unsec
+[    1.635685] [drm] Created domain mdp_ns, secure=0
+[    1.636258] msmdrm_smmu soc:qcom,smmu_sde_sec_cb: Adding to iommu group 49
+[    1.636287] [drm] probing device qcom,smmu_sde_sec
+[    1.636290] [drm] Created domain mdp_s, secure=1
+[    1.637015] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    1.637275] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    1.637276] [drm:sde_dbg_init:2392] evtlog_status: enable:11, panic:1, dump:2
+[    1.637527] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    1.637793] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    1.638002] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    1.638476] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    1.638651] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    1.638824] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    1.638998] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    1.639181] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    1.639955] [drm:dsi_ctrl_dev_probe [msm_drm]] [msm-dsi-info]: dsi-ctrl-0: Probe successful
+[    1.639956] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 334, hwirq 23
+[    1.639960] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 84
+[    1.639968] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 334 parent hwirq 84
+[    1.639973] [ FTS ] fts_probe: driver spi ver: 5.2.4.1
+[    1.639975] [ FTS ] SPI interface... 
+[    1.639977] [ FTS ] SET Device driver INFO: 
+[    1.639983] [ FTS ] irq_gpio = 331
+[    1.639985] [ FTS ] pwr_reg_name = avdd
+[    1.639987] [ FTS ] bus_reg_name = vdd
+[    1.639992] [ FTS ] reset_gpio =330
+[    1.640004] [ FTS ] fod-lx:588
+[    1.640006] [ FTS ] fod ly:2358
+[    1.640008] [ FTS ] fod size:264
+[    1.640010] [ FTS ] fod size:264
+[    1.640053] [ FTS ] parse_dt:tp vendor: 56
+[    1.640053] [ FTS ] Unable to read tp color
+[    1.640056] [ FTS ] Unable to read tp module
+[    1.640059] [ FTS ] Unable to read tp hw version
+[    1.640061] [ FTS ] parse_dt:fw_name: st_fts_k2.ftb
+[    1.640063] [ FTS ] parse_dt:limit_name: stm_fts_production_limits.csv
+[    1.640065] [ FTS ] SET GPIOS: 
+[    1.640123] [ FTS ] SET Regulators: 
+[    1.640517] [drm:dsi_ctrl_dev_probe [msm_drm]] [msm-dsi-info]: dsi-ctrl-1: Probe successful
+[    1.640714] [ FTS ] gpio_num:331, irq:334
+[    1.640718] [ FTS ] SET Event Handler: 
+[    1.640723] [ FTS ] SET Input Device Property: 
+[    1.640765] input: fts as /devices/platform/soc/a8c000.spi/spi_master/spi1/spi1.0/input/input3
+[    1.640783] [ FTS ] Init Core Lib: 
+[    1.640785] [ FTS ] initCore: Initialization of the Core... 
+[    1.640787] [ FTS ] openChannel: spi_master: flags = 0000 !
+[    1.640789] [ FTS ] openChannel: spi_device: max_speed = 7000000 chip select = 00 bits_per_words = 8 mode = 0000 !
+[    1.640791] [ FTS ] openChannel: completed! 
+[    1.640793] [ FTS ] setResetGpio: reset_gpio = 330
+[    1.640794] [ FTS ] initCore: Initialization Finished! 
+[    1.640796] [ FTS ] Device Initialization: 
+[    1.640797] [ FTS ] System resetting...
+[    1.640799] [ FTS ] Number of disable = 0 
+[    1.640801] [ FTS ] Executing Disable... 
+[    1.640803] [ FTS ] Interrupt No Sync Disabled!
+[    1.641062] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    1.641113] [xiaomi 38 08 0a cmd mode dsc dsi panel] clk_strength = 101
+[    1.641958] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    1.642001] [xiaomi 43 06 00 cmd mode secondary dsi panel] clk_strength default value = 0
+[    1.642306] [drm:dsi_panel_parse_fod [msm_drm]] [msm-dsi-info]: mi,local-hbm-on-1000nit-51-index not specified
+[    1.652346] spi_geni a8c000.spi: tx_fifo 16 rx_fifo 16 tx_width 32
+[    1.652474] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    1.655853] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,smmu_sde_unsec_cb (ops msm_smmu_comp_ops [msm_drm])
+[    1.656038] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,smmu_sde_sec_cb (ops msm_smmu_comp_ops [msm_drm])
+[    1.656111] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    1.656457] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,wb-display@0 (ops sde_wb_comp_ops [msm_drm])
+[    1.656750] [drm:dsi_display_bind [msm_drm]] [msm-dsi-info]: Successfully bind display panel 'qcom,mdss_dsi_k2_38_08_0a_mp_dsc_cmd'
+[    1.656788] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 335, hwirq 82
+[    1.656795] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 140
+[    1.656803] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 335 parent hwirq 140
+[    1.657118] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-primary (ops dsi_display_comp_ops [msm_drm])
+[    1.657392] [drm:dsi_display_bind [msm_drm]] [msm-dsi-info]: Successfully bind display panel 'qcom,mdss_dsi_k1_43_06_00_sec_cmd'
+[    1.657420] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 336, hwirq 83
+[    1.657427] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 141
+[    1.657434] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 336 parent hwirq 141
+[    1.657523] sysfs: cannot create duplicate filename '/class/mi_display'
+[    1.657531] CPU: 2 PID: 350 Comm: kworker/u16:7 Tainted: G S                5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    1.657536] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    1.657549] Workqueue: events_unbound deferred_probe_work_func.2b500e852cead69fde05a2b98ceb2fa6.cfi_jt
+[    1.657555] Call trace:
+[    1.657562] dump_backtrace.cfi_jt+0x0/0x4
+[    1.657570] show_stack+0x18/0x24
+[    1.657576] __dump_stack+0x24/0x30
+[    1.657581] dump_stack+0xb0/0xd8
+[    1.657588] sysfs_create_dir_ns+0xe0/0x13c
+[    1.657594] kobject_add_internal+0x288/0x650
+[    1.657598] kset_register+0x58/0x9c
+[    1.657604] __class_register+0xcc/0x16c
+[    1.657609] __class_create+0x58/0x88
+[    1.657777] dsi_mi_display_init+0x48/0xe8 [msm_drm]
+[    1.657948] dsi_display_bind+0x890/0x8f0 [msm_drm]
+[    1.657955] component_bind_all+0x15c/0x2bc
+[    1.658125] msm_drm_bind+0xc8/0x884 [msm_drm]
+[    1.658131] try_to_bring_up_master+0x1cc/0x240
+[    1.658137] __component_add.llvm.6895397784266821110+0xd0/0x184
+[    1.658142] component_add+0x14/0x20
+[    1.658312] dsi_display_dev_probe+0x10b4/0x115c [msm_drm]
+[    1.658319] platform_drv_probe+0xf8/0x100
+[    1.658324] really_probe+0x1e4/0x5a0
+[    1.658329] driver_probe_device+0x64/0xa8
+[    1.658335] __device_attach_driver+0x130/0x170
+[    1.658340] bus_for_each_drv+0xb0/0x11c
+[    1.658346] __device_attach.llvm.12744627282597078069+0xec/0x164
+[    1.658351] bus_probe_device+0x3c/0xe0
+[    1.658356] deferred_probe_work_func+0xb0/0xc8
+[    1.658364] process_one_work+0x210/0x4ac
+[    1.658369] worker_thread+0x280/0x4dc
+[    1.658374] kthread+0x150/0x188
+[    1.658380] ret_from_fork+0x10/0x18
+[    1.658386] kobject_add_internal failed for mi_display with -EEXIST, don't try to register things with the same name in the same directory.
+[    1.658558] [drm:dsi_mi_display_init [msm_drm]] *ERROR* [msm-dsi-error]: class_create failed, rc: -17
+[    1.658731] [drm:dsi_mi_display_init [msm_drm]] *ERROR* [msm-dsi-error]: device_create_with_groups failed for disp-DSI-1, ret: -19
+[    1.658904] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-secondary (ops dsi_display_comp_ops [msm_drm])
+[    1.659082] msm_drm ae00000.qcom,mdss_mdp: bound af20000.qcom,sde_rscc (ops sde_rsc_comp_ops [msm_drm])
+[    1.659109] [drm] mapped mdp address space @000000006fa9fbaa
+[    1.662671] [drm:_sde_kms_hw_init_blocks:4743] sde hardware revision:0x70000000
+[    1.663110] [drm:msm_smmu_new [msm_drm]] *ERROR* unable to find domain 1 compat: qcom,smmu_sde_nrt_unsec
+[    1.663287] [drm:msm_smmu_new [msm_drm]] *ERROR* unable to find domain 3 compat: qcom,smmu_sde_nrt_sec
+[    1.665616] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+[    1.665987] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+[    1.666612] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 1 comp_enc:0 intf: 1
+[    1.666942] [ FTS ] READ EVENT =03 00 00 00 00 00 00 00 
+[    1.668947] [ FTS ] FOUND EVENT =03 00 00 00 00 00 00 00 
+[    1.668957] [ FTS ] Event found in (5 iterations)! Number of errors found = 0 
+[    1.668959] [ FTS ] System reset DONE!
+[    1.668961] [ FTS ] readSysInfo: Reading System Info...
+[    1.669310] hh_msgq: Registered client for label: 2
+[    1.670160] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    1.670167] [drm] No driver support for vblank timestamp query.
+[    1.670458] [drm] Initialized msm_drm 1.4.0 20130625 for ae00000.qcom,mdss_mdp on minor 0
+[    1.670466] [drm] cont_splash enabled in 2 of 2 display(s)
+[    1.670741] [drm:dsi_ctrl_isr_configure [msm_drm]] [msm-dsi-info]: dsi-ctrl-0: IRQ 337 registered
+[    1.671082] [drm:dsi_ctrl_isr_configure [msm_drm]] [msm-dsi-info]: dsi-ctrl-1: IRQ 338 registered
+[    1.671302] disp_cc-lahaina af00000.qcom,dispcc: sync-state
+[    1.672045] [ FTS ] readSysInfo: Parsing System Info...
+[    1.672049] [ FTS ] FW VER = 0084 
+[    1.672051] [ FTS ] SVN REV = 6393 
+[    1.672053] [ FTS ] CONFIG VER = 0048 
+[    1.672054] [ FTS ] CONFIG PROJECT ID = 0000 
+[    1.672056] [ FTS ] CX VER = FFFF 
+[    1.672058] [ FTS ] CX PROJECT ID = 0000 
+[    1.672060] [ FTS ] AFE VER: CFG = 06 - CX = 06 - PANEL = 06 
+[    1.672061] [ FTS ] Protocol = 00 
+[    1.672064] [ FTS ] Die Info = 39 38 00 4D 50 30 52 31 06 00 00 00 F0 D2 00 00  
+[    1.672067] [ FTS ] Release Info = 48 1E 00 00 00 00 00 00 73 BA A9 48 05 35 51 B7  
+[    1.672069] [ FTS ] Screen Resolution = 3199 x 1439 
+[    1.672071] [ FTS ] TX Len = 16 
+[    1.672072] [ FTS ] RX Len = 36 
+[    1.672074] [ FTS ] Key Len = 0 
+[    1.672075] [ FTS ] Force Len = 0 
+[    1.672077] [ FTS ] Parsed 208 bytes! 
+[    1.672079] [ FTS ] System Info Read DONE!
+[    1.672081] [ FTS ] fts_get_lockdown_info:enter
+[    1.672082] [ FTS ] Number of disable = 1 
+[    1.685453] [ FTS ] READ EVENT =43 01 A4 06 70 00 00 00 
+[    1.687460] [ FTS ] FOUND EVENT =43 01 A4 06 70 00 00 00 
+[    1.687463] [ FTS ] Event found in (1 iterations)! Number of errors found = 0 
+[    1.687465] [ FTS ] ECHO OK!
+[    1.687467] [ FTS ] Echo FOUND... OK!
+[    1.690551] [ FTS ] fts_get_lockdown_info signature:A5 id:70 70 beforecnt:1,aftercnt:2
+[    1.690560] [ FTS ] Lockdown Code =
+[    1.690562] [ FTS ] Number of re-enable = 1 
+[    1.690564] [ FTS ] Excecuting Enable... 
+[    1.690566] [ FTS ] Interrupt Enabled!
+[    1.690569] [ FTS ] Lockdown:0x48,0x38,0x32,0x05,0x48,0x32,0x31,0x01
+[    1.690574] [ FTS ] FW Update and Sensing Initialization: 
+[    1.690576] [ FTS ] Fw Auto Update is starting... 
+[    1.693671] [ FTS ] fts_crc_check: Verifying if Config CRC Error...
+[    1.693678] [ FTS ] System resetting...
+[    1.693680] [ FTS ] Number of disable = 0 
+[    1.693682] [ FTS ] Executing Disable... 
+[    1.693684] [ FTS ] Interrupt No Sync Disabled!
+[    1.706753] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    1.711817] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    1.721923] [ FTS ] READ EVENT =03 00 00 00 00 00 00 00 
+[    1.723930] [ FTS ] FOUND EVENT =03 00 00 00 00 00 00 00 
+[    1.723933] [ FTS ] Event found in (4 iterations)! Number of errors found = 0 
+[    1.723935] [ FTS ] System reset DONE!
+[    1.723938] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    1.723939] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    1.723941] [ FTS ] fts_crc_check: No Config CRC Error Found! 
+[    1.723943] [ FTS ] fts_crc_check: Verifying if Cx CRC Error...
+[    1.723945] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    1.723946] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    1.723948] [ FTS ] fts_crc_check: No Cx CRC Error Found! 
+[    1.723950] [ FTS ] fts_fw_update: NO CRC Error or Impossible to read CRC register! 
+[    1.723952] [ FTS ] fts_get_lockdown_info aleady get,skip
+[    1.723954] [ FTS ] Number of re-enable = 1 
+[    1.723955] [ FTS ] Excecuting Enable... 
+[    1.723958] [ FTS ] Interrupt Enabled!
+[    1.723960] [ FTS ] Choose config 0: st_fts_k2.ftb
+[    1.723961] [ FTS ] Reading Fw file...
+[    1.723964] [ FTS ] getFWdata starting ...
+[    1.723965] [ FTS ] Read FW from BIN file st_fts_k2.ftb !
+[    1.724075] [ FTS ] getFWdata Finished!
+[    1.724078] [ FTS ] parseBinFile: Fw Signature OK!
+[    1.724079] [ FTS ] parseBinFile: ftb_version OK!
+[    1.724081] [ FTS ] parseBinFile: Wrong target 36 != 36  39 != 40 ... ERROR 80000009
+[    1.724084] [ FTS ] readFwFile: impossible parse ERROR 80070000
+[    1.724086] [ FTS ] flashProcedure: ERROR 82070009
+[    1.724088] [ FTS ] fts_fw_update: firmware update failed and retry! ERROR 82070009
+[    1.724090] [ FTS ] fts_chip_powercycle: Power Cycle Starting... 
+[    1.724091] [ FTS ] fts_chip_powercycle: Disabling IRQ... 
+[    1.724093] [ FTS ] Number of disable = 0 
+[    1.724095] [ FTS ] Executing Disable... 
+[    1.724097] [ FTS ] Interrupt No Sync Disabled!
+[    1.741687] [ FTS ] fts_chip_powercycle: Power Cycle Finished! ERROR CODE = 00000000
+[    1.741692] [ FTS ] Reading Fw file...
+[    1.741694] [ FTS ] getFWdata starting ...
+[    1.741696] [ FTS ] Read FW from BIN file st_fts_k2.ftb !
+[    1.741759] [ FTS ] getFWdata Finished!
+[    1.741761] [ FTS ] parseBinFile: Fw Signature OK!
+[    1.741763] [ FTS ] parseBinFile: ftb_version OK!
+[    1.741765] [ FTS ] parseBinFile: Wrong target 36 != 36  39 != 40 ... ERROR 80000009
+[    1.741768] [ FTS ] readFwFile: impossible parse ERROR 80070000
+[    1.741770] [ FTS ] flashProcedure: ERROR 82070009
+[    1.741772] [ FTS ] fts_fw_update: firmware update failed again!  ERROR 82070009
+[    1.741773] [ FTS ] Fw Auto Update Failed!
+[    1.741775] [ FTS ] fts_fw_update: Verifying if CX CRC Error...
+[    1.741777] [ FTS ] System resetting...
+[    1.741779] [ FTS ] Number of disable = 1 
+[    1.741780] [ FTS ] Interrupt No Sync Disabled!
+[    1.753364] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    1.757034] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    1.767063] [ FTS ] READ EVENT =03 00 00 00 00 00 00 00 
+[    1.769070] [ FTS ] FOUND EVENT =03 00 00 00 00 00 00 00 
+[    1.769079] [ FTS ] Event found in (5 iterations)! Number of errors found = 0 
+[    1.769081] [ FTS ] System reset DONE!
+[    1.769082] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    1.769084] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    1.769086] [ FTS ] fts_fw_update: No Cx CRC Error Found! 
+[    1.769087] [ FTS ] fts_fw_update: Verifying if Panel CRC Error... 
+[    1.769089] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    1.769090] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    1.769092] [ FTS ] fts_fw_update: No Panel CRC Error Found! 
+[    1.769095] [ FTS ] Number of disable = 1 
+[    1.769097] [ FTS ] Interrupt Mode
+[    1.770660] [ FTS ] fts_mode_handler: Mode Handler starting... 
+[    1.770666] [ FTS ] fts_mode_handler: Screen ON... 
+[    1.770668] [ FTS ] fts_mode_handler: Sense ON
+[    1.770670] [ FTS ] setScanMode: Setting scan mode: mode = 00 settings = 01 !
+[    1.770759] [ FTS ] setScanMode: Setting scan mode OK!
+[    1.770864] [ FTS ] fts_mode_handler: Mode Handler finished! res = 00000000 mode = 00000000 
+[    1.770874] [ FTS ] setScanMode: Setting scan mode: mode = 00 settings = 00 !
+[    1.770935] [ FTS ] setScanMode: Setting scan mode OK!
+[    1.820955] [ FTS ] setScanMode: Setting scan mode: mode = 00 settings = 01 !
+[    1.821197] [ FTS ] setScanMode: Setting scan mode OK!
+[    1.821199] [ FTS ] Number of re-enable = 1 
+[    1.821200] [ FTS ] Excecuting Enable... 
+[    1.821205] [ FTS ] Interrupt Enabled!
+[    1.821207] [ FTS ] Fw Update Finished! error = 00000000
+[    1.821209] [ FTS ] SET Device File Nodes: 
+[    1.821229] [ FTS ] fts_proc_init: proc entry CREATED! 
+[    1.821268] xiaomitouch_register_modedata
+[    1.821487] [ FTS ] fts_status_event_handler Mutual negative detect Force cal = 01 00 00 00 00 02
+[    1.821495] [ FTS ] fts_status_event_handler Echo event of command = A0 00 01 00 00 01
+[    1.821506] [ FTS ] fts_status_event_handler Echo event of command = A2 03 00 00 00 00
+[    1.821580] [ FTS ] fts_read_touchmode_data: game_mode:0, active_mode:1, up_threshold:0, landlock:0, wgh:3, 201, 182
+[    1.821582] [ FTS ] fts_init_touchmode_data: mode:0, set cur:0, get cur:0, def:0 min:0 max:1
+[    1.821584] [ FTS ] fts_init_touchmode_data: mode:1, set cur:1, get cur:1, def:0 min:0 max:1
+[    1.821585] [ FTS ] fts_init_touchmode_data: mode:2, set cur:4, get cur:4, def:4 min:1 max:5
+[    1.821587] [ FTS ] fts_init_touchmode_data: mode:3, set cur:3, get cur:3, def:3 min:1 max:5
+[    1.821588] [ FTS ] fts_init_touchmode_data: mode:4, set cur:3, get cur:3, def:3 min:1 max:5
+[    1.821590] [ FTS ] fts_init_touchmode_data: mode:5, set cur:3, get cur:3, def:3 min:1 max:5
+[    1.821591] [ FTS ] fts_init_touchmode_data: mode:6, set cur:1, get cur:1, def:1 min:1 max:3
+[    1.821593] [ FTS ] fts_init_touchmode_data: mode:7, set cur:2, get cur:2, def:2 min:0 max:3
+[    1.821594] [ FTS ] fts_init_touchmode_data: mode:8, set cur:0, get cur:0, def:0 min:0 max:3
+[    1.821596] [ FTS ] fts_init_touchmode_data: mode:9, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821597] [ FTS ] fts_init_touchmode_data: mode:10, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821599] [ FTS ] fts_init_touchmode_data: mode:11, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821600] [ FTS ] fts_init_touchmode_data: mode:12, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821602] [ FTS ] fts_init_touchmode_data: mode:13, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821603] [ FTS ] fts_init_touchmode_data: mode:14, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821605] [ FTS ] fts_init_touchmode_data: mode:15, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821606] [ FTS ] fts_init_touchmode_data: mode:16, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821608] [ FTS ] fts_init_touchmode_data: mode:17, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821609] [ FTS ] fts_init_touchmode_data: mode:18, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821611] [ FTS ] fts_init_touchmode_data: mode:19, set cur:0, get cur:0, def:0 min:0 max:0
+[    1.821612] [ FTS ] Probe Finished! 
+[    1.822578] hwid: unknown parameter 'build_adc' ignored
+[    1.822581] hwid: unknown parameter 'project_adc' ignored
+[    1.838961] printk: init: 21 output lines suppressed due to ratelimiting
+[    1.842356] init: [libfstab] Using Android DT directory /proc/device-tree/firmware/android/
+[    1.842652] init: DM_DEV_STATUS failed for system_ext_a: No such device or address
+[    1.842656] init: Could not update logical partition
+[    1.842691] init: DM_DEV_STATUS failed for system_ext_a: No such device or address
+[    1.842694] init: Could not update logical partition
+[    1.842729] init: DM_DEV_STATUS failed for product_a: No such device or address
+[    1.842732] init: Could not update logical partition
+[    1.842766] init: DM_DEV_STATUS failed for product_a: No such device or address
+[    1.842768] init: Could not update logical partition
+[    1.842774] init: Opening SELinux policy
+[    1.848653] [ FTS ] fts_status_event_handler Mutual negative detect Force cal = 01 00 00 00 00 01
+[    1.848666] [ FTS ] fts_status_event_handler Echo event of command = A0 00 01 00 00 00
+[    1.854081] SELinux:  policy capability network_peer_controls=1
+[    1.854085] SELinux:  policy capability open_perms=1
+[    1.854087] SELinux:  policy capability extended_socket_class=1
+[    1.854088] SELinux:  policy capability always_check_network=0
+[    1.854090] SELinux:  policy capability cgroup_seclabel=0
+[    1.854091] SELinux:  policy capability nnp_nosuid_transition=1
+[    1.854093] SELinux:  unknown policy capability 9
+[    1.854094] SELinux:  unknown policy capability 12
+[    1.892623] audit: type=1403 audit(174477272.311:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    1.894555] printk: init: 8 output lines suppressed due to ratelimiting
+[    1.897537] init: init second stage started!
+[    1.902113] selinux: SELinux: Loaded file context from:
+[    1.902117] selinux: 		/plat_file_contexts
+[    1.902120] selinux: 		/system_ext_file_contexts
+[    1.902122] selinux: 		/product_file_contexts
+[    1.902124] selinux: 		/vendor_file_contexts
+[    1.902126] selinux: 		/odm_file_contexts
+[    1.912760] init: [libfstab] Using Android DT directory /proc/device-tree/firmware/android/
+[    1.914532] init: Overriding previous property 'debug.sf.high_fps_early_gl_phase_offset_ns':'-2000000' with new value '-4000000'
+[    1.914538] init: Overriding previous property 'debug.sf.high_fps_late_sf_phase_offset_ns':'-2000000' with new value '-4000000'
+[    1.927476] audit: type=1400 audit(174477272.343:3): avc:  denied  { read } for  pid=389 comm="init" name="bin" dev="rootfs" ino=11023 scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1
+[    1.929766] audit: type=1400 audit(174477272.347:4): avc:  denied  { sys_nice } for  pid=390 comm="ueventd" capability=23  scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability permissive=1
+[    1.929789] ueventd: ueventd started!
+[    1.930855] selinux: SELinux: Loaded file context from:
+[    1.930858] selinux: 		/plat_file_contexts
+[    1.930860] selinux: 		/system_ext_file_contexts
+[    1.930862] selinux: 		/product_file_contexts
+[    1.930864] selinux: 		/vendor_file_contexts
+[    1.930866] selinux: 		/odm_file_contexts
+[    1.930883] ueventd: Parsing file /system/etc/ueventd.rc...
+[    1.930896] ueventd: Added '/vendor/etc/ueventd.rc' to import list
+[    1.930900] ueventd: Added '/odm/etc/ueventd.rc' to import list
+[    2.497697] ueventd (396) used greatest stack depth: 13680 bytes left
+[    2.497711] ueventd (394) used greatest stack depth: 13632 bytes left
+[    2.497762] ueventd (395) used greatest stack depth: 13184 bytes left
+[    2.503673] servicemanager: Starting sm instance on /dev/binder
+[    2.504211] SELinux: Multiple same specifications for vendor.qti.gnss.ILocAidlGnss/default.
+[    2.504247] SELinux: Multiple same specifications for vendor.qti.hardware.perf2.IPerf/default.
+[    2.504866] SELinux: SELinux: Loaded service context from:
+[    2.504872] SELinux: 		/plat_service_contexts
+[    2.504877] SELinux: 		/system_ext_service_contexts
+[    2.504882] SELinux: 		/product_service_contexts
+[    2.504887] SELinux: 		/vendor_service_contexts
+[    2.507192] audit: type=1400 audit(174477272.923:5): avc:  denied  { read } for  pid=1 comm="init" name="panel0-backlight" dev="sysfs" ino=94500 scontext=u:r:init:s0 tcontext=u:object_r:vendor_sysfs_graphics:s0 tclass=lnk_file permissive=1
+[    2.508232] file system registered
+[    2.512251] ueventd (395): highest shadow stack usage: 168 bytes
+[    2.512261] ueventd (394): highest shadow stack usage: 200 bytes
+[    2.512330] ueventd (397): highest shadow stack usage: 216 bytes
+[    2.521141] audit: type=1400 audit(174477272.939:6): avc:  denied  { read } for  pid=404 comm="android.hardwar" name="u:object_r:vendor_soc_name_prop:s0" dev="tmpfs" ino=11932 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:vendor_soc_name_prop:s0 tclass=file permissive=1
+[    2.521153] audit: type=1400 audit(174477272.939:7): avc:  denied  { open } for  pid=404 comm="android.hardwar" path="/dev/__properties__/u:object_r:vendor_soc_name_prop:s0" dev="tmpfs" ino=11932 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:vendor_soc_name_prop:s0 tclass=file permissive=1
+[    2.521161] audit: type=1400 audit(174477272.939:8): avc:  denied  { getattr } for  pid=404 comm="android.hardwar" path="/dev/__properties__/u:object_r:vendor_soc_name_prop:s0" dev="tmpfs" ino=11932 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:vendor_soc_name_prop:s0 tclass=file permissive=1
+[    2.521168] audit: type=1400 audit(174477272.939:9): avc:  denied  { map } for  pid=404 comm="android.hardwar" path="/dev/__properties__/u:object_r:vendor_soc_name_prop:s0" dev="tmpfs" ino=11932 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:vendor_soc_name_prop:s0 tclass=file permissive=1
+[    2.531353] audit: type=1400 audit(174477272.947:10): avc:  denied  { search } for  pid=403 comm="recovery" name="/" dev="pstore" ino=16608 scontext=u:r:recovery:s0 tcontext=u:object_r:pstorefs:s0 tclass=dir permissive=1
+[    2.540547] recovery: [libfstab] Using Android DT directory /proc/device-tree/firmware/android/
+[    2.551844] cfg80211: failed to load regulatory.db
+[    2.552425] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    2.552435] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    2.552447] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    2.552463] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    2.565003] recovery: Boot command: bootonce-bootloader
+[    2.566227] recovery: vkeys: could not open /sys/board_properties/virtualkeys.fts
+[    2.566550] recovery: Brightness: 1023 (50%)
+[    2.568194] msm-dwc3 a600000.ssusb: DWC3 exited from low power mode
+[    2.623284] [ FTS ] fts_drm_state_chg_callback: fts notifier begin!
+[    2.623291] [ FTS ] fts_drm_state_chg_callback: val:2,blank:0
+[    2.623484] [drm:dsi_display_set_mode [msm_drm]] [msm-dsi-info]: mdp_transfer_time=6800, hactive=1440, vactive=3200, fps=120
+[    2.623492] [ FTS ] fts_drm_state_chg_callback: fts notifier begin!
+[    2.623496] [ FTS ] fts_drm_state_chg_callback: val:63016,blank:120
+[    2.623664] [ FTS ] fts_drm_state_chg_callback: fts notifier begin!
+[    2.623670] [ FTS ] fts_drm_state_chg_callback: val:1,blank:0
+[    2.645884] [drm:dsi_panel_set_doze_status [msm_drm]] [msm-dsi-info]: [xiaomi 38 08 0a cmd mode dsc dsi panel] active doze mode is equal to requested mode: 0
+[    2.788020] recovery: Starting recovery (pid 403) on Sun Jul 13 09:54:32 1975
+[    2.788027] recovery: 
+[    2.788069] recovery: locale is [en-US]
+[    2.812300] read descriptors
+[    2.812388] read strings
+[    2.873173] android_work: did not send uevent (0 0 0000000000000000)
+[    2.876171] F2FS-fs (sda34): Magic Mismatch, valid(0xf2f52010) - read(0x41932d67)
+[    2.876175] F2FS-fs (sda34): Can't find valid F2FS filesystem in 1th superblock
+[    2.876285] F2FS-fs (sda34): Magic Mismatch, valid(0xf2f52010) - read(0xe627a161)
+[    2.876287] F2FS-fs (sda34): Can't find valid F2FS filesystem in 2th superblock
+[    2.879014] msm-dwc3 a600000.ssusb: Could not get usb psy
+[    2.885833] VolumeManager: VolumeManager initialized
+[    2.953816] recovery: Clearing BCB
+[    2.974825] msm-dwc3 a600000.ssusb: Could not get usb psy
+[    3.040765] android_work: sent uevent USB_STATE=CONNECTED
+[    3.055104] configfs-gadget gadget: high-speed config #1: b
+[    3.055189] msm-dwc3 a600000.ssusb: Could not get usb psy
+[    3.055242] android_work: sent uevent USB_STATE=CONFIGURED
+[    3.072479] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    3.072487] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    3.074210] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    3.074218] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    3.074226] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    3.074239] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    3.584403] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    3.584411] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    3.585718] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    3.585725] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    3.585733] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    3.585743] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    4.096372] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    4.096380] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    4.097644] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    4.097650] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    4.097658] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    4.097668] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    4.580458] sd 0:0:0:2: [sdc] Synchronizing SCSI cache
+[    4.580508] sd 0:0:0:1: [sdb] Synchronizing SCSI cache
+[    4.600480] sd 0:0:0:5: [sdf] Synchronizing SCSI cache
+[    4.608388] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    4.608395] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    4.610420] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    4.610427] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    4.610434] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    4.610445] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    4.728347] sd 0:0:0:3: [sdd] Synchronizing SCSI cache
+[    5.121811] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    5.121825] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    5.125851] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    5.125859] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    5.125866] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    5.125879] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    5.632957] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    5.632972] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    5.636890] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    5.636898] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    5.636906] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    5.636918] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    6.148693] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    6.148708] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    6.152523] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    6.152531] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    6.152538] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    6.152551] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    6.320467] sd 0:0:0:4: [sde] Synchronizing SCSI cache
+[    6.625123] aw8697_ram_work_routine enter
+[    6.625219] aw8697_haptic 1-005a: Direct firmware load for aw8697_haptic.bin failed with error -2
+[    6.625227] aw8697_haptic 1-005a: Falling back to sysfs fallback for: aw8697_haptic.bin
+[    6.629363] aw8697_ram_loaded enter
+[    6.629368] aw8697_ram_loaded: failed to read aw8697_haptic.bin
+[    6.636460] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[    6.656599] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    6.656607] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    6.659306] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    6.659314] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    6.659321] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    6.659334] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    7.169597] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    7.169611] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    7.172913] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[    7.173360] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[    7.173374] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[    7.173386] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[    7.173397] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[    7.173408] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[    7.173586] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    7.173593] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    7.173601] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    7.173614] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    7.681531] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    7.681543] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    7.684269] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[    7.684682] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[    7.684696] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[    7.684707] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[    7.684889] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    7.684897] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    7.684904] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    7.684916] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    8.193611] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    8.193626] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    8.197611] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    8.197619] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    8.197627] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    8.197640] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    8.704853] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    8.704868] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    8.708671] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    8.708679] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    8.708687] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    8.708699] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    9.217583] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    9.217598] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    9.221507] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    9.221515] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    9.221523] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    9.221535] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    9.729775] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    9.729790] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    9.733579] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[    9.733587] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[    9.733595] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[    9.733607] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   10.242372] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   10.242387] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   10.246220] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   10.246228] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   10.246236] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   10.246249] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   10.754269] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   10.754283] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   10.758124] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   10.758132] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   10.758140] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   10.758153] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   11.266274] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   11.266288] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   11.270091] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   11.270099] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   11.270107] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   11.270119] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   11.777802] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   11.777816] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   11.781599] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   11.781607] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   11.781615] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   11.781627] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   12.289762] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   12.289777] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   12.293146] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   12.293631] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   12.293646] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   12.293657] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   12.293668] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   12.293679] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   12.293765] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   12.293773] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   12.293781] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   12.293793] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   12.597376] android.hardware.health-service.qti: Cannot open battery/capacity, fd=-1
+[   12.597564] healthd: Failed to lookup glob /sys/devices/platform/*gcdd/system_dev_stat: -3
+[   12.597597] healthd: No battery devices found
+[   12.597702] android.hardware.health-service.qti: Starting health HAL.
+[   12.597811] android.hardware.health-service.qti_recovery: default instance initializing with healthd_config...
+[   12.598639] cutils-trace: Error opening trace file: No such file or directory (2)
+[   12.598914] cutils-trace: Error opening trace file: No such file or directory (2)
+[   12.599295] servicemanager: getRecoveryHalManifest: Reading VINTF information.
+[   12.599718] servicemanager: getRecoveryHalManifest: Successfully processed VINTF information
+[   12.599783] servicemanager: Caller(pid=404,uid=1000,sid=u:r:hal_health_default:s0) Found android.hardware.health.IHealth/default in recovery VINTF manifest.
+[   12.599880] android.hardware.health-service.qti_recovery: default: Hal init done
+[   12.600433] HealthLoop: failed to load BPF program /sys/fs/bpf/vendor/prog_filterPowerSupplyEvents_skfilter_power_supply: No such file or directory (expected - recovery mode).
+[   12.600611] healthd: battery none chg=
+[   12.801807] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   12.801822] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   12.805170] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   12.805627] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   12.805642] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   12.805653] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   12.805755] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   12.805764] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   12.805772] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   12.805784] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   13.314208] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   13.314219] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   13.317433] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   13.317440] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   13.317448] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   13.317459] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   13.825742] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   13.825754] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   13.828949] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   13.828956] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   13.828964] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   13.828975] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   14.337588] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   14.337602] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   14.341604] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   14.341612] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   14.341620] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   14.341632] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   14.849746] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   14.849760] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   14.853636] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   14.853644] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   14.853652] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   14.853664] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   15.361211] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   15.361225] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   15.365127] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   15.365135] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   15.365143] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   15.365155] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   15.872740] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   15.872754] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   15.876643] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   15.876651] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   15.876658] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   15.876671] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   16.386200] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   16.386215] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   16.390184] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   16.390192] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   16.390200] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   16.390212] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   16.897811] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   16.897825] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   16.901699] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   16.901707] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   16.901714] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   16.901727] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   17.410401] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   17.410416] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   17.413709] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   17.414169] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   17.414184] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   17.414195] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   17.414207] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   17.414218] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   17.414312] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   17.414320] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   17.414327] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   17.414340] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   17.921709] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   17.921723] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   17.925175] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   17.925622] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   17.925637] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   17.925649] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   17.925756] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   17.925764] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   17.925771] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   17.925784] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   18.434372] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   18.434382] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   18.437647] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   18.437654] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   18.437662] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   18.437673] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   18.946429] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   18.946442] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   18.949677] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   18.949685] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   18.949692] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   18.949703] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   19.458172] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   19.458187] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   19.462119] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   19.462127] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   19.462135] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   19.462148] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   19.970486] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   19.970502] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   19.974389] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   19.974397] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   19.974405] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   19.974417] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   20.482113] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   20.482127] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   20.486041] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   20.486049] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   20.486057] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   20.486069] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   20.994220] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   20.994234] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   20.998101] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   20.998109] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   20.998117] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   20.998129] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   21.505272] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   21.505286] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   21.509181] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   21.509189] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   21.509197] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   21.509210] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   22.017379] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   22.017393] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   22.021237] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   22.021245] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   22.021253] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   22.021265] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   22.529962] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   22.529976] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   22.533339] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   22.533780] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   22.533794] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   22.533806] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   22.533818] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   22.533829] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   22.533921] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   22.533930] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   22.533937] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   22.533950] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   23.042164] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   23.042179] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   23.045533] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   23.045992] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   23.046007] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   23.046018] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   23.046119] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   23.046128] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   23.046135] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   23.046148] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   23.554178] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   23.554192] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   23.558096] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   23.558104] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   23.558112] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   23.558124] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   24.065944] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   24.065958] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   24.069794] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   24.069802] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   24.069810] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   24.069823] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   24.577794] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   24.577808] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   24.581800] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   24.581808] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   24.581816] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   24.581829] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   25.089809] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   25.089823] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   25.093844] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   25.093853] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   25.093860] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   25.093873] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   25.602031] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   25.602045] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   25.605960] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   25.605968] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   25.605976] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   25.605989] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   26.113717] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   26.113731] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   26.117700] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   26.117708] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   26.117715] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   26.117728] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   26.625678] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   26.625692] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   26.629563] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   26.629571] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   26.629579] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   26.629591] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   27.136940] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   27.136955] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   27.140877] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   27.140885] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   27.140893] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   27.140905] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   27.648632] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   27.648646] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   27.652041] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   27.652507] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   27.652521] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   27.652534] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   27.652545] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   27.652556] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   27.652755] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   27.652764] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   27.652771] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   27.652784] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   28.161019] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   28.161034] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   28.164376] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   28.164819] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   28.164833] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   28.164845] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   28.164947] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   28.164955] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   28.164963] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   28.164975] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   28.674086] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   28.674100] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   28.678076] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   28.678085] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   28.678093] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   28.678105] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   29.185588] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   29.185603] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   29.189643] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   29.189651] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   29.189658] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   29.189671] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   29.697640] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   29.697655] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   29.701577] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   29.701585] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   29.701593] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   29.701606] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   30.209715] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   30.209730] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   30.213706] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   30.213714] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   30.213722] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   30.213735] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   30.722167] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   30.722181] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   30.726100] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   30.726108] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   30.726115] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   30.726128] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   31.234489] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   31.234504] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   31.238351] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   31.238360] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   31.238367] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   31.238380] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   31.713494] gcc_ufs_card_gdsc: disabling
+[   31.713513] camera_wide_vana_ldo: disabling
+[   31.713515] camera_wide_dvdd_ldo: disabling
+[   31.713517] camera_front_dvdd_ldo: disabling
+[   31.713519] camera_front_vana_ldo: disabling
+[   31.713521] camera_ultra_vana1_ldo: disabling
+[   31.713523] camera_tele5x_vana1_ldo: disabling
+[   31.713525] camera_tele5x_ois_ldo: disabling
+[   31.713527] touch_vdd_vreg: disabling
+[   31.713530] display_panel_avdd: disabling
+[   31.713539] pm8008i-chip-en: disabling
+[   31.745386] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   31.745399] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   31.749270] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   31.749277] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   31.749285] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   31.749298] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   32.257667] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   32.257682] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   32.261548] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   32.261556] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   32.261564] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   32.261576] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   32.769511] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   32.769523] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   32.772272] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   32.772696] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   32.772710] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   32.772722] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   32.772733] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   32.772744] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   32.772832] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   32.772839] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   32.772847] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   32.772858] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   33.281756] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   33.281771] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   33.285094] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   33.285533] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   33.285548] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   33.285559] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   33.285663] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   33.285671] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   33.285679] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   33.285691] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   33.792863] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   33.792878] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   33.796711] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   33.796719] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   33.796727] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   33.796740] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   34.304577] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   34.304591] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   34.308423] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   34.308431] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   34.308438] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   34.308451] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   34.818185] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   34.818200] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   34.822204] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   34.822212] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   34.822220] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   34.822232] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   35.329919] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   35.329930] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   35.333206] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   35.333213] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   35.333220] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   35.333231] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   35.841704] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   35.841715] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   35.844983] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   35.844990] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   35.844998] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   35.845009] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   36.354362] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   36.354377] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   36.358215] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   36.358223] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   36.358231] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   36.358244] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   36.866549] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   36.866564] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   36.870406] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   36.870414] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   36.870422] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   36.870435] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   37.378254] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   37.378265] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   37.381464] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   37.381472] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   37.381479] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   37.381490] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   37.889792] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   37.889806] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   37.893138] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   37.893590] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   37.893605] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   37.893617] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   37.893628] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   37.893639] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   37.893734] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   37.893742] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   37.893750] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   37.893763] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   38.401721] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   38.401736] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   38.405052] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   38.405511] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   38.405525] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   38.405537] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   38.405731] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   38.405739] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   38.405747] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   38.405759] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   38.913486] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   38.913500] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   38.917504] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   38.917512] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   38.917520] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   38.917532] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   39.425509] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   39.425524] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   39.429535] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   39.429543] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   39.429551] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   39.429563] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   39.936643] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   39.936657] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   39.940602] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   39.940610] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   39.940618] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   39.940631] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   40.449156] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   40.449170] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   40.453204] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   40.453212] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   40.453220] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   40.453232] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   40.961551] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   40.961562] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   40.964920] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   40.964927] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   40.964934] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   40.964946] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   41.473660] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   41.473675] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   41.477713] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   41.477721] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   41.477728] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   41.477741] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   41.985653] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   41.985667] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   41.989750] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   41.989758] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   41.989765] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   41.989778] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   42.497664] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   42.497678] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   42.501711] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   42.501719] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   42.501726] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   42.501740] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   43.009653] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   43.009667] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   43.013170] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   43.013638] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   43.013653] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   43.013664] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   43.013676] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   43.013687] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   43.013776] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   43.013785] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   43.013792] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   43.013805] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   43.521665] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   43.521679] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   43.525146] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   43.525603] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   43.525617] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   43.525629] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   43.525729] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   43.525737] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   43.525745] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   43.525758] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   44.033651] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   44.033665] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   44.037724] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   44.037732] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   44.037739] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   44.037752] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   44.545491] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   44.545505] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   44.549561] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   44.549568] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   44.549576] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   44.549589] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   45.057061] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   45.057076] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   45.061043] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   45.061051] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   45.061058] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   45.061071] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   45.568662] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   45.568676] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   45.572574] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   45.572582] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   45.572589] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   45.572602] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   46.082237] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   46.082252] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   46.086206] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   46.086214] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   46.086221] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   46.086234] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   46.593783] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   46.593798] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   46.597764] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   46.597771] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   46.597779] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   46.597792] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   47.105732] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   47.105746] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   47.109742] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   47.109749] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   47.109757] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   47.109770] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   47.617542] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   47.617553] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   47.620957] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   47.620965] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   47.620973] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   47.620984] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   48.130536] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   48.130550] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   48.133842] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   48.134302] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   48.134317] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   48.134328] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   48.134340] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   48.134351] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   48.134443] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   48.134451] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   48.134459] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   48.134472] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   48.641729] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   48.641743] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   48.645055] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   48.645514] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   48.645529] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   48.645541] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   48.645738] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   48.645746] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   48.645754] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   48.645766] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   49.153824] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   49.153839] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   49.157848] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   49.157856] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   49.157864] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   49.157876] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   49.665563] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   49.665577] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   49.669558] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   49.669566] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   49.669574] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   49.669586] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   50.178267] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   50.178282] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   50.182170] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   50.182178] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   50.182185] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   50.182198] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   50.689693] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   50.689707] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   50.693689] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   50.693697] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   50.693704] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   50.693717] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   51.201231] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   51.201245] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   51.205228] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   51.205236] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   51.205244] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   51.205257] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   51.712774] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   51.712789] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   51.716718] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   51.716726] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   51.716733] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   51.716746] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   52.224676] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   52.224691] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   52.228649] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   52.228657] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   52.228665] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   52.228677] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   52.737737] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   52.737751] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   52.741725] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   52.741733] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   52.741741] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   52.741753] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   53.249711] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   53.249726] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   53.253183] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   53.253645] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   53.253659] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   53.253671] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   53.253682] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   53.253693] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   53.253783] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   53.253792] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   53.253800] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   53.253813] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   53.761529] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   53.761544] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   53.764981] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   53.765423] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   53.765437] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   53.765449] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   53.765549] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   53.765558] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   53.765565] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   53.765578] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   54.273776] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   54.273790] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   54.277738] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   54.277746] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   54.277754] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   54.277766] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   54.785708] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   54.785723] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   54.789728] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   54.789736] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   54.789744] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   54.789757] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   55.298396] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   55.298411] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   55.302263] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   55.302271] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   55.302278] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   55.302291] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   55.809809] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   55.809823] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   55.813685] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   55.813693] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   55.813701] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   55.813714] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   56.321321] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   56.321336] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   56.325224] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   56.325233] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   56.325240] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   56.325253] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   56.833583] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   56.833598] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   56.837583] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   56.837591] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   56.837599] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   56.837611] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   57.345421] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   57.345435] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   57.349264] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   57.349272] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   57.349280] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   57.349292] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   57.857100] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   57.857115] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   57.860909] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   57.860917] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   57.860925] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   57.860938] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   58.370049] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   58.370064] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   58.373359] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   58.373797] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   58.373812] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   58.373823] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   58.373835] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   58.373846] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   58.373941] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   58.373949] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   58.373957] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   58.373970] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   58.881733] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   58.881747] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   58.885049] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   58.885509] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   58.885524] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   58.885536] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   58.885731] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   58.885739] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   58.885747] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   58.885759] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   59.394045] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   59.394059] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   59.397944] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   59.397952] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   59.397960] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   59.397972] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   59.905542] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   59.905553] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   59.908909] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   59.908916] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   59.908924] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   59.908935] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   60.417625] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   60.417640] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   60.421559] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   60.421567] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   60.421574] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   60.421587] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   60.929863] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   60.929878] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   60.933720] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   60.933728] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   60.933736] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   60.933748] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   61.442066] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   61.442081] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   61.445961] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   61.445969] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   61.445977] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   61.445989] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   61.953800] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   61.953814] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   61.957756] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   61.957764] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   61.957772] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   61.957785] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   62.466029] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   62.466043] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   62.469853] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   62.469861] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   62.469869] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   62.469881] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   62.976900] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   62.976911] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   62.980132] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   62.980139] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   62.980147] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   62.980158] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   63.489302] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   63.489316] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   63.492666] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   63.493105] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   63.493119] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   63.493131] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   63.493143] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   63.493154] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   63.493417] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   63.493425] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   63.493433] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   63.493446] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   64.000799] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   64.000814] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   64.004128] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   64.004582] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   64.004597] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   64.004609] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   64.004714] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   64.004722] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   64.004730] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   64.004742] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   64.513853] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   64.513867] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   64.518006] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   64.518014] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   64.518022] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   64.518034] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   65.025954] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   65.025968] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   65.030000] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   65.030008] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   65.030016] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   65.030029] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   65.537841] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   65.537856] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   65.541878] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   65.541886] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   65.541893] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   65.541906] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   66.050212] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   66.050222] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   66.053531] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   66.053538] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   66.053545] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   66.053557] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   66.561916] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   66.561930] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   66.565794] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   66.565802] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   66.565809] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   66.565822] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   67.073769] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   67.073783] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   67.077619] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   67.077627] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   67.077635] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   67.077647] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   67.586064] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   67.586079] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   67.589994] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   67.590002] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   67.590010] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   67.590023] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   68.097741] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   68.097755] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   68.101812] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   68.101819] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   68.101827] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   68.101840] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   68.609505] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   68.609519] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   68.612996] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   68.613436] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   68.613450] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   68.613462] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   68.613473] ueventd: firmware: attempted /vendor/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   68.613484] ueventd: firmware: attempted /firmware/image/ipa_fws.mdt, open failed: No such file or directory
+[   68.613576] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   68.613584] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   68.613592] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   68.613604] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[   69.120761] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[   69.120775] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[   69.124215] ueventd: firmware: loading 'ipa_fws.mdt' for '/devices/platform/soc/soc:qcom,ipa_fws/firmware/ipa_fws.mdt'
+[   69.124661] ueventd: firmware: could not find firmware for ipa_fws.mdt
+[   69.124675] ueventd: firmware: attempted /etc/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   69.124687] ueventd: firmware: attempted /odm/firmware/ipa_fws.mdt, open failed: No such file or directory
+[   69.124792] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Failed to locate ipa_fws.mdt(rc:-2)
+[   69.124800] subsys-pil-tz: subsys_powerup(): pil_boot failed for ipa_fws
+[   69.124807] ipa ipa3_pil_load_ipa_fws:6887 Unable to PIL load FW for sub_sys=ipa_fws
+[   69.124820] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered

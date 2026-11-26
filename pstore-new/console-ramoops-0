@@ -1,0 +1,2111 @@
+[    0.000000][    T0] Booting Linux on physical CPU 0x0000000000 [0x412fd050]
+[    0.000000][    T0] Linux version 5.4.302-qgki-g2c0d4b8372fd-dirty (redead@ServerHive) (Android (14054515, +pgo, +bolt, +lto, +mlgo, based on r563880c) clang version 21.0.0 (https://android.googlesource.com/toolchain/llvm-project 5e96669f06077099aa41290cdb4c5e6fa0f59349), LLD 21.0.0 (/mnt/disks/build-disk/src/googleplex-android/llvm-r563880-release/out/llvm-project/llvm 5e96669f06077099aa41290cdb4c5e6fa0f59349)) #4 SMP PREEMPT Thu Nov 26 09:35:53 UTC 2026
+[    0.000000][    T0] memblock_reserve: 0xbf777 setup_arch+0x64/0x1e8
+[    0.000000][    T0] random: crng init done
+[    0.000000][    T0] Machine model: Star based on Qualcomm Technologies, Inc SM8350
+[    0.000000][    T0] efi: Getting EFI parameters from FDT:
+[    0.000000][    T0] efi: UEFI not found.
+[    0.000000][    T0] mem-offine node not found in FDT
+[    0.000000][    T0] OF: fdt: Reserved memory: failed to reserve memory for node 'demura_region_0': base 0x0000000000000000, size 0 MiB
+[    0.000000][    T0] OF: fdt: Reserved memory: failed to reserve memory for node 'demura_region_1': base 0x0000000000000000, size 0 MiB
+[    0.000000][    T0] Reserved memory: created DMA memory pool at 0x00000000d8000000, size 8 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node memshare_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000ff000000, size 12 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node adsp_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000fe000000, size 16 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node user_contig_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000fdc00000, size 4 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node cdsp_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000fcc00000, size 16 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node qseecom_ta_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000fc400000, size 8 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node sdsp_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000fac00000, size 24 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node qseecom_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000f9800000, size 20 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node cnss_wlan_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000f8800000, size 16 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node sp_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000f5800000, size 48 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node mem_dump_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000d6000000, size 32 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000f3c00000, size 28 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node audio_cma_region, compatible id shared-dma-pool
+[    0.000000][    T0] Reserved memory: created CMA memory pool at 0x00000000cbc00000, size 164 MiB
+[    0.000000][    T0] OF: reserved mem: initialized node secure_display_region, compatible id shared-dma-pool
+[    0.000000][    T0] psci: probing for conduit method from DT.
+[    0.000000][    T0] psci: PSCIv1.1 detected in firmware.
+[    0.000000][    T0] psci: Using standard PSCI v0.2 function IDs
+[    0.000000][    T0] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000][    T0] psci: SMC Calling Convention v1.0
+[    0.000000][    T0] psci: OSI mode supported.
+[    0.000000][    T0] psci: Switched to OSI mode.
+[    0.000000][    T0] percpu: Embedded 32 pages/cpu s93848 r8192 d29032 u131072
+[    0.000000][    T0] Detected VIPT I-cache on CPU0
+[    0.000000][    T0] CPU features: detected: GIC system register CPU interface
+[    0.000000][    T0] CPU features: kernel page table isolation forced OFF by kpti command line option
+[    0.000000][    T0] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.000000][    T0] Built 1 zonelists, mobility grouping on.  Total pages: 1872690
+[    0.000000][    T0] Kernel command line: cgroup_disable=pressure log_buf_len=256K earlycon=msm_geni_serial,0x98c000 rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off androidboot.console=ttyMSM0 androidboot.hardware=qcom androidboot.memcg=1 androidboot.usbcontroller=a600000.dwc3 cgroup.memory=nokmem,nosocket console=ttyMSM0,115200n8 ip6table_raw.raw_before_defrag=1 iptable_raw.raw_before_defrag=1 loop.max_part=7 msm_rtb.filter=0x237 pcie_ports=compat service_locator.enable=1 swiotlb=0 ramoops.mem_address=0xb0000000 ramoops.mem_size=0x400000 ramoops.console_size=0x200000 ramoops.pmsg_size=0x100000 ramoops.record_size=0x40000 ramoops_memreserve=4M reboot=warm qcom_dload_mode.download_mode=0 androidboot.init_fatal_panic=true androidboot.selinux=permissive  androidboot.verifiedbootstate=orange androidboot.keymaster=1  androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=43fe64d5 bootinfo.pureason=0x20100 b
+[    0.000000][    T0] cgroup: Disabling pressure control group feature
+[    0.000000][    T0] (NULL device *): failed to set download mode: -5
+[    0.000000][    T0] printk: log_buf_len: 262144 bytes
+[    0.000000][    T0] printk: early log buf free: 124948(95%)
+[    0.000000][    T0] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.000000][    T0] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000][    T0] mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    0.000000][    T0] Memory: 6952792K/7609664K available (20348K kernel code, 2730K rwdata, 13912K rodata, 1664K init, 2341K bss, 259560K reserved, 397312K cma-reserved)
+[    0.000000][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000][    T0] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000][    T0] rcu: 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=32 to nr_cpu_ids=8.
+[    0.000000][    T0] 	All grace periods are expedited (rcu_expedited).
+[    0.000000][    T0] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000][    T0] 	Tracing variant of Tasks RCU enabled.
+[    0.000000][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.000000][    T0] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000][    T0] GICv3: 988 SPIs implemented
+[    0.000000][    T0] GICv3: 0 Extended SPIs implemented
+[    0.000000][    T0] GICv3: Distributor has no Range Selector support
+[    0.000000][    T0] GICv3: 16 PPIs implemented
+[    0.000000][    T0] GICv3: no VLPI support, no direct LPI support
+[    0.000000][    T0] rcu: 	Offload RCU callbacks from CPUs: 0-7.
+[    0.000000][    T0] arch_timer: cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000][    T0] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000003][    T0] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000016][    T0] clocksource: Switched to clocksource arch_sys_counter
+[    0.005119][    T0] kfence: initialized - using 524288 bytes for 63 objects at 0x(____ptrval____)-0x(____ptrval____)
+[    0.005269][    T0] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=76800)
+[    0.005278][    T0] pid_max: default: 32768 minimum: 301
+[    0.005379][    T0] LSM: Security Framework initializing
+[    0.005420][    T0] SELinux:  Initializing.
+[    0.005533][    T0] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.005550][    T0] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.007143][    T1] ASID allocator initialised with 32768 entries
+[    0.007245][    T1] rcu: Hierarchical SRCU implementation.
+[    0.007529][    T1] dynamic_debug:dynamic_debug_init: Ignore empty _ddebug table in a CONFIG_DYNAMIC_DEBUG_CORE build
+[    0.009515][    T1] scm_mem_protection_init_do: SCM call failed
+[    0.009524][    T1] EFI services will not be available.
+[    0.009857][    T1] smp: Bringing up secondary CPUs ...
+[    0.010864][    T0] Detected VIPT I-cache on CPU1
+[    0.010983][    T0] CPU1: Booted secondary processor 0x0000000100 [0x412fd050]
+[    0.012188][    T0] Detected VIPT I-cache on CPU2
+[    0.012288][    T0] CPU2: Booted secondary processor 0x0000000200 [0x412fd050]
+[    0.013336][    T0] Detected VIPT I-cache on CPU3
+[    0.013431][    T0] CPU3: Booted secondary processor 0x0000000300 [0x412fd050]
+[    0.016673][    T0] CPU features: detected: Spectre-BHB
+[    0.016680][    T0] CPU features: detected: SSBS not fully self-synchronizing
+[    0.016717][    T0] Detected PIPT I-cache on CPU4
+[    0.016739][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU4: 0x00000000010142
+[    0.016748][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU4: 0x00000010010131
+[    0.016753][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU4: 0x00000010010000
+[    0.016758][    T0] CPU features: Unsupported CPU feature variation detected.
+[    0.016919][    T0] CPU4: Booted secondary processor 0x0000000400 [0x411fd410]
+[    0.018347][    T0] Detected PIPT I-cache on CPU5
+[    0.018370][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU5: 0x00000000010142
+[    0.018378][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU5: 0x00000010010131
+[    0.018383][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU5: 0x00000010010000
+[    0.018532][    T0] CPU5: Booted secondary processor 0x0000000500 [0x411fd410]
+[    0.019946][    T0] Detected PIPT I-cache on CPU6
+[    0.019967][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU6: 0x00000000010142
+[    0.019975][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU6: 0x00000010010131
+[    0.019979][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU6: 0x00000010010000
+[    0.020125][    T0] CPU6: Booted secondary processor 0x0000000600 [0x411fd410]
+[    0.023259][    T0] Detected PIPT I-cache on CPU7
+[    0.023266][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_ISAR4_EL1. Boot CPU: 0x00000000011142, CPU7: 0x00000000010142
+[    0.023268][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR0_EL1. Boot CPU: 0x00000010000131, CPU7: 0x00000010010131
+[    0.023270][    T0] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_PFR1_EL1. Boot CPU: 0x00000010011011, CPU7: 0x00000010010000
+[    0.023331][    T0] CPU7: Booted secondary processor 0x0000000700 [0x411fd440]
+[    0.023458][    T1] smp: Brought up 1 node, 8 CPUs
+[    0.023519][    T1] SMP: Total of 8 processors activated.
+[    0.023524][    T1] CPU features: detected: Privileged Access Never
+[    0.023528][    T1] CPU features: detected: LSE atomic instructions
+[    0.023532][    T1] CPU features: detected: User Access Override
+[    0.023536][    T1] CPU features: detected: 32-bit EL0 Support
+[    0.023541][    T1] CPU features: detected: Common not Private translations
+[    0.023545][    T1] CPU features: detected: RAS Extension Support
+[    0.023549][    T1] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.023553][    T1] CPU features: detected: CRC32 instructions
+[    0.062410][    T1] CPU: All CPU(s) started at EL1
+[    0.062471][   T15] alternatives: patching kernel code
+[    0.162429][    T1] Registered cp15_barrier emulation handler
+[    0.162452][    T1] Registered setend emulation handler
+[    0.162786][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.162811][    T1] futex hash table entries: 2048 (order: 5, 131072 bytes, linear)
+[    0.166815][    T1] pinctrl core: initialized pinctrl subsystem
+[    0.167209][    T1] NET: Registered protocol family 16
+[    0.168389][    T1] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.168404][    T1] audit: initializing netlink subsys (disabled)
+[    0.168523][   T67] audit: type=2000 audit(0.167:1): state=initialized audit_enabled=0 res=1
+[    0.168530][    T1] ramoops: using module parameters
+[    0.171881][    T1] printk: console [pstore-1] enabled
+[    0.171926][    T1] pstore: Registered ramoops as persistent store backend
+[    0.171932][    T1] ramoops: using 0x400000@0xb0000000, ecc: 0
+[    0.172179][    T1] cpuidle: using governor menu
+[    0.172241][    T1] NET: Registered protocol family 42
+[    0.172559][    T1] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.173013][    T1] Serial: AMBA PL011 UART driver
+[    0.173313][    T1] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.337244][    T1] pm8350_s5_level: supplied by pm8350_s9_level
+[    0.337362][    T1] pm8350_s5_lvl_ao: supplied by pm8350_s9_level_ao
+[    0.479179][    T1] pm8350c_s6_level: supplied by pm8350_s5_level
+[    0.479318][    T1] pm8350c_s6_level_ao: supplied by pm8350_s5_lvl_ao
+[    0.486652][    T1] pm8350_s9_mmcx_sup_level: supplied by pm8350c_s6_mmcx_sup_level
+[    0.486661][    T1] pm8350_s5_mmcx_sup_level: supplied by pm8350_s9_mmcx_sup_level
+[    0.486672][    T1] pm8350c_s8_level: supplied by pm8350_s5_mmcx_sup_level
+[    0.486779][    T1] pm8350c_s8_level_ao: supplied by pm8350_s5_lvl_ao
+[    0.548663][    T1] msm-dcc 117f000.dcc_v2: DCC list passed 3
+[    0.548940][    T1] msm-dcc 117f000.dcc_v2: All values written to enable.
+[    0.549069][    T1] msm-dcc 117f000.dcc_v2: DCC list passed 4
+[    0.549609][    T1] msm-dcc 117f000.dcc_v2: All values written to enable.
+[    0.549931][    T1] msm-dcc 117f000.dcc_v2: DCC list passed 6
+[    0.550576][    T1] msm-dcc 117f000.dcc_v2: All values written to enable.
+[    0.551326][    T1] Disable GPIO151, 200, 202 wakeup
+[    0.556718][    T8] spmi spmi-0: PMIC arbiter version v5 (0x50020000)
+[    0.557337][    T1] sps:sps is ready
+[    0.564642][    T1] hh-watchdog hypervisor:qcom,hh-watchdog: QCOM Apps Watchdog Initialized
+[    0.567845][   T77] cryptomgr_test (77) used greatest stack depth: 14880 bytes left
+[    0.569107][    T1] cryptd: max_cpu_qlen set to 1000
+[    0.573428][    T1] gcc_pcie_0_gdsc: supplied by pm8350c_s6_level
+[    0.575467][    T1] gcc_pcie_1_gdsc: supplied by pm8350c_s6_level
+[    0.575537][    T1] gcc_ufs_card_gdsc: supplied by pm8350c_s6_level
+[    0.577435][    T1] gcc_ufs_phy_gdsc: supplied by pm8350c_s6_level
+[    0.584229][    T1] gpu_cc_cx_gdsc: supplied by pm8350c_s6_level
+[    0.585922][    T1] gpu_cc_gx_gdsc: supplied by pm8350_s6_level
+[    0.588098][   T41] cryptomgr_test (77): highest shadow stack usage: 112 bytes
+[    0.588114][    T1] qmp-aop-clk soc:qcom,aopclk: Registered clocks with AOP
+[    0.605885][    T1] lahaina-gcc 100000.qcom,gcc: Registered GCC clocks
+[    0.614316][    T1] gpu_cc-lahaina 3d90000.qcom,gpucc: Registered GPU CC clocks
+[    0.615204][    T8] oledb: Bringing 0uV into 5000000-5000000uV
+[    0.615307][    T8] ab: Bringing 0uV into 4600000-4600000uV
+[    0.615393][    T8] ibb: Bringing 0uV into 1400000-1400000uV
+[    0.662366][    T1] Rate 19200000 for cam_cc_sleep_clk_src is greater than highest Fmax
+[    0.662371][    T1] Rate 19200000 for cam_cc_sleep_clk_src is greater than highest Fmax
+[    0.664715][    T1] lahaina-cam_cc ad00000.qcom,camcc: Registered CAM CC clocks
+[    0.676490][    T1] video_cc-lahaina abf0000.qcom,videocc: Registered VIDEO CC clocks
+[    0.679504][    T1] KPI: Bootloader start count = 136191
+[    0.679509][    T1] KPI: Bootloader end count = 189291
+[    0.679513][    T1] KPI: Bootloader display count = 482378077
+[    0.679516][    T1] KPI: Bootloader load kernel count = 1638248855
+[    0.679522][    T1] KPI: Kernel MPM timestamp = 223841
+[    0.679525][    T1] KPI: Kernel MPM Clock frequency = 32768
+[    0.679709][    T1] Minidump: Enabled with max number of regions 200
+[    0.680183][    T1] camera_wide_dvdd_ldo: supplied by pm8350c_l7
+[    0.680255][    T1] camera_front_dvdd_ldo: supplied by pm8350c_l7
+[    0.680286][    T1] reg-fixed-voltage 3.gpio-regulator: nonexclusive access to GPIO for 3.gpio-regulator
+[    0.680458][    T1] reg-fixed-voltage 6.gpio-regulator: nonexclusive access to GPIO for 6.gpio-regulator
+[    0.680979][    T1] qti-reg-fixed-voltage soc:display_gpio_regulator@1: nonexclusive access to GPIO for soc:display_gpio_regulator@1
+[    0.681502][    T1] iommu: Default domain type: Translated 
+[    0.683858][    T1] arm-smmu 3da0000.kgsl-smmu: 	coherent table walk
+[    0.683864][    T1] arm-smmu 3da0000.kgsl-smmu: 	stream matching with 6 register groups
+[    0.685380][    T1] SCSI subsystem initialized
+[    0.685426][    T1] usbcore: registered new interface driver usbfs
+[    0.685440][    T1] usbcore: registered new interface driver hub
+[    0.685453][    T1] usbcore: registered new device driver usb
+[    0.685552][    T1] usb_phy_generic soc:usb_nop_phy: soc:usb_nop_phy supply vcc not found, using dummy regulator
+[    0.685863][    T1] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmk8350@0:pon_pbs@800: IRQ pmic-wd-bark not found
+[    0.686016][    T1] qcom,qpnp-power-on c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300: IRQ pmic-wd-bark not found
+[    0.686060][    T1] input: qpnp_pon as /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/input/input0
+[    0.687056][    T1] mc: Linux media interface: v0.10
+[    0.687065][    T1] videodev: Linux video capture interface: v2.00
+[    0.687101][    T1] thermal_sys: Registered thermal governor 'step_wise'
+[    0.687102][    T1] thermal_sys: Registered thermal governor 'user_space'
+[    0.687107][    T1] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.689849][    T1] Error creating thermal debugfs directory. err:-19
+[    0.690373][    T1] thermal_sys: of_parse_thermal_message board sensor: VIRTUAL-SENSOR
+[    0.696169][    T1] EDAC MC: Ver: 3.0.0
+[    0.697093][   T65] core_ctl: Creating CPU group 0
+[    0.697098][   T65] core_ctl: Init CPU0 state
+[    0.697100][   T65] core_ctl: Init CPU1 state
+[    0.697102][   T65] core_ctl: Init CPU2 state
+[    0.697104][   T65] core_ctl: Init CPU3 state
+[    0.697152][   T65] core_ctl: Creating CPU group 4
+[    0.697155][   T65] core_ctl: Init CPU4 state
+[    0.697157][   T65] core_ctl: Init CPU5 state
+[    0.697158][   T65] core_ctl: Init CPU6 state
+[    0.697217][   T65] core_ctl: Creating CPU group 7
+[    0.697219][   T65] core_ctl: Init CPU7 state
+[    0.700373][    T1] shmbridge is enabled
+[    0.701204][    T1] IPA framework init
+[    0.701726][    T1] dev-cpufreq: No tables parsed from DT.
+[    0.701834][    T1] SDAM base=0x7100 size=128 registered successfully
+[    0.701863][    T1] SDAM base=0x7400 size=128 registered successfully
+[    0.701885][    T1] SDAM base=0x7c00 size=128 registered successfully
+[    0.701911][    T1] SDAM base=0x7d00 size=128 registered successfully
+[    0.701933][    T1] SDAM base=0x8400 size=128 registered successfully
+[    0.701956][    T1] SDAM base=0x8500 size=128 registered successfully
+[    0.701978][    T1] SDAM base=0x8600 size=128 registered successfully
+[    0.702000][    T1] SDAM base=0x9d00 size=128 registered successfully
+[    0.702019][    T1] Advanced Linux Sound Architecture Driver Initialized.
+[    0.702218][    T1] IPA clients manager init
+[    0.702220][    T1] ipa_usb driver init
+[    0.702289][    T1] ipa_usb registered successfully
+[    0.702291][    T1] exit: IPA_USB init success!
+[    0.702293][    T1] ipa_wdi3 registered successfully
+[    0.702296][    T1] ipa_gsb registered successfully
+[    0.702298][    T1] ipa_uc_offload registered successfully
+[    0.702300][    T1] ipa_mhi registered successfully
+[    0.702303][    T1] ipa_wigig registered successfully
+[    0.702412][    T1] Bluetooth: Core ver 2.22
+[    0.702416][    T1] NET: Registered protocol family 31
+[    0.702418][    T1] Bluetooth: HCI device and connection manager initialized
+[    0.702422][    T1] Bluetooth: HCI socket layer initialized
+[    0.702425][    T1] Bluetooth: L2CAP socket layer initialized
+[    0.702428][    T1] Bluetooth: SCO socket layer initialized
+[    0.702462][    T1] pcie:pcie_init.
+[    0.703846][    T1] platform soc:qcom,ion:qcom,ion-heap@22: assigned reserved memory node sdsp_region
+[    0.704945][    T1] platform soc:qcom,ion:qcom,ion-heap@13: assigned reserved memory node sp_region
+[    0.705298][    T1] platform soc:qcom,ion:qcom,ion-heap@26: assigned reserved memory node user_contig_region
+[    0.705650][    T1] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region
+[    0.705999][    T1] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+[    0.706352][    T1] platform soc:qcom,ion:qcom,ion-heap@10: assigned reserved memory node secure_display_region
+[    0.706702][    T1] platform soc:qcom,ion:qcom,ion-heap@5: assigned reserved memory node audio_cma_region
+[    0.706843][    T1] ION heap system created
+[    0.706922][    T1] ION heap adsp created
+[    0.706928][    T1] ION heap secure_heap created
+[    0.749292][    T1] platform soc:qcom,ion:qcom,ion-heap@14: ion_secure_carveout: creating heap@0x80c00000, size 0x4600000
+[    0.749298][    T1] ION heap secure_carveout created
+[    0.749302][    T1] ION heap spss created
+[    0.749304][    T1] ION heap user_contig created
+[    0.749307][    T1] ION heap qsecom created
+[    0.749309][    T1] ION heap qsecom_ta created
+[    0.749311][    T1] ION heap secure_display created
+[    0.749314][    T1] ION heap audio_ml created
+[    0.749523][    T1] clocksource: Switched to clocksource arch_sys_counter
+[    0.761557][    T1] VFS: Disk quotas dquot_6.6.0
+[    0.761576][    T1] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.761985][    T1] debugcc-lahaina soc:qcom,cc-debug: Registered debug measure clocks
+[    0.762450][    T1] NET: Registered protocol family 2
+[    0.762533][    T1] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.763267][    T1] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.763323][    T1] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.763413][    T1] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    0.763473][    T1] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.763513][    T1] UDP hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.763535][    T1] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes, linear)
+[    0.763571][    T1] NET: Registered protocol family 1
+[    0.763808][    T1] NET: Registered protocol family 44
+[    0.763814][    T1] PCI: CLS 0 bytes, default 64
+[    0.763885][    T1] Trying to unpack rootfs image as initramfs...
+[    0.973435][    T1] Freeing initrd memory: 22944K
+[    0.974075][    T1] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.977264][    T1] Initialise system trusted keyrings
+[    0.977343][    T1] workingset: timestamp_bits=46 max_order=21 bucket_order=0
+[    0.978551][    T1] fuse: init (API version 7.32)
+[    0.988089][    T1] Key type asymmetric registered
+[    0.988093][    T1] Asymmetric key parser 'x509' registered
+[    0.988104][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 240)
+[    0.988107][    T1] io scheduler mq-deadline registered
+[    0.988110][    T1] io scheduler kyber registered
+[    0.988134][    T1] io scheduler bfq registered
+[    0.992786][    T1] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    0.992789][    T1] qcom-spmi-gpio c440000.qcom,spmi:qcom,pmr735b@5:pinctrl@8800: read 0x4 failed
+[    0.992794][    T1] qcom-spmi-gpio: probe of c440000.qcom,spmi:qcom,pmr735b@5:pinctrl@8800 failed with error -5
+[    0.995108][    T1] v0.15, id=415, ver=2.1, raw_id=309, raw_ver=3, hw_plat=8, hw_plat_ver=65536
+[    0.995108][    T1]  accessory_chip=0, hw_plat_subtype=0, pmic_model=65583, pmic_die_revision=131072 foundry_id=3 serial_number=3442844717 num_pmics=5 chip_family=0x69 raw_device_family=0x6 raw_device_number=0xf nproduct_id=0x41d num_clusters=0x1 ncluster_array_offset=0xb0 num_defective_parts=0xf ndefective_parts_array_offset=0xb4 nmodem_supported=0xffffffff
+[    0.995555][    T1] lahaina-llcc 9200000.cache-controller: IRQ index 0 not found
+[    0.995958][    T1] msm_mem_dump soc:mem_dump: assigned reserved memory node mem_dump_region
+[    1.002379][    T1] MSM Memory Dump base table set up
+[    1.002383][    T1] MSM Memory Dump apps data table set up
+[    1.003549][    T1] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.003575][    T1] PMIC PON log: Reset Type: WARM_RESET
+[    1.003629][    T1] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.003646][    T1] PMIC PON log: Reset Type: HARD_RESET
+[    1.003689][    T1] PMIC PON log: PON Trigger: USB_CHARGER
+[    1.003703][    T1] PMIC PON log: PON Trigger: HARD_RESET
+[    1.003769][    T1] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.003784][    T1] PMIC PON log: Reset Type: WARM_RESET
+[    1.003837][    T1] PMIC PON log: Reset Trigger: PS_HOLD
+[    1.003852][    T1] PMIC PON log: Reset Type: WARM_RESET
+[    1.004504][    T1] cdsprm: Init successful
+[    1.004727][    T1] 88e0000.qcom,msm-eud: ttyEUD0 at MMIO 0x0 (irq = 39, base_baud = 0) is a EUD UART
+[    1.006385][    T1] msm_geni_serial_init: Driver initialized
+[    1.006667][    T1] Error: swapper/0: fastrpc_device_init: failed to create debugfs root dir
+[    1.006811][    T1] Info: adsprpc (3094): swapper/0: fastrpc_get_dsp_status: adsprpc: fastrpc_get_dsp_status: cdsp node found with ret:1
+[    1.006850][    T1] fastrpc soc:qcom,msm-adsprpc-mem: assigned reserved memory node adsp_region
+[    1.006853][    T1] fastrpc soc:qcom,msm-adsprpc-mem: for adsp_rh segments only will be dumped.
+[    1.006875][    T1] Info: adsprpc (6809): swapper/0: init_secure_vmid_list: secure VMID = 22
+[    1.006877][    T1] Info: adsprpc (6809): swapper/0: init_secure_vmid_list: secure VMID = 37
+[    1.006881][    T1] adsprpc: fastrpc_init_privileged_gids: privileged GID: 2908
+[    1.006898][    T1] adsprpc: fastrpc_setup_service_locator: service location enabled for avs/audio (audio_pdr_adsprpc)
+[    1.006901][    T1] adsprpc: fastrpc_setup_service_locator: service location enabled for tms/servreg (sensors_pdr_adsprpc)
+[    1.014356][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for adsp
+[    1.014359][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for modem
+[    1.014362][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for slpi
+[    1.014364][    T1] adsprpc: fastrpc_device_init: SSR notifier registered for cdsp
+[    1.023770][    T1] adreno-a6xx-gmu 3d6a000.qcom,gmu: Adding to iommu group 0
+[    1.025537][    T1] brd: module loaded
+[    1.026283][    T1] loop: module loaded
+[    1.026330][    T1] zram: Added device: zram0
+[    1.026381][    T1] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+[    1.026772][    T1] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region
+[    1.026849][    T1] platform soc:qcom,ion:qcom,ion-heap@26: assigned reserved memory node user_contig_region
+[    1.026938][    T1] qseecom soc:qseecom@c1700000: assigned reserved memory node qseecom_region
+[    1.026981][    T1] QSEECOM: qseecom_init_control: qseecom.qsee_version = 0x1402000
+[    1.027017][    T1] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE/FDE
+[    1.027662][    T1] spmi_pmic_arb_debug 6b12000.qcom,spmi-debug: SPMI PMIC arbiter debug bus disabled by fuse
+[    1.027896][    T1] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    1.027899][    T1] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    1.027986][    T1] tun: Universal TUN/TAP device driver, 1.6
+[    1.027998][    T1] PPP generic driver version 2.4.2
+[    1.028010][    T1] PPP BSD Compression module registered
+[    1.028029][    T1] PPP Deflate Compression module registered
+[    1.028044][    T1] PPP MPPE Compression module registered
+[    1.028047][    T1] NET: Registered protocol family 24
+[    1.028049][    T1] PPTP driver version 0.8.5
+[    1.028114][    T1] cnss_utils: Unable to create debugfs -19
+[    1.028117][    T1] CLD80211: Initializing
+[    1.028313][    T1] usbcore: registered new interface driver rtl8150
+[    1.028321][    T1] usbcore: registered new interface driver r8152
+[    1.028327][    T1] usbcore: registered new interface driver lan78xx
+[    1.028333][    T1] usbcore: registered new interface driver asix
+[    1.028338][    T1] usbcore: registered new interface driver ax88179_178a
+[    1.028343][    T1] usbcore: registered new interface driver cdc_ether
+[    1.028348][    T1] usbcore: registered new interface driver cdc_eem
+[    1.028354][    T1] usbcore: registered new interface driver cdc_ncm
+[    1.028359][    T1] usbcore: registered new interface driver aqc111
+[    1.030757][    T1] msm_sharedmem: msm_sharedmem_probe: Device created for client 'rmtfs'
+[    1.031621][    T1] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.031624][    T1] ehci-pci: EHCI PCI platform driver
+[    1.031632][    T1] ehci-platform: EHCI generic platform driver
+[    1.032033][    T1] usbcore: registered new interface driver uas
+[    1.032041][    T1] usbcore: registered new interface driver usb-storage
+[    1.032047][    T1] usbcore: registered new interface driver usb_ehset_test
+[    1.032052][    T1] usbcore: registered new interface driver lvs
+[    1.032192][    T1] dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+[    1.032196][    T1] dummy_hcd dummy_hcd.0: Dummy host controller
+[    1.032200][    T1] dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+[    1.032300][    T1] hub 1-0:1.0: USB hub found
+[    1.032306][    T1] hub 1-0:1.0: 1 port detected
+[    1.032652][    T1] usbcore: registered new interface driver xpad
+[    1.032663][    T1] usbcore: registered new interface driver usbtouchscreen
+[    1.032674][    T1] aw8697 driver version v1.1.3
+[    1.032679][    T1] aw8697_i2c_init success
+[    1.033010][    T1] rtc-pm8xxx c440000.qcom,spmi:qcom,pmk8350@0:rtc@6100: registered as rtc0
+[    1.033054][    T1] rtc-pm8xxx c440000.qcom,spmi:qcom,pmk8350@0:rtc@6100: setting system clock to 1975-07-13T09:54:08 UTC (174477248)
+[    1.033152][    T1] i2c /dev entries driver
+[    1.033259][    T1] synx: synx device initialization start
+[    1.033271][    T1] synx: synx device initialization success
+[    1.033274][    T1] msm_cvp:  err: Failed to create debugfs for msm_cvp
+[    1.033433][    T1] uvcvideo: Unable to create debugfs directory
+[    1.033442][    T1] usbcore: registered new interface driver uvcvideo
+[    1.033444][    T1] USB Video Class driver (1.1.1)
+[    1.033446][    T1] gspca_main: v2.14.0 registered
+[    1.037952][    T1] cpu_voltage_cooling:build_unified_table CPU1:7 CPU2:4
+[    1.037956][    T1] cpu_voltage_cooling:build_unified_table freq1:2841600 freq2:2419200
+[    1.037958][    T1] cpu_voltage_cooling:build_unified_table freq1:2764800 freq2:2342400
+[    1.037960][    T1] cpu_voltage_cooling:build_unified_table freq1:2688000 freq2:2227200
+[    1.037962][    T1] cpu_voltage_cooling:build_unified_table freq1:2592000 freq2:2227200
+[    1.037964][    T1] cpu_voltage_cooling:build_unified_table freq1:2496000 freq2:1996800
+[    1.037966][    T1] cpu_voltage_cooling:build_unified_table freq1:2380800 freq2:1996800
+[    1.037968][    T1] cpu_voltage_cooling:build_unified_table freq1:2265600 freq2:1881600
+[    1.037970][    T1] cpu_voltage_cooling:build_unified_table freq1:2150400 freq2:1670400
+[    1.037971][    T1] cpu_voltage_cooling:build_unified_table freq1:2035200 freq2:1440000
+[    1.037973][    T1] cpu_voltage_cooling:build_unified_table freq1:1900800 freq2:1324800
+[    1.037975][    T1] cpu_voltage_cooling:build_unified_table freq1:1785600 freq2:1209600
+[    1.037977][    T1] cpu_voltage_cooling:build_unified_table freq1:1670400 freq2:1075200
+[    1.037979][    T1] cpu_voltage_cooling:build_unified_table freq1:1555200 freq2:960000
+[    1.037981][    T1] cpu_voltage_cooling:build_unified_table freq1:1420800 freq2:844800
+[    1.037983][    T1] cpu_voltage_cooling:build_unified_table freq1:1305600 freq2:710400
+[    1.037985][    T1] cpu_voltage_cooling:build_unified_table freq1:1190400 freq2:710400
+[    1.037987][    T1] cpu_voltage_cooling:build_unified_table freq1:1075200 freq2:710400
+[    1.037989][    T1] cpu_voltage_cooling:build_unified_table freq1:960000 freq2:710400
+[    1.037991][    T1] cpu_voltage_cooling:build_unified_table freq1:844800 freq2:710400
+[    1.038633][    T1] device-mapper: uevent: version 1.0.3
+[    1.038673][    T1] device-mapper: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[    1.038858][    T1] EDAC DEVICE0: Giving out device to module soc:erp controller cache: DEV soc:erp (INTERRUPT)
+[    1.039213][    T1] cpuidle: using governor qcom
+[    1.039815][    T1] sdhci: Secure Digital Host Controller Interface driver
+[    1.039818][    T1] sdhci: Copyright(c) Pierre Ossman
+[    1.039820][    T1] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.041083][    T1] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.041250][    T1] usbcore: registered new interface driver usbhid
+[    1.041253][    T1] usbhid: USB HID core driver
+[    1.041301][    T1] ashmem: initialized
+[    1.041460][    T1] hh_msgq: Registered client for label: 0
+[    1.051160][    T1] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): allocate IRQ 307, hwirq 8
+[    1.051164][    T1] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): found parent hwirq 144
+[    1.051167][    T1] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): alloc_irqs_parent for 307 parent hwirq 144
+[    1.052808][    T1] qcom-llcc-pmu 9095000.llcc-pmu: Registered llcc_pmu, type: 9
+[    1.054457][    T1] coresight-stm 6002000.stm: coresight-stm : stm_register_device failed, probing deferred
+[    1.058456][    T1] coresight-dummy soc:dummy_sink: Dummy device initialized
+[    1.058489][    T1] coresight-dummy soc:tpdm@6b46000: Dummy device initialized
+[    1.058530][    T1] coresight-dummy soc:dummy_source: Dummy device initialized
+[    1.058572][    T1] coresight-dummy soc:tpdm@69810000: Dummy device initialized
+[    1.058698][    T1] coresight-remote-etm soc:modem2_etm0: Remote ETM initialized
+[    1.058751][    T1] coresight-remote-etm soc:modem_etm0: Remote ETM initialized
+[    1.058797][    T1] coresight-remote-etm soc:turing_etm0: Remote ETM initialized
+[    1.058827][    T1] coresight-remote-etm soc:audio_etm0: Remote ETM initialized
+[    1.058871][    T1] coresight-remote-etm soc:ssc_etm0: Remote ETM initialized
+[    1.058957][    T1] coresight-csr 6001000.csr: CSR initialized: coresight-csr
+[    1.058985][    T1] coresight-csr 6b0f000.csr: CSR initialized: coresight-swao-csr
+[    1.059199][    T1] gnss: GNSS driver registered with major 494
+[    1.059348][    T1] usbcore: registered new interface driver snd-usb-audio
+[    1.059519][    T1] msm_vidc:   err : ffffffff: .....: Failed to create debugfs for msm_vidc
+[    1.059637][    T1] GACT probability NOT on
+[    1.059644][    T1] Mirror/redirect action on
+[    1.059652][    T1] netem: version 1.3
+[    1.059654][    T1] u32 classifier
+[    1.059656][    T1]     input device check on
+[    1.059658][    T1]     Actions configured
+[    1.059913][    T1] xt_time: kernel timezone is -0000
+[    1.059953][    T1] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[    1.060062][    T1] gre: GRE over IPv4 demultiplexor driver
+[    1.060065][    T1] ip_gre: GRE over IPv4 tunneling driver
+[    1.060190][    T1] IPv4 over IPsec tunneling driver
+[    1.060286][    T1] iptable_raw: Enabling raw table before defrag
+[    1.060320][    T1] Initializing XFRM netlink socket
+[    1.060325][    T1] IPsec XFRM device driver
+[    1.060403][    T1] NET: Registered protocol family 10
+[    1.060706][    T1] Segment Routing with IPv6
+[    1.060732][    T1] mip6: Mobile IPv6
+[    1.060766][    T1] ip6table_raw: Enabling raw table before defrag
+[    1.060845][    T1] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.060936][    T1] ip6_gre: GRE over IPv6 tunneling driver
+[    1.061005][    T1] NET: Registered protocol family 17
+[    1.061009][    T1] NET: Registered protocol family 15
+[    1.061699][    T1] Bluetooth: RFCOMM TTY layer initialized
+[    1.061711][    T1] Bluetooth: RFCOMM socket layer initialized
+[    1.061714][    T1] Bluetooth: RFCOMM ver 1.11
+[    1.061720][    T1] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    1.061723][    T1] Bluetooth: HIDP socket layer initialized
+[    1.061732][    T1] l2tp_core: L2TP core driver, V2.0
+[    1.061737][    T1] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.061739][    T1] tipc: Activated (version 2.0.0)
+[    1.061790][    T1] NET: Registered protocol family 30
+[    1.061824][    T1] tipc: Started in single node mode
+[    1.062305][    T1] qcom_haven_qrtr soc:qrtr-haven: cant parse shared mem node!
+[    1.062314][    T1] qcom_haven_qrtr: probe of soc:qrtr-haven failed with error -22
+[    1.062547][    T1] No device name found in device tree.
+[    1.062886][    T1] ch_haven_recv soc:qcom,svm_neuron_block:channel0: cant parse shared mem node!
+[    1.062889][    T1] ch_haven_recv soc:qcom,svm_neuron_block:channel0: failed to map memory -22
+[    1.062893][    T1] ch_haven_recv: probe of soc:qcom,svm_neuron_block:channel0 failed with error -22
+[    1.063074][    T1] ch_haven_send soc:qcom,svm_neuron_block:channel1: cant parse shared mem node!
+[    1.063077][    T1] ch_haven_send: probe of soc:qcom,svm_neuron_block:channel1 failed with error -22
+[    1.063280][    T1] registered taskstats version 1
+[    1.063287][    T1] Loading compiled-in X.509 certificates
+[    1.063306][    T1] Key type ._fscrypt registered
+[    1.063308][    T1] Key type .fscrypt registered
+[    1.063310][    T1] Key type fscrypt-provisioning registered
+[    1.063462][    T1] pstore: Using crash dump compression: deflate
+[    1.065033][    T1] spss_utils [spss_parse_dt]: iar_buf_addr [0x8e800000].
+[    1.066403][    T8] Unable to map memory for DT property: dload_mode
+[    1.066421][    T8] clear_display_config clear display config
+[    1.070148][    T8] disp_cc_pll1 PLL is already enabled
+[    1.070319][    T8] disp_cc-lahaina af00000.qcom,dispcc: Registered DISP CC clocks
+[    1.070452][    T8] cam_cc_bps_gdsc: supplied by pm8350c_s8_level
+[    1.070518][    T8] cam_cc_ife_0_gdsc: supplied by pm8350c_s8_level
+[    1.070574][    T8] cam_cc_ife_1_gdsc: supplied by pm8350c_s8_level
+[    1.070629][    T8] cam_cc_ife_2_gdsc: supplied by pm8350c_s8_level
+[    1.070683][    T8] cam_cc_ipe_0_gdsc: supplied by pm8350c_s8_level
+[    1.070733][    T8] cam_cc_sbi_gdsc: supplied by pm8350c_s8_level
+[    1.070804][    T8] cam_cc_titan_top_gdsc: supplied by pm8350c_s8_level
+[    1.070860][    T8] disp_cc_mdss_core_gdsc: supplied by pm8350c_s8_level
+[    1.070934][    T8] video_cc_mvs0_gdsc: supplied by pm8350c_s8_level
+[    1.070987][    T8] video_cc_mvs0c_gdsc: supplied by pm8350c_s8_level
+[    1.071035][    T8] video_cc_mvs1_gdsc: supplied by pm8350c_s8_level
+[    1.071082][    T8] video_cc_mvs1c_gdsc: supplied by pm8350c_s8_level
+[    1.078814][    T8] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    1.080967][    T8] rmnet_ipa3 started initialization
+[    1.090826][    T8] arm-smmu 15000000.apps-smmu: 	coherent table walk
+[    1.090832][    T8] arm-smmu 15000000.apps-smmu: 	stream matching with 89 register groups
+[    1.091880][    T8] msm-dwc3 a600000.ssusb: Adding to iommu group 1
+[    1.092518][    T8] dwc3 a600000.dwc3: changing max_speed on rev 00000000
+[    1.093287][    T8] usb_bam_init: setting SPS_BAM_SMMU_EN flag with (a704000.qcom,usbbam)
+[    1.093314][    T8] sps:BAM 0x000000000a704000 is registered
+[    1.093374][    T8] msm-dwc3 a600000.ssusb: Nominal values not found.
+[    1.093377][    T8] msm-dwc3 a600000.ssusb: Dynamic voting failed
+[    1.093390][    T8] msm-dwc3 a600000.ssusb: IRQ hs_phy_irq not found
+[    1.093921][    T8] msm-dwc3 a600000.ssusb: IRQ dp_hs_phy_irq1 not found
+[    1.093924][    T8] msm-dwc3 a600000.ssusb: IRQ dm_hs_phy_irq1 not found
+[    1.093926][    T8] msm-dwc3 a600000.ssusb: IRQ ss_phy_irq1 not found
+[    1.094202][    T8] msm_vidc:   err : ffffffff: .....: no device Registered
+[    1.094423][    T8] msm_vidc:   err : ffffffff: .....: Failed to create debugfs for msm_vidc
+[    1.095027][    T8] msm_vidc_v4l2 aa00000.qcom,vidc:non_secure_cb: Adding to iommu group 2
+[    1.095875][    T8] msm_vidc_v4l2 aa00000.qcom,vidc:secure_non_pixel_cb: Adding to iommu group 3
+[    1.096695][    T8] msm_vidc_v4l2 aa00000.qcom,vidc:secure_bitstream_cb: Adding to iommu group 4
+[    1.097492][    T8] msm_vidc_v4l2 aa00000.qcom,vidc:secure_pixel_cb: Adding to iommu group 5
+[    1.097841][    T8] spmi_pmic_arb_debug 6b12000.qcom,spmi-debug: SPMI PMIC arbiter debug bus disabled by fuse
+[    1.098220][    T8] coresight-tmc 6048000.tmc: Adding to iommu group 6
+[    1.098492][    T8] sps:BAM 0x0000000006064000 is registered
+[    1.098667][    T8] coresight-stm 6002000.stm: STM32 initialized
+[    1.099776][    T8] kgsl-3d 3d00000.qcom,kgsl-3d0: bound 3d6a000.qcom,gmu (ops a6xx_gmu_component_ops)
+[    1.101674][    T8] platform 3da0000.qcom,kgsl-iommu:gfx3d_user: Adding to iommu group 7
+[    1.102824][    T8] platform 3da0000.qcom,kgsl-iommu:gfx3d_lpac: Adding to iommu group 8
+[    1.103454][    T8] platform 3da0000.qcom,kgsl-iommu:gfx3d_secure: Adding to iommu group 9
+[    1.105736][    T8] msm_cvp:  err: Failed to create debugfs for msm_cvp
+[    1.107336][    T8] msm_cvp ab00000.qcom,cvp:cvp_non_secure_cb: Adding to iommu group 10
+[    1.108329][    T8] msm_cvp ab00000.qcom,cvp:cvp_secure_nonpixel_cb: Adding to iommu group 11
+[    1.109112][    T8] msm_cvp ab00000.qcom,cvp:cvp_secure_pixel_cb: Adding to iommu group 12
+[    1.109596][    T8] msm_cvp ab00000.qcom,cvp:qcom,msm-cvp,mem_cdsp: assigned reserved memory node cdsp_region
+[    1.109857][    T8] sdpm-clk-notify 636000.mx_sdpm: 636000.mx_sdpm supply gcc_gp1 not found, using dummy regulator
+[    1.109949][    T8] sdpm-clk-notify 634000.cx_sdpm: 634000.cx_sdpm supply ufs_phy not found, using dummy regulator
+[    1.111038][    T8] gpi_dma 900000.qcom,gpi-dma: Adding to iommu group 13
+[    1.111511][    T8] gpi_dma a00000.qcom,gpi-dma: Adding to iommu group 14
+[    1.111997][    T8] gpi_dma 800000.qcom,gpi-dma: Adding to iommu group 15
+[    1.112420][    T8] minidump-id not found for ipa_fws
+[    1.112442][    T8] subsys-pil-tz soc:qcom,ipa_fws: for ipa_fws segments only will be dumped.
+[    1.112459][    T8] subsys-pil-tz soc:qcom,ipa_fws: for md_ipa_fws segments only will be dumped.
+[    1.112537][    T8] minidump-id not found for evass
+[    1.112549][    T8] subsys-pil-tz abb0000.qcom,evass: for evass segments only will be dumped.
+[    1.112563][    T8] subsys-pil-tz abb0000.qcom,evass: for md_evass segments only will be dumped.
+[    1.112626][    T8] minidump-id not found for trustedvm
+[    1.112636][    T8] subsys-pil-tz soc:qcom,trustedvm@d0800000: for trustedvm segments only will be dumped.
+[    1.112648][    T8] subsys-pil-tz soc:qcom,trustedvm@d0800000: for md_trustedvm segments only will be dumped.
+[    1.112731][    T8] minidump-id not found for a660_zap
+[    1.112742][    T8] subsys-pil-tz soc:qcom,kgsl-hyp: for a660_zap segments only will be dumped.
+[    1.112754][    T8] subsys-pil-tz soc:qcom,kgsl-hyp: for md_a660_zap segments only will be dumped.
+[    1.112979][    T8] hh_msgq: Registered client for label: 1
+[    1.113180][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb1: Adding to iommu group 16
+[    1.113398][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb2: Adding to iommu group 17
+[    1.113613][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb3: Adding to iommu group 18
+[    1.113814][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb4: Adding to iommu group 19
+[    1.114019][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb5: Adding to iommu group 20
+[    1.114228][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb6: Adding to iommu group 21
+[    1.114430][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb7: Adding to iommu group 22
+[    1.114648][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb8: Adding to iommu group 23
+[    1.115105][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb9: Adding to iommu group 24
+[    1.115314][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb10: Adding to iommu group 25
+[    1.115512][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb11: Adding to iommu group 26
+[    1.115703][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb12: Adding to iommu group 27
+[    1.115899][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb13: Adding to iommu group 28
+[    1.116122][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb14: Adding to iommu group 29
+[    1.116318][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb15: Adding to iommu group 30
+[    1.116519][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb16: Adding to iommu group 31
+[    1.116726][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb17: Adding to iommu group 32
+[    1.116938][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb18: Adding to iommu group 33
+[    1.117147][    T8] fastrpc soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb19: Adding to iommu group 34
+[    1.133055][    T8] spmi spmi-0: pmic_arb_wait_for_done: transaction failed (0x3)
+[    1.133063][    T8] spmi-temp-alarm c440000.qcom,spmi:qcom,pmr735b@5:qcom,temp-alarm@a00: could not read type
+[    1.133068][    T8] spmi-temp-alarm: probe of c440000.qcom,spmi:qcom,pmr735b@5:qcom,temp-alarm@a00 failed with error -5
+[    1.175749][    T8] qce 1de0000.qcedev: Adding to iommu group 35
+[    1.175929][    T8] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[    1.176042][    T8] qce 1de0000.qcedev: QTI Crypto 5.6.0 device found @0x1de0000
+[    1.176086][    T8] sps:BAM 0x0000000001dc4000 is registered
+[    1.176117][    T8] sps:BAM 0x0000000001dc4000 (va:0x00000000ca7a85a5) enabled: ver:0x27, number of pipes:16
+[    1.176163][    T8] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 40
+[    1.181434][    T8] qce 1de0000.qcedev:qcom_cedev_ns_cb: Adding to iommu group 36
+[    1.182465][    T8] qce 1de0000.qcedev:qcom_cedev_s_cb: Adding to iommu group 37
+[    1.184344][    T8] qcrypto 1de0000.qcrypto: Adding to iommu group 38
+[    1.184521][    T8] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[    1.184702][    T8] qcrypto 1de0000.qcrypto: QTI Crypto 5.6.0 device found @0x1de0000
+[    1.184833][    T8] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001dc4000 irq 40
+[    1.185167][    T8] qcrypto 1de0000.qcrypto: qcrypto-ecb-aes
+[    1.185287][    T8] qcrypto 1de0000.qcrypto: qcrypto-cbc-aes
+[    1.185415][    T8] qcrypto 1de0000.qcrypto: qcrypto-ctr-aes
+[    1.185556][    T8] qcrypto 1de0000.qcrypto: qcrypto-ecb-des
+[    1.185685][    T8] qcrypto 1de0000.qcrypto: qcrypto-cbc-des
+[    1.185818][    T8] qcrypto 1de0000.qcrypto: qcrypto-ecb-3des
+[    1.185959][    T8] qcrypto 1de0000.qcrypto: qcrypto-cbc-3des
+[    1.186105][    T8] qcrypto 1de0000.qcrypto: qcrypto-xts-aes
+[    1.186235][    T8] qcrypto 1de0000.qcrypto: qcrypto-sha1
+[    1.186370][    T8] qcrypto 1de0000.qcrypto: qcrypto-sha256
+[    1.186503][    T8] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
+[    1.186633][    T8] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
+[    1.186764][    T8] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
+[    1.186899][    T8] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
+[    1.187039][    T8] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
+[    1.187172][    T8] qcrypto 1de0000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
+[    1.187303][    T8] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha1
+[    1.187439][    T8] qcrypto 1de0000.qcrypto: qcrypto-hmac-sha256
+[    1.187567][    T8] qcrypto 1de0000.qcrypto: qcrypto-aes-ccm
+[    1.187694][    T8] qcrypto 1de0000.qcrypto: qcrypto-rfc4309-aes-ccm
+[    1.189458][    T8] uaudio-qmi soc:usb_audio_qmi_dev: Adding to iommu group 39
+[    1.190224][    T8] spss_utils [spss_parse_dt]: iar_buf_addr [0x8e800000].
+[    1.192638][    T8] qupv3_geni_se 9c0000.qcom,qupv3_0_geni_se: Adding to iommu group 40
+[    1.193276][    T8] qupv3_geni_se ac0000.qcom,qupv3_1_geni_se: Adding to iommu group 41
+[    1.193781][    T8] qupv3_geni_se 8c0000.qcom,qupv3_2_geni_se: Adding to iommu group 42
+[    1.194892][    T8] minidump-id not found for spss
+[    1.197688][    T8] ufshcd-qcom 1d84000.ufshc: Adding to iommu group 43
+[    1.197934][    T8] ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: unable to find vdd-hba-max-microamp
+[    1.197958][    T8] ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: Unable to find vccq2-supply regulator, assuming enabled
+[    1.198638][    T8] ufshcd-qcom 1d84000.ufshc: -- Registered bus voting! (0) --
+[    1.199641][    T8] scsi host0: ufshcd
+[    1.206825][  T244] ufshcd-qcom 1d84000.ufshc: *** This is ../../../../../../kernel/xiaomi/sm8350/drivers/scsi/ufs/ufshcd.c ***
+[    1.208140][    T8] minidump-id not found for slpi
+[    1.208852][    T8] pci-msm 1c00000.qcom,pcie: PCIe: msm_pcie_probe
+[    1.209421][    T8] pci-msm 1c00000.qcom,pcie: 1c00000.qcom,pcie supply vreg-3p3 not found, using dummy regulator
+[    1.209614][    T8] pci-msm 1c00000.qcom,pcie: 1c00000.qcom,pcie supply vreg-mx not found, using dummy regulator
+[    1.209754][    T8] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 323, hwirq 96
+[    1.209763][    T8] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 148
+[    1.209772][    T8] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 323 parent hwirq 148
+[    1.209827][    T8] msm_pcie_get_reg: PCIe: RC0: no mhi resource found.
+[    1.209835][    T8] msm_pcie_get_reg: PCIe: RC0: no tcsr resource found.
+[    1.209842][    T8] msm_pcie_get_reg: PCIe: RC0: no rumi resource found.
+[    1.214460][    T8] spi_geni 984000.spi: spi_geni_probe: completed
+[    1.214810][    T8] i2c_geni 990000.i2c: Bus frequency is set to 400000Hz.
+[    1.218223][    T8] i2c_geni 990000.i2c: I2C probed
+[    1.218647][    T8] i2c_geni 998000.i2c: Bus frequency is set to 400000Hz.
+[    1.220516][    T8] aw8697_i2c_probe enter
+[    1.220591][    T8] aw8697_haptic 1-005a: aw8697_parse_dt: reset gpio provided ok
+[    1.220603][    T8] aw8697_haptic 1-005a: aw8697_parse_dt: irq gpio provided ok.
+[    1.220630][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220635][    T8] aw8697_parse_dt ---2929 
+[    1.220642][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220646][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220653][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220658][    T8] aw8697_parse_dt ---2929 
+[    1.220663][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220668][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220674][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220678][    T8] aw8697_parse_dt ---2929 
+[    1.220684][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220688][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220694][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220699][    T8] aw8697_parse_dt ---2929 
+[    1.220703][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220708][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220714][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220719][    T8] aw8697_parse_dt ---2929 
+[    1.220724][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220728][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220734][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220739][    T8] aw8697_parse_dt ---2929 
+[    1.220745][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220749][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220756][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220760][    T8] aw8697_parse_dt ---2929 
+[    1.220769][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220774][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220780][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220784][    T8] aw8697_parse_dt ---2929 
+[    1.220789][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220794][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220799][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220803][    T8] aw8697_parse_dt ---2929 
+[    1.220808][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220812][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220818][    T8] aw8697_parse_dt ---2919 effect->vmax_mv =3600 
+[    1.220823][    T8] aw8697_parse_dt ---2929 
+[    1.220828][    T8] aw8697_parse_dt Read  qcom,wf-repeat-count failed !
+[    1.220832][    T8] aw8697_parse_dt Read  qcom,wf-s-repeat-count failed !
+[    1.220838][    T8]  20190420_dt       aw8697->info.bst_vol_default: 0x10
+[    1.220842][    T8]  20190420_dt       aw8697->info.bst_vol_ram: 0x10
+[    1.220846][    T8]  20190420_dt       aw8697->info.bst_vol_rtp: 0x10
+[    1.220850][    T8] aw8697_i2c_probe ---4617 
+[    1.220938][    T8] found pin control aw8697_reset_reset
+[    1.220945][    T8] Selected 'aw8697_interrupt_active'
+[    1.220950][    T8] found pin control aw8697_reset_active
+[    1.220954][    T8] Selected 'aw8697_interrupt_active'
+[    1.220959][    T8] found pin control aw8697_interrupt_active
+[    1.220967][    T8] Selected 'aw8697_interrupt_active'
+[    1.220971][    T8] aw8697_i2c_probe ---4657 
+[    1.220987][    T8] Selected 'aw8697_reset_active'
+[    1.225247][  T244] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[1, 1], lane[1, 1], pwr[SLOWAUTO_MODE, SLOWAUTO_MODE], rate = 0
+[    1.232057][    T8] Selected 'aw8697_reset_reset'
+[    1.244231][    T8] Selected 'aw8697_reset_active'
+[    1.244625][    T8] i2c_geni 998000.i2c: i2c error :-107
+[    1.244636][    T8] aw8697_i2c_read: i2c_read cnt=0 error=-107
+[    1.252391][    T8] aw8697_read_chipid aw8697 detected
+[    1.262657][    T8] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 329, hwirq 119
+[    1.262665][    T8] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 123
+[    1.262673][    T8] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 329 parent hwirq 123
+[    1.262958][    T8] aw8697_vibrator_init enter
+[    1.262965][    T8] aw8697_haptic_init enter
+[    1.264978][  T244] ufshcd-qcom 1d84000.ufshc: ufshcd_print_pwr_info:[RX, TX]: gear=[4, 4], lane[2, 2], pwr[FAST MODE, FAST MODE], rate = 2
+[    1.265197][  T244] ufshcd-qcom 1d84000.ufshc: ufshcd_wb_config: Write Booster Configured
+[    1.265600][  T244] scsi 0:0:0:49488: Well-known LUN    KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.266064][  T244] scsi 0:0:0:49488: Attached scsi generic sg0 type 30
+[    1.266409][  T244] scsi 0:0:0:49476: Well-known LUN    KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.266813][  T244] scsi 0:0:0:49476: Attached scsi generic sg1 type 30
+[    1.267093][  T244] scsi 0:0:0:49456: Well-known LUN    KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.267524][  T244] scsi 0:0:0:49456: Attached scsi generic sg2 type 30
+[    1.267779][    T8] aw8697_haptic_set_bst_peak_cur  779 enter
+[    1.268107][  T244] scsi 0:0:0:0: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.268191][    T8] aw8697_haptic_swicth_motorprotect_config enter
+[    1.268536][    C0] sd 0:0:0:0: Power-on or device reset occurred
+[    1.268592][  T244] sd 0:0:0:0: Attached scsi generic sg3 type 0
+[    1.269071][  T244] scsi 0:0:0:1: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.269076][   T10] sd 0:0:0:0: [sda] 61844480 4096-byte logical blocks: (253 GB/236 GiB)
+[    1.269149][   T10] sd 0:0:0:0: [sda] Write Protect is off
+[    1.269300][   T10] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.269383][   T10] sd 0:0:0:0: [sda] Optimal transfer size 524288 bytes
+[    1.269450][  T244] sd 0:0:0:1: Attached scsi generic sg4 type 0
+[    1.269581][    C0] sd 0:0:0:1: Power-on or device reset occurred
+[    1.269724][  T244] scsi 0:0:0:2: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.269761][    T8] aw8697_haptic_offset_calibration enter
+[    1.270109][  T244] scsi 0:0:0:2: Attached scsi generic sg5 type 0
+[    1.270356][  T244] scsi 0:0:0:3: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.270362][    C0] sd 0:0:0:2: Power-on or device reset occurred
+[    1.270582][  T348] sd 0:0:0:1: [sdb] 4096 4096-byte logical blocks: (16.8 MB/16.0 MiB)
+[    1.270713][  T244] sd 0:0:0:3: Attached scsi generic sg6 type 0
+[    1.270961][    C0] sd 0:0:0:3: Power-on or device reset occurred
+[    1.270965][  T348] sd 0:0:0:1: [sdb] Write Protect is off
+[    1.271016][  T244] scsi 0:0:0:4: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.271302][  T348] sd 0:0:0:1: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.271457][  T348] sd 0:0:0:1: [sdb] Optimal transfer size 524288 bytes
+[    1.271505][  T345] sd 0:0:0:2: [sdc] 4096 4096-byte logical blocks: (16.8 MB/16.0 MiB)
+[    1.271507][  T244] sd 0:0:0:4: Attached scsi generic sg7 type 0
+[    1.271581][    C0] sd 0:0:0:4: Power-on or device reset occurred
+[    1.271698][  T244] scsi 0:0:0:5: Direct-Access     KIOXIA   THGJFAT1T84BAIRB 1201 PQ: 0 ANSI: 6
+[    1.271952][  T350] sd 0:0:0:3: [sdd] 8192 4096-byte logical blocks: (33.6 MB/32.0 MiB)
+[    1.271993][  T345] sd 0:0:0:2: [sdc] Write Protect is off
+[    1.272125][  T350] sd 0:0:0:3: [sdd] Write Protect is off
+[    1.272253][  T345] sd 0:0:0:2: [sdc] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.272284][  T244] scsi 0:0:0:5: Attached scsi generic sg8 type 0
+[    1.272357][  T350] sd 0:0:0:3: [sdd] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.272369][  T345] sd 0:0:0:2: [sdc] Optimal transfer size 524288 bytes
+[    1.272388][    T8] aw8697_haptic_f0_calibration enter
+[    1.272474][  T350] sd 0:0:0:3: [sdd] Optimal transfer size 524288 bytes
+[    1.272508][    C0] sd 0:0:0:5: Power-on or device reset occurred
+[    1.272518][  T351] sd 0:0:0:4: [sde] 601088 4096-byte logical blocks: (2.46 GB/2.29 GiB)
+[    1.272544][    T8] aw8697_haptic_get_f0 enter
+[    1.272603][  T351] sd 0:0:0:4: [sde] Write Protect is off
+[    1.272785][  T351] sd 0:0:0:4: [sde] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.272873][  T351] sd 0:0:0:4: [sde] Optimal transfer size 524288 bytes
+[    1.273111][  T244] sd 0:0:0:5: [sdf] 8192 4096-byte logical blocks: (33.6 MB/32.0 MiB)
+[    1.273350][  T244] sd 0:0:0:5: [sdf] Write Protect is off
+[    1.273630][   T10]  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7 sda8 sda9 sda10 sda11 sda12 sda13 sda14 sda15 sda16 sda17 sda18 sda19 sda20 sda21 sda22 sda23 sda24 sda25 sda26 sda27 sda28 sda29 sda30 sda31 sda32 sda33 sda34
+[    1.273779][  T244] sd 0:0:0:5: [sdf] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.273972][  T244] sd 0:0:0:5: [sdf] Optimal transfer size 524288 bytes
+[    1.274034][  T348]  sdb: sdb1 sdb2
+[    1.275348][  T350]  sdd: sdd1 sdd2 sdd3 sdd4 sdd5
+[    1.277022][  T348] sd 0:0:0:1: [sdb] Attached SCSI disk
+[    1.277815][  T244]  sdf: sdf1 sdf2 sdf3 sdf4 sdf5 sdf6
+[    1.277895][   T10] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.278090][    T8] aw8697_haptic_set_f0_preset enter
+[    1.278198][  T345]  sdc: sdc1 sdc2
+[    1.278501][  T350] sd 0:0:0:3: [sdd] Attached SCSI disk
+[    1.278575][  T351]  sde: sde1 sde2 sde3 sde4 sde5 sde6 sde7 sde8 sde9 sde10 sde11 sde12 sde13 sde14 sde15 sde16 sde17 sde18 sde19 sde20 sde21 sde22 sde23 sde24 sde25 sde26 sde27 sde28 sde29 sde30 sde31 sde32 sde33 sde34 sde35 sde36 sde37 sde38 sde39 sde40 sde41 sde42 sde43 sde44 sde45 sde46 sde47 sde48 sde49 sde50 sde51 sde52 sde53 sde54 sde55 sde56 sde57 sde58 sde59 sde60 sde61 sde62 sde63 sde64 sde65 sde66 sde67 sde68 sde69
+[    1.278972][  T244] sd 0:0:0:5: [sdf] Attached SCSI disk
+[    1.279769][  T345] sd 0:0:0:2: [sdc] Attached SCSI disk
+[    1.282362][  T351] sd 0:0:0:4: [sde] Attached SCSI disk
+[    1.393496][    T8] aw8697_haptic_read_f0 enter
+[    1.395296][    T8] aw8697_haptic_read_f0 f0=1686
+[    1.395303][    T8] aw8697_haptic_read_beme  1248 enter
+[    1.397241][    T8] aw8697_haptic_read_beme max_pos_beme=127
+[    1.397247][    T8] aw8697_haptic_read_beme max_neg_beme=129
+[    1.400563][    T8] aw8697_haptic_f0_calibration  line=2167 f0_cali_step=-33
+[    1.400569][    T8] aw8697_haptic_f0_calibration line=2169  f0_limit=1686
+[    1.400575][    T8] aw8697_haptic_f0_calibration line=2171  aw8697->info.f0_pre=1700
+[    1.400581][    T8] aw8697_haptic_f0_calibration f0_cali_lra=61
+[    1.402280][    T8] aw8697_haptic_f0_calibration final trim_lra=0x3d
+[    1.415867][    T8] input: aw8697_haptic as /devices/platform/soc/998000.i2c/i2c-1/1-005a/input/input1
+[    1.416011][    T8] aw8697_i2c_probe probe completed successfully!
+[    1.416099][    T8] i2c_geni 998000.i2c: I2C probed
+[    1.419141][    T8] spi_geni a8c000.spi: spi_geni_probe: completed
+[    1.419635][    T8] i2c_geni a80000.i2c: Bus frequency is set to 400000Hz.
+[    1.423303][    T8] i2c_geni a80000.i2c: I2C probed
+[    1.423667][    T8] i2c_geni a94000.i2c: Multi-EE usecase
+[    1.423675][    T8] i2c_geni a94000.i2c: Bus frequency is set to 400000Hz.
+[    1.433791][    T8] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.439035][    T8] pm8008i_l1: Bringing 1200000uV into 1104000-1104000uV
+[    1.440831][    T8] pm8008i_l1: supplied by pm8350_s12
+[    1.442210][    T8] pm8008i_l2: Bringing 1200000uV into 1152000-1152000uV
+[    1.443861][    T8] pm8008i_l2: supplied by pm8350_s12
+[    1.445848][    T8] pm8008i_l3: supplied by pm8350c_s1
+[    1.447830][    T8] pm8008i_l4: supplied by pm8350c_s1
+[    1.449838][    T8] pm8008i_l5: supplied by pm8350c_s1
+[    1.451868][    T8] pm8008i_l6: supplied by pm8350c_bob
+[    1.453909][    T8] pm8008i_l7: supplied by pm8350c_bob
+[    1.454490][    T8] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.455065][    T8] i2c_geni a94000.i2c: i2c error :-107
+[    1.455075][    T8] PM8008: pm8008_read: failed to read 0x0950
+[    1.455082][    T8] PM8008: _pm8008_chip_is_enabled: qcom,pm8008-chip-en: failed to get chip state rc=-107
+[    1.455088][    T8] PM8008: pm8008_chip_probe: Failed to register chip enable regulator rc=-107
+[    1.455100][    T8] qcom,pm8008-chip: probe of a94000.i2c:pm8008j@c:pm8008-chip@900 failed with error -107
+[    1.455369][    T8] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.456139][    T8] I2C PMIC: i2c_pmic_probe: I2C PMIC probe successful
+[    1.456247][    T8] i2c_geni a94000.i2c: I2C probed
+[    1.457010][    T8] msm_geni_serial 890000.qcom,qup_uart: Wakeup byte 0xfd
+[    1.457077][    T8] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 330, hwirq 71
+[    1.457085][    T8] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 134
+[    1.457097][    T8] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 330 parent hwirq 134
+[    1.457194][    T8] msm_geni_serial 890000.qcom,qup_uart: Serial port0 added.FifoSize 64 is_console0
+[    1.457209][    T8] msm_geni_serial 890000.qcom,qup_uart: Failed to create dbg dir
+[    1.457846][    T8] 890000.qcom,qup_uart: ttyHS0 at MMIO 0x890000 (irq = 199, base_baud = 0) is a MSM
+[    1.458721][    T8] spi_geni 894000.spi: spi_geni_probe: completed
+[    1.459151][    T8] i2c_geni 884000.i2c: Bus frequency is set to 1000000Hz.
+[    1.459553][    T8] i2c_geni 884000.i2c: I2C probed
+[    1.459868][  T351] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 331, hwirq 87
+[    1.459876][  T351] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 138
+[    1.459884][  T351] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 331 parent hwirq 138
+[    1.459905][  T351] nfc_parse_dt: irq 395
+[    1.459923][  T351] nfc_parse_dt: ven 370, dwl req 394, clkreq 371
+[    1.459929][  T351] qcom,sn-nci 4-0028: error reading NFC VDDIO min and max value
+[    1.459935][  T351] qcom,sn-nci 4-0028: error reading NFC current value
+[    1.460055][  T351] nfc_i2c_dev_probe : requesting IRQ 331
+[    1.460108][  T351] nfc_ldo_config: regulator entry not present
+[    1.461917][    T8] ipa 1e00000.qcom,ipa:ipa_smmu_ap: Adding to iommu group 44
+[    1.462306][    T8] ipa 1e00000.qcom,ipa:ipa_smmu_wlan: Adding to iommu group 45
+[    1.462715][    T8] ipa 1e00000.qcom,ipa:ipa_smmu_uc: Adding to iommu group 46
+[    1.463131][    T8] ipa 1e00000.qcom,ipa:ipa_smmu_11ad: Adding to iommu group 47
+[    1.463716][  T345] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.mdt failed with error -2
+[    1.463725][  T345] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.mdt
+[    1.464901][    T8] minidump-id not found for venus
+[    1.465620][    T8] spss_utils [spss_parse_dt]: iar_buf_addr [0x8e800000].
+[    1.465701][    T8] spss_utils [spss_probe]: Probe completed successfully, [spss1p].
+[    1.470556][    T1] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): allocate IRQ 332, hwirq 5
+[    1.470560][    T1] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): found parent hwirq 141
+[    1.470563][    T1] gpio gpiochip2: (c440000.qcom,spmi:qcom,pm8350@1:pinctrl@8800): alloc_irqs_parent for 332 parent hwirq 141
+[    1.470647][    T1] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 333, hwirq 80
+[    1.470649][    T1] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 126
+[    1.470651][    T1] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 333 parent hwirq 126
+[    1.470725][    T1] input: gpio-keys as /devices/platform/soc/soc:gpio_keys/input/input2
+[    1.473445][    T1] bimc-bwmon: Zone thres larger than hw limit: hi:0 med:4000 lo:0
+[    1.478258][    T1] bimc-bwmon: Zone thres larger than hw limit: hi:0 med:4000 lo:0
+[    1.481200][    T1] bimc-bwmon: Zone thres larger than hw limit: hi:0 med:4000 lo:0
+[    1.484208][    T1] RNDIS_IPA module is loaded.
+[    1.484234][    T1] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    1.484503][  T362] cryptomgr_probe (362) used greatest stack depth: 14416 bytes left
+[    1.484606][    T1] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    1.484721][    T1] cfg80211: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    1.484757][   T64] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    1.484760][   T64] platform regulatory.0: Falling back to sysfs fallback for: regulatory.db
+[    1.484776][    T1] clk: Disabling unused clocks
+[    1.484947][    T1] gpu_cc-lahaina 3d90000.qcom,gpucc: sync-state
+[    1.484968][    T1] video_cc-lahaina abf0000.qcom,videocc: sync-state
+[    1.485068][    T1] ALSA device list:
+[    1.485071][    T1]   No soundcards found.
+[    1.485085][    T1] Warning: unable to open an initial console.
+[    1.492104][   T34] cryptomgr_probe (362): highest shadow stack usage: 160 bytes
+[    1.529917][  T351] NFC chip_type = a4
+[    1.529930][  T351] NFC fw version = 1.10.60
+[    1.530033][  T351] nfc_i2c_dev_probe success
+[    1.530940][    T1] Freeing unused kernel memory: 1664K
+[    1.530968][    T1] Run /init as init process
+[    1.531655][    T1] init: init first stage started!
+[    1.531892][    T1] init: Switching root to '/first_stage_ramdisk'
+[    1.531954][    T1] init: [libfstab] Using Android DT directory /proc/device-tree/firmware/android/
+[    1.548568][    T1] init: AVB is not enabled, skip verity setup for '/metadata'
+[    1.549565][    T1] init: [libfs_mgr] superblock s_max_mnt_count:65535,/dev/block/by-name/metadata
+[    1.549593][    T1] init: [libfs_mgr] Filesystem on /dev/block/by-name/metadata was not cleanly shutdown; state flags: 0x1, incompat feature flags: 0x22c6
+[    1.552412][    T1] EXT4-fs (sda17): recovery complete
+[    1.552631][    T1] EXT4-fs (sda17): mounted filesystem with ordered data mode. Opts: errors=remount-ro
+[    1.552654][    T1] init: [libfs_mgr] check_fs(): mount(/dev/block/by-name/metadata,/metadata,ext4)=0: Success
+[    1.553347][    T1] init: [libfs_mgr] umount_retry(): unmount(/metadata) succeeded
+[    1.553377][    T1] init: [libfs_mgr] Running /system/bin/e2fsck on /dev/block/sda17
+[    1.553527][    T1] logwrapper: Cannot log to file /dev/fscklogs/log
+[    1.554727][    T1] e2fsck: linker: Warning: failed to find generated linker configuration from "/linkerconfig/ld.config.txt"
+[    1.554745][    T1] e2fsck: WARNING: linker: Warning: failed to find generated linker configuration from "/linkerconfig/ld.config.txt"
+[    1.560242][    T1] e2fsck: e2fsck 1.47.2 (1-Jan-2025)
+[    1.561764][    T1] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    1.564215][    T1] e2fsck: Pass 2: Checking directory structure
+[    1.567675][    T1] e2fsck: Pass 3: Checking directory connectivity
+[    1.567740][    T1] e2fsck: Pass 4: Checking reference counts
+[    1.568032][    T1] e2fsck: Pass 5: Checking group summary information
+[    1.571931][    T1] e2fsck: /dev/block/by-name/metadata: 282/4096 files (0.4% non-contiguous), 1602/4096 blocks
+[    1.573240][  T367] e2fsck (367) used greatest stack depth: 12560 bytes left
+[    1.575322][    T1] EXT4-fs (sda17): mounted filesystem with ordered data mode. Opts: discard
+[    1.585122][    T1] erofs: (device dm-2): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    1.585550][    T1] erofs: (device dm-2): mounted with root inode @ nid 57.
+[    1.587069][    T1] erofs: (device dm-3): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    1.587081][    T1] erofs: (device dm-3): mounted with root inode @ nid 42.
+[    1.587952][    T1] erofs: (device dm-1): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    1.587963][    T1] erofs: (device dm-1): mounted with root inode @ nid 41.
+[    1.588842][    T1] erofs: (device dm-4): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    1.588854][    T1] erofs: (device dm-4): mounted with root inode @ nid 52.
+[    1.589660][    T1] erofs: (device dm-0): EXPERIMENTAL big pcluster feature in use. Use at your own risk!
+[    1.589679][    T1] erofs: (device dm-0): mounted with root inode @ nid 41.
+[    1.596107][   T14] e2fsck (367): highest shadow stack usage: 304 bytes
+[    1.624313][    T1] printk: init: 36 output lines suppressed due to ratelimiting
+[    1.695406][    T1] init: [libfstab] Using Android DT directory /proc/device-tree/firmware/android/
+[    1.697306][    T1] init: Opening SELinux policy
+[    1.706839][    T1] init: Loading SELinux policy
+[    1.735770][    T1] SELinux:  policy capability network_peer_controls=1
+[    1.735777][    T1] SELinux:  policy capability open_perms=1
+[    1.735779][    T1] SELinux:  policy capability extended_socket_class=1
+[    1.735781][    T1] SELinux:  policy capability always_check_network=0
+[    1.735782][    T1] SELinux:  policy capability cgroup_seclabel=0
+[    1.735784][    T1] SELinux:  policy capability nnp_nosuid_transition=1
+[    1.735786][    T1] SELinux:  unknown policy capability 9
+[    1.735787][    T1] SELinux:  unknown policy capability 12
+[    1.776942][   T67] audit: type=1403 audit(174477249.239:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    1.780111][    T1] selinux: SELinux: Loaded file context from:
+[    1.780116][    T1] selinux: 		/system/etc/selinux/plat_file_contexts
+[    1.780119][    T1] selinux: 		/system_ext/etc/selinux/system_ext_file_contexts
+[    1.780121][    T1] selinux: 		/product/etc/selinux/product_file_contexts
+[    1.780123][    T1] selinux: 		/vendor/etc/selinux/vendor_file_contexts
+[    1.780125][    T1] selinux: 		/odm/etc/selinux/odm_file_contexts
+[    1.784140][    T1] init: init second stage started!
+[    1.790424][    T1] selinux: SELinux: Loaded file context from:
+[    1.790429][    T1] selinux: 		/system/etc/selinux/plat_file_contexts
+[    1.790431][    T1] selinux: 		/system_ext/etc/selinux/system_ext_file_contexts
+[    1.790434][    T1] selinux: 		/product/etc/selinux/product_file_contexts
+[    1.790436][    T1] selinux: 		/vendor/etc/selinux/vendor_file_contexts
+[    1.790438][    T1] selinux: 		/odm/etc/selinux/odm_file_contexts
+[    1.801512][    T1] init: [libfstab] Using Android DT directory /proc/device-tree/firmware/android/
+[    1.801583][    T1] init: Init cannot set 'ro.boot.verifiedbootstate' to 'orange': Read-only property was already set
+[    1.804033][   T67] audit: type=1107 audit(174477249.263:3): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=audio.offload.buffer.size.kb pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:default_prop:s0 tclass=property_service permissive=1'
+[    1.804087][   T67] audit: type=1107 audit(174477249.267:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=config.disable_rtt pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:config_prop:s0 tclass=property_service permissive=1'
+[    1.804172][   T67] audit: type=1107 audit(174477249.267:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.audio.button_jack.profile pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:audio_prop:s0 tclass=property_service permissive=1'
+[    1.804204][   T67] audit: type=1107 audit(174477249.267:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.debug.coresight.config pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:persist_debug_prop:s0 tclass=property_service permissive=1'
+[    1.804226][   T67] audit: type=1107 audit(174477249.267:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.radio.dynamic_sar pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:radio_prop:s0 tclass=property_service permissive=1'
+[    1.804292][   T67] audit: type=1107 audit(174477249.267:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.vendor.bt.a2dp.mac_whitelist pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:bluetooth_prop:s0 tclass=property_service permissive=1'
+[    1.804415][   T67] audit: type=1107 audit(174477249.267:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=persist.vendor.sys.fp.fod.location.X_Y.fhd pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vendor_system_prop:s0 tclass=property_service permissive=1'
+[    1.804635][   T67] audit: type=1107 audit(174477249.267:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=ro.vendor.audio.us.proximity pid=1 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vendor_camera_prop:s0 tclass=property_service permissive=1'
+[    1.805786][    T1] init: Overriding previous property 'debug.sf.high_fps_early_gl_phase_offset_ns':'-2000000' with new value '-4000000'
+[    1.844344][  T378] ueventd: ueventd started!
+[    1.849394][  T378] selinux: SELinux: Loaded file context from:
+[    1.849407][  T378] selinux: 		/system/etc/selinux/plat_file_contexts
+[    1.849416][  T378] selinux: 		/system_ext/etc/selinux/system_ext_file_contexts
+[    1.849424][  T378] selinux: 		/product/etc/selinux/product_file_contexts
+[    1.849432][  T378] selinux: 		/vendor/etc/selinux/vendor_file_contexts
+[    1.849440][  T378] selinux: 		/odm/etc/selinux/odm_file_contexts
+[    1.850232][  T378] ueventd: Parsing file /system/etc/ueventd.rc...
+[    1.850290][  T378] ueventd: Added '/vendor/etc/ueventd.rc' to import list
+[    1.850309][  T378] ueventd: Added '/odm/etc/ueventd.rc' to import list
+[    1.895784][  T379] apexd: Started. subcommand = --bootstrap
+[    1.895914][  T379] erofs: Unknown parameter 'fsoffset'
+[    1.896208][  T379] apexd: File-backed mount is disabled due to test mount failure (mount): Invalid argument
+[    1.896372][  T379] apexd-bootstrap: Scanning /system/apex for pre-installed ApexFiles
+[    1.896439][  T379] apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.adbd.capex
+[    1.896444][  T379] apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.adservices.capex
+[    1.896447][  T379] apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.apex.cts.shim.apex
+[    1.896450][  T379] apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.appsearch.capex
+[    1.896453][  T379] apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.art.capex
+[    1.896456][  T379] apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.bt.capex
+[    1.896459][  T379] apexd-bootstrap: Found pre-installed APEX /system/apex/com.android.cellbroadcast.capex
+[    1.904743][  T387] apexd (387) used greatest stack depth: 12160 bytes left
+[    1.936816][  T397] apexd (397) used greatest stack depth: 11744 bytes left
+[    1.973823][  T345] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: loading from 0x000000008e710000 to 0x000000008e717000
+[    1.987223][   T69] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.b02 failed with error -2
+[    1.987233][   T69] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.b02
+[    1.987421][  T200] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.b03 failed with error -2
+[    1.987429][  T200] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.b03
+[    1.987555][  T429] subsys-pil-tz soc:qcom,ipa_fws: Direct firmware load for ipa_fws.b04 failed with error -2
+[    1.987562][  T429] subsys-pil-tz soc:qcom,ipa_fws: Falling back to sysfs fallback for: ipa_fws.b04
+[    2.079863][  T468] EXT4-fs (loop0): mounted filesystem without journal. Opts: 
+[    2.080582][  T469] EXT4-fs (loop1): mounted filesystem without journal. Opts: 
+[    2.081935][  T471] EXT4-fs (loop3): mounted filesystem without journal. Opts: 
+[    2.081960][  T470] EXT4-fs (loop2): mounted filesystem without journal. Opts: 
+[    2.085264][  T379] printk: apexd: 52 output lines suppressed due to ratelimiting
+[    2.108797][   T53] apexd (379): highest shadow stack usage: 344 bytes
+[    2.196099][  T482] modprobe (482) used greatest stack depth: 11520 bytes left
+[    2.236688][  T485] cat (485) used greatest stack depth: 11376 bytes left
+[    2.288621][  T490] ir-spi spi0.0: spi0.0 supply irda_regulator not found, using dummy regulator
+[    2.288755][  T490] rc rc0: IR SPI as /devices/platform/soc/984000.spi/spi_master/spi0/spi0.0/rc/rc0
+[    2.288807][  T490] rc rc0: lirc_dev: driver ir-spi registered at minor = 0, no receiver, raw IR transmitter
+[    2.291595][  T516] gf_platform: gf::gpio-reset:347
+[    2.291603][  T516] gf_platform: gf::irq_gpio:346
+[    2.291673][  T516] input: uinput-goodix as /devices/virtual/input/input3
+[    2.291727][  T516] goodix_fp soc:fingerprint_goodix: fp enable_regulator_3V0: of vreg successful found
+[    2.292382][  T516] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 334, hwirq 38
+[    2.292387][  T516] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 99
+[    2.292391][  T516] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 334 parent hwirq 99
+[    2.293859][  T523] xiaomi_touch_probe enter
+[    2.293893][  T523] xiaomi_touch_probe: kernel base:-538843152384, phy base:9838919680
+[    2.293896][  T523] xiaomi_touch_parse_dt touch,name:xiaomi-touch
+[    2.293958][  T523] xiaomi_touch_probe over
+[    2.296265][  T513] qcom_llcc_edac qcom_llcc_edac: No ECC IRQ; defaulting to polling mode
+[    2.296283][  T513] EDAC DEVICE1: Giving out device to module qcom_llcc_edac controller llcc: DEV qcom_llcc_edac (POLLED)
+[    2.297418][  T511] bt_dt_parse_vreg_info: qcom,bt-vdd-io is not provided in device tree
+[    2.297469][  T511] bt_dt_parse_vreg_info: qcom,bt-vdd-rfacmn is not provided in device tree
+[    2.297475][  T511] bt_dt_parse_vreg_info: qcom,bt-vdd-rfa-0p8 is not provided in device tree
+[    2.297544][  T511] bt_dt_parse_vreg_info: qcom,bt-vdd-ipa-2p2 is not provided in device tree
+[    2.297556][  T511] bt-debug-gpio not provided in devicetree
+[    2.297559][  T511] xo-reset-gpio not provided in devicetree
+[    2.297562][  T511] bt_dt_parse_clk_info: clocks is not provided in device tree
+[    2.297564][  T511] bt_power_populate_dt_pinfo: clock not provided in device tree
+[    2.297597][  T511] TCS CMD base address is 0x000000000b2e5510 with length 0x0000000000000690
+[    2.300531][  T502] DATARMNETb1c42acd9c(): rmnet_offload initializing
+[    2.301037][  T496] DATARMNET163e93649e(): Starting rmnet SHS module 9731 
+[    2.313126][  T514] hwid: unknown parameter 'build_adc' ignored
+[    2.313134][  T514] hwid: unknown parameter 'project_adc' ignored
+[    2.321525][  T500] us_prox_probe: start
+[    2.321612][  T500] us_prox_probe: end
+[    2.328932][  T523] msm_drm: unknown parameter 'oled_wp' ignored
+[    2.329008][  T532] stmvl53l5: module init
+[    2.329116][  T532] stmvl53l5 : 3P0 successful found
+[    2.330236][  T523] [drm:sde_power_parse_ib_votes:474]: error reading min core ib vote. rc=-22, np=bf11d6e8
+[    2.330244][  T523] [drm:sde_power_parse_ib_votes:482]: error reading min llcc ib vote. rc=-22
+[    2.330247][  T523] [drm:sde_power_parse_ib_votes:490]: error reading min dram ib vote. rc=-22
+[    2.330314][  T530] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 339, hwirq 44
+[    2.330320][  T530] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 102
+[    2.330325][  T530] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 339 parent hwirq 102
+[    2.330336][  T530] cs35l41 2-0040: cs35l41 i2c probe start
+[    2.330370][  T523] [sde_rsc_hw:rsc_hw_init_v3:537]: sde rsc init successfully done
+[    2.330388][  T523] [sde_rsc:sde_rsc_probe:1799]: sde rsc index:0 probed successfully
+[    2.330426][  T530] cs35l41 2-0040: 2-0040 supply VA not found, using dummy regulator
+[    2.330464][  T530] cs35l41 2-0040: 2-0040 supply VP not found, using dummy regulator
+[    2.330902][  T532] stmvl53l5 : 1P8 successful found
+[    2.331019][  T523] dsi_phy ae94400.qcom,mdss_dsi_phy0: ae94400.qcom,mdss_dsi_phy0 supply gdsc not found, using dummy regulator
+[    2.331197][  T523] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: DSI pll label = dsi_pll_5nm
+[    2.331273][  T523] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: PLL SSC enabled
+[    2.331281][  T523] dsi_pll_init: PLL base=00000000229bae8b
+[    2.331360][  T523] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    2.331365][  T523] vco_5nm_recalc_rate: handoff_resources true
+[    2.331676][  T523] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    2.331680][  T523] vco_5nm_recalc_rate: handoff_resources true
+[    2.331964][  T523] dsi_pll_clock_register_5nm: Registered DSI PLL ndx=0, clocks successfully
+[    2.332143][  T523] [drm:dsi_phy_driver_probe [msm_drm]] [msm-dsi-info]: DSI_0: Probe successful
+[    2.332213][  T523] dsi_phy ae96400.qcom,mdss_dsi_phy1: ae96400.qcom,mdss_dsi_phy1 supply gdsc not found, using dummy regulator
+[    2.332318][  T523] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_0: DSI pll label = dsi_pll_5nm
+[    2.332377][  T523] [drm:dsi_pll_init [msm_drm]] [msm-dsi-info]: DSI_PLL_1: PLL SSC enabled
+[    2.332383][  T523] dsi_pll_init: PLL base=00000000a94bd05c
+[    2.332420][  T523] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    2.332424][  T523] vco_5nm_recalc_rate: handoff_resources true
+[    2.332603][  T523] dsi_pll_5nm_get_gdsc_status: reg:0xf822f000 status:1
+[    2.332607][  T523] vco_5nm_recalc_rate: handoff_resources true
+[    2.332685][  T523] dsi_pll_clock_register_5nm: Registered DSI PLL ndx=1, clocks successfully
+[    2.332746][  T523] [drm:dsi_phy_driver_probe [msm_drm]] [msm-dsi-info]: DSI_1: Probe successful
+[    2.333655][  T501] [CSPL] Initializing misc device
+[    2.333735][  T501] [ELUS] : (elliptic_driver_init) : elliptic_class creation name chardev
+[    2.334212][  T523] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    2.334303][  T523] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    2.334363][  T523] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    2.334364][  T532] spi_geni 894000.spi: tx_fifo 16 rx_fifo 32 tx_width 32
+[    2.334421][  T523] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    2.334475][  T523] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    2.334630][  T523] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    2.334691][  T523] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    2.334693][  T532] stmvl53l5: device_id : 0xf0. revision_id : 0x2
+[    2.334752][  T523] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    2.334805][  T523] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    2.334854][  T523] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    2.335256][    T8] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    2.335340][    T8] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    2.335401][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    2.335459][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    2.335515][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    2.335962][    T8] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    2.336035][    T8] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    2.336106][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    2.336162][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    2.336215][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    2.359887][  T521] ngd_msm_ctrl 3ac0000.slim: Adding to iommu group 48
+[    2.360216][  T523] msmdrm_smmu soc:qcom,smmu_sde_unsec_cb: Adding to iommu group 49
+[    2.360263][  T523] [drm] probing device qcom,smmu_sde_unsec
+[    2.360268][  T523] [drm] Created domain mdp_ns, secure=0
+[    2.361195][  T523] msmdrm_smmu soc:qcom,smmu_sde_sec_cb: Adding to iommu group 50
+[    2.361202][    T8] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    2.361350][    T8] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    2.361351][  T523] [drm] probing device qcom,smmu_sde_sec
+[    2.361353][  T523] [drm] Created domain mdp_s, secure=1
+[    2.361423][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    2.361479][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    2.361533][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    2.362762][  T523] [drm:sde_dbg_init:2392] evtlog_status: enable:11, panic:1, dump:2
+[    2.364395][    T8] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    2.364518][    T8] [drm:dsi_ctrl_get [msm_drm]] *ERROR* [msm-dsi-error]: inv: Device with of node not found rc=-517
+[    2.364583][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: failed to get dsi controller, rc=-517
+[    2.364641][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: [(null)] failed to initialize resources, rc=-517
+[    2.364695][    T8] [drm:dsi_display_dev_probe [msm_drm]] *ERROR* [msm-dsi-error]: device init failed, rc=-517
+[    2.365125][    T8] [drm:dsi_ctrl_dev_probe [msm_drm]] [msm-dsi-info]: dsi-ctrl-0: Probe successful
+[    2.365433][    T8] [drm:dsi_ctrl_dev_probe [msm_drm]] [msm-dsi-info]: dsi-ctrl-1: Probe successful
+[    2.365831][  T542] g_webcam gadget: uvc: uvc_function_bind()
+[    2.365838][  T542] g_webcam gadget: uvc: Unable to allocate streaming EP
+[    2.365845][  T542] udc dummy_udc.0: failed to start g_webcam: -22
+[    2.370374][    T8] OF: graph: no port node found in /soc/qcom,dsi-display-primary
+[    2.370408][    T8] [xiaomi 38 08 0a cmd mode dsc dsi panel] clk_strength = 101
+[    2.371249][    T8] OF: graph: no port node found in /soc/qcom,dsi-display-secondary
+[    2.371271][    T8] [xiaomi 43 06 00 cmd mode secondary dsi panel] clk_strength default value = 0
+[    2.371482][    T8] [drm:dsi_panel_parse_fod [msm_drm]] [msm-dsi-info]: mi,local-hbm-on-1000nit-51-index not specified
+[    2.381549][  T491] msm-dai-tdm soc:qcom,msm-dai-tdm-hsif0-tx: msm_dai_tdm_q6_probe: group id not supported 0x916f
+[    2.381565][  T491] msm-dai-tdm: probe of soc:qcom,msm-dai-tdm-hsif0-tx failed with error -22
+[    2.385624][    T8] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,smmu_sde_unsec_cb (ops msm_smmu_comp_ops [msm_drm])
+[    2.386086][    T8] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,smmu_sde_sec_cb (ops msm_smmu_comp_ops [msm_drm])
+[    2.386647][    T8] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,wb-display@0 (ops sde_wb_comp_ops [msm_drm])
+[    2.387931][    T8] [drm:dsi_display_bind [msm_drm]] [msm-dsi-info]: Successfully bind display panel 'qcom,mdss_dsi_k2_38_08_0a_mp_dsc_cmd'
+[    2.388084][    T8] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 340, hwirq 82
+[    2.388096][    T8] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 140
+[    2.388108][    T8] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 340 parent hwirq 140
+[    2.389411][    T8] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-primary (ops dsi_display_comp_ops [msm_drm])
+[    2.391329][    T8] [drm:dsi_display_bind [msm_drm]] [msm-dsi-info]: Successfully bind display panel 'qcom,mdss_dsi_k1_43_06_00_sec_cmd'
+[    2.391497][    T8] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 341, hwirq 83
+[    2.391507][    T8] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 141
+[    2.391517][    T8] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 341 parent hwirq 141
+[    2.391750][    T8] sysfs: cannot create duplicate filename '/class/mi_display'
+[    2.391764][    T8] CPU: 0 PID: 8 Comm: kworker/u16:0 Tainted: G S                5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    2.391770][    T8] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    2.391793][    T8] Workqueue: events_unbound deferred_probe_work_func.2b500e852cead69fde05a2b98ceb2fa6.cfi_jt
+[    2.391800][    T8] Call trace:
+[    2.391808][    T8]  dump_backtrace.cfi_jt+0x0/0x4
+[    2.391818][    T8]  show_stack+0x18/0x24
+[    2.391830][    T8]  __dump_stack+0x24/0x30
+[    2.391836][    T8]  dump_stack+0xb0/0xd8
+[    2.391846][    T8]  sysfs_create_dir_ns+0xe0/0x13c
+[    2.391853][    T8]  kobject_add_internal+0x288/0x650
+[    2.391860][    T8]  kset_register+0x58/0x9c
+[    2.391873][    T8]  __class_register+0xcc/0x16c
+[    2.391879][    T8]  __class_create+0x58/0x88
+[    2.392709][    T8]  dsi_mi_display_init+0x48/0xe8 [msm_drm]
+[    2.393187][    T8]  dsi_display_bind+0x890/0x8f0 [msm_drm]
+[    2.393203][    T8]  component_bind_all+0x15c/0x2bc
+[    2.393738][    T8]  msm_drm_bind+0xc8/0x884 [msm_drm]
+[    2.393749][    T8]  try_to_bring_up_master+0x1cc/0x240
+[    2.393756][    T8]  __component_add.llvm.6895397784266821110+0xd0/0x184
+[    2.393761][    T8]  component_add+0x14/0x20
+[    2.394138][    T8]  dsi_display_dev_probe+0x10b4/0x115c [msm_drm]
+[    2.394149][    T8]  platform_drv_probe+0xf8/0x100
+[    2.394156][    T8]  really_probe+0x1e4/0x5a0
+[    2.394161][    T8]  driver_probe_device+0x64/0xa8
+[    2.394168][    T8]  __device_attach_driver+0x130/0x170
+[    2.394173][    T8]  bus_for_each_drv+0xb0/0x11c
+[    2.394180][    T8]  __device_attach.llvm.12744627282597078069+0xec/0x164
+[    2.394185][    T8]  bus_probe_device+0x3c/0xe0
+[    2.394191][    T8]  deferred_probe_work_func+0xb0/0xc8
+[    2.394200][    T8]  process_one_work+0x210/0x4ac
+[    2.394205][    T8]  worker_thread+0x280/0x4dc
+[    2.394212][    T8]  kthread+0x150/0x188
+[    2.394219][    T8]  ret_from_fork+0x10/0x18
+[    2.395904][    T8] kobject_add_internal failed for mi_display with -EEXIST, don't try to register things with the same name in the same directory.
+[    2.396670][    T8] [drm:dsi_mi_display_init [msm_drm]] *ERROR* [msm-dsi-error]: class_create failed, rc: -17
+[    2.397369][    T8] [drm:dsi_mi_display_init [msm_drm]] *ERROR* [msm-dsi-error]: device_create_with_groups failed for disp-DSI-1, ret: -19
+[    2.400562][    T8] msm_drm ae00000.qcom,mdss_mdp: bound soc:qcom,dsi-display-secondary (ops dsi_display_comp_ops [msm_drm])
+[    2.400564][  T582] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 342, hwirq 23
+[    2.400576][  T582] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 84
+[    2.400581][  T582] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 342 parent hwirq 84
+[    2.400591][  T582] [ FTS ] fts_probe: driver spi ver: 5.2.4.1
+[    2.400593][  T582] [ FTS ] SPI interface... 
+[    2.400596][  T582] [ FTS ] SET Device driver INFO: 
+[    2.400610][  T582] [ FTS ] irq_gpio = 331
+[    2.400612][  T582] [ FTS ] pwr_reg_name = avdd
+[    2.400615][  T582] [ FTS ] bus_reg_name = vdd
+[    2.401349][    T8] msm_drm ae00000.qcom,mdss_mdp: bound af20000.qcom,sde_rscc (ops sde_rsc_comp_ops [msm_drm])
+[    2.401349][  T582] [ FTS ] reset_gpio =330
+[    2.401351][  T568] llcc_perfmon: Revision 2, has 1 memory controllers connected with LLCC
+[    2.401355][  T582] [ FTS ] fod-lx:588
+[    2.401366][  T582] [ FTS ] fod ly:2358
+[    2.401369][  T582] [ FTS ] fod size:264
+[    2.401371][  T582] [ FTS ] fod size:264
+[    2.401392][    T8] [drm] mapped mdp address space @00000000adc6e1cd
+[    2.401395][  T582] [ FTS ] parse_dt:tp vendor: 56
+[    2.401395][  T582] [ FTS ] Unable to read tp color
+[    2.401399][  T582] [ FTS ] Unable to read tp module
+[    2.401401][  T582] [ FTS ] Unable to read tp hw version
+[    2.401403][  T582] [ FTS ] parse_dt:fw_name: st_fts_k2.ftb
+[    2.401404][  T582] [ FTS ] parse_dt:limit_name: stm_fts_production_limits.csv
+[    2.401406][  T582] [ FTS ] SET GPIOS: 
+[    2.403274][  T582] [ FTS ] SET Regulators: 
+[    2.403970][  T582] [ FTS ] gpio_num:331, irq:342
+[    2.403980][  T582] [ FTS ] SET Event Handler: 
+[    2.403996][  T582] [ FTS ] SET Input Device Property: 
+[    2.404216][  T582] input: fts as /devices/platform/soc/a8c000.spi/spi_master/spi1/spi1.0/input/input4
+[    2.404286][  T582] [ FTS ] Init Core Lib: 
+[    2.404292][  T582] [ FTS ] initCore: Initialization of the Core... 
+[    2.404298][  T582] [ FTS ] openChannel: spi_master: flags = 0000 !
+[    2.404303][  T582] [ FTS ] openChannel: spi_device: max_speed = 7000000 chip select = 00 bits_per_words = 8 mode = 0000 !
+[    2.404308][  T582] [ FTS ] openChannel: completed! 
+[    2.404317][  T582] [ FTS ] setResetGpio: reset_gpio = 330
+[    2.404321][  T582] [ FTS ] initCore: Initialization Finished! 
+[    2.404326][  T582] [ FTS ] Device Initialization: 
+[    2.404330][  T582] [ FTS ] System resetting...
+[    2.404336][  T582] [ FTS ] Number of disable = 0 
+[    2.404339][  T582] [ FTS ] Executing Disable... 
+[    2.404346][  T582] [ FTS ] Interrupt No Sync Disabled!
+[    2.404597][    T8] [drm:_sde_kms_hw_init_blocks:4743] sde hardware revision:0x70000000
+[    2.404830][    T8] [drm:msm_smmu_new [msm_drm]] *ERROR* unable to find domain 1 compat: qcom,smmu_sde_nrt_unsec
+[    2.404910][    T8] [drm:msm_smmu_new [msm_drm]] *ERROR* unable to find domain 3 compat: qcom,smmu_sde_nrt_sec
+[    2.405990][    T8] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+[    2.406155][    T8] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 2 comp_enc:2 intf: 1
+[    2.406165][  T559] cyttsp5_device_access_init: Parade TTSP Device Access Driver (Built TTDA.03.08.874312) rc=0
+[    2.406457][    T8] [drm:dsi_panel_get_mode [msm_drm]] [msm-dsi-info]: default topology: lm: 1 comp_enc:0 intf: 1
+[    2.407302][    T8] hh_msgq: Registered client for label: 2
+[    2.407814][    T8] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    2.407817][    T8] [drm] No driver support for vblank timestamp query.
+[    2.407961][    T8] [drm] Initialized msm_drm 1.4.0 20130625 for ae00000.qcom,mdss_mdp on minor 0
+[    2.407964][    T8] [drm] cont_splash enabled in 2 of 2 display(s)
+[    2.408156][    T8] [drm:dsi_ctrl_isr_configure [msm_drm]] [msm-dsi-info]: dsi-ctrl-0: IRQ 343 registered
+[    2.408293][    T8] [drm:dsi_ctrl_isr_configure [msm_drm]] [msm-dsi-info]: dsi-ctrl-1: IRQ 344 registered
+[    2.408385][    T8] disp_cc-lahaina af00000.qcom,dispcc: sync-state
+[    2.414484][  T582] spi_geni a8c000.spi: tx_fifo 16 rx_fifo 16 tx_width 32
+[    2.414610][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.416034][  T495] rtc6226: rtc6226_i2c_probe: rtc6226,vdd-load val 0
+[    2.416041][  T495] rtc6226: rtc6226_pinctrl_init: target does not use pinctrl
+[    2.416044][  T495] rtc6226: rtc6226_i2c_probe: rtc6226_pinctrl_init returned -19
+[    2.416705][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.418803][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.420902][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.429272][  T582] [ FTS ] READ EVENT =03 00 00 00 00 00 00 00 
+[    2.431251][  T530] cs35l41 2-0040: Cirrus Logic CS35L41 (35a40), Revision: B2
+[    2.431275][  T582] [ FTS ] FOUND EVENT =03 00 00 00 00 00 00 00 
+[    2.431278][  T582] [ FTS ] Event found in (8 iterations)! Number of errors found = 0 
+[    2.431280][  T582] [ FTS ] System reset DONE!
+[    2.431282][  T582] [ FTS ] readSysInfo: Reading System Info...
+[    2.431356][  T530] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 345, hwirq 116
+[    2.431364][  T530] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 106
+[    2.431373][  T530] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 345 parent hwirq 106
+[    2.431386][  T530] cs35l41 2-0042: cs35l41 i2c probe start
+[    2.431532][  T530] cs35l41 2-0042: 2-0042 supply VA not found, using dummy regulator
+[    2.431607][  T530] cs35l41 2-0042: 2-0042 supply VP not found, using dummy regulator
+[    2.431611][  T582] [ FTS ] readSysInfo: Parsing System Info...
+[    2.431613][  T582] [ FTS ] FW VER = 0084 
+[    2.431615][  T582] [ FTS ] SVN REV = 6393 
+[    2.431617][  T582] [ FTS ] CONFIG VER = 0048 
+[    2.431618][  T582] [ FTS ] CONFIG PROJECT ID = 0000 
+[    2.431620][  T582] [ FTS ] CX VER = FFFF 
+[    2.431622][  T582] [ FTS ] CX PROJECT ID = 0000 
+[    2.431624][  T582] [ FTS ] AFE VER: CFG = 06 - CX = 06 - PANEL = 06 
+[    2.431625][  T582] [ FTS ] Protocol = 00 
+[    2.431628][  T582] [ FTS ] Die Info = 39 38 00 4D 50 30 52 31 06 00 00 00 F0 D2 00 00  
+[    2.431631][  T582] [ FTS ] Release Info = 48 1E 00 00 00 00 00 00 73 BA A9 48 05 35 51 B7  
+[    2.431633][  T582] [ FTS ] Screen Resolution = 3199 x 1439 
+[    2.431635][  T582] [ FTS ] TX Len = 16 
+[    2.431636][  T582] [ FTS ] RX Len = 36 
+[    2.431638][  T582] [ FTS ] Key Len = 0 
+[    2.431640][  T582] [ FTS ] Force Len = 0 
+[    2.431641][  T582] [ FTS ] Parsed 208 bytes! 
+[    2.431643][  T582] [ FTS ] System Info Read DONE!
+[    2.431645][  T582] [ FTS ] fts_get_lockdown_info:enter
+[    2.431647][  T582] [ FTS ] Number of disable = 1 
+[    2.431793][  T530] cs35l41 2-0042: Reset line busy, assuming shared reset
+[    2.442011][  T582] [ FTS ] READ EVENT =43 01 A4 06 70 00 00 00 
+[    2.444018][  T582] [ FTS ] FOUND EVENT =43 01 A4 06 70 00 00 00 
+[    2.444020][  T582] [ FTS ] Event found in (1 iterations)! Number of errors found = 0 
+[    2.444022][  T582] [ FTS ] ECHO OK!
+[    2.444023][  T582] [ FTS ] Echo FOUND... OK!
+[    2.444142][  T582] [ FTS ] fts_get_lockdown_info signature:A5 id:70 70 beforecnt:1,aftercnt:2
+[    2.444145][  T582] [ FTS ] Lockdown Code =
+[    2.444147][  T582] [ FTS ] Number of re-enable = 1 
+[    2.444149][  T582] [ FTS ] Excecuting Enable... 
+[    2.444151][  T582] [ FTS ] Interrupt Enabled!
+[    2.444154][  T582] [ FTS ] Lockdown:0x48,0x38,0x32,0x05,0x48,0x32,0x31,0x01
+[    2.444159][  T582] [ FTS ] FW Update and Sensing Initialization: 
+[    2.444161][  T582] [ FTS ] Fw Auto Update is starting... 
+[    2.444249][  T582] [ FTS ] fts_crc_check: Verifying if Config CRC Error...
+[    2.444251][  T582] [ FTS ] System resetting...
+[    2.444253][  T582] [ FTS ] Number of disable = 0 
+[    2.444255][  T582] [ FTS ] Executing Disable... 
+[    2.444256][  T582] [ FTS ] Interrupt No Sync Disabled!
+[    2.451114][  T351] msm_pcie_enable: PCIe: Assert the reset of endpoint of RC0.
+[    2.454370][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.454438][  T351] msm_pcie_enable: PCIe: RC0: PCIE20_PARF_INT_ALL_MASK: 0x7f80c202
+[    2.456468][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.456551][  T351] pcie_phy_init: PCIe RC0 PHY is ready!
+[    2.458560][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.460655][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.466578][  T351] msm_pcie_enable: PCIe: Release the reset of endpoint of RC0.
+[    2.469040][  T582] [ FTS ] READ EVENT =03 00 00 00 00 00 00 00 
+[    2.471042][  T582] [ FTS ] FOUND EVENT =03 00 00 00 00 00 00 00 
+[    2.471044][  T582] [ FTS ] Event found in (8 iterations)! Number of errors found = 0 
+[    2.471046][  T582] [ FTS ] System reset DONE!
+[    2.471048][  T582] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    2.471050][  T582] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    2.471051][  T582] [ FTS ] fts_crc_check: No Config CRC Error Found! 
+[    2.471053][  T582] [ FTS ] fts_crc_check: Verifying if Cx CRC Error...
+[    2.471055][  T582] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    2.471056][  T582] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    2.471058][  T582] [ FTS ] fts_crc_check: No Cx CRC Error Found! 
+[    2.471060][  T582] [ FTS ] fts_fw_update: NO CRC Error or Impossible to read CRC register! 
+[    2.471062][  T582] [ FTS ] fts_get_lockdown_info aleady get,skip
+[    2.471063][  T582] [ FTS ] Number of re-enable = 1 
+[    2.471065][  T582] [ FTS ] Excecuting Enable... 
+[    2.471067][  T582] [ FTS ] Interrupt Enabled!
+[    2.471069][  T582] [ FTS ] Choose config 0: st_fts_k2.ftb
+[    2.471070][  T582] [ FTS ] Reading Fw file...
+[    2.471073][  T582] [ FTS ] getFWdata starting ...
+[    2.471074][  T582] [ FTS ] Read FW from BIN file st_fts_k2.ftb !
+[    2.471096][  T582] fts spi1.0: Direct firmware load for st_fts_k2.ftb failed with error -2
+[    2.471099][  T582] fts spi1.0: Falling back to sysfs fallback for: st_fts_k2.ftb
+[    2.483169][  T351] msm_pcie_link_train: PCIe RC0 link initialized
+[    2.483213][  T351] pci-msm 1c00000.qcom,pcie: host bridge /soc/qcom,pcie@1c00000 ranges:
+[    2.483224][  T351] pci-msm 1c00000.qcom,pcie:   No bus range found for /soc/qcom,pcie@1c00000, using [bus 00-ff]
+[    2.483243][  T351] pci-msm 1c00000.qcom,pcie:    IO 0x60200000..0x602fffff -> 0x60200000
+[    2.483255][  T351] pci-msm 1c00000.qcom,pcie:   MEM 0x60300000..0x63ffffff -> 0x60300000
+[    2.483308][  T351] MSI interrupts mask disabled:1
+[    2.483316][  T351] pci-msm 1c00000.qcom,pcie: MSI: qgic controller is present
+[    2.484726][  T351] pci-msm 1c00000.qcom,pcie: PCI host bridge to bus 0000:00
+[    2.484734][  T351] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    2.484743][  T351] pci_bus 0000:00: root bus resource [io  0x0000-0xfffff] (bus address [0x60200000-0x602fffff])
+[    2.484749][  T351] pci_bus 0000:00: root bus resource [mem 0x60300000-0x63ffffff]
+[    2.484795][  T351] pci 0000:00:00.0: [17cb:010c] type 01 class 0x060400
+[    2.484872][  T351] pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    2.485101][  T351] pci 0000:00:00.0: PME# supported from D0 D3hot D3cold
+[    2.499804][  T530] cs35l41 2-0042: Cirrus Logic CS35L41 (35a40), Revision: B2
+[    2.502553][  T351] pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    2.502772][  T351] pci 0000:01:00.0: [17cb:1103] type 00 class 0x028000
+[    2.502892][  T351] pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x001fffff 64bit]
+[    2.503286][  T351] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    2.503375][  T351] pci 0000:01:00.0: 4.000 Gb/s available PCIe bandwidth, limited by 5 GT/s x1 link at 0000:00:00.0 (capable of 7.876 Gb/s with 8 GT/s x1 link)
+[    2.514571][  T351] pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+[    2.514583][  T351] pci 0000:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01] add_size 1000
+[    2.514586][  T351] pci 0000:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01] add_size 200000 add_align 100000
+[    2.514591][  T351] pci 0000:00:00.0: BAR 8: assigned [mem 0x60400000-0x605fffff]
+[    2.514594][  T351] pci 0000:00:00.0: BAR 9: assigned [mem 0x60600000-0x607fffff 64bit pref]
+[    2.514597][  T351] pci 0000:00:00.0: BAR 0: assigned [mem 0x60300000-0x60300fff 64bit]
+[    2.514609][  T351] pci 0000:00:00.0: BAR 7: assigned [io  0x1000-0x1fff]
+[    2.514613][  T351] pci 0000:01:00.0: BAR 0: assigned [mem 0x60400000-0x605fffff 64bit]
+[    2.514641][  T351] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    2.514644][  T351] pci 0000:00:00.0:   bridge window [io  0x1000-0x1fff]
+[    2.514651][  T351] pci 0000:00:00.0:   bridge window [mem 0x60400000-0x605fffff]
+[    2.514656][  T351] pci 0000:00:00.0:   bridge window [mem 0x60600000-0x607fffff 64bit pref]
+[    2.514909][  T351] pci-msm-rc 0000:00:00.0: Adding to iommu group 51
+[    2.515065][  T505] msm_pcie_enumerate: PCIe: RC0: has already been enumerated.
+[    2.516442][  T351] cnss_pci 0000:01:00.0: Adding to iommu group 52
+[    2.516470][  T351] cnss_pci 0000:01:00.0: assigned reserved memory node cnss_wlan_region
+[    2.516574][  T351] cnss2 b0000000.qcom,cnss-qca6490: for wlan segments only will be dumped.
+[    2.516613][  T351] cnss_pci 0000:01:00.0: BAR 0: assigned [mem 0x60400000-0x605fffff 64bit]
+[    2.516650][  T351] pci-msm-rc 0000:00:00.0: enabling device (0006 -> 0007)
+[    2.516714][  T351] cnss_pci 0000:01:00.0: enabling device (0000 -> 0002)
+[    2.552707][  T345] subsys-pil-tz soc:qcom,ipa_fws: ipa_fws: Brought out of reset
+[    2.552725][  T345] subsys-pil-tz: subsys_powerup(): pil_boot is successful from ipa_fws and waiting for error ready
+[    2.552752][  T345] IPA FW loaded successfully
+[    2.552766][  T345] gsi soc:qcom,msm_gsi: gsi_pending_irq_type:3076 no client registered
+[    2.553843][  T345] gsi soc:qcom,msm_gsi: gsi_register_device:1233 GSI irq is wake enabled 36
+[    2.556907][  T505] rmnet_ipa3 started initialization
+[    2.556916][  T505] IPA SSR support = True
+[    2.556921][  T505] IPA SG support = True
+[    2.556925][  T505] IPA Napi Enable = True
+[    2.556930][  T505] using default for wan-rx-desc-size = 256
+[    2.557216][  T505] ipa-wan ipa3_wwan_register_netdev_pm_client:2562 rmnet_ipa%d register done
+[    2.557566][  T505] ipa-wan ipa3_wwan_probe:2738 rmnet_ipa completed initialization
+[    2.557927][  T345] ipa ipa3_rmnet_ctl_register_pm_client:678 rmnet_ctl register done
+[    2.557993][  T345] IPA driver is now in ready state
+[    2.557997][  T345] IPA driver initialization was successful.
+[    2.632273][  T351] msm_pcie_disable: PCIe: Assert the reset of endpoint of RC0.
+[    2.633038][  T351] cnss: Platform driver probed successfully.
+[    2.634871][  T530] modprobe (530) used greatest stack depth: 11040 bytes left
+[    2.638280][  T573] cyttsp5_loader_init: Parade TTSP FW Loader Driver (Built TTDA.03.08.874312) rc=0
+[    2.640449][  T532] modprobe (532) used greatest stack depth: 10496 bytes left
+[    2.652364][  T559] gpio gpiochip0: (f000000.pinctrl): allocate IRQ 378, hwirq 31
+[    2.652374][  T559] gpio gpiochip0: (f000000.pinctrl): found parent hwirq 85
+[    2.652380][  T559] gpio gpiochip0: (f000000.pinctrl): alloc_irqs_parent for 378 parent hwirq 85
+[    2.652389][  T559] cyttsp5 loader and device_access is init
+[    2.652389][  T559] cyttsp5_i2c_probe: Start probe!
+[    2.652416][  T559] cyttsp5_probe: start probe core.
+[    2.652425][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_probe: Init HW
+[    2.652957][  T559] cyttsp5_init: cyttsp5 pinctrl/gpio/regulator init successful!
+[    2.652959][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_probe: Detect HW
+[    2.657477][  T514] wlan: module is from the staging directory, the quality is unknown, you have been warned.
+[    2.664197][   T28] modprobe (491): highest shadow stack usage: 360 bytes
+[    2.664319][   T28] modprobe (530): highest shadow stack usage: 384 bytes
+[    2.677903][  T514] wlan_hdd_state wlan major(470) initialized
+[    2.680079][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_xres: RESET CYTTSP gpio=433 r=0
+[    2.700539][  T548] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_ife: Adding to iommu group 53
+[    2.700747][  T548] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_jpeg: Adding to iommu group 54
+[    2.700982][  T548] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_icp: Adding to iommu group 55
+[    2.701164][  T548] msm_cam_smmu soc:qcom,cam_smmu:msm_cam_smmu_cpas_cdm: Adding to iommu group 56
+[    2.701533][  T548] lahaina-gcc 100000.qcom,gcc: sync-state
+[    2.709573][  T548] lahaina-cam_cc ad00000.qcom,camcc: sync-state
+[    2.709949][  T548] CAM_WARN: CAM-MEM: cam_req_mgr_debug_register: 139 DebugFS not enabled in kernel!
+[    2.709981][  T548] CAM_INFO: CAM-CRM: cam_req_mgr_component_master_bind: 871 All probes done, binding slave components
+[    2.710048][  T548] CAM_WARN: CAM-SYNC: cam_sync_create_debugfs: 1071 DebugFS not enabled in kernel!
+[    2.710051][  T548] synx: registered bind ops type 0 for cam_sync
+[    2.710127][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam-sync (ops cam_sync_component_ops [camera])
+[    2.710131][  T548] CAM_WARN: CAM-SMMU: cam_smmu_create_debug_fs: 4191 DebugFS not enabled in kernel!
+[    2.710184][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam_smmu (ops cam_smmu_component_ops [camera])
+[    2.710245][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam_smmu:msm_cam_smmu_ife (ops cam_smmu_cb_component_ops [camera])
+[    2.710300][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam_smmu:msm_cam_smmu_jpeg (ops cam_smmu_cb_component_ops [camera])
+[    2.710348][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam_smmu:msm_cam_icp_fw (ops cam_smmu_fw_dev_component_ops [camera])
+[    2.710359][  T548] CAM_INFO: CAM-SMMU: cam_smmu_get_memory_regions_info: 4026 [icp] : Discard region specified [0xdff00000 0xe0200000] in [0x10c00000 0xfef00000]
+[    2.710413][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam_smmu:msm_cam_smmu_icp (ops cam_smmu_cb_component_ops [camera])
+[    2.710462][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam_smmu:msm_cam_smmu_cpas_cdm (ops cam_smmu_cb_component_ops [camera])
+[    2.710509][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam_smmu:msm_cam_smmu_secure (ops cam_smmu_cb_component_ops [camera])
+[    2.710720][  T548] CAM_INFO: CAM-CPAS: cam_cpas_get_hw_features: 489 No or invalid fuse entries count: -22
+[    2.711678][  T548] CAM_WARN: CAM-CPAS: cam_cpas_util_create_debugfs: 2414 DebugFS not enabled in kernel!
+[    2.711681][  T548] CAM_INFO: CAM-CPAS: cam_cpas_hw_get_hw_info: 1861 fuse info->num_fuses 0
+[    2.711762][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac40000.qcom,cam-cpas (ops cam_cpas_dev_component_ops [camera])
+[    2.711915][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam-cdm-intf (ops cam_cdm_intf_component_ops [camera])
+[    2.715072][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4d000.qcom,cpas-cdm0 (ops cam_hw_cdm_component_ops [camera])
+[    2.718496][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acb4200.qcom,ife-cdm0 (ops cam_hw_cdm_component_ops [camera])
+[    2.721880][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acc3200.qcom,ife-cdm1 (ops cam_hw_cdm_component_ops [camera])
+[    2.725291][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acef200.qcom,ife-cdm2 (ops cam_hw_cdm_component_ops [camera])
+[    2.726140][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac97000.qcom,tpg0 (ops cam_top_tpg_component_ops [camera])
+[    2.726970][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac98000.qcom,tpg1 (ops cam_top_tpg_component_ops [camera])
+[    2.727136][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acb5200.qcom,csid0 (ops cam_ife_csid_component_ops [camera])
+[    2.727296][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acc4200.qcom,csid1 (ops cam_ife_csid_component_ops [camera])
+[    2.727447][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acf0200.qcom,csid2 (ops cam_ife_csid_component_ops [camera])
+[    2.727580][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acd9200.qcom,csid-lite0 (ops cam_ife_csid_component_ops [camera])
+[    2.727709][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acdb400.qcom,csid-lite1 (ops cam_ife_csid_component_ops [camera])
+[    2.728660][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acb4000.qcom,ife0 (ops cam_vfe_component_ops [camera])
+[    2.729599][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acc3000.qcom,ife1 (ops cam_vfe_component_ops [camera])
+[    2.730530][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acef000.qcom,ife2 (ops cam_vfe_component_ops [camera])
+[    2.731359][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acd9000.qcom,ife-lite0 (ops cam_vfe_component_ops [camera])
+[    2.732163][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound acdb200.qcom,ife-lite1 (ops cam_vfe_component_ops [camera])
+[    2.732277][  T548] CAM_ERR: CAM-ISP: cam_vfe_hw_init: 228 inval param
+[    2.732279][  T548] CAM_ERR: CAM-ISP: cam_vfe_hw_init: 228 inval param
+[    2.732322][  T548] CAM_WARN: CAM-ISP: cam_ife_hw_mgr_debug_register: 8248 DebugFS not enabled in kernel!
+[    2.732333][  T548] CAM_WARN: CAM-ISP: cam_isp_context_debug_register: 6357 DebugFS not enabled in kernel!
+[    2.732428][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam-isp (ops cam_isp_dev_component_ops [camera])
+[    2.732434][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 829 number of pctrl_gpio: 7
+[    2.732436][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 843 shared-pctrl-gpio-names[0] = cam_wide
+[    2.732438][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 843 shared-pctrl-gpio-names[1] = cam_wide
+[    2.732440][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 843 shared-pctrl-gpio-names[2] = cam_wide
+[    2.732442][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 843 shared-pctrl-gpio-names[3] = cam_wide
+[    2.732444][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 843 shared-pctrl-gpio-names[4] = cam_tele5x
+[    2.732446][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 843 shared-pctrl-gpio-names[5] = cam_tele5x
+[    2.732448][  T548] CAM_INFO: CAM-RES: cam_res_mgr_parse_dt_shared_pinctrl_gpio: 843 shared-pctrl-gpio-names[6] = cam_tele5x
+[    2.732614][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam-res-mgr (ops cam_res_mgr_component_ops [camera])
+[    2.732937][  T548] CAM_WARN: CAM-CCI: cam_cci_create_debugfs_entry: 427 DebugFS not enabled
+[    2.732992][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4f000.qcom,cci0 (ops cam_cci_component_ops [camera])
+[    2.733284][  T548] CAM_WARN: CAM-CCI: cam_cci_create_debugfs_entry: 438 DebugFS not enabled
+[    2.733336][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1 (ops cam_cci_component_ops [camera])
+[    2.733466][  T548] CAM_WARN: CAM-CSIPHY: cam_csiphy_debug_register: 66 DebugFS not enabled in kernel!
+[    2.733516][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac6a000.qcom,csiphy0 (ops cam_csiphy_component_ops [camera])
+[    2.733627][  T548] CAM_WARN: CAM-CSIPHY: cam_csiphy_debug_register: 66 DebugFS not enabled in kernel!
+[    2.733677][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac6c000.qcom,csiphy1 (ops cam_csiphy_component_ops [camera])
+[    2.733788][  T548] CAM_WARN: CAM-CSIPHY: cam_csiphy_debug_register: 66 DebugFS not enabled in kernel!
+[    2.733837][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac6e000.qcom,csiphy2 (ops cam_csiphy_component_ops [camera])
+[    2.733946][  T548] CAM_WARN: CAM-CSIPHY: cam_csiphy_debug_register: 66 DebugFS not enabled in kernel!
+[    2.733995][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac70000.qcom,csiphy3 (ops cam_csiphy_component_ops [camera])
+[    2.734119][  T548] CAM_WARN: CAM-CSIPHY: cam_csiphy_debug_register: 66 DebugFS not enabled in kernel!
+[    2.734169][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac72000.qcom,csiphy4 (ops cam_csiphy_component_ops [camera])
+[    2.734277][  T548] CAM_WARN: CAM-CSIPHY: cam_csiphy_debug_register: 66 DebugFS not enabled in kernel!
+[    2.734326][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac74000.qcom,csiphy5 (ops cam_csiphy_component_ops [camera])
+[    2.734432][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4f000.qcom,cci0:qcom,actuator0 (ops cam_actuator_component_ops [camera])
+[    2.734514][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1:qcom,actuator2 (ops cam_actuator_component_ops [camera])
+[    2.734590][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1:qcom,actuator3 (ops cam_actuator_component_ops [camera])
+[    2.734795][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4f000.qcom,cci0:qcom,cam-sensor0 (ops cam_sensor_component_ops [camera])
+[    2.734957][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4f000.qcom,cci0:qcom,cam-sensor1 (ops cam_sensor_component_ops [camera])
+[    2.735147][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1:qcom,cam-sensor2 (ops cam_sensor_component_ops [camera])
+[    2.735352][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1:qcom,cam-sensor3 (ops cam_sensor_component_ops [camera])
+[    2.735528][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4f000.qcom,cci0:qcom,eeprom0 (ops cam_eeprom_component_ops [camera])
+[    2.735672][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4f000.qcom,cci0:qcom,eeprom1 (ops cam_eeprom_component_ops [camera])
+[    2.735848][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1:qcom,eeprom2 (ops cam_eeprom_component_ops [camera])
+[    2.736034][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1:qcom,eeprom3 (ops cam_eeprom_component_ops [camera])
+[    2.736225][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac4f000.qcom,cci0:qcom,ois0 (ops cam_ois_component_ops [camera])
+[    2.736427][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac50000.qcom,cci1:qcom,ois1 (ops cam_ois_component_ops [camera])
+[    2.736433][  T548] CAM_ERR: CAM-FLASH: cam_get_source_node_info: 80 flash-type read failed rc=-22
+[    2.736468][  T548] CAM_WARN: CAM-FLASH: cam_get_source_node_info: 265 op-current prop unavailable: -22
+[    2.736474][  T548] CAM_WARN: CAM-FLASH: cam_get_source_node_info: 265 op-current prop unavailable: -22
+[    2.736536][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,camera-flash@0 (ops cam_flash_component_ops [camera])
+[    2.736540][  T548] CAM_ERR: CAM-FLASH: cam_get_source_node_info: 80 flash-type read failed rc=-22
+[    2.736545][  T548] CAM_WARN: CAM-FLASH: cam_get_source_node_info: 265 op-current prop unavailable: -22
+[    2.736547][  T548] CAM_WARN: CAM-FLASH: cam_get_source_node_info: 265 op-current prop unavailable: -22
+[    2.736608][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,camera-flash@2 (ops cam_flash_component_ops [camera])
+[    2.736612][  T548] CAM_ERR: CAM-FLASH: cam_get_source_node_info: 80 flash-type read failed rc=-22
+[    2.736616][  T548] CAM_WARN: CAM-FLASH: cam_get_source_node_info: 265 op-current prop unavailable: -22
+[    2.736619][  T548] CAM_WARN: CAM-FLASH: cam_get_source_node_info: 265 op-current prop unavailable: -22
+[    2.736677][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,camera-flash@3 (ops cam_flash_component_ops [camera])
+[    2.736812][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac00000.qcom,a5 (ops cam_a5_component_ops [camera])
+[    2.736897][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac9a000.qcom,ipe0 (ops cam_ipe_component_ops [camera])
+[    2.736981][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac7a000.qcom,bps (ops cam_bps_component_ops [camera])
+[    2.737949][  T548] CAM_WARN: CAM-ICP: cam_icp_hw_mgr_create_debugfs_entry: 1939 DebugFS not enabled in kernel!
+[    2.738061][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam-icp (ops cam_icp_component_ops [camera])
+[    2.738197][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac53000.qcom,jpegenc (ops cam_jpeg_enc_component_ops [camera])
+[    2.738323][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound ac57000.qcom,jpegdma (ops cam_jpeg_dma_component_ops [camera])
+[    2.738687][  T548] CAM_WARN: CAM-JPEG: cam_jpeg_mgr_create_debugfs_entry: 1883 DebugFS not enabled in kernel!
+[    2.738765][  T548] cam_req_mgr soc:qcom,cam-req-mgr: bound soc:qcom,cam-jpeg (ops cam_jpeg_dev_component_ops [camera])
+[    2.740080][  T548] CAM_INFO: CAM-UTIL: camera_init: 286 Spectra camera driver initialized
+[    2.742173][  T548] modprobe (548) used greatest stack depth: 9048 bytes left
+[    2.764104][   T22] modprobe (548): highest shadow stack usage: 456 bytes
+[    2.784174][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_irq_gpio: initialize threaded irq=378
+[    2.784419][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_probe: add sysfs interfaces
+[    2.784532][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_probe: call startup
+[    2.812188][  T582] [ FTS ] getFWdata Finished!
+[    2.812191][  T582] [ FTS ] parseBinFile: Fw Signature OK!
+[    2.812194][  T582] [ FTS ] parseBinFile: ftb_version OK!
+[    2.812198][  T582] [ FTS ] parseBinFile: Wrong target 36 != 36  39 != 40 ... ERROR 80000009
+[    2.812202][  T582] [ FTS ] readFwFile: impossible parse ERROR 80070000
+[    2.812204][  T582] [ FTS ] flashProcedure: ERROR 82070009
+[    2.812207][  T582] [ FTS ] fts_fw_update: firmware update failed and retry! ERROR 82070009
+[    2.812209][  T582] [ FTS ] fts_chip_powercycle: Power Cycle Starting... 
+[    2.812211][  T582] [ FTS ] fts_chip_powercycle: Disabling IRQ... 
+[    2.812213][  T582] [ FTS ] Number of disable = 0 
+[    2.812215][  T582] [ FTS ] Executing Disable... 
+[    2.812218][  T582] [ FTS ] Interrupt No Sync Disabled!
+[    2.828576][  T582] [ FTS ] fts_chip_powercycle: Power Cycle Finished! ERROR CODE = 00000000
+[    2.828578][  T582] [ FTS ] Reading Fw file...
+[    2.828580][  T582] [ FTS ] getFWdata starting ...
+[    2.828582][  T582] [ FTS ] Read FW from BIN file st_fts_k2.ftb !
+[    2.828596][  T582] fts spi1.0: Direct firmware load for st_fts_k2.ftb failed with error -2
+[    2.828599][  T582] fts spi1.0: Falling back to sysfs fallback for: st_fts_k2.ftb
+[    2.888781][  T672] cyttsp5_i2c_adapter 0-0024: cyttsp5_parse_input: Reset complete
+[    2.888809][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_startup_: Bootloader mode
+[    2.890207][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_startup_: Panel ID: 0xFF
+[    2.894146][  T672] cyttsp5_i2c_adapter 0-0024: cyttsp5_parse_input: Reset complete
+[    2.895360][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_startup_: Operational mode
+[    2.895368][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_startup_: Reading report descriptor
+[    2.901616][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_get_report_descriptor_: 8 reports found in descriptor
+[    2.901627][  T559] cyttsp5_i2c_adapter 0-0024: Features: easywake:1 noise_metric:1 tracking_heatmap:1 sensor_data:1
+[    2.901639][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_get_report_descriptor_: 0 reports found in descriptor
+[    2.944780][  T582] [ FTS ] getFWdata Finished!
+[    2.944783][  T582] [ FTS ] parseBinFile: Fw Signature OK!
+[    2.944784][  T582] [ FTS ] parseBinFile: ftb_version OK!
+[    2.944786][  T582] [ FTS ] parseBinFile: Wrong target 36 != 36  39 != 40 ... ERROR 80000009
+[    2.944789][  T582] [ FTS ] readFwFile: impossible parse ERROR 80070000
+[    2.944790][  T582] [ FTS ] flashProcedure: ERROR 82070009
+[    2.944792][  T582] [ FTS ] fts_fw_update: firmware update failed again!  ERROR 82070009
+[    2.944794][  T582] [ FTS ] Fw Auto Update Failed!
+[    2.944795][  T582] [ FTS ] fts_fw_update: Verifying if CX CRC Error...
+[    2.944797][  T582] [ FTS ] System resetting...
+[    2.944799][  T582] [ FTS ] Number of disable = 1 
+[    2.944801][  T582] [ FTS ] Interrupt No Sync Disabled!
+[    2.955046][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.957154][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.959268][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.961386][  T582] [ FTS ] READ EVENT =FF FF FF FF FF FF FF FF 
+[    2.969798][  T582] [ FTS ] READ EVENT =03 00 00 00 00 00 00 00 
+[    2.971801][  T582] [ FTS ] FOUND EVENT =03 00 00 00 00 00 00 00 
+[    2.971803][  T582] [ FTS ] Event found in (8 iterations)! Number of errors found = 0 
+[    2.971805][  T582] [ FTS ] System reset DONE!
+[    2.971806][  T582] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    2.971808][  T582] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    2.971810][  T582] [ FTS ] fts_fw_update: No Cx CRC Error Found! 
+[    2.971812][  T582] [ FTS ] fts_fw_update: Verifying if Panel CRC Error... 
+[    2.971814][  T582] [ FTS ] pollForErrorType: Starting to poll ErrorList... count = 0 
+[    2.971815][  T582] [ FTS ] pollForErrorType: Error Type Not Found into ErrorList! ERROR 80000007 
+[    2.971817][  T582] [ FTS ] fts_fw_update: No Panel CRC Error Found! 
+[    2.971821][  T582] [ FTS ] Number of disable = 1 
+[    2.971822][  T582] [ FTS ] Interrupt Mode
+[    2.971942][  T582] [ FTS ] fts_mode_handler: Mode Handler starting... 
+[    2.971944][  T582] [ FTS ] fts_mode_handler: Screen ON... 
+[    2.971946][  T582] [ FTS ] fts_mode_handler: Sense ON
+[    2.971948][  T582] [ FTS ] setScanMode: Setting scan mode: mode = 00 settings = 01 !
+[    2.972032][  T582] [ FTS ] setScanMode: Setting scan mode OK!
+[    2.972105][  T582] [ FTS ] fts_mode_handler: Mode Handler finished! res = 00000000 mode = 00000000 
+[    2.972107][  T582] [ FTS ] setScanMode: Setting scan mode: mode = 00 settings = 00 !
+[    2.972184][  T582] [ FTS ] setScanMode: Setting scan mode OK!
+[    3.010767][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: pip_ver_major =0x01 (1)
+[    3.010775][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: pip_ver_minor =0x06 (6)
+[    3.010781][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: fw_pid =0x0007 (7)
+[    3.010787][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: fw_ver_major =0x01 (1)
+[    3.010793][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: fw_ver_minor =0x0A (10)
+[    3.010800][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: revctrl =0x000EE978 (977272)
+[    3.010805][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: fw_ver_conf =0x0007 (7)
+[    3.010811][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: bl_ver_major =0x02 (2)
+[    3.010817][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: bl_ver_minor =0x00 (0)
+[    3.010823][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: jtag_id_h =0x0B20 (2848)
+[    3.010829][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: jtag_id_l =0x229B (8859)
+[    3.010835][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[0] =0xA3 (163)
+[    3.010841][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[1] =0x8E (142)
+[    3.010847][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[2] =0x5B (91)
+[    3.010853][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[3] =0x16 (22)
+[    3.010859][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[4] =0x3D (61)
+[    3.010865][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[5] =0x10 (16)
+[    3.010871][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[6] =0x0B (11)
+[    3.010876][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: mfg_id[7] =0x00 (0)
+[    3.010883][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: post_code =0x031E (798)
+[    3.010888][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: electrodes_x =0x03 (3)
+[    3.010894][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: electrodes_y =0x07 (7)
+[    3.010900][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: len_x =0x044E (1102)
+[    3.010905][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: len_y =0x0A08 (2568)
+[    3.010911][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: res_x =0x007E (126)
+[    3.010917][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: res_y =0x0126 (294)
+[    3.010923][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: max_z =0x00FF (255)
+[    3.010928][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: origin_x =0x02 (2)
+[    3.010934][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: origin_y =0x01 (1)
+[    3.010939][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: panel_id =0x47 (71)
+[    3.010945][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: btn =0x00 (0)
+[    3.010951][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: scan_mode =0x03 (3)
+[    3.010956][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: max_num_of_tch_per_refresh_cycle =0x01 (1)
+[    3.010963][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: xy_mode =0000000028947485
+[    3.010969][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_si_put_log_data: xy_data =000000000d89c911
+[    3.010975][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5 Protocol Version: 1.6
+[    3.022190][  T582] [ FTS ] setScanMode: Setting scan mode: mode = 00 settings = 01 !
+[    3.022270][  T582] [ FTS ] setScanMode: Setting scan mode OK!
+[    3.022288][  T582] [ FTS ] Number of re-enable = 1 
+[    3.022289][  T582] [ FTS ] Excecuting Enable... 
+[    3.022297][  T582] [ FTS ] Interrupt Enabled!
+[    3.022299][  T582] [ FTS ] Fw Update Finished! error = 00000000
+[    3.022300][  T582] [ FTS ] SET Device File Nodes: 
+[    3.022324][  T582] [ FTS ] fts_proc_init: proc entry CREATED! 
+[    3.022532][  T582] xiaomitouch_register_modedata
+[    3.022650][  T675] [ FTS ] fts_status_event_handler Mutual negative detect Force cal = 01 00 00 00 00 02
+[    3.022657][  T675] [ FTS ] fts_status_event_handler Echo event of command = A0 00 01 00 00 01
+[    3.022663][  T675] [ FTS ] fts_status_event_handler Echo event of command = A2 03 00 00 00 00
+[    3.022767][  T582] [ FTS ] fts_read_touchmode_data: game_mode:0, active_mode:1, up_threshold:0, landlock:0, wgh:3, 201, 182
+[    3.022772][  T582] [ FTS ] fts_init_touchmode_data: mode:0, set cur:0, get cur:0, def:0 min:0 max:1
+[    3.022774][  T582] [ FTS ] fts_init_touchmode_data: mode:1, set cur:1, get cur:1, def:0 min:0 max:1
+[    3.022777][  T582] [ FTS ] fts_init_touchmode_data: mode:2, set cur:4, get cur:4, def:4 min:1 max:5
+[    3.022779][  T582] [ FTS ] fts_init_touchmode_data: mode:3, set cur:3, get cur:3, def:3 min:1 max:5
+[    3.022781][  T582] [ FTS ] fts_init_touchmode_data: mode:4, set cur:3, get cur:3, def:3 min:1 max:5
+[    3.022783][  T582] [ FTS ] fts_init_touchmode_data: mode:5, set cur:3, get cur:3, def:3 min:1 max:5
+[    3.022785][  T582] [ FTS ] fts_init_touchmode_data: mode:6, set cur:1, get cur:1, def:1 min:1 max:3
+[    3.022787][  T582] [ FTS ] fts_init_touchmode_data: mode:7, set cur:2, get cur:2, def:2 min:0 max:3
+[    3.022789][  T582] [ FTS ] fts_init_touchmode_data: mode:8, set cur:0, get cur:0, def:0 min:0 max:3
+[    3.022792][  T582] [ FTS ] fts_init_touchmode_data: mode:9, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022794][  T582] [ FTS ] fts_init_touchmode_data: mode:10, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022796][  T582] [ FTS ] fts_init_touchmode_data: mode:11, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022798][  T582] [ FTS ] fts_init_touchmode_data: mode:12, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022800][  T582] [ FTS ] fts_init_touchmode_data: mode:13, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022802][  T582] [ FTS ] fts_init_touchmode_data: mode:14, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022804][  T582] [ FTS ] fts_init_touchmode_data: mode:15, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022805][  T582] [ FTS ] fts_init_touchmode_data: mode:16, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022807][  T582] [ FTS ] fts_init_touchmode_data: mode:17, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022809][  T582] [ FTS ] fts_init_touchmode_data: mode:18, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022811][  T582] [ FTS ] fts_init_touchmode_data: mode:19, set cur:0, get cur:0, def:0 min:0 max:0
+[    3.022812][  T582] [ FTS ] Probe Finished! 
+[    3.044185][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_get_ic_crc_: CRC: ebid:0, crc:0xE6AD
+[    3.049867][  T675] [ FTS ] fts_status_event_handler Mutual negative detect Force cal = 01 00 00 00 00 01
+[    3.049875][  T675] [ FTS ] fts_status_event_handler Echo event of command = A0 00 01 00 00 00
+[    3.074342][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_core_rt_suspend successful!
+[    3.074357][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=35 min=0 max=125
+[    3.074364][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=36 min=0 max=293
+[    3.074370][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=3A min=0 max=255
+[    3.074375][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=39 min=0 max=15
+[    3.074381][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=30 min=0 max=255
+[    3.074387][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=31 min=0 max=255
+[    3.074393][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=34 min=-127 max=127
+[    3.074399][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=37 min=0 max=1
+[    3.074404][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_input_device: register signal=3B min=0 max=255
+[    3.074535][  T559] input: cyttsp5_mt as /devices/platform/soc/990000.i2c/i2c-0/0-0024/input/input5
+[    3.096059][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_core_rt_resume successful!
+[    3.096068][  T559] cyttsp5_i2c_adapter 0-0024: _cyttsp5_subscribe_attention from '0-0024'
+[    3.096073][  T559] cyttsp5_i2c_adapter 0-0024: _cyttsp5_subscribe_attention from '0-0024'
+[    3.096079][  T559] cyttsp5_i2c_adapter 0-0024: _cyttsp5_subscribe_attention from '0-0024'
+[    3.096085][  T559] cyttsp5_i2c_adapter 0-0024: _cyttsp5_subscribe_attention from '0-0024'
+[    3.096090][  T559] cyttsp5_i2c_adapter 0-0024: _cyttsp5_subscribe_attention from '0-0024'
+[    3.096161][  T559] cyttsp5_i2c_adapter 0-0024: _cyttsp5_subscribe_attention from '0-0024'
+[    3.096168][  T559] cyttsp5_i2c_adapter 0-0024: _cyttsp5_subscribe_attention from '0-0024'
+[    3.096181][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_loader_probe: Successful probe 0-0024
+[    3.096231][  T559] cyttsp5_i2c_adapter 0-0024: cyttsp5_setup_sysfs: Error, could not create base directory
+[    3.096245][  T559] xiaomitouch_register_modedata
+[    3.097360][   T66] cyttsp5_i2c_adapter 0-0024: generate_firmware_filename: Filename: cyttsp5_fw.bin
+[    3.097672][  T677] cyttsp5_i2c_adapter 0-0024: Direct firmware load for cyttsp5_fw.bin failed with error -2
+[    3.097680][  T677] cyttsp5_i2c_adapter 0-0024: Falling back to sysfs fallback for: cyttsp5_fw.bin
+[    3.097833][  T678] cyttsp5_i2c_adapter 0-0024: Direct firmware load for ttdl_cmcp_thresholdfile.csv failed with error -2
+[    3.097840][  T678] cyttsp5_i2c_adapter 0-0024: Falling back to sysfs fallback for: ttdl_cmcp_thresholdfile.csv
+[    3.130186][  T377] init: wait for '/sys/devices/soc0/soc_id' took 0ms
+[    3.263158][  T739] udc dummy_udc.0: failed to start g_webcam: -22
+[    3.331843][  T803] cutils-trace: Error opening trace file: No such file or directory (2)
+[    3.505702][  T821] vold: [libfs_mgr] Failed to open /sys/fs/f2fs/features/linear_lookup: No such file or directory
+[    5.028975][  T377] gsi_set_inst_name: failed to find prot id for ncm instance
+[    5.551456][  T377] synx: session 0 not available, pid: 377
+[    5.551461][  T377] synx: synx_uninitialize: invalid session id 0
+[    6.011517][ T1328] audit: backlog limit exceeded
+[    6.011524][ T1328] audit: backlog limit exceeded
+[    6.011528][ T1328] audit: backlog limit exceeded
+[    6.595206][  T642] qti_battery_charger soc:qcom,pmic_glink:qcom,battery_charger: battery_chg_probe start
+[    6.597554][  T348] PMIC_GLINK: pmic_glink_rx_callback: No client present for 32778
+[    6.605960][  T244] PMIC_GLINK: pmic_glink_rx_callback: No client present for 32778
+[    6.605968][  T244] PMIC_GLINK: pmic_glink_rx_callback: No client present for 32778
+[    6.616443][  T348] PMIC_GLINK: pmic_glink_rx_callback: No client present for 32778
+[    6.637231][  T244] PMIC_GLINK: pmic_glink_rx_callback: No client present for 32778
+[    6.638243][  T244] PMIC_GLINK: pmic_glink_rx_callback: No client present for 32778
+[    6.638247][  T244] PMIC_GLINK: pmic_glink_rx_callback: No client present for 32778
+[    6.688071][  T642] BATTERY_CHG: power_supply_read_temp: batt_thermal temp:26 ,delta:6673 blank_state=0 chg_type=Unknown tl:=0  ffc:=0, pd_verifed:=0
+[    6.720246][  T642] qti_battery_charger soc:qcom,pmic_glink:qcom,battery_charger: battery_chg_probe done
+[    6.774580][ T1340] healthd: Failed to lookup glob /sys/devices/platform/*gcdd/system_dev_stat: -3
+[    6.873085][ T1702] BATTERY_CHG: power_supply_read_temp: batt_thermal temp:26 ,delta:199 blank_state=0 chg_type=Unknown tl:=0  ffc:=0, pd_verifed:=0
+[    6.910236][ T1599] BATTERY_CHG: power_supply_read_temp: batt_thermal temp:26 ,delta:236 blank_state=0 chg_type=Unknown tl:=0  ffc:=0, pd_verifed:=0
+[    6.951151][ T1599] BATTERY_CHG: power_supply_read_temp: batt_thermal temp:26 ,delta:277 blank_state=0 chg_type=Unknown tl:=0  ffc:=0, pd_verifed:=0
+[    6.970895][ T1599] BATTERY_CHG: power_supply_read_temp: batt_thermal temp:26 ,delta:297 blank_state=0 chg_type=Unknown tl:=0  ffc:=0, pd_verifed:=0
+[    6.995545][ T1599] BATTERY_CHG: power_supply_read_temp: batt_thermal temp:26 ,delta:322 blank_state=0 chg_type=Unknown tl:=0  ffc:=0, pd_verifed:=0
+[    7.020737][  T677] qcom-lpi-pinctrl soc:qcom,msm-audio-apr:qcom,q6core-audio:lpi_pinctrl@33c0000: snd_event_notify: No snd dev entry found
+[    7.024327][  T348] cnss: Voltage 949mV or PMIC address 0x0 is not valid
+[    7.031378][ T1599] BATTERY_CHG: power_supply_read_temp: batt_thermal temp:26 ,delta:358 blank_state=0 chg_type=Unknown tl:=0  ffc:=0, pd_verifed:=0
+[    7.044713][  T488] msm_cdc_pinctrl_get_gpiodata: device node is null
+[    7.052713][  T488] msm_cdc_pinctrl_get_gpiodata: platform device not found!
+[    7.052728][  T488] tx_macro tx-macro: tx_macro_probe: failed to get swr pin state
+[    7.053518][  T488] msm_cdc_pinctrl_get_gpiodata: platform device not found!
+[    7.053528][  T488] rx_macro rx-macro: rx_macro_probe: failed to get swr pin state
+[    7.056183][  T351] msm_cdc_pinctrl_get_gpiodata: platform device not found!
+[    7.056190][  T351] tx_macro tx-macro: tx_macro_probe: failed to get swr pin state
+[    7.056331][  T351] platform soc:qcom,msm-audio-apr:qcom,q6core-audio:rx_swr_clk_data_pinctrl: msm_cdc_pinctrl_get_gpiodata: cannot find cdc gpio info
+[    7.056334][  T351] rx_macro rx-macro: rx_macro_probe: failed to get swr pin state
+[    7.068427][  T244] lahaina-asoc-snd soc:qcom,msm-audio-apr:qcom,q6core-audio:sound: ASoC: failed to init link TX_CDC_DMA_TX_5: -517
+[    7.069105][  T244] lahaina-asoc-snd soc:qcom,msm-audio-apr:qcom,q6core-audio:sound: ASoC: failed to init link TX_CDC_DMA_TX_5: -517
+[    7.112298][    T8] lahaina-asoc-snd soc:qcom,msm-audio-apr:qcom,q6core-audio:sound: ASoC: failed to init link TX_CDC_DMA_TX_5: -517
+[    7.147909][ T1757] swr-wcd rx_swr_ctrl: swrm_cmd_fifo_rd_cmd: invalid slave dev num
+[    7.147924][ T1757] swr-wcd rx_swr_ctrl: swrm_cmd_fifo_wr_cmd: invalid slave dev num
+[    7.147930][ T1757] swr-wcd rx_swr_ctrl: swrm_cmd_fifo_wr_cmd: invalid slave dev num
+[    7.172224][  T642] OF: graph: no port node found in /soc/qcom,pmic_glink/qcom,ucsi/port
+[    7.172261][  T642] OF: graph: no port node found in /soc/qcom,pmic_glink/qcom,ucsi/port
+[    7.264247][  T350] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: Failed to add route PRI_TDM_RX_0 -> PRI_TDM_RX -> VOC_EXT_EC MUX
+[    7.264263][  T350] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: Failed to add route TERT_TDM_RX_0 -> TERT_TDM_RX -> VOC_EXT_EC MUX
+[    7.264730][  T350] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: no source widget found for RX1_CDC_DMA_DL_US
+[    7.264733][  T350] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: Failed to add route RX1_CDC_DMA_DL_US -> direct -> RX_CDC_DMA_RX_1
+[    7.269635][  T350] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: no source widget found for PRI_TDM_RX_1_DL_US
+[    7.269642][  T350] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: Failed to add route PRI_TDM_RX_1_DL_US -> direct -> PRI_TDM_RX_1
+[    7.308184][  T348] cnss: Failed to load QDSS: qdss_trace_config_v1.cfg
+[    7.313155][  T350] lahaina-asoc-snd soc:qcom,msm-audio-apr:qcom,q6core-audio:sound: control 2:0:0:MultiMedia1 Mixer USB_AUDIO_TX:0 is already present
+[    7.313167][  T350] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: failed to add widget MultiMedia1 Mixer dapm kcontrol MultiMedia1 Mixer USB_AUDIO_TX: -16
+[    7.318769][  T348] cnss: Antenna switch request failed, result: 1, err: 94
+[    7.772815][ T1559] ipa ipa3_odl_pipe_open:366 adpl pipe not configured
+[    7.775435][    C0] qrtr: Modem QMI Readiness RX cmd:0x2 node[0x0]
+[    7.861708][   T63] aw8697_rtp_loaded: failed to read aw8697_rtp_1.bin
+[    7.899398][ T1980] goodix_fp soc:fingerprint_goodix: requestd RESET GPIO = 347
+[    8.141901][ T1191] ipa-wan ipa3_handle_indication_req:143 not send indication
+[    8.149190][  T351] ipa ipa3_uc_wdi_event_log_info_handler:351 WDI protocol missing 0x1
+[    8.149210][  T351] ipa ipa3_uc_ntn_event_log_info_handler:20 NTN protocol missing 0x1
+[    8.161220][  T350] msm-dai-fe soc:qcom,msm-dai-fe: ASoC: no sink widget found for AUXPCM_DL_HL
+[    8.161265][  T350] msm-dai-fe soc:qcom,msm-dai-fe: ASoC: Failed to add route AUXPCM_HOSTLESS Playback -> direct -> AUXPCM_DL_HL
+[    8.161372][  T350] msm-dai-fe soc:qcom,msm-dai-fe: ASoC: no source widget found for AUXPCM_UL_HL
+[    8.161380][  T350] msm-dai-fe soc:qcom,msm-dai-fe: ASoC: Failed to add route AUXPCM_UL_HL -> direct -> AUXPCM_HOSTLESS Capture
+[    8.394009][  T350] bolero-codec soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc: ASoC: unknown pin WSA_SPK1 OUT
+[    8.394031][  T350] bolero-codec soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc: ASoC: unknown pin WSA_SPK2 OUT
+[    8.394046][  T350] bolero-codec soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc: ASoC: unknown pin WSA AIF VI
+[    8.394061][  T350] bolero-codec soc:qcom,msm-audio-apr:qcom,q6core-audio:bolero-cdc: ASoC: unknown pin VIINPUT_WSA
+[    8.452522][  T351] ipa_usb_notify_cb: Set net_ready_trigger
+[    8.453099][  T351] ipa ipa3_cfg_ep_ctrl:5824 pipe setting delay is not supported
+[    8.454380][  T351] ipa_usb_notify_cb: Set net_ready_trigger
+[    8.515517][  T613] cyttsp5_i2c_adapter 0-0024: fb_notifier_callback: not second display
+[    8.515627][  T613] cyttsp5_i2c_adapter 0-0024: fb_notifier_callback: not second display
+[    8.517235][  T613] cyttsp5_i2c_adapter 0-0024: fb_notifier_callback: not second display
+[    8.542302][  T613] cyttsp5_i2c_adapter 0-0024: fb_notifier_callback: not second display
+[    8.707598][  T613] cyttsp5_i2c_adapter 0-0024: fb_notifier_callback: not second display
+[    8.709908][  T613] cyttsp5_i2c_adapter 0-0024: fb_notifier_callback: not second display
+[    8.805475][ T1895] ip_local_port_range: prefer different parity for start/end values.
+[    8.810135][ T2134] smcinvoke: prepare_send_scm_msg: Secure side is busy,will retry after 30 ms
+[    8.845467][ T2134] smcinvoke: prepare_send_scm_msg: Secure side is busy,will retry after 30 ms
+[    8.859852][  T613] cyttsp5_i2c_adapter 0-0024: fb_notifier_callback: not second display
+[    8.882207][ T2134] smcinvoke: prepare_send_scm_msg: Secure side is busy,will retry after 30 ms
+[    8.920250][  T615] Unable to handle kernel NULL pointer dereference at virtual address 000000000000001d
+[    8.920256][  T615] Mem abort info:
+[    8.920258][  T615]   ESR = 0x96000005
+[    8.920261][  T615]   EC = 0x25: DABT (current EL), IL = 32 bits
+[    8.920263][  T615]   SET = 0, FnV = 0
+[    8.920265][  T615]   EA = 0, S1PTW = 0
+[    8.920268][  T615] Data abort info:
+[    8.920269][  T615]   ISV = 0, ISS = 0x00000005
+[    8.920271][  T615]   CM = 0, WnR = 0
+[    8.920274][  T615] user pgtable: 4k pages, 39-bit VAs, pgdp=000000024a31d000
+[    8.920276][  T615] [000000000000001d] pgd=0000000000000000, pud=0000000000000000
+[    8.920280][  T615] Internal error: Oops: 96000005 [#1] PREEMPT SMP
+[    8.920284][  T615] Modules linked in: camera wlan(C) machine_dlkm wcd937x_dlkm cyttsp5_i2c swr_dmic_dlkm tuner_simple wcd938x_dlkm va_macro_dlkm mbhc_dlkm wsa_macro_dlkm tx_macro_dlkm cyttsp5_loader leds_qti_flash cyttsp5_device_access rx_macro_dlkm hdmi_dlkm mt2131 qt1010 fts_touch_spi native_dlkm llcc_perfmon swr_ctrl_dlkm si2157 qm1d1c0042 tda9887 swr_haptics_dlkm tuner_xc2028 tua9001 e4000 cyttsp5 pinctrl_lpi_dlkm bolero_cdc_dlkm wcd9xxx_dlkm qti_battery_charger_main mi_thermal_interface max2165 mt2266 mt2063 platform_dlkm mxl5005s tuner_types mc44s803 m88rs6000t tda18212 pinctrl_wcd_dlkm wcd937x_slave_dlkm msi001 q6_dlkm wcd938x_slave_dlkm mt20xx hid_aksys mxl301rf fc0011 slimbus_ngd cnss2 cs35l41_dlkm tea5767 icnss2 tda18250 stmvl53l5 rdbg adsp_loader_dlkm us_prox_iio it913x msm_drm xc5000 mt2060 fc2580 wsa883x_dlkm bt_fm_slim tda18218 swr_dlkm xiaomi_touch fc0012 qm1d1b0004 rmnet_core apr_dlkm hwid xc4000 radio_i2c_rtc6226_qca stub_dlkm mmhardware_others goodix_fod btpower
+[    8.920328][  T615]  qcom_edac mxl5007t tea5761 slimbus rmnet_ctl q6_notifier_dlkm ir_spi q6_pdr_dlkm mmhardware_sysfs_dlkm snd_event_dlkm wcd_core_dlkm r820t fc0013 [last unloaded: rmnet_offload]
+[    8.920342][  T615] CPU: 4 PID: 615 Comm: crtc_commit:198 Tainted: G S       C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.920345][  T615] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.920347][  T615] pstate: 80c00005 (Nzcv daif +PAN +UAO)
+[    8.920354][  T615] pc : sysfs_notify+0x10/0x8c
+[    8.920425][  T615] lr : dsi_display_set_mode+0x8b0/0x9e0 [msm_drm]
+[    8.920427][  T615] sp : ffffffc012bf3af0
+[    8.920429][  T615] x29: ffffffc012bf3af0 x28: 00000000c0debeef 
+[    8.920432][  T615] x27: ffffff82868b0800 x26: ffffffebf3e73b6c 
+[    8.920434][  T615] x25: ffffffebf3fe9000 x24: ffffffc012bf3b40 
+[    8.920436][  T615] x23: 0000000000000000 x22: 0000000000000126 
+[    8.920438][  T615] x21: 000000000000003c x20: 000000000000007e 
+[    8.920440][  T615] x19: ffffff8288423080 x18: ffffffc012b0d040 
+[    8.920443][  T615] x17: 00000000000000cc x16: ffffffec4b036284 
+[    8.920445][  T615] x15: 00000000000000c2 x14: 0000000000000070 
+[    8.920447][  T615] x13: 0000000000000000 x12: 0000000000000035 
+[    8.920449][  T615] x11: 0000000000000035 x10: 000000000000ffff 
+[    8.920451][  T615] x9 : 0000000000000100 x8 : 0000000000000000 
+[    8.920453][  T615] x7 : 0000000000000000 x6 : ffffff82b6ec434a 
+[    8.920455][  T615] x5 : ffffffc012bf3888 x4 : 0000000000000008 
+[    8.920457][  T615] x3 : 343230302d303a63 x2 : ffffffebf3f9e7c3 
+[    8.920459][  T615] x1 : 0000000000000000 x0 : ffffffffffffffed 
+[    8.920461][  T615] Call trace:
+[    8.920465][  T615]  sysfs_notify+0x10/0x8c
+[    8.920518][  T615]  dsi_display_set_mode+0x8b0/0x9e0 [msm_drm]
+[    8.920569][  T615]  dsi_bridge_pre_enable+0xb4/0x408 [msm_drm]
+[    8.920573][  T615]  drm_bridge_pre_enable+0x4c/0x80
+[    8.920623][  T615]  complete_commit+0x368/0xa60 [msm_drm]
+[    8.920673][  T615]  _msm_drm_commit_work_cb+0x30/0x224 [msm_drm]
+[    8.920677][  T615]  kthread_worker_fn+0x120/0x364
+[    8.920680][  T615]  kthread+0x150/0x188
+[    8.920683][  T615]  ret_from_fork+0x10/0x18
+[    8.920687][  T615] Code: f800865e a9be7bfd a9014ff4 910003fd (f9401813) 
+[    8.920690][  T615] ---[ end trace 15c547843958134c ]---
+[    8.926961][ T2134] smcinvoke: prepare_send_scm_msg: Secure side is busy,will retry after 30 ms
+[    8.928916][  T615] Kernel panic - not syncing: Fatal exception
+[    8.928921][  T615] SMP: stopping secondary CPUs
+[    8.928932][    C1] CPU1: stopping
+[    8.928942][    C1] CPU: 1 PID: 1 Comm: init Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.928948][    C1] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.928954][    C1] pstate: 80001000 (Nzcv daif -PAN -UAO)
+[    8.928958][    C1] pc : 0000007fa1da3440
+[    8.928968][    C1] lr : 0000007fa1da22bc
+[    8.928972][    C1] sp : 0000007fc1f63620
+[    8.928977][    C1] x29: 0000007fc1f63980 x28: 0000007fa1caf86b 
+[    8.928983][    C1] x27: 00000000ffffffff x26: 0000007fa5f96e80 
+[    8.928989][    C1] x25: 0000007fc1f638d3 x24: 0000000000000000 
+[    8.928995][    C1] x23: 0000007fa1cb9335 x22: 00000000ffffffff 
+[    8.929000][    C1] x21: 0000007fc1f638f0 x20: 0000000000000002 
+[    8.929006][    C1] x19: 0000007fc1f63a00 x18: 0000007fa7060000 
+[    8.929012][    C1] x17: 0000007fa1d3b960 x16: 0000007fa1dc6f60 
+[    8.929020][    C1] x15: 0000000000000004 x14: 0000000000000010 
+[    8.929029][    C1] x13: 0000000000001400 x12: 0000007fc1f638d4 
+[    8.929034][    C1] x11: 0000007fa1cb919c x10: 0000000000000038 
+[    8.929039][    C1] x9 : 0000000000000002 x8 : 0000000000000032 
+[    8.929044][    C1] x7 : 73636f72702e7075 x6 : 702e70756f726763 
+[    8.929049][    C1] x5 : 0000007fc1f63c30 x4 : 0000007fa1caf85b 
+[    8.929054][    C1] x3 : 0000007fc1f63b40 x2 : 0000007fc1f639e0 
+[    8.929059][    C1] x1 : 0000007fa1caf85b x0 : 0000000000000000 
+[    8.929066][    C1] CPU: 1 PID: 1 Comm: init Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929070][    C1] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929074][    C1] Call trace:
+[    8.929083][    C1]  dump_backtrace.cfi_jt+0x0/0x4
+[    8.929091][    C1]  show_stack+0x18/0x24
+[    8.929097][    C1]  __dump_stack+0x24/0x30
+[    8.929102][    C1]  dump_stack+0xb0/0xd8
+[    8.929109][    C1]  local_cpu_stop+0xac/0xb8
+[    8.929114][    C1]  handle_IPI+0x190/0x484
+[    8.929120][    C1]  gic_handle_irq+0xc8/0x148
+[    8.929125][    C1]  el0_irq_naked+0x60/0x6c
+[    8.929131][    C3] CPU3: stopping
+[    8.929139][    C3] CPU: 3 PID: 350 Comm: kworker/u16:6 Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929144][    C3] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929156][    C3] Workqueue: memlat_wq memlat_monitor_work.cfi_jt
+[    8.929162][    C3] pstate: 80c00005 (Nzcv daif +PAN +UAO)
+[    8.929169][    C3] pc : smp_call_function_single+0xf0/0x1bc
+[    8.929174][    C3] lr : smp_call_function_single+0xc8/0x1bc
+[    8.929178][    C3] sp : ffffffc01d5c3be0
+[    8.929182][    C3] x29: ffffffc01d5c3c20 x28: ffffff82915fa240 
+[    8.929187][    C3] x27: 00000000000186a8 x26: 0000000000000064 
+[    8.929193][    C3] x25: ffffff82915fa080 x24: 0000000000000001 
+[    8.929198][    C3] x23: 0000000000000000 x22: ffffff82b6f9e370 
+[    8.929203][    C3] x21: 0000000000000000 x20: ffffffc01d5c3be0 
+[    8.929209][    C3] x19: ffffff828e9b4ec0 x18: ffffffc01d3e5040 
+[    8.929214][    C3] x17: 0000000006acfc00 x16: 0000000000052433 
+[    8.929219][    C3] x15: 0000000000000003 x14: 0000000000000000 
+[    8.929224][    C3] x13: 0000000005e3d679 x12: 0000000000000000 
+[    8.929229][    C3] x11: ffffffec4bfaf9f0 x10: 0000000000000000 
+[    8.929234][    C3] x9 : 0000000000000003 x8 : ffffffc01d5c3bf8 
+[    8.929239][    C3] x7 : ffffffc0138bbd88 x6 : 000000021426facd 
+[    8.929245][    C3] x5 : ffffffffffff7d34 x4 : 0000000000000000 
+[    8.929250][    C3] x3 : ffffffc01d5c3c48 x2 : 0000000000000005 
+[    8.929255][    C3] x1 : 0000000000000020 x0 : 0000000000000000 
+[    8.929262][    C3] CPU: 3 PID: 350 Comm: kworker/u16:6 Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929266][    C3] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929272][    C3] Workqueue: memlat_wq memlat_monitor_work.cfi_jt
+[    8.929276][    C3] Call trace:
+[    8.929282][    C3]  dump_backtrace.cfi_jt+0x0/0x4
+[    8.929288][    C3]  show_stack+0x18/0x24
+[    8.929294][    C3]  __dump_stack+0x24/0x30
+[    8.929298][    C3]  dump_stack+0xb0/0xd8
+[    8.929304][    C3]  local_cpu_stop+0xac/0xb8
+[    8.929309][    C3]  handle_IPI+0x190/0x484
+[    8.929315][    C3]  gic_handle_irq+0xc8/0x148
+[    8.929319][    C3]  el1_irq+0x104/0x200
+[    8.929324][    C3]  smp_call_function_single+0xf0/0x1bc
+[    8.929330][    C3]  perf_event_read+0xf8/0x22c
+[    8.929336][    C3]  __perf_event_read_value+0x40/0x108
+[    8.929341][    C3]  perf_event_read_value+0x38/0x64
+[    8.929348][    C3]  memlat_monitor_work+0x134/0x488
+[    8.929354][    C3]  process_one_work+0x210/0x4ac
+[    8.929359][    C3]  worker_thread+0x280/0x4dc
+[    8.929364][    C3]  kthread+0x150/0x188
+[    8.929369][    C3]  ret_from_fork+0x10/0x18
+[    8.929374][    C2] CPU2: stopping
+[    8.929382][    C2] CPU: 2 PID: 819 Comm: logd.klogd Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929387][    C2] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929392][    C2] pstate: a0400005 (NzCv daif +PAN -UAO)
+[    8.929401][    C2] pc : kmem_cache_free+0xe4/0x4a8
+[    8.929407][    C2] lr : putname+0x5c/0x70
+[    8.929411][    C2] sp : ffffffc0137fbd60
+[    8.929415][    C2] x29: ffffffc0137fbd70 x28: ffffff8284505e80 
+[    8.929420][    C2] x27: 0000000000000000 x26: 0000000000000000 
+[    8.929426][    C2] x25: 0000000056000000 x24: fa9f3edea8f18d04 
+[    8.929431][    C2] x23: 0000000000000000 x22: ffffff8297e90ed0 
+[    8.929437][    C2] x21: ffffff828dfef000 x20: ffffff80c08df400 
+[    8.929442][    C2] x19: ffffffff0a17fa00 x18: ffffffc012989030 
+[    8.929447][    C2] x17: 0000000000000002 x16: ffffffffffffffff 
+[    8.929452][    C2] x15: 0000000000000018 x14: 0000000000000003 
+[    8.929458][    C2] x13: 00000000000003e8 x12: 0000000000000001 
+[    8.929463][    C2] x11: 0000016500000000 x10: 0000000000000000 
+[    8.929468][    C2] x9 : 0000000000000000 x8 : ffffff828dfef000 
+[    8.929473][    C2] x7 : 6c646d632f353136 x6 : 0000000000040002 
+[    8.929479][    C2] x5 : 0000000000000000 x4 : 0000000000000000 
+[    8.929484][    C2] x3 : 0000000000000001 x2 : ffffff81fe1fef00 
+[    8.929489][    C2] x1 : ffffff828dfef000 x0 : ffffff80c08df400 
+[    8.929496][    C2] CPU: 2 PID: 819 Comm: logd.klogd Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929500][    C2] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929503][    C2] Call trace:
+[    8.929508][    C2]  dump_backtrace.cfi_jt+0x0/0x4
+[    8.929514][    C2]  show_stack+0x18/0x24
+[    8.929519][    C2]  __dump_stack+0x24/0x30
+[    8.929524][    C2]  dump_stack+0xb0/0xd8
+[    8.929529][    C2]  local_cpu_stop+0xac/0xb8
+[    8.929535][    C2]  handle_IPI+0x190/0x484
+[    8.929539][    C2]  gic_handle_irq+0xc8/0x148
+[    8.929544][    C2]  el1_irq+0x104/0x200
+[    8.929549][    C2]  kmem_cache_free+0xe4/0x4a8
+[    8.929554][    C2]  putname+0x5c/0x70
+[    8.929560][    C2]  do_sys_open+0x230/0x28c
+[    8.929565][    C2]  __arm64_sys_openat+0x28/0x34
+[    8.929570][    C2]  el0_svc_common+0xc0/0x1ac
+[    8.929575][    C2]  el0_svc_handler+0x24/0x84
+[    8.929580][    C2]  el0_svc+0x8/0x100
+[    8.929585][    C0] CPU0: stopping
+[    8.929593][    C0] CPU: 0 PID: 0 Comm: swapper/0 Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929598][    C0] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929602][    C0] pstate: a0c00005 (NzCv daif +PAN +UAO)
+[    8.929610][    C0] pc : lpm_cpuidle_enter+0x414/0x6d8
+[    8.929615][    C0] lr : lpm_cpuidle_enter+0x390/0x6d8
+[    8.929619][    C0] sp : ffffffec4bfa3e00
+[    8.929623][    C0] x29: ffffffec4bfa3e20 x28: ffffff82b6f147a8 
+[    8.929629][    C0] x27: ffffff8291ab44b8 x26: ffffffec4bfb0128 
+[    8.929634][    C0] x25: 00000002143472e1 x24: ffffff82b6f147bc 
+[    8.929639][    C0] x23: ffffffec4bf7f7e8 x22: ffffff966af95000 
+[    8.929645][    C0] x21: ffffff8291632880 x20: ffffff8291ab4480 
+[    8.929650][    C0] x19: 0000000000000000 x18: ffffffec4c0ae040 
+[    8.929655][    C0] x17: 0000000000000000 x16: 0000000000000000 
+[    8.929660][    C0] x15: 000000000000070d x14: 000000000003d090 
+[    8.929666][    C0] x13: 000000000000111c x12: 0000000000000018 
+[    8.929671][    C0] x11: 0000000034155555 x10: 00258d097e744c00 
+[    8.929676][    C0] x9 : 0000000100000001 x8 : 00000000000000e0 
+[    8.929681][    C0] x7 : 0000000000000000 x6 : 00000002141644d8 
+[    8.929687][    C0] x5 : 0000000000000001 x4 : 00000002143472e1 
+[    8.929692][    C0] x3 : 0000000000000000 x2 : 0000000000000001 
+[    8.929697][    C0] x1 : 0000000000000080 x0 : fffffffdebcb84fc 
+[    8.929704][    C0] CPU: 0 PID: 0 Comm: swapper/0 Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929708][    C0] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929711][    C0] Call trace:
+[    8.929716][    C0]  dump_backtrace.cfi_jt+0x0/0x4
+[    8.929722][    C0]  show_stack+0x18/0x24
+[    8.929727][    C0]  __dump_stack+0x24/0x30
+[    8.929732][    C0]  dump_stack+0xb0/0xd8
+[    8.929737][    C0]  local_cpu_stop+0xac/0xb8
+[    8.929742][    C0]  handle_IPI+0x190/0x484
+[    8.929747][    C0]  gic_handle_irq+0xc8/0x148
+[    8.929752][    C0]  el1_irq+0x104/0x200
+[    8.929757][    C0]  lpm_cpuidle_enter+0x414/0x6d8
+[    8.929764][    C0]  cpuidle_enter_state+0x10c/0x2c8
+[    8.929769][    C0]  cpuidle_enter+0x38/0x50
+[    8.929776][    C0]  do_idle.llvm.3092493192961899983+0x324/0x3f8
+[    8.929781][    C0]  cpu_startup_entry+0x24/0x28
+[    8.929787][    C0]  kernel_init+0x0/0x114
+[    8.929794][    C0]  start_kernel+0x0/0x3fc
+[    8.929799][    C0]  start_kernel+0x388/0x3fc
+[    8.929803][    C5] CPU5: stopping
+[    8.929808][    C5] CPU: 5 PID: 1116 Comm: main Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929811][    C5] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929813][    C5] pstate: 008d0030 (nzcv q T32 LE aif)
+[    8.929815][    C5] pc : 00000000edc15d7e
+[    8.929817][    C5] lr : 00000000edc60b8b
+[    8.929819][    C5] sp : 00000000ff884fd8
+[    8.929820][    C5] x12: 0000000001000000 
+[    8.929823][    C5] x11: 000000006ff74818 x10: 0000000070c34bc4 
+[    8.929825][    C5] x9 : 0000000000000028 x8 : 00000000eff9f63d 
+[    8.929827][    C5] x7 : 0000000000000000 x6 : 00000000eff9d800 
+[    8.929829][    C5] x5 : 000000000000000a x4 : 00000000eff9d800 
+[    8.929831][    C5] x3 : 00000000eff9f63d x2 : 000000000000000a 
+[    8.929833][    C5] x1 : 0000000000000004 x0 : 000000006ff74848 
+[    8.929836][    C5] CPU: 5 PID: 1116 Comm: main Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929838][    C5] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929840][    C5] Call trace:
+[    8.929843][    C5]  dump_backtrace.cfi_jt+0x0/0x4
+[    8.929846][    C5]  show_stack+0x18/0x24
+[    8.929848][    C5]  __dump_stack+0x24/0x30
+[    8.929851][    C5]  dump_stack+0xb0/0xd8
+[    8.929853][    C5]  local_cpu_stop+0xac/0xb8
+[    8.929856][    C5]  handle_IPI+0x190/0x484
+[    8.929858][    C5]  gic_handle_irq+0xc8/0x148
+[    8.929860][    C5]  el0_irq_naked+0x60/0x6c
+[    8.929863][    C7] CPU7: stopping
+[    8.929868][    C7] CPU: 7 PID: 1115 Comm: main Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929870][    C7] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929872][    C7] pstate: 60001000 (nZCv daif -PAN -UAO)
+[    8.929874][    C7] pc : 000000728bcefe8c
+[    8.929875][    C7] lr : 000000728bcee888
+[    8.929877][    C7] sp : 0000007ff941ec90
+[    8.929878][    C7] x29: 0000007ff941ed68 x28: 000000000000004c 
+[    8.929880][    C7] x27: b400007290248280 x26: b400007290318670 
+[    8.929882][    C7] x25: 0000007ff941ed58 x24: 000000728bce5b80 
+[    8.929884][    C7] x23: 000000000000106e x22: 000000728b0f3420 
+[    8.929886][    C7] x21: b400007290317cc0 x20: 0000000000000000 
+[    8.929887][    C7] x19: b400007290317c00 x18: 000000734a214000 
+[    8.929889][    C7] x17: 0000000000000008 x16: 0000007ff941cd30 
+[    8.929891][    C7] x15: 0000000000000002 x14: 0000000000000004 
+[    8.929893][    C7] x13: 0000007ff941ed58 x12: 0000007ff941ed68 
+[    8.929894][    C7] x11: 0000007ff941ed70 x10: 0000007ff941ed60 
+[    8.929896][    C7] x9 : 000000728bceff40 x8 : 0000000000000002 
+[    8.929898][    C7] x7 : 0000000000000000 x6 : 0000000000000000 
+[    8.929900][    C7] x5 : 0000000000000000 x4 : 0000000000000000 
+[    8.929901][    C7] x3 : 0000000000020004 x2 : 000000728b0efe3c 
+[    8.929903][    C7] x1 : 0000000002224fc8 x0 : 0000000070d5d148 
+[    8.929905][    C7] CPU: 7 PID: 1115 Comm: main Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929907][    C7] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929908][    C7] Call trace:
+[    8.929911][    C7]  dump_backtrace.cfi_jt+0x0/0x4
+[    8.929914][    C7]  show_stack+0x18/0x24
+[    8.929916][    C7]  __dump_stack+0x24/0x30
+[    8.929918][    C7]  dump_stack+0xb0/0xd8
+[    8.929920][    C7]  local_cpu_stop+0xac/0xb8
+[    8.929922][    C7]  handle_IPI+0x190/0x484
+[    8.929924][    C7]  gic_handle_irq+0xc8/0x148
+[    8.929926][    C7]  el0_irq_naked+0x60/0x6c
+[    8.929929][    C6] CPU6: stopping
+[    8.929933][    C6] CPU: 6 PID: 1980 Comm: android.hardwar Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929935][    C6] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929937][    C6] pstate: 60400005 (nZCv daif +PAN -UAO)
+[    8.929941][    C6] pc : __arm_smccc_smc+0x4/0x2c
+[    8.929946][    C6] lr : __qcom_scm_call_do_quirk+0x74/0x1f4
+[    8.929948][    C6] sp : ffffffc0181cb660
+[    8.929949][    C6] x29: ffffffc0181cb690 x28: ffffffc0181cb9c8 
+[    8.929952][    C6] x27: ffffff8297a5aa18 x26: 0000000000000000 
+[    8.929955][    C6] x25: 0000000000000000 x24: 0000000000000004 
+[    8.929957][    C6] x23: ffffffc0181cb678 x22: 0000000000000000 
+[    8.929959][    C6] x21: 0000000000000000 x20: ffffffc0181cb728 
+[    8.929961][    C6] x19: ffffffc0181cb708 x18: ffffffc017a5d068 
+[    8.929963][    C6] x17: 0000000006acfc00 x16: 00000000003d9635 
+[    8.929965][    C6] x15: 0000000000000006 x14: 0000000000000012 
+[    8.929967][    C6] x13: 0000000000000007 x12: 0000000000000000 
+[    8.929969][    C6] x11: ffffffec4bf6b028 x10: ffffffec4bf6b028 
+[    8.929971][    C6] x9 : 0000000000000001 x8 : 0000000000000001 
+[    8.929973][    C6] x7 : 0000000000000000 x6 : 00000000619005ba 
+[    8.929975][    C6] x5 : 0000000000000020 x4 : 0000000273c07000 
+[    8.929977][    C6] x3 : 0000000000000000 x2 : 000000000000000a 
+[    8.929979][    C6] x1 : 0000000000000204 x0 : 0000000000000001 
+[    8.929982][    C6] CPU: 6 PID: 1980 Comm: android.hardwar Tainted: G S    D  C        5.4.302-qgki-g2c0d4b8372fd-dirty #4
+[    8.929984][    C6] Hardware name: Star based on Qualcomm Technologies, Inc SM8350 (DT)
+[    8.929986][    C6] Call trace:
+[    8.929988][    C6]  dump_backtrace.cfi_jt+0x0/0x4
+[    8.929991][    C6]  show_stack+0x18/0x24
+[    8.929993][    C6]  __dump_stack+0x24/0x30
+[    8.929996][    C6]  dump_stack+0xb0/0xd8
+[    8.929998][    C6]  local_cpu_stop+0xac/0xb8
+[    8.930001][    C6]  handle_IPI+0x190/0x484
+[    8.930003][    C6]  gic_handle_irq+0xc8/0x148
+[    8.930005][    C6]  el1_irq+0x104/0x200
+[    8.930007][    C6]  __arm_smccc_smc+0x4/0x2c
+[    8.930010][    C6]  qcom_scm_call_smccc+0xd0/0x310
+[    8.930013][    C6]  __qcom_scm_qseecom_do+0xe4/0x168
+[    8.930015][    C6]  qcom_scm_qseecom_call_noretry+0x34/0x40
+[    8.930019][    C6]  __qseecom_scm_call2_locked+0x5c/0xf4
+[    8.930021][    C6]  qseecom_scm_call+0x94c/0xa60
+[    8.930024][    C6]  __qseecom_process_reentrancy+0x490/0x794
+[    8.930026][    C6]  __qseecom_send_cmd+0x2c8/0x45c
+[    8.930028][    C6]  qseecom_ioctl+0x306c/0x59c4
+[    8.930031][    C6]  do_vfs_ioctl+0x874/0xfb0
+[    8.930034][    C6]  __arm64_sys_ioctl+0x74/0xa4
+[    8.930036][    C6]  el0_svc_common+0xc0/0x1ac
+[    8.930039][    C6]  el0_svc_handler+0x24/0x84
+[    8.930041][    C6]  el0_svc+0x8/0x100
+[    8.930469][  T615] ipa ipa_save_registers:832 Commencing
+[    8.931027][  T615] ipa ipa_save_registers:1063 Completed
+[    8.931032][  T615] ipa_wigig ipa_wigig_save_regs_cb:985 wigig ctx is not initialized
+[    8.931043][  T615] kgsl kgsl-3d0: snapshot: device is powered off
+[    9.731137][  T615] cnss: Crash shutdown with driver_state 0x14600f
+[    9.731187][  T615] cnss: Start to dump qdss registers
+[    9.731190][  T615] cnss: Config PCIe remap window register to 0x40000038
+[    9.731197][  T615] cnss: QDSSCSR_ETRIRQCTRL[0x1c0106c] = 0x0
+[    9.731204][  T615] cnss: QDSSCSR_PRESERVEETF[0x1c01070] = 0x0
+[    9.731212][  T615] cnss: QDSSCSR_PRESERVEETR0[0x1c01074] = 0x0
+[    9.731219][  T615] cnss: QDSSCSR_PRESERVEETR1[0x1c01078] = 0x0
+[   10.111440][  T615] cnss: Collect FW image dump segment, nentries 11
+[   10.111444][  T615] cnss: Seg: 0, va: 0000000000000000, dma: 0x00000000a0700000, size: 0x80000
+[   10.111450][  T615] cnss: Mini dump region: FBC_0, va: 0000000000000000, pa: 0x00000000f9d00000, size: 0x80000
+[   10.111457][  T615] cnss: Seg: 1, va: 0000000000000000, dma: 0x00000000a0780000, size: 0x80000
+[   10.111459][  T615] cnss: Mini dump region: FBC_1, va: 0000000000000000, pa: 0x00000000f9d80000, size: 0x80000
+[   10.111463][  T615] cnss: Seg: 2, va: 0000000000000000, dma: 0x00000000a0800000, size: 0x80000
+[   10.111466][  T615] cnss: Mini dump region: FBC_2, va: 0000000000000000, pa: 0x00000000f9e00000, size: 0x80000
+[   10.111470][  T615] cnss: Seg: 3, va: 0000000000000000, dma: 0x00000000a0880000, size: 0x80000
+[   10.111473][  T615] cnss: Mini dump region: FBC_3, va: 0000000000000000, pa: 0x00000000f9e80000, size: 0x80000
+[   10.111477][  T615] cnss: Seg: 4, va: 0000000000000000, dma: 0x00000000a0900000, size: 0x80000
+[   10.111479][  T615] cnss: Mini dump region: FBC_4, va: 0000000000000000, pa: 0x00000000f9f00000, size: 0x80000
+[   10.111483][  T615] cnss: Seg: 5, va: 0000000000000000, dma: 0x00000000a0980000, size: 0x80000
+[   10.111486][  T615] cnss: Mini dump region: FBC_5, va: 0000000000000000, pa: 0x00000000f9f80000, size: 0x80000
+[   10.111490][  T615] cnss: Seg: 6, va: 0000000000000000, dma: 0x00000000a0a00000, size: 0x80000
+[   10.111492][  T615] cnss: Mini dump region: FBC_6, va: 0000000000000000, pa: 0x00000000fa000000, size: 0x80000
+[   10.111496][  T615] cnss: Seg: 7, va: 0000000000000000, dma: 0x00000000a0a80000, size: 0x80000
+[   10.111499][  T615] cnss: Mini dump region: FBC_7, va: 0000000000000000, pa: 0x00000000fa080000, size: 0x80000
+[   10.111502][  T615] cnss: Seg: 8, va: 0000000000000000, dma: 0x00000000a0b00000, size: 0x80000
+[   10.111505][  T615] cnss: Mini dump region: FBC_8, va: 0000000000000000, pa: 0x00000000fa100000, size: 0x80000
+[   10.111509][  T615] cnss: Seg: 9, va: 0000000000000000, dma: 0x00000000a0b80000, size: 0x80000
+[   10.111511][  T615] cnss: Mini dump region: FBC_9, va: 0000000000000000, pa: 0x00000000fa180000, size: 0x80000
+[   10.111515][  T615] cnss: Seg: a, va: 0000000000000000, dma: 0x00000000a0c00000, size: 0xa0
+[   10.111518][  T615] cnss: Mini dump region: FBC_A, va: 0000000000000000, pa: 0x00000000f9c81000, size: 0xa0
+[   10.111522][  T615] cnss: Collect RDDM image dump segment, nentries 10
+[   10.111525][  T615] cnss: Seg: 0, va: 0000000000000000, dma: 0x00000000a0180000, size: 0x80000
+[   10.111527][  T615] cnss: Mini dump region: RDDM_0, va: 0000000000000000, pa: 0x00000000f9800000, size: 0x80000
+[   10.111531][  T615] cnss: Seg: 1, va: 0000000000000000, dma: 0x00000000a0200000, size: 0x80000
+[   10.111534][  T615] cnss: Mini dump region: RDDM_1, va: 0000000000000000, pa: 0x00000000f9880000, size: 0x80000
+[   10.111538][  T615] cnss: Seg: 2, va: 0000000000000000, dma: 0x00000000a0280000, size: 0x80000
+[   10.111541][  T615] cnss: Mini dump region: RDDM_2, va: 0000000000000000, pa: 0x00000000f9900000, size: 0x80000
+[   10.111544][  T615] cnss: Seg: 3, va: 0000000000000000, dma: 0x00000000a0300000, size: 0x80000
+[   10.111547][  T615] cnss: Mini dump region: RDDM_3, va: 0000000000000000, pa: 0x00000000f9980000, size: 0x80000
+[   10.111551][  T615] cnss: Seg: 4, va: 0000000000000000, dma: 0x00000000a0380000, size: 0x80000
+[   10.111553][  T615] cnss: Mini dump region: RDDM_4, va: 0000000000000000, pa: 0x00000000f9a00000, size: 0x80000
+[   10.111557][  T615] cnss: Seg: 5, va: 0000000000000000, dma: 0x00000000a0400000, size: 0x80000
+[   10.111560][  T615] cnss: Mini dump region: RDDM_5, va: 0000000000000000, pa: 0x00000000f9a80000, size: 0x80000
+[   10.111564][  T615] cnss: Seg: 6, va: 0000000000000000, dma: 0x00000000a0480000, size: 0x80000
+[   10.111566][  T615] cnss: Mini dump region: RDDM_6, va: 0000000000000000, pa: 0x00000000f9b00000, size: 0x80000
+[   10.111570][  T615] cnss: Seg: 7, va: 0000000000000000, dma: 0x00000000a0500000, size: 0x80000
+[   10.111573][  T615] cnss: Mini dump region: RDDM_7, va: 0000000000000000, pa: 0x00000000f9b80000, size: 0x80000
+[   10.111577][  T615] cnss: Seg: 8, va: 0000000000000000, dma: 0x00000000a0580000, size: 0x80000
+[   10.111579][  T615] cnss: Mini dump region: RDDM_8, va: 0000000000000000, pa: 0x00000000f9c00000, size: 0x80000
+[   10.111583][  T615] cnss: Seg: 9, va: 0000000000000000, dma: 0x00000000a0600000, size: 0x90
+[   10.111586][  T615] cnss: Mini dump region: RDDM_9, va: 0000000000000000, pa: 0x00000000f9c80000, size: 0x90
+[   10.111591][  T615] [E][mhi_process_sfr] mhi_patch.c:763:0x400(0): 
+[   10.111593][  T615] cnss: Collect remote heap dump segment
+[   10.111596][  T615] cnss: Seg: 0, va: 0000000000000000, dma: 0x00000000a1000000, size: 0x5e0000
+[   10.111599][  T615] cnss: Mini dump region: RHEAP_0, va: 0000000000000000, pa: 0x00000000fa200000, size: 0x5e0000
+[   10.111603][  T615] cnss: Setting MHI state: RDDM_DONE(10)
+[   10.111607][  T615] Kernel Offset: 0x2c39c00000 from 0xffffffc010000000
+[   10.111609][  T615] PHYS_OFFSET: 0xffffffffc0000000
+[   10.111611][  T615] CPU features: 0x000b0006,2a00a238
+[   10.111613][  T615] Memory Limit: none
+[   10.111617][  T615] ipa ipa3_active_clients_panic_notifier:665 
+[   10.111617][  T615] ---- Active Clients Table ----
+[   10.111617][  T615] 
+[   10.111617][  T615] Total active clients count: 4
+[   10.111617][  T615] 
+[   10.127051][  T615] Triggering late bite
+[   10.127056][  T615] hh-watchdog hypervisor:qcom,hh-watchdog: Causing a QCOM Apps Watchdog bite!
+[   10.127060][  T615] hh-watchdog hypervisor:qcom,hh-watchdog: vWdog-CTL: 1, vWdog-time since last pet: 1195, vWdog-expired status: 1
